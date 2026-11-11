@@ -1,0 +1,3778 @@
+{
+  "version": 1,
+  "huella_catalogo": "2aabec4d8db298d1f0d124798b6460afacae1952ac300f6ff3500c11f0ba036d",
+  "resultados": {
+    "STAND:1:ped:handsup": {
+      "categoria": "STAND",
+      "idx": 1,
+      "anim": "handsup",
+      "lib": "ped",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "Un NPC masculino vestido con chaqueta de mezclilla oscura, sudadera gris con capucha y pantalones caqui se encuentra de pie. En la secuencia (frames 1 a 4 y 6), pasa de tener los brazos relajados a ambos lados del cuerpo a elevar paulatinamente ambos brazos hacia arriba, flexionando los codos y manteniendo las palmas de las manos abiertas orientadas hacia el frente por encima del nivel de los hombros. El frame 5 carece de la presencia del personaje.",
+        "interpretacion": "Gesto de levantar las manos, tipico de una accion de rendicion, sometimiento o reaccion de alarma/arresto.",
+        "etiquetas": [
+          "manos arriba",
+          "rendicion",
+          "gesto de pie",
+          "parado"
+        ],
+        "confianza": "alta",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "frames_descartados": [
+          5
+        ],
+        "limitaciones": [
+          "El frame 5 esta completamente vacio sin la presencia del NPC."
+        ]
+      }
+    },
+    "STAND:2:ped:roadcross": {
+      "categoria": "STAND",
+      "idx": 2,
+      "anim": "roadcross",
+      "lib": "ped",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "El personaje permanece erguido de pie durante los seis frames con los brazos a los lados. En el frame 1 mira al frente; en el frame 2 gira la cabeza hacia su derecha; en el frame 3 vuelve a mirar al frente; en los frames 4 y 5 mantiene la cabeza girada hacia su izquierda; en el frame 6 regresa la mirada hacia el frente. El resto del cuerpo y los pies permanecen en la misma posicion.",
+        "interpretacion": "Posible accion de estar de pie observando o mirando a ambos lados (izquierda y derecha) antes de cruzar una via o evaluar el entorno.",
+        "etiquetas": [
+          "de pie",
+          "girar cabeza",
+          "observar",
+          "esperar"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "El desplazamiento corporal esta bloqueado por la herramienta de captura."
+        ]
+      }
+    },
+    "STAND:3:graffiti:graffiti_Chkout": {
+      "categoria": "STAND",
+      "idx": 3,
+      "anim": "graffiti_Chkout",
+      "lib": "graffiti",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "Un NPC masculino permanece de pie vistiendo chaqueta oscura y pantalones caqui. En el frame 1, se encuentra erguido con los brazos a los lados. En los frames 2, 3 y 4, mantiene los brazos cruzados a la altura del pecho. En el frame 5, levanta el brazo derecho flexionado hacia adelante y arriba con la mano entreabierta, mientras el brazo izquierdo se mantiene doblado cerca del abdomen. En el frame 6, vuelve a una postura erguida neutra con los brazos a los lados.",
+        "interpretacion": "La secuencia sugiere una pose de observacion o espera en la que el personaje se cruza de brazos y posteriormente realiza un gesto o inspeccion visual elevada, posiblemente observando o sosteniendo un elemento no presente en el entorno vacio.",
+        "etiquetas": [
+          "de pie",
+          "brazos cruzados",
+          "inspeccion",
+          "gesto",
+          "espera"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Poses casi identicas entre los frames 2, 3 y 4.",
+          "Ausencia de objetos o elementos de entorno interactivos para contextualizar el gesto del frame 5."
+        ]
+      }
+    },
+    "STAND:4:ped:roadcross_gang": {
+      "categoria": "STAND",
+      "idx": 4,
+      "anim": "roadcross_gang",
+      "lib": "ped",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "En el frame 1, el NPC permanece de pie con los brazos hacia abajo y la vista al frente. Los frames 2 y 3 no muestran al personaje. En los frames 4 y 5, el NPC mantiene la misma postura corporal pero gira suavemente la cabeza hacia su izquierda. En el frame 6, la cabeza vuelve a orientarse hacia el frente.",
+        "interpretacion": "El personaje permanece de pie en estado de reposo mientras gira la cabeza de un lado a otro para observar su entorno.",
+        "etiquetas": [
+          "de pie",
+          "girar cabeza",
+          "mirar a los lados",
+          "postura estatica",
+          "observar"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [
+          2,
+          3
+        ],
+        "limitaciones": [
+          "Frames 2 y 3 completamente oscurecidos sin presencia del NPC.",
+          "Movimientos muy sutiles entre poses utiles centrados unicamente en la rotacion de la cabeza."
+        ]
+      }
+    },
+    "STAND:5:ped:roadcross_old": {
+      "categoria": "STAND",
+      "idx": 5,
+      "anim": "roadcross_old",
+      "lib": "ped",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "El personaje masculino permanece de pie con las piernas ligeramente abiertas y los brazos caidos a los lados del torso. Durante toda la secuencia, la postura corporal se mantiene practicamente estatica mientras se aprecian giros sutiles de la cabeza hacia la derecha, izquierda y al frente.",
+        "interpretacion": "El NPC se encuentra de pie observando a su alrededor o mirando a ambos lados antes de cruzar una via.",
+        "etiquetas": [
+          "de pie",
+          "mirar a los lados",
+          "esperar",
+          "observar",
+          "estatico"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Las poses son casi identicas entre si, mostrando solo variaciones sutiles en la orientacion de la cabeza",
+          "El bloqueo de desplazamiento impide verificar movimiento real o zancada"
+        ]
+      }
+    },
+    "STAND:6:ped:XPRESSscratch": {
+      "categoria": "STAND",
+      "idx": 6,
+      "anim": "XPRESSscratch",
+      "lib": "ped",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "El personaje permanece de pie en posicion erguida con las piernas separadas a la anchura de los hombros y los brazos caidos a los lados del torso. Durante los seis frames, la postura general se mantiene casi identica, apreciandose unicamente leves giros de la cabeza hacia la izquierda, derecha y al frente.",
+        "interpretacion": "Postura de espera o estado inactivo (idle). A pesar del nombre tecnico de la animacion, no se observa evidencia visual clara de un gesto de rascado en los frames mostrados.",
+        "etiquetas": [
+          "de pie",
+          "posicion inactiva",
+          "espera",
+          "giro de cabeza"
+        ],
+        "confianza": "baja",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Poses casi identicas entre frames",
+          "La distancia de la camara dificulta apreciar detalles o movimientos corporales sutiles"
+        ]
+      }
+    },
+    "STAND:7:bar:Barcustom_loop": {
+      "categoria": "STAND",
+      "idx": 7,
+      "anim": "Barcustom_loop",
+      "lib": "bar",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie en postura erguida y neutra, orientado hacia el frente. Mantiene los brazos caidos a los lados del torso y ambos pies firmes sobre la superficie. A lo largo de la secuencia de frames 1 a 6, la posicion corporal del personaje apenas muestra variacion visible.",
+        "interpretacion": "Postura de espera de pie o reposo estatico. Podria tratarse de una pose de cliente frente a una barra o mostrador, aunque no hay objetos presentes.",
+        "etiquetas": [
+          "de pie",
+          "postura estatica",
+          "espera",
+          "pose neutra"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Poses casi identicas a lo largo de toda la secuencia",
+          "Falta de elementos contextuales o de apoyo en la escena"
+        ]
+      }
+    },
+    "STAND:8:bar:BARman_idle": {
+      "categoria": "STAND",
+      "idx": 8,
+      "anim": "BARman_idle",
+      "lib": "bar",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "Un NPC masculino adulto viste chaqueta oscura, sudadera y pantalones claros. En el frame 1 permanece de pie en postura erguida con las manos en las caderas. En los frames 2 a 5 inclina el torso hacia adelante y de lado con los brazos flexionados en el aire. En el frame 6 se incorpora a una postura erguida con los brazos al frente.",
+        "interpretacion": "Posible postura inactiva de camarero o barman reposando sobre una barra o mostrador inexistente.",
+        "etiquetas": [
+          "de pie",
+          "inclinado",
+          "camarero",
+          "barman",
+          "reposo"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Falta de objeto de apoyo visible (parece apoyarse sobre una barra invisible)",
+          "Poses casi identicas entre los frames 3, 4 y 5"
+        ]
+      }
+    },
+    "STAND:9:bar:Barserve_in": {
+      "categoria": "STAND",
+      "idx": 9,
+      "anim": "Barserve_in",
+      "lib": "bar",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "El NPC masculino comienza de pie erguido con ambos brazos a los lados (frames 1 y 2). A partir del frame 3, levanta su brazo derecho flexionándolo hacia adelante y al costado, mientras lleva su mano izquierda hacia la zona de la cadera. En los frames 4, 5 y 6 mantiene el brazo derecho extendido hacia el frente/lado con la palma orientada hacia abajo y la mano izquierda apoyada en la cintura. Las poses de los frames 5 y 6 son practicamente idénticas.",
+        "interpretacion": "Posible acción de acercarse o apoyar el brazo sobre un mostrador/barra para atender o servir a alguien, o realizar un gesto de entrega/atención sin objetos presentes.",
+        "etiquetas": [
+          "de pie",
+          "brazo extendido",
+          "mano en cadera",
+          "gesto"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Falta de apoyos u objetos visibles (como una barra o vaso) con los que interactuar",
+          "Poses casi idénticas en los frames 5 y 6"
+        ]
+      }
+    },
+    "STAND:10:bar:Barserve_loop": {
+      "categoria": "STAND",
+      "idx": 10,
+      "anim": "Barserve_loop",
+      "lib": "bar",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie con la mano izquierda apoyada sobre la cadera. Su brazo derecho permanece extendido hacia el frente y a la altura de la cintura, mostrando sutiles cambios en la orientacion de la mano entre cada cuadro. No se observa ninguna superficie ni objeto de apoyo interactuando con la mano derecha.",
+        "interpretacion": "La postura es compatible con la accion de limpiar una barra o servir bebidas sobre un mostrador no visible, aunque tambien podria corresponder a una gesticulacion o interaccion con un elemento ausente.",
+        "etiquetas": [
+          "de pie",
+          "mano en cadera",
+          "gesticular",
+          "servir",
+          "limpiar"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Falta de objetos o superficies de apoyo visibles para la mano derecha",
+          "Las poses a lo largo de la secuencia son extremadamente similares"
+        ]
+      }
+    },
+    "STAND:11:BD_FIRE:BD_Panic_01": {
+      "categoria": "STAND",
+      "idx": 11,
+      "anim": "BD_Panic_01",
+      "lib": "BD_FIRE",
+      "modelo": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "analisis": {
+        "descripcion_visual": "NPC adulto masculino de pie sobre una carretera. Lleva chaqueta gris, pantalones beige y zapatos oscuros. En el frame 1 no hay NPC visible (fondo azul). En el frame 2 tiene los brazos a los costados con las manos cerca de la cintura. En el frame 3 levanta el brazo derecho llevando la mano cerca de la frente. En el frame 4 eleva el brazo derecho con la palma abierta hacia arriba. En el frame 5 mantiene el brazo derecho elevado alto. En el frame 6 extiende el brazo derecho lateralmente hacia la derecha.",
+        "interpretacion": "Secuencia de animación de pie que parece mostrar gestos de pánico, señalamiento o llamado de atención, comenzando con postura neutra y progresando a movimientos de brazos hacia la cabeza y hacia los lados.",
+        "etiquetas": [
+          "panico",
+          "senalamiento",
+          "mano_cabeza",
+          "brazo_extendido",
+          "parado"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [
+          1
+        ],
+        "limitaciones": [
+          "Frame 1 no contiene NPC y se descarta",
+          "No se puede determinar velocidad ni desplazamiento real porque el capturador bloquea movimiento XY"
+        ]
+      }
+    },
+    "STAND:12:BD_FIRE:BD_Panic_02": {
+      "categoria": "STAND",
+      "idx": 12,
+      "anim": "BD_Panic_02",
+      "lib": "BD_FIRE",
+      "modelo": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "analisis": {
+        "descripcion_visual": "NPC adulto masculino de pie sobre asfalto. Lleva chaqueta vaquera clara sobre sudadera con capucha blanca, pantalones caqui holgados, cinturón marrón y zapatos oscuros con detalles blancos. Pelo negro corto. En los frames 1 y 6 está de pie con el torso frontal y brazos relajados a los lados. En los frames 2, 3, 4 y 5 el torso está inclinado hacia adelante y la cabeza gira hacia la derecha, con los brazos ligeramente separados del cuerpo. No se ven otros personajes, vehículos ni objetos relevantes en el primer plano.",
+        "interpretacion": "Posible animación de pánico, nerviosismo o alerta leve, coherente con la pista técnica BD_Panic_02. Las poses 2 a 5 son casi idénticas, lo que sugiere una pausa o movimiento muy sutil entre frames capturados.",
+        "etiquetas": [
+          "panic",
+          "nervioso",
+          "pie",
+          "torso_inclinado",
+          "cabeza_girada"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "No se puede inferir velocidad, duración ni desplazamiento real porque el capturador pausa y bloquea el movimiento XY.",
+          "Las poses 2, 3, 4 y 5 son casi iguales, por lo que varias acciones son plausibles o la animación podría ser un bucle muy corto.",
+          "No se ven apoyos adicionales; el NPC está de pie sobre ambas piernas."
+        ]
+      }
+    },
+    "STAND:13:BD_FIRE:BD_Panic_03": {
+      "categoria": "STAND",
+      "idx": 13,
+      "anim": "BD_Panic_03",
+      "lib": "BD_FIRE",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "Un NPC masculino de pie realiza una serie de posiciones de brazos. En el primer frame mantiene los brazos flexionados frente al pecho. En los frames 2, 3 y 4 eleva ambas manos alrededor o por encima de la cabeza con los codos doblados. En el quinto frame extiende los brazos levantados mas hacia arriba y afuera, y en el sexto frame desciende los brazos extendidos hacia los costados del torso.",
+        "interpretacion": "La postura sugiere una reaccion de panico, alarma o rendicion, en la que el personaje se cubre o alza las manos en respuesta a una amenaza o peligro situacional.",
+        "etiquetas": [
+          "panico",
+          "brazos_arriba",
+          "alarma",
+          "gesto",
+          "de_pie"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Frames 2, 3 y 4 muestran posturas casi idénticas con los brazos junto a la cabeza",
+          "Multiples interpretaciones posibles del gesto (panico, proteccion o rendicion)"
+        ]
+      }
+    },
+    "STAND:14:BD_FIRE:BD_Panic_04": {
+      "categoria": "STAND",
+      "idx": 14,
+      "anim": "BD_Panic_04",
+      "lib": "BD_FIRE",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "El personaje se encuentra de pie. En el frame 1 esta orientado hacia el frente con los brazos ligeramente abiertos hacia abajo. En los frames 2, 3 y 4 gira el torso y la cabeza hacia su izquierda para mirar hacia atras, manteniendo los brazos flexionados a los lados. En los frames 5 y 6 regresa a la posicion inicial orientado hacia el frente.",
+        "interpretacion": "Posible accion de girarse repentinamente para mirar hacia atras o inspeccionar el entorno con desconfianza o alerta mientras permanece en el mismo sitio.",
+        "etiquetas": [
+          "de pie",
+          "girar",
+          "mirar atras",
+          "alerta",
+          "panico"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Las poses de los frames 2, 3 y 4 son muy parecidas entre si",
+          "Las poses de los frames 1, 5 y 6 son casi identicas",
+          "El desplazamiento XY esta bloqueado por la herramienta de captura"
+        ]
+      }
+    },
+    "STAND:15:BD_FIRE:BD_Panic_Loop": {
+      "categoria": "STAND",
+      "idx": 15,
+      "anim": "BD_Panic_Loop",
+      "lib": "BD_FIRE",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "En los frames útiles (2, 3, 5 y 6), un NPC masculino adulto viste chaqueta oscura y pantalones claros, permaneciendo de pie con las piernas ligeramente separadas. Mantiene ambos brazos algo alejados del torso y flexionados hacia abajo/los lados, alternando leves giros e inclinaciones de la cabeza y ajustes sutiles en la posición de los brazos. Los frames 1 y 4 carecen de personaje.",
+        "interpretacion": "El personaje muestra una postura de inquietud, alerta o reacción de pánico leve estando de pie, reajustando la posición del torso y la mirada.",
+        "etiquetas": [
+          "de pie",
+          "alerta",
+          "panico",
+          "postura",
+          "adulto"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          2,
+          3,
+          5,
+          6
+        ],
+        "frames_descartados": [
+          1,
+          4
+        ],
+        "limitaciones": [
+          "Los frames 1 y 4 están totalmente vacíos o corruptos",
+          "Las poses en los frames útiles presentan diferencias muy sutiles entre sí"
+        ]
+      }
+    },
+    "STAND:16:BD_FIRE:M_smklean_loop": {
+      "categoria": "STAND",
+      "idx": 16,
+      "anim": "M_smklean_loop",
+      "lib": "BD_FIRE",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "Un NPC adulto de tez oscura vistiendo chaqueta de mezclilla y pantalones beige se encuentra de pie, inclinado ligeramente hacia su costado derecho con el cuerpo ladeado. En los diferentes frames, su mano derecha realiza movimientos cortos cambiando de altura desde la boca/rostro (frame 1 y 6) hasta el pecho y abdomen (frames 2, 3, 4 y 5), mientras el brazo izquierdo cuelga relajado junto al torso.",
+        "interpretacion": "La postura inclinada sugiere un estado de descanso apoyado sobre una superficie que no está presente en el plano, mientras realiza gestos con la mano derecha compatibles con la acción de fumar o llevarse algo al rostro.",
+        "etiquetas": [
+          "de pie",
+          "inclinado",
+          "gesto de mano",
+          "reposo"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Parece faltar una estructura vertical o pared de apoyo para justificar la inclinación del personaje.",
+          "La distancia de la cámara dificulta apreciar si sostiene algún objeto pequeño en la mano."
+        ]
+      }
+    },
+    "STAND:17:car:flag_drop": {
+      "categoria": "STAND",
+      "idx": 17,
+      "anim": "flag_drop",
+      "lib": "car",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie frente a la camara. En el frame 1 inicia la elevacion de su brazo izquierdo. En los frames 2, 3, 4 y 5 mantiene el brazo izquierdo extendido verticalmente por encima de su cabeza con la mano apuntando hacia arriba. En el frame 6 baja el brazo y regresa a una postura erguida neutra.",
+        "interpretacion": "El personaje parece estar realizando una senal manual para dar inicio a una carrera o bajando una bandera de salida. La ausencia de un objeto en la mano sugiere que requiere un prop no visible.",
+        "etiquetas": [
+          "brazo levantado",
+          "gesto de inicio",
+          "senal manual",
+          "de pie"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Falta objeto o prop (como una bandera) en la mano",
+          "Poses casi identicas entre los frames 2, 3, 4 y 5"
+        ]
+      }
+    },
+    "STAND:18:CASINO:cards_in": {
+      "categoria": "STAND",
+      "idx": 18,
+      "anim": "cards_in",
+      "lib": "CASINO",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "El personaje permanece de pie orientado hacia la camara durante toda la secuencia. En los frames 1 y 2 mantiene los brazos relajados a los lados. Entre los frames 3 y 6 flexiona progresivamente los codos hacia el frente e inclina levemente la cabeza mirando hacia abajo, acercando las manos entre si hasta juntarlas a la altura de la cintura/abdomen.",
+        "interpretacion": "La pose sugiere la preparacion para sostener o manipular algo frente al torso, como cartas u otro elemento pequeño, o simplemente juntar las manos frente al cuerpo. Al no apreciarse objetos ni una superficie de apoyo frente al personaje, la accion exacta no se puede confirmar del todo.",
+        "etiquetas": [
+          "de pie",
+          "flexion de codos",
+          "juntar manos",
+          "mirar abajo"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Falta de objetos de apoyo o mesa visible para determinar la interaccion exacta",
+          "Distancia de camara que limita la definicion de los dedos y manos"
+        ]
+      }
+    },
+    "STAND:19:CASINO:cards_loop": {
+      "categoria": "STAND",
+      "idx": 19,
+      "anim": "cards_loop",
+      "lib": "CASINO",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "El NPC permanece de pie con las piernas ligeramente separadas y los pies firmes sobre la superficie. Mantiene las manos unidas a la altura del pecho o abdomen en todos los fotogramas. En los fotogramas 2 y 3 se aprecia una leve inclinacion de la cabeza hacia abajo mirando sus manos, mientras que en los fotogramas 1, 4, 5 y 6 la cabeza se mantiene erguida mirando hacia al frente.",
+        "interpretacion": "La postura sugiere una pose en reposo o la manipulacion de un objeto inexistente entre las manos (como naipes), posiblemente diseñada para estar frente a una mesa o croupier. La falta de objetos visibles deja la accion exacta como no determinable.",
+        "etiquetas": [
+          "de pie",
+          "manos juntas",
+          "estatico",
+          "esperando"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Poses casi identicas entre frames con variaciones de movimiento muy sutiles",
+          "Distancia de la camara al NPC dificulta la observacion detallada de las manos",
+          "Posible falta de apoyos u objetos interactivos (mesa o cartas) en el entorno"
+        ]
+      }
+    },
+    "STAND:20:CASINO:cards_lose": {
+      "categoria": "STAND",
+      "idx": 20,
+      "anim": "cards_lose",
+      "lib": "CASINO",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie, realizando movimientos sutiles con los brazos. En el frame 1, tiene el brazo izquierdo extendido hacia un lado. En el frame 2, el brazo izquierdo se eleva hacia arriba. En los frames 3 al 6, los brazos regresan a una posición cercana al torso, con las manos cerca de la cintura o los bolsillos, manteniendo una postura erguida.",
+        "interpretacion": "El NPC parece estar gesticulando, posiblemente expresando frustración o decepción, consistente con una reacción tras perder en un juego de cartas.",
+        "etiquetas": [
+          "gesticulando",
+          "decepcion",
+          "frustracion",
+          "postura-erguida"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la animacion es sutil y los cambios entre frames son pequeños"
+        ]
+      }
+    },
+    "STAND:21:CASINO:cards_out": {
+      "categoria": "STAND",
+      "idx": 21,
+      "anim": "cards_out",
+      "lib": "CASINO",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie en una postura erguida. En los frames 1 a 3, mantiene las manos juntas frente al pecho o abdomen. A partir del frame 4, baja los brazos hacia los costados, quedando en una posición de reposo con los brazos extendidos hacia abajo.",
+        "interpretacion": "El NPC parece estar realizando un gesto de espera o preparación, posiblemente sosteniendo algo invisible o simplemente ajustándose la ropa, para luego relajar los brazos a una posición neutral.",
+        "etiquetas": [
+          "espera",
+          "reposo",
+          "postura neutral",
+          "manos juntas"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "los objetos que supuestamente sostiene la animación no son visibles",
+          "la transición de manos juntas a brazos caídos es sutil"
+        ]
+      }
+    },
+    "STAND:22:CASINO:Roulette_in": {
+      "categoria": "STAND",
+      "idx": 22,
+      "anim": "Roulette_in",
+      "lib": "CASINO",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto de pie. En los frames 1 a 3, mantiene los brazos ligeramente separados del cuerpo. A partir del frame 4, comienza a flexionar los codos y a llevar las manos hacia la zona de la cintura o caderas, culminando en el frame 6 con las manos apoyadas sobre los costados de la cintura.",
+        "interpretacion": "El NPC realiza un movimiento de transición desde una postura relajada hacia una posición de descanso con las manos en la cintura, posiblemente ajustándose la ropa o adoptando una postura de espera.",
+        "etiquetas": [
+          "espera",
+          "manos en cintura",
+          "postura relajada",
+          "ajuste"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la secuencia muestra un movimiento sutil de brazos que podría ser parte de una animación más larga"
+        ]
+      }
+    },
+    "STAND:23:CASINO:Roulette_loop": {
+      "categoria": "STAND",
+      "idx": 23,
+      "anim": "Roulette_loop",
+      "lib": "CASINO",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie, con las manos apoyadas en la cintura y los codos ligeramente flexionados hacia afuera. La cabeza está inclinada hacia abajo, mirando hacia el suelo o hacia su propio torso. La postura es estática y simétrica en todos los frames analizados.",
+        "interpretacion": "El NPC parece estar en una postura de espera, descanso o reflexión. La inclinación de la cabeza sugiere que está observando algo a sus pies o simplemente manteniendo una actitud pasiva.",
+        "etiquetas": [
+          "espera",
+          "descanso",
+          "manos_en_cintura",
+          "mirada_baja"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La animación es extremadamente sutil o estática, por lo que no se aprecian cambios significativos entre frames.",
+          "No hay objetos visibles que justifiquen la postura de las manos."
+        ]
+      }
+    },
+    "STAND:24:CASINO:Roulette_out": {
+      "categoria": "STAND",
+      "idx": 24,
+      "anim": "Roulette_out",
+      "lib": "CASINO",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie, con el torso ligeramente inclinado hacia adelante y la mirada dirigida hacia abajo en los primeros frames. Los brazos cuelgan a los costados del cuerpo con una ligera flexión en los codos. A medida que avanza la secuencia, el NPC endereza gradualmente la espalda y levanta la cabeza hasta quedar en una postura erguida y neutra.",
+        "interpretacion": "El NPC parece estar realizando un movimiento de transición desde una postura de descanso o introspección hacia una posición de alerta o espera activa. La secuencia muestra un cambio de actitud corporal de relajada a atenta.",
+        "etiquetas": [
+          "erguirse",
+          "postura neutra",
+          "espera",
+          "transicion"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La secuencia muestra cambios sutiles en la inclinación del torso y la cabeza, lo que dificulta distinguir variaciones significativas entre frames intermedios."
+        ]
+      }
+    },
+    "STAND:25:CASINO:Slot_wait": {
+      "categoria": "STAND",
+      "idx": 25,
+      "anim": "Slot_wait",
+      "lib": "CASINO",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie en una postura estática. Mantiene los brazos ligeramente separados del cuerpo, con las manos orientadas hacia abajo y hacia adelante. La mirada está dirigida hacia el frente. No se observan cambios significativos en la posición de las extremidades o el torso a lo largo de los seis frames.",
+        "interpretacion": "El NPC parece estar en una pose de espera o reposo, sin realizar ninguna acción específica o movimiento perceptible en esta secuencia.",
+        "etiquetas": [
+          "espera",
+          "reposo",
+          "estatico"
+        ],
+        "confianza": "alta",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La secuencia muestra una pose prácticamente idéntica en todos los frames, lo que sugiere que no hay una animación activa o que el movimiento es imperceptible.",
+          "La falta de variación entre frames hace difícil confirmar si se trata de una animación de espera o simplemente una pose fija."
+        ]
+      }
+    },
+    "STAND:26:CLOTHES:CLO_Buy": {
+      "categoria": "STAND",
+      "idx": 26,
+      "anim": "CLO_Buy",
+      "lib": "CLOTHES",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie, orientado hacia la derecha. En el frame 1, tiene los brazos relajados a los costados. En los frames 2 y 3, extiende el brazo derecho hacia adelante con la palma abierta, como si señalara o interactuara con algo invisible. En los frames 4, 5 y 6, el brazo vuelve a una posición cercana al cuerpo.",
+        "interpretacion": "El NPC parece estar realizando un gesto de señalar o interactuar con un objeto o interfaz ausente en la escena. La falta de un objeto de apoyo sugiere que la animación está incompleta o descontextualizada.",
+        "etiquetas": [
+          "señalar",
+          "interactuar",
+          "gesto",
+          "espera"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "ausencia de objetos con los que interactuar",
+          "la acción parece incompleta sin el contexto de la tienda",
+          "movimiento sutil entre frames que requiere observación detallada"
+        ]
+      }
+    },
+    "STAND:27:CLOTHES:CLO_Pose_Hat": {
+      "categoria": "STAND",
+      "idx": 27,
+      "anim": "CLO_Pose_Hat",
+      "lib": "CLOTHES",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie, con el cuerpo ligeramente orientado hacia la derecha y la cabeza inclinada hacia abajo, mirando hacia el suelo. Sus brazos cuelgan a los costados del cuerpo con una ligera flexión en los codos. La postura es estática en todos los frames, sin cambios perceptibles en la posición de las extremidades o el torso.",
+        "interpretacion": "El NPC parece estar en una pose de espera o inspección casual, posiblemente revisando su vestimenta o simplemente mirando hacia abajo en un momento de pausa. La falta de movimiento entre frames sugiere una pose fija.",
+        "etiquetas": [
+          "espera",
+          "inspeccion",
+          "estatico",
+          "mirando_al_suelo"
+        ],
+        "confianza": "alta",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La animacion es extremadamente sutil o estatica, lo que hace que todos los frames parezcan identicos.",
+          "No se puede determinar si es una animacion de ciclo o una pose fija debido a la falta de variacion visual."
+        ]
+      }
+    },
+    "STAND:28:CLOTHES:CLO_Pose_Legs": {
+      "categoria": "STAND",
+      "idx": 28,
+      "anim": "CLO_Pose_Legs",
+      "lib": "CLOTHES",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie, con el torso ligeramente inclinado hacia adelante y la cabeza mirando hacia abajo. Sus brazos cuelgan relajados a los costados del cuerpo. Las piernas están posicionadas con una ligera separación, manteniendo una postura estática en todos los frames.",
+        "interpretacion": "El NPC parece estar en una postura de espera o reposo, posiblemente inspeccionando algo en el suelo o simplemente manteniendo una actitud casual y relajada.",
+        "etiquetas": [
+          "espera",
+          "reposo",
+          "mirando_abajo",
+          "postura_casual"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la postura es casi idéntica en todos los frames, lo que sugiere una animación de bucle muy sutil o estática"
+        ]
+      }
+    },
+    "STAND:29:CLOTHES:CLO_Pose_Loop": {
+      "categoria": "STAND",
+      "idx": 29,
+      "anim": "CLO_Pose_Loop",
+      "lib": "CLOTHES",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto con ropa casual (chaqueta oscura y pantalones claros) que permanece de pie en una postura estática. Su cuerpo está orientado hacia la izquierda de la imagen, con la cabeza ligeramente inclinada hacia abajo, mirando hacia el suelo. Los brazos cuelgan a los costados del cuerpo de manera relajada. No se observan cambios significativos en la postura entre los seis frames proporcionados.",
+        "interpretacion": "El NPC parece estar en una pose de espera o reposo, posiblemente esperando a alguien o simplemente observando el suelo. La inmovilidad absoluta en todos los frames sugiere que se trata de una pose estática de bucle.",
+        "etiquetas": [
+          "espera",
+          "reposo",
+          "estatico",
+          "mirando al suelo"
+        ],
+        "confianza": "alta",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La secuencia muestra una pose estática idéntica en todos los frames, lo que impide determinar si es parte de una animación más compleja.",
+          "La falta de movimiento hace que la interpretación sea una inferencia basada en la postura corporal."
+        ]
+      }
+    },
+    "STAND:30:CLOTHES:CLO_Pose_Shoes": {
+      "categoria": "STAND",
+      "idx": 30,
+      "anim": "CLO_Pose_Shoes",
+      "lib": "CLOTHES",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie, ligeramente inclinado hacia adelante, con la cabeza baja mirando hacia abajo. Sus brazos cuelgan a los costados del cuerpo. Las piernas están ligeramente flexionadas y los pies se encuentran en una posición cercana entre sí. No se observan cambios significativos en la postura a través de los frames.",
+        "interpretacion": "El NPC parece estar en una postura de espera, inspeccionando algo en el suelo o simplemente en una actitud de introspección o desinterés. La falta de movimiento entre frames sugiere una pose estática.",
+        "etiquetas": [
+          "espera",
+          "introspeccion",
+          "mirando_suelo",
+          "estatico"
+        ],
+        "confianza": "alta",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La secuencia muestra una pose prácticamente idéntica en todos los frames, lo que sugiere que es una animación estática o un bucle de espera muy sutil.",
+          "No se puede determinar una acción específica más allá de estar de pie debido a la falta de interacción con el entorno."
+        ]
+      }
+    },
+    "STAND:31:CLOTHES:CLO_Pose_Torso": {
+      "categoria": "STAND",
+      "idx": 31,
+      "anim": "CLO_Pose_Torso",
+      "lib": "CLOTHES",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie, con el torso ligeramente inclinado hacia adelante y la cabeza mirando hacia abajo. En los frames 1, 2, 4, 5 y 6, los brazos cuelgan a los costados con variaciones mínimas en la posición de las manos, que parecen estar relajadas o ligeramente extendidas hacia adelante.",
+        "interpretacion": "El NPC parece estar en una postura de espera, inspeccionando algo en el suelo o simplemente manteniendo una actitud pasiva y cabizbaja.",
+        "etiquetas": [
+          "espera",
+          "cabizbajo",
+          "postura relajada",
+          "inspeccionando"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [
+          3
+        ],
+        "limitaciones": [
+          "El frame 3 está corrupto o vacío.",
+          "Las variaciones entre los frames 1, 2, 4, 5 y 6 son muy sutiles, lo que dificulta determinar si es una animación cíclica o una pose estática.",
+          "La falta de contexto ambiental impide confirmar si está interactuando con un objeto invisible."
+        ]
+      }
+    },
+    "STAND:32:CLOTHES:CLO_Pose_Watch": {
+      "categoria": "STAND",
+      "idx": 32,
+      "anim": "CLO_Pose_Watch",
+      "lib": "CLOTHES",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie, orientado hacia la derecha. En el frame 1, tiene los brazos a los costados. En los frames 2, 4, 5 y 6, extiende el brazo derecho hacia adelante con la mano abierta. En el frame 3, el brazo derecho está ligeramente más elevado y la mano parece estar en una posición diferente, posiblemente mirando hacia la palma.",
+        "interpretacion": "El NPC parece estar realizando un gesto de mirar un reloj de pulsera o comprobar la hora, aunque el objeto no es visible. La repetición de la postura sugiere un ciclo de animación de espera.",
+        "etiquetas": [
+          "mirar reloj",
+          "espera",
+          "gesto",
+          "de pie"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "El objeto (reloj) no es visible",
+          "La postura es muy similar entre frames, lo que dificulta distinguir matices del movimiento",
+          "La falta de contexto ambiental hace que la acción sea una inferencia basada en la categoría"
+        ]
+      }
+    },
+    "STAND:33:CRACK:Bbalbat_Idle_01": {
+      "categoria": "STAND",
+      "idx": 33,
+      "anim": "Bbalbat_Idle_01",
+      "lib": "CRACK",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie, con las piernas ligeramente separadas y los brazos a los costados. En los frames 1 y 6, el brazo derecho está flexionado hacia arriba con la mano cerca del hombro. En los frames 2, 3, 4 y 5, el brazo derecho desciende y se mantiene cerca del cuerpo, mientras el NPC mantiene una postura estática y erguida.",
+        "interpretacion": "El NPC parece estar en una postura de espera o reposo, realizando un movimiento sutil y repetitivo de levantar y bajar el brazo derecho, posiblemente gesticulando o ajustándose la ropa.",
+        "etiquetas": [
+          "espera",
+          "reposo",
+          "gesticulacion",
+          "estatico"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la animacion es muy sutil y repetitiva entre frames"
+        ]
+      }
+    },
+    "STAND:34:CRACK:Bbalbat_Idle_02": {
+      "categoria": "STAND",
+      "idx": 34,
+      "anim": "Bbalbat_Idle_02",
+      "lib": "CRACK",
+      "modelo": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "analisis": {
+        "descripcion_visual": "NPC adulto de pie sobre asfalto, piernas separadas al ancho de hombros. Viste chaqueta vaquera gris, sudadera clara con capucha, pantalones caqui holgados y zapatos oscuros. En frames 1, 2, 5 y 6 el brazo derecho está flexionado con la mano cerca de la oreja derecha; el brazo izquierdo cuelga extendido. En frames 3 y 4 ambos brazos están extendidos hacia abajo a los costados. La cabeza varía: en 1, 2, 5 y 6 mira al frente; en 3 está inclinada hacia arriba; en 4 mira al frente ligeramente hacia abajo.",
+        "interpretacion": "Posible gesto de comunicación o ajuste cerca del oído en frames 1, 2, 5 y 6, aunque no se observa dispositivo en la mano. Frames 3 y 4 parecen poses de reposo con observación hacia arriba o al frente.",
+        "etiquetas": [
+          "idle_stand",
+          "mano_cerca_oreja",
+          "mirando_arriba",
+          "brazos_caidos"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "No se confirma objeto en la mano derecha",
+          "Varios frames son casi idénticos (1, 2, 5, 6)",
+          "No se puede determinar si la animación es un bucle"
+        ]
+      }
+    },
+    "STAND:35:DEALER:DEALER_DEAL": {
+      "categoria": "STAND",
+      "idx": 35,
+      "anim": "DEALER_DEAL",
+      "lib": "DEALER",
+      "modelo": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "analisis": {
+        "descripcion_visual": "NPC adulto de pie sobre asfalto. Viste chaqueta tipo denim sobre sudadera con capucha de tono claro, pantalones caqui y calzado oscuro con suela clara. Piernas separadas al ancho de hombros. Brazos flexionados con las manos juntas frente al abdomen. Cabeza orientada ligeramente hacia la derecha.",
+        "interpretacion": "Posible postura de espera o pausa durante una interacción.",
+        "etiquetas": [
+          "de_pie",
+          "manos_juntas",
+          "npc_adulto",
+          "espera"
+        ],
+        "confianza": "alta",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Las poses de los frames 1-3 son casi idénticas",
+          "Las poses de los frames 4-6 son casi idénticas",
+          "No se puede inferir velocidad ni desplazamiento real"
+        ]
+      }
+    },
+    "STAND:36:DEALER:DEALER_IDLE": {
+      "categoria": "STAND",
+      "idx": 36,
+      "anim": "DEALER_IDLE",
+      "lib": "DEALER",
+      "modelo": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "analisis": {
+        "descripcion_visual": "NPC adulto de piel oscura y cabello corto negro. Viste chaqueta tipo denim gris con forro o cuello claro, pantalones caqui largos y calzado oscuro con detalle claro en la suela. Se encuentra de pie sobre superficie pavimentada, pies separados, torso erguido y manos juntas o cruzadas frente al abdomen inferior. Cabeza girada ligeramente hacia su derecha. No se observan objetos en las manos ni apoyos adicionales.",
+        "interpretacion": "Posible estado de espera o reposo (idle). No se observa interacción con objetos ni otros personajes.",
+        "etiquetas": [
+          "idle",
+          "esperando",
+          "manos_cruzadas",
+          "de_pie",
+          "dealer"
+        ],
+        "confianza": "alta",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Las poses de los seis frames son casi idénticas; no se puede determinar si hay movimiento sutil o si es un bucle estático."
+        ]
+      }
+    },
+    "STAND:37:food:EAT_Burger": {
+      "categoria": "STAND",
+      "idx": 37,
+      "anim": "EAT_Burger",
+      "lib": "food",
+      "modelo": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "analisis": {
+        "descripcion_visual": "NPC adulto de pie sobre pavimento. Viste chaqueta vaquera abierta, sudadera con capucha clara, pantalones caqui y zapatillas oscuras. El brazo derecho está doblado con la mano cerca de la boca o barbilla. El brazo izquierdo cuelga junto al cuerpo.",
+        "interpretacion": "Posiblemente llevando un objeto a la boca para comer o masticando.",
+        "etiquetas": [
+          "comer",
+          "pie",
+          "mano_a_boca"
+        ],
+        "confianza": "media",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "No se ve claramente el objeto en la mano",
+          "Poses 3 y 4 son casi idénticas"
+        ]
+      }
+    },
+    "STAND:38:food:EAT_Chicken": {
+      "categoria": "STAND",
+      "idx": 38,
+      "anim": "EAT_Chicken",
+      "lib": "food",
+      "modelo": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "analisis": {
+        "descripcion_visual": "NPC adulto de pie sobre superficie de asfalto. Viste chaqueta oscura, sudadera con capucha clara, pantalones caqui y zapatos oscuros. En el frame 1, el brazo derecho esta flexionado con la mano cerca de la boca. En el frame 2, el brazo derecho esta extendido hacia adelante y la derecha con la mano abierta. En los frames 3, 5 y 6, la mano derecha esta cerca del pecho o estomago. En el frame 4, la mano derecha vuelve a estar cerca de la boca.",
+        "interpretacion": "Secuencia de animacion de alimentacion (comer pollo). El NPC lleva la mano a la boca, extiende el brazo posiblemente para desechar un hueso o gesticular, y mantiene la mano cerca del torso entre mordiscos.",
+        "etiquetas": [
+          "comer",
+          "pollo",
+          "mano_boca",
+          "extender_brazo",
+          "mano_pecho"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "No se ve el objeto (pollo) con claridad en la mano, solo se infiere por la animacion y categoria",
+          "Las poses en frames 3, 5 y 6 son casi identicas, al igual que 1 y 4, sugiriendo un bucle o pausa en la animacion"
+        ]
+      }
+    },
+    "STAND:39:food:EAT_Pizza": {
+      "categoria": "STAND",
+      "idx": 39,
+      "anim": "EAT_Pizza",
+      "lib": "food",
+      "modelo": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "analisis": {
+        "descripcion_visual": "NPC adulto de pie sobre asfalto. Viste chaqueta vaquera sobre sudadera con capucha y pantalones caqui. Brazo derecho elevado con la mano cerca de la boca. Brazo izquierdo extendido hacia abajo junto al cuerpo.",
+        "interpretacion": "Posible acción de comer llevando alimento a la boca.",
+        "etiquetas": [
+          "comer",
+          "mano_boca",
+          "parado"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Poses muy similares entre frames, dificultad para distinguir progresión del movimiento sin video."
+        ]
+      }
+    },
+    "STAND:40:food:EAT_Vomit_P": {
+      "categoria": "STAND",
+      "idx": 40,
+      "anim": "EAT_Vomit_P",
+      "lib": "food",
+      "modelo": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "analisis": {
+        "descripcion_visual": "NPC adulto de pie sobre asfalto, viste chaqueta vaquera sobre sudadera con capucha y pantalones caqui. En el frame 1 está de frente con brazos ligeramente separados. En frames 2 y 3 gira de perfil y lleva la mano derecha a la boca. En frames 4 y 5 inclina el torso hacia adelante hasta casi quedar paralelo al suelo, con cabeza baja y brazos colgando. En el frame 6 regresa a posición erguida de frente.",
+        "interpretacion": "Secuencia de malestar o vómito: inicia de pie, lleva mano a la boca, se inclina hacia adelante como si fuera a vomitar y finalmente se recupera a posición erguida.",
+        "etiquetas": [
+          "vomitar",
+          "malestar",
+          "comer",
+          "pie",
+          "inclinarse"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": []
+      }
+    },
+    "STAND:41:food:EAT_Vomit_SK": {
+      "categoria": "STAND",
+      "idx": 41,
+      "anim": "EAT_Vomit_SK",
+      "lib": "food",
+      "modelo": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "analisis": {
+        "descripcion_visual": "NPC adulto de pie sobre superficie pavimentada. Viste chaqueta vaquera, camisa clara, pantalones caqui y zapatos oscuros. En frames 1, 2, 5 y 6 mantiene los brazos extendidos hacia abajo y ligeramente separados del tronco, piernas separadas al ancho de los hombros y cabeza erguida mirando al frente. En frame 3 eleva ambas manos hacia la boca con codos flexionados hacia afuera. En frame 4 lleva las manos cerca del pecho y cuello, con el torso ligeramente inclinado hacia adelante y la cabeza baja. No se observan objetos en las manos ni apoyos adicionales; el NPC está apoyado únicamente sobre sus pies.",
+        "interpretacion": "Secuencia que sugiere una acción de llevar algo a la boca seguida de una reacción de malestar o náusea, coherente con la pista de animacion proporcionada (EAT_Vomit_SK), aunque visualmente no se confirma la presencia de alimento ni el acto de vomitar.",
+        "etiquetas": [
+          "comer",
+          "vomitar",
+          "malestar",
+          "pie",
+          "estandar"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Frames 1, 2, 5 y 6 son poses casi idénticas, lo que dificulta distinguir progreso temporal entre ellos.",
+          "Frame 4 admite varias interpretaciones plausibles (tos, ahogo, vómito) sin evidencia visual definitiva.",
+          "No se infiere velocidad, duracion, desplazamiento real ni si la animacion original es un bucle."
+        ]
+      }
+    },
+    "STAND:42:ped:phone_in": {
+      "categoria": "STAND",
+      "idx": 42,
+      "anim": "phone_in",
+      "lib": "ped",
+      "modelo": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "analisis": {
+        "descripcion_visual": "NPC adulto de pie sobre asfalto. Viste chaqueta vaquera, sudadera con capucha, pantalones caqui y zapatillas. Fondo verde oscuro y texto de menu superior ignorados.",
+        "interpretacion": "Secuencia de animacion de pie que progresa de reposo a gesto de telefono.",
+        "etiquetas": [
+          "standing",
+          "idle",
+          "hand_on_hip",
+          "hand_to_chest",
+          "phone_gesture"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "No se ve objeto telefono claramente, solo la posicion de la mano cerca del oido en el frame 6.",
+          "Frames 2 y 3 son casi identicos. Frames 4 y 5 son muy similares."
+        ]
+      }
+    },
+    "STAND:43:ped:phone_out": {
+      "categoria": "STAND",
+      "idx": 43,
+      "anim": "phone_out",
+      "lib": "ped",
+      "modelo": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "analisis": {
+        "descripcion_visual": "NPC adulto de pie frente a la cámara, vestido con chaqueta vaquera oscura, sudadera con capucha gris, pantalones caqui y zapatos oscuros. En el frame 1 la mano derecha está elevada cerca de la oreja derecha. En el frame 2 la mano derecha está extendida hacia adelante a la altura del pecho. En el frame 3 la mano derecha está sobre el pecho o estómago. En el frame 4 la mano derecha está apoyada en la cadera derecha. En los frames 5 y 6 ambos brazos cuelgan a los lados del cuerpo y las piernas están separadas. No se visualiza claramente un objeto en las manos. El fondo es una carretera con cielo verde oscuro y hay texto de menú en la parte superior, ignorado por instrucción.",
+        "interpretacion": "Secuencia de pie con cambios de posición de brazos; posible gesto de sostener algo cerca del oído, manipulación frente al cuerpo, ajuste de prenda, mano en cadera y postura relajada final. La categoría 'phone_out' es solo una pista y no confirma la presencia de un teléfono.",
+        "etiquetas": [
+          "mano_cerca_oreja",
+          "mano_extendida_frente",
+          "mano_sobre_pecho",
+          "mano_en_cadera",
+          "brazos_relajados",
+          "postura_pie"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "No se ve objeto en las manos a pesar de la animación 'phone_out'",
+          "Frames 5 y 6 son casi idénticos",
+          "No se puede inferir velocidad, duración ni desplazamiento real"
+        ]
+      }
+    },
+    "STAND:44:ped:phone_talk": {
+      "categoria": "STAND",
+      "idx": 44,
+      "anim": "phone_talk",
+      "lib": "ped",
+      "modelo": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "analisis": {
+        "descripcion_visual": "NPC adulto de pie en carretera. Brazo derecho flexionado con mano derecha cerca de la oreja derecha. Brazo izquierdo extendido hacia abajo junto al cuerpo. Pantalones holgados color verde oliva. Chaqueta oscura abierta sobre prenda interior clara. Calzado oscuro con suela clara. No se ve objeto visible en la mano derecha, solo la postura de la mano.",
+        "interpretacion": "Posible accion: conversacion telefonica (sosteniendo telefono en oreja).",
+        "etiquetas": [
+          "stand",
+          "phone_talk",
+          "npc_adulto",
+          "gesto_telefono"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Las poses son casi identicas en todos los frames, no se detecta movimiento significativo entre fases.",
+          "No se confirma la presencia fisica de un telefono, solo la postura de la mano."
+        ]
+      }
+    },
+    "STAND:45:GANGS:DEALER_IDLE": {
+      "categoria": "STAND",
+      "idx": 45,
+      "anim": "DEALER_IDLE",
+      "lib": "GANGS",
+      "modelo": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "analisis": {
+        "descripcion_visual": "NPC adulto de pie en el centro del encuadre. Viste chaqueta vaquera abierta sobre sudadera con capucha clara, pantalones caqui y zapatillas oscuras con suela blanca. Brazos extendidos a los costados, manos relajadas. Pies apoyados en el suelo al ancho de hombros. En los frames se observa leve giro de cabeza hacia la derecha y retorno al frente, sin desplazamiento del cuerpo.",
+        "interpretacion": "Postura de reposo o espera estática (idle). El NPC permanece de pie sin interacción visible con objetos o personajes.",
+        "etiquetas": [
+          "idle",
+          "standing",
+          "npc_adulto",
+          "dealer_idle",
+          "espera"
+        ],
+        "confianza": "alta",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Poses casi idénticas entre frames, movimiento mínimo solo en cabeza",
+          "No se infiere velocidad ni desplazamiento real por ser capturas pausadas"
+        ]
+      }
+    },
+    "STAND:46:GANGS:drnkbr_prtl": {
+      "categoria": "STAND",
+      "idx": 46,
+      "anim": "drnkbr_prtl",
+      "lib": "GANGS",
+      "modelo": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "analisis": {
+        "descripcion_visual": "NPC adulto de pie, de frente, sobre superficie pavimentada. Viste chaqueta vaquera, camisa clara, pantalón caqui y zapatos oscuros. En el frame 1 y 6 tiene los brazos extendidos a los lados del cuerpo con las manos cerca de los muslos. En los frames 2, 3 y 4 eleva el brazo derecho llevando la mano cerca de la boca o barbilla. En el frame 5 lleva la mano derecha hacia el pecho o cuello superior. No se observa ningún objeto en las manos.",
+        "interpretacion": "Secuencia de gesto de pie que comienza y termina en postura de reposo. El movimiento de llevar la mano a la boca podría sugerir beber, toser o un gesto cerca del rostro, pero no se ve botella ni objeto claro. Varias acciones son plausibles.",
+        "etiquetas": [
+          "stand",
+          "mano_a_boca",
+          "gesto_rostro",
+          "reposo",
+          "animacion_pausada"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "No se ve objeto en las manos a pesar del nombre de animacion",
+          "Poses 2, 3 y 4 son casi iguales",
+          "No se puede confirmar si la animacion es bucle"
+        ]
+      }
+    },
+    "STAND:47:GANGS:drnkbr_prtl_F": {
+      "categoria": "STAND",
+      "idx": 47,
+      "anim": "drnkbr_prtl_F",
+      "lib": "GANGS",
+      "modelo": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "analisis": {
+        "descripcion_visual": "NPC adulto de pie frente a la cámara, vestido con chaqueta vaquera sobre sudadera gris y pantalones caqui. En el frame 1 tiene los brazos relajados a los costados. En los frames 2, 3 y 4 eleva el brazo derecho y lleva la mano cerca de la boca, manteniendo una pose casi idéntica en esos tres frames. En el frame 5 desciende el brazo derecho desde la boca hacia el torso. En el frame 6 vuelve a la posición inicial con los brazos a los costados.",
+        "interpretacion": "Secuencia de un gesto hacia la boca, posiblemente ingesta o acción de beber, seguida de retorno a postura de reposo.",
+        "etiquetas": [
+          "de_pie",
+          "mano_a_la_boca",
+          "reposo",
+          "gesto"
+        ],
+        "confianza": "alta",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "No se observa objeto en la mano, solo el gesto hacia la boca",
+          "Frames 2, 3 y 4 son casi idénticos"
+        ]
+      }
+    },
+    "STAND:48:GANGS:leanIDLE": {
+      "categoria": "STAND",
+      "idx": 48,
+      "anim": "leanIDLE",
+      "lib": "GANGS",
+      "modelo": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "analisis": {
+        "descripcion_visual": "NPC masculino adulto de piel oscura y cabello corto negro. Viste chaqueta de mezclilla desabrochada sobre sudadera con capucha de color claro, pantalones caqui largos y zapatillas oscuras con suela clara. Está de pie sobre superficie plana. El brazo derecho está doblado con la mano apoyada en la cadera o muslo derecho; el brazo izquierdo cuelga a un lado del cuerpo. La cabeza está erguida y mira al frente. No se observan otros personajes, vehículos ni objetos interactuando con él.",
+        "interpretacion": "Posible postura de reposo o espera de pie (lean idle). No se puede confirmar movimiento ni intención narrativa a partir de imágenes estáticas.",
+        "etiquetas": [
+          "stand",
+          "lean_idle",
+          "espera",
+          "mano_en_cadera",
+          "reposo"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3
+        ],
+        "frames_descartados": [
+          4,
+          5,
+          6
+        ],
+        "limitaciones": [
+          "Frames 4, 5 y 6 no muestran al NPC (oscuridad o ausencia del modelo).",
+          "Frames 1, 2 y 3 son casi idénticos, por lo que no se puede inferir progresión de animación.",
+          "No se infiere velocidad, desplazamiento ni bucle de animación."
+        ]
+      }
+    },
+    "STAND:49:GANGS:leanIN": {
+      "categoria": "STAND",
+      "idx": 49,
+      "anim": "leanIN",
+      "lib": "GANGS",
+      "modelo": "openrouter:dots-studio/dots-3-note-preview:free",
+      "analisis": {
+        "descripcion_visual": "El NPC central es un hombre adulto de pie, con una chaqueta gris sobre una sudadera con capucha blanca, pantalones caqui y zapatillas oscas. En los frames 1, 2 y 3 se observa en postura erguida con ambos brazos colgando recto a los lados, manos ligeramente abiertas y piernas separadas. En los frames 4, 5 y 6, el brazo izquierdo (derecho del espectador) se dobla, colocando la mano sobre la cadera, mientras el brazo derecho permanece extendido hacia abajo. El cuerpo mantiene una postura vertical y estable durante toda la secuencia.",
+        "interpretacion": "El NPC realiza una transición de pose estática de brazos relajados a una postura con una mano en la cadera, un gesto común de actitud, confianza o espera. Aunque la animación se etiqueta como 'leanIN', visualmente se percibe como un stand con un leve cambio de actitud postural, sin desplazamiento ni interacción con el entorno.",
+        "etiquetas": [
+          "stand",
+          "hand_on_hip",
+          "casual_pose",
+          "lean",
+          "static"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Las poses del grupo 1-3 son casi idénticas entre sí, al igual que las del grupo 4-6.",
+          "No se observa un claro 'inclinarse hacia adelante' (leanIN) sino un gesto de mano en la cadera.",
+          "Falta de apoyos visuales adicionales que definan el contexto de la acción."
+        ]
+      }
+    },
+    "STAND:50:GANGS:leanOUT": {
+      "categoria": "STAND",
+      "idx": 50,
+      "anim": "leanOUT",
+      "lib": "GANGS",
+      "modelo": "openrouter:dots-studio/dots-3-note-preview:free",
+      "analisis": {
+        "descripcion_visual": "NPC central es un masculino adulto de piel oscura, vestido con chaqueta de mezclilla azul/gris sobre capucha, pantalones khaki anchos y zapatillas osuras con suela blanca. Frame 1: pie derecho, mano izquierda sobre la cadera, brazo derecho colgando. Frame 2: brazo izquierdo ligeramente descendido pero con codo still bent, mano derecha colgando. Frame 3: vacío/oscuro, sin NPC visible. Frame 4: brazos ligeramente doblados, manos cerca de la cintura pero sin tocarla, postura simétrica. Frame 5: brazos colgando relajadamente, ligeramente hacia adelante, piernas separadas y relajadas. Frame 6: postura de pie erguida y neutral, brazos colgando naturalmente a los lados.",
+        "interpretacion": "Secuencia de poses estáticas que ilustran una transición de postura de pie (animacion 'leanOUT' de la libreria GANGS), pasando de una actitud segura con mano en la cadera a una postura relajada y de espera con brazos caídos. No hay desplazamiento real ya que las poses estan congeladas por el capturador.",
+        "etiquetas": [
+          "STAND",
+          "leanOUT",
+          "GANGS",
+          "standing_transition",
+          "hand_on_hip",
+          "relaxed_idle"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [
+          3
+        ],
+        "limitaciones": [
+          "Iluminación tenue que dificulta ver detalle de dedos y sombras.",
+          "Los frames 5 y 6 muestran poses casi idénticas, lo que sugiere poca variación en la parte final de la animación.",
+          "No se pueden apoyos adicionales ya que el NPC esta sobre un suelo plano de carretera sin objetos interactivos."
+        ]
+      }
+    },
+    "STAND:51:GANGS:smkcig_prtl": {
+      "categoria": "STAND",
+      "idx": 51,
+      "anim": "smkcig_prtl",
+      "lib": "GANGS",
+      "modelo": "openrouter:nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "analisis": {
+        "descripcion_visual": "NPC standing on road, wearing denim jacket and light pants. Frame 1: neutral stance with arms at sides. Frame 2: right hand raised to face, head tilted upward. Frame 3: same pose as frame 2 with hand near mouth. Frame 4: right hand placed on chest. Frame 5: right hand extended forward. Frame 6: neutral stance with arms at sides.",
+        "interpretacion": "NPC transitions from neutral stance to looking upward, gestures with hand on chest, then points forward, then returns to neutral stance.",
+        "etiquetas": [
+          "STAND",
+          "LOOKING_UP",
+          "GESTURING",
+          "IDLE"
+        ],
+        "confianza": "alta",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Poses 2 and 3 are nearly identical",
+          "Limited visibility of hand movements"
+        ]
+      }
+    },
+    "STAND:52:GANGS:smkcig_prtl_F": {
+      "categoria": "STAND",
+      "idx": 52,
+      "anim": "smkcig_prtl_F",
+      "lib": "GANGS",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "El NPC permanece erguido de pie. En el frame 1 mantiene los brazos al costado del cuerpo. Entre los frames 2 y 3 eleva su mano derecha hacia la zona del rostro y la boca, reclinando ligeramente la cabeza hacia atras. En los frames 4 y 5 la mano derecha desciende hacia la altura del pecho. En el frame 6 retoma la postura erguida inicial con ambos brazos descansando a los lados.",
+        "interpretacion": "La secuencia representa la accion de llevarse la mano a la boca, compatible con fumar un cigarrillo o tocarse la cara.",
+        "etiquetas": [
+          "de pie",
+          "mano a la boca",
+          "gesto",
+          "fumar"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La distancia de la camara impide ver con precision la presencia o ausencia de un objeto pequeño en la mano",
+          "Varias interpretaciones de la accion son plausibles debido a la falta de detalle en los dedos"
+        ]
+      }
+    },
+    "STAND:53:GHETTO_DB:GDB_Car2_SMO": {
+      "categoria": "STAND",
+      "idx": 53,
+      "anim": "GDB_Car2_SMO",
+      "lib": "GHETTO_DB",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie sobre el suelo. En los frames 1 a 4 mantiene una postura erguida con ambas manos cerca de la cintura o cadera y pequenios giros de cabeza. En los frames 5 y 6 levanta y extiende su brazo izquierdo hacia un costado a la altura del pecho, manteniendo la mano abierta.",
+        "interpretacion": "El personaje parece estar de pie realizando gestos de conversacion o preparado para apoyarse en una superficie no presente en la escena, como la ventana de un coche.",
+        "etiquetas": [
+          "de pie",
+          "brazo extendido",
+          "gesticulacion",
+          "estatico"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Ausencia de elementos del entorno u objetos de apoyo para contextualizar la extension del brazo",
+          "Poses entre los frames 1 y 4 son muy parecidas"
+        ]
+      }
+    },
+    "STAND:54:GHETTO_DB:GDB_Car_RYD": {
+      "categoria": "STAND",
+      "idx": 54,
+      "anim": "GDB_Car_RYD",
+      "lib": "GHETTO_DB",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "En los frames 3, 4, 5 y 6, el personaje masculino de pie viste chaqueta gris y pantalones claros. En los frames 3, 5 y 6 mantiene una postura erguida inclinada levemente hacia el frente, con el brazo derecho elevado y doblado cerca del pecho/hombro y el brazo izquierdo cerca de la cintura. En el frame 4 se inclina visiblemente hacia adelante elevando ambas manos juntas a la altura del pecho. Los frames 1 y 2 no muestran al personaje.",
+        "interpretacion": "Gestos corporales y de manos que simulan una postura de conversacion o reaccion desde el interior de un vehiculo, ejecutados de pie al faltar el prop del automovil.",
+        "etiquetas": [
+          "gesticulando",
+          "de pie",
+          "inclinado",
+          "manos elevadas"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [
+          1,
+          2
+        ],
+        "limitaciones": [
+          "Los frames 1 y 2 estan oscuros o desprovistos del personaje.",
+          "Falta el contexto/prop del vehiculo que daria apoyo a la postura corporal."
+        ]
+      }
+    },
+    "STAND:55:GHETTO_DB:GDB_Car_SMO": {
+      "categoria": "STAND",
+      "idx": 55,
+      "anim": "GDB_Car_SMO",
+      "lib": "GHETTO_DB",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie sobre una superficie plana. En los frames 1 y 2, eleva ambas manos hacia la zona del pecho y cuello con el torso erguido. En el frame 3, desciende los brazos hacia la cintura. En los frames 4, 5 y 6, mantiene las manos apoyadas cerca de la cintura o caderas, mientras gira levemente la cabeza para mirar a su alrededor.",
+        "interpretacion": "El personaje parece estar en una pose de espera, posiblemente simula llevarse algo a la boca o ajustarse la ropa antes de colocar las manos en las caderas y observar el entorno.",
+        "etiquetas": [
+          "de pie",
+          "manos en caderas",
+          "espera",
+          "observando"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La distancia de la camara dificulta apreciar si sostiene algun objeto pequeno en las manos.",
+          "Las poses de los frames 4, 5 y 6 presentan variaciones muy sutiles entre si."
+        ]
+      }
+    },
+    "STAND:56:GRAVEYARD:mrnF_loop": {
+      "categoria": "STAND",
+      "idx": 56,
+      "anim": "mrnF_loop",
+      "lib": "GRAVEYARD",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie erguido, con un brazo cruzado sobre el abdomen y la mano del otro brazo apoyada o tocando la zona de la cabeza y la frente. La postura es casi identica a lo largo de toda la secuencia del frame 1 al 6.",
+        "interpretacion": "Posible postura estatica de duelo, lamento, preocupacion o reflexion silenciosa.",
+        "etiquetas": [
+          "de pie",
+          "mano en la cabeza",
+          "duelo",
+          "lamento",
+          "reflexion"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "NPC lejano a la camara, lo que dificulta apreciar la gesticulacion facial",
+          "Las poses son casi identicas en todos los frames de la secuencia"
+        ]
+      }
+    },
+    "STAND:57:GRAVEYARD:mrnM_loop": {
+      "categoria": "STAND",
+      "idx": 57,
+      "anim": "mrnM_loop",
+      "lib": "GRAVEYARD",
+      "modelo": "gemini-3.5-flash",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie con ambos pies apoyados en el suelo, las manos entrecruzadas o juntas a la altura del abdomen inferior y la cabeza levemente inclinada hacia abajo. La postura permanece fija y casi identica en los fotogramas donde esta presente el personaje.",
+        "interpretacion": "Posicion de pie estatica en postura solemne, de respeto, luto o espera.",
+        "etiquetas": [
+          "de pie",
+          "manos juntas",
+          "solemne",
+          "espera"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [
+          2
+        ],
+        "limitaciones": [
+          "El frame 2 no contiene al NPC",
+          "Distancia lejana a la camara",
+          "Poses casi identicas entre los frames utiles"
+        ]
+      }
+    },
+    "STAND:58:GRAVEYARD:prst_loopa": {
+      "categoria": "STAND",
+      "idx": 58,
+      "anim": "prst_loopa",
+      "lib": "GRAVEYARD",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie, con la mirada dirigida hacia abajo. Mantiene ambos brazos flexionados frente a su torso, con las manos entrelazadas o juntas a la altura del abdomen. La postura es estática y simétrica en todos los frames analizados.",
+        "interpretacion": "El NPC parece estar en una actitud de espera, reflexión o duelo, manteniendo una postura de reposo con las manos cruzadas.",
+        "etiquetas": [
+          "espera",
+          "reposo",
+          "manos cruzadas",
+          "mirada baja"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "las poses son prácticamente idénticas entre frames",
+          "no se observa movimiento significativo en la secuencia"
+        ]
+      }
+    },
+    "STAND:59:misc:Hiker_Pose": {
+      "categoria": "STAND",
+      "idx": 59,
+      "anim": "Hiker_Pose",
+      "lib": "misc",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto de pie, con las piernas ligeramente separadas. Mantiene el brazo derecho extendido lateralmente hacia la derecha, con el dedo índice apuntando en esa dirección. El brazo izquierdo cuelga relajado a lo largo del cuerpo. La postura es estática en todos los frames analizados.",
+        "interpretacion": "El NPC parece estar señalando algo o indicando una dirección. La postura es consistente con una acción de señalar o dirigir la atención hacia un punto lateral.",
+        "etiquetas": [
+          "señalando",
+          "apuntando",
+          "de pie",
+          "indicando"
+        ],
+        "confianza": "alta",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La postura es idéntica en todos los frames, lo que sugiere que la animación no presenta variaciones visibles en esta secuencia.",
+          "Se requiere revisión debido a que la inmovilidad total entre frames hace imposible determinar si es una pose única o una animación en bucle."
+        ]
+      }
+    },
+    "STAND:60:misc:Hiker_Pose_L": {
+      "categoria": "STAND",
+      "idx": 60,
+      "anim": "Hiker_Pose_L",
+      "lib": "misc",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie con las piernas ligeramente separadas. Su brazo izquierdo está extendido lateralmente hacia la izquierda, con la mano en una posición que sugiere señalar o indicar algo. El brazo derecho cuelga relajado a lo largo del cuerpo. La postura es estática en todos los frames analizados.",
+        "interpretacion": "El NPC parece estar señalando una dirección o esperando un vehículo, similar a alguien haciendo autostop o indicando un camino. La postura es idéntica en todos los frames, lo que sugiere una pose fija.",
+        "etiquetas": [
+          "señalando",
+          "esperando",
+          "estático",
+          "de pie"
+        ],
+        "confianza": "alta",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La secuencia muestra una pose estática idéntica en todos los frames, por lo que no hay progresión de movimiento.",
+          "Se requiere revisión debido a que la repetición de la misma pose en todos los frames indica que la animación no presenta cambios visibles."
+        ]
+      }
+    },
+    "STAND:61:misc:Plyrlean_loop": {
+      "categoria": "STAND",
+      "idx": 61,
+      "anim": "Plyrlean_loop",
+      "lib": "misc",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra en una postura estática, con las piernas cruzadas y el cuerpo inclinado lateralmente, apoyando su peso sobre una superficie invisible. Su mano derecha está apoyada en su cadera, mientras que el brazo izquierdo cuelga relajado a un costado. La postura es idéntica en todos los frames analizados.",
+        "interpretacion": "El NPC parece estar descansando o esperando, apoyado contra una pared o superficie de soporte que no es visible en la escena. La inmovilidad total sugiere que se trata de una pose de espera predefinida.",
+        "etiquetas": [
+          "esperando",
+          "descansando",
+          "apoyado",
+          "estatico"
+        ],
+        "confianza": "alta",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La postura es idéntica en todos los frames, lo que indica que no hay movimiento visible.",
+          "El soporte sobre el que se apoya el NPC no es visible en la imagen.",
+          "La repetición de la misma pose en todos los frames hace que la secuencia sea redundante."
+        ]
+      }
+    },
+    "STAND:62:misc:Scratchballs_01": {
+      "categoria": "STAND",
+      "idx": 62,
+      "anim": "Scratchballs_01",
+      "lib": "misc",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie en una superficie plana. En los frames 1, 2 y 6, mantiene la cabeza inclinada hacia abajo y la mano derecha cerca de la zona de la cintura o entrepierna. En los frames 3, 4 y 5, el NPC levanta la cabeza mirando hacia el frente o ligeramente a la derecha, mientras mantiene los brazos cerca del cuerpo con una postura relajada.",
+        "interpretacion": "El NPC parece estar realizando un gesto de ajuste de ropa o una acción de rascado en la zona pélvica, alternando entre mirar hacia abajo y hacia el frente. La postura es estática y no sugiere un desplazamiento.",
+        "etiquetas": [
+          "ajustar ropa",
+          "postura de pie",
+          "gesto corporal"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la animacion es sutil y repetitiva",
+          "la interpretacion del gesto es subjetiva"
+        ]
+      }
+    },
+    "STAND:63:ON_LOOKERS:lkaround_in": {
+      "categoria": "STAND",
+      "idx": 63,
+      "anim": "lkaround_in",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto de pie, con el cuerpo orientado hacia el frente y los brazos ligeramente separados del torso. A lo largo de la secuencia, el NPC gira la cabeza y la mirada progresivamente hacia su derecha (nuestra izquierda), manteniendo el resto del cuerpo estático.",
+        "interpretacion": "El NPC parece estar observando su entorno o esperando a alguien, realizando un movimiento de escaneo visual con la cabeza.",
+        "etiquetas": [
+          "observando",
+          "esperando",
+          "giro de cabeza",
+          "estático"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La secuencia muestra un movimiento muy sutil de la cabeza, lo que limita la interpretación a una acción de observación pasiva."
+        ]
+      }
+    },
+    "STAND:64:ON_LOOKERS:lkaround_loop": {
+      "categoria": "STAND",
+      "idx": 64,
+      "anim": "lkaround_loop",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto de pie. En los frames 2, 3, 4 y 6, mantiene un brazo levantado con la mano cerca de la frente o los ojos, como si se protegiera del sol o buscara algo en la distancia. En el frame 5, el brazo está bajado y el NPC mira hacia su derecha.",
+        "interpretacion": "El NPC parece estar observando el entorno o buscando algo en el horizonte, alternando entre una postura de vigilancia con la mano en la frente y una postura de descanso o escaneo visual.",
+        "etiquetas": [
+          "observando",
+          "buscando",
+          "vigilancia",
+          "escaneo"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [
+          1
+        ],
+        "limitaciones": [
+          "El frame 1 es un fondo azul sin NPC visible."
+        ]
+      }
+    },
+    "STAND:65:ON_LOOKERS:lkaround_out": {
+      "categoria": "STAND",
+      "idx": 65,
+      "anim": "lkaround_out",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto de pie, con los brazos ligeramente separados del cuerpo y las manos relajadas. Mantiene una postura estática y erguida en todos los frames útiles, sin cambios perceptibles en la posición de sus extremidades o torso.",
+        "interpretacion": "El NPC se encuentra en una postura de espera o reposo, sin realizar ninguna acción dinámica visible. La falta de variación entre los frames sugiere que la animación está estancada o es una pose fija.",
+        "etiquetas": [
+          "espera",
+          "reposo",
+          "estatico"
+        ],
+        "confianza": "alta",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "frames_descartados": [
+          4
+        ],
+        "limitaciones": [
+          "La secuencia muestra una pose estática sin cambios significativos entre frames, lo que impide identificar una acción de movimiento real.",
+          "El frame 4 está descartado por ser una imagen corrupta o vacía."
+        ]
+      }
+    },
+    "STAND:66:ON_LOOKERS:lkup_in": {
+      "categoria": "STAND",
+      "idx": 66,
+      "anim": "lkup_in",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie en una superficie plana. En el frame 1, mantiene los brazos a los costados. A partir del frame 2, inclina la cabeza hacia arriba. En los frames 4, 5 y 6, levanta el brazo derecho hacia la frente, como si se protegiera del sol o intentara ver algo lejano, mientras el brazo izquierdo permanece ligeramente flexionado hacia afuera.",
+        "interpretacion": "El NPC parece estar mirando hacia arriba o hacia el horizonte, posiblemente buscando algo en el cielo o protegiéndose los ojos de una luz intensa.",
+        "etiquetas": [
+          "mirar_arriba",
+          "protegerse_sol",
+          "observar",
+          "gesto_mano_frente"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la postura de los pies es estática y no muestra desplazamiento"
+        ]
+      }
+    },
+    "STAND:67:ON_LOOKERS:lkup_loop": {
+      "categoria": "STAND",
+      "idx": 67,
+      "anim": "lkup_loop",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto de pie, con el brazo derecho flexionado y la mano colocada sobre la frente, como si estuviera bloqueando la luz solar para mirar hacia arriba. El brazo izquierdo se mantiene ligeramente separado del cuerpo con la mano abierta. La postura es estática en todos los frames.",
+        "interpretacion": "El NPC parece estar observando algo en el cielo o en una posición elevada, protegiéndose los ojos del sol.",
+        "etiquetas": [
+          "observando",
+          "mirando_arriba",
+          "protegiendo_ojos",
+          "de_pie"
+        ],
+        "confianza": "alta",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Las poses son prácticamente idénticas en todos los frames, lo que sugiere una animación de bucle muy sutil o estática.",
+          "No se puede determinar si el NPC está interactuando con un objeto o evento específico fuera de campo."
+        ]
+      }
+    },
+    "STAND:68:ON_LOOKERS:lkup_out": {
+      "categoria": "STAND",
+      "idx": 68,
+      "anim": "lkup_out",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie, con los pies ligeramente separados. En los frames 1, 2 y 4, mantiene el brazo derecho flexionado hacia arriba, con la mano abierta cerca de la frente como si se protegiera del sol o mirara a lo lejos, mientras el brazo izquierdo permanece relajado a un costado. En los frames 5 y 6, ambos brazos están relajados a los costados del cuerpo.",
+        "interpretacion": "El NPC realiza un gesto de cubrirse los ojos para observar algo en la distancia o protegerse de una luz intensa, para luego bajar el brazo y volver a una postura de reposo.",
+        "etiquetas": [
+          "observar",
+          "protegerse_del_sol",
+          "gesto_manual",
+          "de_pie"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [
+          3
+        ],
+        "limitaciones": [
+          "El frame 3 es un error de captura y no muestra al NPC."
+        ]
+      }
+    },
+    "STAND:69:ON_LOOKERS:lkup_point": {
+      "categoria": "STAND",
+      "idx": 69,
+      "anim": "lkup_point",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie, con ambos brazos elevados hacia arriba y hacia afuera. En los frames 1, 5 y 6, tiene las manos abiertas y orientadas hacia arriba. En los frames 2, 3 y 4, las manos se acercan más hacia la zona de la cabeza o el rostro, con los codos flexionados.",
+        "interpretacion": "El NPC parece estar realizando un gesto de señalar hacia el cielo, observar algo en las alturas o realizar una exclamación gestual. La postura es consistente con una acción de mirar hacia arriba.",
+        "etiquetas": [
+          "señalar",
+          "mirar_arriba",
+          "gesticulando",
+          "observar"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la animacion es repetitiva en sus poses",
+          "no hay objetos externos que justifiquen la direccion de la mirada"
+        ]
+      }
+    },
+    "STAND:70:ON_LOOKERS:panic_cower": {
+      "categoria": "STAND",
+      "idx": 70,
+      "anim": "panic_cower",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie, alternando entre llevarse la mano derecha a la frente o a la cara, mientras mantiene el brazo izquierdo flexionado con la mano cerca de la cintura. Las piernas están ligeramente separadas y flexionadas en una postura de tensión.",
+        "interpretacion": "El NPC parece estar realizando un gesto de angustia, preocupación o protección ante una amenaza percibida, cubriéndose el rostro o la frente de forma repetitiva.",
+        "etiquetas": [
+          "angustia",
+          "preocupacion",
+          "gesto",
+          "proteccion",
+          "tensa"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la animacion es repetitiva y los cambios entre frames son sutiles"
+        ]
+      }
+    },
+    "STAND:71:ON_LOOKERS:panic_hide": {
+      "categoria": "STAND",
+      "idx": 71,
+      "anim": "panic_hide",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie, realizando movimientos repetitivos con los brazos. En los frames 1, 3 y 5, mantiene ambas manos juntas frente a su rostro o frente, con los codos flexionados. En los frames 2, 4 y 6, las manos descienden ligeramente hacia la zona de la boca o el cuello, manteniendo una postura de flexión en las rodillas y una ligera inclinación del torso.",
+        "interpretacion": "El NPC parece estar realizando un gesto de cubrirse el rostro o protegerse, posiblemente expresando angustia, miedo o una reacción defensiva ante un evento externo. La postura encorvada refuerza la idea de una actitud de ocultamiento o protección personal.",
+        "etiquetas": [
+          "proteccion",
+          "angustia",
+          "gesto",
+          "defensivo",
+          "miedo"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La secuencia muestra un ciclo de movimiento repetitivo entre dos posiciones principales de las manos.",
+          "No hay objetos externos visibles que justifiquen la acción de ocultarse."
+        ]
+      }
+    },
+    "STAND:72:ON_LOOKERS:panic_in": {
+      "categoria": "STAND",
+      "idx": 72,
+      "anim": "panic_in",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie sobre una superficie plana. En el frame 1, mantiene una postura erguida con los brazos a los costados. En el frame 2, eleva el brazo derecho hacia el frente. En los frames 4, 5 y 6, el NPC flexiona el brazo derecho para colocar la mano cerca de su rostro, cubriendo parcialmente la boca o nariz, mientras el brazo izquierdo permanece ligeramente separado del cuerpo.",
+        "interpretacion": "El NPC parece estar realizando un gesto de sorpresa, tapándose la boca o reaccionando ante algo que observa. La secuencia muestra una transición desde una posición neutra hacia una pose de reacción gestual.",
+        "etiquetas": [
+          "sorpresa",
+          "gesto",
+          "reaccion",
+          "taparse_boca"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [
+          3
+        ],
+        "limitaciones": [
+          "El frame 3 no contiene al NPC, por lo que se descarta."
+        ]
+      }
+    },
+    "STAND:73:ON_LOOKERS:panic_loop": {
+      "categoria": "STAND",
+      "idx": 73,
+      "anim": "panic_loop",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie, con el brazo derecho flexionado y la mano cerca de la boca o nariz. El brazo izquierdo está ligeramente separado del cuerpo, con la mano abierta hacia abajo. Las piernas están ligeramente flexionadas y separadas. La postura es idéntica en todos los frames proporcionados.",
+        "interpretacion": "El NPC parece estar realizando un gesto de cubrirse la boca o nariz, posiblemente tosiendo, estornudando o expresando sorpresa/miedo. Debido a que la pose es estática en todos los frames, no se puede confirmar una acción dinámica.",
+        "etiquetas": [
+          "gesto",
+          "cubrirse",
+          "estatico",
+          "postura"
+        ],
+        "confianza": "baja",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La secuencia muestra una pose estática repetida en todos los frames, lo que impide observar el desarrollo de una acción.",
+          "La falta de variación entre frames sugiere que el capturador ha congelado un único estado de la animación."
+        ]
+      }
+    },
+    "STAND:74:ON_LOOKERS:panic_out": {
+      "categoria": "STAND",
+      "idx": 74,
+      "anim": "panic_out",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto de pie. En los frames 1 y 2, mantiene la mano derecha cerca de la boca o nariz. A partir del frame 3, baja progresivamente el brazo derecho hacia el costado, terminando en una postura erguida con los brazos relajados a los lados en el frame 6.",
+        "interpretacion": "El NPC parece estar realizando un gesto de cubrirse la boca o nariz, posiblemente tosiendo o estornudando, y luego vuelve a una postura de reposo.",
+        "etiquetas": [
+          "gesto",
+          "tos",
+          "estornudo",
+          "reposo",
+          "de pie"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la accion es sutil y el movimiento del brazo es gradual"
+        ]
+      }
+    },
+    "STAND:75:ON_LOOKERS:panic_point": {
+      "categoria": "STAND",
+      "idx": 75,
+      "anim": "panic_point",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie con las piernas ligeramente flexionadas y separadas. En los frames 1, 2, 3 y 6, mantiene un brazo levantado hacia la frente o los ojos, como si se protegiera del sol o observara algo a lo lejos. En los frames 4 y 5, baja el brazo y mantiene una postura erguida con los brazos a los costados.",
+        "interpretacion": "El NPC parece estar realizando un gesto de observación o protección visual ante una luz intensa, alternando con momentos de descanso o espera.",
+        "etiquetas": [
+          "observando",
+          "protegiendo_ojos",
+          "espera",
+          "gesto_manual"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la secuencia muestra una transición cíclica entre dos estados de postura"
+        ]
+      }
+    },
+    "STAND:76:ON_LOOKERS:panic_shout": {
+      "categoria": "STAND",
+      "idx": 76,
+      "anim": "panic_shout",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto con chaqueta oscura y pantalones beige. En el frame 1, tiene la mano derecha cerca de la boca. En los frames 2, 3 y 4, eleva ambas manos hacia la cabeza o rostro, con los codos flexionados. En los frames 5 y 6, baja las manos, manteniendo la derecha cerca de la cabeza o frente. El cuerpo permanece en una postura erguida con las piernas ligeramente separadas.",
+        "interpretacion": "El NPC parece estar realizando un gesto de sorpresa, angustia o exclamación, posiblemente gritando o llevándose las manos a la cabeza en señal de desesperación o alerta.",
+        "etiquetas": [
+          "sorpresa",
+          "angustia",
+          "gesto",
+          "alerta",
+          "exclamacion"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la animacion es repetitiva en sus gestos",
+          "no hay objetos externos que expliquen la reaccion"
+        ]
+      }
+    },
+    "STAND:77:ON_LOOKERS:Pointup_in": {
+      "categoria": "STAND",
+      "idx": 77,
+      "anim": "Pointup_in",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie en una superficie plana. En el frame 1, tiene los brazos a los costados. A partir del frame 2, comienza a elevar el brazo izquierdo lateralmente hacia arriba, flexionando el codo. En los frames 4, 5 y 6, el brazo izquierdo se mantiene extendido hacia arriba y ligeramente hacia un lado, mientras el brazo derecho permanece relajado junto al cuerpo.",
+        "interpretacion": "El NPC realiza un gesto de señalar hacia arriba o saludar con el brazo izquierdo, manteniendo una postura erguida y estable.",
+        "etiquetas": [
+          "senalar",
+          "saludo",
+          "brazo-arriba",
+          "gesto"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la secuencia muestra una transición de movimiento de brazo, no una acción completa de inicio a fin"
+        ]
+      }
+    },
+    "STAND:78:ON_LOOKERS:Pointup_loop": {
+      "categoria": "STAND",
+      "idx": 78,
+      "anim": "Pointup_loop",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto con chaqueta de mezclilla y pantalones beige. En todos los frames útiles, mantiene una postura erguida con el brazo izquierdo extendido hacia arriba y ligeramente hacia un lado, con la palma de la mano abierta. El brazo derecho permanece relajado a lo largo del cuerpo.",
+        "interpretacion": "El NPC parece estar señalando algo en una dirección elevada o saludando con el brazo alzado. La postura es estática y consistente en todos los frames visibles.",
+        "etiquetas": [
+          "senalar",
+          "brazo-arriba",
+          "postura-erguida",
+          "saludo"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [
+          2
+        ],
+        "limitaciones": [
+          "El frame 2 es un error de captura (pantalla azul).",
+          "La postura es idéntica en todos los frames, lo que sugiere que es una pose estática o un bucle de animación muy corto."
+        ]
+      }
+    },
+    "STAND:79:ON_LOOKERS:Pointup_out": {
+      "categoria": "STAND",
+      "idx": 79,
+      "anim": "Pointup_out",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto con chaqueta de mezclilla y pantalones beige. En los frames 2, 3 y 4, mantiene el brazo izquierdo extendido hacia arriba y ligeramente hacia un lado, con la palma abierta. En los frames 5 y 6, el brazo desciende hasta quedar a un costado del cuerpo, volviendo a una postura erguida estándar.",
+        "interpretacion": "El NPC realiza un gesto de señalar hacia arriba o saludar brevemente antes de regresar a una posición de reposo.",
+        "etiquetas": [
+          "senalar",
+          "saludar",
+          "gesto",
+          "brazo-arriba"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [
+          1
+        ],
+        "limitaciones": [
+          "El frame 1 es un fondo azul sin NPC visible."
+        ]
+      }
+    },
+    "STAND:80:ON_LOOKERS:Pointup_shout": {
+      "categoria": "STAND",
+      "idx": 80,
+      "anim": "Pointup_shout",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie en una superficie plana. En el frame 1, tiene el brazo izquierdo levantado hacia arriba. En los frames 2 y 3, lleva la mano derecha hacia su rostro o boca. En los frames 4, 5 y 6, el NPC baja el brazo y vuelve a una postura erguida con los brazos a los costados.",
+        "interpretacion": "El NPC parece estar realizando un gesto de llamar la atención, gritar o señalar algo, seguido de un gesto de llevarse la mano a la boca, posiblemente para proyectar la voz o realizar una acción comunicativa.",
+        "etiquetas": [
+          "gesticulando",
+          "gritando",
+          "señalando",
+          "comunicacion"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la secuencia muestra una transicion de movimiento que podria interpretarse como un gesto de gritar o llamar a alguien"
+        ]
+      }
+    },
+    "STAND:81:ON_LOOKERS:point_in": {
+      "categoria": "STAND",
+      "idx": 81,
+      "anim": "point_in",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie en una superficie plana. En el frame 1, tiene los brazos relajados a los costados. A partir del frame 2, comienza a elevar el brazo derecho hacia adelante, extendiéndolo gradualmente hacia el frente en los frames 3, 4, 5 y 6, manteniendo el codo ligeramente flexionado y la palma orientada hacia abajo o lateralmente.",
+        "interpretacion": "El NPC realiza un gesto de señalar o indicar algo con la mano derecha hacia el frente, posiblemente llamando la atención sobre un objeto o dirección específica.",
+        "etiquetas": [
+          "señalar",
+          "indicar",
+          "gesto",
+          "brazo extendido"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La falta de un entorno detallado impide confirmar qué está señalando el NPC.",
+          "La postura de las piernas permanece estática durante toda la secuencia."
+        ]
+      }
+    },
+    "STAND:82:ON_LOOKERS:point_loop": {
+      "categoria": "STAND",
+      "idx": 82,
+      "anim": "point_loop",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto de pie, con las piernas ligeramente separadas y flexionadas. En los frames 1, 2 y 3, extiende el brazo izquierdo hacia adelante con la mano abierta o señalando. En los frames 4, 5 y 6, retrae el brazo hacia el torso, manteniendo una postura de alerta o espera.",
+        "interpretacion": "El NPC parece estar señalando algo en la distancia o realizando un gesto de indicación, seguido de una pausa o un cambio de postura mientras permanece en el mismo lugar.",
+        "etiquetas": [
+          "senalar",
+          "indicar",
+          "espera",
+          "alerta"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La secuencia muestra una transición entre un gesto de señalar y una postura de reposo, pero no se puede confirmar si el NPC está interactuando con un objeto o persona específica fuera de campo."
+        ]
+      }
+    },
+    "STAND:83:ON_LOOKERS:point_out": {
+      "categoria": "STAND",
+      "idx": 83,
+      "anim": "point_out",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto con chaqueta de mezclilla y pantalones beige. En los frames 1 al 4, mantiene el brazo izquierdo extendido hacia adelante con la mano abierta, como señalando. En los frames 5 y 6, el brazo regresa a una posición relajada junto al cuerpo. El NPC permanece de pie en una postura estática.",
+        "interpretacion": "El NPC realiza un gesto de señalar algo o a alguien y luego baja el brazo para volver a una postura de reposo.",
+        "etiquetas": [
+          "senalar",
+          "gesto",
+          "de_pie",
+          "apuntando"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la animacion es sutil y el movimiento del brazo es limitado"
+        ]
+      }
+    },
+    "STAND:84:ON_LOOKERS:shout_01": {
+      "categoria": "STAND",
+      "idx": 84,
+      "anim": "shout_01",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie, con ambos brazos flexionados y las manos colocadas cerca de los lados de su rostro, como si estuviera sujetando algo o haciendo un gesto de altavoz. La postura es estática en todos los frames útiles, con variaciones mínimas en la posición de las manos.",
+        "interpretacion": "El NPC parece estar gritando, llamando la atención de alguien o intentando proyectar su voz. La postura es consistente con una acción de comunicación verbal intensa.",
+        "etiquetas": [
+          "gritando",
+          "llamando",
+          "gesticulando",
+          "comunicacion"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [
+          3
+        ],
+        "limitaciones": [
+          "El frame 3 está vacío y no muestra al NPC.",
+          "La secuencia muestra una postura muy repetitiva, lo que dificulta distinguir una progresión clara de movimiento."
+        ]
+      }
+    },
+    "STAND:85:ON_LOOKERS:shout_02": {
+      "categoria": "STAND",
+      "idx": 85,
+      "anim": "shout_02",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie en una superficie plana. Mantiene su mano izquierda cerca de su rostro, cerca de la boca o barbilla. Su brazo derecho realiza un movimiento vertical: comienza flexionado, se extiende hacia arriba con el puño cerrado y vuelve a flexionarse hacia abajo.",
+        "interpretacion": "El NPC parece estar gesticulando mientras habla o grita, posiblemente enfatizando sus palabras con el movimiento del brazo derecho.",
+        "etiquetas": [
+          "gesticulando",
+          "hablando",
+          "brazo-arriba",
+          "de-pie"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La secuencia muestra un movimiento repetitivo de brazo que podría ser parte de una animación más larga."
+        ]
+      }
+    },
+    "STAND:86:ON_LOOKERS:shout_in": {
+      "categoria": "STAND",
+      "idx": 86,
+      "anim": "shout_in",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie en una superficie plana. En el frame 1, tiene los brazos extendidos hacia abajo y ligeramente separados del cuerpo. Desde el frame 2 al 6, el NPC mantiene los brazos flexionados con las manos colocadas cerca de los lados de su cabeza o rostro, en una postura estática y repetitiva.",
+        "interpretacion": "El NPC parece estar realizando un gesto de gritar o llamar la atención, posiblemente expresando frustración o comunicándose con alguien a distancia. La postura es consistente con una acción de exclamación.",
+        "etiquetas": [
+          "gritar",
+          "llamar",
+          "gesto",
+          "exclamacion"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la animacion es muy repetitiva entre los frames 2 y 6",
+          "no hay objetos externos que justifiquen la accion"
+        ]
+      }
+    },
+    "STAND:87:ON_LOOKERS:shout_loop": {
+      "categoria": "STAND",
+      "idx": 87,
+      "anim": "shout_loop",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie, con ambos brazos flexionados y las manos colocadas cerca de la boca, como si estuviera gritando o llamando a alguien. La postura es estática en todos los frames, con variaciones mínimas en la posición de los brazos.",
+        "interpretacion": "El NPC parece estar gritando o haciendo uso de sus manos como megáfono para proyectar su voz.",
+        "etiquetas": [
+          "gritando",
+          "llamando",
+          "manos en la boca",
+          "postura estática"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la animacion es muy sutil y apenas presenta cambios entre frames",
+          "no se puede confirmar si realmente esta emitiendo sonido o solo gesticulando"
+        ]
+      }
+    },
+    "STAND:88:ON_LOOKERS:shout_out": {
+      "categoria": "STAND",
+      "idx": 88,
+      "anim": "shout_out",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto de pie. En los frames 1 a 3, mantiene ambas manos cerca de su rostro, con los dedos extendidos hacia adelante. En los frames 4 a 6, baja los brazos hasta dejarlos extendidos a los costados del cuerpo, con las palmas orientadas hacia abajo.",
+        "interpretacion": "El NPC parece estar realizando un gesto de saludo o llamando la atención de alguien, para luego relajar su postura y volver a una posición de reposo.",
+        "etiquetas": [
+          "saludo",
+          "gesto",
+          "atencion",
+          "reposo"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la secuencia muestra una transicion de movimiento, no una accion estatica unica"
+        ]
+      }
+    },
+    "STAND:89:ON_LOOKERS:wave_in": {
+      "categoria": "STAND",
+      "idx": 89,
+      "anim": "wave_in",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto de pie. En el frame 1, tiene los brazos a los costados. A partir del frame 2, comienza a elevar el brazo izquierdo lateralmente, extendiéndolo hacia arriba y hacia afuera de forma progresiva hasta el frame 6, donde el brazo queda totalmente estirado en diagonal ascendente.",
+        "interpretacion": "El NPC realiza un gesto de saludo o llamada, levantando el brazo izquierdo para captar la atención o despedirse.",
+        "etiquetas": [
+          "saludo",
+          "brazo-arriba",
+          "gesto",
+          "atencion"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La secuencia muestra un movimiento fluido de brazo, pero el NPC permanece estático en su posición de pies."
+        ]
+      }
+    },
+    "STAND:90:ON_LOOKERS:wave_loop": {
+      "categoria": "STAND",
+      "idx": 90,
+      "anim": "wave_loop",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie en una postura estática. En los frames 1, 3, 4 y 6, mantiene el brazo izquierdo extendido hacia arriba y a un lado. En los frames 2 y 5, el mismo brazo se flexiona hacia la cabeza, con la mano cerca de la frente.",
+        "interpretacion": "El NPC parece estar realizando un gesto repetitivo de saludo o señalización, alternando entre extender el brazo y llevar la mano hacia la cabeza.",
+        "etiquetas": [
+          "saludo",
+          "gesticulando",
+          "brazo-arriba",
+          "posicion-estatica"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la secuencia muestra una repetición cíclica de dos poses principales",
+          "no hay objetos externos que justifiquen la acción"
+        ]
+      }
+    },
+    "STAND:91:ON_LOOKERS:wave_out": {
+      "categoria": "STAND",
+      "idx": 91,
+      "anim": "wave_out",
+      "lib": "ON_LOOKERS",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto de pie. En los frames 1 y 3, tiene el brazo izquierdo levantado lateralmente por encima de la cabeza con la mano abierta. En los frames 4, 5 y 6, el brazo desciende progresivamente hasta quedar pegado al costado del cuerpo, volviendo a una postura de reposo.",
+        "interpretacion": "El NPC realiza un gesto de saludo o despedida con la mano, levantando el brazo y luego bajándolo.",
+        "etiquetas": [
+          "saludo",
+          "despedida",
+          "gesto",
+          "brazo levantado"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [
+          2
+        ],
+        "limitaciones": [
+          "El frame 2 es un error de captura (pantalla azul)."
+        ]
+      }
+    },
+    "STAND:92:OTB:wtchrace_in": {
+      "categoria": "STAND",
+      "idx": 92,
+      "anim": "wtchrace_in",
+      "lib": "OTB",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie sobre una superficie plana. En el frame 1, tiene los brazos extendidos hacia abajo a los costados. A partir del frame 2, comienza a elevar los brazos y a doblar los codos, cruzándolos sobre el pecho. En los frames 4, 5 y 6, el NPC mantiene los brazos cruzados firmemente sobre el torso.",
+        "interpretacion": "El NPC realiza un movimiento de transición desde una postura relajada hacia una postura de brazos cruzados, lo cual suele interpretarse como una actitud de espera, impaciencia o una postura defensiva/cerrada.",
+        "etiquetas": [
+          "espera",
+          "brazos cruzados",
+          "postura estatica",
+          "transicion"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la animacion es una transicion simple entre dos estados de reposo",
+          "no se observa interaccion con el entorno"
+        ]
+      }
+    },
+    "STAND:93:OTB:wtchrace_loop": {
+      "categoria": "STAND",
+      "idx": 93,
+      "anim": "wtchrace_loop",
+      "lib": "OTB",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie, con los brazos cruzados sobre el pecho y la mirada dirigida hacia el frente. La postura es estática y simétrica en todos los frames analizados.",
+        "interpretacion": "El personaje parece estar esperando o vigilando, manteniendo una postura de reposo o guardia.",
+        "etiquetas": [
+          "esperando",
+          "brazos cruzados",
+          "de pie",
+          "vigilando"
+        ],
+        "confianza": "alta",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La animacion es extremadamente sutil o estatica, por lo que todos los frames son casi identicos.",
+          "Se requiere revision debido a la falta de variacion en la postura entre los frames."
+        ]
+      }
+    },
+    "STAND:94:OTB:wtchrace_out": {
+      "categoria": "STAND",
+      "idx": 94,
+      "anim": "wtchrace_out",
+      "lib": "OTB",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie en una superficie plana. En los frames 1 y 3, mantiene los brazos cruzados sobre el pecho. En los frames 4 y 5, realiza un movimiento con los brazos hacia adelante, como si estuviera gesticulando o señalando algo, para luego bajar los brazos a los costados en el frame 6.",
+        "interpretacion": "El NPC parece estar esperando o realizando una pausa activa, posiblemente conversando o llamando la atención de alguien mediante gestos manuales antes de volver a una postura relajada.",
+        "etiquetas": [
+          "espera",
+          "gesticulando",
+          "brazos cruzados",
+          "de pie"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [
+          2
+        ],
+        "limitaciones": [
+          "El frame 2 no muestra al NPC.",
+          "No hay objetos de apoyo visibles en el entorno."
+        ]
+      }
+    },
+    "STAND:95:OTB:wtchrace_win": {
+      "categoria": "STAND",
+      "idx": 95,
+      "anim": "wtchrace_win",
+      "lib": "OTB",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto de pie. En el frame 1, tiene los brazos flexionados cerca del pecho. En los frames 2, 3 y 4, levanta el brazo derecho con el puño cerrado hacia arriba mientras el brazo izquierdo permanece bajo. En el frame 5, baja el brazo derecho a su costado. En el frame 6, cruza ambos brazos sobre el pecho.",
+        "interpretacion": "El NPC realiza un gesto de celebración o victoria levantando el puño, seguido de una transición a una postura de brazos cruzados, posiblemente indicando espera o actitud relajada.",
+        "etiquetas": [
+          "celebracion",
+          "victoria",
+          "brazos cruzados",
+          "espera",
+          "gesto"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la secuencia muestra una transición de movimiento, no una pose estática única"
+        ]
+      }
+    },
+    "STAND:96:park:Tai_Chi_in": {
+      "categoria": "STAND",
+      "idx": 96,
+      "anim": "Tai_Chi_in",
+      "lib": "park",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie sobre una superficie plana. En el frame 1, mantiene una postura erguida con los brazos a los costados. A partir del frame 2, comienza a flexionar las rodillas y a separar los pies, adoptando una postura de base amplia. Los brazos se elevan gradualmente hacia el frente del torso, con los codos flexionados y las manos posicionadas como si sostuvieran un objeto invisible o realizaran un movimiento circular, culminando en el frame 6 con una mano cerca del rostro.",
+        "interpretacion": "El NPC realiza una secuencia de movimientos lentos y controlados, consistentes con una práctica de artes marciales o ejercicios de relajación tipo Tai Chi. La postura de base baja y el movimiento coordinado de los brazos sugieren una forma de entrenamiento físico.",
+        "etiquetas": [
+          "ejercicio",
+          "artes marciales",
+          "tai chi",
+          "postura",
+          "entrenamiento"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la secuencia es una representación estilizada de un movimiento complejo",
+          "no hay objetos físicos presentes para interactuar"
+        ]
+      }
+    },
+    "STAND:97:park:Tai_Chi_Loop": {
+      "categoria": "STAND",
+      "idx": 97,
+      "anim": "Tai_Chi_Loop",
+      "lib": "park",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC mantiene una postura de piernas flexionadas y abiertas. En el frame 1, tiene las manos juntas frente al pecho. En el frame 2, los brazos se retraen hacia el cuerpo. En el frame 3, extiende un brazo hacia adelante con la palma abierta. En el frame 4, ambos brazos se extienden lateralmente. En el frame 5, los brazos se posicionan paralelos frente al torso. En el frame 6, los brazos se cruzan o posicionan diagonalmente frente al cuerpo.",
+        "interpretacion": "El NPC realiza movimientos fluidos y controlados, consistentes con una rutina de ejercicio o arte marcial como el Tai Chi. La postura de las piernas sugiere estabilidad y equilibrio.",
+        "etiquetas": [
+          "ejercicio",
+          "tai-chi",
+          "artes-marciales",
+          "entrenamiento",
+          "postura-estable"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la secuencia muestra una coreografía repetitiva",
+          "no hay apoyos externos visibles"
+        ]
+      }
+    },
+    "STAND:98:park:Tai_Chi_out": {
+      "categoria": "STAND",
+      "idx": 98,
+      "anim": "Tai_Chi_out",
+      "lib": "park",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto con chaqueta de mezclilla y pantalones beige. En los frames 1 a 3, mantiene una postura de guardia con las rodillas flexionadas, brazos frente al torso y manos cerradas cerca del rostro. En los frames 4 a 6, el NPC transiciona a una postura erguida, con los brazos extendidos hacia abajo a los costados del cuerpo.",
+        "interpretacion": "El NPC parece estar realizando una secuencia de ejercicios de artes marciales o estiramiento, comenzando en una posición de guardia baja y finalizando en una postura de reposo o atención.",
+        "etiquetas": [
+          "artes marciales",
+          "ejercicio",
+          "guardia",
+          "reposo"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La secuencia muestra una transición de movimiento, no una acción estática única."
+        ]
+      }
+    },
+    "STAND:99:PAULNMAC:Piss_in": {
+      "categoria": "STAND",
+      "idx": 99,
+      "anim": "Piss_in",
+      "lib": "PAULNMAC",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie con las piernas abiertas y flexionadas. En los frames 1, 2, 4, 5 y 6, mantiene las manos cerca de la zona de la cintura o pelvis, con variaciones leves en la inclinación del torso y la cabeza. En el frame 3, el NPC gira el torso hacia su derecha mientras mantiene la postura de las piernas.",
+        "interpretacion": "La postura sugiere una acción de micción, aunque no hay objetos ni efectos visuales que lo confirmen explícitamente. La secuencia muestra al NPC ajustando su posición o realizando un movimiento repetitivo de torso.",
+        "etiquetas": [
+          "de pie",
+          "piernas abiertas",
+          "manos en cintura",
+          "postura estática"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La acción principal es sugerida por la postura pero no es explícita visualmente.",
+          "La falta de objetos de interacción hace que la interpretación sea una inferencia basada en la pose."
+        ]
+      }
+    },
+    "STAND:100:PAULNMAC:Piss_loop": {
+      "categoria": "STAND",
+      "idx": 100,
+      "anim": "Piss_loop",
+      "lib": "PAULNMAC",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie con las piernas abiertas y flexionadas, manteniendo una postura estática en todos los frames. Su mano derecha se posiciona cerca de la zona de la cintura o bragueta, mientras que el brazo izquierdo cuelga relajado a un costado. La mirada está dirigida hacia el frente.",
+        "interpretacion": "La postura sugiere que el NPC está realizando una acción de micción, aunque no se observa ningún objeto ni efecto visual que lo confirme explícitamente.",
+        "etiquetas": [
+          "orinar",
+          "postura estatica",
+          "hombre de pie"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "Las poses son prácticamente idénticas en todos los frames, lo que indica que la animación está pausada en un punto fijo del bucle.",
+          "No se observa ningún objeto o fluido que confirme la acción interpretada."
+        ]
+      }
+    },
+    "STAND:101:PAULNMAC:Piss_out": {
+      "categoria": "STAND",
+      "idx": 101,
+      "anim": "Piss_out",
+      "lib": "PAULNMAC",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie con las piernas separadas. En los frames 1, 2 y 3, mantiene las manos cerca de la cintura. En los frames 4 y 5, inclina el torso hacia adelante y junta las manos frente a la zona pélvica. En el frame 6, vuelve a una postura erguida con los brazos a los costados.",
+        "interpretacion": "El NPC parece estar realizando una acción de micción, aunque no hay objetos ni efectos visuales que lo confirmen explícitamente. La postura sugiere una necesidad fisiológica o una acción de ajuste de vestimenta.",
+        "etiquetas": [
+          "pie",
+          "postura",
+          "inclinacion",
+          "manos_cintura"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La accion es ambigua sin contexto adicional",
+          "No se observan objetos ni fluidos que confirmen la interpretacion"
+        ]
+      }
+    },
+    "STAND:102:PAULNMAC:PnM_Argue1_A": {
+      "categoria": "STAND",
+      "idx": 102,
+      "anim": "PnM_Argue1_A",
+      "lib": "PAULNMAC",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto con chaqueta de mezclilla y pantalones beige. En el frame 1, mantiene el brazo derecho flexionado cerca del pecho. En los frames 2 y 4, extiende el brazo derecho hacia un lado y el izquierdo hacia el otro, con el torso ligeramente inclinado. En los frames 3, 5 y 6, el NPC adopta una postura más erguida con los brazos relajados a los costados, mirando hacia abajo o al frente.",
+        "interpretacion": "El NPC parece estar gesticulando o discutiendo, alternando entre poses de énfasis con los brazos extendidos y momentos de pausa o escucha con los brazos relajados.",
+        "etiquetas": [
+          "gesticulando",
+          "discutiendo",
+          "hablando",
+          "postura corporal"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la secuencia muestra cambios de postura rápidos que sugieren una animación de diálogo"
+        ]
+      }
+    },
+    "STAND:103:PAULNMAC:PnM_Argue1_B": {
+      "categoria": "STAND",
+      "idx": 103,
+      "anim": "PnM_Argue1_B",
+      "lib": "PAULNMAC",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto con chaqueta de mezclilla y pantalones beige. En los frames 2, 3, 4 y 6, el NPC se encuentra de pie en una postura estática con los brazos ligeramente flexionados hacia los costados, manteniendo una inclinación leve de la cabeza y el torso. No hay cambios significativos en la posición de las extremidades entre estos frames.",
+        "interpretacion": "El NPC parece estar en una postura de espera o conversación casual. Debido a la mínima variación entre los frames, la acción es ambigua y podría interpretarse como una pausa en una discusión o simplemente estar de pie.",
+        "etiquetas": [
+          "espera",
+          "postura casual",
+          "de pie"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          2,
+          3,
+          4,
+          6
+        ],
+        "frames_descartados": [
+          1,
+          5
+        ],
+        "limitaciones": [
+          "Los frames 1 y 5 están vacíos.",
+          "La secuencia muestra muy poco movimiento, lo que dificulta definir una acción clara.",
+          "La postura es casi idéntica en todos los frames útiles."
+        ]
+      }
+    },
+    "STAND:104:PAULNMAC:PnM_Argue2_A": {
+      "categoria": "STAND",
+      "idx": 104,
+      "anim": "PnM_Argue2_A",
+      "lib": "PAULNMAC",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie, con el torso ligeramente inclinado hacia adelante y la cabeza orientada hacia su derecha. Sus brazos están flexionados a los lados del cuerpo, con las manos abiertas y los dedos ligeramente curvados. La postura de las piernas es estable, con los pies separados a la anchura de los hombros. A lo largo de la secuencia, el NPC realiza movimientos sutiles de balanceo en el torso y cambios en la inclinación de la cabeza, manteniendo la posición base de los pies.",
+        "interpretacion": "El NPC parece estar involucrado en una conversación o discusión, utilizando gestos corporales para enfatizar sus palabras. La postura sugiere una actitud defensiva o de confrontación verbal.",
+        "etiquetas": [
+          "discutiendo",
+          "gesticulando",
+          "conversacion",
+          "de pie"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la secuencia muestra variaciones sutiles de una misma postura base",
+          "no se observa el contexto de la conversacion ni a otros interlocutores"
+        ]
+      }
+    },
+    "STAND:105:PAULNMAC:PnM_Argue2_B": {
+      "categoria": "STAND",
+      "idx": 105,
+      "anim": "PnM_Argue2_B",
+      "lib": "PAULNMAC",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto con chaqueta de mezclilla y pantalones beige. En el frame 1, tiene el brazo derecho flexionado hacia el pecho. En los frames 2 y 3, ambos brazos están flexionados frente al torso con las manos cerradas. En los frames 4 y 5, el torso se inclina ligeramente hacia adelante y los brazos descienden hacia los costados. En el frame 6, el NPC vuelve a una postura erguida con los brazos relajados a los lados.",
+        "interpretacion": "El NPC parece estar gesticulando o discutiendo, realizando un movimiento de brazos que sugiere énfasis o frustración, seguido de una relajación de la postura.",
+        "etiquetas": [
+          "gesticulando",
+          "discutiendo",
+          "movimiento-brazos",
+          "postura-erguida"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la secuencia muestra una transición de movimiento que podría ser parte de una animación más larga"
+        ]
+      }
+    },
+    "STAND:106:PAULNMAC:PnM_Loop_A": {
+      "categoria": "STAND",
+      "idx": 106,
+      "anim": "PnM_Loop_A",
+      "lib": "PAULNMAC",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto con chaqueta de mezclilla y pantalones beige. En los frames 1, 2, 3, 4 y 6, el NPC se encuentra de pie, con una postura ligeramente encorvada, mirando hacia abajo o hacia el frente con una expresión neutra. Sus brazos cuelgan a los costados con ligeras variaciones en la posición de las manos. El frame 5 es un fondo vacío sin el NPC.",
+        "interpretacion": "El NPC parece estar en una postura de espera o reposo, posiblemente observando algo en el suelo o simplemente manteniendo una actitud relajada o casual.",
+        "etiquetas": [
+          "espera",
+          "reposo",
+          "de pie",
+          "casual"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "frames_descartados": [
+          5
+        ],
+        "limitaciones": [
+          "El frame 5 no contiene al NPC.",
+          "La postura es muy similar en todos los frames, lo que dificulta distinguir una acción dinámica clara."
+        ]
+      }
+    },
+    "STAND:107:PAULNMAC:PnM_Loop_B": {
+      "categoria": "STAND",
+      "idx": 107,
+      "anim": "PnM_Loop_B",
+      "lib": "PAULNMAC",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie en una postura estática. En los frames 1, 2, 5 y 6, mantiene una postura erguida con los brazos relajados a los costados. En los frames 3 y 4, el NPC inclina ligeramente la cabeza y el torso hacia su derecha, manteniendo los brazos en una posición similar.",
+        "interpretacion": "El NPC parece estar en una pose de espera o descanso, con una ligera variación en la inclinación de la cabeza y el cuerpo que sugiere un movimiento de balanceo o cambio de peso sutil.",
+        "etiquetas": [
+          "espera",
+          "descanso",
+          "estatico",
+          "de pie"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la animacion es muy sutil y las diferencias entre frames son minimas"
+        ]
+      }
+    },
+    "STAND:108:PAULNMAC:wank_in": {
+      "categoria": "STAND",
+      "idx": 108,
+      "anim": "wank_in",
+      "lib": "PAULNMAC",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie, inicialmente con los brazos a los costados. A medida que avanza la secuencia, flexiona ligeramente las rodillas y acerca ambas manos hacia la zona de la cintura o pelvis, manteniendo los codos flexionados hacia afuera.",
+        "interpretacion": "El NPC realiza un gesto manual repetitivo cerca de su cintura, manteniendo una postura erguida pero con una ligera flexión de piernas que sugiere una acción activa o un movimiento rítmico.",
+        "etiquetas": [
+          "gesto",
+          "manos en cintura",
+          "postura activa"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [
+          2
+        ],
+        "limitaciones": [
+          "la naturaleza exacta del gesto manual es ambigua debido a la resolución de la animación"
+        ]
+      }
+    },
+    "STAND:109:PAULNMAC:wank_loop": {
+      "categoria": "STAND",
+      "idx": 109,
+      "anim": "wank_loop",
+      "lib": "PAULNMAC",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie con las piernas ligeramente flexionadas y separadas. Sus brazos están doblados a la altura de la cintura, con las manos posicionadas cerca de la zona pélvica, manteniendo una postura estática y encorvada hacia adelante en todos los frames.",
+        "interpretacion": "La postura sugiere una acción de manipulación o ajuste en la zona de la cintura o bolsillos, aunque la falta de movimiento visible entre frames hace que la acción sea ambigua.",
+        "etiquetas": [
+          "postura estática",
+          "manos en cintura",
+          "NPC de pie"
+        ],
+        "confianza": "baja",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La secuencia muestra una pose prácticamente idéntica en todos los frames, lo que impide observar una acción dinámica.",
+          "La falta de cambio en la posición de las extremidades dificulta la interpretación precisa del movimiento."
+        ]
+      }
+    },
+    "STAND:110:PAULNMAC:wank_out": {
+      "categoria": "STAND",
+      "idx": 110,
+      "anim": "wank_out",
+      "lib": "PAULNMAC",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie, con las piernas ligeramente separadas. En los frames 1 y 3, mantiene las manos juntas cerca de la zona pélvica. En los frames 4 y 5, eleva una mano hacia la zona de la cara o cabeza, mientras la otra permanece cerca de la cadera. En los frames 2 y 6, los brazos están relajados a los costados del cuerpo.",
+        "interpretacion": "El NPC realiza un gesto que parece una secuencia de movimiento corporal, posiblemente un ajuste de ropa o un gesto expresivo, aunque la ambigüedad de la postura requiere cautela.",
+        "etiquetas": [
+          "gesto",
+          "postura",
+          "movimiento_brazos"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La naturaleza del gesto es ambigua y podría interpretarse de diversas formas.",
+          "La falta de contexto ambiental impide confirmar si el NPC interactúa con algo o es un gesto autónomo."
+        ]
+      }
+    },
+    "STAND:111:PLAYIDLES:shift": {
+      "categoria": "STAND",
+      "idx": 111,
+      "anim": "shift",
+      "lib": "PLAYIDLES",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie en una postura estática. En los frames 1, 5 y 6, mantiene una posición erguida con los brazos a los costados. En los frames 3 y 4, se observa una ligera inclinación de la cabeza hacia abajo y hacia la derecha, manteniendo el resto del cuerpo en la misma posición base.",
+        "interpretacion": "El NPC parece estar en una pose de espera o inactividad. Los cambios sutiles en la inclinación de la cabeza sugieren un comportamiento de reposo o una animación de espera cíclica.",
+        "etiquetas": [
+          "espera",
+          "inactividad",
+          "de pie",
+          "reposo"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [
+          2
+        ],
+        "limitaciones": [
+          "El frame 2 no muestra al NPC.",
+          "Las diferencias entre los frames 1, 5 y 6 son mínimas, lo que sugiere una pose base muy estable."
+        ]
+      }
+    },
+    "STAND:112:PLAYIDLES:shldr": {
+      "categoria": "STAND",
+      "idx": 112,
+      "anim": "shldr",
+      "lib": "PLAYIDLES",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie en una postura estática. En los frames intermedios (2, 3, 4), el NPC inclina ligeramente el torso y la cabeza hacia su derecha, manteniendo los brazos cerca del cuerpo. En los frames 1, 5 y 6, el NPC mantiene una postura erguida y neutra.",
+        "interpretacion": "El NPC parece estar realizando un movimiento de balanceo o ajuste de postura corporal, posiblemente un gesto de inquietud o simplemente una animación de espera.",
+        "etiquetas": [
+          "espera",
+          "balanceo",
+          "postura",
+          "inactividad"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la animacion es sutil y repetitiva",
+          "no hay objetos de apoyo visibles"
+        ]
+      }
+    },
+    "STAND:113:PLAYIDLES:stretch": {
+      "categoria": "STAND",
+      "idx": 113,
+      "anim": "stretch",
+      "lib": "PLAYIDLES",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie en una posición erguida. En el frame 2, el torso se inclina ligeramente hacia su derecha y el brazo derecho se desplaza hacia el frente. En los frames 1, 3, 4, 5 y 6, el NPC mantiene una postura estática con los brazos relajados a los costados.",
+        "interpretacion": "El NPC parece estar realizando un movimiento de estiramiento o ajuste postural breve antes de volver a una posición de reposo. La acción es muy sutil y casi imperceptible en la mayoría de los frames.",
+        "etiquetas": [
+          "estiramiento",
+          "reposo",
+          "postura",
+          "inactividad"
+        ],
+        "confianza": "media",
+        "requiere_revision": true,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La acción es muy sutil y los frames 1, 3, 4, 5 y 6 son prácticamente idénticos, lo que dificulta distinguir una secuencia de movimiento clara.",
+          "No se observan apoyos externos, pero la postura es estable."
+        ]
+      }
+    },
+    "STAND:114:PLAYIDLES:strleg": {
+      "categoria": "STAND",
+      "idx": 114,
+      "anim": "strleg",
+      "lib": "PLAYIDLES",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto de pie, con los brazos relajados a los costados. En el frame 3, se observa una ligera inclinación de la cabeza hacia abajo y a la derecha, mientras que en el resto de los frames mantiene una postura erguida y estática.",
+        "interpretacion": "El NPC parece estar en una postura de espera o reposo. La inclinación de la cabeza en el frame 3 sugiere un pequeño movimiento de distracción o ajuste de postura, pero la secuencia es mayormente estática.",
+        "etiquetas": [
+          "espera",
+          "reposo",
+          "estatico",
+          "de_pie"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La secuencia muestra cambios mínimos entre frames, lo que dificulta distinguir una acción dinámica clara."
+        ]
+      }
+    },
+    "STAND:115:PLAYIDLES:time": {
+      "categoria": "STAND",
+      "idx": 115,
+      "anim": "time",
+      "lib": "PLAYIDLES",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC se encuentra de pie en posición erguida. En los frames 1, 5 y 6, mantiene los brazos extendidos hacia abajo a los costados del cuerpo. En los frames 3 y 4, el NPC mantiene los brazos cruzados sobre el pecho.",
+        "interpretacion": "El NPC realiza una transición entre una postura relajada con los brazos caídos y una postura de brazos cruzados, sugiriendo una acción de espera o reposo.",
+        "etiquetas": [
+          "espera",
+          "brazos cruzados",
+          "reposo",
+          "de pie"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [
+          2
+        ],
+        "limitaciones": [
+          "El frame 2 no muestra al NPC, por lo que se descarta."
+        ]
+      }
+    },
+    "STAND:116:PLAYIDLES:stretch2": {
+      "categoria": "STAND",
+      "idx": 116,
+      "anim": "stretch2",
+      "lib": "PLAYIDLES",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC está de pie en posición erguida. En los frames 1, 5 y 6, mantiene los brazos relajados a los costados. En los frames 2, 3 y 4, el NPC eleva el brazo derecho para tocarse la parte superior de la cabeza o el cabello, mientras el brazo izquierdo permanece a un costado.",
+        "interpretacion": "El NPC realiza un gesto breve de acomodarse el cabello o rascarse la cabeza antes de volver a una postura de reposo.",
+        "etiquetas": [
+          "acomodarse",
+          "cabello",
+          "gesto",
+          "reposo"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "La secuencia muestra una acción cíclica simple de movimiento de brazo."
+        ]
+      }
+    },
+    "STAND:117:PLAYIDLES:time2": {
+      "categoria": "STAND",
+      "idx": 117,
+      "anim": "time2",
+      "lib": "PLAYIDLES",
+      "modelo": "gemini-3.1-flash-lite",
+      "analisis": {
+        "descripcion_visual": "El NPC es un hombre adulto de pie. En los frames 1, 5 y 6, mantiene una postura erguida con los brazos relajados a los costados. En los frames 2 y 3, gira la cabeza y el torso ligeramente hacia su derecha. En el frame 4, eleva ambas manos hacia la zona del pecho, con las palmas enfrentadas o juntas, antes de volver a la posición inicial.",
+        "interpretacion": "El NPC parece estar en una postura de espera o reposo. El movimiento de cabeza sugiere que está observando algo a su alrededor, mientras que el gesto con las manos en el frame 4 podría interpretarse como un ajuste de ropa, un gesto de impaciencia o una acción de manipulación menor.",
+        "etiquetas": [
+          "espera",
+          "observando",
+          "ajustando",
+          "reposo"
+        ],
+        "confianza": "alta",
+        "requiere_revision": false,
+        "frames_utiles": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frames_descartados": [],
+        "limitaciones": [
+          "la accion de las manos en el frame 4 es sutil y breve"
+        ]
+      }
+    }
+  },
+  "errores": {
+    "STAND:118:PLAYIDLES:strleg2": {
+      "tipo": "ModelosAgotados",
+      "detalle": "No quedan modelos configurados disponibles. Avance conservado."
+    }
+  }
+}
