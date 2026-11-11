@@ -1,0 +1,146 @@
+{
+  "id": "escena_0227",
+  "modelo": "gemini-3.5-flash",
+  "proveedor": "google",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:44:17.555883+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "```json\n{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"Un granjero conversa en una calle de San Fierro con clima de niebla durante 30 segundos.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": 158,\n  \"actores_ids_sugeridos\": [\n    158\n  ],\n  \"ubicacion_id_sugerida\": \"lugar_33_1197\",\n  \"motivo_elecciones\": \"Se ha elegido la piel de granjero (ID 158), animación de conversación en bucle (IDLE_chat), clima de niebla (ID 9) y una ubicación en San Fierro ajustada a 30 segundos.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": 9,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"animacion\",\n  \"tipo_movimiento\": \"caminar\",\n  \"ruta_id_sugerida\": null,\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"bucle\",\n  \"razon_reproduccion\": \"La conversación requiere una animación constante durante toda la duración de la escena.\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": \"CHAT:5:ped:IDLE_chat\",\n  \"cantidad_actores\": 1,\n  \"animar_actores\": [\n    1\n  ],\n  \"dialogos\": [],\n  \"pasos\": [],\n  \"roles\": [\n    \"granjero\"\n  ],\n  \"lugar_tipo\": \"calle\",\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [],\n  \"aprendizaje_supervisado\": {}\n}\n```",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 4574,
+      "candidatesTokenCount": 496,
+      "totalTokenCount": 6022,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4574
+        }
+      ],
+      "thoughtsTokenCount": 952,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.6-flash",
+    "responseId": "suH0av74AtDZytMPkrfUwQU"
+  },
+  "usage": {
+    "promptTokenCount": 4574,
+    "candidatesTokenCount": 496,
+    "totalTokenCount": 6022,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 4574
+      }
+    ],
+    "thoughtsTokenCount": 952,
+    "serviceTier": "standard"
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Un granjero conversa en una calle de San Fierro con clima de niebla durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 158,
+    "actores_ids_sugeridos": [
+      158
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Se ha elegido la piel de granjero (ID 158), animación de conversación en bucle (IDLE_chat), clima de niebla (ID 9) y una ubicación en San Fierro ajustada a 30 segundos.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 9,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "animacion",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "bucle",
+    "razon_reproduccion": "La conversación requiere una animación constante durante toda la duración de la escena.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "CHAT:5:ped:IDLE_chat",
+    "cantidad_actores": 1,
+    "animar_actores": [
+      1
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "granjero"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Un granjero conversa en una calle de San Fierro con clima de niebla durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 158,
+    "actores_ids_sugeridos": [
+      158
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Se ha elegido la piel de granjero (ID 158), animación de conversación en bucle (IDLE_chat), clima de niebla (ID 9) y una ubicación en San Fierro ajustada a 30 segundos.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 9,
+    "hora_sugerida": 12,
+    "fuente": "IA",
+    "accion": "animacion",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "bucle",
+    "razon_reproduccion": "Comportamiento propuesto por el análisis de la escena.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "CHAT:5:ped:IDLE_chat",
+    "cantidad_actores": 1,
+    "animar_actores": [
+      1
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "granjero"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "f53546096c591d04c9fc99c857898e041239e13bd832fcbbead17bb94415eb64",
+  "segundos": 7.875,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:36.688529+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}

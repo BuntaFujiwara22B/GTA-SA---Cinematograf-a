@@ -1,0 +1,161 @@
+{
+  "id": "escena_0321",
+  "modelo": "gemini-3.5-flash",
+  "proveedor": "google",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:43:38.361588+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "```json\n{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"Tres personas se asustan en un puente durante 30 segundos.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": 7,\n  \"actores_ids_sugeridos\": [0, 7, 9],\n  \"ubicacion_id_sugerida\": \"puente_ejemplo_usuario\",\n  \"motivo_elecciones\": \"Se eligen 3 civiles en la ubicación del puente con la animación de encogerse por miedo (panic_cower) durante los 30 segundos solicitados.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_s"
+            },
+            {
+              "text": "ugerido\": null,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"animacion\",\n  \"tipo_movimiento\": \"caminar\",\n  \"ruta_id_sugerida\": null,\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"mantener\",\n  \"razon_reproduccion\": \"Mantener la animación de pánico activa durante los 30 segundos solicitados.\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": \"STAND:70:ON_LOOKERS:panic_cower\",\n  \"cantidad_actores\": 3,\n  \"animar_actores\": [1, 2, 3],\n  \"dialogos\": [],\n  \"pasos\": [],\n  \"roles\": [\"civil\", \"civil\", \"civil\"],\n  \"lugar_tipo\": \"puente\",\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [],\n  \"aprendizaje_supervisado\": {}\n}\n```",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 4417,
+      "candidatesTokenCount": 473,
+      "totalTokenCount": 5758,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4417
+        }
+      ],
+      "thoughtsTokenCount": 868,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.6-flash",
+    "responseId": "i-H0aq6nCqCrxdIP67TimAY"
+  },
+  "usage": {
+    "promptTokenCount": 4417,
+    "candidatesTokenCount": 473,
+    "totalTokenCount": 5758,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 4417
+      }
+    ],
+    "thoughtsTokenCount": 868,
+    "serviceTier": "standard"
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Tres personas se asustan en un puente durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 7,
+    "actores_ids_sugeridos": [
+      0,
+      7,
+      9
+    ],
+    "ubicacion_id_sugerida": "puente_ejemplo_usuario",
+    "motivo_elecciones": "Se eligen 3 civiles en la ubicación del puente con la animación de encogerse por miedo (panic_cower) durante los 30 segundos solicitados.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "animacion",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "mantener",
+    "razon_reproduccion": "Mantener la animación de pánico activa durante los 30 segundos solicitados.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "STAND:70:ON_LOOKERS:panic_cower",
+    "cantidad_actores": 3,
+    "animar_actores": [
+      1,
+      2,
+      3
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "civil",
+      "civil",
+      "civil"
+    ],
+    "lugar_tipo": "puente",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Tres personas se asustan en un puente durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 7,
+    "actores_ids_sugeridos": [
+      7,
+      7,
+      9
+    ],
+    "ubicacion_id_sugerida": "puente_ejemplo_usuario",
+    "motivo_elecciones": "Se eligen 3 civiles en la ubicación del puente con la animación de encogerse por miedo (panic_cower) durante los 30 segundos solicitados.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 1,
+    "hora_sugerida": 12,
+    "fuente": "IA",
+    "accion": "animacion",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "mantener",
+    "razon_reproduccion": "Comportamiento propuesto por el análisis de la escena.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "STAND:70:ON_LOOKERS:panic_cower",
+    "cantidad_actores": 3,
+    "animar_actores": [
+      1,
+      2,
+      3
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "civil",
+      "civil",
+      "civil"
+    ],
+    "lugar_tipo": "puente",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "450c009a0862eb63edb4369d355a6fc39c684cd071e090e063ddd8dc8924fdcf",
+  "segundos": 9.094,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:36.580922+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}

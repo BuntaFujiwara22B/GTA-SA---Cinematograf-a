@@ -1,0 +1,250 @@
+{
+  "id": "escena_0708",
+  "modelo": "dots-studio/dots-3-note-preview:free",
+  "proveedor": "openrouter",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:41:22.564608+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "id": "gen-1794433289-o1zq82q6eDkJZeR99QgT",
+    "object": "chat.completion",
+    "created": 1794433289,
+    "model": "dots-studio/dots-3-note-preview:free",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\n{\"es_valido\":true,\"razon_rechazo\":\"\",\"resumen\":\"4 soldados corren por una calle de San Fierro y luego se rinden con las manos en alto.\",\"entorno_sugerido\":\"ciudad\",\"actor_id_sugerido\":null,\"actores_ids_sugeridos\":[287,287,287,287],\"ubicacion_id_sugerida\":\"lugar_33_1571\",\"motivo_elecciones\":\"Se elige el modelo 'army' (id 287) por su rol militar y la ubicación en San Fierro por ser una zona urbana adecuada para la escena.\",\"duracion_sugerida\":30,\"clima_id_sugerido\":null,\"hora_sugerida\":null,\"fuente\":\"IA\",\"accion\":\"secuencia\",\"tipo_movimiento\":\"correr\",\"ruta_id_sugerida\":null,\"ruta_vehiculo_id\":null,\"velocidad_kmh_sugerida\":null,\"reproduccion\":\"auto\",\"razon_reproduccion\":\"\",\"vehiculo_id_sugerido\":null,\"objeto_id_sugerido\":null,\"animacion_sugerida\":\"STAND:1:ped:handsup\",\"cantidad_actores\":4,\"animar_actores\":[1,2,3,4],\"dialogos\":[],\"pasos\":[{\"accion\":\"correr\",\"actores\":[1,2,3,4],\"objetivo_actor\":null,\"animacion\":null,\"reproduccion\":\"auto\",\"duracion\":15},{\"accion\":\"animacion\",\"actores\":[1,2,3,4],\"objetivo_actor\":null,\"animacion\":\"STAND:1:ped:handsup\",\"reproduccion\":\"mantener\",\"duracion\":15}],\"roles\":[\"militar\",\"militar\",\"militar\",\"militar\"],\"lugar_tipo\":\"calle\",\"aviso_analisis\":\"\",\"vehiculo_en_movimiento\":false,\"limitaciones\":[],\"aprendizaje_supervisado\":{}}",
+          "refusal": null,
+          "reasoning": "El usuario solicita una secuencia de 4 soldados corriendo y luego rendiéndose en San Fierro por 30 segundos. Primero verifico si la solicitud es válida: 4 actores es permitido (máximo 4), correr es una acción nativa, y \"rendirse\" corresponde a la animación de rendición en el catálogo. La duración de 30 segundos está dentro del límite de 1-60 segundos.\n\nNecesito seleccionar actores adecuados: el modelo 287 \"army\" con rol militar es perfecto para los 4 soldados. Para la ubicación, elijo \"lugar_33_1571\" en San Fierro por ser una zona urbana abierta adecuada para correr. La animación de rendición \"STAND:1:ped:handsup\" es la correcta según el catálogo.\n\nLa secuencia será: primero correr por 15 segundos, luego la animación de rendición por otros 15 segundos para totalizar 30. Configuro los pasos con las acciones correspondientes, asegurando que los actores sean los 4 soldados en ambos pasos. No se requiere clima o hora específicos, y el entorno es ciudad.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "El usuario solicita una secuencia de 4 soldados corriendo y luego rendiéndose en San Fierro por 30 segundos. Primero verifico si la solicitud es válida: 4 actores es permitido (máximo 4), correr es una acción nativa, y \"rendirse\" corresponde a la animación de rendición en el catálogo. La duración de 30 segundos está dentro del límite de 1-60 segundos.\n\nNecesito seleccionar actores adecuados: el modelo 287 \"army\" con rol militar es perfecto para los 4 soldados. Para la ubicación, elijo \"lugar_33_1571\" en San Fierro por ser una zona urbana abierta adecuada para correr. La animación de rendición \"STAND:1:ped:handsup\" es la correcta según el catálogo.\n\nLa secuencia será: primero correr por 15 segundos, luego la animación de rendición por otros 15 segundos para totalizar 30. Configuro los pasos con las acciones correspondientes, asegurando que los actores sean los 4 soldados en ambos pasos. No se requiere clima o hora específicos, y el entorno es ciudad.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4676,
+      "completion_tokens": 720,
+      "total_tokens": 5396,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 247,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 4676,
+    "completion_tokens": 720,
+    "total_tokens": 5396,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 247,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "4 soldados corren por una calle de San Fierro y luego se rinden con las manos en alto.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": null,
+    "actores_ids_sugeridos": [
+      287,
+      287,
+      287,
+      287
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1571",
+    "motivo_elecciones": "Se elige el modelo 'army' (id 287) por su rol militar y la ubicación en San Fierro por ser una zona urbana adecuada para la escena.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "correr",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "STAND:1:ped:handsup",
+    "cantidad_actores": 4,
+    "animar_actores": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "correr",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": 15
+      },
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": "STAND:1:ped:handsup",
+        "reproduccion": "mantener",
+        "duracion": 15
+      }
+    ],
+    "roles": [
+      "militar",
+      "militar",
+      "militar",
+      "militar"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "4 soldados corren por una calle de San Fierro y luego se rinden con las manos en alto.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 287,
+    "actores_ids_sugeridos": [
+      287,
+      287,
+      287,
+      287
+    ],
+    "ubicacion_id_sugerida": null,
+    "motivo_elecciones": "Se elige el modelo 'army' (id 287) por su rol militar y la ubicación en San Fierro por ser una zona urbana adecuada para la escena.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 1,
+    "hora_sugerida": 12,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "correr",
+    "ruta_id_sugerida": "ped_33_1334_33_1399",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "STAND:1:ped:handsup",
+    "cantidad_actores": 4,
+    "animar_actores": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "correr",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": 15
+      },
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": "STAND:1:ped:handsup",
+        "reproduccion": "mantener",
+        "duracion": 15
+      }
+    ],
+    "roles": [
+      "militar",
+      "militar",
+      "militar",
+      "militar"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "6f5e12768b4b310a4fb66d0daf90c08ea9c2ca31cb17afef787327907d0f9b0b",
+  "segundos": 15.438,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:37.095466+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "id": "escena_0321",
+  "modelo": "nvidia/nemotron-3.5-super-vl:free",
+  "proveedor": "openrouter",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:42:24.902936+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "id": "gen-1794433351-nEPvb1Ssq07t7DLxTGJM",
+    "object": "chat.completion",
+    "created": 1794433351,
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "provider": "Nvidia",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"3 actores se encogen por miedo en un puente durante 30 segundos.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": null,\n  \"actores_ids_sugeridos\": [1, 2, 3],\n  \"ubicacion_id_sugerida\": \"puente_ejemplo_usuario\",\n  \"motivo_elecciones\": \"Se usa el clip panic_cower de ON_LOOKERS para encogerse por miedo, ubicado en puente_ejemplo_usuario (etiqueta puente) con 3 actores civiles.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": null,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"animacion\",\n  \"tipo_movimiento\": \"caminar\",\n  \"ruta_id_sugerida\": null,\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"una_vez\",\n  \"razon_reproduccion\": \"Gesto puntual de miedo; no se repite como baile.\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": \"STAND:70:ON_LOOKERS:panic_cower\",\n  \"cantidad_actores\": 3,\n  \"animar_actores\": [1, 2, 3],\n  \"dialogos\": [],\n  \"pasos\": [\n    {\n      \"accion\": \"animacion\",\n      \"actores\": [1, 2, 3],\n      \"objetivo_actor\": null,\n      \"animacion\": \"STAND:70:ON_LOOKERS:panic_cower\",\n      \"reproduccion\": \"una_vez\",\n      \"duracion\": 30\n    }\n  ],\n  \"roles\": [\"civil\", \"civil\", \"civil\"],\n  \"lugar_tipo\": \"puente\",\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [\"Gesto puntual sin repetición automática\", \"Sin combate ni interacción entre actores\"],\n  \"aprendizaje_supervisado\": {}\n}",
+          "refusal": null,
+          "reasoning": "El usuario pide: \"3 personas se asustan en un puente durante 30 segundos\".\n\nNecesito interpretar la petición completa para Mission Maker GTA SA y devolver SOLO JSON según el esquema.\n\nAnálisis de la petición:\n- 3 personas (actores)\n- se asustan (animación de miedo/encogerse por miedo)\n- en un puente (ubicación)\n- durante 30 segundos (duración)\n\nRestricciones del esquema y registro:\n- accion=secuencia usa pasos con actores por índice 1..4. Cada paso es caminar/correr/nadar/escaleras/saltar/animacion/apuntar.\n- Una a ocho tareas en secuencia, uno a cuatro actores, duración total 1..60s.\n- Bailar puede repetirse; gestos puntuales no. \"Encogerse por miedo\" es un gesto puntual, reproduccion=una_vez.\n- No sustituzas acciones ni inventes IDs.\n- El catálogo tiene animación \"STAND:70:ON_LOOKERS:panic_cower\" que corresponde a \"encogerse por miedo\".\n- Actores disponibles: model_id 7 (male01, civil), model_id 9 (BFORI, civil), model_id 0 (null, PLAYER1, civil). Necesito 3 actores. Puedo sugerir IDs 1,2,3 o usar los model_ids? El esquema tiene actores_ids_sugeridos (array de integers) y actor_id_sugerido. Parece que los índices de actores en pasos son 1..4. Los actores_ids_sugeridos probablemente son IDs de actores (model_id o índice?). Mirando el borrador local: \"actores_ids_sugeridos\": [], \"cantidad_actores\":3, \"animar_actores\":[1,2,3]. Parece que se refieren a índices 1-based para los pasos. Pero también hay \"actor_id_sugerido\". Dado que el catálogo de actores tiene model_id, quizás deba sugerir model_ids. Sin embargo, el borrador usa [1,2,3] en animar_actores. Voy a seguir el patrón del borrador: actores_ids_sugeridos: [1,2,3] o quizás los model_ids. El esquema dice \"actores_ids_sugeridos\": {\"items\": {\"type\": \"integer\"}, \"maxItems\": 4}. No especifica si son índices o model_ids. Dado que en los pasos se usan actores por índice 1..4, probablemente actores_ids_sugeridos son los índices de los actores en la escena. Pero también podría ser model_ids. Para ser seguro, puedo poner [7,9,0] o [1,2,3]. El borrador local tiene \"animar_actores\":[1,2,3]. Voy a usar [1,2,3] como índices de actores en la secuencia, y en pasos usar \"actores\":[1,2,3].\n\nUbicación: \"puente_ejemplo_usuario\" existe en ubicaciones, id \"puente_ejemplo_usuario\", entorno ciudad, zona San Fierro, etiquetas [\"puente\"]. Perfecto.\n\nDuración: 30 segundos. duracion_sugerida: 30.\n\nClima: no se especifica lluvia, así que null o ciudad por defecto. El borrador tiene clima_id_sugerido null.\n\nHora: null.\n\nAccion: \"animacion\" (ya que es un gesto). Pero el esquema principal tiene \"accion\": {\"default\": \"caminar\", ...}. En el borrador local \"accion\":\"animacion\". También \"tipo_movimiento\":\"caminar\" (default). Como no hay movimiento, tipo_movimiento puede ser \"caminar\" o null? El esquema dice default \"caminar\". Lo dejaré como \"caminar\" o quizás no es relevante. Mejor poner \"caminar\" por defecto.\n\nPasos: Debo incluir pasos porque es una secuencia. Un paso con accion \"animacion\", actores [1,2,3], animacion \"STAND:70:ON_LOOKERS:panic_cower\", reproduccion \"una_vez\", duracion 30? El esquema PasoEscena tiene duracion opcional. Si la animación es puntual y dura 30 segundos, quizás duracion 30. Pero \"reproduccion\": \"una_vez\" y duracion 30 podría significar que se mantiene durante 30s? El registro dice gestos puntuales no bailan. \"Encogerse por miedo\" es de la familia \"encogerse por miedo\". Es un gesto puntual. Pero la petición dice \"durante 30 segundos\". Podría ser que la escena dure 30 segundos, no necesariamente que la animación se repita. Puedo poner duracion: 30 en el paso, reproduccion: \"una_vez\". O reproducir \"mantener\"? El esquema permite \"mantener\". Pero el borrador dice reproduccion \"una_vez\" con razon \"Gesto puntual; no repetirlo automáticamente sin una indicación.\" Sin embargo, el usuario pide durante 30 segundos. Si pongo una_vez, la animación se ejecuta una vez y termina, pero la escena puede durar 30s con los actores en esa pose? No está claro. Mejor poner reproduccion \"una_vez\" y duracion 30 en el paso, indicando que la escena dura 30s. O \"mantener\" para que se mantenga durante 30s. El enum tiene \"mantener\". Dado que quieren que se asusten durante 30 segundos, \"mantener\" tiene sentido: se encogen y se mantienen así. Pero el borrador local dice una_vez. El usuario no especificó repetir. Voy a seguir el borrador: reproduccion \"una_vez\", duracion 30 en el paso (o en duracion_sugerida). El paso puede tener duracion: 30.\n\nRoles: [\"civil\",\"civil\",\"civil\"] o [\"asustado\",\"asustado\",\"asustado\"]. El catálogo de actores tiene roles [\"civil\"]. Puedo poner roles: [\"civil\",\"civil\",\"civil\"].\n\nLugar_tipo: \"puente\".\n\nEntorno_sugerido: \"ciudad\".\n\nUbicacion_id_sugerida: \"puente_ejemplo_usuario\".\n\nAnimacion_sugerida: \"STAND:70:ON_LOOKERS:panic_cower\".\n\nCantidad_actores: 3.\n\nAnimar_actores: [1,2,3].\n\nVehiculo_en_movimiento: false.\n\nEs_valido: true.\n\nRazon_rechazo: \"\".\n\nResumen: \"3 personaje(s): encogerse por miedo en puente durante 30s\" o similar.\n\nFuente: \"IA\" o \"Reglas locales...\". El esquema default \"IA\". Voy a poner \"IA\".\n\nMotivo_elecciones: explicar por qué se elige esa animación y ubicación.\n\nLimitaciones: quizás mencionar que es un gesto puntual y no hay combate.\n\nAprendizaje_supervisado: objeto vacío {}.\n\nVamos a construir el JSON.\n\nEstructura:\n{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"3 actores se encogen por miedo en un puente durante 30 segundos.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": null,\n  \"actores_ids_sugeridos\": [1, 2, 3],\n  \"ubicacion_id_sugerida\": \"puente_ejemplo_usuario\",\n  \"motivo_elecciones\": \"Se usa el clip panic_cower de ON_LOOKERS para encogerse por miedo, ubicado en puente_ejemplo_usuario (etiqueta puente) con 3 actores civiles.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": null,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"animacion\",\n  \"tipo_movimiento\": \"caminar\",\n  \"ruta_id_sugerida\": null,\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"una_vez\",\n  \"razon_reproduccion\": \"Gesto puntual de miedo; no se repite como baile.\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": \"STAND:70:ON_LOOKERS:panic_cower\",\n  \"cantidad_actores\": 3,\n  \"animar_actores\": [1, 2, 3],\n  \"dialogos\": [],\n  \"pasos\": [\n    {\n      \"accion\": \"animacion\",\n      \"actores\": [1, 2, 3],\n      \"objetivo_actor\": null,\n      \"animacion\": \"STAND:70:ON_LOOKERS:panic_cower\",\n      \"reproduccion\": \"una_vez\",\n      \"duracion\": 30\n    }\n  ],\n  \"roles\": [\"civil\", \"civil\", \"civil\"],\n  \"lugar_tipo\": \"puente\",\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [\"Gesto puntual sin repetición automática\", \"Sin combate ni interacción entre actores\"],\n  \"aprendizaje_supervisado\": {}\n}\n\nVerificar esquema:\n- PasoEscena requiere \"accion\". Tiene accion.\n- actores: array 1..4 items integer. [1,2,3] ok.\n- objetivo_actor: null ok.\n- animacion: string ok.\n- reproduccion: \"una_vez\" ok.\n- duracion: integer 1..60. 30 ok.\n\nPlanMVP requiere es_valido y resumen. Ok.\n\nNo invento IDs: uso ubicación existente del catálogo, animación existente del catálogo, actores por índice (no model IDs inventados). Los actores_ids_sugeridos [1,2,3] son índices de escena, no IDs de modelo, así que no invento model_ids. Si quisiera ser más preciso con el catálogo, podría sugerir model_ids [7,9,0] pero el esquema no tiene un campo claro para model_ids de actores sugeridos aparte de actor_id_sugerido (singular). Dado que el borrador usa [1,2,3], lo mantengo.\n\nTodo parece correcto. Devuelvo SOLO JSON.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "El usuario pide: \"3 personas se asustan en un puente durante 30 segundos\".\n\nNecesito interpretar la petición completa para Mission Maker GTA SA y devolver SOLO JSON según el esquema.\n\nAnálisis de la petición:\n- 3 personas (actores)\n- se asustan (animación de miedo/encogerse por miedo)\n- en un puente (ubicación)\n- durante 30 segundos (duración)\n\nRestricciones del esquema y registro:\n- accion=secuencia usa pasos con actores por índice 1..4. Cada paso es caminar/correr/nadar/escaleras/saltar/animacion/apuntar.\n- Una a ocho tareas en secuencia, uno a cuatro actores, duración total 1..60s.\n- Bailar puede repetirse; gestos puntuales no. \"Encogerse por miedo\" es un gesto puntual, reproduccion=una_vez.\n- No sustituzas acciones ni inventes IDs.\n- El catálogo tiene animación \"STAND:70:ON_LOOKERS:panic_cower\" que corresponde a \"encogerse por miedo\".\n- Actores disponibles: model_id 7 (male01, civil), model_id 9 (BFORI, civil), model_id 0 (null, PLAYER1, civil). Necesito 3 actores. Puedo sugerir IDs 1,2,3 o usar los model_ids? El esquema tiene actores_ids_sugeridos (array de integers) y actor_id_sugerido. Parece que los índices de actores en pasos son 1..4. Los actores_ids_sugeridos probablemente son IDs de actores (model_id o índice?). Mirando el borrador local: \"actores_ids_sugeridos\": [], \"cantidad_actores\":3, \"animar_actores\":[1,2,3]. Parece que se refieren a índices 1-based para los pasos. Pero también hay \"actor_id_sugerido\". Dado que el catálogo de actores tiene model_id, quizás deba sugerir model_ids. Sin embargo, el borrador usa [1,2,3] en animar_actores. Voy a seguir el patrón del borrador: actores_ids_sugeridos: [1,2,3] o quizás los model_ids. El esquema dice \"actores_ids_sugeridos\": {\"items\": {\"type\": \"integer\"}, \"maxItems\": 4}. No especifica si son índices o model_ids. Dado que en los pasos se usan actores por índice 1..4, probablemente actores_ids_sugeridos son los índices de los actores en la escena. Pero también podría ser model_ids. Para ser seguro, puedo poner [7,9,0] o [1,2,3]. El borrador local tiene \"animar_actores\":[1,2,3]. Voy a usar [1,2,3] como índices de actores en la secuencia, y en pasos usar \"actores\":[1,2,3].\n\nUbicación: \"puente_ejemplo_usuario\" existe en ubicaciones, id \"puente_ejemplo_usuario\", entorno ciudad, zona San Fierro, etiquetas [\"puente\"]. Perfecto.\n\nDuración: 30 segundos. duracion_sugerida: 30.\n\nClima: no se especifica lluvia, así que null o ciudad por defecto. El borrador tiene clima_id_sugerido null.\n\nHora: null.\n\nAccion: \"animacion\" (ya que es un gesto). Pero el esquema principal tiene \"accion\": {\"default\": \"caminar\", ...}. En el borrador local \"accion\":\"animacion\". También \"tipo_movimiento\":\"caminar\" (default). Como no hay movimiento, tipo_movimiento puede ser \"caminar\" o null? El esquema dice default \"caminar\". Lo dejaré como \"caminar\" o quizás no es relevante. Mejor poner \"caminar\" por defecto.\n\nPasos: Debo incluir pasos porque es una secuencia. Un paso con accion \"animacion\", actores [1,2,3], animacion \"STAND:70:ON_LOOKERS:panic_cower\", reproduccion \"una_vez\", duracion 30? El esquema PasoEscena tiene duracion opcional. Si la animación es puntual y dura 30 segundos, quizás duracion 30. Pero \"reproduccion\": \"una_vez\" y duracion 30 podría significar que se mantiene durante 30s? El registro dice gestos puntuales no bailan. \"Encogerse por miedo\" es de la familia \"encogerse por miedo\". Es un gesto puntual. Pero la petición dice \"durante 30 segundos\". Podría ser que la escena dure 30 segundos, no necesariamente que la animación se repita. Puedo poner duracion: 30 en el paso, reproduccion: \"una_vez\". O reproducir \"mantener\"? El esquema permite \"mantener\". Pero el borrador dice reproduccion \"una_vez\" con razon \"Gesto puntual; no repetirlo automáticamente sin una indicación.\" Sin embargo, el usuario pide durante 30 segundos. Si pongo una_vez, la animación se ejecuta una vez y termina, pero la escena puede durar 30s con los actores en esa pose? No está claro. Mejor poner reproduccion \"una_vez\" y duracion 30 en el paso, indicando que la escena dura 30s. O \"mantener\" para que se mantenga durante 30s. El enum tiene \"mantener\". Dado que quieren que se asusten durante 30 segundos, \"mantener\" tiene sentido: se encogen y se mantienen así. Pero el borrador local dice una_vez. El usuario no especificó repetir. Voy a seguir el borrador: reproduccion \"una_vez\", duracion 30 en el paso (o en duracion_sugerida). El paso puede tener duracion: 30.\n\nRoles: [\"civil\",\"civil\",\"civil\"] o [\"asustado\",\"asustado\",\"asustado\"]. El catálogo de actores tiene roles [\"civil\"]. Puedo poner roles: [\"civil\",\"civil\",\"civil\"].\n\nLugar_tipo: \"puente\".\n\nEntorno_sugerido: \"ciudad\".\n\nUbicacion_id_sugerida: \"puente_ejemplo_usuario\".\n\nAnimacion_sugerida: \"STAND:70:ON_LOOKERS:panic_cower\".\n\nCantidad_actores: 3.\n\nAnimar_actores: [1,2,3].\n\nVehiculo_en_movimiento: false.\n\nEs_valido: true.\n\nRazon_rechazo: \"\".\n\nResumen: \"3 personaje(s): encogerse por miedo en puente durante 30s\" o similar.\n\nFuente: \"IA\" o \"Reglas locales...\". El esquema default \"IA\". Voy a poner \"IA\".\n\nMotivo_elecciones: explicar por qué se elige esa animación y ubicación.\n\nLimitaciones: quizás mencionar que es un gesto puntual y no hay combate.\n\nAprendizaje_supervisado: objeto vacío {}.\n\nVamos a construir el JSON.\n\nEstructura:\n{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"3 actores se encogen por miedo en un puente durante 30 segundos.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": null,\n  \"actores_ids_sugeridos\": [1, 2, 3],\n  \"ubicacion_id_sugerida\": \"puente_ejemplo_usuario\",\n  \"motivo_elecciones\": \"Se usa el clip panic_cower de ON_LOOKERS para encogerse por miedo, ubicado en puente_ejemplo_usuario (etiqueta puente) con 3 actores civiles.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": null,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"animacion\",\n  \"tipo_movimiento\": \"caminar\",\n  \"ruta_id_sugerida\": null,\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"una_vez\",\n  \"razon_reproduccion\": \"Gesto puntual de miedo; no se repite como baile.\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": \"STAND:70:ON_LOOKERS:panic_cower\",\n  \"cantidad_actores\": 3,\n  \"animar_actores\": [1, 2, 3],\n  \"dialogos\": [],\n  \"pasos\": [\n    {\n      \"accion\": \"animacion\",\n      \"actores\": [1, 2, 3],\n      \"objetivo_actor\": null,\n      \"animacion\": \"STAND:70:ON_LOOKERS:panic_cower\",\n      \"reproduccion\": \"una_vez\",\n      \"duracion\": 30\n    }\n  ],\n  \"roles\": [\"civil\", \"civil\", \"civil\"],\n  \"lugar_tipo\": \"puente\",\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [\"Gesto puntual sin repetición automática\", \"Sin combate ni interacción entre actores\"],\n  \"aprendizaje_supervisado\": {}\n}\n\nVerificar esquema:\n- PasoEscena requiere \"accion\". Tiene accion.\n- actores: array 1..4 items integer. [1,2,3] ok.\n- objetivo_actor: null ok.\n- animacion: string ok.\n- reproduccion: \"una_vez\" ok.\n- duracion: integer 1..60. 30 ok.\n\nPlanMVP requiere es_valido y resumen. Ok.\n\nNo invento IDs: uso ubicación existente del catálogo, animación existente del catálogo, actores por índice (no model IDs inventados). Los actores_ids_sugeridos [1,2,3] son índices de escena, no IDs de modelo, así que no invento model_ids. Si quisiera ser más preciso con el catálogo, podría sugerir model_ids [7,9,0] pero el esquema no tiene un campo claro para model_ids de actores sugeridos aparte de actor_id_sugerido (singular). Dado que el borrador usa [1,2,3], lo mantengo.\n\nTodo parece correcto. Devuelvo SOLO JSON.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4481,
+      "completion_tokens": 2893,
+      "total_tokens": 7374,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2353,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 4481,
+    "completion_tokens": 2893,
+    "total_tokens": 7374,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2353,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "3 actores se encogen por miedo en un puente durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": null,
+    "actores_ids_sugeridos": [
+      1,
+      2,
+      3
+    ],
+    "ubicacion_id_sugerida": "puente_ejemplo_usuario",
+    "motivo_elecciones": "Se usa el clip panic_cower de ON_LOOKERS para encogerse por miedo, ubicado en puente_ejemplo_usuario (etiqueta puente) con 3 actores civiles.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "animacion",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "una_vez",
+    "razon_reproduccion": "Gesto puntual de miedo; no se repite como baile.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "STAND:70:ON_LOOKERS:panic_cower",
+    "cantidad_actores": 3,
+    "animar_actores": [
+      1,
+      2,
+      3
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2,
+          3
+        ],
+        "objetivo_actor": null,
+        "animacion": "STAND:70:ON_LOOKERS:panic_cower",
+        "reproduccion": "una_vez",
+        "duracion": 30
+      }
+    ],
+    "roles": [
+      "civil",
+      "civil",
+      "civil"
+    ],
+    "lugar_tipo": "puente",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [
+      "Gesto puntual sin repetición automática",
+      "Sin combate ni interacción entre actores"
+    ],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "3 actores se encogen por miedo en un puente durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 0,
+    "actores_ids_sugeridos": [
+      0,
+      7,
+      9
+    ],
+    "ubicacion_id_sugerida": "puente_ejemplo_usuario",
+    "motivo_elecciones": "Se usa el clip panic_cower de ON_LOOKERS para encogerse por miedo, ubicado en puente_ejemplo_usuario (etiqueta puente) con 3 actores civiles.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 1,
+    "hora_sugerida": 12,
+    "fuente": "IA",
+    "accion": "animacion",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "una_vez",
+    "razon_reproduccion": "Comportamiento propuesto por el análisis de la escena.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "STAND:70:ON_LOOKERS:panic_cower",
+    "cantidad_actores": 3,
+    "animar_actores": [
+      1,
+      2,
+      3
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2,
+          3
+        ],
+        "objetivo_actor": null,
+        "animacion": "STAND:70:ON_LOOKERS:panic_cower",
+        "reproduccion": "una_vez",
+        "duracion": 30
+      }
+    ],
+    "roles": [
+      "civil",
+      "civil",
+      "civil"
+    ],
+    "lugar_tipo": "puente",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [
+      "Gesto puntual sin repetición automática",
+      "Sin combate ni interacción entre actores"
+    ],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "ebbe5f2100f63156ab3a5ade08a04143389be99e501f96024033a901e8feab95",
+  "segundos": 57.219,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:36.936466+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "id": "escena_0939",
+  "modelo": "gemini-3.5-flash",
+  "proveedor": "google",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:43:47.457129+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "```json\n{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"Cuatro paramédicos vomitan y posteriormente corren a lo largo de un puente.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": null,\n  \"actores_ids_sugeridos\": [274, 275, 276, 274],\n  \"ubicacion_id_sugerida\": \"puente_ejemplo_usuario\",\n  \"motivo_elecciones\": \"Se asignan cuatro paramédicos usando los modelos de emergencias disponibles (274, 275, 276) ubicados en el puente con ruta peatonal.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": null,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"secuencia\",\n  \"tipo_movimiento\": \"correr\",\n  \"ruta_id_sugerida\": \"ped_puente_ejemplo_usuario\",\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"auto\",\n  \"razon_reproduccion\": \"\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": \"STAND:40:food:EAT_Vomit_P\",\n  \"cantidad_actores\": 4,\n  \"animar_actores\": [1, 2, 3, 4],\n  \"dialogos\": [],\n  \"pasos\": [\n    {\n      \"accion\": \"animacion\",\n      \"actores\": [1, 2, 3, 4],\n      \"objetivo_actor\": null,\n      \"animacion\": \"STAND:40:food:EAT_Vomit_P\",\n      \"reproduccion\": \"una_vez\",\n      \"duracion\": null\n    },\n    {\n      \"accion\": \"correr\",\n      \"actores\": [1, 2, 3, 4],\n      \"objetivo_actor\": null,\n      \"animacion\": null,\n      \"reproduccion\": \"auto\",\n      \"duracion\": null\n    }\n  ],\n  \"roles\": [\"paramedico\", \"paramedico\", \"paramedico\", \"paramedico\"],\n  \"lugar_tipo\": \"puente\",\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [],\n  \"aprendizaje_supervisado\": {}\n}\n```",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 4534,
+      "candidatesTokenCount": 651,
+      "totalTokenCount": 6649,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4534
+        }
+      ],
+      "thoughtsTokenCount": 1464,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.6-flash",
+    "responseId": "lOH0arWLCbWsytMPs6WWuQU"
+  },
+  "usage": {
+    "promptTokenCount": 4534,
+    "candidatesTokenCount": 651,
+    "totalTokenCount": 6649,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 4534
+      }
+    ],
+    "thoughtsTokenCount": 1464,
+    "serviceTier": "standard"
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Cuatro paramédicos vomitan y posteriormente corren a lo largo de un puente.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": null,
+    "actores_ids_sugeridos": [
+      274,
+      275,
+      276,
+      274
+    ],
+    "ubicacion_id_sugerida": "puente_ejemplo_usuario",
+    "motivo_elecciones": "Se asignan cuatro paramédicos usando los modelos de emergencias disponibles (274, 275, 276) ubicados en el puente con ruta peatonal.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "correr",
+    "ruta_id_sugerida": "ped_puente_ejemplo_usuario",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "STAND:40:food:EAT_Vomit_P",
+    "cantidad_actores": 4,
+    "animar_actores": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": "STAND:40:food:EAT_Vomit_P",
+        "reproduccion": "una_vez",
+        "duracion": null
+      },
+      {
+        "accion": "correr",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": null
+      }
+    ],
+    "roles": [
+      "paramedico",
+      "paramedico",
+      "paramedico",
+      "paramedico"
+    ],
+    "lugar_tipo": "puente",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Cuatro paramédicos vomitan y posteriormente corren a lo largo de un puente.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 274,
+    "actores_ids_sugeridos": [
+      274,
+      275,
+      276,
+      274
+    ],
+    "ubicacion_id_sugerida": null,
+    "motivo_elecciones": "Se asignan cuatro paramédicos usando los modelos de emergencias disponibles (274, 275, 276) ubicados en el puente con ruta peatonal.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 1,
+    "hora_sugerida": 12,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "correr",
+    "ruta_id_sugerida": "ped_puente_ejemplo_usuario",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "STAND:40:food:EAT_Vomit_P",
+    "cantidad_actores": 4,
+    "animar_actores": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": "STAND:40:food:EAT_Vomit_P",
+        "reproduccion": "una_vez",
+        "duracion": null
+      },
+      {
+        "accion": "correr",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": null
+      }
+    ],
+    "roles": [
+      "paramedico",
+      "paramedico",
+      "paramedico",
+      "paramedico"
+    ],
+    "lugar_tipo": "puente",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "4d0223c5e5f265d583d42dda692dee439a6b5b657eb9abe90117716c92ff8c13",
+  "segundos": 10.562,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:36.609921+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}

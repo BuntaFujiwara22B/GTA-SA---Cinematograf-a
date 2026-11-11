@@ -1,0 +1,98 @@
+{
+  "id": "escena_1194",
+  "modelo": "dots-studio/dots-3-note-preview:free",
+  "proveedor": "openrouter",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:46:01.104300+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "id": "gen-1794433564-fCiz9QlYjhV4x9dakP46",
+    "object": "chat.completion",
+    "created": 1794433564,
+    "model": "dots-studio/dots-3-note-preview:free",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\n{\"es_valido\":true,\"razon_rechazo\":\"\",\"resumen\":\"Un policía camina hacia un taxi, se sube y conduce por Las Venturas.\",\"entorno_sugerido\":\"ciudad\",\"actor_id_sugerido\":282,\"actores_ids_sugeridos\":[282],\"ubicacion_id_sugerida\":\"lugar_46_1860\",\"motivo_elecciones\":\"Actor lvpd1 por coincidir con Las Venturas, ubicación y taxi (420) disponibles.\",\"duracion_sugerida\":30,\"clima_id_sugerido\":null,\"hora_sugerida\":null,\"fuente\":\"IA\",\"accion\":\"conducir_vehiculo\",\"tipo_movimiento\":\"caminar\",\"ruta_id_sugerida\":\"auto_46_233\",\"ruta_vehiculo_id\":\"auto_46_233\",\"velocidad_kmh_sugerida\":40,\"reproduccion\":\"auto\",\"razon_reproduccion\":\"\",\"vehiculo_id_sugerido\":420,\"objeto_id_sugerido\":null,\"animacion_sugerida\":null,\"cantidad_actores\":1,\"animar_actores\":[1],\"dialogos\":[],\"pasos\":[{\"accion\":\"caminar\",\"actores\":[1],\"objetivo_actor\":null,\"animacion\":null,\"reproduccion\":\"auto\",\"duracion\":5},{\"accion\":\"entrar_vehiculo\",\"actores\":[1],\"objetivo_actor\":null,\"animacion\":null,\"reproduccion\":\"auto\",\"duracion\":2},{\"accion\":\"conducir_vehiculo\",\"actores\":[1],\"objetivo_actor\":null,\"animacion\":null,\"reproduccion\":\"auto\",\"duracion\":23}],\"roles\":[\"policia\"],\"lugar_tipo\":\"ciudad\",\"aviso_analisis\":\"\",\"vehiculo_en_movimiento\":true,\"limitaciones\":[],\"aprendizaje_supervisado\":{}}",
+          "refusal": null,
+          "reasoning": "El usuario quiere una escena de un policía caminando, subiéndose a un taxi y conduciendo por Las Venturas durante 30 segundos. Primero, necesito identificar los elementos clave: el actor es un policía, el vehículo es un taxi, la ubicación es Las Venturas y la duración es 30 segundos.\n\nRevisando el catálogo de actores, hay varios modelos de policía como lapd1, sfpd1 y lvpd1. Como la escena es en Las Venturas, el modelo lvpd1 (Las Vegas Police Department) sería el más apropiado. Para el vehículo, el taxi tiene model_id 420, que está disponible.\n\nLas ubicaciones en Las Venturas incluyen lugar_46_1860, lugar_47_975, lugar_47_1241 y lugar_53_1092. Para la ruta de conducción, hay recorridos como auto_46_233, auto_54_118, auto_47_394 y auto_61_187. Se puede elegir una ruta que pase por estas ubicaciones.\n\nLa secuencia de pasos sería: primero el policía camina hacia el taxi, luego se sube al vehículo y finalmente conduce. Dado que la composición \"conducir_vehiculo\" está implementada, se puede usar esa acción. La duración total es de 30 segundos, que está dentro del límite de 1 a 60 segundos.\n\nEl clima y la hora no se especifican, por lo que se pueden dejar como nulo. El entorno se sugiere como ciudad, que coincide con Las Venturas. El número de actores es 1, ya que solo hay un policía.\n\nVerificando los pasos: el primer paso es caminar hacia el taxi, el segundo es subir al vehículo y el tercero es conducir. Cada paso debe tener la acción correspondiente y los actores involucrados. El paso de caminar no necesita animación específica, mientras que el de conducir usa la composición adecuada.\n\nFinalmente, se debe asegurar que el JSON cumpla con el esquema, incluyendo todos los campos requeridos como es_valido, resumen, pasos, etc. También se deben incluir los IDs sugeridos para actor, ubicación y ruta.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "El usuario quiere una escena de un policía caminando, subiéndose a un taxi y conduciendo por Las Venturas durante 30 segundos. Primero, necesito identificar los elementos clave: el actor es un policía, el vehículo es un taxi, la ubicación es Las Venturas y la duración es 30 segundos.\n\nRevisando el catálogo de actores, hay varios modelos de policía como lapd1, sfpd1 y lvpd1. Como la escena es en Las Venturas, el modelo lvpd1 (Las Vegas Police Department) sería el más apropiado. Para el vehículo, el taxi tiene model_id 420, que está disponible.\n\nLas ubicaciones en Las Venturas incluyen lugar_46_1860, lugar_47_975, lugar_47_1241 y lugar_53_1092. Para la ruta de conducción, hay recorridos como auto_46_233, auto_54_118, auto_47_394 y auto_61_187. Se puede elegir una ruta que pase por estas ubicaciones.\n\nLa secuencia de pasos sería: primero el policía camina hacia el taxi, luego se sube al vehículo y finalmente conduce. Dado que la composición \"conducir_vehiculo\" está implementada, se puede usar esa acción. La duración total es de 30 segundos, que está dentro del límite de 1 a 60 segundos.\n\nEl clima y la hora no se especifican, por lo que se pueden dejar como nulo. El entorno se sugiere como ciudad, que coincide con Las Venturas. El número de actores es 1, ya que solo hay un policía.\n\nVerificando los pasos: el primer paso es caminar hacia el taxi, el segundo es subir al vehículo y el tercero es conducir. Cada paso debe tener la acción correspondiente y los actores involucrados. El paso de caminar no necesita animación específica, mientras que el de conducir usa la composición adecuada.\n\nFinalmente, se debe asegurar que el JSON cumpla con el esquema, incluyendo todos los campos requeridos como es_valido, resumen, pasos, etc. También se deben incluir los IDs sugeridos para actor, ubicación y ruta.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4588,
+      "completion_tokens": 945,
+      "total_tokens": 5533,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 467,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 4588,
+    "completion_tokens": 945,
+    "total_tokens": 5533,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 467,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "json_valido": false,
+  "mms_generado": false,
+  "correcto": false,
+  "segundos": 15.766,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": false,
+      "fecha_utc": "2026-11-11T21:49:37.199467+00:00",
+      "sin_consulta_api": true
+    }
+  ],
+  "error_evaluacion": "2 validation errors for PlanMVP\npasos.1.accion\n  Input should be 'caminar', 'correr', 'nadar', 'escaleras', 'saltar', 'animacion' or 'apuntar' [type=literal_error, input_value='entrar_vehiculo', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error\npasos.2.accion\n  Input should be 'caminar', 'correr', 'nadar', 'escaleras', 'saltar', 'animacion' or 'apuntar' [type=literal_error, input_value='conducir_vehiculo', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+}

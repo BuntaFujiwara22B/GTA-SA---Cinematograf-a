@@ -23,6 +23,10 @@ secrets.yaml
 secrets.yml
 *.log
 *.bak
+*.tmp
+*.tmp.npz
+Thumbs.db
+desktop.ini
 
 # Entornos, temporales y exportaciones locales
 .cache/
@@ -63,6 +67,11 @@ secrets.yml
 !/evaluaciones/comparacion_clasificadores.csv
 !/evaluaciones/intenciones_supervisadas.json
 !/evaluaciones/integracion_modelo_intenciones.json
+!/evaluaciones/graficas/
+/evaluaciones/graficas/*
+!/evaluaciones/graficas/calidad_clasificadores.png
+!/evaluaciones/graficas/latencia_clasificadores.png
+!/evaluaciones/graficas/curva_aprendizaje_intenciones.png
 
 # Excluido de esta publicación por indicación del autor
 /tests/test_regresion_carrec.py

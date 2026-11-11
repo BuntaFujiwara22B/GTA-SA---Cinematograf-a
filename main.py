@@ -27,9 +27,7 @@ from src.estilo_ui import (FONDO, SUPERFICIE, SUPERFICIE_ALTA, BORDE, TEXTO,
 from src.preferencias_camara import preferencia_camara
 from src.ayuda_mision import instruccionesguardar_mision
 
-# ---------------------------------------------------------
 # UTILIDADES DE LA INTERFAZ
-# ---------------------------------------------------------
 def posicion_local(e, defecto=(0.0, 0.0)):
     """Lee la posición local de un evento de gesto (compatible con distintas versiones de Flet)."""
     lp = getattr(e, "local_position", None)
@@ -61,9 +59,7 @@ def buscar_imagen_mapa():
     return os.path.relpath(ruta,ASSETS).replace("\\","/")
 
 
-# ---------------------------------------------------------
 # INTERFAZ PRINCIPAL (FLET 1.0+)
-# ---------------------------------------------------------
 async def main(page: ft.Page):
     page.title = "MMS-Director"
     page.theme_mode = ft.ThemeMode.DARK
@@ -148,9 +144,7 @@ async def main(page: ft.Page):
             luz.tooltip=nombre+': '+estado_texto
             etiqueta.value=nombre+' · '+estado_texto
 
-    # ---------------------------------------------------------
     # LECTURA DE ACTORES (assets_dir="assets")
-    # ---------------------------------------------------------
     ACTORES_BD = {"todos": []}
     ruta_os_actores = str(ASSETS/"actors")
     if os.path.exists(ruta_os_actores):
@@ -179,9 +173,7 @@ async def main(page: ft.Page):
     resultado_activo = [False]
     lbl_resumen_escena = ft.Text("", size=14, color=SECUNDARIO, text_align=ft.TextAlign.CENTER)
 
-    # ---------------------------------------------------------
     # NAVEGACIÓN ENTRE SECCIONES (deslizamiento animado, un gesto = una sección)
-    # ---------------------------------------------------------
     TOTAL_SECCIONES = 5
     seccion_actual = [0]
     ultimo_cambio = [0.0]
@@ -266,9 +258,7 @@ async def main(page: ft.Page):
 
     page.on_keyboard_event = on_tecla
 
-    # ---------------------------------------------------------
     # SECCIÓN 1: PERSONAJE GIGANTE
-    # ---------------------------------------------------------
     idx_actor = [0]
     reparto={'ids':[None], 'activo':0}
     vehiculo_elegido={'id':None,'confirmado':False,'indice':0}
@@ -462,9 +452,7 @@ async def main(page: ft.Page):
     ],spacing=24,visible=False,horizontal_alignment=ft.CrossAxisAlignment.CENTER)
     cuerpo_actor.controls.append(panel_vehiculos)
 
-    # ---------------------------------------------------------
     # SECCIÓN 2: MAPA TÁCTICO YA ABIERTO (clic = colocar ubicación)
-    # ---------------------------------------------------------
     TAM_MAPA = max(260, min(int(alto() * 0.66), ancho()-96, 640))
     vista_mapa=VistaMapa(TAM_MAPA)
     MUNDO = 6000.0  # coordenadas de -3000 a 3000
@@ -741,9 +729,7 @@ async def main(page: ft.Page):
         padding=ft.Padding.symmetric(horizontal=32,vertical=28),
     )
 
-    # ---------------------------------------------------------
     # SECCIÓN 3: AMBIENTE Y PREVISUALIZACIÓN
-    # ---------------------------------------------------------
     img_clima_centro = ft.Image(src="hora_12/none.jpg", fit=ft.BoxFit.COVER, width=420, height=260, visible=False)
     placeholder_clima = ft.Container(
         content=ft.Icon(ft.Icons.WB_SUNNY_OUTLINED,size=60,color=ACENTO),
@@ -1307,9 +1293,7 @@ async def main(page: ft.Page):
 
     secciones = [seccion_actor, seccion_mapa, seccion_relojes, seccion_camaras, seccion_exportar]
 
-    # ---------------------------------------------------------
     # CONTENEDOR FASE 2: tira vertical que se desliza con animación (60 fps)
-    # ---------------------------------------------------------
     slide = ft.Container(
         content=ft.Column(secciones, spacing=0, horizontal_alignment=ft.CrossAxisAlignment.CENTER),
         left=0,
@@ -1472,9 +1456,7 @@ async def main(page: ft.Page):
             actions=[ft.TextButton('Cerrar',on_click=lambda e:page.pop_dialog())])
         page.show_dialog(dialogo)
 
-    # ---------------------------------------------------------
     # BACKEND: LÓGICA ORIGINAL DE NOTA ADHESIVA E IA (INTACTA)
-    # ---------------------------------------------------------
     async def on_analizar(e,plan_preparado=None):
         if debounce_task[0]:
             debounce_task[0].cancel()

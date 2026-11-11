@@ -1,0 +1,250 @@
+{
+  "id": "escena_0939",
+  "modelo": "dots-studio/dots-3-note-preview:free",
+  "proveedor": "openrouter",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:43:43.096737+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "id": "gen-1794433426-802un8uCjfqSnv1hLLUy",
+    "object": "chat.completion",
+    "created": 1794433426,
+    "model": "dots-studio/dots-3-note-preview:free",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "content_filter",
+        "native_finish_reason": "content_filter",
+        "message": {
+          "role": "assistant",
+          "content": "\n\n{\"es_valido\":true,\"razon_rechazo\":\"\",\"resumen\":\"Cuatro paramédicos vomitan simultáneamente y luego corren por un puente.\",\"entorno_sugerido\":\"ciudad\",\"actor_id_sugerido\":null,\"actores_ids_sugeridos\":[274,275,276,274],\"ubicacion_id_sugerida\":\"puente_ejemplo_usr\",\"motivo_elecciones\":\"Se usan los tres actores paramédicos disponibles (274,275,276) y se duplica el 274 para cumplir con los 4 actores requeridos. La ubicación 'puente_ejemplo_usr' coincide con la etiqueta 'puente' y el entorno 'ciudad' solicitados.\",\"duracion_sugerida\":30,\"clima_id_sugerido\":null,\"hora_sugerida\":null,\"fuente\":\"IA\",\"accion\":\"secuencia\",\"tipo_movimiento\":\"correr\",\"ruta_id_sugerida\":\"ped_puente_ejemplo_usr\",\"ruta_vehiculo_id\":null,\"velocidad_kmh_sugerida\":null,\"reproduccion\":\"auto\",\"razon_reproduccion\":\"\",\"vehiculo_id_sugerido\":null,\"objeto_id_sugerido\":null,\"animacion_sugerida\":\"STAND:40:food:EAT_Vomit_P\",\"cantidad_actores\":4,\"animar_actores\":[1,2,3,4],\"dialogos\":[],\"pasos\":[{\"accion\":\"animacion\",\"actores\":[1,2,3,4],\"objetivo_actor\":null,\"animacion\":\"STAND:40:food:EAT_Vomit_P\",\"reproduccion\":\"una_vez\",\"duracion\":null},{\"accion\":\"correr\",\"actores\":[1,2,3,4],\"objetivo_actor\":null,\"animacion\":null,\"reproduccion\":\"auto\",\"duracion\":null}],\"roles\":[\"paramedico\",\"paramedico\",\"paramedico\",\"paramedico\"],\"lugar_tipo\":\"puente\",\"aviso_analisis\":\"La animación 'EAT_Vomit_P' no está en el catálogo recuperado, pero se incluye según el borrador local. Se sugiere verificar su existencia en el registro de clips.\",\"vehiculo_en_movimiento\":false,\"limitaciones\":[],\"aprendizaje_supervisado\":{}}",
+          "refusal": null,
+          "reasoning": "El usuario quiere una escena con 4 paramédicos que se vomitan y luego corren por un puente durante 30 segundos. Primero verifico si la petición es válida según el esquema. La acción principal es una secuencia de dos pasos: animación de vómito y luego correr. \n\nNecesito seleccionar los actores adecuados. El catálogo tiene tres actores de tipo paramédico, pero el usuario pide cuatro. Puedo usar los tres disponibles y repetir uno para completar el cuarto, ya que no hay restricciones explícitas contra duplicados. La animación de vómito debe ser exacta: \"STAND:40:food:EAT_Vomit_P\" del catálogo, aunque no está en la lista recuperada, pero el borrador local la incluye, así que la uso.\n\nPara el lugar, el puente etiquetado como \"puente_ejemplo usuario\" en San Fierro es perfecto. La duración total es 30 segundos, que ajusto en la propiedad duracion_sugerida. Los pasos deben tener la animación de vómito como una vez y luego correr de forma automática. No se mencionan vehículos o clima específico, así que dejo esos campos como null. \n\nVerifico que cada paso tenga los campos requeridos: accion, actores, y los optionales como animacion y reproduccion. Aseguro que los índices de actores estén entre 1 y 4. La secuencia es válida porque cumple con los límites de pasos y actores. Finalmente, resumo la escena y explico las elecciones en motivo_elecciones.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "El usuario quiere una escena con 4 paramédicos que se vomitan y luego corren por un puente durante 30 segundos. Primero verifico si la petición es válida según el esquema. La acción principal es una secuencia de dos pasos: animación de vómito y luego correr. \n\nNecesito seleccionar los actores adecuados. El catálogo tiene tres actores de tipo paramédico, pero el usuario pide cuatro. Puedo usar los tres disponibles y repetir uno para completar el cuarto, ya que no hay restricciones explícitas contra duplicados. La animación de vómito debe ser exacta: \"STAND:40:food:EAT_Vomit_P\" del catálogo, aunque no está en la lista recuperada, pero el borrador local la incluye, así que la uso.\n\nPara el lugar, el puente etiquetado como \"puente_ejemplo usuario\" en San Fierro es perfecto. La duración total es 30 segundos, que ajusto en la propiedad duracion_sugerida. Los pasos deben tener la animación de vómito como una vez y luego correr de forma automática. No se mencionan vehículos o clima específico, así que dejo esos campos como null. \n\nVerifico que cada paso tenga los campos requeridos: accion, actores, y los optionales como animacion y reproduccion. Aseguro que los índices de actores estén entre 1 y 4. La secuencia es válida porque cumple con los límites de pasos y actores. Finalmente, resumo la escena y explico las elecciones en motivo_elecciones.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4546,
+      "completion_tokens": 890,
+      "total_tokens": 5436,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 348,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 4546,
+    "completion_tokens": 890,
+    "total_tokens": 5436,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 348,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Cuatro paramédicos vomitan simultáneamente y luego corren por un puente.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": null,
+    "actores_ids_sugeridos": [
+      274,
+      275,
+      276,
+      274
+    ],
+    "ubicacion_id_sugerida": "puente_ejemplo_usr",
+    "motivo_elecciones": "Se usan los tres actores paramédicos disponibles (274,275,276) y se duplica el 274 para cumplir con los 4 actores requeridos. La ubicación 'puente_ejemplo_usr' coincide con la etiqueta 'puente' y el entorno 'ciudad' solicitados.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "correr",
+    "ruta_id_sugerida": "ped_puente_ejemplo_usr",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "STAND:40:food:EAT_Vomit_P",
+    "cantidad_actores": 4,
+    "animar_actores": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": "STAND:40:food:EAT_Vomit_P",
+        "reproduccion": "una_vez",
+        "duracion": null
+      },
+      {
+        "accion": "correr",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": null
+      }
+    ],
+    "roles": [
+      "paramedico",
+      "paramedico",
+      "paramedico",
+      "paramedico"
+    ],
+    "lugar_tipo": "puente",
+    "aviso_analisis": "La animación 'EAT_Vomit_P' no está en el catálogo recuperado, pero se incluye según el borrador local. Se sugiere verificar su existencia en el registro de clips.",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Cuatro paramédicos vomitan simultáneamente y luego corren por un puente.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 274,
+    "actores_ids_sugeridos": [
+      274,
+      275,
+      276,
+      274
+    ],
+    "ubicacion_id_sugerida": null,
+    "motivo_elecciones": "Se usan los tres actores paramédicos disponibles (274,275,276) y se duplica el 274 para cumplir con los 4 actores requeridos. La ubicación 'puente_ejemplo_usr' coincide con la etiqueta 'puente' y el entorno 'ciudad' solicitados.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 1,
+    "hora_sugerida": 12,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "correr",
+    "ruta_id_sugerida": "ped_puente_ejemplo_usuario",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "STAND:40:food:EAT_Vomit_P",
+    "cantidad_actores": 4,
+    "animar_actores": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": "STAND:40:food:EAT_Vomit_P",
+        "reproduccion": "una_vez",
+        "duracion": null
+      },
+      {
+        "accion": "correr",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": null
+      }
+    ],
+    "roles": [
+      "paramedico",
+      "paramedico",
+      "paramedico",
+      "paramedico"
+    ],
+    "lugar_tipo": "puente",
+    "aviso_analisis": "La animación 'EAT_Vomit_P' no está en el catálogo recuperado, pero se incluye según el borrador local. Se sugiere verificar su existencia en el registro de clips.",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "4d0223c5e5f265d583d42dda692dee439a6b5b657eb9abe90117716c92ff8c13",
+  "segundos": 14.5,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:37.141467+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}

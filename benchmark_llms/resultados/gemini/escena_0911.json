@@ -1,0 +1,198 @@
+{
+  "id": "escena_0911",
+  "modelo": "gemini-3.5-flash",
+  "proveedor": "google",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:42:54.975236+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "```json\n{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"Dos soldados se tumban en el suelo y luego comienzan a bailar en una calle de San Fierro.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": 287,\n  \"actores_ids_sugeridos\": [287, 287],\n  \"ubicacion_id_sugerida\": \"lugar_33_1197\",\n  \"motivo_elecciones\": \"Se selecciona el modelo 287 (militar/army) para representar a los soldados y una ubicación urbana en San Fierro. Se divide la acción en una secuencia de dos pasos: tumbarse y luego bailar.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": null,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"secuencia\",\n  \"tipo_movimiento\": \"caminar\",\n  \"ruta_id_sugerida\": null,\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"auto\",\n  \"razon_reproduccion\": \"\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": null,\n  \"cantidad_actores\": 2,\n  \"animar_actores\": [1, 2],\n  \"dialogos\": [],\n  \"pasos\": [\n    {\n      \"accion\": \"animacion\",\n      \"actores\": [1, 2],\n      \"objetivo_actor\": null,\n      \"animacion\": \"BEACH:Lay_Bac_Loop\",\n      \"reproduccion\": \"mantener\",\n      \"duracion\": 15\n    },\n    {\n      \"accion\": \"animacion\",\n      \"actores\": [1, 2],\n      \"objetivo_actor\": null,\n      \"animacion\": \"DANCING:dance_loop\",\n      \"reproduccion\": \"bucle\",\n      \"duracion\": 15\n    }\n  ],\n  \"roles\": [\"militar\", \"militar\"],\n  \"lugar_tipo\": \"calle\",\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [],\n  \"aprendizaje_supervisado\": {}\n}\n```",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 4635,
+      "candidatesTokenCount": 609,
+      "totalTokenCount": 6224,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4635
+        }
+      ],
+      "thoughtsTokenCount": 980,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.6-flash",
+    "responseId": "X-H0auPqNdytuMYP4PSpwAE"
+  },
+  "usage": {
+    "promptTokenCount": 4635,
+    "candidatesTokenCount": 609,
+    "totalTokenCount": 6224,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 4635
+      }
+    ],
+    "thoughtsTokenCount": 980,
+    "serviceTier": "standard"
+  },
+  "json_valido": true,
+  "mms_generado": false,
+  "correcto": false,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Dos soldados se tumban en el suelo y luego comienzan a bailar en una calle de San Fierro.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 287,
+    "actores_ids_sugeridos": [
+      287,
+      287
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Se selecciona el modelo 287 (militar/army) para representar a los soldados y una ubicación urbana en San Fierro. Se divide la acción en una secuencia de dos pasos: tumbarse y luego bailar.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 2,
+    "animar_actores": [
+      1,
+      2
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2
+        ],
+        "objetivo_actor": null,
+        "animacion": "BEACH:Lay_Bac_Loop",
+        "reproduccion": "mantener",
+        "duracion": 15
+      },
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2
+        ],
+        "objetivo_actor": null,
+        "animacion": "DANCING:dance_loop",
+        "reproduccion": "bucle",
+        "duracion": 15
+      }
+    ],
+    "roles": [
+      "militar",
+      "militar"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": false,
+    "razon_rechazo": "El clip de una acción no pertenece al catálogo.",
+    "resumen": "Dos soldados se tumban en el suelo y luego comienzan a bailar en una calle de San Fierro.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 287,
+    "actores_ids_sugeridos": [
+      287,
+      287
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Se selecciona el modelo 287 (militar/army) para representar a los soldados y una ubicación urbana en San Fierro. Se divide la acción en una secuencia de dos pasos: tumbarse y luego bailar.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": "ped_33_1334_33_1399",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 2,
+    "animar_actores": [
+      1,
+      2
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2
+        ],
+        "objetivo_actor": null,
+        "animacion": "BEACH:Lay_Bac_Loop",
+        "reproduccion": "mantener",
+        "duracion": 15
+      },
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2
+        ],
+        "objetivo_actor": null,
+        "animacion": "DANCING:dance_loop",
+        "reproduccion": "bucle",
+        "duracion": 15
+      }
+    ],
+    "roles": [
+      "militar",
+      "militar"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "segundos": 8.844,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": false,
+      "fecha_utc": "2026-11-11T21:49:36.524921+00:00",
+      "sin_consulta_api": true
+    }
+  ],
+  "error_evaluacion": "Aceptación diferente del contrato esperado"
+}

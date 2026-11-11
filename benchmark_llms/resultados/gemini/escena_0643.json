@@ -1,0 +1,188 @@
+{
+  "id": "escena_0643",
+  "modelo": "gemini-3.5-flash",
+  "proveedor": "google",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:43:58.016165+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "```json\n{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"Un soldado salta y luego aplaude en una calle de San Fierro.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": 287,\n  \"actores_ids_sugeridos\": [\n    287\n  ],\n  \"ubicacion_id_sugerida\": \"lugar_33_1197\",\n  \"motivo_elecciones\": \"Se selecciona el actor militar (ID 287) y una ubicación urbana en San Fierro para ejecutar la secuencia solicitada.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": null,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"secuencia\",\n  \"tipo_movimiento\": \"caminar\",\n  \"ruta_id_sugerida\": null,\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"auto\",\n  \"razon_reproduccion\": \"\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": null,\n  \"cantidad_actores\": 1,\n  \"animar_actores\": [\n    1\n  ],\n  \"dialogos\": [],\n  \"pasos\": [\n    {\n      \"accion\": \"saltar\",\n      \"actores\": [\n        1\n      ],\n      \"objetivo_actor\": null,\n      \"animacion\": null,\n      \"reproduccion\": \"auto\",\n      \"duracion\": null\n    },\n    {\n      \"accion\": \"animacion\",\n      \"actores\": [\n        1\n      ],\n      \"objetivo_actor\": null,\n      \"animacion\": \"DANCE:1:DANCING:bd_clap\",\n      \"reproduccion\": \"bucle\",\n      \"duracion\": null\n    }\n  ],\n  \"roles\": [\n    \"militar\"\n  ],\n  \"lugar_tipo\": \"calle\",\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [],\n  \"aprendizaje_supervisado\": {}\n}\n```",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 4600,
+      "candidatesTokenCount": 582,
+      "totalTokenCount": 6779,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4600
+        }
+      ],
+      "thoughtsTokenCount": 1597,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.6-flash",
+    "responseId": "nuH0aq-yJr2zytMPn9WK0AE"
+  },
+  "usage": {
+    "promptTokenCount": 4600,
+    "candidatesTokenCount": 582,
+    "totalTokenCount": 6779,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 4600
+      }
+    ],
+    "thoughtsTokenCount": 1597,
+    "serviceTier": "standard"
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Un soldado salta y luego aplaude en una calle de San Fierro.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 287,
+    "actores_ids_sugeridos": [
+      287
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Se selecciona el actor militar (ID 287) y una ubicación urbana en San Fierro para ejecutar la secuencia solicitada.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 1,
+    "animar_actores": [
+      1
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "saltar",
+        "actores": [
+          1
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": null
+      },
+      {
+        "accion": "animacion",
+        "actores": [
+          1
+        ],
+        "objetivo_actor": null,
+        "animacion": "DANCE:1:DANCING:bd_clap",
+        "reproduccion": "bucle",
+        "duracion": null
+      }
+    ],
+    "roles": [
+      "militar"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Un soldado salta y luego aplaude en una calle de San Fierro.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 287,
+    "actores_ids_sugeridos": [
+      287
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Se selecciona el actor militar (ID 287) y una ubicación urbana en San Fierro para ejecutar la secuencia solicitada.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 1,
+    "hora_sugerida": 12,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": "ped_33_1334_33_1399",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 1,
+    "animar_actores": [
+      1
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "saltar",
+        "actores": [
+          1
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": null
+      },
+      {
+        "accion": "animacion",
+        "actores": [
+          1
+        ],
+        "objetivo_actor": null,
+        "animacion": "DANCE:1:DANCING:bd_clap",
+        "reproduccion": "bucle",
+        "duracion": null
+      }
+    ],
+    "roles": [
+      "militar"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "86f63e8affd3f822f170a2fd94333d56fc1343d97e6290eeb7c15140dba80bfb",
+  "segundos": 11.032,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:36.629921+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}

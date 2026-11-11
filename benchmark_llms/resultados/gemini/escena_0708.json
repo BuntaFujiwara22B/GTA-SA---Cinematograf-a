@@ -1,0 +1,218 @@
+{
+  "id": "escena_0708",
+  "modelo": "gemini-3.5-flash",
+  "proveedor": "google",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:43:11.340275+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "```json\n{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"Cuatro soldados corren y posteriormente se rinden levantando las manos en una calle de San Fierro.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": 287,\n  \"actores_ids_sugeridos\": [287, 287, 287, 287],\n  \"ubicacion_id_sugerida\": \"lugar_33_1197\",\n  \"motivo_elecciones\": \"Se configuraron 4 soldados con el skin militar 287 en una ubicación urbana de San Fierro para realizar la secuencia de desplazamiento en carrera seguida de la pose de rendición.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": null,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"secuencia\",\n  \"tipo_movimiento\": \"correr\",\n  \"ruta_id_sugerida\": \"ped_33_1334_33_1399\",\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"auto\",\n  \"razon_reproduccion\": \"\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": \"STAND:1:ped:handsup\",\n  \"cantidad_actores\": 4,\n  \"animar_actores\": [1, 2, 3, 4],\n  \"dialogos\": [],\n  \"pasos\": [\n    {\n      \"accion\": \"correr\",\n      \"actores\": [1, 2, 3, 4],\n      \"objetivo_actor\": null,\n      \"animacion\": null,\n      \"reproduccion\": \"auto\",\n      \"duracion\": null\n    },\n    {\n      \"accion\": \"animacion\",\n      \"actores\": [1, 2, 3, 4],\n      \"objetivo_actor\": null,\n      \"animacion\": \"STAND:1:ped:handsup\",\n      \"reproduccion\": \"mantener\",\n      \"duracion\": null\n    }\n  ],\n  \"roles\": [\"militar\", \"militar\", \"militar\", \"militar\"],\n  \"lugar_tipo\": \"calle urbana\",\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [],\n  \"aprendizaje_supervisado\": {}\n}\n```",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 4629,
+      "candidatesTokenCount": 652,
+      "totalTokenCount": 6662,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4629
+        }
+      ],
+      "thoughtsTokenCount": 1381,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.6-flash",
+    "responseId": "cOH0auOEDZmtuMYPy5bt2AE"
+  },
+  "usage": {
+    "promptTokenCount": 4629,
+    "candidatesTokenCount": 652,
+    "totalTokenCount": 6662,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 4629
+      }
+    ],
+    "thoughtsTokenCount": 1381,
+    "serviceTier": "standard"
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Cuatro soldados corren y posteriormente se rinden levantando las manos en una calle de San Fierro.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 287,
+    "actores_ids_sugeridos": [
+      287,
+      287,
+      287,
+      287
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Se configuraron 4 soldados con el skin militar 287 en una ubicación urbana de San Fierro para realizar la secuencia de desplazamiento en carrera seguida de la pose de rendición.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "correr",
+    "ruta_id_sugerida": "ped_33_1334_33_1399",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "STAND:1:ped:handsup",
+    "cantidad_actores": 4,
+    "animar_actores": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "correr",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": null
+      },
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": "STAND:1:ped:handsup",
+        "reproduccion": "mantener",
+        "duracion": null
+      }
+    ],
+    "roles": [
+      "militar",
+      "militar",
+      "militar",
+      "militar"
+    ],
+    "lugar_tipo": "calle urbana",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Cuatro soldados corren y posteriormente se rinden levantando las manos en una calle de San Fierro.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 287,
+    "actores_ids_sugeridos": [
+      287,
+      287,
+      287,
+      287
+    ],
+    "ubicacion_id_sugerida": null,
+    "motivo_elecciones": "Se configuraron 4 soldados con el skin militar 287 en una ubicación urbana de San Fierro para realizar la secuencia de desplazamiento en carrera seguida de la pose de rendición.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 1,
+    "hora_sugerida": 12,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "correr",
+    "ruta_id_sugerida": "ped_33_1334_33_1399",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "STAND:1:ped:handsup",
+    "cantidad_actores": 4,
+    "animar_actores": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "correr",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": null
+      },
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": "STAND:1:ped:handsup",
+        "reproduccion": "mantener",
+        "duracion": null
+      }
+    ],
+    "roles": [
+      "militar",
+      "militar",
+      "militar",
+      "militar"
+    ],
+    "lugar_tipo": "calle urbana",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "6f5e12768b4b310a4fb66d0daf90c08ea9c2ca31cb17afef787327907d0f9b0b",
+  "segundos": 10.14,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:36.559921+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}

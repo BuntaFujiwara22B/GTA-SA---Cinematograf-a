@@ -18,7 +18,8 @@ if ($Ligero) {
 if ($LASTEXITCODE -ne 0) { throw 'Fallo al preparar recursos.' }
 & $pythonBuild -m PyInstaller --noconfirm MMS-Director.spec
 if ($LASTEXITCODE -ne 0) { throw 'Fallo al crear el ejecutable.' }
-Copy-Item -LiteralPath README.md,OPTIMIZACION.md,CONDUCCION_Y_ESCENAS.md -Destination dist/MMS-Director
+Copy-Item -LiteralPath README.md -Destination dist/MMS-Director
+Copy-Item -LiteralPath docs -Destination dist/MMS-Director -Recurse -Force
 $iscc = Get-Command ISCC.exe -ErrorAction SilentlyContinue
 if ($iscc) {
     & $iscc.Source installer/MMS-Director.iss

@@ -1,0 +1,9 @@
+# Admitir CRLF en los archivos de texto generados en Windows.
+* whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Conservar los bytes de las misiones y grabaciones al cambiar de plataforma.
+*.mms -text whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
+*.rrr -text
+
+# Matplotlib separa con espacios los segmentos de las rutas SVG.
+*.svg whitespace=-blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

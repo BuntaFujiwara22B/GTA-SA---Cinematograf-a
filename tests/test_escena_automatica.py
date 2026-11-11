@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
-from preparar_calles import leer_nodos,extraer
+from tools.preparar_calles import leer_nodos,extraer
 from src.calles_escena import elegir_calle
 from src.ruta_colisiones import sugerir_ruta
 from src.mvp_plan import plan_local,validar_plan

@@ -1,0 +1,190 @@
+{
+  "id": "escena_0321",
+  "modelo": "dots-studio/dots-3-note-preview:free",
+  "proveedor": "openrouter",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:42:24.902936+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "id": "gen-1794433345-RtuW0UThL0pKEAvK8FJv",
+    "object": "chat.completion",
+    "created": 1794433345,
+    "model": "dots-studio/dots-3-note-preview:free",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\n{\"es_valido\":true,\"razon_rechazo\":\"\",\"resumen\":\"3 personas se asustan en un puente durante 30 segundos.\",\"entorno_sugerido\":\"ciudad\",\"actor_id_sugerido\":null,\"actores_ids_sugeridos\":[1,2,3],\"ubicacion_id_sugerida\":\"puente_ejemplo_usuario\",\"motivo_elecciones\":\"La animación panic_cower es perfecta para el gesto de miedo. La ubicación 'puente_ejemplo usuario' tiene la etiqueta 'puente' y está en San Fierro, un entorno urbano adecuado.\",\"duracion_sugerida\":30,\"clima_id_sugerido\":null,\"hora_sugerida\":null,\"fuente\":\"IA\",\"accion\":\"animacion\",\"tipo_movimiento\":\"caminar\",\"ruta_id_sugerida\":null,\"ruta_vehiculo_id\":null,\"velocidad_kmh_sugerida\":null,\"reproduccion\":\"una_vez\",\"razon_reproduccion\":\"La animación panic_cower es un gesto puntual de encogerse por miedo. No es una acción que deba repetirse en bucle.\",\"vehiculo_id_sugerido\":null,\"objeto_id_sugerido\":null,\"animacion_sugerida\":\"STAND:70:ON_LOOKERS:panic_cower\",\"cantidad_actores\":3,\"animar_actores\":[1,2,3],\"dialogos\":[],\"pasos\":[],\"roles\":[\"civil\",\"civil\",\"civil\"],\"lugar_tipo\":\"puente\",\"aviso_analisis\":\"Se ha utilizado la animación panic_cower de la librería ON_LOOKERS, que representa exactamente el gesto de encogerse por miedo.\",\"vehiculo_en_movimiento\":false,\"limitaciones\":[],\"aprendizaje_supervisado\":{}}",
+          "refusal": null,
+          "reasoning": "El usuario solicita una escena de 3 personas asustadas en un puente durante 30 segundos. Primero debo confirmar que el esquema de Mission Maker GTA SA admite esta acción. El registro de capacidades muestra que la animación \"encogerse por miedo\" (panic_cower) está disponible en la librería ON_LOOKERS, por lo que es válida.\n\nEl usuario especifica \"3 personas\", por lo que el campo cantidad_actores debe ser 3. La ubicación \"puente\" coincide con el elemento puente_ejemplo usuario en el catálogo. La duración de 30 segundos está dentro del límite de 1-60 segundos. El clima y la hora no se especifican, por lo que se pueden dejar como nulo.\n\nLa animación panic_cower es un gesto puntual, por lo que la reproducción debe ser \"una_vez\" para evitar repetición automática. Los 3 actores deben animarse simultáneamente, por lo que animar_actores incluye [1,2,3]. El esquema requiere un resumen conciso y los campos obligatorios es_valido y resumen.\n\nVerifico que todos los campos obligatorios estén presentes: es_valido=true, resumen=\"3 personas se asustan en un puente durante 30 segundos\". Los pasos están vacíos porque la animación es directa sin secuencia de movimientos. El campo accion es \"animacion\" según el tipo de tarea.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "El usuario solicita una escena de 3 personas asustadas en un puente durante 30 segundos. Primero debo confirmar que el esquema de Mission Maker GTA SA admite esta acción. El registro de capacidades muestra que la animación \"encogerse por miedo\" (panic_cower) está disponible en la librería ON_LOOKERS, por lo que es válida.\n\nEl usuario especifica \"3 personas\", por lo que el campo cantidad_actores debe ser 3. La ubicación \"puente\" coincide con el elemento puente_ejemplo usuario en el catálogo. La duración de 30 segundos está dentro del límite de 1-60 segundos. El clima y la hora no se especifican, por lo que se pueden dejar como nulo.\n\nLa animación panic_cower es un gesto puntual, por lo que la reproducción debe ser \"una_vez\" para evitar repetición automática. Los 3 actores deben animarse simultáneamente, por lo que animar_actores incluye [1,2,3]. El esquema requiere un resumen conciso y los campos obligatorios es_valido y resumen.\n\nVerifico que todos los campos obligatorios estén presentes: es_valido=true, resumen=\"3 personas se asustan en un puente durante 30 segundos\". Los pasos están vacíos porque la animación es directa sin secuencia de movimientos. El campo accion es \"animacion\" según el tipo de tarea.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4428,
+      "completion_tokens": 727,
+      "total_tokens": 5155,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 313,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 4428,
+    "completion_tokens": 727,
+    "total_tokens": 5155,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 313,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "3 personas se asustan en un puente durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": null,
+    "actores_ids_sugeridos": [
+      1,
+      2,
+      3
+    ],
+    "ubicacion_id_sugerida": "puente_ejemplo_usuario",
+    "motivo_elecciones": "La animación panic_cower es perfecta para el gesto de miedo. La ubicación 'puente_ejemplo usuario' tiene la etiqueta 'puente' y está en San Fierro, un entorno urbano adecuado.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "animacion",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "una_vez",
+    "razon_reproduccion": "La animación panic_cower es un gesto puntual de encogerse por miedo. No es una acción que deba repetirse en bucle.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "STAND:70:ON_LOOKERS:panic_cower",
+    "cantidad_actores": 3,
+    "animar_actores": [
+      1,
+      2,
+      3
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "civil",
+      "civil",
+      "civil"
+    ],
+    "lugar_tipo": "puente",
+    "aviso_analisis": "Se ha utilizado la animación panic_cower de la librería ON_LOOKERS, que representa exactamente el gesto de encogerse por miedo.",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "3 personas se asustan en un puente durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 0,
+    "actores_ids_sugeridos": [
+      0,
+      7,
+      9
+    ],
+    "ubicacion_id_sugerida": "puente_ejemplo_usuario",
+    "motivo_elecciones": "La animación panic_cower es perfecta para el gesto de miedo. La ubicación 'puente_ejemplo usuario' tiene la etiqueta 'puente' y está en San Fierro, un entorno urbano adecuado.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 1,
+    "hora_sugerida": 12,
+    "fuente": "IA",
+    "accion": "animacion",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "una_vez",
+    "razon_reproduccion": "Comportamiento propuesto por el análisis de la escena.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "STAND:70:ON_LOOKERS:panic_cower",
+    "cantidad_actores": 3,
+    "animar_actores": [
+      1,
+      2,
+      3
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "civil",
+      "civil",
+      "civil"
+    ],
+    "lugar_tipo": "puente",
+    "aviso_analisis": "Se ha utilizado la animación panic_cower de la librería ON_LOOKERS, que representa exactamente el gesto de encogerse por miedo.",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "ebbe5f2100f63156ab3a5ade08a04143389be99e501f96024033a901e8feab95",
+  "segundos": 9.578,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:37.115466+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}

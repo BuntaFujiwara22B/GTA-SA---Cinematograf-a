@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 import src.climas as climas
-from indexar_climas import alinear
+from tools.indexar_climas import alinear
 import numpy as np
 
 
@@ -47,7 +47,7 @@ class Climas(unittest.TestCase):
             self.assertIsNone(climas.foto_verificada(0,20))
 
     def test_alineacion_descarta_extra_y_conserva_hueco(self):
-        with patch('indexar_climas.firma_visual',side_effect=lambda x:np.full(15,x)):
+        with patch('tools.indexar_climas.firma_visual',side_effect=lambda x:np.full(15,x)):
             pares=alinear([-.7,0,.3,.6],[0,.3,.6])
             self.assertEqual([pares[i][0] for i in range(3)],[0,.3,.6])
             pares=alinear([0,.6],[0,.3,.6])

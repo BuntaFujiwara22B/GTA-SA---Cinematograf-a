@@ -1,0 +1,200 @@
+{
+  "id": "escena_1194",
+  "modelo": "nvidia/nemotron-3.5-super-vl:free",
+  "proveedor": "openrouter",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:46:01.104300+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "id": "gen-1794433561-rqjVEmXAP1aBxgLVvj5t",
+    "object": "chat.completion",
+    "created": 1794433561,
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "provider": "Nvidia",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"Un policía camina hacia un taxi en Las Venturas, sube y conduce por la ciudad durante 30 segundos.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": 280,\n  \"actores_ids_sugeridos\": [280],\n  \"ubicacion_id_sugerida\": \"lugar_46_1860\",\n  \"motivo_elecciones\": \"Modelo policía 280 del catálogo, taxi modelo 420, ubicación en Las Venturas y ruta vehicular de esa zona.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": null,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"conducir_vehiculo\",\n  \"tipo_movimiento\": \"caminar\",\n  \"ruta_id_sugerida\": null,\n  \"ruta_vehiculo_id\": \"auto_46_233\",\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"auto\",\n  \"razon_reproduccion\": \"\",\n  \"vehiculo_id_sugerido\": 420,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": null,\n  \"cantidad_actores\": 1,\n  \"animar_actores\": [1],\n  \"dialogos\": [],\n  \"pasos\": [\n    {\n      \"accion\": \"caminar\",\n      \"actores\": [1],\n      \"objetivo_actor\": null,\n      \"animacion\": null,\n      \"reproduccion\": \"auto\",\n      \"duracion\": null\n    }\n  ],\n  \"roles\": [\"policia\"],\n  \"lugar_tipo\": \"ciudad\",\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": true,\n  \"limitaciones\": [],\n  \"aprendizaje_supervisado\": {}\n}",
+          "refusal": null,
+          "reasoning": "El usuario pide: \"un policía camina, se sube a un taxi y maneja por Las Venturas durante 30 segundos\".\n\nDebo interpretar la petición completa para Mission Maker GTA SA. No sustituzar acciones ni inventar IDs. Devuelve SOLO JSON según el esquema.\n\nAnálisis de la petición:\n- Actor: policía (modelo 280, 281 o 282 del catálogo, roles [\"policia\"])\n- Acciones: caminar, subir a un taxi, manejar por Las Venturas durante 30 segundos.\n- Vehículo: taxi (model_id 420, nombre \"taxi\")\n- Ubicación: Las Venturas (ciudad)\n- Duración total: 30 segundos (dentro de 1..60s)\n- Una a ocho tareas en secuencia, uno a cuatro actores.\n\nEl esquema tiene campos de nivel superior y un array \"pasos\" de PasoEscena. Pero también hay campos como accion, tipo_movimiento, ruta_id_sugerida, ruta_vehiculo_id, velocidad_kmh_sugerida, vehiculo_id_sugerido, etc.\n\nSegún el esquema y las instrucciones:\n- \"Subir y conducir: accion=conducir_vehiculo, no terminar al subir. Solo subir: entrar_vehiculo.\"\n- Pero el esquema de PasoEscena solo permite accion: caminar, correr, nadar, escaleras, saltar, animacion, apuntar. No tiene \"conducir_vehiculo\" ni \"entrar_vehiculo\" en el enum de PasoEscena.accion.\n- Sin embargo, a nivel superior del PlanMVP hay \"accion\": {\"default\": \"caminar\", ...} sin enum restringido en el esquema mostrado? Veamos: \"accion\": {\"default\": \"caminar\", \"title\": \"Accion\", \"type\": \"string\"}. No tiene enum en el esquema raíz, solo en PasoEscena.\n- El borrador local tiene \"accion\":\"conducir_vehiculo\" y pasos vacíos.\n\nEl registro de capacidades dice:\n- composiciones: conducir_vehiculo estado implementada, límites: \"Entrar, esperar entrada real y conducir con CARREC\".\n- animacion_sobre_vehiculo experimental.\n\nLa petición es: caminar, subirse a un taxi, manejar por Las Venturas durante 30 segundos.\n\nDado que PasoEscena no tiene \"conducir\" ni \"entrar_vehiculo\", pero el nivel superior sí permite accion=\"conducir_vehiculo\". El borrador sugiere usar accion=\"conducir_vehiculo\" y pasos vacíos o con caminar?\n\nEl usuario pide específicamente \"camina, se sube a un taxi y maneja\". Eso implica secuencia: caminar -> subir -> conducir.\n\nPero el esquema de pasos no soporta \"subir\" ni \"conducir\" como acciones de paso. Sin embargo, el nivel superior tiene campos para vehículo, ruta_vehiculo, velocidad, etc.\n\nNecesito devolver SOLO JSON válido según el esquema. Debo incluir es_valido, resumen, y los campos relevantes.\n\nDado que el borrador local ya tiene una estructura, debo adaptarla. Pero el borrador tiene pasos vacíos y accion=\"conducir_vehiculo\". El usuario quiere caminar primero. ¿Puedo incluir un paso de caminar y luego el nivel superior maneja el conducir?\n\nEl esquema dice: \"accion=secuencia usa pasos con actores por índice 1..4.\" Pero el campo accion a nivel superior no tiene enum \"secuencia\" en el esquema mostrado (solo string). Sin embargo, el texto dice \"accion=secuencia usa pasos...\". El borrador usa accion=\"conducir_vehiculo\".\n\nDado que el compilador admite rutas caminar/correr/nadar/escaleras, clips del catálogo, saltar nativo y apuntar con arma a otro actor. Una a ocho tareas en secuencia.\n\nPara \"conducir_vehiculo\", el registro dice: \"Entrar, esperar entrada real y conducir con CARREC\". Parece que la composición conducir_vehiculo maneja entrar y conducir. El usuario pide caminar antes. ¿Se puede hacer un paso caminar y luego accion conducir_vehiculo?\n\nEl esquema de nivel superior tiene \"pasos\" (array de PasoEscena) y también \"accion\". Si pongo accion=\"conducir_vehiculo\" y pasos=[{accion:\"caminar\", actores:[1], ...}], ¿eso tiene sentido? El borrador tiene pasos vacíos.\n\nQuizás lo mejor es:\n- es_valido: true\n- resumen: \"Un policía camina hacia un taxi en Las Venturas, sube y conduce durante 30 segundos.\"\n- entorno_sugerido: \"ciudad\"\n- actores_ids_sugeridos: [280] (o [280, 281, 282]? cantidad 1). actor_id_sugerido: 280.\n- ubicacion_id_sugerida: una de Las Venturas, ej \"lugar_46_1860\" o cualquier otra. El catálogo tiene 4 ubicaciones en Las Venturas. Elegir una, ej \"lugar_46_1860\".\n- motivo_elecciones: \"Policía del catálogo (modelo 280), taxi modelo 420, ubicación en Las Venturas.\"\n- duracion_sugerida: 30\n- clima_id_sugerido: null (no se especifica lluvia)\n- hora_sugerida: null\n- fuente: \"IA\"\n- accion: \"conducir_vehiculo\" (porque subir y conducir se maneja con esta composición)\n- tipo_movimiento: \"caminar\" (para el acercamiento inicial?)\n- ruta_id_sugerida: una ruta peatonal? El borrador tiene \"ped_54_1214_54_1221\" pero no está en el catálogo recuperado. El catálogo recuperado no incluye rutas peatonales (rutas_vehiculo sí). No debo inventar IDs. Como no hay rutas peatonales en el catálogo, ruta_id_sugerida debería ser null o no incluirla. El borrador la tiene pero no está en el catálogo recuperado. La instrucción dice \"No sustituyas acciones ni inventes IDs.\" Así que no debo inventar \"ped_54_1214_54_1221\" si no está en el catálogo. El catálogo recuperado solo tiene rutas_vehiculo. Así que ruta_id_sugerida: null.\n- ruta_vehiculo_id: elegir una de Las Venturas, ej \"auto_46_233\" o \"auto_54_118\". Todas son de Las Venturas. Elegir \"auto_46_233\".\n- velocidad_kmh_sugerida: null o un valor razonable. El esquema permite 10..90. Para ciudad, quizás 40 o 50. Pero no es obligatorio. Puedo poner null o 50. El borrador tiene null. Mejor null para no inventar? Pero velocidad es sugerida. Puedo poner 50. Sin embargo, \"No inventes IDs\" no prohíbe sugerir velocidad. Pero para ser seguro, null.\n- reproduccion: \"auto\"\n- vehiculo_id_sugerido: 420 (taxi)\n- cantidad_actores: 1\n- animar_actores: [1]\n- pasos: Aquí está el dilema. Si accion es conducir_vehiculo, ¿necesito pasos? El esquema permite pasos vacíos (maxItems 8, no minItems). Pero el usuario pide caminar primero. Podría poner un paso caminar con actor 1, duracion tal vez 5 o null. Pero luego el conducir_vehiculo a nivel superior cubriría el resto. Sin embargo, los pasos son de tipo PasoEscena que no tiene \"conducir\". Si pongo solo caminar, falta el conducir en los pasos. Pero el nivel superior accion=\"conducir_vehiculo\" podría implicar que el conductor (actor 1) conduce el vehículo sugerido.\n\nAlternativa: Usar accion=\"secuencia\" (aunque no esté en enum del esquema raíz, el texto menciona accion=secuencia). Pero el esquema raíz accion es solo string, no enum, así que técnicamente acepta \"secuencia\". Luego pasos:\n1. caminar: actores [1], duracion tal vez 5 (o null)\n2. ??? subir al vehículo no es una acción válida en PasoEscena.\n3. conducir no es válida en PasoEscena.\n\nDado que el registro dice conducir_vehiculo es una composición implementada que incluye \"Entrar, esperar entrada real y conducir con CARREC\", probablemente el nivel superior accion=\"conducir_vehiculo\" es la forma correcta de expresar \"subir y conducir\". El caminar previo podría ser un paso adicional o podría ser parte de la misma composición? No, la composición es entrar y conducir.\n\nQuizás lo más honesto es:\n- accion: \"conducir_vehiculo\"\n- pasos: [{ \"accion\": \"caminar\", \"actores\": [1], \"duracion\": null }] — pero esto no representa subir ni conducir en los pasos.\n- O pasos vacíos y confiar en que accion=\"conducir_vehiculo\" con vehiculo_id_sugerido y ruta_vehiculo_id lo cubre todo, incluyendo el caminar inicial? No, caminar no está incluido.\n\nEl usuario pide explícitamente \"camina, se sube a un taxi y maneja\". Si no puedo representar \"subir\" en pasos, quizás debo usar accion=\"secuencia\" y pasos con caminar, y luego... no hay paso para subir/conducir.\n\nEspera, el esquema de PasoEscena tiene \"animacion\" con string libre. ¿Podría usar animacion para subir? No, no hay clip de subir especificado.\n\nDado las restricciones, creo que la mejor interpretación es:\n- es_valido: true\n- accion: \"conducir_vehiculo\" (porque subir y conducir se agrupa en esta composición del compilador)\n- pasos: un paso de caminar para el actor 1 hacia el vehículo (duracion opcional, quizás 5 segundos o null). Pero si pongo duracion, suma al total? La duración total es 30s. El paso caminar podría ser parte de esos 30s o adicional. El usuario dice \"maneja por Las Venturas durante 30 segundos\". Eso sugiere que los 30s son de conducción. El caminar es previo. Pero la duración total de la escena debe ser 1..60s. Si caminar + conducir = 30s, entonces conducir sería menos. Pero el usuario dice \"maneja ... durante 30 segundos\". Ambiguo. Podría ser que la escena total sea 30s, incluyendo caminar. O que la conducción dure 30s.\n\nDado que duracion_sugerida es 30 en el borrador, y el usuario dice 30 segundos, pondré duracion_sugerida: 30.\n\nPasos: quizás un solo paso caminar con duracion null (o 5) y luego el nivel superior maneja el conducir durante el resto. Pero no hay forma de especificar duración de conducción aparte de duracion_sugerida a nivel superior.\n\nVeamos el borrador local: pasos vacíos, accion conducir_vehiculo, duracion_sugerida 30. Eso sugiere que la composición conducir_vehiculo toma la duración total. El caminar podría ser ignorado o implícito al entrar. Pero el usuario pide caminar explícitamente.\n\nPodría hacer:\npasos: [\n  { \"accion\": \"caminar\", \"actores\": [1], \"duracion\": 5 }\n]\ny luego accion=\"conducir_vehiculo\" con duracion_sugerida=30 (total?). Pero eso excedería 30 si se suman.\n\nQuizás lo más seguro es no poner pasos (array vacío) y dejar que accion=\"conducir_vehiculo\" con vehiculo_id_sugerido=420, ruta_vehiculo_id=\"auto_46_233\", actores_ids_sugeridos=[280], cantidad_actores=1, duracion_sugerida=30 represente toda la petición. El caminar puede ser parte del comportamiento de acercamiento al vehículo antes de entrar, implícito en \"Entrar\" de la composición. Pero el usuario dijo \"camina\". Hmm.\n\nOtra opción: usar accion=\"secuencia\" (aunque no esté en el enum del paso, el nivel superior es string libre). Pasos:\n1. caminar: actores [1]\n2. animacion: ??? no hay clip de subir.\n\nNo, mejor no inventar.\n\nLeamos cuidadosamente: \"Subir y conducir: accion=conducir_vehiculo, no terminar al subir. Solo subir: entrar_vehiculo.\" Esto implica que para subir y conducir se usa accion=conducir_vehiculo a nivel superior. No hay paso para subir. Así que la secuencia caminar -> subir -> conducir se modela como: tal vez un paso caminar y luego accion conducir_vehiculo. O simplemente accion conducir_vehiculo que incluye entrar (subir) y conducir. El caminar previo podría ser un paso adicional.\n\nDado que el esquema permite pasos y accion a nivel superior, y el borrador tiene pasos vacíos, creo que está bien incluir un paso caminar y dejar accion conducir_vehiculo para el resto. Pero no quiero exceder la duración.\n\nDecisión final:\n- es_valido: true\n- razon_rechazo: \"\"\n- resumen: \"Policía camina hacia un taxi en Las Venturas, sube y conduce por la ciudad durante 30 segundos.\"\n- entorno_sugerido: \"ciudad\"\n- actor_id_sugerido: 280\n- actores_ids_sugeridos: [280]\n- ubicacion_id_sugerida: \"lugar_46_1860\" (Las Venturas ciudad 3)\n- motivo_elecciones: \"Modelo policía 280 del catálogo, taxi modelo 420, ubicación en Las Venturas y ruta vehicular de esa zona.\"\n- duracion_sugerida: 30\n- clima_id_sugerido: null\n- hora_sugerida: null\n- fuente: \"IA\"\n- accion: \"conducir_vehiculo\"\n- tipo_movimiento: \"caminar\"\n- ruta_id_sugerida: null (no hay rutas peatonales en el catálogo recuperado, no inventar)\n- ruta_vehiculo_id: \"auto_46_233\" (Las Venturas recorrido 6)\n- velocidad_kmh_sugerida: null\n- reproduccion: \"auto\"\n- razon_reproduccion: \"\"\n- vehiculo_id_sugerido: 420\n- objeto_id_sugerido: null\n- animacion_sugerida: null\n- cantidad_actores: 1\n- animar_actores: [1]\n- dialogos: []\n- pasos: [\n    { \"accion\": \"caminar\", \"actores\": [1], \"duracion\": null }\n  ]\n- roles: [\"policia\"]\n- lugar_tipo: \"ciudad\"\n- aviso_analisis: \"\"\n- vehiculo_en_movimiento: true (porque maneja)\n- limitaciones: []\n- aprendizaje_supervisado: {}\n\nEspera, si pongo un paso caminar con duracion null, ¿es válido? PasoEscena.duracion es anyOf integer 1..60 o null, default null. Así que null está bien.\n\nPero, ¿tiene sentido tener accion=\"conducir_vehiculo\" y un paso caminar? El esquema no lo prohíbe. El texto dice \"accion=secuencia usa pasos...\". Si accion no es secuencia, quizás los pasos se ignoran o son complementarios. Pero no hay restricción explícita.\n\nAlternativamente, podría poner pasos vacíos y en el resumen mencionar el caminar. Pero el usuario pidió interpretar la petición completa. Incluir el paso caminar es más fiel.\n\nSin embargo, el borrador local tiene pasos vacíos. Quizás el sistema espera que para conducir_vehiculo los pasos estén vacíos y la composición lo gestione todo. Pero el caminar no está en la composición conducir_vehiculo según el registro (\"Entrar, esperar entrada real y conducir con CARREC\"). No menciona caminar antes.\n\nDado que el usuario pide caminar explícitamente, y el compilador admite caminar como ruta, puedo incluir un paso caminar. Luego el nivel superior accion=\"conducir_vehiculo\" manejará subir y conducir. La duración total de 30s podría aplicarse a la conducción, o a toda la escena. Como duracion_sugerida es a nivel superior, la pondré en 30.\n\n¿Debo incluir \"entrar_vehiculo\" como paso? No, PasoEscena.accion no lo permite.\n\n¿Debo usar accion=\"secuencia\" en lugar de \"conducir_vehiculo\"? El texto dice \"accion=secuencia usa pasos con actores por índice 1..4.\" Pero los pasos no soportan conducir. Así que no.\n\nCreo que la estructura es aceptable.\n\nRevisar IDs:\n- actor 280 (lapd1, COP, rol policia) - válido del catálogo.\n- vehículo 420 (taxi) - válido.\n- ubicación lugar_46_1860 - válido, Las Venturas.\n- ruta_vehiculo auto_46_233 - válido, Las Venturas.\n\nTodo son IDs del catálogo recuperado, no inventados.\n\nUn detalle: \"No sustituyas acciones ni inventes IDs.\" Estoy usando IDs reales del catálogo.\n\nEl JSON debe ser SOLO eso, sin texto adicional.\n\nVerificar que todos los campos requeridos estén: es_valido, resumen. Sí.\n\nTipos:\n- actores_ids_sugeridos: array de integers, max 4. [280] ok.\n- pasos: array de PasoEscena. Cada paso requiere accion. \"caminar\" ok. actores [1] ok (min 1, max 4). duracion null ok.\n- vehiculo_en_movimiento: boolean. true porque maneja.\n- cantidad_actores: 1.\n- animar_actores: [1].\n\n¿Debería animar_actores incluir al actor que camina y luego conduce? Sí, [1].\n\n¿roles? [\"policia\"].\n\n¿lugar_tipo? \"ciudad\".\n\n¿entorno_sugerido? \"ciudad\".\n\nTodo parece correcto.\n\nUn último pensamiento: el usuario dice \"maneja por Las Venturas durante 30 segundos\". Si pongo un paso caminar sin duración, y luego conducir_vehiculo con duracion_sugerida 30, quizás el caminar es instantáneo o se ignora en duración. Pero no hay forma de especificar duración de conducción aparte. Está bien.\n\nTambién podría omitir pasos y poner todo en accion conducir_vehiculo, pero entonces no reflejo el caminar. Incluiré el paso caminar.\n\nEspera, el esquema de PasoEscena no tiene campo para destino o ruta. Solo accion, actores, objetivo_actor, animacion, reproduccion, duracion. Para caminar, no se especifica ruta en el paso. La ruta_id_sugerida está a nivel superior. Está bien.\n\nVoy a generar el JSON.\n\nUn detalle más: \"actor_id_sugerido\" es anyOf integer o null. Pondré 280.\n\n\"ubicacion_id_sugerida\": \"lugar_46_1860\".\n\n\"ruta_vehiculo_id\": \"auto_46_233\".\n\n\"vehiculo_id_sugerido\": 420.\n\nJSON final.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "El usuario pide: \"un policía camina, se sube a un taxi y maneja por Las Venturas durante 30 segundos\".\n\nDebo interpretar la petición completa para Mission Maker GTA SA. No sustituzar acciones ni inventar IDs. Devuelve SOLO JSON según el esquema.\n\nAnálisis de la petición:\n- Actor: policía (modelo 280, 281 o 282 del catálogo, roles [\"policia\"])\n- Acciones: caminar, subir a un taxi, manejar por Las Venturas durante 30 segundos.\n- Vehículo: taxi (model_id 420, nombre \"taxi\")\n- Ubicación: Las Venturas (ciudad)\n- Duración total: 30 segundos (dentro de 1..60s)\n- Una a ocho tareas en secuencia, uno a cuatro actores.\n\nEl esquema tiene campos de nivel superior y un array \"pasos\" de PasoEscena. Pero también hay campos como accion, tipo_movimiento, ruta_id_sugerida, ruta_vehiculo_id, velocidad_kmh_sugerida, vehiculo_id_sugerido, etc.\n\nSegún el esquema y las instrucciones:\n- \"Subir y conducir: accion=conducir_vehiculo, no terminar al subir. Solo subir: entrar_vehiculo.\"\n- Pero el esquema de PasoEscena solo permite accion: caminar, correr, nadar, escaleras, saltar, animacion, apuntar. No tiene \"conducir_vehiculo\" ni \"entrar_vehiculo\" en el enum de PasoEscena.accion.\n- Sin embargo, a nivel superior del PlanMVP hay \"accion\": {\"default\": \"caminar\", ...} sin enum restringido en el esquema mostrado? Veamos: \"accion\": {\"default\": \"caminar\", \"title\": \"Accion\", \"type\": \"string\"}. No tiene enum en el esquema raíz, solo en PasoEscena.\n- El borrador local tiene \"accion\":\"conducir_vehiculo\" y pasos vacíos.\n\nEl registro de capacidades dice:\n- composiciones: conducir_vehiculo estado implementada, límites: \"Entrar, esperar entrada real y conducir con CARREC\".\n- animacion_sobre_vehiculo experimental.\n\nLa petición es: caminar, subirse a un taxi, manejar por Las Venturas durante 30 segundos.\n\nDado que PasoEscena no tiene \"conducir\" ni \"entrar_vehiculo\", pero el nivel superior sí permite accion=\"conducir_vehiculo\". El borrador sugiere usar accion=\"conducir_vehiculo\" y pasos vacíos o con caminar?\n\nEl usuario pide específicamente \"camina, se sube a un taxi y maneja\". Eso implica secuencia: caminar -> subir -> conducir.\n\nPero el esquema de pasos no soporta \"subir\" ni \"conducir\" como acciones de paso. Sin embargo, el nivel superior tiene campos para vehículo, ruta_vehiculo, velocidad, etc.\n\nNecesito devolver SOLO JSON válido según el esquema. Debo incluir es_valido, resumen, y los campos relevantes.\n\nDado que el borrador local ya tiene una estructura, debo adaptarla. Pero el borrador tiene pasos vacíos y accion=\"conducir_vehiculo\". El usuario quiere caminar primero. ¿Puedo incluir un paso de caminar y luego el nivel superior maneja el conducir?\n\nEl esquema dice: \"accion=secuencia usa pasos con actores por índice 1..4.\" Pero el campo accion a nivel superior no tiene enum \"secuencia\" en el esquema mostrado (solo string). Sin embargo, el texto dice \"accion=secuencia usa pasos...\". El borrador usa accion=\"conducir_vehiculo\".\n\nDado que el compilador admite rutas caminar/correr/nadar/escaleras, clips del catálogo, saltar nativo y apuntar con arma a otro actor. Una a ocho tareas en secuencia.\n\nPara \"conducir_vehiculo\", el registro dice: \"Entrar, esperar entrada real y conducir con CARREC\". Parece que la composición conducir_vehiculo maneja entrar y conducir. El usuario pide caminar antes. ¿Se puede hacer un paso caminar y luego accion conducir_vehiculo?\n\nEl esquema de nivel superior tiene \"pasos\" (array de PasoEscena) y también \"accion\". Si pongo accion=\"conducir_vehiculo\" y pasos=[{accion:\"caminar\", actores:[1], ...}], ¿eso tiene sentido? El borrador tiene pasos vacíos.\n\nQuizás lo mejor es:\n- es_valido: true\n- resumen: \"Un policía camina hacia un taxi en Las Venturas, sube y conduce durante 30 segundos.\"\n- entorno_sugerido: \"ciudad\"\n- actores_ids_sugeridos: [280] (o [280, 281, 282]? cantidad 1). actor_id_sugerido: 280.\n- ubicacion_id_sugerida: una de Las Venturas, ej \"lugar_46_1860\" o cualquier otra. El catálogo tiene 4 ubicaciones en Las Venturas. Elegir una, ej \"lugar_46_1860\".\n- motivo_elecciones: \"Policía del catálogo (modelo 280), taxi modelo 420, ubicación en Las Venturas.\"\n- duracion_sugerida: 30\n- clima_id_sugerido: null (no se especifica lluvia)\n- hora_sugerida: null\n- fuente: \"IA\"\n- accion: \"conducir_vehiculo\" (porque subir y conducir se maneja con esta composición)\n- tipo_movimiento: \"caminar\" (para el acercamiento inicial?)\n- ruta_id_sugerida: una ruta peatonal? El borrador tiene \"ped_54_1214_54_1221\" pero no está en el catálogo recuperado. El catálogo recuperado no incluye rutas peatonales (rutas_vehiculo sí). No debo inventar IDs. Como no hay rutas peatonales en el catálogo, ruta_id_sugerida debería ser null o no incluirla. El borrador la tiene pero no está en el catálogo recuperado. La instrucción dice \"No sustituyas acciones ni inventes IDs.\" Así que no debo inventar \"ped_54_1214_54_1221\" si no está en el catálogo. El catálogo recuperado solo tiene rutas_vehiculo. Así que ruta_id_sugerida: null.\n- ruta_vehiculo_id: elegir una de Las Venturas, ej \"auto_46_233\" o \"auto_54_118\". Todas son de Las Venturas. Elegir \"auto_46_233\".\n- velocidad_kmh_sugerida: null o un valor razonable. El esquema permite 10..90. Para ciudad, quizás 40 o 50. Pero no es obligatorio. Puedo poner null o 50. El borrador tiene null. Mejor null para no inventar? Pero velocidad es sugerida. Puedo poner 50. Sin embargo, \"No inventes IDs\" no prohíbe sugerir velocidad. Pero para ser seguro, null.\n- reproduccion: \"auto\"\n- vehiculo_id_sugerido: 420 (taxi)\n- cantidad_actores: 1\n- animar_actores: [1]\n- pasos: Aquí está el dilema. Si accion es conducir_vehiculo, ¿necesito pasos? El esquema permite pasos vacíos (maxItems 8, no minItems). Pero el usuario pide caminar primero. Podría poner un paso caminar con actor 1, duracion tal vez 5 o null. Pero luego el conducir_vehiculo a nivel superior cubriría el resto. Sin embargo, los pasos son de tipo PasoEscena que no tiene \"conducir\". Si pongo solo caminar, falta el conducir en los pasos. Pero el nivel superior accion=\"conducir_vehiculo\" podría implicar que el conductor (actor 1) conduce el vehículo sugerido.\n\nAlternativa: Usar accion=\"secuencia\" (aunque no esté en enum del esquema raíz, el texto menciona accion=secuencia). Pero el esquema raíz accion es solo string, no enum, así que técnicamente acepta \"secuencia\". Luego pasos:\n1. caminar: actores [1], duracion tal vez 5 (o null)\n2. ??? subir al vehículo no es una acción válida en PasoEscena.\n3. conducir no es válida en PasoEscena.\n\nDado que el registro dice conducir_vehiculo es una composición implementada que incluye \"Entrar, esperar entrada real y conducir con CARREC\", probablemente el nivel superior accion=\"conducir_vehiculo\" es la forma correcta de expresar \"subir y conducir\". El caminar previo podría ser un paso adicional o podría ser parte de la misma composición? No, la composición es entrar y conducir.\n\nQuizás lo más honesto es:\n- accion: \"conducir_vehiculo\"\n- pasos: [{ \"accion\": \"caminar\", \"actores\": [1], \"duracion\": null }] — pero esto no representa subir ni conducir en los pasos.\n- O pasos vacíos y confiar en que accion=\"conducir_vehiculo\" con vehiculo_id_sugerido y ruta_vehiculo_id lo cubre todo, incluyendo el caminar inicial? No, caminar no está incluido.\n\nEl usuario pide explícitamente \"camina, se sube a un taxi y maneja\". Si no puedo representar \"subir\" en pasos, quizás debo usar accion=\"secuencia\" y pasos con caminar, y luego... no hay paso para subir/conducir.\n\nEspera, el esquema de PasoEscena tiene \"animacion\" con string libre. ¿Podría usar animacion para subir? No, no hay clip de subir especificado.\n\nDado las restricciones, creo que la mejor interpretación es:\n- es_valido: true\n- accion: \"conducir_vehiculo\" (porque subir y conducir se agrupa en esta composición del compilador)\n- pasos: un paso de caminar para el actor 1 hacia el vehículo (duracion opcional, quizás 5 segundos o null). Pero si pongo duracion, suma al total? La duración total es 30s. El paso caminar podría ser parte de esos 30s o adicional. El usuario dice \"maneja por Las Venturas durante 30 segundos\". Eso sugiere que los 30s son de conducción. El caminar es previo. Pero la duración total de la escena debe ser 1..60s. Si caminar + conducir = 30s, entonces conducir sería menos. Pero el usuario dice \"maneja ... durante 30 segundos\". Ambiguo. Podría ser que la escena total sea 30s, incluyendo caminar. O que la conducción dure 30s.\n\nDado que duracion_sugerida es 30 en el borrador, y el usuario dice 30 segundos, pondré duracion_sugerida: 30.\n\nPasos: quizás un solo paso caminar con duracion null (o 5) y luego el nivel superior maneja el conducir durante el resto. Pero no hay forma de especificar duración de conducción aparte de duracion_sugerida a nivel superior.\n\nVeamos el borrador local: pasos vacíos, accion conducir_vehiculo, duracion_sugerida 30. Eso sugiere que la composición conducir_vehiculo toma la duración total. El caminar podría ser ignorado o implícito al entrar. Pero el usuario pide caminar explícitamente.\n\nPodría hacer:\npasos: [\n  { \"accion\": \"caminar\", \"actores\": [1], \"duracion\": 5 }\n]\ny luego accion=\"conducir_vehiculo\" con duracion_sugerida=30 (total?). Pero eso excedería 30 si se suman.\n\nQuizás lo más seguro es no poner pasos (array vacío) y dejar que accion=\"conducir_vehiculo\" con vehiculo_id_sugerido=420, ruta_vehiculo_id=\"auto_46_233\", actores_ids_sugeridos=[280], cantidad_actores=1, duracion_sugerida=30 represente toda la petición. El caminar puede ser parte del comportamiento de acercamiento al vehículo antes de entrar, implícito en \"Entrar\" de la composición. Pero el usuario dijo \"camina\". Hmm.\n\nOtra opción: usar accion=\"secuencia\" (aunque no esté en el enum del paso, el nivel superior es string libre). Pasos:\n1. caminar: actores [1]\n2. animacion: ??? no hay clip de subir.\n\nNo, mejor no inventar.\n\nLeamos cuidadosamente: \"Subir y conducir: accion=conducir_vehiculo, no terminar al subir. Solo subir: entrar_vehiculo.\" Esto implica que para subir y conducir se usa accion=conducir_vehiculo a nivel superior. No hay paso para subir. Así que la secuencia caminar -> subir -> conducir se modela como: tal vez un paso caminar y luego accion conducir_vehiculo. O simplemente accion conducir_vehiculo que incluye entrar (subir) y conducir. El caminar previo podría ser un paso adicional.\n\nDado que el esquema permite pasos y accion a nivel superior, y el borrador tiene pasos vacíos, creo que está bien incluir un paso caminar y dejar accion conducir_vehiculo para el resto. Pero no quiero exceder la duración.\n\nDecisión final:\n- es_valido: true\n- razon_rechazo: \"\"\n- resumen: \"Policía camina hacia un taxi en Las Venturas, sube y conduce por la ciudad durante 30 segundos.\"\n- entorno_sugerido: \"ciudad\"\n- actor_id_sugerido: 280\n- actores_ids_sugeridos: [280]\n- ubicacion_id_sugerida: \"lugar_46_1860\" (Las Venturas ciudad 3)\n- motivo_elecciones: \"Modelo policía 280 del catálogo, taxi modelo 420, ubicación en Las Venturas y ruta vehicular de esa zona.\"\n- duracion_sugerida: 30\n- clima_id_sugerido: null\n- hora_sugerida: null\n- fuente: \"IA\"\n- accion: \"conducir_vehiculo\"\n- tipo_movimiento: \"caminar\"\n- ruta_id_sugerida: null (no hay rutas peatonales en el catálogo recuperado, no inventar)\n- ruta_vehiculo_id: \"auto_46_233\" (Las Venturas recorrido 6)\n- velocidad_kmh_sugerida: null\n- reproduccion: \"auto\"\n- razon_reproduccion: \"\"\n- vehiculo_id_sugerido: 420\n- objeto_id_sugerido: null\n- animacion_sugerida: null\n- cantidad_actores: 1\n- animar_actores: [1]\n- dialogos: []\n- pasos: [\n    { \"accion\": \"caminar\", \"actores\": [1], \"duracion\": null }\n  ]\n- roles: [\"policia\"]\n- lugar_tipo: \"ciudad\"\n- aviso_analisis: \"\"\n- vehiculo_en_movimiento: true (porque maneja)\n- limitaciones: []\n- aprendizaje_supervisado: {}\n\nEspera, si pongo un paso caminar con duracion null, ¿es válido? PasoEscena.duracion es anyOf integer 1..60 o null, default null. Así que null está bien.\n\nPero, ¿tiene sentido tener accion=\"conducir_vehiculo\" y un paso caminar? El esquema no lo prohíbe. El texto dice \"accion=secuencia usa pasos...\". Si accion no es secuencia, quizás los pasos se ignoran o son complementarios. Pero no hay restricción explícita.\n\nAlternativamente, podría poner pasos vacíos y en el resumen mencionar el caminar. Pero el usuario pidió interpretar la petición completa. Incluir el paso caminar es más fiel.\n\nSin embargo, el borrador local tiene pasos vacíos. Quizás el sistema espera que para conducir_vehiculo los pasos estén vacíos y la composición lo gestione todo. Pero el caminar no está en la composición conducir_vehiculo según el registro (\"Entrar, esperar entrada real y conducir con CARREC\"). No menciona caminar antes.\n\nDado que el usuario pide caminar explícitamente, y el compilador admite caminar como ruta, puedo incluir un paso caminar. Luego el nivel superior accion=\"conducir_vehiculo\" manejará subir y conducir. La duración total de 30s podría aplicarse a la conducción, o a toda la escena. Como duracion_sugerida es a nivel superior, la pondré en 30.\n\n¿Debo incluir \"entrar_vehiculo\" como paso? No, PasoEscena.accion no lo permite.\n\n¿Debo usar accion=\"secuencia\" en lugar de \"conducir_vehiculo\"? El texto dice \"accion=secuencia usa pasos con actores por índice 1..4.\" Pero los pasos no soportan conducir. Así que no.\n\nCreo que la estructura es aceptable.\n\nRevisar IDs:\n- actor 280 (lapd1, COP, rol policia) - válido del catálogo.\n- vehículo 420 (taxi) - válido.\n- ubicación lugar_46_1860 - válido, Las Venturas.\n- ruta_vehiculo auto_46_233 - válido, Las Venturas.\n\nTodo son IDs del catálogo recuperado, no inventados.\n\nUn detalle: \"No sustituyas acciones ni inventes IDs.\" Estoy usando IDs reales del catálogo.\n\nEl JSON debe ser SOLO eso, sin texto adicional.\n\nVerificar que todos los campos requeridos estén: es_valido, resumen. Sí.\n\nTipos:\n- actores_ids_sugeridos: array de integers, max 4. [280] ok.\n- pasos: array de PasoEscena. Cada paso requiere accion. \"caminar\" ok. actores [1] ok (min 1, max 4). duracion null ok.\n- vehiculo_en_movimiento: boolean. true porque maneja.\n- cantidad_actores: 1.\n- animar_actores: [1].\n\n¿Debería animar_actores incluir al actor que camina y luego conduce? Sí, [1].\n\n¿roles? [\"policia\"].\n\n¿lugar_tipo? \"ciudad\".\n\n¿entorno_sugerido? \"ciudad\".\n\nTodo parece correcto.\n\nUn último pensamiento: el usuario dice \"maneja por Las Venturas durante 30 segundos\". Si pongo un paso caminar sin duración, y luego conducir_vehiculo con duracion_sugerida 30, quizás el caminar es instantáneo o se ignora en duración. Pero no hay forma de especificar duración de conducción aparte. Está bien.\n\nTambién podría omitir pasos y poner todo en accion conducir_vehiculo, pero entonces no reflejo el caminar. Incluiré el paso caminar.\n\nEspera, el esquema de PasoEscena no tiene campo para destino o ruta. Solo accion, actores, objetivo_actor, animacion, reproduccion, duracion. Para caminar, no se especifica ruta en el paso. La ruta_id_sugerida está a nivel superior. Está bien.\n\nVoy a generar el JSON.\n\nUn detalle más: \"actor_id_sugerido\" es anyOf integer o null. Pondré 280.\n\n\"ubicacion_id_sugerida\": \"lugar_46_1860\".\n\n\"ruta_vehiculo_id\": \"auto_46_233\".\n\n\"vehiculo_id_sugerido\": 420.\n\nJSON final.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4619,
+      "completion_tokens": 4992,
+      "total_tokens": 9611,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4517,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 4619,
+    "completion_tokens": 4992,
+    "total_tokens": 9611,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4517,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Un policía camina hacia un taxi en Las Venturas, sube y conduce por la ciudad durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 280,
+    "actores_ids_sugeridos": [
+      280
+    ],
+    "ubicacion_id_sugerida": "lugar_46_1860",
+    "motivo_elecciones": "Modelo policía 280 del catálogo, taxi modelo 420, ubicación en Las Venturas y ruta vehicular de esa zona.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "conducir_vehiculo",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": "auto_46_233",
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": 420,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 1,
+    "animar_actores": [
+      1
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "caminar",
+        "actores": [
+          1
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": null
+      }
+    ],
+    "roles": [
+      "policia"
+    ],
+    "lugar_tipo": "ciudad",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": true,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Un policía camina hacia un taxi en Las Venturas, sube y conduce por la ciudad durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 280,
+    "actores_ids_sugeridos": [
+      280
+    ],
+    "ubicacion_id_sugerida": null,
+    "motivo_elecciones": "Modelo policía 280 del catálogo, taxi modelo 420, ubicación en Las Venturas y ruta vehicular de esa zona.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 1,
+    "hora_sugerida": 12,
+    "fuente": "IA",
+    "accion": "conducir_vehiculo",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": "ped_54_1214_54_1221",
+    "ruta_vehiculo_id": "auto_46_233",
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": 420,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 1,
+    "animar_actores": [
+      1
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "caminar",
+        "actores": [
+          1
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": null
+      }
+    ],
+    "roles": [
+      "policia"
+    ],
+    "lugar_tipo": "ciudad",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": true,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "8b70ea7cda8cbde26930beebeeb2f60d1ca80d7b904b1f47d9f667695ec8c81f",
+  "segundos": 61.844,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:36.974467+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}

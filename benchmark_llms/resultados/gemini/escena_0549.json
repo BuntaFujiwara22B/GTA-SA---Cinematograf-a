@@ -1,0 +1,158 @@
+{
+  "id": "escena_0549",
+  "modelo": "gemini-3.5-flash",
+  "proveedor": "google",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:43:03.824440+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "```json\n{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"Tres bomberos caminan juntos por una calle de San Fierro durante 30 segundos.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": 277,\n  \"actores_ids_sugeridos\": [277, 278, 279],\n  \"ubicacion_id_sugerida\": \"lugar_33_1197\",\n  \"motivo_elecciones\": \"Se han elegido los tres modelos de bombero disponibles (277, 278 y 279) y una ubicación peatonal en San Fierro.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": null,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"caminar\",\n  \"tipo_movimiento\": \"caminar\",\n  \"ruta_id_sugerida\": \"ped_33_1334_33_1399\",\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"bucle\",\n  \"razon_reproduccion\": \"Caminata continua por la calle durante la escena.\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": null,\n  \"cantidad_actores\": 3,\n  \"animar_actores\": [1, 2, 3],\n  \"dialogos\": [],\n  \"pasos\": [],\n  \"roles\": [\"bombero\", \"bombero\", \"bombero\"],\n  \"lugar_tipo\": \"ciudad\",\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [],\n  \"aprendizaje_supervisado\": {}\n}\n```",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 4631,
+      "candidatesTokenCount": 488,
+      "totalTokenCount": 6068,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4631
+        }
+      ],
+      "thoughtsTokenCount": 949,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.6-flash",
+    "responseId": "aOH0aojgErK1xdIPkenggAY"
+  },
+  "usage": {
+    "promptTokenCount": 4631,
+    "candidatesTokenCount": 488,
+    "totalTokenCount": 6068,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 4631
+      }
+    ],
+    "thoughtsTokenCount": 949,
+    "serviceTier": "standard"
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Tres bomberos caminan juntos por una calle de San Fierro durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 277,
+    "actores_ids_sugeridos": [
+      277,
+      278,
+      279
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Se han elegido los tres modelos de bombero disponibles (277, 278 y 279) y una ubicación peatonal en San Fierro.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "caminar",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": "ped_33_1334_33_1399",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "bucle",
+    "razon_reproduccion": "Caminata continua por la calle durante la escena.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 3,
+    "animar_actores": [
+      1,
+      2,
+      3
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "bombero",
+      "bombero",
+      "bombero"
+    ],
+    "lugar_tipo": "ciudad",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Tres bomberos caminan juntos por una calle de San Fierro durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 277,
+    "actores_ids_sugeridos": [
+      277,
+      278,
+      279
+    ],
+    "ubicacion_id_sugerida": null,
+    "motivo_elecciones": "Se han elegido los tres modelos de bombero disponibles (277, 278 y 279) y una ubicación peatonal en San Fierro.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 1,
+    "hora_sugerida": 12,
+    "fuente": "IA",
+    "accion": "caminar",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": "ped_33_1334_33_1399",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "bucle",
+    "razon_reproduccion": "Caminata continua por la calle durante la escena.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 3,
+    "animar_actores": [
+      1,
+      2,
+      3
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "bombero",
+      "bombero",
+      "bombero"
+    ],
+    "lugar_tipo": "ciudad",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "6994a0e2a27c613985c4d6c81dabb41309977ef4eeb781912966fefeca34f03a",
+  "segundos": 7.516,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:36.543929+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}

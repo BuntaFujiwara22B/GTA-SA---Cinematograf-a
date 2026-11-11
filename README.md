@@ -9,8 +9,25 @@ Al analizar una petición se prepara una propuesta de personajes, vehículo si c
 En el proyecto original:
 
 ```powershell
+python -m pip install -r requirements.txt
 python main.py
 ```
+
+## Organización del proyecto
+
+| Carpeta | Contenido |
+| --- | --- |
+| `src/` | Planificación, interfaz, catálogos y compilación MMS |
+| `tools/` | Preparación de recursos, importación y diagnóstico |
+| `tools/moonloader/` | Scripts de captura de animaciones para GTA |
+| `docs/` | Guías técnicas y métodos de evaluación |
+| `tests/` | Pruebas automatizadas |
+| `benchmark_llms/` | Comparación por API, respuestas y gráficas |
+| `assets/`, `templates/` | Recursos utilizados por la aplicación |
+| `salida_mms/` | Exportaciones locales excluidas de Git |
+
+Las herramientas se ejecutan desde la raíz con `python -m tools.nombre`.
+Consulta el [índice de herramientas](tools/README.md) y la [documentación](docs/README.md).
 
 El paquete para Windows está en `dist/MMS-Director/`. Abre `MMS-Director.exe` y conserva a su lado la carpeta `_internal`. Para llevarlo a otro PC debes copiar **toda** la carpeta `MMS-Director`; copiar únicamente el ejecutable no basta. El paquete incluye Python, el cliente Flet y los pesos locales de CLIP. No incluye GTA ni las claves API del autor.
 
@@ -53,13 +70,17 @@ Las correcciones se guardan en `datos_entrenamiento/correcciones.sqlite3` dentro
 la carpeta de datos del usuario: el proyecto al ejecutar el código fuente y
 `%LOCALAPPDATA%/MMS-Director/` en el ejecutable. El corpus, la revisión, el versionado,
 las métricas históricas y la comparación con/sin modelo se explican en
-[ENTRENAMIENTO_IA.md](ENTRENAMIENTO_IA.md).
+[ENTRENAMIENTO_IA.md](docs/ENTRENAMIENTO_IA.md).
 
-También hay una [comparación real de seis clasificadores locales](COMPARACION_MODELOS.md),
+También hay una [comparación real de seis clasificadores locales](docs/COMPARACION_MODELOS.md),
 con [resultados JSON](evaluaciones/comparacion_clasificadores.json) y
-[CSV](evaluaciones/comparacion_clasificadores.csv). Mide clasificación de texto;
-la comparación de proveedores LLM y la reproducción de escenas en GTA requieren
-experimentos diferentes. El benchmark mantiene el modelo activo sin cambios.
+[CSV](evaluaciones/comparacion_clasificadores.csv). Mide clasificación de texto
+y mantiene el modelo activo sin cambios.
+
+La [comparación de Gemini con cinco modelos por API](benchmark_llms/README.md)
+conserva las respuestas originales, los archivos exportados y la gráfica de la
+muestra inicial: ocho casos compartidos por modelo. La reproducción visual en
+GTA queda pendiente.
 
 Gemini interpreta la petición con el contexto del mod y los catálogos existentes. Se mantienen la caché de respuestas, el control de peticiones simultáneas y el tratamiento de límites de cuota. El modelo se puede configurar sin editar código. Una clave válida no garantiza cuota disponible.
 
@@ -68,8 +89,8 @@ CLIP busca fotografías de clima próximas a expresiones como lluvia o atardecer
 Para comprobar la conexión desde el proyecto sin mostrar la clave:
 
 ```powershell
-python diagnostico_api.py
-python diagnostico_api.py --generar
+python -m tools.diagnostico_api
+python -m tools.diagnostico_api --generar
 ```
 
 La segunda orden consume una petición breve a Gemini.
@@ -89,13 +110,13 @@ La opción `-Ligero` permite compilar sin el motor CLIP. El script no incluye `.
 ```powershell
 python -m unittest discover -s tests -q
 python evaluar_peticiones.py
-python medir_rendimiento.py
+python -m tools.medir_rendimiento
 ```
 
 El ejecutable admite `--self-check RUTA_JSON` y `--clip-check RUTA_JSON` para comprobar sus recursos sin abrir ventanas. Al lanzarlo desde PowerShell conviene esperar al proceso para leer el informe.
 
 Las pruebas revisan planificación, estructura MMS, interfaz simulada y portabilidad. No sustituyen la reproducción en GTA ni una medición de FPS en el equipo de destino.
 
-Detalles de esta revisión: [OPTIMIZACION.md](OPTIMIZACION.md).
+Detalles de esta revisión: [OPTIMIZACION.md](docs/OPTIMIZACION.md).
 
-Las nuevas opciones de lugares aleatorios, entrada y conducción, cámara frontal, velocidad y paquetes con música se explican en [CONDUCCION_Y_ESCENAS.md](CONDUCCION_Y_ESCENAS.md).
+Las nuevas opciones de lugares aleatorios, entrada y conducción, cámara frontal, velocidad y paquetes con música se explican en [CONDUCCION_Y_ESCENAS.md](docs/CONDUCCION_Y_ESCENAS.md).

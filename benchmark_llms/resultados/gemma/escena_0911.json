@@ -1,0 +1,13 @@
+{
+  "id": "escena_0911",
+  "modelo": "google/gemma-3-12b-it",
+  "firma_experimento": "edd3e55fc2d9688f50f6f9edd9b10f08676c08335af4f77247693f5700df3f20",
+  "fecha_utc": "2026-11-11T21:29:34.426488+00:00",
+  "respuesta_api": false,
+  "error_api": {
+    "codigo": 403,
+    "tipo": "HTTPError",
+    "detalle": "Key limit exceeded (total limit). Manage it using [panel privado de claves] $0.00 of $0.00 used; does not reset."
+  },
+  "segundos": 0.14
+}

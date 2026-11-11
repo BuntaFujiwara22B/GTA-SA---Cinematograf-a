@@ -1,0 +1,230 @@
+{
+  "id": "escena_0911",
+  "modelo": "dots-studio/dots-3-note-preview:free",
+  "proveedor": "openrouter",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:39:04.065617+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "id": "gen-1794433146-fiXbGDzp4SMMQbthsFQT",
+    "object": "chat.completion",
+    "created": 1794433146,
+    "model": "dots-studio/dots-3-note-preview:free",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\n{\"es_valido\": true, \"razon_rechazo\": \"\", \"resumen\": \"Dos soldados se tumban en el suelo y luego realizan un baile sincronizado en una calle de San Fierro.\", \"entorno_sugerido\": \"ciudad\", \"actor_id_sugerido\": null, \"actores_ids_sugeridos\": [287, 287], \"ubicacion_id_sugerida\": \"lugar_33_1197\", \"motivo_elecciones\": \"Se seleccionó el modelo army (ID 287) para ambos actores por su rol militar. La ubicación lugar_33_1197 es una calle de San Fierro adecuada para la escena. La duración de 30s se divide en dos pasos principales: tumbarse y bailar.\", \"duracion_sugerida\": 30, \"clima_id_sugerido\": null, \"hora_sugerida\": null, \"fuente\": \"IA\", \"accion\": \"secuencia\", \"tipo_movimiento\": \"caminar\", \"ruta_id_sugerida\": null, \"ruta_vehiculo_id\": null, \"velocidad_kmh_sugerida\": null, \"reproduccion\": \"auto\", \"razon_reproduccion\": \"\", \"vehiculo_id_sugerido\": null, \"objeto_id_sugerido\": null, \"animacion_sugerida\": null, \"cantidad_actores\": 2, \"animar_actores\": [1, 2], \"dialogos\": [], \"pasos\": [{\"accion\": \"animacion\", \"actores\": [1, 2], \"objetivo_actor\": null, \"animacion\": \"LAY:2:BEACH:Lay_Bac_Loop\", \"reproduccion\": \"mantener\", \"duracion\": 10}, {\"accion\": \"animacion\", \"actores\": [1, 2], \"objetivo_actor\": null, \"animacion\": \"DANCE:3:DANCING:dance_loop\", \"reproduccion\": \"bucle\", \"duracion\": 20}], \"roles\": [\"militar\", \"militar\"], \"lugar_tipo\": \"calle\", \"aviso_analisis\": \"\", \"vehiculo_en_movimiento\": false, \"limitaciones\": [], \"aprendizaje_supervisado\": {}}",
+          "refusal": null,
+          "reasoning": "El usuario pide que dos soldados se tumben y luego bailen en una calle de San Fierro durante 30 segundos. Analizando el esquema, necesito estructurar un plan con pasos claros: primero la animación de tumbarse, luego el baile. \n\nEl catálogo muestra que hay animaciones de \"tumbarse\" disponibles, y el modelo \"army\" (ID 287) es adecuado para el rol militar. Para la ubicación, elijo \"lugar_33_1197\" en San Fierro por ser una zona urbana con calle. La duración total será de 30 segundos, repartida en dos pasos: uno de tumbarse (mantener) y otro de bailar (bucle). \n\nVerifico que la composición \"secuencia\" permita estos pasos consecutivos, y que los clips de animación existan en el registro. No hay conflictos con limitaciones conocidas. El clima y hora no se especifican, así que los dejo como nulos.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "El usuario pide que dos soldados se tumben y luego bailen en una calle de San Fierro durante 30 segundos. Analizando el esquema, necesito estructurar un plan con pasos claros: primero la animación de tumbarse, luego el baile. \n\nEl catálogo muestra que hay animaciones de \"tumbarse\" disponibles, y el modelo \"army\" (ID 287) es adecuado para el rol militar. Para la ubicación, elijo \"lugar_33_1197\" en San Fierro por ser una zona urbana con calle. La duración total será de 30 segundos, repartida en dos pasos: uno de tumbarse (mantener) y otro de bailar (bucle). \n\nVerifico que la composición \"secuencia\" permita estos pasos consecutivos, y que los clips de animación existan en el registro. No hay conflictos con limitaciones conocidas. El clima y hora no se especifican, así que los dejo como nulos.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4674,
+      "completion_tokens": 757,
+      "total_tokens": 5431,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 203,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 4674,
+    "completion_tokens": 757,
+    "total_tokens": 5431,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 203,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Dos soldados se tumban en el suelo y luego realizan un baile sincronizado en una calle de San Fierro.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": null,
+    "actores_ids_sugeridos": [
+      287,
+      287
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Se seleccionó el modelo army (ID 287) para ambos actores por su rol militar. La ubicación lugar_33_1197 es una calle de San Fierro adecuada para la escena. La duración de 30s se divide en dos pasos principales: tumbarse y bailar.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 2,
+    "animar_actores": [
+      1,
+      2
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2
+        ],
+        "objetivo_actor": null,
+        "animacion": "LAY:2:BEACH:Lay_Bac_Loop",
+        "reproduccion": "mantener",
+        "duracion": 10
+      },
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2
+        ],
+        "objetivo_actor": null,
+        "animacion": "DANCE:3:DANCING:dance_loop",
+        "reproduccion": "bucle",
+        "duracion": 20
+      }
+    ],
+    "roles": [
+      "militar",
+      "militar"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Dos soldados se tumban en el suelo y luego realizan un baile sincronizado en una calle de San Fierro.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 287,
+    "actores_ids_sugeridos": [
+      287,
+      287
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Se seleccionó el modelo army (ID 287) para ambos actores por su rol militar. La ubicación lugar_33_1197 es una calle de San Fierro adecuada para la escena. La duración de 30s se divide en dos pasos principales: tumbarse y bailar.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 1,
+    "hora_sugerida": 12,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": "ped_33_1334_33_1399",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 2,
+    "animar_actores": [
+      1,
+      2
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2
+        ],
+        "objetivo_actor": null,
+        "animacion": "LAY:2:BEACH:Lay_Bac_Loop",
+        "reproduccion": "mantener",
+        "duracion": 10
+      },
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2
+        ],
+        "objetivo_actor": null,
+        "animacion": "DANCE:3:DANCING:dance_loop",
+        "reproduccion": "bucle",
+        "duracion": 20
+      }
+    ],
+    "roles": [
+      "militar",
+      "militar"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "3d510e20cc0b0ef26e83779f7d3410ef7dd8ac6a317ea775db44e6a4b3d9c054",
+  "segundos": 11.406,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:37.034467+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}

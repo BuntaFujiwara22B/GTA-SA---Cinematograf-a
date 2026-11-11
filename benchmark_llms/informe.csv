@@ -1,0 +1,7 @@
+﻿modelo,nombre,intentados,respuestas,correctos,errores_api,mms_generados,porcentaje,porcentaje_parcial,costo_usd,casos_comunes,correctos_comunes,porcentaje_comparable
+gemini-3.5-flash,Gemini 3.5 Flash,8,8,7,0,7,,87.5,0,8,7,87.5
+baidu/ernie-5.5-flash-preview:free,ERNIE 5.5 Flash Preview,8,8,7,0,7,,87.5,0,8,7,87.5
+nvidia/nemotron-3.5-super-vl:free,Nemotron 3.5 Super VL,8,8,5,0,5,,62.5,0,8,5,62.5
+dots-studio/dots-3-note-preview:free,Dots3 Note Preview,8,8,5,0,5,,62.5,0,8,5,62.5
+cohere/north-mini-code:free,North Mini Code,8,8,3,0,3,,37.5,0,8,3,37.5
+liquid/lfm-3-1.7b:free,LFM 3 1.7B,8,8,0,0,0,,0.0,0,8,0,0.0

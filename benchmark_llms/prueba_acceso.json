@@ -1,0 +1,38 @@
+[
+  {
+    "proveedor": "google",
+    "modelo": "gemini-3.5-flash",
+    "acceso": true,
+    "contenido": ""
+  },
+  {
+    "proveedor": "openrouter",
+    "modelo": "baidu/ernie-5.5-flash-preview:free",
+    "acceso": true,
+    "contenido": "OK."
+  },
+  {
+    "proveedor": "openrouter",
+    "modelo": "nvidia/nemotron-3.5-super-vl:free",
+    "acceso": true,
+    "contenido": "OK"
+  },
+  {
+    "proveedor": "openrouter",
+    "modelo": "dots-studio/dots-3-note-preview:free",
+    "acceso": true,
+    "contenido": "\n\nOK."
+  },
+  {
+    "proveedor": "openrouter",
+    "modelo": "cohere/north-mini-code:free",
+    "acceso": true,
+    "contenido": "OK"
+  },
+  {
+    "proveedor": "openrouter",
+    "modelo": "liquid/lfm-3-1.7b:free",
+    "acceso": true,
+    "contenido": ""
+  }
+]

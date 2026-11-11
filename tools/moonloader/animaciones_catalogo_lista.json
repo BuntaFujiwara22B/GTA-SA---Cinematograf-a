@@ -1,0 +1,8863 @@
+{
+  "huella": "689e4f3dff34",
+  "categorias": [
+    "STAND",
+    "SIT",
+    "LAY",
+    "WEAPON",
+    "CHAT",
+    "HURT",
+    "DANCE",
+    "MIMIC",
+    "INTERACT",
+    "SEX",
+    "MOVE",
+    "CUTS",
+    "ATTACK",
+    "DEATH"
+  ],
+  "total": 1263,
+  "animaciones": [
+    {
+      "orden": 1,
+      "categoria": "STAND",
+      "idx": 1,
+      "anim": "handsup",
+      "lib": "ped"
+    },
+    {
+      "orden": 2,
+      "categoria": "STAND",
+      "idx": 2,
+      "anim": "roadcross",
+      "lib": "ped"
+    },
+    {
+      "orden": 3,
+      "categoria": "STAND",
+      "idx": 3,
+      "anim": "graffiti_Chkout",
+      "lib": "graffiti"
+    },
+    {
+      "orden": 4,
+      "categoria": "STAND",
+      "idx": 4,
+      "anim": "roadcross_gang",
+      "lib": "ped"
+    },
+    {
+      "orden": 5,
+      "categoria": "STAND",
+      "idx": 5,
+      "anim": "roadcross_old",
+      "lib": "ped"
+    },
+    {
+      "orden": 6,
+      "categoria": "STAND",
+      "idx": 6,
+      "anim": "XPRESSscratch",
+      "lib": "ped"
+    },
+    {
+      "orden": 7,
+      "categoria": "STAND",
+      "idx": 7,
+      "anim": "Barcustom_loop",
+      "lib": "bar"
+    },
+    {
+      "orden": 8,
+      "categoria": "STAND",
+      "idx": 8,
+      "anim": "BARman_idle",
+      "lib": "bar"
+    },
+    {
+      "orden": 9,
+      "categoria": "STAND",
+      "idx": 9,
+      "anim": "Barserve_in",
+      "lib": "bar"
+    },
+    {
+      "orden": 10,
+      "categoria": "STAND",
+      "idx": 10,
+      "anim": "Barserve_loop",
+      "lib": "bar"
+    },
+    {
+      "orden": 11,
+      "categoria": "STAND",
+      "idx": 11,
+      "anim": "BD_Panic_01",
+      "lib": "BD_FIRE"
+    },
+    {
+      "orden": 12,
+      "categoria": "STAND",
+      "idx": 12,
+      "anim": "BD_Panic_02",
+      "lib": "BD_FIRE"
+    },
+    {
+      "orden": 13,
+      "categoria": "STAND",
+      "idx": 13,
+      "anim": "BD_Panic_03",
+      "lib": "BD_FIRE"
+    },
+    {
+      "orden": 14,
+      "categoria": "STAND",
+      "idx": 14,
+      "anim": "BD_Panic_04",
+      "lib": "BD_FIRE"
+    },
+    {
+      "orden": 15,
+      "categoria": "STAND",
+      "idx": 15,
+      "anim": "BD_Panic_Loop",
+      "lib": "BD_FIRE"
+    },
+    {
+      "orden": 16,
+      "categoria": "STAND",
+      "idx": 16,
+      "anim": "M_smklean_loop",
+      "lib": "BD_FIRE"
+    },
+    {
+      "orden": 17,
+      "categoria": "STAND",
+      "idx": 17,
+      "anim": "flag_drop",
+      "lib": "car"
+    },
+    {
+      "orden": 18,
+      "categoria": "STAND",
+      "idx": 18,
+      "anim": "cards_in",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 19,
+      "categoria": "STAND",
+      "idx": 19,
+      "anim": "cards_loop",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 20,
+      "categoria": "STAND",
+      "idx": 20,
+      "anim": "cards_lose",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 21,
+      "categoria": "STAND",
+      "idx": 21,
+      "anim": "cards_out",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 22,
+      "categoria": "STAND",
+      "idx": 22,
+      "anim": "Roulette_in",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 23,
+      "categoria": "STAND",
+      "idx": 23,
+      "anim": "Roulette_loop",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 24,
+      "categoria": "STAND",
+      "idx": 24,
+      "anim": "Roulette_out",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 25,
+      "categoria": "STAND",
+      "idx": 25,
+      "anim": "Slot_wait",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 26,
+      "categoria": "STAND",
+      "idx": 26,
+      "anim": "CLO_Buy",
+      "lib": "CLOTHES"
+    },
+    {
+      "orden": 27,
+      "categoria": "STAND",
+      "idx": 27,
+      "anim": "CLO_Pose_Hat",
+      "lib": "CLOTHES"
+    },
+    {
+      "orden": 28,
+      "categoria": "STAND",
+      "idx": 28,
+      "anim": "CLO_Pose_Legs",
+      "lib": "CLOTHES"
+    },
+    {
+      "orden": 29,
+      "categoria": "STAND",
+      "idx": 29,
+      "anim": "CLO_Pose_Loop",
+      "lib": "CLOTHES"
+    },
+    {
+      "orden": 30,
+      "categoria": "STAND",
+      "idx": 30,
+      "anim": "CLO_Pose_Shoes",
+      "lib": "CLOTHES"
+    },
+    {
+      "orden": 31,
+      "categoria": "STAND",
+      "idx": 31,
+      "anim": "CLO_Pose_Torso",
+      "lib": "CLOTHES"
+    },
+    {
+      "orden": 32,
+      "categoria": "STAND",
+      "idx": 32,
+      "anim": "CLO_Pose_Watch",
+      "lib": "CLOTHES"
+    },
+    {
+      "orden": 33,
+      "categoria": "STAND",
+      "idx": 33,
+      "anim": "Bbalbat_Idle_01",
+      "lib": "CRACK"
+    },
+    {
+      "orden": 34,
+      "categoria": "STAND",
+      "idx": 34,
+      "anim": "Bbalbat_Idle_02",
+      "lib": "CRACK"
+    },
+    {
+      "orden": 35,
+      "categoria": "STAND",
+      "idx": 35,
+      "anim": "DEALER_DEAL",
+      "lib": "DEALER"
+    },
+    {
+      "orden": 36,
+      "categoria": "STAND",
+      "idx": 36,
+      "anim": "DEALER_IDLE",
+      "lib": "DEALER"
+    },
+    {
+      "orden": 37,
+      "categoria": "STAND",
+      "idx": 37,
+      "anim": "EAT_Burger",
+      "lib": "food"
+    },
+    {
+      "orden": 38,
+      "categoria": "STAND",
+      "idx": 38,
+      "anim": "EAT_Chicken",
+      "lib": "food"
+    },
+    {
+      "orden": 39,
+      "categoria": "STAND",
+      "idx": 39,
+      "anim": "EAT_Pizza",
+      "lib": "food"
+    },
+    {
+      "orden": 40,
+      "categoria": "STAND",
+      "idx": 40,
+      "anim": "EAT_Vomit_P",
+      "lib": "food"
+    },
+    {
+      "orden": 41,
+      "categoria": "STAND",
+      "idx": 41,
+      "anim": "EAT_Vomit_SK",
+      "lib": "food"
+    },
+    {
+      "orden": 42,
+      "categoria": "STAND",
+      "idx": 42,
+      "anim": "phone_in",
+      "lib": "ped"
+    },
+    {
+      "orden": 43,
+      "categoria": "STAND",
+      "idx": 43,
+      "anim": "phone_out",
+      "lib": "ped"
+    },
+    {
+      "orden": 44,
+      "categoria": "STAND",
+      "idx": 44,
+      "anim": "phone_talk",
+      "lib": "ped"
+    },
+    {
+      "orden": 45,
+      "categoria": "STAND",
+      "idx": 45,
+      "anim": "DEALER_IDLE",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 46,
+      "categoria": "STAND",
+      "idx": 46,
+      "anim": "drnkbr_prtl",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 47,
+      "categoria": "STAND",
+      "idx": 47,
+      "anim": "drnkbr_prtl_F",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 48,
+      "categoria": "STAND",
+      "idx": 48,
+      "anim": "leanIDLE",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 49,
+      "categoria": "STAND",
+      "idx": 49,
+      "anim": "leanIN",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 50,
+      "categoria": "STAND",
+      "idx": 50,
+      "anim": "leanOUT",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 51,
+      "categoria": "STAND",
+      "idx": 51,
+      "anim": "smkcig_prtl",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 52,
+      "categoria": "STAND",
+      "idx": 52,
+      "anim": "smkcig_prtl_F",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 53,
+      "categoria": "STAND",
+      "idx": 53,
+      "anim": "GDB_Car2_SMO",
+      "lib": "GHETTO_DB"
+    },
+    {
+      "orden": 54,
+      "categoria": "STAND",
+      "idx": 54,
+      "anim": "GDB_Car_RYD",
+      "lib": "GHETTO_DB"
+    },
+    {
+      "orden": 55,
+      "categoria": "STAND",
+      "idx": 55,
+      "anim": "GDB_Car_SMO",
+      "lib": "GHETTO_DB"
+    },
+    {
+      "orden": 56,
+      "categoria": "STAND",
+      "idx": 56,
+      "anim": "mrnF_loop",
+      "lib": "GRAVEYARD"
+    },
+    {
+      "orden": 57,
+      "categoria": "STAND",
+      "idx": 57,
+      "anim": "mrnM_loop",
+      "lib": "GRAVEYARD"
+    },
+    {
+      "orden": 58,
+      "categoria": "STAND",
+      "idx": 58,
+      "anim": "prst_loopa",
+      "lib": "GRAVEYARD"
+    },
+    {
+      "orden": 59,
+      "categoria": "STAND",
+      "idx": 59,
+      "anim": "Hiker_Pose",
+      "lib": "misc"
+    },
+    {
+      "orden": 60,
+      "categoria": "STAND",
+      "idx": 60,
+      "anim": "Hiker_Pose_L",
+      "lib": "misc"
+    },
+    {
+      "orden": 61,
+      "categoria": "STAND",
+      "idx": 61,
+      "anim": "Plyrlean_loop",
+      "lib": "misc"
+    },
+    {
+      "orden": 62,
+      "categoria": "STAND",
+      "idx": 62,
+      "anim": "Scratchballs_01",
+      "lib": "misc"
+    },
+    {
+      "orden": 63,
+      "categoria": "STAND",
+      "idx": 63,
+      "anim": "lkaround_in",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 64,
+      "categoria": "STAND",
+      "idx": 64,
+      "anim": "lkaround_loop",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 65,
+      "categoria": "STAND",
+      "idx": 65,
+      "anim": "lkaround_out",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 66,
+      "categoria": "STAND",
+      "idx": 66,
+      "anim": "lkup_in",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 67,
+      "categoria": "STAND",
+      "idx": 67,
+      "anim": "lkup_loop",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 68,
+      "categoria": "STAND",
+      "idx": 68,
+      "anim": "lkup_out",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 69,
+      "categoria": "STAND",
+      "idx": 69,
+      "anim": "lkup_point",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 70,
+      "categoria": "STAND",
+      "idx": 70,
+      "anim": "panic_cower",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 71,
+      "categoria": "STAND",
+      "idx": 71,
+      "anim": "panic_hide",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 72,
+      "categoria": "STAND",
+      "idx": 72,
+      "anim": "panic_in",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 73,
+      "categoria": "STAND",
+      "idx": 73,
+      "anim": "panic_loop",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 74,
+      "categoria": "STAND",
+      "idx": 74,
+      "anim": "panic_out",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 75,
+      "categoria": "STAND",
+      "idx": 75,
+      "anim": "panic_point",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 76,
+      "categoria": "STAND",
+      "idx": 76,
+      "anim": "panic_shout",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 77,
+      "categoria": "STAND",
+      "idx": 77,
+      "anim": "Pointup_in",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 78,
+      "categoria": "STAND",
+      "idx": 78,
+      "anim": "Pointup_loop",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 79,
+      "categoria": "STAND",
+      "idx": 79,
+      "anim": "Pointup_out",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 80,
+      "categoria": "STAND",
+      "idx": 80,
+      "anim": "Pointup_shout",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 81,
+      "categoria": "STAND",
+      "idx": 81,
+      "anim": "point_in",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 82,
+      "categoria": "STAND",
+      "idx": 82,
+      "anim": "point_loop",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 83,
+      "categoria": "STAND",
+      "idx": 83,
+      "anim": "point_out",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 84,
+      "categoria": "STAND",
+      "idx": 84,
+      "anim": "shout_01",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 85,
+      "categoria": "STAND",
+      "idx": 85,
+      "anim": "shout_02",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 86,
+      "categoria": "STAND",
+      "idx": 86,
+      "anim": "shout_in",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 87,
+      "categoria": "STAND",
+      "idx": 87,
+      "anim": "shout_loop",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 88,
+      "categoria": "STAND",
+      "idx": 88,
+      "anim": "shout_out",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 89,
+      "categoria": "STAND",
+      "idx": 89,
+      "anim": "wave_in",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 90,
+      "categoria": "STAND",
+      "idx": 90,
+      "anim": "wave_loop",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 91,
+      "categoria": "STAND",
+      "idx": 91,
+      "anim": "wave_out",
+      "lib": "ON_LOOKERS"
+    },
+    {
+      "orden": 92,
+      "categoria": "STAND",
+      "idx": 92,
+      "anim": "wtchrace_in",
+      "lib": "OTB"
+    },
+    {
+      "orden": 93,
+      "categoria": "STAND",
+      "idx": 93,
+      "anim": "wtchrace_loop",
+      "lib": "OTB"
+    },
+    {
+      "orden": 94,
+      "categoria": "STAND",
+      "idx": 94,
+      "anim": "wtchrace_out",
+      "lib": "OTB"
+    },
+    {
+      "orden": 95,
+      "categoria": "STAND",
+      "idx": 95,
+      "anim": "wtchrace_win",
+      "lib": "OTB"
+    },
+    {
+      "orden": 96,
+      "categoria": "STAND",
+      "idx": 96,
+      "anim": "Tai_Chi_in",
+      "lib": "park"
+    },
+    {
+      "orden": 97,
+      "categoria": "STAND",
+      "idx": 97,
+      "anim": "Tai_Chi_Loop",
+      "lib": "park"
+    },
+    {
+      "orden": 98,
+      "categoria": "STAND",
+      "idx": 98,
+      "anim": "Tai_Chi_out",
+      "lib": "park"
+    },
+    {
+      "orden": 99,
+      "categoria": "STAND",
+      "idx": 99,
+      "anim": "Piss_in",
+      "lib": "PAULNMAC"
+    },
+    {
+      "orden": 100,
+      "categoria": "STAND",
+      "idx": 100,
+      "anim": "Piss_loop",
+      "lib": "PAULNMAC"
+    },
+    {
+      "orden": 101,
+      "categoria": "STAND",
+      "idx": 101,
+      "anim": "Piss_out",
+      "lib": "PAULNMAC"
+    },
+    {
+      "orden": 102,
+      "categoria": "STAND",
+      "idx": 102,
+      "anim": "PnM_Argue1_A",
+      "lib": "PAULNMAC"
+    },
+    {
+      "orden": 103,
+      "categoria": "STAND",
+      "idx": 103,
+      "anim": "PnM_Argue1_B",
+      "lib": "PAULNMAC"
+    },
+    {
+      "orden": 104,
+      "categoria": "STAND",
+      "idx": 104,
+      "anim": "PnM_Argue2_A",
+      "lib": "PAULNMAC"
+    },
+    {
+      "orden": 105,
+      "categoria": "STAND",
+      "idx": 105,
+      "anim": "PnM_Argue2_B",
+      "lib": "PAULNMAC"
+    },
+    {
+      "orden": 106,
+      "categoria": "STAND",
+      "idx": 106,
+      "anim": "PnM_Loop_A",
+      "lib": "PAULNMAC"
+    },
+    {
+      "orden": 107,
+      "categoria": "STAND",
+      "idx": 107,
+      "anim": "PnM_Loop_B",
+      "lib": "PAULNMAC"
+    },
+    {
+      "orden": 108,
+      "categoria": "STAND",
+      "idx": 108,
+      "anim": "wank_in",
+      "lib": "PAULNMAC"
+    },
+    {
+      "orden": 109,
+      "categoria": "STAND",
+      "idx": 109,
+      "anim": "wank_loop",
+      "lib": "PAULNMAC"
+    },
+    {
+      "orden": 110,
+      "categoria": "STAND",
+      "idx": 110,
+      "anim": "wank_out",
+      "lib": "PAULNMAC"
+    },
+    {
+      "orden": 111,
+      "categoria": "STAND",
+      "idx": 111,
+      "anim": "shift",
+      "lib": "PLAYIDLES"
+    },
+    {
+      "orden": 112,
+      "categoria": "STAND",
+      "idx": 112,
+      "anim": "shldr",
+      "lib": "PLAYIDLES"
+    },
+    {
+      "orden": 113,
+      "categoria": "STAND",
+      "idx": 113,
+      "anim": "stretch",
+      "lib": "PLAYIDLES"
+    },
+    {
+      "orden": 114,
+      "categoria": "STAND",
+      "idx": 114,
+      "anim": "strleg",
+      "lib": "PLAYIDLES"
+    },
+    {
+      "orden": 115,
+      "categoria": "STAND",
+      "idx": 115,
+      "anim": "time",
+      "lib": "PLAYIDLES"
+    },
+    {
+      "orden": 116,
+      "categoria": "STAND",
+      "idx": 116,
+      "anim": "stretch2",
+      "lib": "PLAYIDLES"
+    },
+    {
+      "orden": 117,
+      "categoria": "STAND",
+      "idx": 117,
+      "anim": "time2",
+      "lib": "PLAYIDLES"
+    },
+    {
+      "orden": 118,
+      "categoria": "STAND",
+      "idx": 118,
+      "anim": "strleg2",
+      "lib": "PLAYIDLES"
+    },
+    {
+      "orden": 119,
+      "categoria": "STAND",
+      "idx": 119,
+      "anim": "shldr2",
+      "lib": "PLAYIDLES"
+    },
+    {
+      "orden": 120,
+      "categoria": "STAND",
+      "idx": 120,
+      "anim": "CopTraf_Away",
+      "lib": "POLICE"
+    },
+    {
+      "orden": 121,
+      "categoria": "STAND",
+      "idx": 121,
+      "anim": "CopTraf_Come",
+      "lib": "POLICE"
+    },
+    {
+      "orden": 122,
+      "categoria": "STAND",
+      "idx": 122,
+      "anim": "CopTraf_Left",
+      "lib": "POLICE"
+    },
+    {
+      "orden": 123,
+      "categoria": "STAND",
+      "idx": 123,
+      "anim": "CopTraf_Stop",
+      "lib": "POLICE"
+    },
+    {
+      "orden": 124,
+      "categoria": "STAND",
+      "idx": 124,
+      "anim": "END_SC2_PLY",
+      "lib": "MD_END"
+    },
+    {
+      "orden": 125,
+      "categoria": "STAND",
+      "idx": 125,
+      "anim": "END_SC2_RYD",
+      "lib": "MD_END"
+    },
+    {
+      "orden": 126,
+      "categoria": "STAND",
+      "idx": 126,
+      "anim": "END_SC2_SMO",
+      "lib": "MD_END"
+    },
+    {
+      "orden": 127,
+      "categoria": "STAND",
+      "idx": 127,
+      "anim": "END_SC2_SWE",
+      "lib": "MD_END"
+    },
+    {
+      "orden": 128,
+      "categoria": "STAND",
+      "idx": 128,
+      "anim": "RYD_Beckon_01",
+      "lib": "RYDER"
+    },
+    {
+      "orden": 129,
+      "categoria": "STAND",
+      "idx": 129,
+      "anim": "RYD_Beckon_02",
+      "lib": "RYDER"
+    },
+    {
+      "orden": 130,
+      "categoria": "STAND",
+      "idx": 130,
+      "anim": "RYD_Beckon_03",
+      "lib": "RYDER"
+    },
+    {
+      "orden": 131,
+      "categoria": "STAND",
+      "idx": 131,
+      "anim": "F_smklean_loop",
+      "lib": "SMOKING"
+    },
+    {
+      "orden": 132,
+      "categoria": "STAND",
+      "idx": 132,
+      "anim": "M_smkstnd_loop",
+      "lib": "SMOKING"
+    },
+    {
+      "orden": 133,
+      "categoria": "STAND",
+      "idx": 133,
+      "anim": "M_smk_drag",
+      "lib": "SMOKING"
+    },
+    {
+      "orden": 134,
+      "categoria": "STAND",
+      "idx": 134,
+      "anim": "M_smk_in",
+      "lib": "SMOKING"
+    },
+    {
+      "orden": 135,
+      "categoria": "STAND",
+      "idx": 135,
+      "anim": "M_smk_loop",
+      "lib": "SMOKING"
+    },
+    {
+      "orden": 136,
+      "categoria": "STAND",
+      "idx": 136,
+      "anim": "M_smk_out",
+      "lib": "SMOKING"
+    },
+    {
+      "orden": 137,
+      "categoria": "STAND",
+      "idx": 137,
+      "anim": "M_smk_tap",
+      "lib": "SMOKING"
+    },
+    {
+      "orden": 138,
+      "categoria": "STAND",
+      "idx": 138,
+      "anim": "ass_slapped",
+      "lib": "SWEET"
+    },
+    {
+      "orden": 139,
+      "categoria": "STAND",
+      "idx": 139,
+      "anim": "hndshldr_01",
+      "lib": "SWEET"
+    },
+    {
+      "orden": 140,
+      "categoria": "STAND",
+      "idx": 140,
+      "anim": "ass_slap",
+      "lib": "SWEET"
+    },
+    {
+      "orden": 141,
+      "categoria": "STAND",
+      "idx": 141,
+      "anim": "hndshldr_01",
+      "lib": "SWEET"
+    },
+    {
+      "orden": 142,
+      "categoria": "STAND",
+      "idx": 142,
+      "anim": "cuff_back",
+      "lib": "MMR"
+    },
+    {
+      "orden": 143,
+      "categoria": "STAND",
+      "idx": 143,
+      "anim": "cuff_front",
+      "lib": "MMR"
+    },
+    {
+      "orden": 144,
+      "categoria": "STAND",
+      "idx": 144,
+      "anim": "idle_hbhb",
+      "lib": "MMR"
+    },
+    {
+      "orden": 145,
+      "categoria": "STAND",
+      "idx": 145,
+      "anim": "idle_stand",
+      "lib": "MMR"
+    },
+    {
+      "orden": 146,
+      "categoria": "STAND",
+      "idx": 146,
+      "anim": "idle_tired",
+      "lib": "MMR"
+    },
+    {
+      "orden": 147,
+      "categoria": "STAND",
+      "idx": 147,
+      "anim": "pos1",
+      "lib": "POSES"
+    },
+    {
+      "orden": 148,
+      "categoria": "STAND",
+      "idx": 148,
+      "anim": "pos2",
+      "lib": "POSES"
+    },
+    {
+      "orden": 149,
+      "categoria": "STAND",
+      "idx": 149,
+      "anim": "pos3",
+      "lib": "POSES"
+    },
+    {
+      "orden": 150,
+      "categoria": "STAND",
+      "idx": 150,
+      "anim": "pos6",
+      "lib": "POSES"
+    },
+    {
+      "orden": 151,
+      "categoria": "STAND",
+      "idx": 151,
+      "anim": "pos7",
+      "lib": "POSES"
+    },
+    {
+      "orden": 152,
+      "categoria": "STAND",
+      "idx": 152,
+      "anim": "pos13",
+      "lib": "POSES"
+    },
+    {
+      "orden": 153,
+      "categoria": "STAND",
+      "idx": 153,
+      "anim": "pos15",
+      "lib": "POSES"
+    },
+    {
+      "orden": 154,
+      "categoria": "STAND",
+      "idx": 154,
+      "anim": "weap_view1",
+      "lib": "OZ"
+    },
+    {
+      "orden": 155,
+      "categoria": "STAND",
+      "idx": 155,
+      "anim": "ZASPINOY",
+      "lib": "OZ"
+    },
+    {
+      "orden": 156,
+      "categoria": "STAND",
+      "idx": 156,
+      "anim": "zaspinoy2",
+      "lib": "OZ"
+    },
+    {
+      "orden": 157,
+      "categoria": "STAND",
+      "idx": 157,
+      "anim": "surrend3",
+      "lib": "OZ"
+    },
+    {
+      "orden": 158,
+      "categoria": "STAND",
+      "idx": 158,
+      "anim": "surrend4",
+      "lib": "OZ"
+    },
+    {
+      "orden": 159,
+      "categoria": "STAND",
+      "idx": 159,
+      "anim": "racia_stay",
+      "lib": "OZ"
+    },
+    {
+      "orden": 160,
+      "categoria": "STAND",
+      "idx": 160,
+      "anim": "respect1",
+      "lib": "OZ"
+    },
+    {
+      "orden": 161,
+      "categoria": "STAND",
+      "idx": 161,
+      "anim": "respect2",
+      "lib": "OZ"
+    },
+    {
+      "orden": 162,
+      "categoria": "STAND",
+      "idx": 162,
+      "anim": "Ziga",
+      "lib": "OZ"
+    },
+    {
+      "orden": 163,
+      "categoria": "STAND",
+      "idx": 163,
+      "anim": "shakehead_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 164,
+      "categoria": "STAND",
+      "idx": 164,
+      "anim": "phone_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 165,
+      "categoria": "STAND",
+      "idx": 165,
+      "anim": "lean_bs",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 166,
+      "categoria": "STAND",
+      "idx": 166,
+      "anim": "lean_b",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 167,
+      "categoria": "STAND",
+      "idx": 167,
+      "anim": "lean_f",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 168,
+      "categoria": "STAND",
+      "idx": 168,
+      "anim": "wait_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 169,
+      "categoria": "STAND",
+      "idx": 169,
+      "anim": "Coplook_out",
+      "lib": "COP_AMBIENT"
+    },
+    {
+      "orden": 170,
+      "categoria": "STAND",
+      "idx": 170,
+      "anim": "Coplook_in",
+      "lib": "COP_AMBIENT"
+    },
+    {
+      "orden": 171,
+      "categoria": "STAND",
+      "idx": 171,
+      "anim": "Coplook_loop",
+      "lib": "COP_AMBIENT"
+    },
+    {
+      "orden": 172,
+      "categoria": "STAND",
+      "idx": 172,
+      "anim": "lean_b_f",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 173,
+      "categoria": "STAND",
+      "idx": 173,
+      "anim": "cheers_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 174,
+      "categoria": "STAND",
+      "idx": 174,
+      "anim": "cheers_2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 175,
+      "categoria": "STAND",
+      "idx": 175,
+      "anim": "secur_loop",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 176,
+      "categoria": "STAND",
+      "idx": 176,
+      "anim": "smoke_f",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 177,
+      "categoria": "STAND",
+      "idx": 177,
+      "anim": "junky_loop",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 178,
+      "categoria": "STAND",
+      "idx": 178,
+      "anim": "junky_hold",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 179,
+      "categoria": "STAND",
+      "idx": 179,
+      "anim": "lean_b_ma",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 180,
+      "categoria": "STAND",
+      "idx": 180,
+      "anim": "payphone",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 181,
+      "categoria": "STAND",
+      "idx": 181,
+      "anim": "quick_smk",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 182,
+      "categoria": "STAND",
+      "idx": 182,
+      "anim": "wait_impa",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 183,
+      "categoria": "STAND",
+      "idx": 183,
+      "anim": "lean_fnc_1a",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 184,
+      "categoria": "STAND",
+      "idx": 184,
+      "anim": "lean_fnc_2a",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 185,
+      "categoria": "STAND",
+      "idx": 185,
+      "anim": "lean_fnc_1b",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 186,
+      "categoria": "STAND",
+      "idx": 186,
+      "anim": "lean_fnc_2b",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 187,
+      "categoria": "STAND",
+      "idx": 187,
+      "anim": "lean_b_fnc",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 188,
+      "categoria": "STAND",
+      "idx": 188,
+      "anim": "smoke_loop",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 189,
+      "categoria": "STAND",
+      "idx": 189,
+      "anim": "pray_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 190,
+      "categoria": "STAND",
+      "idx": 190,
+      "anim": "pray_2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 191,
+      "categoria": "STAND",
+      "idx": 191,
+      "anim": "lean_b_in",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 192,
+      "categoria": "STAND",
+      "idx": 192,
+      "anim": "lean_b_out",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 193,
+      "categoria": "STAND",
+      "idx": 193,
+      "anim": "gym_box_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 194,
+      "categoria": "STAND",
+      "idx": 194,
+      "anim": "gym_box_2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 195,
+      "categoria": "STAND",
+      "idx": 195,
+      "anim": "look_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 196,
+      "categoria": "STAND",
+      "idx": 196,
+      "anim": "lean_read_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 197,
+      "categoria": "STAND",
+      "idx": 197,
+      "anim": "gang_loop_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 198,
+      "categoria": "STAND",
+      "idx": 198,
+      "anim": "cold_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 199,
+      "categoria": "STAND",
+      "idx": 199,
+      "anim": "cold_2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 200,
+      "categoria": "STAND",
+      "idx": 200,
+      "anim": "listening",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 201,
+      "categoria": "STAND",
+      "idx": 201,
+      "anim": "lean_fnc_3a",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 202,
+      "categoria": "STAND",
+      "idx": 202,
+      "anim": "lean_fnc_3b",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 203,
+      "categoria": "STAND",
+      "idx": 203,
+      "anim": "lean_fnc_3c",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 204,
+      "categoria": "STAND",
+      "idx": 204,
+      "anim": "lean_fnc_pn",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 205,
+      "categoria": "STAND",
+      "idx": 205,
+      "anim": "lean_cn_fnc",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 206,
+      "categoria": "STAND",
+      "idx": 206,
+      "anim": "lean_fnc_fm",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 207,
+      "categoria": "STAND",
+      "idx": 207,
+      "anim": "female_pose",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 208,
+      "categoria": "STAND",
+      "idx": 208,
+      "anim": "lean_check",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 209,
+      "categoria": "STAND",
+      "idx": 209,
+      "anim": "lean_fnc_f2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 210,
+      "categoria": "STAND",
+      "idx": 210,
+      "anim": "lean_f_sick",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 211,
+      "categoria": "STAND",
+      "idx": 211,
+      "anim": "lean_gheto",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 212,
+      "categoria": "STAND",
+      "idx": 212,
+      "anim": "junky_panic",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 213,
+      "categoria": "STAND",
+      "idx": 213,
+      "anim": "step_phone",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 214,
+      "categoria": "STAND",
+      "idx": 214,
+      "anim": "warmup",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 215,
+      "categoria": "STAND",
+      "idx": 215,
+      "anim": "fem_pos2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 216,
+      "categoria": "STAND",
+      "idx": 216,
+      "anim": "job_stance",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 217,
+      "categoria": "STAND",
+      "idx": 217,
+      "anim": "waiting",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 218,
+      "categoria": "STAND",
+      "idx": 218,
+      "anim": "waiting2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 219,
+      "categoria": "STAND",
+      "idx": 219,
+      "anim": "fem_psing",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 220,
+      "categoria": "STAND",
+      "idx": 220,
+      "anim": "fem_psing2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 221,
+      "categoria": "STAND",
+      "idx": 221,
+      "anim": "roof_lean",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 222,
+      "categoria": "STAND",
+      "idx": 222,
+      "anim": "shoulder",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 223,
+      "categoria": "STAND",
+      "idx": 223,
+      "anim": "ge_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 224,
+      "categoria": "STAND",
+      "idx": 224,
+      "anim": "ge_2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 225,
+      "categoria": "SIT",
+      "idx": 1,
+      "anim": "SEAT_down",
+      "lib": "ped"
+    },
+    {
+      "orden": 226,
+      "categoria": "SIT",
+      "idx": 2,
+      "anim": "SEAT_idle",
+      "lib": "ped"
+    },
+    {
+      "orden": 227,
+      "categoria": "SIT",
+      "idx": 3,
+      "anim": "SEAT_up",
+      "lib": "ped"
+    },
+    {
+      "orden": 228,
+      "categoria": "SIT",
+      "idx": 4,
+      "anim": "Stepsit_in",
+      "lib": "Attractors"
+    },
+    {
+      "orden": 229,
+      "categoria": "SIT",
+      "idx": 5,
+      "anim": "Stepsit_loop",
+      "lib": "Attractors"
+    },
+    {
+      "orden": 230,
+      "categoria": "SIT",
+      "idx": 6,
+      "anim": "Stepsit_out",
+      "lib": "Attractors"
+    },
+    {
+      "orden": 231,
+      "categoria": "SIT",
+      "idx": 7,
+      "anim": "ParkSit_M_loop",
+      "lib": "BEACH"
+    },
+    {
+      "orden": 232,
+      "categoria": "SIT",
+      "idx": 8,
+      "anim": "ParkSit_W_loop",
+      "lib": "BEACH"
+    },
+    {
+      "orden": 233,
+      "categoria": "SIT",
+      "idx": 9,
+      "anim": "SitnWait_loop_W",
+      "lib": "BEACH"
+    },
+    {
+      "orden": 234,
+      "categoria": "SIT",
+      "idx": 10,
+      "anim": "carfone_in",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 235,
+      "categoria": "SIT",
+      "idx": 11,
+      "anim": "carfone_loopA",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 236,
+      "categoria": "SIT",
+      "idx": 12,
+      "anim": "carfone_loopA",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 237,
+      "categoria": "SIT",
+      "idx": 13,
+      "anim": "carfone_loopB",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 238,
+      "categoria": "SIT",
+      "idx": 14,
+      "anim": "carfone_loopB",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 239,
+      "categoria": "SIT",
+      "idx": 15,
+      "anim": "carfone_out",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 240,
+      "categoria": "SIT",
+      "idx": 16,
+      "anim": "CAR_Sc1_BL",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 241,
+      "categoria": "SIT",
+      "idx": 17,
+      "anim": "CAR_Sc1_BR",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 242,
+      "categoria": "SIT",
+      "idx": 18,
+      "anim": "CAR_Sc1_FL",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 243,
+      "categoria": "SIT",
+      "idx": 19,
+      "anim": "CAR_Sc1_FR",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 244,
+      "categoria": "SIT",
+      "idx": 20,
+      "anim": "CAR_Sc2_FL",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 245,
+      "categoria": "SIT",
+      "idx": 21,
+      "anim": "CAR_Sc3_BR",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 246,
+      "categoria": "SIT",
+      "idx": 22,
+      "anim": "CAR_Sc3_FL",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 247,
+      "categoria": "SIT",
+      "idx": 23,
+      "anim": "CAR_Sc3_FR",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 248,
+      "categoria": "SIT",
+      "idx": 24,
+      "anim": "CAR_Sc4_FL",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 249,
+      "categoria": "SIT",
+      "idx": 25,
+      "anim": "FF_Die_Bkw",
+      "lib": "food"
+    },
+    {
+      "orden": 250,
+      "categoria": "SIT",
+      "idx": 26,
+      "anim": "FF_Die_Fwd",
+      "lib": "food"
+    },
+    {
+      "orden": 251,
+      "categoria": "SIT",
+      "idx": 27,
+      "anim": "FF_Die_Left",
+      "lib": "food"
+    },
+    {
+      "orden": 252,
+      "categoria": "SIT",
+      "idx": 28,
+      "anim": "FF_Die_Right",
+      "lib": "food"
+    },
+    {
+      "orden": 253,
+      "categoria": "SIT",
+      "idx": 29,
+      "anim": "FF_Sit_Eat1",
+      "lib": "food"
+    },
+    {
+      "orden": 254,
+      "categoria": "SIT",
+      "idx": 30,
+      "anim": "FF_Sit_Eat2",
+      "lib": "food"
+    },
+    {
+      "orden": 255,
+      "categoria": "SIT",
+      "idx": 31,
+      "anim": "FF_Sit_Eat3",
+      "lib": "food"
+    },
+    {
+      "orden": 256,
+      "categoria": "SIT",
+      "idx": 32,
+      "anim": "FF_Sit_In",
+      "lib": "food"
+    },
+    {
+      "orden": 257,
+      "categoria": "SIT",
+      "idx": 33,
+      "anim": "FF_Sit_In_L",
+      "lib": "food"
+    },
+    {
+      "orden": 258,
+      "categoria": "SIT",
+      "idx": 34,
+      "anim": "FF_Sit_In_R",
+      "lib": "food"
+    },
+    {
+      "orden": 259,
+      "categoria": "SIT",
+      "idx": 35,
+      "anim": "FF_Sit_Look",
+      "lib": "food"
+    },
+    {
+      "orden": 260,
+      "categoria": "SIT",
+      "idx": 36,
+      "anim": "FF_Sit_Loop",
+      "lib": "food"
+    },
+    {
+      "orden": 261,
+      "categoria": "SIT",
+      "idx": 37,
+      "anim": "Sit_Out_180",
+      "lib": "food"
+    },
+    {
+      "orden": 262,
+      "categoria": "SIT",
+      "idx": 38,
+      "anim": "Sit_Out_L_180",
+      "lib": "food"
+    },
+    {
+      "orden": 263,
+      "categoria": "SIT",
+      "idx": 39,
+      "anim": "Sit_Out_R_180",
+      "lib": "food"
+    },
+    {
+      "orden": 264,
+      "categoria": "SIT",
+      "idx": 40,
+      "anim": "GDB_Car2_PLY",
+      "lib": "GHETTO_DB"
+    },
+    {
+      "orden": 265,
+      "categoria": "SIT",
+      "idx": 41,
+      "anim": "GDB_Car2_SWE",
+      "lib": "GHETTO_DB"
+    },
+    {
+      "orden": 266,
+      "categoria": "SIT",
+      "idx": 42,
+      "anim": "GDB_Car_PLY",
+      "lib": "GHETTO_DB"
+    },
+    {
+      "orden": 267,
+      "categoria": "SIT",
+      "idx": 43,
+      "anim": "GDB_Car_SWE",
+      "lib": "GHETTO_DB"
+    },
+    {
+      "orden": 268,
+      "categoria": "SIT",
+      "idx": 44,
+      "anim": "LOU_In",
+      "lib": "INT_HOUSE"
+    },
+    {
+      "orden": 269,
+      "categoria": "SIT",
+      "idx": 45,
+      "anim": "LOU_Loop",
+      "lib": "INT_HOUSE"
+    },
+    {
+      "orden": 270,
+      "categoria": "SIT",
+      "idx": 46,
+      "anim": "LOU_Out",
+      "lib": "INT_HOUSE"
+    },
+    {
+      "orden": 271,
+      "categoria": "SIT",
+      "idx": 47,
+      "anim": "FF_Dam_Fwd",
+      "lib": "INT_OFFICE"
+    },
+    {
+      "orden": 272,
+      "categoria": "SIT",
+      "idx": 48,
+      "anim": "OFF_Sit_Crash",
+      "lib": "INT_OFFICE"
+    },
+    {
+      "orden": 273,
+      "categoria": "SIT",
+      "idx": 49,
+      "anim": "OFF_Sit_Drink",
+      "lib": "INT_OFFICE"
+    },
+    {
+      "orden": 274,
+      "categoria": "SIT",
+      "idx": 50,
+      "anim": "OFF_Sit_In",
+      "lib": "INT_OFFICE"
+    },
+    {
+      "orden": 275,
+      "categoria": "SIT",
+      "idx": 51,
+      "anim": "OFF_Sit_Read",
+      "lib": "INT_OFFICE"
+    },
+    {
+      "orden": 276,
+      "categoria": "SIT",
+      "idx": 52,
+      "anim": "OFF_Sit_Watch",
+      "lib": "INT_OFFICE"
+    },
+    {
+      "orden": 277,
+      "categoria": "SIT",
+      "idx": 53,
+      "anim": "Sit_2Idle_180",
+      "lib": "INT_OFFICE2"
+    },
+    {
+      "orden": 278,
+      "categoria": "SIT",
+      "idx": 54,
+      "anim": "Sit_Bored_Loop",
+      "lib": "INT_OFFICE2"
+    },
+    {
+      "orden": 279,
+      "categoria": "SIT",
+      "idx": 55,
+      "anim": "Sit_Idle_Loop",
+      "lib": "INT_OFFICE2"
+    },
+    {
+      "orden": 280,
+      "categoria": "SIT",
+      "idx": 56,
+      "anim": "Sit_Type_Loop",
+      "lib": "INT_OFFICE2"
+    },
+    {
+      "orden": 281,
+      "categoria": "SIT",
+      "idx": 57,
+      "anim": "girl_02",
+      "lib": "JST_BUISNESS"
+    },
+    {
+      "orden": 282,
+      "categoria": "SIT",
+      "idx": 58,
+      "anim": "SEAT_LR",
+      "lib": "misc"
+    },
+    {
+      "orden": 283,
+      "categoria": "SIT",
+      "idx": 59,
+      "anim": "Seat_talk_01",
+      "lib": "misc"
+    },
+    {
+      "orden": 284,
+      "categoria": "SIT",
+      "idx": 60,
+      "anim": "Seat_talk_02",
+      "lib": "misc"
+    },
+    {
+      "orden": 285,
+      "categoria": "SIT",
+      "idx": 61,
+      "anim": "SEAT_watch",
+      "lib": "misc"
+    },
+    {
+      "orden": 286,
+      "categoria": "SIT",
+      "idx": 62,
+      "anim": "Sit_relaxed",
+      "lib": "LOWRIDER"
+    },
+    {
+      "orden": 287,
+      "categoria": "SIT",
+      "idx": 63,
+      "anim": "Tap_hand",
+      "lib": "LOWRIDER"
+    },
+    {
+      "orden": 288,
+      "categoria": "SIT",
+      "idx": 64,
+      "anim": "ground_1",
+      "lib": "MMR"
+    },
+    {
+      "orden": 289,
+      "categoria": "SIT",
+      "idx": 65,
+      "anim": "ground_2",
+      "lib": "MMR"
+    },
+    {
+      "orden": 290,
+      "categoria": "SIT",
+      "idx": 66,
+      "anim": "ground_3",
+      "lib": "MMR"
+    },
+    {
+      "orden": 291,
+      "categoria": "SIT",
+      "idx": 67,
+      "anim": "seat_1",
+      "lib": "MMR"
+    },
+    {
+      "orden": 292,
+      "categoria": "SIT",
+      "idx": 68,
+      "anim": "seat_2",
+      "lib": "MMR"
+    },
+    {
+      "orden": 293,
+      "categoria": "SIT",
+      "idx": 69,
+      "anim": "zombie_eats",
+      "lib": "MMR"
+    },
+    {
+      "orden": 294,
+      "categoria": "SIT",
+      "idx": 70,
+      "anim": "pos4",
+      "lib": "POSES"
+    },
+    {
+      "orden": 295,
+      "categoria": "SIT",
+      "idx": 71,
+      "anim": "pos5",
+      "lib": "POSES"
+    },
+    {
+      "orden": 296,
+      "categoria": "SIT",
+      "idx": 72,
+      "anim": "pos9",
+      "lib": "POSES"
+    },
+    {
+      "orden": 297,
+      "categoria": "SIT",
+      "idx": 73,
+      "anim": "pos11",
+      "lib": "POSES"
+    },
+    {
+      "orden": 298,
+      "categoria": "SIT",
+      "idx": 74,
+      "anim": "pos12",
+      "lib": "POSES"
+    },
+    {
+      "orden": 299,
+      "categoria": "SIT",
+      "idx": 75,
+      "anim": "pos14",
+      "lib": "POSES"
+    },
+    {
+      "orden": 300,
+      "categoria": "SIT",
+      "idx": 76,
+      "anim": "pos16",
+      "lib": "POSES"
+    },
+    {
+      "orden": 301,
+      "categoria": "SIT",
+      "idx": 77,
+      "anim": "NAJOPE1",
+      "lib": "OZ"
+    },
+    {
+      "orden": 302,
+      "categoria": "SIT",
+      "idx": 78,
+      "anim": "SEATRNR",
+      "lib": "OZ"
+    },
+    {
+      "orden": 303,
+      "categoria": "SIT",
+      "idx": 79,
+      "anim": "SEATRN",
+      "lib": "OZ"
+    },
+    {
+      "orden": 304,
+      "categoria": "SIT",
+      "idx": 80,
+      "anim": "SEATS",
+      "lib": "OZ"
+    },
+    {
+      "orden": 305,
+      "categoria": "SIT",
+      "idx": 81,
+      "anim": "SEATSS",
+      "lib": "OZ"
+    },
+    {
+      "orden": 306,
+      "categoria": "SIT",
+      "idx": 82,
+      "anim": "Nakoleni",
+      "lib": "OZ"
+    },
+    {
+      "orden": 307,
+      "categoria": "SIT",
+      "idx": 83,
+      "anim": "umolyat",
+      "lib": "OZ"
+    },
+    {
+      "orden": 308,
+      "categoria": "SIT",
+      "idx": 84,
+      "anim": "surrend1",
+      "lib": "OZ"
+    },
+    {
+      "orden": 309,
+      "categoria": "SIT",
+      "idx": 85,
+      "anim": "racia_crouch",
+      "lib": "OZ"
+    },
+    {
+      "orden": 310,
+      "categoria": "SIT",
+      "idx": 86,
+      "anim": "ground_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 311,
+      "categoria": "SIT",
+      "idx": 87,
+      "anim": "sitdaun",
+      "lib": "OZ"
+    },
+    {
+      "orden": 312,
+      "categoria": "SIT",
+      "idx": 88,
+      "anim": "sit_6",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 313,
+      "categoria": "SIT",
+      "idx": 89,
+      "anim": "sit_2_call",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 314,
+      "categoria": "SIT",
+      "idx": 90,
+      "anim": "sit_2_check",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 315,
+      "categoria": "SIT",
+      "idx": 91,
+      "anim": "sit_2_bang1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 316,
+      "categoria": "SIT",
+      "idx": 92,
+      "anim": "sit_2_bang2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 317,
+      "categoria": "SIT",
+      "idx": 93,
+      "anim": "sit_2_rev",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 318,
+      "categoria": "SIT",
+      "idx": 94,
+      "anim": "sit_2_shake",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 319,
+      "categoria": "SIT",
+      "idx": 95,
+      "anim": "sit_laugh_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 320,
+      "categoria": "SIT",
+      "idx": 96,
+      "anim": "sit_laugh_2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 321,
+      "categoria": "SIT",
+      "idx": 97,
+      "anim": "sit_3",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 322,
+      "categoria": "SIT",
+      "idx": 98,
+      "anim": "sit_drunk",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 323,
+      "categoria": "SIT",
+      "idx": 99,
+      "anim": "sit_sick_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 324,
+      "categoria": "SIT",
+      "idx": 100,
+      "anim": "sit_sick_2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 325,
+      "categoria": "SIT",
+      "idx": 101,
+      "anim": "sit_sick_3",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 326,
+      "categoria": "SIT",
+      "idx": 102,
+      "anim": "sit_out",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 327,
+      "categoria": "SIT",
+      "idx": 103,
+      "anim": "sit_fem_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 328,
+      "categoria": "SIT",
+      "idx": 104,
+      "anim": "sit_4",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 329,
+      "categoria": "SIT",
+      "idx": 105,
+      "anim": "sit_smk_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 330,
+      "categoria": "SIT",
+      "idx": 106,
+      "anim": "sit_drink_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 331,
+      "categoria": "SIT",
+      "idx": 107,
+      "anim": "sit_read_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 332,
+      "categoria": "SIT",
+      "idx": 108,
+      "anim": "sit_eat_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 333,
+      "categoria": "SIT",
+      "idx": 109,
+      "anim": "sit_nwsp_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 334,
+      "categoria": "SIT",
+      "idx": 110,
+      "anim": "sit_punk",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 335,
+      "categoria": "SIT",
+      "idx": 111,
+      "anim": "sit_eat",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 336,
+      "categoria": "SIT",
+      "idx": 112,
+      "anim": "console_loop",
+      "lib": "MMR"
+    },
+    {
+      "orden": 337,
+      "categoria": "SIT",
+      "idx": 113,
+      "anim": "console_loose",
+      "lib": "MMR"
+    },
+    {
+      "orden": 338,
+      "categoria": "SIT",
+      "idx": 114,
+      "anim": "console_win",
+      "lib": "MMR"
+    },
+    {
+      "orden": 339,
+      "categoria": "SIT",
+      "idx": 115,
+      "anim": "sit_2b",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 340,
+      "categoria": "SIT",
+      "idx": 116,
+      "anim": "sit_2c",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 341,
+      "categoria": "SIT",
+      "idx": 117,
+      "anim": "cs_1a_cart",
+      "lib": "is_cuts"
+    },
+    {
+      "orden": 342,
+      "categoria": "SIT",
+      "idx": 118,
+      "anim": "cs_1a_mia",
+      "lib": "is_cuts"
+    },
+    {
+      "orden": 343,
+      "categoria": "SIT",
+      "idx": 119,
+      "anim": "cs_1b_cart",
+      "lib": "is_cuts"
+    },
+    {
+      "orden": 344,
+      "categoria": "SIT",
+      "idx": 120,
+      "anim": "cs_1b_mia",
+      "lib": "is_cuts"
+    },
+    {
+      "orden": 345,
+      "categoria": "SIT",
+      "idx": 121,
+      "anim": "2_m_in",
+      "lib": "is_cuts"
+    },
+    {
+      "orden": 346,
+      "categoria": "SIT",
+      "idx": 122,
+      "anim": "2_m_lp",
+      "lib": "is_cuts"
+    },
+    {
+      "orden": 347,
+      "categoria": "SIT",
+      "idx": 123,
+      "anim": "cs_2_m_out",
+      "lib": "is_cuts"
+    },
+    {
+      "orden": 348,
+      "categoria": "LAY",
+      "idx": 1,
+      "anim": "bather",
+      "lib": "BEACH"
+    },
+    {
+      "orden": 349,
+      "categoria": "LAY",
+      "idx": 2,
+      "anim": "Lay_Bac_Loop",
+      "lib": "BEACH"
+    },
+    {
+      "orden": 350,
+      "categoria": "LAY",
+      "idx": 3,
+      "anim": "Tyd2car_bump",
+      "lib": "car"
+    },
+    {
+      "orden": 351,
+      "categoria": "LAY",
+      "idx": 4,
+      "anim": "Tyd2car_high",
+      "lib": "car"
+    },
+    {
+      "orden": 352,
+      "categoria": "LAY",
+      "idx": 5,
+      "anim": "Tyd2car_low",
+      "lib": "car"
+    },
+    {
+      "orden": 353,
+      "categoria": "LAY",
+      "idx": 6,
+      "anim": "Tyd2car_med",
+      "lib": "car"
+    },
+    {
+      "orden": 354,
+      "categoria": "LAY",
+      "idx": 7,
+      "anim": "Tyd2car_TurnL",
+      "lib": "car"
+    },
+    {
+      "orden": 355,
+      "categoria": "LAY",
+      "idx": 8,
+      "anim": "Tyd2car_TurnR",
+      "lib": "car"
+    },
+    {
+      "orden": 356,
+      "categoria": "LAY",
+      "idx": 9,
+      "anim": "crckidle1",
+      "lib": "CRACK"
+    },
+    {
+      "orden": 357,
+      "categoria": "LAY",
+      "idx": 10,
+      "anim": "crckidle2",
+      "lib": "CRACK"
+    },
+    {
+      "orden": 358,
+      "categoria": "LAY",
+      "idx": 11,
+      "anim": "crckidle3",
+      "lib": "CRACK"
+    },
+    {
+      "orden": 359,
+      "categoria": "LAY",
+      "idx": 12,
+      "anim": "crckidle4",
+      "lib": "CRACK"
+    },
+    {
+      "orden": 360,
+      "categoria": "LAY",
+      "idx": 13,
+      "anim": "BED_In_L",
+      "lib": "INT_HOUSE"
+    },
+    {
+      "orden": 361,
+      "categoria": "LAY",
+      "idx": 14,
+      "anim": "BED_In_R",
+      "lib": "INT_HOUSE"
+    },
+    {
+      "orden": 362,
+      "categoria": "LAY",
+      "idx": 15,
+      "anim": "BED_Loop_L",
+      "lib": "INT_HOUSE"
+    },
+    {
+      "orden": 363,
+      "categoria": "LAY",
+      "idx": 16,
+      "anim": "BED_Loop_R",
+      "lib": "INT_HOUSE"
+    },
+    {
+      "orden": 364,
+      "categoria": "LAY",
+      "idx": 17,
+      "anim": "BED_Out_L",
+      "lib": "INT_HOUSE"
+    },
+    {
+      "orden": 365,
+      "categoria": "LAY",
+      "idx": 18,
+      "anim": "BED_Out_R",
+      "lib": "INT_HOUSE"
+    },
+    {
+      "orden": 366,
+      "categoria": "LAY",
+      "idx": 19,
+      "anim": "gnstwall_injurd",
+      "lib": "SWATPD"
+    },
+    {
+      "orden": 367,
+      "categoria": "LAY",
+      "idx": 20,
+      "anim": "injuredloop",
+      "lib": "SWEET"
+    },
+    {
+      "orden": 368,
+      "categoria": "LAY",
+      "idx": 21,
+      "anim": "pos8",
+      "lib": "POSES"
+    },
+    {
+      "orden": 369,
+      "categoria": "LAY",
+      "idx": 22,
+      "anim": "pos10",
+      "lib": "POSES"
+    },
+    {
+      "orden": 370,
+      "categoria": "LAY",
+      "idx": 23,
+      "anim": "Ranen2",
+      "lib": "OZ"
+    },
+    {
+      "orden": 371,
+      "categoria": "LAY",
+      "idx": 24,
+      "anim": "LRANEN",
+      "lib": "OZ"
+    },
+    {
+      "orden": 372,
+      "categoria": "LAY",
+      "idx": 25,
+      "anim": "otjimanie",
+      "lib": "OZ"
+    },
+    {
+      "orden": 373,
+      "categoria": "LAY",
+      "idx": 26,
+      "anim": "press",
+      "lib": "OZ"
+    },
+    {
+      "orden": 374,
+      "categoria": "LAY",
+      "idx": 27,
+      "anim": "RANEN",
+      "lib": "OZ"
+    },
+    {
+      "orden": 375,
+      "categoria": "LAY",
+      "idx": 28,
+      "anim": "NABOKU",
+      "lib": "OZ"
+    },
+    {
+      "orden": 376,
+      "categoria": "LAY",
+      "idx": 29,
+      "anim": "NASPINE2",
+      "lib": "OZ"
+    },
+    {
+      "orden": 377,
+      "categoria": "LAY",
+      "idx": 30,
+      "anim": "db1",
+      "lib": "OZ"
+    },
+    {
+      "orden": 378,
+      "categoria": "LAY",
+      "idx": 31,
+      "anim": "surrend2",
+      "lib": "OZ"
+    },
+    {
+      "orden": 379,
+      "categoria": "LAY",
+      "idx": 32,
+      "anim": "surrend5",
+      "lib": "OZ"
+    },
+    {
+      "orden": 380,
+      "categoria": "LAY",
+      "idx": 33,
+      "anim": "lay_idle",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 381,
+      "categoria": "LAY",
+      "idx": 34,
+      "anim": "lay_lounger_2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 382,
+      "categoria": "LAY",
+      "idx": 35,
+      "anim": "gym_situp",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 383,
+      "categoria": "LAY",
+      "idx": 36,
+      "anim": "drug_sleep",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 384,
+      "categoria": "LAY",
+      "idx": 37,
+      "anim": "lay_lounger",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 385,
+      "categoria": "LAY",
+      "idx": 38,
+      "anim": "hern_dead",
+      "lib": "MMR"
+    },
+    {
+      "orden": 386,
+      "categoria": "WEAPON",
+      "idx": 1,
+      "anim": "ARRESTgun",
+      "lib": "ped"
+    },
+    {
+      "orden": 387,
+      "categoria": "WEAPON",
+      "idx": 2,
+      "anim": "gang_gunstand",
+      "lib": "ped"
+    },
+    {
+      "orden": 388,
+      "categoria": "WEAPON",
+      "idx": 3,
+      "anim": "Gun_stand",
+      "lib": "ped"
+    },
+    {
+      "orden": 389,
+      "categoria": "WEAPON",
+      "idx": 4,
+      "anim": "camcrch_cmon",
+      "lib": "CAMERA"
+    },
+    {
+      "orden": 390,
+      "categoria": "WEAPON",
+      "idx": 5,
+      "anim": "camcrch_idle",
+      "lib": "CAMERA"
+    },
+    {
+      "orden": 391,
+      "categoria": "WEAPON",
+      "idx": 6,
+      "anim": "camcrch_stay",
+      "lib": "CAMERA"
+    },
+    {
+      "orden": 392,
+      "categoria": "WEAPON",
+      "idx": 7,
+      "anim": "camcrch_stnd",
+      "lib": "CAMERA"
+    },
+    {
+      "orden": 393,
+      "categoria": "WEAPON",
+      "idx": 8,
+      "anim": "camstnd_cmon",
+      "lib": "CAMERA"
+    },
+    {
+      "orden": 394,
+      "categoria": "WEAPON",
+      "idx": 9,
+      "anim": "camstnd_idle",
+      "lib": "CAMERA"
+    },
+    {
+      "orden": 395,
+      "categoria": "WEAPON",
+      "idx": 10,
+      "anim": "camstnd_lkabt",
+      "lib": "CAMERA"
+    },
+    {
+      "orden": 396,
+      "categoria": "WEAPON",
+      "idx": 11,
+      "anim": "camstnd_crch",
+      "lib": "CAMERA"
+    },
+    {
+      "orden": 397,
+      "categoria": "WEAPON",
+      "idx": 12,
+      "anim": "piccrch_in",
+      "lib": "CAMERA"
+    },
+    {
+      "orden": 398,
+      "categoria": "WEAPON",
+      "idx": 13,
+      "anim": "piccrch_out",
+      "lib": "CAMERA"
+    },
+    {
+      "orden": 399,
+      "categoria": "WEAPON",
+      "idx": 14,
+      "anim": "piccrch_take",
+      "lib": "CAMERA"
+    },
+    {
+      "orden": 400,
+      "categoria": "WEAPON",
+      "idx": 15,
+      "anim": "picstnd_in",
+      "lib": "CAMERA"
+    },
+    {
+      "orden": 401,
+      "categoria": "WEAPON",
+      "idx": 16,
+      "anim": "picstnd_out",
+      "lib": "CAMERA"
+    },
+    {
+      "orden": 402,
+      "categoria": "WEAPON",
+      "idx": 17,
+      "anim": "picstnd_take",
+      "lib": "CAMERA"
+    },
+    {
+      "orden": 403,
+      "categoria": "WEAPON",
+      "idx": 18,
+      "anim": "seat_gun1",
+      "lib": "SWATPD"
+    },
+    {
+      "orden": 404,
+      "categoria": "WEAPON",
+      "idx": 19,
+      "anim": "seat_gun2",
+      "lib": "SWATPD"
+    },
+    {
+      "orden": 405,
+      "categoria": "WEAPON",
+      "idx": 20,
+      "anim": "gun_stand_1",
+      "lib": "MMR"
+    },
+    {
+      "orden": 406,
+      "categoria": "WEAPON",
+      "idx": 21,
+      "anim": "hold_shield_1",
+      "lib": "MMR"
+    },
+    {
+      "orden": 407,
+      "categoria": "WEAPON",
+      "idx": 22,
+      "anim": "hold_shield_2",
+      "lib": "MMR"
+    },
+    {
+      "orden": 408,
+      "categoria": "WEAPON",
+      "idx": 23,
+      "anim": "idle_gun_1",
+      "lib": "MMR"
+    },
+    {
+      "orden": 409,
+      "categoria": "WEAPON",
+      "idx": 24,
+      "anim": "idle_gun_2",
+      "lib": "MMR"
+    },
+    {
+      "orden": 410,
+      "categoria": "WEAPON",
+      "idx": 25,
+      "anim": "idle_gun_3",
+      "lib": "MMR"
+    },
+    {
+      "orden": 411,
+      "categoria": "WEAPON",
+      "idx": 26,
+      "anim": "FloorStay",
+      "lib": "OZ"
+    },
+    {
+      "orden": 412,
+      "categoria": "WEAPON",
+      "idx": 27,
+      "anim": "lejat_f",
+      "lib": "OZ"
+    },
+    {
+      "orden": 413,
+      "categoria": "WEAPON",
+      "idx": 28,
+      "anim": "lejat_r",
+      "lib": "OZ"
+    },
+    {
+      "orden": 414,
+      "categoria": "WEAPON",
+      "idx": 29,
+      "anim": "CSEAT",
+      "lib": "OZ"
+    },
+    {
+      "orden": 415,
+      "categoria": "WEAPON",
+      "idx": 30,
+      "anim": "Crouchprl1",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 416,
+      "categoria": "WEAPON",
+      "idx": 31,
+      "anim": "Slnc_reload",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 417,
+      "categoria": "WEAPON",
+      "idx": 32,
+      "anim": "Crouchprl1",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 418,
+      "categoria": "WEAPON",
+      "idx": 33,
+      "anim": "Slnc_reload",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 419,
+      "categoria": "WEAPON",
+      "idx": 34,
+      "anim": "crouchfire1",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 420,
+      "categoria": "WEAPON",
+      "idx": 35,
+      "anim": "crouchurld",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 421,
+      "categoria": "WEAPON",
+      "idx": 36,
+      "anim": "UZIreload",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 422,
+      "categoria": "WEAPON",
+      "idx": 37,
+      "anim": "crouchfire2",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 423,
+      "categoria": "WEAPON",
+      "idx": 38,
+      "anim": "crouchsrld",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 424,
+      "categoria": "WEAPON",
+      "idx": 39,
+      "anim": "shtg_shoot",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 425,
+      "categoria": "WEAPON",
+      "idx": 40,
+      "anim": "shtg_reload",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 426,
+      "categoria": "WEAPON",
+      "idx": 41,
+      "anim": "crouchrrld",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 427,
+      "categoria": "WEAPON",
+      "idx": 42,
+      "anim": "RIFLEload",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 428,
+      "categoria": "WEAPON",
+      "idx": 43,
+      "anim": "crouchfire3",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 429,
+      "categoria": "WEAPON",
+      "idx": 44,
+      "anim": "crouchprl2",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 430,
+      "categoria": "WEAPON",
+      "idx": 45,
+      "anim": "dgl_reload",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 431,
+      "categoria": "WEAPON",
+      "idx": 46,
+      "anim": "crouchfire4",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 432,
+      "categoria": "WEAPON",
+      "idx": 47,
+      "anim": "crouchfire5",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 433,
+      "categoria": "WEAPON",
+      "idx": 48,
+      "anim": "crouchprl3",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 434,
+      "categoria": "WEAPON",
+      "idx": 49,
+      "anim": "coltreload",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 435,
+      "categoria": "WEAPON",
+      "idx": 50,
+      "anim": "sawnreload",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 436,
+      "categoria": "CHAT",
+      "idx": 1,
+      "anim": "endchat_01",
+      "lib": "ped"
+    },
+    {
+      "orden": 437,
+      "categoria": "CHAT",
+      "idx": 2,
+      "anim": "endchat_02",
+      "lib": "ped"
+    },
+    {
+      "orden": 438,
+      "categoria": "CHAT",
+      "idx": 3,
+      "anim": "Endchat_03",
+      "lib": "ped"
+    },
+    {
+      "orden": 439,
+      "categoria": "CHAT",
+      "idx": 4,
+      "anim": "fucku",
+      "lib": "ped"
+    },
+    {
+      "orden": 440,
+      "categoria": "CHAT",
+      "idx": 5,
+      "anim": "IDLE_chat",
+      "lib": "ped"
+    },
+    {
+      "orden": 441,
+      "categoria": "CHAT",
+      "idx": 6,
+      "anim": "Barcustom_order",
+      "lib": "bar"
+    },
+    {
+      "orden": 442,
+      "categoria": "CHAT",
+      "idx": 7,
+      "anim": "Barserve_order",
+      "lib": "bar"
+    },
+    {
+      "orden": 443,
+      "categoria": "CHAT",
+      "idx": 8,
+      "anim": "BD_GF_Wave",
+      "lib": "BD_FIRE"
+    },
+    {
+      "orden": 444,
+      "categoria": "CHAT",
+      "idx": 9,
+      "anim": "car_talkm_in",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 445,
+      "categoria": "CHAT",
+      "idx": 10,
+      "anim": "car_talkm_loop",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 446,
+      "categoria": "CHAT",
+      "idx": 11,
+      "anim": "car_talkm_out",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 447,
+      "categoria": "CHAT",
+      "idx": 12,
+      "anim": "manwinb",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 448,
+      "categoria": "CHAT",
+      "idx": 13,
+      "anim": "manwind",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 449,
+      "categoria": "CHAT",
+      "idx": 14,
+      "anim": "hand_ge_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 450,
+      "categoria": "CHAT",
+      "idx": 15,
+      "anim": "hand_ge_2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 451,
+      "categoria": "CHAT",
+      "idx": 16,
+      "anim": "hand_ge_5a",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 452,
+      "categoria": "CHAT",
+      "idx": 17,
+      "anim": "Coplook_nod",
+      "lib": "COP_AMBIENT"
+    },
+    {
+      "orden": 453,
+      "categoria": "CHAT",
+      "idx": 18,
+      "anim": "Coplook_shake",
+      "lib": "COP_AMBIENT"
+    },
+    {
+      "orden": 454,
+      "categoria": "CHAT",
+      "idx": 19,
+      "anim": "Coplook_think",
+      "lib": "COP_AMBIENT"
+    },
+    {
+      "orden": 455,
+      "categoria": "CHAT",
+      "idx": 20,
+      "anim": "Coplook_watch",
+      "lib": "COP_AMBIENT"
+    },
+    {
+      "orden": 456,
+      "categoria": "CHAT",
+      "idx": 21,
+      "anim": "DEALER_IDLE_01",
+      "lib": "DEALER"
+    },
+    {
+      "orden": 457,
+      "categoria": "CHAT",
+      "idx": 22,
+      "anim": "DEALER_IDLE_02",
+      "lib": "DEALER"
+    },
+    {
+      "orden": 458,
+      "categoria": "CHAT",
+      "idx": 23,
+      "anim": "DEALER_IDLE_03",
+      "lib": "DEALER"
+    },
+    {
+      "orden": 459,
+      "categoria": "CHAT",
+      "idx": 24,
+      "anim": "Invite_No",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 460,
+      "categoria": "CHAT",
+      "idx": 25,
+      "anim": "Invite_Yes",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 461,
+      "categoria": "CHAT",
+      "idx": 26,
+      "anim": "prtial_gngtlkA",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 462,
+      "categoria": "CHAT",
+      "idx": 27,
+      "anim": "prtial_gngtlkB",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 463,
+      "categoria": "CHAT",
+      "idx": 28,
+      "anim": "prtial_gngtlkC",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 464,
+      "categoria": "CHAT",
+      "idx": 29,
+      "anim": "prtial_gngtlkD",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 465,
+      "categoria": "CHAT",
+      "idx": 30,
+      "anim": "prtial_gngtlkE",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 466,
+      "categoria": "CHAT",
+      "idx": 31,
+      "anim": "prtial_gngtlkF",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 467,
+      "categoria": "CHAT",
+      "idx": 32,
+      "anim": "prtial_gngtlkG",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 468,
+      "categoria": "CHAT",
+      "idx": 33,
+      "anim": "prtial_gngtlkH",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 469,
+      "categoria": "CHAT",
+      "idx": 34,
+      "anim": "gsign1",
+      "lib": "GHANDS"
+    },
+    {
+      "orden": 470,
+      "categoria": "CHAT",
+      "idx": 35,
+      "anim": "gsign1LH",
+      "lib": "GHANDS"
+    },
+    {
+      "orden": 471,
+      "categoria": "CHAT",
+      "idx": 36,
+      "anim": "gsign2",
+      "lib": "GHANDS"
+    },
+    {
+      "orden": 472,
+      "categoria": "CHAT",
+      "idx": 37,
+      "anim": "gsign2LH",
+      "lib": "GHANDS"
+    },
+    {
+      "orden": 473,
+      "categoria": "CHAT",
+      "idx": 38,
+      "anim": "gsign3",
+      "lib": "GHANDS"
+    },
+    {
+      "orden": 474,
+      "categoria": "CHAT",
+      "idx": 39,
+      "anim": "gsign3LH",
+      "lib": "GHANDS"
+    },
+    {
+      "orden": 475,
+      "categoria": "CHAT",
+      "idx": 40,
+      "anim": "gsign4",
+      "lib": "GHANDS"
+    },
+    {
+      "orden": 476,
+      "categoria": "CHAT",
+      "idx": 41,
+      "anim": "gsign4LH",
+      "lib": "GHANDS"
+    },
+    {
+      "orden": 477,
+      "categoria": "CHAT",
+      "idx": 42,
+      "anim": "gsign5",
+      "lib": "GHANDS"
+    },
+    {
+      "orden": 478,
+      "categoria": "CHAT",
+      "idx": 43,
+      "anim": "gsign5LH",
+      "lib": "GHANDS"
+    },
+    {
+      "orden": 479,
+      "categoria": "CHAT",
+      "idx": 44,
+      "anim": "BD_GF_Wave",
+      "lib": "KISSING"
+    },
+    {
+      "orden": 480,
+      "categoria": "CHAT",
+      "idx": 45,
+      "anim": "gfwave2",
+      "lib": "KISSING"
+    },
+    {
+      "orden": 481,
+      "categoria": "CHAT",
+      "idx": 46,
+      "anim": "GF_CarArgue_01",
+      "lib": "KISSING"
+    },
+    {
+      "orden": 482,
+      "categoria": "CHAT",
+      "idx": 47,
+      "anim": "GF_CarArgue_02",
+      "lib": "KISSING"
+    },
+    {
+      "orden": 483,
+      "categoria": "CHAT",
+      "idx": 48,
+      "anim": "Idle_Chat_02",
+      "lib": "misc"
+    },
+    {
+      "orden": 484,
+      "categoria": "CHAT",
+      "idx": 49,
+      "anim": "plyr_shkhead",
+      "lib": "misc"
+    },
+    {
+      "orden": 485,
+      "categoria": "CHAT",
+      "idx": 50,
+      "anim": "wtchrace_cmon",
+      "lib": "OTB"
+    },
+    {
+      "orden": 486,
+      "categoria": "CHAT",
+      "idx": 51,
+      "anim": "wtchrace_lose",
+      "lib": "OTB"
+    },
+    {
+      "orden": 487,
+      "categoria": "CHAT",
+      "idx": 52,
+      "anim": "Laugh_01",
+      "lib": "RAPPING"
+    },
+    {
+      "orden": 488,
+      "categoria": "CHAT",
+      "idx": 53,
+      "anim": "RIOT_ANGRY",
+      "lib": "RIOT"
+    },
+    {
+      "orden": 489,
+      "categoria": "CHAT",
+      "idx": 54,
+      "anim": "RIOT_ANGRY_B",
+      "lib": "RIOT"
+    },
+    {
+      "orden": 490,
+      "categoria": "CHAT",
+      "idx": 55,
+      "anim": "RIOT_challenge",
+      "lib": "RIOT"
+    },
+    {
+      "orden": 491,
+      "categoria": "CHAT",
+      "idx": 56,
+      "anim": "RIOT_CHANT",
+      "lib": "RIOT"
+    },
+    {
+      "orden": 492,
+      "categoria": "CHAT",
+      "idx": 57,
+      "anim": "RIOT_FUKU",
+      "lib": "RIOT"
+    },
+    {
+      "orden": 493,
+      "categoria": "CHAT",
+      "idx": 58,
+      "anim": "RIOT_PUNCHES",
+      "lib": "RIOT"
+    },
+    {
+      "orden": 494,
+      "categoria": "CHAT",
+      "idx": 59,
+      "anim": "RIOT_shout",
+      "lib": "RIOT"
+    },
+    {
+      "orden": 495,
+      "categoria": "CHAT",
+      "idx": 60,
+      "anim": "prtial_gngtlkB",
+      "lib": "LOWRIDER"
+    },
+    {
+      "orden": 496,
+      "categoria": "CHAT",
+      "idx": 61,
+      "anim": "prtial_gngtlkC",
+      "lib": "LOWRIDER"
+    },
+    {
+      "orden": 497,
+      "categoria": "CHAT",
+      "idx": 62,
+      "anim": "prtial_gngtlkD",
+      "lib": "LOWRIDER"
+    },
+    {
+      "orden": 498,
+      "categoria": "CHAT",
+      "idx": 63,
+      "anim": "prtial_gngtlkE",
+      "lib": "LOWRIDER"
+    },
+    {
+      "orden": 499,
+      "categoria": "CHAT",
+      "idx": 64,
+      "anim": "prtial_gngtlkF",
+      "lib": "LOWRIDER"
+    },
+    {
+      "orden": 500,
+      "categoria": "CHAT",
+      "idx": 65,
+      "anim": "prtial_gngtlkG",
+      "lib": "LOWRIDER"
+    },
+    {
+      "orden": 501,
+      "categoria": "CHAT",
+      "idx": 66,
+      "anim": "prtial_gngtlkH",
+      "lib": "LOWRIDER"
+    },
+    {
+      "orden": 502,
+      "categoria": "CHAT",
+      "idx": 67,
+      "anim": "go",
+      "lib": "OZ"
+    },
+    {
+      "orden": 503,
+      "categoria": "CHAT",
+      "idx": 68,
+      "anim": "swt_lkt",
+      "lib": "SWATPD"
+    },
+    {
+      "orden": 504,
+      "categoria": "CHAT",
+      "idx": 69,
+      "anim": "swt_sty",
+      "lib": "SWATPD"
+    },
+    {
+      "orden": 505,
+      "categoria": "CHAT",
+      "idx": 70,
+      "anim": "gest_bird",
+      "lib": "MMR"
+    },
+    {
+      "orden": 506,
+      "categoria": "CHAT",
+      "idx": 71,
+      "anim": "gest_fuck_1",
+      "lib": "MMR"
+    },
+    {
+      "orden": 507,
+      "categoria": "CHAT",
+      "idx": 72,
+      "anim": "gest_fuck_2",
+      "lib": "MMR"
+    },
+    {
+      "orden": 508,
+      "categoria": "CHAT",
+      "idx": 73,
+      "anim": "gest_hi",
+      "lib": "MMR"
+    },
+    {
+      "orden": 509,
+      "categoria": "CHAT",
+      "idx": 74,
+      "anim": "gest_hit",
+      "lib": "MMR"
+    },
+    {
+      "orden": 510,
+      "categoria": "CHAT",
+      "idx": 75,
+      "anim": "gest_thumbs",
+      "lib": "MMR"
+    },
+    {
+      "orden": 511,
+      "categoria": "CHAT",
+      "idx": 76,
+      "anim": "idle_chat",
+      "lib": "MMR"
+    },
+    {
+      "orden": 512,
+      "categoria": "CHAT",
+      "idx": 77,
+      "anim": "defeated_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 513,
+      "categoria": "CHAT",
+      "idx": 78,
+      "anim": "talk_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 514,
+      "categoria": "CHAT",
+      "idx": 79,
+      "anim": "hand_ge_3",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 515,
+      "categoria": "CHAT",
+      "idx": 80,
+      "anim": "angry_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 516,
+      "categoria": "CHAT",
+      "idx": 81,
+      "anim": "hand_ge_4",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 517,
+      "categoria": "CHAT",
+      "idx": 82,
+      "anim": "hand_ge_5",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 518,
+      "categoria": "CHAT",
+      "idx": 83,
+      "anim": "hand_ge_55",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 519,
+      "categoria": "CHAT",
+      "idx": 84,
+      "anim": "hand_ge_7",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 520,
+      "categoria": "CHAT",
+      "idx": 85,
+      "anim": "hand_wave",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 521,
+      "categoria": "CHAT",
+      "idx": 86,
+      "anim": "angry_2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 522,
+      "categoria": "CHAT",
+      "idx": 87,
+      "anim": "hand_ge_8",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 523,
+      "categoria": "CHAT",
+      "idx": 88,
+      "anim": "hand_ge_9",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 524,
+      "categoria": "CHAT",
+      "idx": 89,
+      "anim": "defeated_1b",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 525,
+      "categoria": "CHAT",
+      "idx": 90,
+      "anim": "hand_ge_6",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 526,
+      "categoria": "CHAT",
+      "idx": 91,
+      "anim": "hand_ge_10",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 527,
+      "categoria": "CHAT",
+      "idx": 92,
+      "anim": "talk_3",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 528,
+      "categoria": "CHAT",
+      "idx": 93,
+      "anim": "talk_hold",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 529,
+      "categoria": "CHAT",
+      "idx": 94,
+      "anim": "talk_offen",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 530,
+      "categoria": "CHAT",
+      "idx": 95,
+      "anim": "worr_chat",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 531,
+      "categoria": "CHAT",
+      "idx": 96,
+      "anim": "hand_ge_6b",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 532,
+      "categoria": "CHAT",
+      "idx": 97,
+      "anim": "calm_argue",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 533,
+      "categoria": "CHAT",
+      "idx": 98,
+      "anim": "hand_ge_6c",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 534,
+      "categoria": "CHAT",
+      "idx": 99,
+      "anim": "street_chat",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 535,
+      "categoria": "CHAT",
+      "idx": 100,
+      "anim": "cocky_talk",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 536,
+      "categoria": "CHAT",
+      "idx": 101,
+      "anim": "street_pld",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 537,
+      "categoria": "CHAT",
+      "idx": 102,
+      "anim": "suspic_talk",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 538,
+      "categoria": "CHAT",
+      "idx": 103,
+      "anim": "girl_talk",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 539,
+      "categoria": "CHAT",
+      "idx": 104,
+      "anim": "sad",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 540,
+      "categoria": "CHAT",
+      "idx": 105,
+      "anim": "go_high",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 541,
+      "categoria": "CHAT",
+      "idx": 106,
+      "anim": "kiss_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 542,
+      "categoria": "CHAT",
+      "idx": 107,
+      "anim": "PLY_CASH",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 543,
+      "categoria": "CHAT",
+      "idx": 108,
+      "anim": "PUN_CASH",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 544,
+      "categoria": "HURT",
+      "idx": 1,
+      "anim": "Bat_Hit_1",
+      "lib": "BASEBALL"
+    },
+    {
+      "orden": 545,
+      "categoria": "HURT",
+      "idx": 2,
+      "anim": "Bat_Hit_2",
+      "lib": "BASEBALL"
+    },
+    {
+      "orden": 546,
+      "categoria": "HURT",
+      "idx": 3,
+      "anim": "Bat_Hit_3",
+      "lib": "BASEBALL"
+    },
+    {
+      "orden": 547,
+      "categoria": "HURT",
+      "idx": 4,
+      "anim": "HitB_1",
+      "lib": "FIGHT_B"
+    },
+    {
+      "orden": 548,
+      "categoria": "HURT",
+      "idx": 5,
+      "anim": "HitB_2",
+      "lib": "FIGHT_B"
+    },
+    {
+      "orden": 549,
+      "categoria": "HURT",
+      "idx": 6,
+      "anim": "HitB_3",
+      "lib": "FIGHT_B"
+    },
+    {
+      "orden": 550,
+      "categoria": "HURT",
+      "idx": 7,
+      "anim": "HitC_1",
+      "lib": "FIGHT_C"
+    },
+    {
+      "orden": 551,
+      "categoria": "HURT",
+      "idx": 8,
+      "anim": "HitC_2",
+      "lib": "FIGHT_C"
+    },
+    {
+      "orden": 552,
+      "categoria": "HURT",
+      "idx": 9,
+      "anim": "HitC_3",
+      "lib": "FIGHT_C"
+    },
+    {
+      "orden": 553,
+      "categoria": "HURT",
+      "idx": 10,
+      "anim": "HitD_1",
+      "lib": "FIGHT_D"
+    },
+    {
+      "orden": 554,
+      "categoria": "HURT",
+      "idx": 11,
+      "anim": "HitD_2",
+      "lib": "FIGHT_D"
+    },
+    {
+      "orden": 555,
+      "categoria": "HURT",
+      "idx": 12,
+      "anim": "HitD_3",
+      "lib": "FIGHT_D"
+    },
+    {
+      "orden": 556,
+      "categoria": "HURT",
+      "idx": 13,
+      "anim": "Hit_fightkick",
+      "lib": "FIGHT_E"
+    },
+    {
+      "orden": 557,
+      "categoria": "HURT",
+      "idx": 14,
+      "anim": "Hit_fightkick_B",
+      "lib": "FIGHT_E"
+    },
+    {
+      "orden": 558,
+      "categoria": "HURT",
+      "idx": 15,
+      "anim": "Sword_Hit_1",
+      "lib": "SWORD"
+    },
+    {
+      "orden": 559,
+      "categoria": "HURT",
+      "idx": 16,
+      "anim": "Sword_Hit_2",
+      "lib": "SWORD"
+    },
+    {
+      "orden": 560,
+      "categoria": "HURT",
+      "idx": 17,
+      "anim": "Sword_Hit_3",
+      "lib": "SWORD"
+    },
+    {
+      "orden": 561,
+      "categoria": "HURT",
+      "idx": 18,
+      "anim": "Knife_Ped_Dmg",
+      "lib": "mmr"
+    },
+    {
+      "orden": 562,
+      "categoria": "DANCE",
+      "idx": 1,
+      "anim": "bd_clap",
+      "lib": "DANCING"
+    },
+    {
+      "orden": 563,
+      "categoria": "DANCE",
+      "idx": 2,
+      "anim": "bd_clap1",
+      "lib": "DANCING"
+    },
+    {
+      "orden": 564,
+      "categoria": "DANCE",
+      "idx": 3,
+      "anim": "dance_loop",
+      "lib": "DANCING"
+    },
+    {
+      "orden": 565,
+      "categoria": "DANCE",
+      "idx": 4,
+      "anim": "DAN_Down_A",
+      "lib": "DANCING"
+    },
+    {
+      "orden": 566,
+      "categoria": "DANCE",
+      "idx": 5,
+      "anim": "DAN_Left_A",
+      "lib": "DANCING"
+    },
+    {
+      "orden": 567,
+      "categoria": "DANCE",
+      "idx": 6,
+      "anim": "DAN_Loop_A",
+      "lib": "DANCING"
+    },
+    {
+      "orden": 568,
+      "categoria": "DANCE",
+      "idx": 7,
+      "anim": "DAN_Right_A",
+      "lib": "DANCING"
+    },
+    {
+      "orden": 569,
+      "categoria": "DANCE",
+      "idx": 8,
+      "anim": "DAN_Up_A",
+      "lib": "DANCING"
+    },
+    {
+      "orden": 570,
+      "categoria": "DANCE",
+      "idx": 9,
+      "anim": "dnce_M_a",
+      "lib": "DANCING"
+    },
+    {
+      "orden": 571,
+      "categoria": "DANCE",
+      "idx": 10,
+      "anim": "dnce_M_b",
+      "lib": "DANCING"
+    },
+    {
+      "orden": 572,
+      "categoria": "DANCE",
+      "idx": 11,
+      "anim": "dnce_M_c",
+      "lib": "DANCING"
+    },
+    {
+      "orden": 573,
+      "categoria": "DANCE",
+      "idx": 12,
+      "anim": "dnce_M_d",
+      "lib": "DANCING"
+    },
+    {
+      "orden": 574,
+      "categoria": "DANCE",
+      "idx": 13,
+      "anim": "dnce_M_e",
+      "lib": "DANCING"
+    },
+    {
+      "orden": 575,
+      "categoria": "DANCE",
+      "idx": 14,
+      "anim": "strip_A",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 576,
+      "categoria": "DANCE",
+      "idx": 15,
+      "anim": "strip_B",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 577,
+      "categoria": "DANCE",
+      "idx": 16,
+      "anim": "strip_C",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 578,
+      "categoria": "DANCE",
+      "idx": 17,
+      "anim": "strip_D",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 579,
+      "categoria": "DANCE",
+      "idx": 18,
+      "anim": "strip_E",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 580,
+      "categoria": "DANCE",
+      "idx": 19,
+      "anim": "strip_F",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 581,
+      "categoria": "DANCE",
+      "idx": 20,
+      "anim": "strip_G",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 582,
+      "categoria": "DANCE",
+      "idx": 21,
+      "anim": "STR_A2B",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 583,
+      "categoria": "DANCE",
+      "idx": 22,
+      "anim": "STR_B2A",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 584,
+      "categoria": "DANCE",
+      "idx": 23,
+      "anim": "STR_B2C",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 585,
+      "categoria": "DANCE",
+      "idx": 24,
+      "anim": "STR_C1",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 586,
+      "categoria": "DANCE",
+      "idx": 25,
+      "anim": "STR_C2",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 587,
+      "categoria": "DANCE",
+      "idx": 26,
+      "anim": "STR_C2B",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 588,
+      "categoria": "DANCE",
+      "idx": 27,
+      "anim": "STR_Loop_A",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 589,
+      "categoria": "DANCE",
+      "idx": 28,
+      "anim": "STR_Loop_B",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 590,
+      "categoria": "DANCE",
+      "idx": 29,
+      "anim": "STR_Loop_C",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 591,
+      "categoria": "DANCE",
+      "idx": 30,
+      "anim": "dance1",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 592,
+      "categoria": "DANCE",
+      "idx": 31,
+      "anim": "dance2",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 593,
+      "categoria": "DANCE",
+      "idx": 32,
+      "anim": "dance3",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 594,
+      "categoria": "DANCE",
+      "idx": 33,
+      "anim": "dance4",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 595,
+      "categoria": "DANCE",
+      "idx": 34,
+      "anim": "dance5",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 596,
+      "categoria": "DANCE",
+      "idx": 35,
+      "anim": "dance6",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 597,
+      "categoria": "DANCE",
+      "idx": 36,
+      "anim": "dance7",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 598,
+      "categoria": "DANCE",
+      "idx": 37,
+      "anim": "dance8",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 599,
+      "categoria": "DANCE",
+      "idx": 38,
+      "anim": "dance9",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 600,
+      "categoria": "DANCE",
+      "idx": 39,
+      "anim": "dance10",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 601,
+      "categoria": "DANCE",
+      "idx": 40,
+      "anim": "dance11",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 602,
+      "categoria": "DANCE",
+      "idx": 41,
+      "anim": "dance12",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 603,
+      "categoria": "DANCE",
+      "idx": 42,
+      "anim": "dance13",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 604,
+      "categoria": "DANCE",
+      "idx": 43,
+      "anim": "dance14",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 605,
+      "categoria": "DANCE",
+      "idx": 44,
+      "anim": "dance15",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 606,
+      "categoria": "DANCE",
+      "idx": 45,
+      "anim": "dance16",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 607,
+      "categoria": "DANCE",
+      "idx": 46,
+      "anim": "private1_M",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 608,
+      "categoria": "DANCE",
+      "idx": 47,
+      "anim": "private1_F",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 609,
+      "categoria": "DANCE",
+      "idx": 48,
+      "anim": "private2_M",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 610,
+      "categoria": "DANCE",
+      "idx": 49,
+      "anim": "private2_F",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 611,
+      "categoria": "DANCE",
+      "idx": 50,
+      "anim": "private3_M",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 612,
+      "categoria": "DANCE",
+      "idx": 51,
+      "anim": "private3_F",
+      "lib": "DANCING_2"
+    },
+    {
+      "orden": 613,
+      "categoria": "DANCE",
+      "idx": 52,
+      "anim": "RAP_A_IN",
+      "lib": "RAPPING"
+    },
+    {
+      "orden": 614,
+      "categoria": "DANCE",
+      "idx": 53,
+      "anim": "RAP_A_Loop",
+      "lib": "RAPPING"
+    },
+    {
+      "orden": 615,
+      "categoria": "DANCE",
+      "idx": 54,
+      "anim": "RAP_A_OUT",
+      "lib": "RAPPING"
+    },
+    {
+      "orden": 616,
+      "categoria": "DANCE",
+      "idx": 55,
+      "anim": "RAP_B_IN",
+      "lib": "RAPPING"
+    },
+    {
+      "orden": 617,
+      "categoria": "DANCE",
+      "idx": 56,
+      "anim": "RAP_B_Loop",
+      "lib": "RAPPING"
+    },
+    {
+      "orden": 618,
+      "categoria": "DANCE",
+      "idx": 57,
+      "anim": "RAP_B_OUT",
+      "lib": "RAPPING"
+    },
+    {
+      "orden": 619,
+      "categoria": "DANCE",
+      "idx": 58,
+      "anim": "RAP_C_Loop",
+      "lib": "RAPPING"
+    },
+    {
+      "orden": 620,
+      "categoria": "DANCE",
+      "idx": 59,
+      "anim": "dance_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 621,
+      "categoria": "DANCE",
+      "idx": 60,
+      "anim": "crazy_bdance",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 622,
+      "categoria": "DANCE",
+      "idx": 61,
+      "anim": "PUN_LOOP",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 623,
+      "categoria": "DANCE",
+      "idx": 62,
+      "anim": "PUN_HOLLER",
+      "lib": "STRIP"
+    },
+    {
+      "orden": 624,
+      "categoria": "DANCE",
+      "idx": 63,
+      "anim": "cs_strp_lp",
+      "lib": "is_cuts"
+    },
+    {
+      "orden": 625,
+      "categoria": "MIMIC",
+      "idx": 1,
+      "anim": "facanger",
+      "lib": "ped"
+    },
+    {
+      "orden": 626,
+      "categoria": "MIMIC",
+      "idx": 2,
+      "anim": "facgum",
+      "lib": "ped"
+    },
+    {
+      "orden": 627,
+      "categoria": "MIMIC",
+      "idx": 3,
+      "anim": "facsurp",
+      "lib": "ped"
+    },
+    {
+      "orden": 628,
+      "categoria": "MIMIC",
+      "idx": 4,
+      "anim": "facsurpm",
+      "lib": "ped"
+    },
+    {
+      "orden": 629,
+      "categoria": "MIMIC",
+      "idx": 5,
+      "anim": "factalk",
+      "lib": "ped"
+    },
+    {
+      "orden": 630,
+      "categoria": "MIMIC",
+      "idx": 6,
+      "anim": "facurios",
+      "lib": "ped"
+    },
+    {
+      "orden": 631,
+      "categoria": "INTERACT",
+      "idx": 1,
+      "anim": "ATM",
+      "lib": "ped"
+    },
+    {
+      "orden": 632,
+      "categoria": "INTERACT",
+      "idx": 2,
+      "anim": "bomber",
+      "lib": "ped"
+    },
+    {
+      "orden": 633,
+      "categoria": "INTERACT",
+      "idx": 3,
+      "anim": "gum_eat",
+      "lib": "ped"
+    },
+    {
+      "orden": 634,
+      "categoria": "INTERACT",
+      "idx": 4,
+      "anim": "SHP_Thank",
+      "lib": "food"
+    },
+    {
+      "orden": 635,
+      "categoria": "INTERACT",
+      "idx": 5,
+      "anim": "SHP_Tray_In",
+      "lib": "food"
+    },
+    {
+      "orden": 636,
+      "categoria": "INTERACT",
+      "idx": 6,
+      "anim": "SHP_Tray_Lift",
+      "lib": "food"
+    },
+    {
+      "orden": 637,
+      "categoria": "INTERACT",
+      "idx": 7,
+      "anim": "thrw_barl_thrw",
+      "lib": "AIRPORT"
+    },
+    {
+      "orden": 638,
+      "categoria": "INTERACT",
+      "idx": 8,
+      "anim": "Barcustom_get",
+      "lib": "bar"
+    },
+    {
+      "orden": 639,
+      "categoria": "INTERACT",
+      "idx": 9,
+      "anim": "Barserve_bottle",
+      "lib": "bar"
+    },
+    {
+      "orden": 640,
+      "categoria": "INTERACT",
+      "idx": 10,
+      "anim": "Barserve_give",
+      "lib": "bar"
+    },
+    {
+      "orden": 641,
+      "categoria": "INTERACT",
+      "idx": 11,
+      "anim": "Barserve_glass",
+      "lib": "bar"
+    },
+    {
+      "orden": 642,
+      "categoria": "INTERACT",
+      "idx": 12,
+      "anim": "dnk_stndF_loop",
+      "lib": "bar"
+    },
+    {
+      "orden": 643,
+      "categoria": "INTERACT",
+      "idx": 13,
+      "anim": "dnk_stndM_loop",
+      "lib": "bar"
+    },
+    {
+      "orden": 644,
+      "categoria": "INTERACT",
+      "idx": 14,
+      "anim": "Grlfrd_Kiss_03",
+      "lib": "BD_FIRE"
+    },
+    {
+      "orden": 645,
+      "categoria": "INTERACT",
+      "idx": 15,
+      "anim": "Playa_Kiss_03",
+      "lib": "BD_FIRE"
+    },
+    {
+      "orden": 646,
+      "categoria": "INTERACT",
+      "idx": 16,
+      "anim": "wash_up",
+      "lib": "BD_FIRE"
+    },
+    {
+      "orden": 647,
+      "categoria": "INTERACT",
+      "idx": 17,
+      "anim": "gym_bp_getoff",
+      "lib": "benchpress"
+    },
+    {
+      "orden": 648,
+      "categoria": "INTERACT",
+      "idx": 18,
+      "anim": "gym_bp_geton",
+      "lib": "benchpress"
+    },
+    {
+      "orden": 649,
+      "categoria": "INTERACT",
+      "idx": 19,
+      "anim": "BOM_Plant",
+      "lib": "BOMBER"
+    },
+    {
+      "orden": 650,
+      "categoria": "INTERACT",
+      "idx": 20,
+      "anim": "BOM_Plant_2Idle",
+      "lib": "BOMBER"
+    },
+    {
+      "orden": 651,
+      "categoria": "INTERACT",
+      "idx": 21,
+      "anim": "BOM_Plant_In",
+      "lib": "BOMBER"
+    },
+    {
+      "orden": 652,
+      "categoria": "INTERACT",
+      "idx": 22,
+      "anim": "BOM_Plant_Loop",
+      "lib": "BOMBER"
+    },
+    {
+      "orden": 653,
+      "categoria": "INTERACT",
+      "idx": 23,
+      "anim": "Fixn_Car_Loop",
+      "lib": "car"
+    },
+    {
+      "orden": 654,
+      "categoria": "INTERACT",
+      "idx": 24,
+      "anim": "Fixn_Car_Out",
+      "lib": "car"
+    },
+    {
+      "orden": 655,
+      "categoria": "INTERACT",
+      "idx": 25,
+      "anim": "CAR_Sc4_BL",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 656,
+      "categoria": "INTERACT",
+      "idx": 26,
+      "anim": "CAR_Sc4_BR",
+      "lib": "CAR_CHAT"
+    },
+    {
+      "orden": 657,
+      "categoria": "INTERACT",
+      "idx": 27,
+      "anim": "cards_pick_01",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 658,
+      "categoria": "INTERACT",
+      "idx": 28,
+      "anim": "cards_pick_02",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 659,
+      "categoria": "INTERACT",
+      "idx": 29,
+      "anim": "cards_raise",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 660,
+      "categoria": "INTERACT",
+      "idx": 30,
+      "anim": "cards_win",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 661,
+      "categoria": "INTERACT",
+      "idx": 31,
+      "anim": "dealone",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 662,
+      "categoria": "INTERACT",
+      "idx": 32,
+      "anim": "Roulette_bet",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 663,
+      "categoria": "INTERACT",
+      "idx": 33,
+      "anim": "Roulette_lose",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 664,
+      "categoria": "INTERACT",
+      "idx": 34,
+      "anim": "Roulette_win",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 665,
+      "categoria": "INTERACT",
+      "idx": 35,
+      "anim": "Slot_bet_01",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 666,
+      "categoria": "INTERACT",
+      "idx": 36,
+      "anim": "Slot_bet_02",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 667,
+      "categoria": "INTERACT",
+      "idx": 37,
+      "anim": "Slot_in",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 668,
+      "categoria": "INTERACT",
+      "idx": 38,
+      "anim": "Slot_lose_out",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 669,
+      "categoria": "INTERACT",
+      "idx": 39,
+      "anim": "Slot_Plyr",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 670,
+      "categoria": "INTERACT",
+      "idx": 40,
+      "anim": "Slot_win_out",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 671,
+      "categoria": "INTERACT",
+      "idx": 41,
+      "anim": "wof",
+      "lib": "CASINO"
+    },
+    {
+      "orden": 672,
+      "categoria": "INTERACT",
+      "idx": 42,
+      "anim": "Copbrowse_in",
+      "lib": "COP_AMBIENT"
+    },
+    {
+      "orden": 673,
+      "categoria": "INTERACT",
+      "idx": 43,
+      "anim": "Copbrowse_loop",
+      "lib": "COP_AMBIENT"
+    },
+    {
+      "orden": 674,
+      "categoria": "INTERACT",
+      "idx": 44,
+      "anim": "Copbrowse_nod",
+      "lib": "COP_AMBIENT"
+    },
+    {
+      "orden": 675,
+      "categoria": "INTERACT",
+      "idx": 45,
+      "anim": "Copbrowse_out",
+      "lib": "COP_AMBIENT"
+    },
+    {
+      "orden": 676,
+      "categoria": "INTERACT",
+      "idx": 46,
+      "anim": "Copbrowse_shake",
+      "lib": "COP_AMBIENT"
+    },
+    {
+      "orden": 677,
+      "categoria": "INTERACT",
+      "idx": 47,
+      "anim": "DRUGS_BUY",
+      "lib": "DEALER"
+    },
+    {
+      "orden": 678,
+      "categoria": "INTERACT",
+      "idx": 48,
+      "anim": "shop_pay",
+      "lib": "DEALER"
+    },
+    {
+      "orden": 679,
+      "categoria": "INTERACT",
+      "idx": 49,
+      "anim": "Tray_Lift_In",
+      "lib": "food"
+    },
+    {
+      "orden": 680,
+      "categoria": "INTERACT",
+      "idx": 50,
+      "anim": "Tray_Lift_Loop",
+      "lib": "food"
+    },
+    {
+      "orden": 681,
+      "categoria": "INTERACT",
+      "idx": 51,
+      "anim": "Tray_Lift_Out",
+      "lib": "food"
+    },
+    {
+      "orden": 682,
+      "categoria": "INTERACT",
+      "idx": 52,
+      "anim": "SHP_Tray_Out",
+      "lib": "food"
+    },
+    {
+      "orden": 683,
+      "categoria": "INTERACT",
+      "idx": 53,
+      "anim": "SHP_Tray_Pose",
+      "lib": "food"
+    },
+    {
+      "orden": 684,
+      "categoria": "INTERACT",
+      "idx": 54,
+      "anim": "SHP_Tray_Return",
+      "lib": "food"
+    },
+    {
+      "orden": 685,
+      "categoria": "INTERACT",
+      "idx": 55,
+      "anim": "DEALER_DEAL",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 686,
+      "categoria": "INTERACT",
+      "idx": 56,
+      "anim": "DRUGS_BUY",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 687,
+      "categoria": "INTERACT",
+      "idx": 57,
+      "anim": "hndshkaa",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 688,
+      "categoria": "INTERACT",
+      "idx": 58,
+      "anim": "hndshkba",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 689,
+      "categoria": "INTERACT",
+      "idx": 59,
+      "anim": "hndshkca",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 690,
+      "categoria": "INTERACT",
+      "idx": 60,
+      "anim": "hndshkcb",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 691,
+      "categoria": "INTERACT",
+      "idx": 61,
+      "anim": "hndshkda",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 692,
+      "categoria": "INTERACT",
+      "idx": 62,
+      "anim": "hndshkea",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 693,
+      "categoria": "INTERACT",
+      "idx": 63,
+      "anim": "hndshkfa",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 694,
+      "categoria": "INTERACT",
+      "idx": 64,
+      "anim": "hndshkfa_swt",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 695,
+      "categoria": "INTERACT",
+      "idx": 65,
+      "anim": "goggles_put_on",
+      "lib": "goggles"
+    },
+    {
+      "orden": 696,
+      "categoria": "INTERACT",
+      "idx": 66,
+      "anim": "wllpk_L",
+      "lib": "HEIST9"
+    },
+    {
+      "orden": 697,
+      "categoria": "INTERACT",
+      "idx": 67,
+      "anim": "wllpk_L_back",
+      "lib": "HEIST9"
+    },
+    {
+      "orden": 698,
+      "categoria": "INTERACT",
+      "idx": 68,
+      "anim": "wllpk_R",
+      "lib": "HEIST9"
+    },
+    {
+      "orden": 699,
+      "categoria": "INTERACT",
+      "idx": 69,
+      "anim": "wllpk_R_back",
+      "lib": "HEIST9"
+    },
+    {
+      "orden": 700,
+      "categoria": "INTERACT",
+      "idx": 70,
+      "anim": "wllshoot_in_L",
+      "lib": "HEIST9"
+    },
+    {
+      "orden": 701,
+      "categoria": "INTERACT",
+      "idx": 71,
+      "anim": "wllshoot_in_R",
+      "lib": "HEIST9"
+    },
+    {
+      "orden": 702,
+      "categoria": "INTERACT",
+      "idx": 72,
+      "anim": "wllshoot_out_L",
+      "lib": "HEIST9"
+    },
+    {
+      "orden": 703,
+      "categoria": "INTERACT",
+      "idx": 73,
+      "anim": "wllshoot_out_R",
+      "lib": "HEIST9"
+    },
+    {
+      "orden": 704,
+      "categoria": "INTERACT",
+      "idx": 74,
+      "anim": "Use_SwipeCard",
+      "lib": "HEIST9"
+    },
+    {
+      "orden": 705,
+      "categoria": "INTERACT",
+      "idx": 75,
+      "anim": "wash_up",
+      "lib": "INT_HOUSE"
+    },
+    {
+      "orden": 706,
+      "categoria": "INTERACT",
+      "idx": 76,
+      "anim": "shop_cashier",
+      "lib": "INT_SHOP"
+    },
+    {
+      "orden": 707,
+      "categoria": "INTERACT",
+      "idx": 77,
+      "anim": "shop_in",
+      "lib": "INT_SHOP"
+    },
+    {
+      "orden": 708,
+      "categoria": "INTERACT",
+      "idx": 78,
+      "anim": "shop_lookA",
+      "lib": "INT_SHOP"
+    },
+    {
+      "orden": 709,
+      "categoria": "INTERACT",
+      "idx": 79,
+      "anim": "shop_lookB",
+      "lib": "INT_SHOP"
+    },
+    {
+      "orden": 710,
+      "categoria": "INTERACT",
+      "idx": 80,
+      "anim": "shop_loop",
+      "lib": "INT_SHOP"
+    },
+    {
+      "orden": 711,
+      "categoria": "INTERACT",
+      "idx": 81,
+      "anim": "shop_out",
+      "lib": "INT_SHOP"
+    },
+    {
+      "orden": 712,
+      "categoria": "INTERACT",
+      "idx": 82,
+      "anim": "shop_pay",
+      "lib": "INT_SHOP"
+    },
+    {
+      "orden": 713,
+      "categoria": "INTERACT",
+      "idx": 83,
+      "anim": "shop_shelf",
+      "lib": "INT_SHOP"
+    },
+    {
+      "orden": 714,
+      "categoria": "INTERACT",
+      "idx": 84,
+      "anim": "GF_CarSpot",
+      "lib": "KISSING"
+    },
+    {
+      "orden": 715,
+      "categoria": "INTERACT",
+      "idx": 85,
+      "anim": "gift_get",
+      "lib": "KISSING"
+    },
+    {
+      "orden": 716,
+      "categoria": "INTERACT",
+      "idx": 86,
+      "anim": "gift_give",
+      "lib": "KISSING"
+    },
+    {
+      "orden": 717,
+      "categoria": "INTERACT",
+      "idx": 87,
+      "anim": "Grlfrd_Kiss_01",
+      "lib": "KISSING"
+    },
+    {
+      "orden": 718,
+      "categoria": "INTERACT",
+      "idx": 88,
+      "anim": "Grlfrd_Kiss_02",
+      "lib": "KISSING"
+    },
+    {
+      "orden": 719,
+      "categoria": "INTERACT",
+      "idx": 89,
+      "anim": "Grlfrd_Kiss_03",
+      "lib": "KISSING"
+    },
+    {
+      "orden": 720,
+      "categoria": "INTERACT",
+      "idx": 90,
+      "anim": "Playa_Kiss_01",
+      "lib": "KISSING"
+    },
+    {
+      "orden": 721,
+      "categoria": "INTERACT",
+      "idx": 91,
+      "anim": "Playa_Kiss_02",
+      "lib": "KISSING"
+    },
+    {
+      "orden": 722,
+      "categoria": "INTERACT",
+      "idx": 92,
+      "anim": "Playa_Kiss_03",
+      "lib": "KISSING"
+    },
+    {
+      "orden": 723,
+      "categoria": "INTERACT",
+      "idx": 93,
+      "anim": "bng_wndw",
+      "lib": "misc"
+    },
+    {
+      "orden": 724,
+      "categoria": "INTERACT",
+      "idx": 94,
+      "anim": "bng_wndw_02",
+      "lib": "misc"
+    },
+    {
+      "orden": 725,
+      "categoria": "INTERACT",
+      "idx": 95,
+      "anim": "Case_pickup",
+      "lib": "misc"
+    },
+    {
+      "orden": 726,
+      "categoria": "INTERACT",
+      "idx": 96,
+      "anim": "GRAB_L",
+      "lib": "misc"
+    },
+    {
+      "orden": 727,
+      "categoria": "INTERACT",
+      "idx": 97,
+      "anim": "GRAB_R",
+      "lib": "misc"
+    },
+    {
+      "orden": 728,
+      "categoria": "INTERACT",
+      "idx": 98,
+      "anim": "KAT_Throw_K",
+      "lib": "misc"
+    },
+    {
+      "orden": 729,
+      "categoria": "INTERACT",
+      "idx": 99,
+      "anim": "KAT_Throw_P",
+      "lib": "misc"
+    },
+    {
+      "orden": 730,
+      "categoria": "INTERACT",
+      "idx": 100,
+      "anim": "PASS_Rifle_Ped",
+      "lib": "misc"
+    },
+    {
+      "orden": 731,
+      "categoria": "INTERACT",
+      "idx": 101,
+      "anim": "PASS_Rifle_Ply",
+      "lib": "misc"
+    },
+    {
+      "orden": 732,
+      "categoria": "INTERACT",
+      "idx": 102,
+      "anim": "pickup_box",
+      "lib": "misc"
+    },
+    {
+      "orden": 733,
+      "categoria": "INTERACT",
+      "idx": 103,
+      "anim": "Plunger_01",
+      "lib": "misc"
+    },
+    {
+      "orden": 734,
+      "categoria": "INTERACT",
+      "idx": 104,
+      "anim": "betslp_in",
+      "lib": "OTB"
+    },
+    {
+      "orden": 735,
+      "categoria": "INTERACT",
+      "idx": 105,
+      "anim": "betslp_lkabt",
+      "lib": "OTB"
+    },
+    {
+      "orden": 736,
+      "categoria": "INTERACT",
+      "idx": 106,
+      "anim": "betslp_loop",
+      "lib": "OTB"
+    },
+    {
+      "orden": 737,
+      "categoria": "INTERACT",
+      "idx": 107,
+      "anim": "betslp_out",
+      "lib": "OTB"
+    },
+    {
+      "orden": 738,
+      "categoria": "INTERACT",
+      "idx": 108,
+      "anim": "betslp_tnk",
+      "lib": "OTB"
+    },
+    {
+      "orden": 739,
+      "categoria": "INTERACT",
+      "idx": 109,
+      "anim": "crm_drgbst_01",
+      "lib": "POLICE"
+    },
+    {
+      "orden": 740,
+      "categoria": "INTERACT",
+      "idx": 110,
+      "anim": "plc_drgbst_01",
+      "lib": "POLICE"
+    },
+    {
+      "orden": 741,
+      "categoria": "INTERACT",
+      "idx": 111,
+      "anim": "plc_drgbst_02",
+      "lib": "POLICE"
+    },
+    {
+      "orden": 742,
+      "categoria": "INTERACT",
+      "idx": 112,
+      "anim": "Van_Crate_L",
+      "lib": "RYDER"
+    },
+    {
+      "orden": 743,
+      "categoria": "INTERACT",
+      "idx": 113,
+      "anim": "Van_Crate_R",
+      "lib": "RYDER"
+    },
+    {
+      "orden": 744,
+      "categoria": "INTERACT",
+      "idx": 114,
+      "anim": "Van_Lean_L",
+      "lib": "RYDER"
+    },
+    {
+      "orden": 745,
+      "categoria": "INTERACT",
+      "idx": 115,
+      "anim": "Van_Lean_R",
+      "lib": "RYDER"
+    },
+    {
+      "orden": 746,
+      "categoria": "INTERACT",
+      "idx": 116,
+      "anim": "VAN_PickUp_E",
+      "lib": "RYDER"
+    },
+    {
+      "orden": 747,
+      "categoria": "INTERACT",
+      "idx": 117,
+      "anim": "VAN_PickUp_S",
+      "lib": "RYDER"
+    },
+    {
+      "orden": 748,
+      "categoria": "INTERACT",
+      "idx": 118,
+      "anim": "Van_Stand",
+      "lib": "RYDER"
+    },
+    {
+      "orden": 749,
+      "categoria": "INTERACT",
+      "idx": 119,
+      "anim": "Van_Stand_Crate",
+      "lib": "RYDER"
+    },
+    {
+      "orden": 750,
+      "categoria": "INTERACT",
+      "idx": 120,
+      "anim": "Van_Throw",
+      "lib": "RYDER"
+    },
+    {
+      "orden": 751,
+      "categoria": "INTERACT",
+      "idx": 121,
+      "anim": "VEND_Drink2_P",
+      "lib": "VENDING"
+    },
+    {
+      "orden": 752,
+      "categoria": "INTERACT",
+      "idx": 122,
+      "anim": "VEND_Drink_P",
+      "lib": "VENDING"
+    },
+    {
+      "orden": 753,
+      "categoria": "INTERACT",
+      "idx": 123,
+      "anim": "vend_eat1_P",
+      "lib": "VENDING"
+    },
+    {
+      "orden": 754,
+      "categoria": "INTERACT",
+      "idx": 124,
+      "anim": "VEND_Eat_P",
+      "lib": "VENDING"
+    },
+    {
+      "orden": 755,
+      "categoria": "INTERACT",
+      "idx": 125,
+      "anim": "VEND_Use",
+      "lib": "VENDING"
+    },
+    {
+      "orden": 756,
+      "categoria": "INTERACT",
+      "idx": 126,
+      "anim": "VEND_Use_pt2",
+      "lib": "VENDING"
+    },
+    {
+      "orden": 757,
+      "categoria": "INTERACT",
+      "idx": 127,
+      "anim": "play_guitar_1",
+      "lib": "MMR"
+    },
+    {
+      "orden": 758,
+      "categoria": "INTERACT",
+      "idx": 128,
+      "anim": "play_guitar_2",
+      "lib": "MMR"
+    },
+    {
+      "orden": 759,
+      "categoria": "INTERACT",
+      "idx": 129,
+      "anim": "medic1",
+      "lib": "OZ"
+    },
+    {
+      "orden": 760,
+      "categoria": "INTERACT",
+      "idx": 130,
+      "anim": "LB",
+      "lib": "OZ"
+    },
+    {
+      "orden": 761,
+      "categoria": "INTERACT",
+      "idx": 131,
+      "anim": "db2",
+      "lib": "OZ"
+    },
+    {
+      "orden": 762,
+      "categoria": "INTERACT",
+      "idx": 132,
+      "anim": "terr1",
+      "lib": "OZ"
+    },
+    {
+      "orden": 763,
+      "categoria": "INTERACT",
+      "idx": 133,
+      "anim": "terr2",
+      "lib": "OZ"
+    },
+    {
+      "orden": 764,
+      "categoria": "INTERACT",
+      "idx": 134,
+      "anim": "fruit",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 765,
+      "categoria": "INTERACT",
+      "idx": 135,
+      "anim": "pss_hand_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 766,
+      "categoria": "INTERACT",
+      "idx": 136,
+      "anim": "pss_hand_2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 767,
+      "categoria": "INTERACT",
+      "idx": 137,
+      "anim": "dig_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 768,
+      "categoria": "INTERACT",
+      "idx": 138,
+      "anim": "loot_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 769,
+      "categoria": "INTERACT",
+      "idx": 139,
+      "anim": "watering_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 770,
+      "categoria": "INTERACT",
+      "idx": 140,
+      "anim": "lifeguard_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 771,
+      "categoria": "INTERACT",
+      "idx": 141,
+      "anim": "farm_2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 772,
+      "categoria": "INTERACT",
+      "idx": 142,
+      "anim": "wind_clean",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 773,
+      "categoria": "INTERACT",
+      "idx": 143,
+      "anim": "sweep_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 774,
+      "categoria": "INTERACT",
+      "idx": 144,
+      "anim": "hammer_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 775,
+      "categoria": "INTERACT",
+      "idx": 145,
+      "anim": "use_hand_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 776,
+      "categoria": "INTERACT",
+      "idx": 146,
+      "anim": "use_hand_2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 777,
+      "categoria": "INTERACT",
+      "idx": 147,
+      "anim": "use_hand_2b",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 778,
+      "categoria": "INTERACT",
+      "idx": 148,
+      "anim": "use_hand_3",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 779,
+      "categoria": "INTERACT",
+      "idx": 149,
+      "anim": "plant_seed",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 780,
+      "categoria": "INTERACT",
+      "idx": 150,
+      "anim": "handshake_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 781,
+      "categoria": "INTERACT",
+      "idx": 151,
+      "anim": "farm_3",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 782,
+      "categoria": "INTERACT",
+      "idx": 152,
+      "anim": "pick_fruit2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 783,
+      "categoria": "INTERACT",
+      "idx": 153,
+      "anim": "worker",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 784,
+      "categoria": "INTERACT",
+      "idx": 154,
+      "anim": "worker2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 785,
+      "categoria": "INTERACT",
+      "idx": 155,
+      "anim": "car_chat",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 786,
+      "categoria": "INTERACT",
+      "idx": 156,
+      "anim": "car_chat2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 787,
+      "categoria": "INTERACT",
+      "idx": 157,
+      "anim": "car_fix",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 788,
+      "categoria": "INTERACT",
+      "idx": 158,
+      "anim": "kick_mac",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 789,
+      "categoria": "INTERACT",
+      "idx": 159,
+      "anim": "use_fax_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 790,
+      "categoria": "INTERACT",
+      "idx": 160,
+      "anim": "use_fax_2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 791,
+      "categoria": "INTERACT",
+      "idx": 161,
+      "anim": "spraycan_fire",
+      "lib": "graffiti"
+    },
+    {
+      "orden": 792,
+      "categoria": "INTERACT",
+      "idx": 162,
+      "anim": "FIN_LegsUp_Loop",
+      "lib": "finale"
+    },
+    {
+      "orden": 793,
+      "categoria": "INTERACT",
+      "idx": 163,
+      "anim": "FIN_Hang_Loop",
+      "lib": "finale"
+    },
+    {
+      "orden": 794,
+      "categoria": "INTERACT",
+      "idx": 164,
+      "anim": "Use_Switch",
+      "lib": "MMR"
+    },
+    {
+      "orden": 795,
+      "categoria": "INTERACT",
+      "idx": 165,
+      "anim": "CAR_close_LHS",
+      "lib": "ped"
+    },
+    {
+      "orden": 796,
+      "categoria": "INTERACT",
+      "idx": 166,
+      "anim": "CAR_close_RHS",
+      "lib": "ped"
+    },
+    {
+      "orden": 797,
+      "categoria": "INTERACT",
+      "idx": 167,
+      "anim": "VAN_open_backL",
+      "lib": "mmr"
+    },
+    {
+      "orden": 798,
+      "categoria": "INTERACT",
+      "idx": 168,
+      "anim": "VAN_open_backR",
+      "lib": "mmr"
+    },
+    {
+      "orden": 799,
+      "categoria": "INTERACT",
+      "idx": 169,
+      "anim": "sprcan_full",
+      "lib": "wreloads"
+    },
+    {
+      "orden": 800,
+      "categoria": "SEX",
+      "idx": 1,
+      "anim": "SEX_1to2_P",
+      "lib": "SEX"
+    },
+    {
+      "orden": 801,
+      "categoria": "SEX",
+      "idx": 2,
+      "anim": "SEX_1to2_W",
+      "lib": "SEX"
+    },
+    {
+      "orden": 802,
+      "categoria": "SEX",
+      "idx": 3,
+      "anim": "SEX_1_Cum_P",
+      "lib": "SEX"
+    },
+    {
+      "orden": 803,
+      "categoria": "SEX",
+      "idx": 4,
+      "anim": "SEX_1_Cum_W",
+      "lib": "SEX"
+    },
+    {
+      "orden": 804,
+      "categoria": "SEX",
+      "idx": 5,
+      "anim": "SEX_1_Fail_P",
+      "lib": "SEX"
+    },
+    {
+      "orden": 805,
+      "categoria": "SEX",
+      "idx": 6,
+      "anim": "SEX_1_Fail_W",
+      "lib": "SEX"
+    },
+    {
+      "orden": 806,
+      "categoria": "SEX",
+      "idx": 7,
+      "anim": "SEX_1_P",
+      "lib": "SEX"
+    },
+    {
+      "orden": 807,
+      "categoria": "SEX",
+      "idx": 8,
+      "anim": "SEX_1_W",
+      "lib": "SEX"
+    },
+    {
+      "orden": 808,
+      "categoria": "SEX",
+      "idx": 9,
+      "anim": "SEX_2to3_P",
+      "lib": "SEX"
+    },
+    {
+      "orden": 809,
+      "categoria": "SEX",
+      "idx": 10,
+      "anim": "SEX_2to3_W",
+      "lib": "SEX"
+    },
+    {
+      "orden": 810,
+      "categoria": "SEX",
+      "idx": 11,
+      "anim": "SEX_2_Fail_P",
+      "lib": "SEX"
+    },
+    {
+      "orden": 811,
+      "categoria": "SEX",
+      "idx": 12,
+      "anim": "SEX_2_Fail_W",
+      "lib": "SEX"
+    },
+    {
+      "orden": 812,
+      "categoria": "SEX",
+      "idx": 13,
+      "anim": "SEX_2_P",
+      "lib": "SEX"
+    },
+    {
+      "orden": 813,
+      "categoria": "SEX",
+      "idx": 14,
+      "anim": "SEX_2_W",
+      "lib": "SEX"
+    },
+    {
+      "orden": 814,
+      "categoria": "SEX",
+      "idx": 15,
+      "anim": "SEX_3to1_P",
+      "lib": "SEX"
+    },
+    {
+      "orden": 815,
+      "categoria": "SEX",
+      "idx": 16,
+      "anim": "SEX_3to1_W",
+      "lib": "SEX"
+    },
+    {
+      "orden": 816,
+      "categoria": "SEX",
+      "idx": 17,
+      "anim": "SEX_3_Fail_P",
+      "lib": "SEX"
+    },
+    {
+      "orden": 817,
+      "categoria": "SEX",
+      "idx": 18,
+      "anim": "SEX_3_Fail_W",
+      "lib": "SEX"
+    },
+    {
+      "orden": 818,
+      "categoria": "SEX",
+      "idx": 19,
+      "anim": "SEX_3_P",
+      "lib": "SEX"
+    },
+    {
+      "orden": 819,
+      "categoria": "SEX",
+      "idx": 20,
+      "anim": "SEX_3_W",
+      "lib": "SEX"
+    },
+    {
+      "orden": 820,
+      "categoria": "SEX",
+      "idx": 21,
+      "anim": "SEX_3to1_P",
+      "lib": "SEX"
+    },
+    {
+      "orden": 821,
+      "categoria": "SEX",
+      "idx": 22,
+      "anim": "Caned_Idle_P",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 822,
+      "categoria": "SEX",
+      "idx": 23,
+      "anim": "Caned_Idle_W",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 823,
+      "categoria": "SEX",
+      "idx": 24,
+      "anim": "Caned_P",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 824,
+      "categoria": "SEX",
+      "idx": 25,
+      "anim": "Caned_W",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 825,
+      "categoria": "SEX",
+      "idx": 26,
+      "anim": "Cane_Idle_P",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 826,
+      "categoria": "SEX",
+      "idx": 27,
+      "anim": "Cane_Idle_W",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 827,
+      "categoria": "SEX",
+      "idx": 28,
+      "anim": "Cane_P",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 828,
+      "categoria": "SEX",
+      "idx": 29,
+      "anim": "Cane_W",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 829,
+      "categoria": "SEX",
+      "idx": 30,
+      "anim": "SpankedP",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 830,
+      "categoria": "SEX",
+      "idx": 31,
+      "anim": "SpankedW",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 831,
+      "categoria": "SEX",
+      "idx": 32,
+      "anim": "Spanked_IdleP",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 832,
+      "categoria": "SEX",
+      "idx": 33,
+      "anim": "Spanked_IdleW",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 833,
+      "categoria": "SEX",
+      "idx": 34,
+      "anim": "SpankingP",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 834,
+      "categoria": "SEX",
+      "idx": 35,
+      "anim": "SpankingW",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 835,
+      "categoria": "SEX",
+      "idx": 36,
+      "anim": "Spanking_endP",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 836,
+      "categoria": "SEX",
+      "idx": 37,
+      "anim": "Spanking_endW",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 837,
+      "categoria": "SEX",
+      "idx": 38,
+      "anim": "Spanking_IdleP",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 838,
+      "categoria": "SEX",
+      "idx": 39,
+      "anim": "Spanking_IdleW",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 839,
+      "categoria": "SEX",
+      "idx": 40,
+      "anim": "SpankSitIdleP",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 840,
+      "categoria": "SEX",
+      "idx": 41,
+      "anim": "SpankSitIdleW",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 841,
+      "categoria": "SEX",
+      "idx": 42,
+      "anim": "SpankSitP",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 842,
+      "categoria": "SEX",
+      "idx": 43,
+      "anim": "SpankSitW",
+      "lib": "SPANKING"
+    },
+    {
+      "orden": 843,
+      "categoria": "SEX",
+      "idx": 44,
+      "anim": "COUCH_START_W",
+      "lib": "BLOWJOB"
+    },
+    {
+      "orden": 844,
+      "categoria": "SEX",
+      "idx": 45,
+      "anim": "COUCH_LOOP_W",
+      "lib": "BLOWJOB"
+    },
+    {
+      "orden": 845,
+      "categoria": "SEX",
+      "idx": 46,
+      "anim": "COUCH_END_W",
+      "lib": "BLOWJOB"
+    },
+    {
+      "orden": 846,
+      "categoria": "SEX",
+      "idx": 47,
+      "anim": "COUCH_START_P",
+      "lib": "BLOWJOB"
+    },
+    {
+      "orden": 847,
+      "categoria": "SEX",
+      "idx": 48,
+      "anim": "COUCH_LOOP_P",
+      "lib": "BLOWJOB"
+    },
+    {
+      "orden": 848,
+      "categoria": "SEX",
+      "idx": 49,
+      "anim": "COUCH_END_P",
+      "lib": "BLOWJOB"
+    },
+    {
+      "orden": 849,
+      "categoria": "SEX",
+      "idx": 50,
+      "anim": "STAND_START_W",
+      "lib": "BLOWJOB"
+    },
+    {
+      "orden": 850,
+      "categoria": "SEX",
+      "idx": 51,
+      "anim": "STAND_LOOP_W",
+      "lib": "BLOWJOB"
+    },
+    {
+      "orden": 851,
+      "categoria": "SEX",
+      "idx": 52,
+      "anim": "STAND_END_W",
+      "lib": "BLOWJOB"
+    },
+    {
+      "orden": 852,
+      "categoria": "SEX",
+      "idx": 53,
+      "anim": "STAND_START_P",
+      "lib": "BLOWJOB"
+    },
+    {
+      "orden": 853,
+      "categoria": "SEX",
+      "idx": 54,
+      "anim": "STAND_LOOP_P",
+      "lib": "BLOWJOB"
+    },
+    {
+      "orden": 854,
+      "categoria": "SEX",
+      "idx": 55,
+      "anim": "STAND_END_P",
+      "lib": "BLOWJOB"
+    },
+    {
+      "orden": 855,
+      "categoria": "MOVE",
+      "idx": 1,
+      "anim": "CAR_crawloutRHS",
+      "lib": "ped"
+    },
+    {
+      "orden": 856,
+      "categoria": "MOVE",
+      "idx": 2,
+      "anim": "EV_dive",
+      "lib": "ped"
+    },
+    {
+      "orden": 857,
+      "categoria": "MOVE",
+      "idx": 3,
+      "anim": "FALL_skyDive",
+      "lib": "ped"
+    },
+    {
+      "orden": 858,
+      "categoria": "MOVE",
+      "idx": 4,
+      "anim": "EV_step",
+      "lib": "ped"
+    },
+    {
+      "orden": 859,
+      "categoria": "MOVE",
+      "idx": 5,
+      "anim": "getup",
+      "lib": "ped"
+    },
+    {
+      "orden": 860,
+      "categoria": "MOVE",
+      "idx": 6,
+      "anim": "getup_front",
+      "lib": "ped"
+    },
+    {
+      "orden": 861,
+      "categoria": "MOVE",
+      "idx": 7,
+      "anim": "turn_180",
+      "lib": "ped"
+    },
+    {
+      "orden": 862,
+      "categoria": "MOVE",
+      "idx": 8,
+      "anim": "CLO_In",
+      "lib": "CLOTHES"
+    },
+    {
+      "orden": 863,
+      "categoria": "MOVE",
+      "idx": 9,
+      "anim": "CLO_Out",
+      "lib": "CLOTHES"
+    },
+    {
+      "orden": 864,
+      "categoria": "MOVE",
+      "idx": 10,
+      "anim": "CLO_Pose_In",
+      "lib": "CLOTHES"
+    },
+    {
+      "orden": 865,
+      "categoria": "MOVE",
+      "idx": 11,
+      "anim": "CLO_Pose_Out",
+      "lib": "CLOTHES"
+    },
+    {
+      "orden": 866,
+      "categoria": "MOVE",
+      "idx": 12,
+      "anim": "DAM_Dive_Loop",
+      "lib": "DAM_JUMP"
+    },
+    {
+      "orden": 867,
+      "categoria": "MOVE",
+      "idx": 13,
+      "anim": "DAM_Land",
+      "lib": "DAM_JUMP"
+    },
+    {
+      "orden": 868,
+      "categoria": "MOVE",
+      "idx": 14,
+      "anim": "DAM_Launch",
+      "lib": "DAM_JUMP"
+    },
+    {
+      "orden": 869,
+      "categoria": "MOVE",
+      "idx": 15,
+      "anim": "Jump_Roll",
+      "lib": "DAM_JUMP"
+    },
+    {
+      "orden": 870,
+      "categoria": "MOVE",
+      "idx": 16,
+      "anim": "SF_JumpWall",
+      "lib": "DAM_JUMP"
+    },
+    {
+      "orden": 871,
+      "categoria": "MOVE",
+      "idx": 17,
+      "anim": "girl_01",
+      "lib": "JST_BUISNESS"
+    },
+    {
+      "orden": 872,
+      "categoria": "MOVE",
+      "idx": 18,
+      "anim": "Cop_move_FWD",
+      "lib": "POLICE"
+    },
+    {
+      "orden": 873,
+      "categoria": "MOVE",
+      "idx": 19,
+      "anim": "RYD_Die_PT1",
+      "lib": "RYDER"
+    },
+    {
+      "orden": 874,
+      "categoria": "MOVE",
+      "idx": 20,
+      "anim": "RYD_Die_PT2",
+      "lib": "RYDER"
+    },
+    {
+      "orden": 875,
+      "categoria": "MOVE",
+      "idx": 21,
+      "anim": "Van_Fall_L",
+      "lib": "RYDER"
+    },
+    {
+      "orden": 876,
+      "categoria": "MOVE",
+      "idx": 22,
+      "anim": "Van_Fall_R",
+      "lib": "RYDER"
+    },
+    {
+      "orden": 877,
+      "categoria": "MOVE",
+      "idx": 23,
+      "anim": "JMP_Wall1m_180",
+      "lib": "SWATPD"
+    },
+    {
+      "orden": 878,
+      "categoria": "MOVE",
+      "idx": 24,
+      "anim": "swt_breach_01",
+      "lib": "SWATPD"
+    },
+    {
+      "orden": 879,
+      "categoria": "MOVE",
+      "idx": 25,
+      "anim": "swt_breach_02",
+      "lib": "SWATPD"
+    },
+    {
+      "orden": 880,
+      "categoria": "MOVE",
+      "idx": 26,
+      "anim": "swt_breach_03",
+      "lib": "SWATPD"
+    },
+    {
+      "orden": 881,
+      "categoria": "MOVE",
+      "idx": 27,
+      "anim": "swt_vent_01",
+      "lib": "SWATPD"
+    },
+    {
+      "orden": 882,
+      "categoria": "MOVE",
+      "idx": 28,
+      "anim": "swt_vent_02",
+      "lib": "SWATPD"
+    },
+    {
+      "orden": 883,
+      "categoria": "MOVE",
+      "idx": 29,
+      "anim": "swt_vnt_sht_die",
+      "lib": "SWATPD"
+    },
+    {
+      "orden": 884,
+      "categoria": "MOVE",
+      "idx": 30,
+      "anim": "swt_vnt_sht_in",
+      "lib": "SWATPD"
+    },
+    {
+      "orden": 885,
+      "categoria": "MOVE",
+      "idx": 31,
+      "anim": "swt_vnt_sht_loo",
+      "lib": "SWATPD"
+    },
+    {
+      "orden": 886,
+      "categoria": "MOVE",
+      "idx": 32,
+      "anim": "LaFin_Player",
+      "lib": "SWEET"
+    },
+    {
+      "orden": 887,
+      "categoria": "MOVE",
+      "idx": 33,
+      "anim": "LaFin_Sweet",
+      "lib": "SWEET"
+    },
+    {
+      "orden": 888,
+      "categoria": "MOVE",
+      "idx": 34,
+      "anim": "carry_per_1",
+      "lib": "MMR"
+    },
+    {
+      "orden": 889,
+      "categoria": "MOVE",
+      "idx": 35,
+      "anim": "carry_per_2",
+      "lib": "MMR"
+    },
+    {
+      "orden": 890,
+      "categoria": "MOVE",
+      "idx": 36,
+      "anim": "walk_circ_1",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 891,
+      "categoria": "MOVE",
+      "idx": 37,
+      "anim": "walk_circ_2",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 892,
+      "categoria": "MOVE",
+      "idx": 38,
+      "anim": "drunk_loop",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 893,
+      "categoria": "MOVE",
+      "idx": 39,
+      "anim": "panic_circle",
+      "lib": "urbanize"
+    },
+    {
+      "orden": 894,
+      "categoria": "MOVE",
+      "idx": 40,
+      "anim": "CLIMB_idle",
+      "lib": "ped"
+    },
+    {
+      "orden": 895,
+      "categoria": "MOVE",
+      "idx": 41,
+      "anim": "CLIMB_Pull",
+      "lib": "ped"
+    },
+    {
+      "orden": 896,
+      "categoria": "MOVE",
+      "idx": 42,
+      "anim": "CLIMB_Stand",
+      "lib": "ped"
+    },
+    {
+      "orden": 897,
+      "categoria": "MOVE",
+      "idx": 43,
+      "anim": "CLIMB_jump_B",
+      "lib": "ped"
+    },
+    {
+      "orden": 898,
+      "categoria": "MOVE",
+      "idx": 44,
+      "anim": "Run_Dive",
+      "lib": "misc"
+    },
+    {
+      "orden": 899,
+      "categoria": "MOVE",
+      "idx": 45,
+      "anim": "MD_HANG_Loop",
+      "lib": "MD_CHASE"
+    },
+    {
+      "orden": 900,
+      "categoria": "CUTS",
+      "idx": 1,
+      "anim": "player_01",
+      "lib": "JST_BUISNESS"
+    },
+    {
+      "orden": 901,
+      "categoria": "CUTS",
+      "idx": 2,
+      "anim": "smoke_01",
+      "lib": "JST_BUISNESS"
+    },
+    {
+      "orden": 902,
+      "categoria": "CUTS",
+      "idx": 3,
+      "anim": "cs_1_a1",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 903,
+      "categoria": "CUTS",
+      "idx": 4,
+      "anim": "cs_1_a2",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 904,
+      "categoria": "CUTS",
+      "idx": 5,
+      "anim": "cs_2_a1",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 905,
+      "categoria": "CUTS",
+      "idx": 6,
+      "anim": "cs_2_a2",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 906,
+      "categoria": "CUTS",
+      "idx": 7,
+      "anim": "cs_2_a3",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 907,
+      "categoria": "CUTS",
+      "idx": 8,
+      "anim": "cs_2_a4",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 908,
+      "categoria": "CUTS",
+      "idx": 9,
+      "anim": "cs_2_a5",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 909,
+      "categoria": "CUTS",
+      "idx": 10,
+      "anim": "cs_3_a1",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 910,
+      "categoria": "CUTS",
+      "idx": 11,
+      "anim": "cs_3_a2",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 911,
+      "categoria": "CUTS",
+      "idx": 12,
+      "anim": "cs_3_a3",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 912,
+      "categoria": "CUTS",
+      "idx": 13,
+      "anim": "cs_3_a4",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 913,
+      "categoria": "CUTS",
+      "idx": 14,
+      "anim": "cs_3_a5",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 914,
+      "categoria": "CUTS",
+      "idx": 15,
+      "anim": "cs_4_a1",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 915,
+      "categoria": "CUTS",
+      "idx": 16,
+      "anim": "cs_4_a2",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 916,
+      "categoria": "CUTS",
+      "idx": 17,
+      "anim": "cs_5_a1",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 917,
+      "categoria": "CUTS",
+      "idx": 18,
+      "anim": "cs_5_a2",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 918,
+      "categoria": "CUTS",
+      "idx": 19,
+      "anim": "cs_6_a1",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 919,
+      "categoria": "CUTS",
+      "idx": 20,
+      "anim": "cs_6_a2",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 920,
+      "categoria": "CUTS",
+      "idx": 21,
+      "anim": "cs_7_a1",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 921,
+      "categoria": "CUTS",
+      "idx": 22,
+      "anim": "cs_7_a2",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 922,
+      "categoria": "CUTS",
+      "idx": 23,
+      "anim": "cut2",
+      "lib": "OZ"
+    },
+    {
+      "orden": 923,
+      "categoria": "CUTS",
+      "idx": 24,
+      "anim": "cut3",
+      "lib": "OZ"
+    },
+    {
+      "orden": 924,
+      "categoria": "CUTS",
+      "idx": 25,
+      "anim": "cut4",
+      "lib": "OZ"
+    },
+    {
+      "orden": 925,
+      "categoria": "CUTS",
+      "idx": 26,
+      "anim": "cs_8",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 926,
+      "categoria": "CUTS",
+      "idx": 27,
+      "anim": "cs_9",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 927,
+      "categoria": "CUTS",
+      "idx": 28,
+      "anim": "cs_10",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 928,
+      "categoria": "CUTS",
+      "idx": 29,
+      "anim": "cs_11",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 929,
+      "categoria": "CUTS",
+      "idx": 30,
+      "anim": "cs_12",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 930,
+      "categoria": "CUTS",
+      "idx": 31,
+      "anim": "cs_13",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 931,
+      "categoria": "CUTS",
+      "idx": 32,
+      "anim": "cs_14",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 932,
+      "categoria": "CUTS",
+      "idx": 33,
+      "anim": "cs_15",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 933,
+      "categoria": "CUTS",
+      "idx": 34,
+      "anim": "cs_16",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 934,
+      "categoria": "CUTS",
+      "idx": 35,
+      "anim": "cs_17",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 935,
+      "categoria": "CUTS",
+      "idx": 36,
+      "anim": "cs_18",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 936,
+      "categoria": "CUTS",
+      "idx": 37,
+      "anim": "cs_19",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 937,
+      "categoria": "CUTS",
+      "idx": 38,
+      "anim": "cs_20",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 938,
+      "categoria": "CUTS",
+      "idx": 39,
+      "anim": "cs_21",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 939,
+      "categoria": "CUTS",
+      "idx": 40,
+      "anim": "cs_22",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 940,
+      "categoria": "CUTS",
+      "idx": 41,
+      "anim": "cs_23",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 941,
+      "categoria": "CUTS",
+      "idx": 42,
+      "anim": "cs_24",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 942,
+      "categoria": "CUTS",
+      "idx": 43,
+      "anim": "cs_25",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 943,
+      "categoria": "CUTS",
+      "idx": 44,
+      "anim": "cs_26",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 944,
+      "categoria": "CUTS",
+      "idx": 45,
+      "anim": "cs_27",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 945,
+      "categoria": "CUTS",
+      "idx": 46,
+      "anim": "cs_28",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 946,
+      "categoria": "CUTS",
+      "idx": 47,
+      "anim": "cs_29",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 947,
+      "categoria": "CUTS",
+      "idx": 48,
+      "anim": "cs_30",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 948,
+      "categoria": "CUTS",
+      "idx": 49,
+      "anim": "cs_31",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 949,
+      "categoria": "CUTS",
+      "idx": 50,
+      "anim": "cs_32",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 950,
+      "categoria": "CUTS",
+      "idx": 51,
+      "anim": "cs_33",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 951,
+      "categoria": "CUTS",
+      "idx": 52,
+      "anim": "cs_34",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 952,
+      "categoria": "CUTS",
+      "idx": 53,
+      "anim": "cs_35",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 953,
+      "categoria": "CUTS",
+      "idx": 54,
+      "anim": "cs_36",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 954,
+      "categoria": "CUTS",
+      "idx": 55,
+      "anim": "cs_37",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 955,
+      "categoria": "CUTS",
+      "idx": 56,
+      "anim": "cs_38",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 956,
+      "categoria": "CUTS",
+      "idx": 57,
+      "anim": "cs_39",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 957,
+      "categoria": "CUTS",
+      "idx": 58,
+      "anim": "cs_40",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 958,
+      "categoria": "CUTS",
+      "idx": 59,
+      "anim": "cs_41",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 959,
+      "categoria": "CUTS",
+      "idx": 60,
+      "anim": "cs_42",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 960,
+      "categoria": "CUTS",
+      "idx": 61,
+      "anim": "cs_43",
+      "lib": "MMR_CUTS"
+    },
+    {
+      "orden": 961,
+      "categoria": "ATTACK",
+      "idx": 1,
+      "anim": "FightA_1",
+      "lib": "ped"
+    },
+    {
+      "orden": 962,
+      "categoria": "ATTACK",
+      "idx": 2,
+      "anim": "FightA_2",
+      "lib": "ped"
+    },
+    {
+      "orden": 963,
+      "categoria": "ATTACK",
+      "idx": 3,
+      "anim": "FightA_3",
+      "lib": "ped"
+    },
+    {
+      "orden": 964,
+      "categoria": "ATTACK",
+      "idx": 4,
+      "anim": "FightA_block",
+      "lib": "ped"
+    },
+    {
+      "orden": 965,
+      "categoria": "ATTACK",
+      "idx": 5,
+      "anim": "FightA_M",
+      "lib": "ped"
+    },
+    {
+      "orden": 966,
+      "categoria": "ATTACK",
+      "idx": 6,
+      "anim": "FightA_G",
+      "lib": "ped"
+    },
+    {
+      "orden": 967,
+      "categoria": "ATTACK",
+      "idx": 7,
+      "anim": "FIGHTIDLE",
+      "lib": "ped"
+    },
+    {
+      "orden": 968,
+      "categoria": "ATTACK",
+      "idx": 8,
+      "anim": "Bat_1",
+      "lib": "BASEBALL"
+    },
+    {
+      "orden": 969,
+      "categoria": "ATTACK",
+      "idx": 9,
+      "anim": "Bat_2",
+      "lib": "BASEBALL"
+    },
+    {
+      "orden": 970,
+      "categoria": "ATTACK",
+      "idx": 10,
+      "anim": "Bat_3",
+      "lib": "BASEBALL"
+    },
+    {
+      "orden": 971,
+      "categoria": "ATTACK",
+      "idx": 11,
+      "anim": "Bat_4",
+      "lib": "BASEBALL"
+    },
+    {
+      "orden": 972,
+      "categoria": "ATTACK",
+      "idx": 12,
+      "anim": "Bat_block",
+      "lib": "BASEBALL"
+    },
+    {
+      "orden": 973,
+      "categoria": "ATTACK",
+      "idx": 13,
+      "anim": "Bat_IDLE",
+      "lib": "BASEBALL"
+    },
+    {
+      "orden": 974,
+      "categoria": "ATTACK",
+      "idx": 14,
+      "anim": "Bat_M",
+      "lib": "BASEBALL"
+    },
+    {
+      "orden": 975,
+      "categoria": "ATTACK",
+      "idx": 15,
+      "anim": "BAT_PART",
+      "lib": "BASEBALL"
+    },
+    {
+      "orden": 976,
+      "categoria": "ATTACK",
+      "idx": 16,
+      "anim": "CSAW_1",
+      "lib": "CHAINSAW"
+    },
+    {
+      "orden": 977,
+      "categoria": "ATTACK",
+      "idx": 17,
+      "anim": "CSAW_2",
+      "lib": "CHAINSAW"
+    },
+    {
+      "orden": 978,
+      "categoria": "ATTACK",
+      "idx": 18,
+      "anim": "CSAW_3",
+      "lib": "CHAINSAW"
+    },
+    {
+      "orden": 979,
+      "categoria": "ATTACK",
+      "idx": 19,
+      "anim": "CSAW_G",
+      "lib": "CHAINSAW"
+    },
+    {
+      "orden": 980,
+      "categoria": "ATTACK",
+      "idx": 20,
+      "anim": "csaw_part",
+      "lib": "CHAINSAW"
+    },
+    {
+      "orden": 981,
+      "categoria": "ATTACK",
+      "idx": 21,
+      "anim": "IDLE_csaw",
+      "lib": "CHAINSAW"
+    },
+    {
+      "orden": 982,
+      "categoria": "ATTACK",
+      "idx": 22,
+      "anim": "WEAPON_csaw",
+      "lib": "CHAINSAW"
+    },
+    {
+      "orden": 983,
+      "categoria": "ATTACK",
+      "idx": 23,
+      "anim": "WEAPON_csawlo",
+      "lib": "CHAINSAW"
+    },
+    {
+      "orden": 984,
+      "categoria": "ATTACK",
+      "idx": 24,
+      "anim": "FightB_1",
+      "lib": "FIGHT_B"
+    },
+    {
+      "orden": 985,
+      "categoria": "ATTACK",
+      "idx": 25,
+      "anim": "FightB_2",
+      "lib": "FIGHT_B"
+    },
+    {
+      "orden": 986,
+      "categoria": "ATTACK",
+      "idx": 26,
+      "anim": "FightB_3",
+      "lib": "FIGHT_B"
+    },
+    {
+      "orden": 987,
+      "categoria": "ATTACK",
+      "idx": 27,
+      "anim": "FightB_block",
+      "lib": "FIGHT_B"
+    },
+    {
+      "orden": 988,
+      "categoria": "ATTACK",
+      "idx": 28,
+      "anim": "FightB_G",
+      "lib": "FIGHT_B"
+    },
+    {
+      "orden": 989,
+      "categoria": "ATTACK",
+      "idx": 29,
+      "anim": "FightB_IDLE",
+      "lib": "FIGHT_B"
+    },
+    {
+      "orden": 990,
+      "categoria": "ATTACK",
+      "idx": 30,
+      "anim": "FightB_M",
+      "lib": "FIGHT_B"
+    },
+    {
+      "orden": 991,
+      "categoria": "ATTACK",
+      "idx": 31,
+      "anim": "FightC_1",
+      "lib": "FIGHT_C"
+    },
+    {
+      "orden": 992,
+      "categoria": "ATTACK",
+      "idx": 32,
+      "anim": "FightC_2",
+      "lib": "FIGHT_C"
+    },
+    {
+      "orden": 993,
+      "categoria": "ATTACK",
+      "idx": 33,
+      "anim": "FightC_3",
+      "lib": "FIGHT_C"
+    },
+    {
+      "orden": 994,
+      "categoria": "ATTACK",
+      "idx": 34,
+      "anim": "FightC_block",
+      "lib": "FIGHT_C"
+    },
+    {
+      "orden": 995,
+      "categoria": "ATTACK",
+      "idx": 35,
+      "anim": "FightC_blocking",
+      "lib": "FIGHT_C"
+    },
+    {
+      "orden": 996,
+      "categoria": "ATTACK",
+      "idx": 36,
+      "anim": "FightC_G",
+      "lib": "FIGHT_C"
+    },
+    {
+      "orden": 997,
+      "categoria": "ATTACK",
+      "idx": 37,
+      "anim": "FightC_IDLE",
+      "lib": "FIGHT_C"
+    },
+    {
+      "orden": 998,
+      "categoria": "ATTACK",
+      "idx": 38,
+      "anim": "FightC_M",
+      "lib": "FIGHT_C"
+    },
+    {
+      "orden": 999,
+      "categoria": "ATTACK",
+      "idx": 39,
+      "anim": "FightC_Spar",
+      "lib": "FIGHT_C"
+    },
+    {
+      "orden": 1000,
+      "categoria": "ATTACK",
+      "idx": 40,
+      "anim": "FightD_1",
+      "lib": "FIGHT_D"
+    },
+    {
+      "orden": 1001,
+      "categoria": "ATTACK",
+      "idx": 41,
+      "anim": "FightD_2",
+      "lib": "FIGHT_D"
+    },
+    {
+      "orden": 1002,
+      "categoria": "ATTACK",
+      "idx": 42,
+      "anim": "FightD_3",
+      "lib": "FIGHT_D"
+    },
+    {
+      "orden": 1003,
+      "categoria": "ATTACK",
+      "idx": 43,
+      "anim": "FightD_block",
+      "lib": "FIGHT_D"
+    },
+    {
+      "orden": 1004,
+      "categoria": "ATTACK",
+      "idx": 44,
+      "anim": "FightD_G",
+      "lib": "FIGHT_D"
+    },
+    {
+      "orden": 1005,
+      "categoria": "ATTACK",
+      "idx": 45,
+      "anim": "FightD_IDLE",
+      "lib": "FIGHT_D"
+    },
+    {
+      "orden": 1006,
+      "categoria": "ATTACK",
+      "idx": 46,
+      "anim": "FightD_M",
+      "lib": "FIGHT_D"
+    },
+    {
+      "orden": 1007,
+      "categoria": "ATTACK",
+      "idx": 47,
+      "anim": "FightKick",
+      "lib": "FIGHT_E"
+    },
+    {
+      "orden": 1008,
+      "categoria": "ATTACK",
+      "idx": 48,
+      "anim": "FightKick_B",
+      "lib": "FIGHT_E"
+    },
+    {
+      "orden": 1009,
+      "categoria": "ATTACK",
+      "idx": 49,
+      "anim": "shake_cara",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 1010,
+      "categoria": "ATTACK",
+      "idx": 50,
+      "anim": "shake_carK",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 1011,
+      "categoria": "ATTACK",
+      "idx": 51,
+      "anim": "shake_carSH",
+      "lib": "GANGS"
+    },
+    {
+      "orden": 1012,
+      "categoria": "ATTACK",
+      "idx": 52,
+      "anim": "bitchslap",
+      "lib": "misc"
+    },
+    {
+      "orden": 1013,
+      "categoria": "ATTACK",
+      "idx": 53,
+      "anim": "Door_Kick",
+      "lib": "POLICE"
+    },
+    {
+      "orden": 1014,
+      "categoria": "ATTACK",
+      "idx": 54,
+      "anim": "sword_1",
+      "lib": "SWORD"
+    },
+    {
+      "orden": 1015,
+      "categoria": "ATTACK",
+      "idx": 55,
+      "anim": "sword_2",
+      "lib": "SWORD"
+    },
+    {
+      "orden": 1016,
+      "categoria": "ATTACK",
+      "idx": 56,
+      "anim": "sword_3",
+      "lib": "SWORD"
+    },
+    {
+      "orden": 1017,
+      "categoria": "ATTACK",
+      "idx": 57,
+      "anim": "sword_4",
+      "lib": "SWORD"
+    },
+    {
+      "orden": 1018,
+      "categoria": "ATTACK",
+      "idx": 58,
+      "anim": "sword_block",
+      "lib": "SWORD"
+    },
+    {
+      "orden": 1019,
+      "categoria": "ATTACK",
+      "idx": 59,
+      "anim": "sword_IDLE",
+      "lib": "SWORD"
+    },
+    {
+      "orden": 1020,
+      "categoria": "ATTACK",
+      "idx": 60,
+      "anim": "sword_part",
+      "lib": "SWORD"
+    },
+    {
+      "orden": 1021,
+      "categoria": "ATTACK",
+      "idx": 61,
+      "anim": "idle_sword",
+      "lib": "MMR"
+    },
+    {
+      "orden": 1022,
+      "categoria": "ATTACK",
+      "idx": 62,
+      "anim": "1knife_pla",
+      "lib": "is_cuts"
+    },
+    {
+      "orden": 1023,
+      "categoria": "ATTACK",
+      "idx": 63,
+      "anim": "2knife_pla",
+      "lib": "is_cuts"
+    },
+    {
+      "orden": 1024,
+      "categoria": "ATTACK",
+      "idx": 64,
+      "anim": "Knife_Player",
+      "lib": "mmr"
+    },
+    {
+      "orden": 1025,
+      "categoria": "ATTACK",
+      "idx": 65,
+      "anim": "Knife_Partial",
+      "lib": "mmr"
+    },
+    {
+      "orden": 1026,
+      "categoria": "ATTACK",
+      "idx": 66,
+      "anim": "Knife_Idle",
+      "lib": "mmr"
+    },
+    {
+      "orden": 1027,
+      "categoria": "DEATH",
+      "idx": 1,
+      "anim": "crckdeth1",
+      "lib": "CRACK"
+    },
+    {
+      "orden": 1028,
+      "categoria": "DEATH",
+      "idx": 2,
+      "anim": "crckdeth2",
+      "lib": "CRACK"
+    },
+    {
+      "orden": 1029,
+      "categoria": "DEATH",
+      "idx": 3,
+      "anim": "crckdeth3",
+      "lib": "CRACK"
+    },
+    {
+      "orden": 1030,
+      "categoria": "DEATH",
+      "idx": 4,
+      "anim": "crckdeth4",
+      "lib": "CRACK"
+    },
+    {
+      "orden": 1031,
+      "categoria": "DEATH",
+      "idx": 5,
+      "anim": "Rail_fall",
+      "lib": "SWATPD"
+    },
+    {
+      "orden": 1032,
+      "categoria": "DEATH",
+      "idx": 6,
+      "anim": "Rail_fall_crawl",
+      "lib": "SWATPD"
+    },
+    {
+      "orden": 1033,
+      "categoria": "DEATH",
+      "idx": 7,
+      "anim": "death1",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1034,
+      "categoria": "DEATH",
+      "idx": 8,
+      "anim": "death2",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1035,
+      "categoria": "DEATH",
+      "idx": 9,
+      "anim": "death3",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1036,
+      "categoria": "DEATH",
+      "idx": 10,
+      "anim": "death4",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1037,
+      "categoria": "DEATH",
+      "idx": 11,
+      "anim": "death5",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1038,
+      "categoria": "DEATH",
+      "idx": 12,
+      "anim": "death6",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1039,
+      "categoria": "DEATH",
+      "idx": 13,
+      "anim": "death7",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1040,
+      "categoria": "DEATH",
+      "idx": 14,
+      "anim": "death8",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1041,
+      "categoria": "DEATH",
+      "idx": 15,
+      "anim": "death9",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1042,
+      "categoria": "DEATH",
+      "idx": 16,
+      "anim": "death10",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1043,
+      "categoria": "DEATH",
+      "idx": 17,
+      "anim": "death11",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1044,
+      "categoria": "DEATH",
+      "idx": 18,
+      "anim": "death12",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1045,
+      "categoria": "DEATH",
+      "idx": 19,
+      "anim": "death13",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1046,
+      "categoria": "DEATH",
+      "idx": 20,
+      "anim": "death14",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1047,
+      "categoria": "DEATH",
+      "idx": 21,
+      "anim": "death15",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1048,
+      "categoria": "DEATH",
+      "idx": 22,
+      "anim": "death16",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1049,
+      "categoria": "DEATH",
+      "idx": 23,
+      "anim": "death17",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1050,
+      "categoria": "DEATH",
+      "idx": 24,
+      "anim": "death18",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1051,
+      "categoria": "DEATH",
+      "idx": 25,
+      "anim": "death19",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1052,
+      "categoria": "DEATH",
+      "idx": 26,
+      "anim": "death20",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1053,
+      "categoria": "DEATH",
+      "idx": 27,
+      "anim": "death21",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1054,
+      "categoria": "DEATH",
+      "idx": 28,
+      "anim": "death22",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1055,
+      "categoria": "DEATH",
+      "idx": 29,
+      "anim": "death23",
+      "lib": "deaths"
+    },
+    {
+      "orden": 1056,
+      "categoria": "DEATH",
+      "idx": 30,
+      "anim": "KD_left",
+      "lib": "ped"
+    },
+    {
+      "orden": 1057,
+      "categoria": "DEATH",
+      "idx": 31,
+      "anim": "KD_right",
+      "lib": "ped"
+    },
+    {
+      "orden": 1058,
+      "categoria": "DEATH",
+      "idx": 32,
+      "anim": "KO_shot_face",
+      "lib": "ped"
+    },
+    {
+      "orden": 1059,
+      "categoria": "DEATH",
+      "idx": 33,
+      "anim": "KO_shot_front",
+      "lib": "ped"
+    },
+    {
+      "orden": 1060,
+      "categoria": "DEATH",
+      "idx": 34,
+      "anim": "KO_shot_stom",
+      "lib": "ped"
+    },
+    {
+      "orden": 1061,
+      "categoria": "DEATH",
+      "idx": 35,
+      "anim": "KO_skid_back",
+      "lib": "ped"
+    },
+    {
+      "orden": 1062,
+      "categoria": "DEATH",
+      "idx": 36,
+      "anim": "KO_skid_front",
+      "lib": "ped"
+    },
+    {
+      "orden": 1063,
+      "categoria": "DEATH",
+      "idx": 37,
+      "anim": "KO_spin_L",
+      "lib": "ped"
+    },
+    {
+      "orden": 1064,
+      "categoria": "DEATH",
+      "idx": 38,
+      "anim": "KO_spin_R",
+      "lib": "ped"
+    },
+    {
+      "orden": 1065,
+      "categoria": "DEATH",
+      "idx": 39,
+      "anim": "CAS_G2_GasKO",
+      "lib": "HEIST9"
+    },
+    {
+      "orden": 1066,
+      "categoria": "DEATH",
+      "idx": 40,
+      "anim": "F1",
+      "lib": "death2"
+    },
+    {
+      "orden": 1067,
+      "categoria": "DEATH",
+      "idx": 41,
+      "anim": "F2",
+      "lib": "death2"
+    },
+    {
+      "orden": 1068,
+      "categoria": "DEATH",
+      "idx": 42,
+      "anim": "F3",
+      "lib": "death2"
+    },
+    {
+      "orden": 1069,
+      "categoria": "DEATH",
+      "idx": 43,
+      "anim": "F4",
+      "lib": "death2"
+    },
+    {
+      "orden": 1070,
+      "categoria": "DEATH",
+      "idx": 44,
+      "anim": "F5",
+      "lib": "death2"
+    },
+    {
+      "orden": 1071,
+      "categoria": "DEATH",
+      "idx": 45,
+      "anim": "F6",
+      "lib": "death2"
+    },
+    {
+      "orden": 1072,
+      "categoria": "DEATH",
+      "idx": 46,
+      "anim": "F7",
+      "lib": "death2"
+    },
+    {
+      "orden": 1073,
+      "categoria": "DEATH",
+      "idx": 47,
+      "anim": "F8",
+      "lib": "death2"
+    },
+    {
+      "orden": 1074,
+      "categoria": "DEATH",
+      "idx": 48,
+      "anim": "F9",
+      "lib": "death2"
+    },
+    {
+      "orden": 1075,
+      "categoria": "DEATH",
+      "idx": 49,
+      "anim": "F10",
+      "lib": "death2"
+    },
+    {
+      "orden": 1076,
+      "categoria": "DEATH",
+      "idx": 50,
+      "anim": "F11",
+      "lib": "death2"
+    },
+    {
+      "orden": 1077,
+      "categoria": "DEATH",
+      "idx": 51,
+      "anim": "F12",
+      "lib": "death2"
+    },
+    {
+      "orden": 1078,
+      "categoria": "DEATH",
+      "idx": 52,
+      "anim": "F13",
+      "lib": "death2"
+    },
+    {
+      "orden": 1079,
+      "categoria": "DEATH",
+      "idx": 53,
+      "anim": "F14",
+      "lib": "death2"
+    },
+    {
+      "orden": 1080,
+      "categoria": "DEATH",
+      "idx": 54,
+      "anim": "F15",
+      "lib": "death2"
+    },
+    {
+      "orden": 1081,
+      "categoria": "DEATH",
+      "idx": 55,
+      "anim": "F16",
+      "lib": "death2"
+    },
+    {
+      "orden": 1082,
+      "categoria": "DEATH",
+      "idx": 56,
+      "anim": "F17",
+      "lib": "death2"
+    },
+    {
+      "orden": 1083,
+      "categoria": "DEATH",
+      "idx": 57,
+      "anim": "F18",
+      "lib": "death2"
+    },
+    {
+      "orden": 1084,
+      "categoria": "DEATH",
+      "idx": 58,
+      "anim": "F19",
+      "lib": "death2"
+    },
+    {
+      "orden": 1085,
+      "categoria": "DEATH",
+      "idx": 59,
+      "anim": "F20",
+      "lib": "death2"
+    },
+    {
+      "orden": 1086,
+      "categoria": "DEATH",
+      "idx": 60,
+      "anim": "F21",
+      "lib": "death2"
+    },
+    {
+      "orden": 1087,
+      "categoria": "DEATH",
+      "idx": 61,
+      "anim": "F22",
+      "lib": "death2"
+    },
+    {
+      "orden": 1088,
+      "categoria": "DEATH",
+      "idx": 62,
+      "anim": "F23",
+      "lib": "death2"
+    },
+    {
+      "orden": 1089,
+      "categoria": "DEATH",
+      "idx": 63,
+      "anim": "F24",
+      "lib": "death2"
+    },
+    {
+      "orden": 1090,
+      "categoria": "DEATH",
+      "idx": 64,
+      "anim": "F25",
+      "lib": "death2"
+    },
+    {
+      "orden": 1091,
+      "categoria": "DEATH",
+      "idx": 65,
+      "anim": "F26",
+      "lib": "death2"
+    },
+    {
+      "orden": 1092,
+      "categoria": "DEATH",
+      "idx": 66,
+      "anim": "F27",
+      "lib": "death2"
+    },
+    {
+      "orden": 1093,
+      "categoria": "DEATH",
+      "idx": 67,
+      "anim": "F28",
+      "lib": "death2"
+    },
+    {
+      "orden": 1094,
+      "categoria": "DEATH",
+      "idx": 68,
+      "anim": "F29",
+      "lib": "death2"
+    },
+    {
+      "orden": 1095,
+      "categoria": "DEATH",
+      "idx": 69,
+      "anim": "F30",
+      "lib": "death2"
+    },
+    {
+      "orden": 1096,
+      "categoria": "DEATH",
+      "idx": 70,
+      "anim": "F31",
+      "lib": "death2"
+    },
+    {
+      "orden": 1097,
+      "categoria": "DEATH",
+      "idx": 71,
+      "anim": "F32",
+      "lib": "death2"
+    },
+    {
+      "orden": 1098,
+      "categoria": "DEATH",
+      "idx": 72,
+      "anim": "F33",
+      "lib": "death2"
+    },
+    {
+      "orden": 1099,
+      "categoria": "DEATH",
+      "idx": 73,
+      "anim": "F34",
+      "lib": "death2"
+    },
+    {
+      "orden": 1100,
+      "categoria": "DEATH",
+      "idx": 74,
+      "anim": "F35",
+      "lib": "death2"
+    },
+    {
+      "orden": 1101,
+      "categoria": "DEATH",
+      "idx": 75,
+      "anim": "F36",
+      "lib": "death2"
+    },
+    {
+      "orden": 1102,
+      "categoria": "DEATH",
+      "idx": 76,
+      "anim": "F37",
+      "lib": "death2"
+    },
+    {
+      "orden": 1103,
+      "categoria": "DEATH",
+      "idx": 77,
+      "anim": "F38",
+      "lib": "death2"
+    },
+    {
+      "orden": 1104,
+      "categoria": "DEATH",
+      "idx": 78,
+      "anim": "F39",
+      "lib": "death2"
+    },
+    {
+      "orden": 1105,
+      "categoria": "DEATH",
+      "idx": 79,
+      "anim": "F40",
+      "lib": "death2"
+    },
+    {
+      "orden": 1106,
+      "categoria": "DEATH",
+      "idx": 80,
+      "anim": "F41",
+      "lib": "death2"
+    },
+    {
+      "orden": 1107,
+      "categoria": "DEATH",
+      "idx": 81,
+      "anim": "F42",
+      "lib": "death2"
+    },
+    {
+      "orden": 1108,
+      "categoria": "DEATH",
+      "idx": 82,
+      "anim": "F43",
+      "lib": "death2"
+    },
+    {
+      "orden": 1109,
+      "categoria": "DEATH",
+      "idx": 83,
+      "anim": "F44",
+      "lib": "death2"
+    },
+    {
+      "orden": 1110,
+      "categoria": "DEATH",
+      "idx": 84,
+      "anim": "F45",
+      "lib": "death2"
+    },
+    {
+      "orden": 1111,
+      "categoria": "DEATH",
+      "idx": 85,
+      "anim": "F46",
+      "lib": "death2"
+    },
+    {
+      "orden": 1112,
+      "categoria": "DEATH",
+      "idx": 86,
+      "anim": "F47",
+      "lib": "death2"
+    },
+    {
+      "orden": 1113,
+      "categoria": "DEATH",
+      "idx": 87,
+      "anim": "F48",
+      "lib": "death2"
+    },
+    {
+      "orden": 1114,
+      "categoria": "DEATH",
+      "idx": 88,
+      "anim": "F49",
+      "lib": "death2"
+    },
+    {
+      "orden": 1115,
+      "categoria": "DEATH",
+      "idx": 89,
+      "anim": "F50",
+      "lib": "death2"
+    },
+    {
+      "orden": 1116,
+      "categoria": "DEATH",
+      "idx": 90,
+      "anim": "F51",
+      "lib": "death2"
+    },
+    {
+      "orden": 1117,
+      "categoria": "DEATH",
+      "idx": 91,
+      "anim": "F52",
+      "lib": "death2"
+    },
+    {
+      "orden": 1118,
+      "categoria": "DEATH",
+      "idx": 92,
+      "anim": "F53",
+      "lib": "death2"
+    },
+    {
+      "orden": 1119,
+      "categoria": "DEATH",
+      "idx": 93,
+      "anim": "F54",
+      "lib": "death2"
+    },
+    {
+      "orden": 1120,
+      "categoria": "DEATH",
+      "idx": 94,
+      "anim": "SF1",
+      "lib": "death2"
+    },
+    {
+      "orden": 1121,
+      "categoria": "DEATH",
+      "idx": 95,
+      "anim": "SF2",
+      "lib": "death2"
+    },
+    {
+      "orden": 1122,
+      "categoria": "DEATH",
+      "idx": 96,
+      "anim": "SF3",
+      "lib": "death2"
+    },
+    {
+      "orden": 1123,
+      "categoria": "DEATH",
+      "idx": 97,
+      "anim": "SF4",
+      "lib": "death2"
+    },
+    {
+      "orden": 1124,
+      "categoria": "DEATH",
+      "idx": 98,
+      "anim": "SF5",
+      "lib": "death2"
+    },
+    {
+      "orden": 1125,
+      "categoria": "DEATH",
+      "idx": 99,
+      "anim": "SF6",
+      "lib": "death2"
+    },
+    {
+      "orden": 1126,
+      "categoria": "DEATH",
+      "idx": 100,
+      "anim": "SF7",
+      "lib": "death2"
+    },
+    {
+      "orden": 1127,
+      "categoria": "DEATH",
+      "idx": 101,
+      "anim": "SF8",
+      "lib": "death2"
+    },
+    {
+      "orden": 1128,
+      "categoria": "DEATH",
+      "idx": 102,
+      "anim": "SF9",
+      "lib": "death2"
+    },
+    {
+      "orden": 1129,
+      "categoria": "DEATH",
+      "idx": 103,
+      "anim": "SF10",
+      "lib": "death2"
+    },
+    {
+      "orden": 1130,
+      "categoria": "DEATH",
+      "idx": 104,
+      "anim": "SF11",
+      "lib": "death2"
+    },
+    {
+      "orden": 1131,
+      "categoria": "DEATH",
+      "idx": 105,
+      "anim": "SF12",
+      "lib": "death2"
+    },
+    {
+      "orden": 1132,
+      "categoria": "DEATH",
+      "idx": 106,
+      "anim": "SF13",
+      "lib": "death2"
+    },
+    {
+      "orden": 1133,
+      "categoria": "DEATH",
+      "idx": 107,
+      "anim": "SF14",
+      "lib": "death2"
+    },
+    {
+      "orden": 1134,
+      "categoria": "DEATH",
+      "idx": 108,
+      "anim": "SF15",
+      "lib": "death2"
+    },
+    {
+      "orden": 1135,
+      "categoria": "DEATH",
+      "idx": 109,
+      "anim": "SF16",
+      "lib": "death2"
+    },
+    {
+      "orden": 1136,
+      "categoria": "DEATH",
+      "idx": 110,
+      "anim": "SF17",
+      "lib": "death2"
+    },
+    {
+      "orden": 1137,
+      "categoria": "DEATH",
+      "idx": 111,
+      "anim": "SF18",
+      "lib": "death2"
+    },
+    {
+      "orden": 1138,
+      "categoria": "DEATH",
+      "idx": 112,
+      "anim": "SF19",
+      "lib": "death2"
+    },
+    {
+      "orden": 1139,
+      "categoria": "DEATH",
+      "idx": 113,
+      "anim": "SF20",
+      "lib": "death2"
+    },
+    {
+      "orden": 1140,
+      "categoria": "DEATH",
+      "idx": 114,
+      "anim": "SF21",
+      "lib": "death2"
+    },
+    {
+      "orden": 1141,
+      "categoria": "DEATH",
+      "idx": 115,
+      "anim": "SF22",
+      "lib": "death2"
+    },
+    {
+      "orden": 1142,
+      "categoria": "DEATH",
+      "idx": 116,
+      "anim": "SF23",
+      "lib": "death2"
+    },
+    {
+      "orden": 1143,
+      "categoria": "DEATH",
+      "idx": 117,
+      "anim": "SF24",
+      "lib": "death2"
+    },
+    {
+      "orden": 1144,
+      "categoria": "DEATH",
+      "idx": 118,
+      "anim": "SF25",
+      "lib": "death2"
+    },
+    {
+      "orden": 1145,
+      "categoria": "DEATH",
+      "idx": 119,
+      "anim": "SF26",
+      "lib": "death2"
+    },
+    {
+      "orden": 1146,
+      "categoria": "DEATH",
+      "idx": 120,
+      "anim": "SF27",
+      "lib": "death2"
+    },
+    {
+      "orden": 1147,
+      "categoria": "DEATH",
+      "idx": 121,
+      "anim": "SF28",
+      "lib": "death2"
+    },
+    {
+      "orden": 1148,
+      "categoria": "DEATH",
+      "idx": 122,
+      "anim": "SF29",
+      "lib": "death2"
+    },
+    {
+      "orden": 1149,
+      "categoria": "DEATH",
+      "idx": 123,
+      "anim": "SF30",
+      "lib": "death2"
+    },
+    {
+      "orden": 1150,
+      "categoria": "DEATH",
+      "idx": 124,
+      "anim": "SF31",
+      "lib": "death2"
+    },
+    {
+      "orden": 1151,
+      "categoria": "DEATH",
+      "idx": 125,
+      "anim": "SF32",
+      "lib": "death2"
+    },
+    {
+      "orden": 1152,
+      "categoria": "DEATH",
+      "idx": 126,
+      "anim": "SF33",
+      "lib": "death2"
+    },
+    {
+      "orden": 1153,
+      "categoria": "DEATH",
+      "idx": 127,
+      "anim": "SF34",
+      "lib": "death2"
+    },
+    {
+      "orden": 1154,
+      "categoria": "DEATH",
+      "idx": 128,
+      "anim": "SF35",
+      "lib": "death2"
+    },
+    {
+      "orden": 1155,
+      "categoria": "DEATH",
+      "idx": 129,
+      "anim": "SF36",
+      "lib": "death2"
+    },
+    {
+      "orden": 1156,
+      "categoria": "DEATH",
+      "idx": 130,
+      "anim": "SF37",
+      "lib": "death2"
+    },
+    {
+      "orden": 1157,
+      "categoria": "DEATH",
+      "idx": 131,
+      "anim": "SF38",
+      "lib": "death2"
+    },
+    {
+      "orden": 1158,
+      "categoria": "DEATH",
+      "idx": 132,
+      "anim": "SF39",
+      "lib": "death2"
+    },
+    {
+      "orden": 1159,
+      "categoria": "DEATH",
+      "idx": 133,
+      "anim": "SF40",
+      "lib": "death2"
+    },
+    {
+      "orden": 1160,
+      "categoria": "DEATH",
+      "idx": 134,
+      "anim": "SF41",
+      "lib": "death2"
+    },
+    {
+      "orden": 1161,
+      "categoria": "DEATH",
+      "idx": 135,
+      "anim": "SF42",
+      "lib": "death2"
+    },
+    {
+      "orden": 1162,
+      "categoria": "DEATH",
+      "idx": 136,
+      "anim": "SF43",
+      "lib": "death2"
+    },
+    {
+      "orden": 1163,
+      "categoria": "DEATH",
+      "idx": 137,
+      "anim": "SF44",
+      "lib": "death2"
+    },
+    {
+      "orden": 1164,
+      "categoria": "DEATH",
+      "idx": 138,
+      "anim": "H1",
+      "lib": "death2"
+    },
+    {
+      "orden": 1165,
+      "categoria": "DEATH",
+      "idx": 139,
+      "anim": "H2",
+      "lib": "death2"
+    },
+    {
+      "orden": 1166,
+      "categoria": "DEATH",
+      "idx": 140,
+      "anim": "H3",
+      "lib": "death2"
+    },
+    {
+      "orden": 1167,
+      "categoria": "DEATH",
+      "idx": 141,
+      "anim": "H4",
+      "lib": "death2"
+    },
+    {
+      "orden": 1168,
+      "categoria": "DEATH",
+      "idx": 142,
+      "anim": "H5",
+      "lib": "death2"
+    },
+    {
+      "orden": 1169,
+      "categoria": "DEATH",
+      "idx": 143,
+      "anim": "H6",
+      "lib": "death2"
+    },
+    {
+      "orden": 1170,
+      "categoria": "DEATH",
+      "idx": 144,
+      "anim": "H7",
+      "lib": "death2"
+    },
+    {
+      "orden": 1171,
+      "categoria": "DEATH",
+      "idx": 145,
+      "anim": "H8",
+      "lib": "death2"
+    },
+    {
+      "orden": 1172,
+      "categoria": "DEATH",
+      "idx": 146,
+      "anim": "H9",
+      "lib": "death2"
+    },
+    {
+      "orden": 1173,
+      "categoria": "DEATH",
+      "idx": 147,
+      "anim": "H10",
+      "lib": "death2"
+    },
+    {
+      "orden": 1174,
+      "categoria": "DEATH",
+      "idx": 148,
+      "anim": "H11",
+      "lib": "death2"
+    },
+    {
+      "orden": 1175,
+      "categoria": "DEATH",
+      "idx": 149,
+      "anim": "H12",
+      "lib": "death2"
+    },
+    {
+      "orden": 1176,
+      "categoria": "DEATH",
+      "idx": 150,
+      "anim": "H13",
+      "lib": "death2"
+    },
+    {
+      "orden": 1177,
+      "categoria": "DEATH",
+      "idx": 151,
+      "anim": "HF1",
+      "lib": "death2"
+    },
+    {
+      "orden": 1178,
+      "categoria": "DEATH",
+      "idx": 152,
+      "anim": "HF2",
+      "lib": "death2"
+    },
+    {
+      "orden": 1179,
+      "categoria": "DEATH",
+      "idx": 153,
+      "anim": "HF3",
+      "lib": "death2"
+    },
+    {
+      "orden": 1180,
+      "categoria": "DEATH",
+      "idx": 154,
+      "anim": "HF4",
+      "lib": "death2"
+    },
+    {
+      "orden": 1181,
+      "categoria": "DEATH",
+      "idx": 155,
+      "anim": "HF5",
+      "lib": "death2"
+    },
+    {
+      "orden": 1182,
+      "categoria": "DEATH",
+      "idx": 156,
+      "anim": "HF6",
+      "lib": "death2"
+    },
+    {
+      "orden": 1183,
+      "categoria": "DEATH",
+      "idx": 157,
+      "anim": "HF7",
+      "lib": "death2"
+    },
+    {
+      "orden": 1184,
+      "categoria": "DEATH",
+      "idx": 158,
+      "anim": "HF8",
+      "lib": "death2"
+    },
+    {
+      "orden": 1185,
+      "categoria": "DEATH",
+      "idx": 159,
+      "anim": "HF9",
+      "lib": "death2"
+    },
+    {
+      "orden": 1186,
+      "categoria": "DEATH",
+      "idx": 160,
+      "anim": "HF10",
+      "lib": "death2"
+    },
+    {
+      "orden": 1187,
+      "categoria": "DEATH",
+      "idx": 161,
+      "anim": "HF11",
+      "lib": "death2"
+    },
+    {
+      "orden": 1188,
+      "categoria": "DEATH",
+      "idx": 162,
+      "anim": "HF12",
+      "lib": "death2"
+    },
+    {
+      "orden": 1189,
+      "categoria": "DEATH",
+      "idx": 163,
+      "anim": "HF13",
+      "lib": "death2"
+    },
+    {
+      "orden": 1190,
+      "categoria": "DEATH",
+      "idx": 164,
+      "anim": "HF14",
+      "lib": "death2"
+    },
+    {
+      "orden": 1191,
+      "categoria": "DEATH",
+      "idx": 165,
+      "anim": "HF15",
+      "lib": "death2"
+    },
+    {
+      "orden": 1192,
+      "categoria": "DEATH",
+      "idx": 166,
+      "anim": "B1",
+      "lib": "death2"
+    },
+    {
+      "orden": 1193,
+      "categoria": "DEATH",
+      "idx": 167,
+      "anim": "B2",
+      "lib": "death2"
+    },
+    {
+      "orden": 1194,
+      "categoria": "DEATH",
+      "idx": 168,
+      "anim": "B3",
+      "lib": "death2"
+    },
+    {
+      "orden": 1195,
+      "categoria": "DEATH",
+      "idx": 169,
+      "anim": "B4",
+      "lib": "death2"
+    },
+    {
+      "orden": 1196,
+      "categoria": "DEATH",
+      "idx": 170,
+      "anim": "B5",
+      "lib": "death2"
+    },
+    {
+      "orden": 1197,
+      "categoria": "DEATH",
+      "idx": 171,
+      "anim": "B6",
+      "lib": "death2"
+    },
+    {
+      "orden": 1198,
+      "categoria": "DEATH",
+      "idx": 172,
+      "anim": "B7",
+      "lib": "death2"
+    },
+    {
+      "orden": 1199,
+      "categoria": "DEATH",
+      "idx": 173,
+      "anim": "B8",
+      "lib": "death2"
+    },
+    {
+      "orden": 1200,
+      "categoria": "DEATH",
+      "idx": 174,
+      "anim": "B9",
+      "lib": "death2"
+    },
+    {
+      "orden": 1201,
+      "categoria": "DEATH",
+      "idx": 175,
+      "anim": "B10",
+      "lib": "death2"
+    },
+    {
+      "orden": 1202,
+      "categoria": "DEATH",
+      "idx": 176,
+      "anim": "B11",
+      "lib": "death2"
+    },
+    {
+      "orden": 1203,
+      "categoria": "DEATH",
+      "idx": 177,
+      "anim": "B12",
+      "lib": "death2"
+    },
+    {
+      "orden": 1204,
+      "categoria": "DEATH",
+      "idx": 178,
+      "anim": "B13",
+      "lib": "death2"
+    },
+    {
+      "orden": 1205,
+      "categoria": "DEATH",
+      "idx": 179,
+      "anim": "B14",
+      "lib": "death2"
+    },
+    {
+      "orden": 1206,
+      "categoria": "DEATH",
+      "idx": 180,
+      "anim": "B15",
+      "lib": "death2"
+    },
+    {
+      "orden": 1207,
+      "categoria": "DEATH",
+      "idx": 181,
+      "anim": "B16",
+      "lib": "death2"
+    },
+    {
+      "orden": 1208,
+      "categoria": "DEATH",
+      "idx": 182,
+      "anim": "B17",
+      "lib": "death2"
+    },
+    {
+      "orden": 1209,
+      "categoria": "DEATH",
+      "idx": 183,
+      "anim": "B18",
+      "lib": "death2"
+    },
+    {
+      "orden": 1210,
+      "categoria": "DEATH",
+      "idx": 184,
+      "anim": "B19",
+      "lib": "death2"
+    },
+    {
+      "orden": 1211,
+      "categoria": "DEATH",
+      "idx": 185,
+      "anim": "B20",
+      "lib": "death2"
+    },
+    {
+      "orden": 1212,
+      "categoria": "DEATH",
+      "idx": 186,
+      "anim": "B21",
+      "lib": "death2"
+    },
+    {
+      "orden": 1213,
+      "categoria": "DEATH",
+      "idx": 187,
+      "anim": "HB1",
+      "lib": "death2"
+    },
+    {
+      "orden": 1214,
+      "categoria": "DEATH",
+      "idx": 188,
+      "anim": "HB2",
+      "lib": "death2"
+    },
+    {
+      "orden": 1215,
+      "categoria": "DEATH",
+      "idx": 189,
+      "anim": "HB3",
+      "lib": "death2"
+    },
+    {
+      "orden": 1216,
+      "categoria": "DEATH",
+      "idx": 190,
+      "anim": "HB4",
+      "lib": "death2"
+    },
+    {
+      "orden": 1217,
+      "categoria": "DEATH",
+      "idx": 191,
+      "anim": "HB5",
+      "lib": "death2"
+    },
+    {
+      "orden": 1218,
+      "categoria": "DEATH",
+      "idx": 192,
+      "anim": "HB6",
+      "lib": "death2"
+    },
+    {
+      "orden": 1219,
+      "categoria": "DEATH",
+      "idx": 193,
+      "anim": "HB7",
+      "lib": "death2"
+    },
+    {
+      "orden": 1220,
+      "categoria": "DEATH",
+      "idx": 194,
+      "anim": "HB8",
+      "lib": "death2"
+    },
+    {
+      "orden": 1221,
+      "categoria": "DEATH",
+      "idx": 195,
+      "anim": "HB9",
+      "lib": "death2"
+    },
+    {
+      "orden": 1222,
+      "categoria": "DEATH",
+      "idx": 196,
+      "anim": "HB10",
+      "lib": "death2"
+    },
+    {
+      "orden": 1223,
+      "categoria": "DEATH",
+      "idx": 197,
+      "anim": "R1",
+      "lib": "death2"
+    },
+    {
+      "orden": 1224,
+      "categoria": "DEATH",
+      "idx": 198,
+      "anim": "R2",
+      "lib": "death2"
+    },
+    {
+      "orden": 1225,
+      "categoria": "DEATH",
+      "idx": 199,
+      "anim": "R3",
+      "lib": "death2"
+    },
+    {
+      "orden": 1226,
+      "categoria": "DEATH",
+      "idx": 200,
+      "anim": "R4",
+      "lib": "death2"
+    },
+    {
+      "orden": 1227,
+      "categoria": "DEATH",
+      "idx": 201,
+      "anim": "R5",
+      "lib": "death2"
+    },
+    {
+      "orden": 1228,
+      "categoria": "DEATH",
+      "idx": 202,
+      "anim": "R6",
+      "lib": "death2"
+    },
+    {
+      "orden": 1229,
+      "categoria": "DEATH",
+      "idx": 203,
+      "anim": "R7",
+      "lib": "death2"
+    },
+    {
+      "orden": 1230,
+      "categoria": "DEATH",
+      "idx": 204,
+      "anim": "R8",
+      "lib": "death2"
+    },
+    {
+      "orden": 1231,
+      "categoria": "DEATH",
+      "idx": 205,
+      "anim": "R9",
+      "lib": "death2"
+    },
+    {
+      "orden": 1232,
+      "categoria": "DEATH",
+      "idx": 206,
+      "anim": "R10",
+      "lib": "death2"
+    },
+    {
+      "orden": 1233,
+      "categoria": "DEATH",
+      "idx": 207,
+      "anim": "R1",
+      "lib": "death2"
+    },
+    {
+      "orden": 1234,
+      "categoria": "DEATH",
+      "idx": 208,
+      "anim": "R2",
+      "lib": "death2"
+    },
+    {
+      "orden": 1235,
+      "categoria": "DEATH",
+      "idx": 209,
+      "anim": "R3",
+      "lib": "death2"
+    },
+    {
+      "orden": 1236,
+      "categoria": "DEATH",
+      "idx": 210,
+      "anim": "R4",
+      "lib": "death2"
+    },
+    {
+      "orden": 1237,
+      "categoria": "DEATH",
+      "idx": 211,
+      "anim": "R5",
+      "lib": "death2"
+    },
+    {
+      "orden": 1238,
+      "categoria": "DEATH",
+      "idx": 212,
+      "anim": "R6",
+      "lib": "death2"
+    },
+    {
+      "orden": 1239,
+      "categoria": "DEATH",
+      "idx": 213,
+      "anim": "R7",
+      "lib": "death2"
+    },
+    {
+      "orden": 1240,
+      "categoria": "DEATH",
+      "idx": 214,
+      "anim": "R8",
+      "lib": "death2"
+    },
+    {
+      "orden": 1241,
+      "categoria": "DEATH",
+      "idx": 215,
+      "anim": "R9",
+      "lib": "death2"
+    },
+    {
+      "orden": 1242,
+      "categoria": "DEATH",
+      "idx": 216,
+      "anim": "R10",
+      "lib": "death2"
+    },
+    {
+      "orden": 1243,
+      "categoria": "DEATH",
+      "idx": 217,
+      "anim": "R11",
+      "lib": "death2"
+    },
+    {
+      "orden": 1244,
+      "categoria": "DEATH",
+      "idx": 218,
+      "anim": "R12",
+      "lib": "death2"
+    },
+    {
+      "orden": 1245,
+      "categoria": "DEATH",
+      "idx": 219,
+      "anim": "R13",
+      "lib": "death2"
+    },
+    {
+      "orden": 1246,
+      "categoria": "DEATH",
+      "idx": 220,
+      "anim": "L1",
+      "lib": "death2"
+    },
+    {
+      "orden": 1247,
+      "categoria": "DEATH",
+      "idx": 221,
+      "anim": "L2",
+      "lib": "death2"
+    },
+    {
+      "orden": 1248,
+      "categoria": "DEATH",
+      "idx": 222,
+      "anim": "L3",
+      "lib": "death2"
+    },
+    {
+      "orden": 1249,
+      "categoria": "DEATH",
+      "idx": 223,
+      "anim": "L4",
+      "lib": "death2"
+    },
+    {
+      "orden": 1250,
+      "categoria": "DEATH",
+      "idx": 224,
+      "anim": "L5",
+      "lib": "death2"
+    },
+    {
+      "orden": 1251,
+      "categoria": "DEATH",
+      "idx": 225,
+      "anim": "L6",
+      "lib": "death2"
+    },
+    {
+      "orden": 1252,
+      "categoria": "DEATH",
+      "idx": 226,
+      "anim": "L7",
+      "lib": "death2"
+    },
+    {
+      "orden": 1253,
+      "categoria": "DEATH",
+      "idx": 227,
+      "anim": "L8",
+      "lib": "death2"
+    },
+    {
+      "orden": 1254,
+      "categoria": "DEATH",
+      "idx": 228,
+      "anim": "L9",
+      "lib": "death2"
+    },
+    {
+      "orden": 1255,
+      "categoria": "DEATH",
+      "idx": 229,
+      "anim": "L10",
+      "lib": "death2"
+    },
+    {
+      "orden": 1256,
+      "categoria": "DEATH",
+      "idx": 230,
+      "anim": "L11",
+      "lib": "death2"
+    },
+    {
+      "orden": 1257,
+      "categoria": "DEATH",
+      "idx": 231,
+      "anim": "L12",
+      "lib": "death2"
+    },
+    {
+      "orden": 1258,
+      "categoria": "DEATH",
+      "idx": 232,
+      "anim": "L13",
+      "lib": "death2"
+    },
+    {
+      "orden": 1259,
+      "categoria": "DEATH",
+      "idx": 233,
+      "anim": "1knife_ped",
+      "lib": "is_cuts"
+    },
+    {
+      "orden": 1260,
+      "categoria": "DEATH",
+      "idx": 234,
+      "anim": "1knife_die",
+      "lib": "is_cuts"
+    },
+    {
+      "orden": 1261,
+      "categoria": "DEATH",
+      "idx": 235,
+      "anim": "2knife_ped",
+      "lib": "is_cuts"
+    },
+    {
+      "orden": 1262,
+      "categoria": "DEATH",
+      "idx": 236,
+      "anim": "2knife_die",
+      "lib": "is_cuts"
+    },
+    {
+      "orden": 1263,
+      "categoria": "DEATH",
+      "idx": 237,
+      "anim": "Knife_Ped_Die",
+      "lib": "mmr"
+    }
+  ]
+}

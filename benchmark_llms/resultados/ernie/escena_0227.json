@@ -1,0 +1,209 @@
+{
+  "id": "escena_0227",
+  "modelo": "baidu/ernie-5.5-flash-preview:free",
+  "proveedor": "openrouter",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:47:26.142229+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "id": "gen-1794433646-dZdswZrJK8PfR1tWUJXk",
+    "object": "chat.completion",
+    "created": 1794433646,
+    "model": "baidu/ernie-5.5-flash-preview:free",
+    "provider": "Baidu",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"Un granjero conversa en una calle de San Fierro con niebla durante 30 segundos.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": 158,\n  \"actores_ids_sugeridos\": [\n    158\n  ],\n  \"ubicacion_id_sugerida\": \"lugar_33_1197\",\n  \"motivo_elecciones\": \"Se elige un actor con rol de granjero, una ubicación urbana de San Fierro y el clip de charla para representar la conversación; la niebla se indica con clima 4.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": 4,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"animacion\",\n  \"tipo_movimiento\": \"caminar\",\n  \"ruta_id_sugerida\": null,\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"bucle\",\n  \"razon_reproduccion\": \"La conversación debe mantenerse durante 30 segundos, por lo que el clip de charla se repite.\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": \"CHAT:5:ped:IDLE_chat\",\n  \"cantidad_actores\": 1,\n  \"animar_actores\": [\n    1\n  ],\n  \"dialogos\": [],\n  \"pasos\": [\n    {\n      \"accion\": \"animacion\",\n      \"actores\": [\n        1\n      ],\n      \"objetivo_actor\": null,\n      \"animacion\": \"CHAT:5:ped:IDLE_chat\",\n      \"reproduccion\": \"bucle\",\n      \"duracion\": 30\n    }\n  ],\n  \"roles\": [\n    \"granjero\"\n  ],\n  \"lugar_tipo\": \"calle\",\n  \"aviso_analisis\": \"No se especificó interlocutor; se representa la conversación con un actor usando una animación de charla.\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [\n    \"No hay diálogo sincronizado entre dos actores; se usa una animación de charla en solitario.\"\n  ],\n  \"aprendizaje_supervisado\": {\n    \"intencion\": \"conversar\",\n    \"clima\": \"niebla\",\n    \"lugar\": \"calle de San Fierro\",\n    \"duracion_s\": 30\n  }\n}",
+          "refusal": null,
+          "reasoning": "We need answer only JSON per schema. Need interpret request: \"un granjero conversa en una calle de San Fierro con niebla durante 30 segundos\". Need produce PlanMVP JSON. Need use catalog. Need not invent IDs. Need choose actor role granjero: actors 158 CWMOFR or 161 CWMYFR. One actor. Location San Fierro city street: choose one of ubicaciones. Need clima niebla: catalog? We have clima_id_sugerido max 22. Need know GTA SA weather IDs: 0 sunny? Actually weather IDs: 0 sunny, 1 clear, 2 cloudy, 3 rainy, 4 foggy? Let's recall GTA SA weather IDs: 0 Sunny, 1 Clear, 2 Cloudy, 3 Rainy, 4 Foggy, 5 Cloudy, 6 Rainy, 7 Sandstorm, 8 Rainy, 9 Foggy? Hmm. User says niebla. Need choose clima_id_sugerido. In GTA SA weather IDs: 0 sunny, 1 clear, 2 cloudy, 3 rainy, 4 foggy, 5 cloudy, 6 rainy, 7 sandstorm, 8 rainy, 9 foggy, 10 cloudy, 11 rainy, 12 sandstorm, 13 cloudy, 14 rainy, 15 sandstorm, 16 rainy, 17 sandstorm, 18 rainy, 19 sandstorm, 20 rainy, 21 sandstorm, 22 rainy? Not sure. But likely 4 or 9 for fog. Need not invent? It's data. Could use 4? The draft had clima 9. But request niebla. Need choose valid. Maybe weather ID 4 = foggy. Let's verify memory: GTA SA weather IDs: 0 = Sunny, 1 = Clear, 2 = Cloudy, 3 = Rainy, 4 = Foggy, 5 = Cloudy, 6 = Rainy, 7 = Sandstorm, 8 = Rainy, 9 = Foggy, 10 = Cloudy, 11 = Rainy, 12 = Sandstorm, 13 = Cloudy, 14 = Rainy, 15 = Sandstorm, 16 = Rainy, 17 = Sandstorm, 18 = Rainy, 19 = Sandstorm, 20 = Rainy, 21 = Sandstorm, 22 = Rainy? Actually weather IDs 0-22. Fog likely 4 and 9. Use 4. Need hora? Not specified. Could null. Duracion 30. Accion animacion, animacion_sugerida CHAT:5:ped:IDLE_chat. Reproduccion bucle? For conversation sustained 30s. But catalog says gestos puntuales no repeat? Bailar puede repetirse; gestos puntuales no. Conversation IDLE_chat maybe loop? It is idle chat, likely can loop. Need maybe reproduccion=bucle. But if one actor conversa, maybe use animacion CHAT:5:ped:IDLE_chat. Need pasos? Could include one step: accion animacion, actores [1], animacion CHAT:5:ped:IDLE_chat, reproduccion bucle, duracion 30. But schema pasos max 8. Need maybe no pasos? But better include. Need actor_id_sugerido? For one actor maybe actor_id_sugerido 158? actores_ids_sugeridos [158]. cantidad_actores 1. animar_actores [1]. roles [\"granjero\"]. lugar_tipo \"calle\"? ubicacion_id_sugerida choose San Fierro city. Need \"calle de San Fierro\". Locations are city points. Choose lugar_33_1197 maybe. Need motivo_elecciones. Need limitaciones? Maybe none. Need aviso_analisis? Maybe \"Niebla solicitada; clima 4\". Need fuente? Could be \"IA\" or local? Since we are generating. Use \"IA\". Need es_valido true. resumen. Need ensure JSON only. Need no markdown. Need include all required? Only es_valido, resumen required. But likely include many fields. Need not include null? Can include. Need ensure no invalid enum. accion top-level default? Could set \"animacion\". tipo_movimiento \"caminar\"? For animation maybe \"caminar\" default? Could set \"caminar\" or maybe \"animacion\"? Schema tipo_movimiento string no enum. But likely use \"caminar\"? The draft uses caminar. But for conversation, maybe \"caminar\" not relevant. Could set \"caminar\". Need ruta_id_sugerida null. vehiculo null. objeto null. dialogos maybe [] or maybe include a line? User didn't specify dialogue. Could leave empty. But \"conversa\" maybe need dialogos? Could add generic? But no need. Could include one dialogue? Might be okay but not requested. Better empty.\n\nNeed consider \"un granjero conversa\" singular. Could be one actor talking to someone? But only one actor. Could be talking to camera? The compiler supports one actor animation. If conversation with another actor, need two actors. User says un granjero conversa en una calle... Could imply with someone, but not specified. We can choose one actor. If want conversation, maybe two actors? But \"un granjero\" singular. Could use one actor performing chat idle. If need another listener, could add second actor? But roles? Catalog only granjero actors. Could use two granjeros? But request one. Keep one.\n\nNeed \"durante 30 segundos\" -> duracion_sugerida 30, paso duracion 30. Reproduccion bucle to fill 30s. But if clip length maybe shorter. Need razon_reproduccion. Could say \"Conversación sostenida durante 30 s; el clip de charla se repite para mantener la acción.\" But note \"gestos puntuales no\" but chat idle is sustained. OK.\n\nNeed \"niebla\" -> clima_id_sugerido 4. hora_sugerida null. Could choose morning? Not specified. Maybe null.\n\nNeed location: \"calle de San Fierro\". Choose lugar_33_1197 \"San Fierro · ciudad 7\". It is city. Could be street? All are city points. Need maybe choose one with orientation 0. OK.\n\nNeed actor: 158 CWMOFR CIVMALE granjero. Could choose 158. actor_id_sugerido 158. actores_ids_sugeridos [158]. cantidad_actores 1. animar_actores [1]. roles [\"granjero\"].\n\nNeed pasos: one PasoEscena: accion \"animacion\", actores [1], animacion \"CHAT:5:ped:IDLE_chat\", reproduccion \"bucle\", duracion 30. objetivo_actor null. Could include duracion. Good.\n\nNeed limitaciones: maybe [\"La conversación se representa con un actor y animación de charla; no hay diálogo sincronizado entre dos actores.\"] But if one actor, maybe no limitation. Could include \"No se especificó interlocutor; se usa animación de charla en solitario.\" But maybe not necessary. Could include to be transparent. Max 8.\n\nNeed aprendizaje_supervisado? Could include empty object. Not required. Could include {\"intencion\":\"conversar\",\"clima\":\"niebla\",\"lugar\":\"calle San Fierro\",\"duracion\":30}. But schema additionalProperties true. Could include. But maybe keep simple.\n\nNeed ensure JSON valid. No trailing commas. Use double quotes. Need only JSON. Final should be JSON object.\n\nDouble-check schema: PasoEscena required accion. actores minItems 1 max 4. reproduccion enum auto, una_vez, mantener, bucle. duracion max 60 min 1. OK.\n\nTop-level: es_valido boolean, resumen string. entorno_sugerido default ciudad. actor_id_sugerido integer or null. actores_ids_sugeridos array max 4. ubicacion_id_sugerida string or null. motivo_elecciones string. duracion_sugerida int 1..60. clima_id_sugerido int 0..22 or null. hora_sugerida int 0..23 or null. fuente string. accion string. tipo_movimiento string. ruta_id_sugerida string/null. ruta_vehiculo_id string/null. velocidad_kmh_sugerida int 10..90 or null. reproduccion enum. razon_reproduccion string. vehiculo_id_sugerido int/null. objeto_id_sugerido int/null. animacion_sugerida string/null. cantidad_actores int 1..4. animar_actores array ints max 4. dialogos array strings max 6. pasos array PasoEscena max 8. roles array strings max 4. lugar_tipo string/null. aviso_analisis string. vehiculo_en_movimiento boolean. limitaciones array strings max 8. aprendizaje_supervisado object.\n\nNeed maybe \"accion\" top-level should be \"animacion\". \"tipo_movimiento\" maybe \"caminar\"? Could be \"animacion\"? But default caminar. Since no movement, maybe \"caminar\" is okay? But could be misleading. Schema doesn't restrict. Maybe set \"tipo_movimiento\": \"animacion\"? But compiler may expect movement type? The draft uses caminar. The request is conversation, no movement. Could set \"caminar\" as default. But maybe better \"caminar\" because no route. Hmm.\n\nNeed \"reproduccion\" top-level: bucle. \"razon_reproduccion\": \"Mantener la conversación durante 30 segundos.\" Good.\n\nNeed \"animacion_sugerida\": exact clip ID \"CHAT:5:ped:IDLE_chat\". Good.\n\nNeed \"lugar_tipo\": \"calle\". Could be \"calle\". OK.\n\nNeed \"motivo_elecciones\": \"Actor granjero disponible; ubicación urbana de San Fierro; clip de charla para conversación; clima de niebla.\" Good.\n\nNeed \"aviso_analisis\": maybe \"La niebla se solicita como clima; se usa ID 4.\" But if not sure? Could say \"Clima de niebla representado con ID 4.\" OK.\n\nPotential issue: Weather ID 4 maybe not fog? If wrong, but likely. Could choose 9? Which is more likely? Let's recall exact GTA SA weather IDs from modding: Weather ID 0 = Sunny, 1 = Clear, 2 = Cloudy, 3 = Rainy, 4 = Foggy, 5 = Cloudy, 6 = Rainy, 7 = Sandstorm, 8 = Rainy, 9 = Foggy, 10 = Cloudy, 11 = Rainy, 12 = Sandstorm, 13 = Cloudy, 14 = Rainy, 15 = Sandstorm, 16 = Rainy, 17 = Sandstorm, 18 = Rainy, 19 = Sandstorm, 20 = Rainy, 21 = Sandstorm, 22 = Rainy? Actually there are 23 weather types. Fog maybe 4 and 9. Use 4. Good.\n\nNeed maybe \"hora_sugerida\": null. If fog maybe morning? Not specified. Null.\n\nNeed \"dialogos\": Could include [\"Hace una mañana con niebla en San Fierro.\"] But user didn't ask. If include, might be extra. Better empty.\n\nNeed \"pasos\": If include one step, top-level animacion_sugerida also. Good.\n\nNeed ensure \"actores\" in paso [1] refers to actor index, not model id. Yes.\n\nNeed \"animar_actores\": [1]. Good.\n\nCould there be requirement \"Bailar puede repetirse; gestos puntuales no.\" Chat idle maybe not a gesture? It is idle chat, can loop. OK.\n\nNeed final only JSON. Ensure no comments. Use ASCII? Spanish accents okay in JSON. Need escape? Not necessary. But final can include UTF-8.\n\nLet's craft JSON:\n{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"Un granjero conversa en una calle de San Fierro con niebla durante 30 segundos.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": 158,\n  \"actores_ids_sugeridos\": [158],\n  \"ubicacion_id_sugerida\": \"lugar_33_1197\",\n  \"motivo_elecciones\": \"Se elige un actor con rol de granjero, una ubicación urbana de San Fierro y el clip de charla para representar la conversación; la niebla se indica con clima 4.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": 4,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"animacion\",\n  \"tipo_movimiento\": \"caminar\",\n  \"ruta_id_sugerida\": null,\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"bucle\",\n  \"razon_reproduccion\": \"La conversación debe mantenerse durante 30 segundos, por lo que el clip de charla se repite.\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": \"CHAT:5:ped:IDLE_chat\",\n  \"cantidad_actores\": 1,\n  \"animar_actores\": [1],\n  \"dialogos\": [],\n  \"pasos\": [\n    {\n      \"accion\": \"animacion\",\n      \"actores\": [1],\n      \"objetivo_actor\": null,\n      \"animacion\": \"CHAT:5:ped:IDLE_chat\",\n      \"reproduccion\": \"bucle\",\n      \"duracion\": 30\n    }\n  ],\n  \"roles\": [\"granjero\"],\n  \"lugar_tipo\": \"calle\",\n  \"aviso_analisis\": \"No se especificó interlocutor; se representa la conversación con un actor usando una animación de charla.\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [\n    \"No hay diálogo sincronizado entre dos actores; se usa una animación de charla en solitario.\"\n  ],\n  \"aprendizaje_supervisado\": {\n    \"intencion\": \"conversar\",\n    \"clima\": \"niebla\",\n    \"lugar\": \"calle de San Fierro\",\n    \"duracion_s\": 30\n  }\n}\n\nCheck if \"tipo_movimiento\": \"caminar\" maybe weird. Could set \"animacion\"? But schema default caminar. The compiler may use tipo_movimiento for route? If no route, maybe irrelevant. Could set \"caminar\" to satisfy default. OK.\n\nNeed maybe \"reproduccion\" in paso \"bucle\". Good.\n\nPotential issue: \"animacion\" clip ID includes colon. OK.\n\nNeed only JSON. final.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer only JSON per schema. Need interpret request: \"un granjero conversa en una calle de San Fierro con niebla durante 30 segundos\". Need produce PlanMVP JSON. Need use catalog. Need not invent IDs. Need choose actor role granjero: actors 158 CWMOFR or 161 CWMYFR. One actor. Location San Fierro city street: choose one of ubicaciones. Need clima niebla: catalog? We have clima_id_sugerido max 22. Need know GTA SA weather IDs: 0 sunny? Actually weather IDs: 0 sunny, 1 clear, 2 cloudy, 3 rainy, 4 foggy? Let's recall GTA SA weather IDs: 0 Sunny, 1 Clear, 2 Cloudy, 3 Rainy, 4 Foggy, 5 Cloudy, 6 Rainy, 7 Sandstorm, 8 Rainy, 9 Foggy? Hmm. User says niebla. Need choose clima_id_sugerido. In GTA SA weather IDs: 0 sunny, 1 clear, 2 cloudy, 3 rainy, 4 foggy, 5 cloudy, 6 rainy, 7 sandstorm, 8 rainy, 9 foggy, 10 cloudy, 11 rainy, 12 sandstorm, 13 cloudy, 14 rainy, 15 sandstorm, 16 rainy, 17 sandstorm, 18 rainy, 19 sandstorm, 20 rainy, 21 sandstorm, 22 rainy? Not sure. But likely 4 or 9 for fog. Need not invent? It's data. Could use 4? The draft had clima 9. But request niebla. Need choose valid. Maybe weather ID 4 = foggy. Let's verify memory: GTA SA weather IDs: 0 = Sunny, 1 = Clear, 2 = Cloudy, 3 = Rainy, 4 = Foggy, 5 = Cloudy, 6 = Rainy, 7 = Sandstorm, 8 = Rainy, 9 = Foggy, 10 = Cloudy, 11 = Rainy, 12 = Sandstorm, 13 = Cloudy, 14 = Rainy, 15 = Sandstorm, 16 = Rainy, 17 = Sandstorm, 18 = Rainy, 19 = Sandstorm, 20 = Rainy, 21 = Sandstorm, 22 = Rainy? Actually weather IDs 0-22. Fog likely 4 and 9. Use 4. Need hora? Not specified. Could null. Duracion 30. Accion animacion, animacion_sugerida CHAT:5:ped:IDLE_chat. Reproduccion bucle? For conversation sustained 30s. But catalog says gestos puntuales no repeat? Bailar puede repetirse; gestos puntuales no. Conversation IDLE_chat maybe loop? It is idle chat, likely can loop. Need maybe reproduccion=bucle. But if one actor conversa, maybe use animacion CHAT:5:ped:IDLE_chat. Need pasos? Could include one step: accion animacion, actores [1], animacion CHAT:5:ped:IDLE_chat, reproduccion bucle, duracion 30. But schema pasos max 8. Need maybe no pasos? But better include. Need actor_id_sugerido? For one actor maybe actor_id_sugerido 158? actores_ids_sugeridos [158]. cantidad_actores 1. animar_actores [1]. roles [\"granjero\"]. lugar_tipo \"calle\"? ubicacion_id_sugerida choose San Fierro city. Need \"calle de San Fierro\". Locations are city points. Choose lugar_33_1197 maybe. Need motivo_elecciones. Need limitaciones? Maybe none. Need aviso_analisis? Maybe \"Niebla solicitada; clima 4\". Need fuente? Could be \"IA\" or local? Since we are generating. Use \"IA\". Need es_valido true. resumen. Need ensure JSON only. Need no markdown. Need include all required? Only es_valido, resumen required. But likely include many fields. Need not include null? Can include. Need ensure no invalid enum. accion top-level default? Could set \"animacion\". tipo_movimiento \"caminar\"? For animation maybe \"caminar\" default? Could set \"caminar\" or maybe \"animacion\"? Schema tipo_movimiento string no enum. But likely use \"caminar\"? The draft uses caminar. But for conversation, maybe \"caminar\" not relevant. Could set \"caminar\". Need ruta_id_sugerida null. vehiculo null. objeto null. dialogos maybe [] or maybe include a line? User didn't specify dialogue. Could leave empty. But \"conversa\" maybe need dialogos? Could add generic? But no need. Could include one dialogue? Might be okay but not requested. Better empty.\n\nNeed consider \"un granjero conversa\" singular. Could be one actor talking to someone? But only one actor. Could be talking to camera? The compiler supports one actor animation. If conversation with another actor, need two actors. User says un granjero conversa en una calle... Could imply with someone, but not specified. We can choose one actor. If want conversation, maybe two actors? But \"un granjero\" singular. Could use one actor performing chat idle. If need another listener, could add second actor? But roles? Catalog only granjero actors. Could use two granjeros? But request one. Keep one.\n\nNeed \"durante 30 segundos\" -> duracion_sugerida 30, paso duracion 30. Reproduccion bucle to fill 30s. But if clip length maybe shorter. Need razon_reproduccion. Could say \"Conversación sostenida durante 30 s; el clip de charla se repite para mantener la acción.\" But note \"gestos puntuales no\" but chat idle is sustained. OK.\n\nNeed \"niebla\" -> clima_id_sugerido 4. hora_sugerida null. Could choose morning? Not specified. Maybe null.\n\nNeed location: \"calle de San Fierro\". Choose lugar_33_1197 \"San Fierro · ciudad 7\". It is city. Could be street? All are city points. Need maybe choose one with orientation 0. OK.\n\nNeed actor: 158 CWMOFR CIVMALE granjero. Could choose 158. actor_id_sugerido 158. actores_ids_sugeridos [158]. cantidad_actores 1. animar_actores [1]. roles [\"granjero\"].\n\nNeed pasos: one PasoEscena: accion \"animacion\", actores [1], animacion \"CHAT:5:ped:IDLE_chat\", reproduccion \"bucle\", duracion 30. objetivo_actor null. Could include duracion. Good.\n\nNeed limitaciones: maybe [\"La conversación se representa con un actor y animación de charla; no hay diálogo sincronizado entre dos actores.\"] But if one actor, maybe no limitation. Could include \"No se especificó interlocutor; se usa animación de charla en solitario.\" But maybe not necessary. Could include to be transparent. Max 8.\n\nNeed aprendizaje_supervisado? Could include empty object. Not required. Could include {\"intencion\":\"conversar\",\"clima\":\"niebla\",\"lugar\":\"calle San Fierro\",\"duracion\":30}. But schema additionalProperties true. Could include. But maybe keep simple.\n\nNeed ensure JSON valid. No trailing commas. Use double quotes. Need only JSON. Final should be JSON object.\n\nDouble-check schema: PasoEscena required accion. actores minItems 1 max 4. reproduccion enum auto, una_vez, mantener, bucle. duracion max 60 min 1. OK.\n\nTop-level: es_valido boolean, resumen string. entorno_sugerido default ciudad. actor_id_sugerido integer or null. actores_ids_sugeridos array max 4. ubicacion_id_sugerida string or null. motivo_elecciones string. duracion_sugerida int 1..60. clima_id_sugerido int 0..22 or null. hora_sugerida int 0..23 or null. fuente string. accion string. tipo_movimiento string. ruta_id_sugerida string/null. ruta_vehiculo_id string/null. velocidad_kmh_sugerida int 10..90 or null. reproduccion enum. razon_reproduccion string. vehiculo_id_sugerido int/null. objeto_id_sugerido int/null. animacion_sugerida string/null. cantidad_actores int 1..4. animar_actores array ints max 4. dialogos array strings max 6. pasos array PasoEscena max 8. roles array strings max 4. lugar_tipo string/null. aviso_analisis string. vehiculo_en_movimiento boolean. limitaciones array strings max 8. aprendizaje_supervisado object.\n\nNeed maybe \"accion\" top-level should be \"animacion\". \"tipo_movimiento\" maybe \"caminar\"? Could be \"animacion\"? But default caminar. Since no movement, maybe \"caminar\" is okay? But could be misleading. Schema doesn't restrict. Maybe set \"tipo_movimiento\": \"animacion\"? But compiler may expect movement type? The draft uses caminar. The request is conversation, no movement. Could set \"caminar\" as default. But maybe better \"caminar\" because no route. Hmm.\n\nNeed \"reproduccion\" top-level: bucle. \"razon_reproduccion\": \"Mantener la conversación durante 30 segundos.\" Good.\n\nNeed \"animacion_sugerida\": exact clip ID \"CHAT:5:ped:IDLE_chat\". Good.\n\nNeed \"lugar_tipo\": \"calle\". Could be \"calle\". OK.\n\nNeed \"motivo_elecciones\": \"Actor granjero disponible; ubicación urbana de San Fierro; clip de charla para conversación; clima de niebla.\" Good.\n\nNeed \"aviso_analisis\": maybe \"La niebla se solicita como clima; se usa ID 4.\" But if not sure? Could say \"Clima de niebla representado con ID 4.\" OK.\n\nPotential issue: Weather ID 4 maybe not fog? If wrong, but likely. Could choose 9? Which is more likely? Let's recall exact GTA SA weather IDs from modding: Weather ID 0 = Sunny, 1 = Clear, 2 = Cloudy, 3 = Rainy, 4 = Foggy, 5 = Cloudy, 6 = Rainy, 7 = Sandstorm, 8 = Rainy, 9 = Foggy, 10 = Cloudy, 11 = Rainy, 12 = Sandstorm, 13 = Cloudy, 14 = Rainy, 15 = Sandstorm, 16 = Rainy, 17 = Sandstorm, 18 = Rainy, 19 = Sandstorm, 20 = Rainy, 21 = Sandstorm, 22 = Rainy? Actually there are 23 weather types. Fog maybe 4 and 9. Use 4. Good.\n\nNeed maybe \"hora_sugerida\": null. If fog maybe morning? Not specified. Null.\n\nNeed \"dialogos\": Could include [\"Hace una mañana con niebla en San Fierro.\"] But user didn't ask. If include, might be extra. Better empty.\n\nNeed \"pasos\": If include one step, top-level animacion_sugerida also. Good.\n\nNeed ensure \"actores\" in paso [1] refers to actor index, not model id. Yes.\n\nNeed \"animar_actores\": [1]. Good.\n\nCould there be requirement \"Bailar puede repetirse; gestos puntuales no.\" Chat idle maybe not a gesture? It is idle chat, can loop. OK.\n\nNeed final only JSON. Ensure no comments. Use ASCII? Spanish accents okay in JSON. Need escape? Not necessary. But final can include UTF-8.\n\nLet's craft JSON:\n{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"Un granjero conversa en una calle de San Fierro con niebla durante 30 segundos.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": 158,\n  \"actores_ids_sugeridos\": [158],\n  \"ubicacion_id_sugerida\": \"lugar_33_1197\",\n  \"motivo_elecciones\": \"Se elige un actor con rol de granjero, una ubicación urbana de San Fierro y el clip de charla para representar la conversación; la niebla se indica con clima 4.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": 4,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"animacion\",\n  \"tipo_movimiento\": \"caminar\",\n  \"ruta_id_sugerida\": null,\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"bucle\",\n  \"razon_reproduccion\": \"La conversación debe mantenerse durante 30 segundos, por lo que el clip de charla se repite.\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": \"CHAT:5:ped:IDLE_chat\",\n  \"cantidad_actores\": 1,\n  \"animar_actores\": [1],\n  \"dialogos\": [],\n  \"pasos\": [\n    {\n      \"accion\": \"animacion\",\n      \"actores\": [1],\n      \"objetivo_actor\": null,\n      \"animacion\": \"CHAT:5:ped:IDLE_chat\",\n      \"reproduccion\": \"bucle\",\n      \"duracion\": 30\n    }\n  ],\n  \"roles\": [\"granjero\"],\n  \"lugar_tipo\": \"calle\",\n  \"aviso_analisis\": \"No se especificó interlocutor; se representa la conversación con un actor usando una animación de charla.\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [\n    \"No hay diálogo sincronizado entre dos actores; se usa una animación de charla en solitario.\"\n  ],\n  \"aprendizaje_supervisado\": {\n    \"intencion\": \"conversar\",\n    \"clima\": \"niebla\",\n    \"lugar\": \"calle de San Fierro\",\n    \"duracion_s\": 30\n  }\n}\n\nCheck if \"tipo_movimiento\": \"caminar\" maybe weird. Could set \"animacion\"? But schema default caminar. The compiler may use tipo_movimiento for route? If no route, maybe irrelevant. Could set \"caminar\" to satisfy default. OK.\n\nNeed maybe \"reproduccion\" in paso \"bucle\". Good.\n\nPotential issue: \"animacion\" clip ID includes colon. OK.\n\nNeed only JSON. final.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4346,
+      "completion_tokens": 3863,
+      "total_tokens": 8209,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 2304,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3270,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 4346,
+    "completion_tokens": 3863,
+    "total_tokens": 8209,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 2304,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3270,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Un granjero conversa en una calle de San Fierro con niebla durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 158,
+    "actores_ids_sugeridos": [
+      158
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Se elige un actor con rol de granjero, una ubicación urbana de San Fierro y el clip de charla para representar la conversación; la niebla se indica con clima 4.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 4,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "animacion",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "bucle",
+    "razon_reproduccion": "La conversación debe mantenerse durante 30 segundos, por lo que el clip de charla se repite.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "CHAT:5:ped:IDLE_chat",
+    "cantidad_actores": 1,
+    "animar_actores": [
+      1
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "animacion",
+        "actores": [
+          1
+        ],
+        "objetivo_actor": null,
+        "animacion": "CHAT:5:ped:IDLE_chat",
+        "reproduccion": "bucle",
+        "duracion": 30
+      }
+    ],
+    "roles": [
+      "granjero"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "No se especificó interlocutor; se representa la conversación con un actor usando una animación de charla.",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [
+      "No hay diálogo sincronizado entre dos actores; se usa una animación de charla en solitario."
+    ],
+    "aprendizaje_supervisado": {
+      "intencion": "conversar",
+      "clima": "niebla",
+      "lugar": "calle de San Fierro",
+      "duracion_s": 30
+    }
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Un granjero conversa en una calle de San Fierro con niebla durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 158,
+    "actores_ids_sugeridos": [
+      158
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Se elige un actor con rol de granjero, una ubicación urbana de San Fierro y el clip de charla para representar la conversación; la niebla se indica con clima 4.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 9,
+    "hora_sugerida": 12,
+    "fuente": "IA",
+    "accion": "animacion",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "bucle",
+    "razon_reproduccion": "Comportamiento propuesto por el análisis de la escena.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "CHAT:5:ped:IDLE_chat",
+    "cantidad_actores": 1,
+    "animar_actores": [
+      1
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "animacion",
+        "actores": [
+          1
+        ],
+        "objetivo_actor": null,
+        "animacion": "CHAT:5:ped:IDLE_chat",
+        "reproduccion": "bucle",
+        "duracion": 30
+      }
+    ],
+    "roles": [
+      "granjero"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "No se especificó interlocutor; se representa la conversación con un actor usando una animación de charla.",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [
+      "No hay diálogo sincronizado entre dos actores; se usa una animación de charla en solitario."
+    ],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "f53546096c591d04c9fc99c857898e041239e13bd832fcbbead17bb94415eb64",
+  "segundos": 14.141,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:36.863529+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}

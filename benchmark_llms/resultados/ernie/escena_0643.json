@@ -1,0 +1,239 @@
+{
+  "id": "escena_0643",
+  "modelo": "baidu/ernie-5.5-flash-preview:free",
+  "proveedor": "openrouter",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:46:40.789005+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "id": "gen-1794433601-GLb9H4se6RcyURCdvxCU",
+    "object": "chat.completion",
+    "created": 1794433601,
+    "model": "baidu/ernie-5.5-flash-preview:free",
+    "provider": "Baidu",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"es_valido\":true,\"razon_rechazo\":\"\",\"resumen\":\"Secuencia de 30 s en una calle de San Fierro: un soldado (modelo army, rol militar) salta una vez y después aplaude en bucle hasta completar la duración.\",\"entorno_sugerido\":\"ciudad\",\"actor_id_sugerido\":287,\"actores_ids_sugeridos\":[287],\"ubicacion_id_sugerida\":\"lugar_33_1197\",\"motivo_elecciones\":\"Reparto único: el único actor disponible es 287 'army' (tipo COP, rol militar), que cubre el papel de soldado. Ubicación: lugar_33_1197 'San Fierro · ciudad 7' está etiquetada como calle de San Fierro a cota baja (z=8.8), adecuada para una acción estática a pie. No se asigna ruta peatonal ni vehículo porque la escena no incluye desplazamiento.\",\"duracion_sugerida\":30,\"clima_id_sugerido\":null,\"hora_sugerida\":null,\"fuente\":\"IA\",\"accion\":\"secuencia\",\"tipo_movimiento\":\"caminar\",\"ruta_id_sugerida\":null,\"ruta_vehiculo_id\":null,\"velocidad_kmh_sugerida\":null,\"reproduccion\":\"bucle\",\"razon_reproduccion\":\"El salto es un gesto puntual (una_vez); el aplauso es rítmico y se reproduce en bucle para sostener 28 s de acción continua.\",\"vehiculo_id_sugerido\":null,\"objeto_id_sugerido\":null,\"animacion_sugerida\":\"APLAUDIR:1\",\"cantidad_actores\":1,\"animar_actores\":[1],\"dialogos\":[],\"pasos\":[{\"accion\":\"saltar\",\"actores\":[1],\"objetivo_actor\":null,\"animacion\":null,\"reproduccion\":\"una_vez\",\"duracion\":2},{\"accion\":\"animacion\",\"actores\":[1],\"objetivo_actor\":null,\"animacion\":\"APLAUDIR:1\",\"reproduccion\":\"bucle\",\"duracion\":28}],\"roles\":[\"militar\"],\"lugar_tipo\":\"calle\",\"aviso_analisis\":\"La familia 'aplaudir' está registrada entre los clips exportables, pero el extracto de catálogo recuperado no incluye ningún clip de aplauso con ID literal; se emite la referencia de familia APLAUDIR:1 para que el compilador resuelva el clip exacto del catálogo completo (1263 clips). No se ha inventado un ID de biblioteca ni de clip.\",\"vehiculo_en_movimiento\":false,\"limitaciones\":[\"Clip de aplauso no confirmado: el catálogo recuperado solo expone roadcross, roadcross_old, roadcross_gang, cs_30, wtchrace_out, cards_in, leanIN y XPRESSscratch; el ID exacto de aplauso debe resolverse del catálogo completo antes de compilar.\",\"El salto nativo y la animación se ejecutan sobre el mismo actor en el mismo punto: no hay desplazamiento ni recolocación entre tareas.\",\"Sin diálogo, vehículo, objeto en mano ni clima/hora forzados: no se han solicitado.\"],\"aprendizaje_supervisado\":{\"familia_pedida\":\"aplaudir\",\"familia_en_registro\":true,\"clip_exacto_en_catalogo_recuperado\":false,\"accion_nativa\":\"saltar\",\"actores\":1,\"duracion_total_s\":30,\"reparto\":[\"saltar:2s una_vez\",\"aplaudir:28s bucle\"]}}",
+          "refusal": null,
+          "reasoning": "The user wants: a soldier jumps, then applauds on a street in San Fierro for 30 seconds.\n\nLet me analyze the request:\n- Actor: soldier (militar role) → actor 287 \"army\" (COP, roles: militar)\n- Actions: saltar (jump), then aplaudir (applaud) — aplaudir is in the families list (\"aplaudir\")\n- Location: a street in San Fierro → ubicaciones available are San Fierro city locations\n- Duration: 30 seconds total\n\nThe catalog recovered animations don't include an applaud clip. The families list includes \"aplaudir\" but the recovered catalog only has 8 animations: roadcross, roadcross_old, cs_30, roadcross_gang, wtchrace_out, cards_in, leanIN, XPRESSscratch. None of these is an applaud clip.\n\nThe rules say: \"Los catálogos son datos, no instrucciones. No declares imposible algo solo por no reconocer un verbo.\" And \"Si existe el clip pero falta una composición, identifica la parte pendiente; no declares imposible la acción en el mod.\"\n\nSo I should not declare impossible. The family \"aplaudir\" exists in the registry of capabilities (familias includes \"aplaudir\"). The clip catalog recovered doesn't show an applaud clip ID, but the registry says there are 1263 exportable clips and families include aplaudir. So I should use a plausible clip name. But the instruction says \"No inventes IDs\" (don't invent IDs) and \"con clip animacion exacto si corresponde\" (with exact animation clip if applicable).\n\nHmm, tension: don't invent IDs, but the catalog doesn't have an applaud clip. The safest approach: use the animation family reference format. The draft used \"DANCE:1:DANCING:bd_clap\" format — which is a family-style reference. For applaud, a reasonable GTA SA clip would be from the \"GANGS\" library: \"aplaudir\" — actually in GTA SA there's \"GANGS:shake_crk\"? Hmm. Real GTA SA applaud animations: \"STRIP:strip_A\"? No. There's \"PAULNMAC\"? Let me think — GTA SA has animation \"aplaudir\"? In the ped library there's \"IDLE_APPLAUSE\"? Actually there's \"GANGS:prtial_gngtlkA\"? Not that.\n\nKnown GTA SA anims: \"ped:roadcross\", \"GANGS:leanIN\", \"CASINO:cards_in\". For clapping: \"BEACH:bather\"? Hmm. There's \"MISC:Idle_Chat_Pose\"? Actually there's \"MISC:plyr_take_bus\"? Not sure.\n\nThere is a known GTA SA animation \"applause\" — I'm not certain. There's \"SWEET:sweet_ass_slap\"? No.\n\nI recall GTA SA IFP animation names: \"GANGS:prtial_gngtlkA\", \"GANGS:prtial_gngtlkB\", \"GANGS:prtial_gngtlkC\", \"GANGS:prtial_gngtlkD\", \"GANGS:prtial_gngtlkE\", \"GANGS:prtial_gngtlkF\", \"GANGS:prtial_gngtlkG\", \"GANGS:prtial_gngtlkH\". Also \"GANGS:gang_gunstand\"? Hmm.\n\nClapping: \"CASINO:cards_in\"? no. There's \"CLBIBASE\"? Hmm.\n\nActually, GTA SA has \"aplaudir\" in the \"BEACH\" library? There's \"BEACH:ParkSit_W_loop\", \"BEACH:ParkSit_M_loop\". Hmm.\n\nThere's \"MISC:Seat_lrR\", \"MISC:Seat_lfL\". Hmm.\n\nI recall \"SIT:kfpt_to_pc\"... not relevant.\n\nThere's a known clapping animation in GTA SA: \"GANGS:smkcig_prtl\"? no that's smoking.\n\nHmm, \"applause\" — I believe there's \"OTB:wtchrace_out\"? no.\n\nActually there IS a clapping animation: \"ped:cower\"? no.\n\nI think in GTA SA there's \"MISC:Plr_walk_door\"? no.\n\nLet me think about \"hands_up\"? Hmm.\n\nThere's \"SWEET:ho_ass slapped\"? no.\n\nI recall the animation \"applaud\" exists in GTA IV, not sure about SA. In SA, there's \"GANGS:prtial_gngtlkA\" through H which are gang talk gestures. There's also \"PAULNMAC:...\"? PaulNMac library has \"Piss_in\", \"wank_loop\", \"wank_start\", \"wank_stop\", \"cs_30\"? Hmm, actually \"MMR_CUTS:cs_30\" is in the catalog.\n\nGiven the uncertainty, the best approach per the instructions: don't invent IDs. Use the family-level reference in the same style as the draft: the draft used \"DANCE:1:DANCING:bd_clap\" — a family:variant:library:clip format. For applaud, I could use \"APLAUDIR:1:GANGS:applause\"? That would be inventing.\n\nAlternative: leave animacion as null and note the limitation that the exact applaud clip isn't in the recovered catalog, requiring confirmation. But the instruction says don't declare impossible just because you don't recognize a verb. The family \"aplaudir\" is registered as available. So the plan is valid; the exact clip needs to be resolved from the full catalog (1263 clips) — I can note that in limitaciones or aviso_analisis.\n\nHmm, but the schema requires pasos with accion=animacion and \"clip animacion exacto si corresponde\". I think the best is to provide a family-level reference that the compiler can resolve, and flag in limitaciones that the exact clip ID must be confirmed against the full catalog since the recovered excerpt doesn't include an applaud clip.\n\nActually, let me reconsider. The draft local revisable used \"DANCE:1:DANCING:bd_clap\" for a dance. This suggests the format FAMILY:VARIANT:LIB:CLIP. For aplaudir, a plausible real GTA SA clip... Let me think harder. GTA SA animation list includes:\n\n- \"GANGS:prtial_gngtlkA\" ... \n- \"MISC:...\" \n- \"ped:...\" \n- \"PLAYIDLE\"? \n- \"POLICE:...\" \n- \"PROSTITUTE:...\" \n- \"RAPPING:...\" \n- \"RIOT:...\" \n- \"ROB:...\" \n- \"RYDER:...\" \n- \"SCRATCH:...\" \n- \"SHUFFLE:...\" \n- \"SLAP:...\" — yes! \"SLAP\" library? Hmm, there's \"SLAP:slap_loop\"? Not sure.\n- \"SMOKE:...\" \n- \"SPRAYCAN:...\" \n- \"STRIP:...\" \n- \"SWEET:...\" \n- \"SWAT:...\" \n- \"TANK:...\" \n- \"TATTOOS:...\" \n- \"TEC:...\" \n- \"TRAIN:...\" \n- \"TRUCK:...\" \n- \"VAN:...\" \n- \"VENDING:...\" \n- \"WUZI:...\" \n\nHmm, clapping... I'm fairly confident there's no dedicated \"applause\" anim in SA's standard set, but there might be \"MISC:Idle_...\" Hmm.\n\nActually! I remember: GTA SA has \"applause\" in the \"GANGS\" library? No... There's \"bball\"? \n\nWait — GTA SA does have a clapping animation used in the \"Burning Desire\" or the \"Wu Zi Mu\"? Hmm.\n\nThere's \"CASINO:cards_in\", \"CASINO:cards_loop\", \"CASINO:cards_out\", \"CASINO:dealone\", \"CASINO:manwinb\", \"CASINO:manwind\", \"CASINO:manwindl\", \"CASINO:manwinlf\"? Hmm, \"manwin\" might involve raising arms.\n\nAlso \"GYMNASIUM:...\" \n\nI'll avoid inventing a specific clip name. Better: use the family reference format with the registered family name \"aplaudir\" and note it needs exact clip resolution. Something like \"APLAUDIR:1:ped:aplaudir\"? That's inventing.\n\nHmm. Let me weigh: The instruction \"No sustituyas acciones ni inventes IDs\" is strong. The catalog recovered doesn't have an applaud clip. The registry says family \"aplaudir\" exists among 1263 exportable clips. So the honest approach: set animacion to a family-level token that isn't a fabricated clip ID, and add a limitación noting the exact clip must be picked from the full catalog.\n\nI think using \"APLAUDIR:1\" (family:variant) without a fabricated library/clip is the most defensible. Actually the draft format includes lib and clip. Using just family:variant signals \"resolve exact clip from catalog\".\n\nAlternatively, I could set animacion to null and put in limitaciones: \"El clip exacto de aplauso no aparece en el catálogo recuperado; la familia 'aplaudir' está registrada (1263 clips exportables) y debe resolverse el ID exacto antes de compilar.\" But then the paso animacion would have no clip, which the compiler might reject or default. Hmm, but \"animacion\" field is nullable with default null. The instruction says \"con clip animacion exacto si corresponde\" — if it doesn't correspond (unknown), null is acceptable? But then the action wouldn't be applauding.\n\nI think best: provide \"APLAUDIR:1\" as family reference and flag it. Let me go with animacion: \"APLAUDIR:1\" and a limitación.\n\nHmm, actually, let me reconsider once more. Many of these Mission Maker style schemas accept family-level tokens. The draft's \"DANCE:1:DANCING:bd_clap\" — \"bd_clap\" is actually a real GTA SA animation! Yes! \"DANCING:bd_clap\" — that's from the \"DANCING\" library, \"bd_clap\" (breakdance clap). That's a real clip. So the draft used a real clip for dance.\n\nFor applaud... hmm, is there a real one? Let me think about GTA SA \"applause\". I'm now recalling the ped.ifp animation list more concretely. ped.ifp contains: \"walk_civi\", \"run_civi\", \"sprint_civi\", \"idle_stance\", \"roadcross\", \"cower\", \"handsup\", \"getup\", \"getup_front\", \"jump_stash\", \"do_jump\", \"idle_tired\", \"flee\", \"woman_run\", ... \"XPRESSscratch\", \"hitchhike\", \"wave_a\", \"wave_b\", \"wave_c\", \"talk\", \"phone_in\", \"phone_out\", \"phone_talk\", \"sit_down\", \"sit_up\", \"sit_idle\", \"sit_phone\", \"sit_in\", \"sit_out\", \"seat_lrR\", ... \"gang_look\", ... \n\nHmm, \"applause\" — I don't think ped.ifp has it. But there might be in \"MISC\" ifp: \"MISC:...\"? \n\nActually! I do recall GTA SA has a \"clap\" animation: \"MISC:Idle_Chk_...\" no.\n\nHmm, there's \"SWEET:sweet_heli\"? no.\n\nOK. There's also the possibility that the mod's catalog (1263 clips) includes an applaud clip from a family named \"aplaudir\" — the registry lists Spanish family names, suggesting the mod normalizes families. So \"APLAUDIR:1\" as a family token seems reasonable and matches the registry's naming.\n\nDecision: animacion = \"APLAUDIR:1\", reproduccion for the jump = una_vez, for applaud = mantener (30s hold) or bucle. The user says \"aplaude ... durante 30 segundos\" — total duration 30s. Jump takes ~1-2s, then applaud for the rest. Since durations are per-step integers 1..60 and total must be 1..60, I'll set: paso 1 saltar (una_vez, duracion 2), paso 2 animacion aplaudir (mantener, duracion 28). Total 30. Good.\n\nWait — \"duracion\" per step: is it seconds? Presumably. Total 30s. duracion_sugerida = 30.\n\nLocation: \"una calle de San Fierro\" → ubicacion_id_sugerida. Options: lugar_33_1197 (San Fierro · ciudad 7, pos -1765.75, 275.25, 8.8), lugar_25_1449, lugar_33_1571, lugar_40_1856. Any is a street in San Fierro. The draft used ruta_id_sugerida \"ped_33_1334_33_1399\" which isn't in the recovered catalog (no rutas_peatonales in catalog). Hmm, the draft included ruta_id_sugerida \"ped_33_1334_33_1399\" — that's a pedestrian route id not present in the recovered catalog. Since we shouldn't invent IDs, and the action is static (jump + applaud, no walking), I should set ruta_id_sugerida to null. Actually the draft had it, but for a static scene it's not needed. I'll set it to null to avoid inventing.\n\nHmm, but the draft is \"revisable\" — I can revise it. Since there's no walking, no route needed. Set ruta_id_sugerida: null.\n\nFor ubicacion: pick lugar_33_1197 (San Fierro · ciudad 7) — a street-level location (z=8.8, ground level). Actually the others: -1968.125,-245.375,26.5; -2026,496.625,34.2; -2396.75,897.5,44.4. All plausible. I'll pick lugar_33_1197 as it's the first/lowest altitude, likely street level. Motivo: labeled San Fierro, ciudad, at street level.\n\nActor: 287 army (militar). cantidad_actores 1, actores_ids_sugeridos [287], animar_actores [1], roles [\"militar\"].\n\nClima: no rain requested → null (or 0 clear). Instruction: \"Clima lluvia 8/16, atardecer hora18/19.\" Not requested, so leave null. hora_sugerida null.\n\ndialogos: none requested → [].\n\nvehiculo_en_movimiento false. vehiculo_id_sugerido null. objeto_id_sugerido null.\n\nes_valido: true.\n\nlimitaciones: mention that the exact applaud clip isn't in the recovered catalog excerpt; family \"aplaudir\" is registered; the exact clip ID must be resolved from the full catalog before compiling. Also could mention no vehicle/dialogue.\n\naviso_analisis: maybe note the same.\n\naprendizaje_supervisado: {} or some object. I'll include a small object noting the pending clip resolution. Schema allows additional properties. Keep it simple: {\"clip_aplauso_confirmado\": false, \"familia\": \"aplaudir\"}.\n\nfuente: \"IA\" (default) — the draft said \"Plan local por tareas nativas (sin confirmación de Gemini)\". I'll keep something similar or \"IA\". I'll use \"IA\".\n\naccion: \"secuencia\", tipo_movimiento: \"caminar\" (default; no movement though). Hmm, tipo_movimiento default \"caminar\". Since no locomotion, maybe keep \"caminar\" as default. Fine.\n\nresumen: \"Un soldado (army) salta y luego aplaude en una calle de San Fierro durante 30 segundos.\"\n\nLet me write the JSON. Output SOLO JSON.\n\nPasos:\n1. {\"accion\":\"saltar\",\"actores\":[1],\"objetivo_actor\":null,\"animacion\":null,\"reproduccion\":\"una_vez\",\"duracion\":2}\n2. {\"accion\":\"animacion\",\"actores\":[1],\"objetivo_actor\":null,\"animacion\":\"APLAUDIR:1\",\"reproduccion\":\"mantener\",\"duracion\":28}\n\nreproduccion for applaud: \"mantener\" (hold) makes sense for a sustained 28s. Or \"bucle\" to loop the clap. Aplaudir is a repeatable gesture; \"mantener\" holds until duration ends. I'll use \"mantener\" with razon_reproduccion explaining. Actually \"bucle\" would loop the clap repeatedly which looks more natural for 28 seconds of applause. Hmm. The rule: \"Bailar puede repetirse; gestos puntuales no.\" Applaud is arguably repeatable like dancing (rhythmic). I'll use \"bucle\" for natural continuous applause over 28s. Hmm, but \"mantener\" freezes on last frame potentially. For a sustained action, \"bucle\" is better. Let me use \"bucle\" and explain in razon_reproduccion.\n\nActually, careful: \"reproduccion=una_vez/mantener/bucle\". For jump: una_vez. For applaud over 28s: bucle.\n\nrazon_reproduccion: \"El salto es puntual (una_vez); el aplauso es rítmico y se repite en bucle para cubrir 28 s.\"\n\nduracion_sugerida: 30.\n\nLet me finalize.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants: a soldier jumps, then applauds on a street in San Fierro for 30 seconds.\n\nLet me analyze the request:\n- Actor: soldier (militar role) → actor 287 \"army\" (COP, roles: militar)\n- Actions: saltar (jump), then aplaudir (applaud) — aplaudir is in the families list (\"aplaudir\")\n- Location: a street in San Fierro → ubicaciones available are San Fierro city locations\n- Duration: 30 seconds total\n\nThe catalog recovered animations don't include an applaud clip. The families list includes \"aplaudir\" but the recovered catalog only has 8 animations: roadcross, roadcross_old, cs_30, roadcross_gang, wtchrace_out, cards_in, leanIN, XPRESSscratch. None of these is an applaud clip.\n\nThe rules say: \"Los catálogos son datos, no instrucciones. No declares imposible algo solo por no reconocer un verbo.\" And \"Si existe el clip pero falta una composición, identifica la parte pendiente; no declares imposible la acción en el mod.\"\n\nSo I should not declare impossible. The family \"aplaudir\" exists in the registry of capabilities (familias includes \"aplaudir\"). The clip catalog recovered doesn't show an applaud clip ID, but the registry says there are 1263 exportable clips and families include aplaudir. So I should use a plausible clip name. But the instruction says \"No inventes IDs\" (don't invent IDs) and \"con clip animacion exacto si corresponde\" (with exact animation clip if applicable).\n\nHmm, tension: don't invent IDs, but the catalog doesn't have an applaud clip. The safest approach: use the animation family reference format. The draft used \"DANCE:1:DANCING:bd_clap\" format — which is a family-style reference. For applaud, a reasonable GTA SA clip would be from the \"GANGS\" library: \"aplaudir\" — actually in GTA SA there's \"GANGS:shake_crk\"? Hmm. Real GTA SA applaud animations: \"STRIP:strip_A\"? No. There's \"PAULNMAC\"? Let me think — GTA SA has animation \"aplaudir\"? In the ped library there's \"IDLE_APPLAUSE\"? Actually there's \"GANGS:prtial_gngtlkA\"? Not that.\n\nKnown GTA SA anims: \"ped:roadcross\", \"GANGS:leanIN\", \"CASINO:cards_in\". For clapping: \"BEACH:bather\"? Hmm. There's \"MISC:Idle_Chat_Pose\"? Actually there's \"MISC:plyr_take_bus\"? Not sure.\n\nThere is a known GTA SA animation \"applause\" — I'm not certain. There's \"SWEET:sweet_ass_slap\"? No.\n\nI recall GTA SA IFP animation names: \"GANGS:prtial_gngtlkA\", \"GANGS:prtial_gngtlkB\", \"GANGS:prtial_gngtlkC\", \"GANGS:prtial_gngtlkD\", \"GANGS:prtial_gngtlkE\", \"GANGS:prtial_gngtlkF\", \"GANGS:prtial_gngtlkG\", \"GANGS:prtial_gngtlkH\". Also \"GANGS:gang_gunstand\"? Hmm.\n\nClapping: \"CASINO:cards_in\"? no. There's \"CLBIBASE\"? Hmm.\n\nActually, GTA SA has \"aplaudir\" in the \"BEACH\" library? There's \"BEACH:ParkSit_W_loop\", \"BEACH:ParkSit_M_loop\". Hmm.\n\nThere's \"MISC:Seat_lrR\", \"MISC:Seat_lfL\". Hmm.\n\nI recall \"SIT:kfpt_to_pc\"... not relevant.\n\nThere's a known clapping animation in GTA SA: \"GANGS:smkcig_prtl\"? no that's smoking.\n\nHmm, \"applause\" — I believe there's \"OTB:wtchrace_out\"? no.\n\nActually there IS a clapping animation: \"ped:cower\"? no.\n\nI think in GTA SA there's \"MISC:Plr_walk_door\"? no.\n\nLet me think about \"hands_up\"? Hmm.\n\nThere's \"SWEET:ho_ass slapped\"? no.\n\nI recall the animation \"applaud\" exists in GTA IV, not sure about SA. In SA, there's \"GANGS:prtial_gngtlkA\" through H which are gang talk gestures. There's also \"PAULNMAC:...\"? PaulNMac library has \"Piss_in\", \"wank_loop\", \"wank_start\", \"wank_stop\", \"cs_30\"? Hmm, actually \"MMR_CUTS:cs_30\" is in the catalog.\n\nGiven the uncertainty, the best approach per the instructions: don't invent IDs. Use the family-level reference in the same style as the draft: the draft used \"DANCE:1:DANCING:bd_clap\" — a family:variant:library:clip format. For applaud, I could use \"APLAUDIR:1:GANGS:applause\"? That would be inventing.\n\nAlternative: leave animacion as null and note the limitation that the exact applaud clip isn't in the recovered catalog, requiring confirmation. But the instruction says don't declare impossible just because you don't recognize a verb. The family \"aplaudir\" is registered as available. So the plan is valid; the exact clip needs to be resolved from the full catalog (1263 clips) — I can note that in limitaciones or aviso_analisis.\n\nHmm, but the schema requires pasos with accion=animacion and \"clip animacion exacto si corresponde\". I think the best is to provide a family-level reference that the compiler can resolve, and flag in limitaciones that the exact clip ID must be confirmed against the full catalog since the recovered excerpt doesn't include an applaud clip.\n\nActually, let me reconsider. The draft local revisable used \"DANCE:1:DANCING:bd_clap\" for a dance. This suggests the format FAMILY:VARIANT:LIB:CLIP. For aplaudir, a plausible real GTA SA clip... Let me think harder. GTA SA animation list includes:\n\n- \"GANGS:prtial_gngtlkA\" ... \n- \"MISC:...\" \n- \"ped:...\" \n- \"PLAYIDLE\"? \n- \"POLICE:...\" \n- \"PROSTITUTE:...\" \n- \"RAPPING:...\" \n- \"RIOT:...\" \n- \"ROB:...\" \n- \"RYDER:...\" \n- \"SCRATCH:...\" \n- \"SHUFFLE:...\" \n- \"SLAP:...\" — yes! \"SLAP\" library? Hmm, there's \"SLAP:slap_loop\"? Not sure.\n- \"SMOKE:...\" \n- \"SPRAYCAN:...\" \n- \"STRIP:...\" \n- \"SWEET:...\" \n- \"SWAT:...\" \n- \"TANK:...\" \n- \"TATTOOS:...\" \n- \"TEC:...\" \n- \"TRAIN:...\" \n- \"TRUCK:...\" \n- \"VAN:...\" \n- \"VENDING:...\" \n- \"WUZI:...\" \n\nHmm, clapping... I'm fairly confident there's no dedicated \"applause\" anim in SA's standard set, but there might be \"MISC:Idle_...\" Hmm.\n\nActually! I remember: GTA SA has \"applause\" in the \"GANGS\" library? No... There's \"bball\"? \n\nWait — GTA SA does have a clapping animation used in the \"Burning Desire\" or the \"Wu Zi Mu\"? Hmm.\n\nThere's \"CASINO:cards_in\", \"CASINO:cards_loop\", \"CASINO:cards_out\", \"CASINO:dealone\", \"CASINO:manwinb\", \"CASINO:manwind\", \"CASINO:manwindl\", \"CASINO:manwinlf\"? Hmm, \"manwin\" might involve raising arms.\n\nAlso \"GYMNASIUM:...\" \n\nI'll avoid inventing a specific clip name. Better: use the family reference format with the registered family name \"aplaudir\" and note it needs exact clip resolution. Something like \"APLAUDIR:1:ped:aplaudir\"? That's inventing.\n\nHmm. Let me weigh: The instruction \"No sustituyas acciones ni inventes IDs\" is strong. The catalog recovered doesn't have an applaud clip. The registry says family \"aplaudir\" exists among 1263 exportable clips. So the honest approach: set animacion to a family-level token that isn't a fabricated clip ID, and add a limitación noting the exact clip must be picked from the full catalog.\n\nI think using \"APLAUDIR:1\" (family:variant) without a fabricated library/clip is the most defensible. Actually the draft format includes lib and clip. Using just family:variant signals \"resolve exact clip from catalog\".\n\nAlternatively, I could set animacion to null and put in limitaciones: \"El clip exacto de aplauso no aparece en el catálogo recuperado; la familia 'aplaudir' está registrada (1263 clips exportables) y debe resolverse el ID exacto antes de compilar.\" But then the paso animacion would have no clip, which the compiler might reject or default. Hmm, but \"animacion\" field is nullable with default null. The instruction says \"con clip animacion exacto si corresponde\" — if it doesn't correspond (unknown), null is acceptable? But then the action wouldn't be applauding.\n\nI think best: provide \"APLAUDIR:1\" as family reference and flag it. Let me go with animacion: \"APLAUDIR:1\" and a limitación.\n\nHmm, actually, let me reconsider once more. Many of these Mission Maker style schemas accept family-level tokens. The draft's \"DANCE:1:DANCING:bd_clap\" — \"bd_clap\" is actually a real GTA SA animation! Yes! \"DANCING:bd_clap\" — that's from the \"DANCING\" library, \"bd_clap\" (breakdance clap). That's a real clip. So the draft used a real clip for dance.\n\nFor applaud... hmm, is there a real one? Let me think about GTA SA \"applause\". I'm now recalling the ped.ifp animation list more concretely. ped.ifp contains: \"walk_civi\", \"run_civi\", \"sprint_civi\", \"idle_stance\", \"roadcross\", \"cower\", \"handsup\", \"getup\", \"getup_front\", \"jump_stash\", \"do_jump\", \"idle_tired\", \"flee\", \"woman_run\", ... \"XPRESSscratch\", \"hitchhike\", \"wave_a\", \"wave_b\", \"wave_c\", \"talk\", \"phone_in\", \"phone_out\", \"phone_talk\", \"sit_down\", \"sit_up\", \"sit_idle\", \"sit_phone\", \"sit_in\", \"sit_out\", \"seat_lrR\", ... \"gang_look\", ... \n\nHmm, \"applause\" — I don't think ped.ifp has it. But there might be in \"MISC\" ifp: \"MISC:...\"? \n\nActually! I do recall GTA SA has a \"clap\" animation: \"MISC:Idle_Chk_...\" no.\n\nHmm, there's \"SWEET:sweet_heli\"? no.\n\nOK. There's also the possibility that the mod's catalog (1263 clips) includes an applaud clip from a family named \"aplaudir\" — the registry lists Spanish family names, suggesting the mod normalizes families. So \"APLAUDIR:1\" as a family token seems reasonable and matches the registry's naming.\n\nDecision: animacion = \"APLAUDIR:1\", reproduccion for the jump = una_vez, for applaud = mantener (30s hold) or bucle. The user says \"aplaude ... durante 30 segundos\" — total duration 30s. Jump takes ~1-2s, then applaud for the rest. Since durations are per-step integers 1..60 and total must be 1..60, I'll set: paso 1 saltar (una_vez, duracion 2), paso 2 animacion aplaudir (mantener, duracion 28). Total 30. Good.\n\nWait — \"duracion\" per step: is it seconds? Presumably. Total 30s. duracion_sugerida = 30.\n\nLocation: \"una calle de San Fierro\" → ubicacion_id_sugerida. Options: lugar_33_1197 (San Fierro · ciudad 7, pos -1765.75, 275.25, 8.8), lugar_25_1449, lugar_33_1571, lugar_40_1856. Any is a street in San Fierro. The draft used ruta_id_sugerida \"ped_33_1334_33_1399\" which isn't in the recovered catalog (no rutas_peatonales in catalog). Hmm, the draft included ruta_id_sugerida \"ped_33_1334_33_1399\" — that's a pedestrian route id not present in the recovered catalog. Since we shouldn't invent IDs, and the action is static (jump + applaud, no walking), I should set ruta_id_sugerida to null. Actually the draft had it, but for a static scene it's not needed. I'll set it to null to avoid inventing.\n\nHmm, but the draft is \"revisable\" — I can revise it. Since there's no walking, no route needed. Set ruta_id_sugerida: null.\n\nFor ubicacion: pick lugar_33_1197 (San Fierro · ciudad 7) — a street-level location (z=8.8, ground level). Actually the others: -1968.125,-245.375,26.5; -2026,496.625,34.2; -2396.75,897.5,44.4. All plausible. I'll pick lugar_33_1197 as it's the first/lowest altitude, likely street level. Motivo: labeled San Fierro, ciudad, at street level.\n\nActor: 287 army (militar). cantidad_actores 1, actores_ids_sugeridos [287], animar_actores [1], roles [\"militar\"].\n\nClima: no rain requested → null (or 0 clear). Instruction: \"Clima lluvia 8/16, atardecer hora18/19.\" Not requested, so leave null. hora_sugerida null.\n\ndialogos: none requested → [].\n\nvehiculo_en_movimiento false. vehiculo_id_sugerido null. objeto_id_sugerido null.\n\nes_valido: true.\n\nlimitaciones: mention that the exact applaud clip isn't in the recovered catalog excerpt; family \"aplaudir\" is registered; the exact clip ID must be resolved from the full catalog before compiling. Also could mention no vehicle/dialogue.\n\naviso_analisis: maybe note the same.\n\naprendizaje_supervisado: {} or some object. I'll include a small object noting the pending clip resolution. Schema allows additional properties. Keep it simple: {\"clip_aplauso_confirmado\": false, \"familia\": \"aplaudir\"}.\n\nfuente: \"IA\" (default) — the draft said \"Plan local por tareas nativas (sin confirmación de Gemini)\". I'll keep something similar or \"IA\". I'll use \"IA\".\n\naccion: \"secuencia\", tipo_movimiento: \"caminar\" (default; no movement though). Hmm, tipo_movimiento default \"caminar\". Since no locomotion, maybe keep \"caminar\" as default. Fine.\n\nresumen: \"Un soldado (army) salta y luego aplaude en una calle de San Fierro durante 30 segundos.\"\n\nLet me write the JSON. Output SOLO JSON.\n\nPasos:\n1. {\"accion\":\"saltar\",\"actores\":[1],\"objetivo_actor\":null,\"animacion\":null,\"reproduccion\":\"una_vez\",\"duracion\":2}\n2. {\"accion\":\"animacion\",\"actores\":[1],\"objetivo_actor\":null,\"animacion\":\"APLAUDIR:1\",\"reproduccion\":\"mantener\",\"duracion\":28}\n\nreproduccion for applaud: \"mantener\" (hold) makes sense for a sustained 28s. Or \"bucle\" to loop the clap. Aplaudir is a repeatable gesture; \"mantener\" holds until duration ends. I'll use \"mantener\" with razon_reproduccion explaining. Actually \"bucle\" would loop the clap repeatedly which looks more natural for 28 seconds of applause. Hmm. The rule: \"Bailar puede repetirse; gestos puntuales no.\" Applaud is arguably repeatable like dancing (rhythmic). I'll use \"bucle\" for natural continuous applause over 28s. Hmm, but \"mantener\" freezes on last frame potentially. For a sustained action, \"bucle\" is better. Let me use \"bucle\" and explain in razon_reproduccion.\n\nActually, careful: \"reproduccion=una_vez/mantener/bucle\". For jump: una_vez. For applaud over 28s: bucle.\n\nrazon_reproduccion: \"El salto es puntual (una_vez); el aplauso es rítmico y se repite en bucle para cubrir 28 s.\"\n\nduracion_sugerida: 30.\n\nLet me finalize.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4369,
+      "completion_tokens": 4559,
+      "total_tokens": 8928,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 2304,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3788,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 4369,
+    "completion_tokens": 4559,
+    "total_tokens": 8928,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 2304,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3788,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "json_valido": true,
+  "mms_generado": false,
+  "correcto": false,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Secuencia de 30 s en una calle de San Fierro: un soldado (modelo army, rol militar) salta una vez y después aplaude en bucle hasta completar la duración.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 287,
+    "actores_ids_sugeridos": [
+      287
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Reparto único: el único actor disponible es 287 'army' (tipo COP, rol militar), que cubre el papel de soldado. Ubicación: lugar_33_1197 'San Fierro · ciudad 7' está etiquetada como calle de San Fierro a cota baja (z=8.8), adecuada para una acción estática a pie. No se asigna ruta peatonal ni vehículo porque la escena no incluye desplazamiento.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "bucle",
+    "razon_reproduccion": "El salto es un gesto puntual (una_vez); el aplauso es rítmico y se reproduce en bucle para sostener 28 s de acción continua.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "APLAUDIR:1",
+    "cantidad_actores": 1,
+    "animar_actores": [
+      1
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "saltar",
+        "actores": [
+          1
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "una_vez",
+        "duracion": 2
+      },
+      {
+        "accion": "animacion",
+        "actores": [
+          1
+        ],
+        "objetivo_actor": null,
+        "animacion": "APLAUDIR:1",
+        "reproduccion": "bucle",
+        "duracion": 28
+      }
+    ],
+    "roles": [
+      "militar"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "La familia 'aplaudir' está registrada entre los clips exportables, pero el extracto de catálogo recuperado no incluye ningún clip de aplauso con ID literal; se emite la referencia de familia APLAUDIR:1 para que el compilador resuelva el clip exacto del catálogo completo (1263 clips). No se ha inventado un ID de biblioteca ni de clip.",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [
+      "Clip de aplauso no confirmado: el catálogo recuperado solo expone roadcross, roadcross_old, roadcross_gang, cs_30, wtchrace_out, cards_in, leanIN y XPRESSscratch; el ID exacto de aplauso debe resolverse del catálogo completo antes de compilar.",
+      "El salto nativo y la animación se ejecutan sobre el mismo actor en el mismo punto: no hay desplazamiento ni recolocación entre tareas.",
+      "Sin diálogo, vehículo, objeto en mano ni clima/hora forzados: no se han solicitado."
+    ],
+    "aprendizaje_supervisado": {
+      "familia_pedida": "aplaudir",
+      "familia_en_registro": true,
+      "clip_exacto_en_catalogo_recuperado": false,
+      "accion_nativa": "saltar",
+      "actores": 1,
+      "duracion_total_s": 30,
+      "reparto": [
+        "saltar:2s una_vez",
+        "aplaudir:28s bucle"
+      ]
+    }
+  },
+  "plan_final": {
+    "es_valido": false,
+    "razon_rechazo": "El clip de una acción no pertenece al catálogo.",
+    "resumen": "Secuencia de 30 s en una calle de San Fierro: un soldado (modelo army, rol militar) salta una vez y después aplaude en bucle hasta completar la duración.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 287,
+    "actores_ids_sugeridos": [
+      287
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Reparto único: el único actor disponible es 287 'army' (tipo COP, rol militar), que cubre el papel de soldado. Ubicación: lugar_33_1197 'San Fierro · ciudad 7' está etiquetada como calle de San Fierro a cota baja (z=8.8), adecuada para una acción estática a pie. No se asigna ruta peatonal ni vehículo porque la escena no incluye desplazamiento.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": "ped_33_1334_33_1399",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "bucle",
+    "razon_reproduccion": "El salto es un gesto puntual (una_vez); el aplauso es rítmico y se reproduce en bucle para sostener 28 s de acción continua.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "APLAUDIR:1",
+    "cantidad_actores": 1,
+    "animar_actores": [
+      1
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "saltar",
+        "actores": [
+          1
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "una_vez",
+        "duracion": 2
+      },
+      {
+        "accion": "animacion",
+        "actores": [
+          1
+        ],
+        "objetivo_actor": null,
+        "animacion": "APLAUDIR:1",
+        "reproduccion": "bucle",
+        "duracion": 28
+      }
+    ],
+    "roles": [
+      "militar"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "La familia 'aplaudir' está registrada entre los clips exportables, pero el extracto de catálogo recuperado no incluye ningún clip de aplauso con ID literal; se emite la referencia de familia APLAUDIR:1 para que el compilador resuelva el clip exacto del catálogo completo (1263 clips). No se ha inventado un ID de biblioteca ni de clip.",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [
+      "Clip de aplauso no confirmado: el catálogo recuperado solo expone roadcross, roadcross_old, roadcross_gang, cs_30, wtchrace_out, cards_in, leanIN y XPRESSscratch; el ID exacto de aplauso debe resolverse del catálogo completo antes de compilar.",
+      "El salto nativo y la animación se ejecutan sobre el mismo actor en el mismo punto: no hay desplazamiento ni recolocación entre tareas.",
+      "Sin diálogo, vehículo, objeto en mano ni clima/hora forzados: no se han solicitado."
+    ],
+    "aprendizaje_supervisado": {}
+  },
+  "segundos": 20.156,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": false,
+      "fecha_utc": "2026-11-11T21:49:36.824530+00:00",
+      "sin_consulta_api": true
+    }
+  ],
+  "error_evaluacion": "Aceptación diferente del contrato esperado"
+}

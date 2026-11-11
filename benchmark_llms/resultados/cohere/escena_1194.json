@@ -1,0 +1,178 @@
+{
+  "id": "escena_1194",
+  "modelo": "cohere/north-mini-code:free",
+  "proveedor": "openrouter",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:46:01.104300+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "id": "gen-1794433567-2YqRnog4rlmYcN2HVdh2",
+    "object": "chat.completion",
+    "created": 1794433567,
+    "model": "cohere/north-mini-code:free",
+    "provider": "Cohere",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "complete",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"$defs\": {\n    \"PasoEscena\": {\n      \"properties\": {\n        \"accion\": {\n          \"enum\": [\n            \"caminar\",\n            \"correr\",\n            \"nadar\",\n            \"escaleras\",\n            \"saltar\",\n            \"animacion\",\n            \"apuntar\"\n          ],\n          \"title\": \"Accion\",\n          \"type\": \"string\"\n        },\n        \"actores\": {\n          \"items\": {\n            \"type\": \"integer\"\n          },\n          \"maxItems\": 4,\n          \"minItems\": 1,\n          \"title\": \"Actores\",\n          \"type\": \"array\"\n        },\n        \"objetivo_actor\": {\n          \"anyOf\": [\n            {\n              \"maximum\": 4,\n              \"minimum\": 1,\n              \"type\": \"integer\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Objetivo Actor\"\n        },\n        \"animacion\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Animacion\"\n        },\n        \"reproduccion\": {\n          \"default\": \"auto\",\n          \"enum\": [\n            \"auto\",\n            \"una_vez\",\n            \"mantener\",\n            \"bucle\"\n          ],\n          \"title\": \"Reproduccion\",\n          \"type\": \"string\"\n        },\n        \"duracion\": {\n          \"anyOf\": [\n            {\n              \"maximum\": 60,\n              \"minimum\": 1,\n              \"type\": \"integer\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Duracion\"\n        }\n      },\n      \"required\": [\n        \"accion\"\n      ],\n      \"title\": \"PasoEscena\",\n      \"type\": \"object\"\n    }\n  },\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"Un policía camina, se sube a un taxi y conduce por Las Venturas durante 30 segundos.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": 280,\n  \"actores_ids_sugeridos\": [\n    280\n  ],\n  \"ubicacion_id_sugerida\": \"lugar_46_1860\",\n  \"motivo_elecciones\": \"El actor es un policía de LAPD, la ubicación está en Las Venturas, y hay un taxi disponible en una ruta de vehículo de la zona.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": null,\n  \"hora_sugerida\": 18,\n  \"fuente\": \"IA\",\n  \"accion\": \"conducir_vehiculo\",\n  \"tipo_movimiento\": \"caminar\",\n  \"ruta_id_sugerida\": null,\n  \"ruta_vehiculo_id\": \"auto_46_233\",\n  \"velocidad_kmh_sugerida\": 50,\n  \"reproduccion\": \"auto\",\n  \"razon_reproduccion\": \"\",\n  \"vehiculo_id_sugerido\": 420,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": null,\n  \"cantidad_actores\": 1,\n  \"animar_actores\": [\n    1\n  ],\n  \"dialogos\": [],\n  \"pasos\": [],\n  \"roles\": [\n    \"policia\"\n  ],\n  \"lugar_tipo\": null,\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": true,\n  \"limitaciones\": [],\n  \"aprendizaje_supervisado\": {}\n}",
+          "refusal": null,
+          "reasoning": "The user asks: \"a cop walks, gets into a taxi and drives through Las Venturas for 30 seconds\". We need to produce a PlanMVP JSON according to the schema, using the catalog data.\n\nWe need to interpret the request: a cop (police) walks, gets into a taxi, and drives through Las Venturas for 30 seconds. The environment is Las Venturas city. The actor should be a cop. The catalog includes actors with model_id 280 (lapd1), 281 (sfpd1), 282 (lvpd1). All are police. We need to pick one. The location should be in Las Venturas. The catalog includes locations: lugar_46_1860 (Las Venturas · ciudad 3), lugar_47_975 (Las Venturas · ciudad 4), lugar_47_1241 (Las Venturas · ciudad 5), lugar_53_1092 (Las Venturas · ciudad 6). We need a location where a taxi is available. The catalog includes vehicle taxi model_id 420. There's a route for taxi: auto_46_233, auto_54_118, auto_47_394, auto_61_187. The draft local suggests route_id_suggested \"ped_54_1214_54_1221\". That's a pedestrian route? Actually it's a route ID for walking. But we need a vehicle route. The catalog includes rutas_vehiculo IDs. We need to pick one that is in Las Venturas. All are in Las Venturas. Choose one, maybe auto_46_233.\n\nWe need to produce a PlanMVP with es_valido true, summary, etc. The steps: walking (accion: caminar) for some steps, then entrar_vehiculo (accion: conducir_vehiculo? Actually \"conducir_vehiculo\" is a composition that includes entering, waiting for real input, and driving with CARREC. The schema's PasoEscena only allows acciones: caminar, correr, nadar, escaleras, saltar, animacion, apuntar. There's no \"conducir_vehiculo\" in PasoEscena. However the PlanMVP has fields like accion, tipo_movimiento, vehiculo_id_sugerido, ruta_vehiculo_id, velocidad_kmh_sugerida, etc. So the steps may be empty, and the overall plan uses accion \"conducir_vehiculo\". The draft local shows accion \"conducir_vehiculo\". So we can set accion \"conducir_vehiculo\" at top-level, and maybe pasos empty. The schema's PlanMVP includes \"accion\" field default \"caminar\". But we can override to \"conducir_vehiculo\". Also \"tipo_movimiento\" default \"caminar\". We can set \"tipo_movimiento\" maybe \"caminar\". But the plan is about driving, so maybe \"accion\": \"conducir_vehiculo\". The schema does not restrict accion values beyond default. So we can set it.\n\nWe need to include suggested actor id: pick one of the cops, e.g., model_id 280 (lapd1). The catalog's actors list includes model_id 280, 281, 282. So actor_id_sugerido could be 280. Also actores_ids_sugeridos list.\n\nLocation id suggested: choose lugar_46_1860 (Las Venturas ciudad 3). That is a location.\n\nVehicle id suggested: taxi model_id 420.\n\nRoute vehicle id: choose auto_46_233.\n\nClima id suggested: null.\n\nHora sugerida: maybe 18 (evening) for driving through Las Venturas. Could be null.\n\nDuracion sugerida: 30 seconds.\n\nCantidad actores: 1.\n\nAnimar actores: [1] (the cop).\n\nRoles: [\"policia\"].\n\nPasos: maybe empty because the driving composition includes entering and driving. But we could include a walking step before entering? The request: \"a cop walks, gets into a taxi and drives\". So we could have a PasoEscena for walking (accion: caminar, actores: [1], duracion maybe 5 seconds). Then the driving composition. However the schema's PasoEscena only allows those actions; we could add a walking step before driving. But the driving composition is separate; we could have pasos empty and rely on the overall accion \"conducir_vehiculo\". The draft local shows pasos empty. So we can follow that.\n\nWe need to ensure the JSON matches schema. Let's construct:\n\n{\n  \"$defs\": {\"PasoEscena\": {...}} (already defined)\n}\nProperties:\nes_valido: true\nrazon_rechazo: \"\"\nresumen: \"Un policía camina, se sube a un taxi y conduce por Las Venturas durante 30 segundos.\"\nentorno_sugerido: \"ciudad\"\nactor_id_sugerido: 280 (or null? but we can set)\nactores_ids_sugeridos: [280]\nubicacion_id_sugerida: \"lugar_46_1860\"\nmotivo_elecciones: \"\" (or maybe \"El actor es policía, la ubicación está en Las Venturas, el taxi está disponible.\"\nduracion_sugerida: 30\nclima_id_sugerido: null\nhora_sugerida: 18 (or null)\nfuente: \"IA\"\naccion: \"conducir_vehiculo\"\ntipo_movimiento: \"caminar\"\nruta_id_sugerida: null (maybe not needed)\nruta_vehiculo_id: \"auto_46_233\"\nvelocidad_kmh_sugerida: 50 (maybe typical taxi speed)\nreproduccion: \"auto\"\nrazon_reproduccion: \"\"\nvehiculo_id_sugerido: 420\nobjeto_id_sugerido: null\nanimacion_sugerida: null\ncantidad_actores: 1\nanimar_actores: [1]\ndialogos: []\npasos: [] (or maybe include walking step)\nroles: [\"policia\"]\nlugar_tipo: null\naviso_analisis: \"\"\nvehiculo_en_movimiento: true (since driving)\nlimitaciones: []\naprendizaje_supervisado: {}\n\nWe need to ensure the JSON is valid. The schema includes \"$defs\". The top-level properties include \"es_valido\", \"razon_rechazo\", \"resumen\", etc. We need to include all required fields: es_valido, resumen. Others optional.\n\nWe need to ensure the \"accion\" field is allowed? The schema defines \"accion\" default \"caminar\". It's not required. So we can set it.\n\nWe need to ensure \"tipo_movimiento\" default \"caminar\". It's okay.\n\nWe need to ensure \"vehiculo_en_movimiento\" default false, but we can set true.\n\nWe need to ensure \"rutas_vehiculo_id\" is a string or null. We set \"auto_46_233\".\n\nWe need to ensure \"velocidad_kmh_sugerida\" is integer within 10-90. We set 50.\n\nWe need to ensure \"animar_actores\" is array of integers. We set [1].\n\nWe need to ensure \"actor_id_sugerido\" is integer or null. We set 280.\n\nWe need to ensure \"actores_ids_sugeridos\" is array of integers. We set [280].\n\nWe need to ensure \"ubicacion_id_sugerida\" is string or null. We set \"lugar_ probably correct.\n\nWe need to ensure \"roles\" is array of strings. We set [\"policia\"].\n\nWe need to ensure \"pasos\" is array of PasoEscena objects. We can leave empty.\n\nWe need to ensure \"limitaciones\" array of strings. We can leave empty.\n\nWe need to ensure \"aprendizaje_supervisado\" object. We can set {}.\n\nWe need to ensure \"fuente\" default \"IA\". We can set \"IA\".\n\nWe need to ensure \"reproduccion\" default \"auto\". We can set \"auto\".\n\nWe need to ensure \"razon_reproduccion\" default \"\". We can set \"\".\n\nWe need to ensure \"animacion_sugerida\" null.\n\nWe need to ensure \"objeto_id_sugerido\" null.\n\nWe need to ensure \"clima_id_sugerido\" null.\n\nWe need to ensure \"hora_sugerida\" null or integer. We can set 18.\n\nWe need to ensure \"entorno_sugerido\" default \"ciudad\". We can set \"ciudad\".\n\nWe need to ensure \"lugar_tipo\" null.\n\nWe need to ensure \"aviso_analisis\" default \"\".\n\nWe need to ensure \"vehiculo_en_movimiento\" default false, but we set true.\n\nWe need to ensure \"cantidad_actores\" default 1, we set  probably 1.\n\nWe need to ensure \"animar_actores\" maxItems 4, we set [1].\n\nWe need to ensure \"dialogos\" array maxItems 6, we set [].\n\nWe need to ensure \"motivo_elecciones\" default \"\".\n\nWe need to ensure \"razon_rechazo\" default \"\".\n\nWe need to ensure \"es_valido\" true.\n\nWe need to ensure \"resumen\" string.\n\nWe need to ensure \"actor_id_sugerido\" integer.\n\nWe need to ensure \"actores_ids_sugeridos\" array.\n\nWe need to ensure \"ubicacion_id_sugerida\" string.\n\nWe need to ensure \"rutas_vehiculo_id\" string.\n\nWe need to ensure \"velocidad_kmh_sugerida\" integer.\n\nWe need to ensure \"vehiculo_id_sugerido\" integer.\n\nWe need to ensure \"roles\" array.\n\nWe need to ensure \"pasos\" array.\n\nWe need to ensure \"limitaciones\" array.\n\nWe need to ensure \"aprendizaje_supervisado\" object.\n\nAll good.\n\nNow produce JSON.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks: \"a cop walks, gets into a taxi and drives through Las Venturas for 30 seconds\". We need to produce a PlanMVP JSON according to the schema, using the catalog data.\n\nWe need to interpret the request: a cop (police) walks, gets into a taxi, and drives through Las Venturas for 30 seconds. The environment is Las Venturas city. The actor should be a cop. The catalog includes actors with model_id 280 (lapd1), 281 (sfpd1), 282 (lvpd1). All are police. We need to pick one. The location should be in Las Venturas. The catalog includes locations: lugar_46_1860 (Las Venturas · ciudad 3), lugar_47_975 (Las Venturas · ciudad 4), lugar_47_1241 (Las Venturas · ciudad 5), lugar_53_1092 (Las Venturas · ciudad 6). We need a location where a taxi is available. The catalog includes vehicle taxi model_id 420. There's a route for taxi: auto_46_233, auto_54_118, auto_47_394, auto_61_187. The draft local suggests route_id_suggested \"ped_54_1214_54_1221\". That's a pedestrian route? Actually it's a route ID for walking. But we need a vehicle route. The catalog includes rutas_vehiculo IDs. We need to pick one that is in Las Venturas. All are in Las Venturas. Choose one, maybe auto_46_233.\n\nWe need to produce a PlanMVP with es_valido true, summary, etc. The steps: walking (accion: caminar) for some steps, then entrar_vehiculo (accion: conducir_vehiculo? Actually \"conducir_vehiculo\" is a composition that includes entering, waiting for real input, and driving with CARREC. The schema's PasoEscena only allows acciones: caminar, correr, nadar, escaleras, saltar, animacion, apuntar. There's no \"conducir_vehiculo\" in PasoEscena. However the PlanMVP has fields like accion, tipo_movimiento, vehiculo_id_sugerido, ruta_vehiculo_id, velocidad_kmh_sugerida, etc. So the steps may be empty, and the overall plan uses accion \"conducir_vehiculo\". The draft local shows accion \"conducir_vehiculo\". So we can set accion \"conducir_vehiculo\" at top-level, and maybe pasos empty. The schema's PlanMVP includes \"accion\" field default \"caminar\". But we can override to \"conducir_vehiculo\". Also \"tipo_movimiento\" default \"caminar\". We can set \"tipo_movimiento\" maybe \"caminar\". But the plan is about driving, so maybe \"accion\": \"conducir_vehiculo\". The schema does not restrict accion values beyond default. So we can set it.\n\nWe need to include suggested actor id: pick one of the cops, e.g., model_id 280 (lapd1). The catalog's actors list includes model_id 280, 281, 282. So actor_id_sugerido could be 280. Also actores_ids_sugeridos list.\n\nLocation id suggested: choose lugar_46_1860 (Las Venturas ciudad 3). That is a location.\n\nVehicle id suggested: taxi model_id 420.\n\nRoute vehicle id: choose auto_46_233.\n\nClima id suggested: null.\n\nHora sugerida: maybe 18 (evening) for driving through Las Venturas. Could be null.\n\nDuracion sugerida: 30 seconds.\n\nCantidad actores: 1.\n\nAnimar actores: [1] (the cop).\n\nRoles: [\"policia\"].\n\nPasos: maybe empty because the driving composition includes entering and driving. But we could include a walking step before entering? The request: \"a cop walks, gets into a taxi and drives\". So we could have a PasoEscena for walking (accion: caminar, actores: [1], duracion maybe 5 seconds). Then the driving composition. However the schema's PasoEscena only allows those actions; we could add a walking step before driving. But the driving composition is separate; we could have pasos empty and rely on the overall accion \"conducir_vehiculo\". The draft local shows pasos empty. So we can follow that.\n\nWe need to ensure the JSON matches schema. Let's construct:\n\n{\n  \"$defs\": {\"PasoEscena\": {...}} (already defined)\n}\nProperties:\nes_valido: true\nrazon_rechazo: \"\"\nresumen: \"Un policía camina, se sube a un taxi y conduce por Las Venturas durante 30 segundos.\"\nentorno_sugerido: \"ciudad\"\nactor_id_sugerido: 280 (or null? but we can set)\nactores_ids_sugeridos: [280]\nubicacion_id_sugerida: \"lugar_46_1860\"\nmotivo_elecciones: \"\" (or maybe \"El actor es policía, la ubicación está en Las Venturas, el taxi está disponible.\"\nduracion_sugerida: 30\nclima_id_sugerido: null\nhora_sugerida: 18 (or null)\nfuente: \"IA\"\naccion: \"conducir_vehiculo\"\ntipo_movimiento: \"caminar\"\nruta_id_sugerida: null (maybe not needed)\nruta_vehiculo_id: \"auto_46_233\"\nvelocidad_kmh_sugerida: 50 (maybe typical taxi speed)\nreproduccion: \"auto\"\nrazon_reproduccion: \"\"\nvehiculo_id_sugerido: 420\nobjeto_id_sugerido: null\nanimacion_sugerida: null\ncantidad_actores: 1\nanimar_actores: [1]\ndialogos: []\npasos: [] (or maybe include walking step)\nroles: [\"policia\"]\nlugar_tipo: null\naviso_analisis: \"\"\nvehiculo_en_movimiento: true (since driving)\nlimitaciones: []\naprendizaje_supervisado: {}\n\nWe need to ensure the JSON is valid. The schema includes \"$defs\". The top-level properties include \"es_valido\", \"razon_rechazo\", \"resumen\", etc. We need to include all required fields: es_valido, resumen. Others optional.\n\nWe need to ensure the \"accion\" field is allowed? The schema defines \"accion\" default \"caminar\". It's not required. So we can set it.\n\nWe need to ensure \"tipo_movimiento\" default \"caminar\". It's okay.\n\nWe need to ensure \"vehiculo_en_movimiento\" default false, but we can set true.\n\nWe need to ensure \"rutas_vehiculo_id\" is a string or null. We set \"auto_46_233\".\n\nWe need to ensure \"velocidad_kmh_sugerida\" is integer within 10-90. We set 50.\n\nWe need to ensure \"animar_actores\" is array of integers. We set [1].\n\nWe need to ensure \"actor_id_sugerido\" is integer or null. We set 280.\n\nWe need to ensure \"actores_ids_sugeridos\" is array of integers. We set [280].\n\nWe need to ensure \"ubicacion_id_sugerida\" is string or null. We set \"lugar_ probably correct.\n\nWe need to ensure \"roles\" is array of strings. We set [\"policia\"].\n\nWe need to ensure \"pasos\" is array of PasoEscena objects. We can leave empty.\n\nWe need to ensure \"limitaciones\" array of strings. We can leave empty.\n\nWe need to ensure \"aprendizaje_supervisado\" object. We can set {}.\n\nWe need to ensure \"fuente\" default \"IA\". We can set \"IA\".\n\nWe need to ensure \"reproduccion\" default \"auto\". We can set \"auto\".\n\nWe need to ensure \"razon_reproduccion\" default \"\". We can set \"\".\n\nWe need to ensure \"animacion_sugerida\" null.\n\nWe need to ensure \"objeto_id_sugerido\" null.\n\nWe need to ensure \"clima_id_sugerido\" null.\n\nWe need to ensure \"hora_sugerida\" null or integer. We can set 18.\n\nWe need to ensure \"entorno_sugerido\" default \"ciudad\". We can set \"ciudad\".\n\nWe need to ensure \"lugar_tipo\" null.\n\nWe need to ensure \"aviso_analisis\" default \"\".\n\nWe need to ensure \"vehiculo_en_movimiento\" default false, but we set true.\n\nWe need to ensure \"cantidad_actores\" default 1, we set  probably 1.\n\nWe need to ensure \"animar_actores\" maxItems 4, we set [1].\n\nWe need to ensure \"dialogos\" array maxItems 6, we set [].\n\nWe need to ensure \"motivo_elecciones\" default \"\".\n\nWe need to ensure \"razon_rechazo\" default \"\".\n\nWe need to ensure \"es_valido\" true.\n\nWe need to ensure \"resumen\" string.\n\nWe need to ensure \"actor_id_sugerido\" integer.\n\nWe need to ensure \"actores_ids_sugeridos\" array.\n\nWe need to ensure \"ubicacion_id_sugerida\" string.\n\nWe need to ensure \"rutas_vehiculo_id\" string.\n\nWe need to ensure \"velocidad_kmh_sugerida\" integer.\n\nWe need to ensure \"vehiculo_id_sugerido\" integer.\n\nWe need to ensure \"roles\" array.\n\nWe need to ensure \"pasos\" array.\n\nWe need to ensure \"limitaciones\" array.\n\nWe need to ensure \"aprendizaje_supervisado\" object.\n\nAll good.\n\nNow produce JSON.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4122,
+      "completion_tokens": 2840,
+      "total_tokens": 6962,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1899,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 4122,
+    "completion_tokens": 2840,
+    "total_tokens": 6962,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1899,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Un policía camina, se sube a un taxi y conduce por Las Venturas durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 280,
+    "actores_ids_sugeridos": [
+      280
+    ],
+    "ubicacion_id_sugerida": "lugar_46_1860",
+    "motivo_elecciones": "El actor es un policía de LAPD, la ubicación está en Las Venturas, y hay un taxi disponible en una ruta de vehículo de la zona.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": 18,
+    "fuente": "IA",
+    "accion": "conducir_vehiculo",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": "auto_46_233",
+    "velocidad_kmh_sugerida": 50,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": 420,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 1,
+    "animar_actores": [
+      1
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "policia"
+    ],
+    "lugar_tipo": null,
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": true,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Un policía camina, se sube a un taxi y conduce por Las Venturas durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 280,
+    "actores_ids_sugeridos": [
+      280
+    ],
+    "ubicacion_id_sugerida": null,
+    "motivo_elecciones": "El actor es un policía de LAPD, la ubicación está en Las Venturas, y hay un taxi disponible en una ruta de vehículo de la zona.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 1,
+    "hora_sugerida": 18,
+    "fuente": "IA",
+    "accion": "conducir_vehiculo",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": "ped_54_1214_54_1221",
+    "ruta_vehiculo_id": "auto_46_233",
+    "velocidad_kmh_sugerida": 50,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": 420,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 1,
+    "animar_actores": [
+      1
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "policia"
+    ],
+    "lugar_tipo": null,
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": true,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "147d5828bed5e5b1811b8b5f24abe2aea6c401df160b22407219268e7e071583",
+  "segundos": 20.516,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:37.282467+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}

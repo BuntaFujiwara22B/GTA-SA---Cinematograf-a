@@ -1,0 +1,188 @@
+{
+  "id": "escena_0321",
+  "modelo": "cohere/north-mini-code:free",
+  "proveedor": "openrouter",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:42:34.471770+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "id": "gen-1794433354-4nQiB8UJ2VGmTxrSOZmN",
+    "object": "chat.completion",
+    "created": 1794433354,
+    "model": "cohere/north-mini-code:free",
+    "provider": "Cohere",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "complete",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"$defs\": {\n    \"PasoEscena\": {\n      \"properties\": {\n        \"accion\": {\n          \"enum\": [\n            \"caminar\",\n            \"correr\",\n            \"nadar\",\n            \"escaleras\",\n            \"saltar\",\n            \"animacion\",\n            \"apuntar\"\n          ],\n          \"title\": \"Accion\",\n          \"type\": \"string\"\n        },\n        \"actores\": {\n          \"items\": {\n            \"type\": \"integer\"\n          },\n          \"maxItems\": 4,\n          \"minItems\": 1,\n          \"title\": \"Actores\",\n          \"type\": \"array\"\n        },\n        \"objetivo_actor\": {\n          \"anyOf\": [\n            {\n              \"maximum\": 4,\n              \"minimum\": 1,\n              \"type\": \"integer\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Objetivo Actor\"\n        },\n        \"animacion\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Animacion\"\n        },\n        \"reproduccion\": {\n          \"default\": \"auto\",\n          \"enum\": [\n            \"auto\",\n            \"una_vez\",\n            \"mantener\",\n            \"bucle\"\n          ],\n          \"title\": \"Reproduccion\",\n          \"type\": \"string\"\n        },\n        \"duracion\": {\n          \"anyOf\": [\n            {\n              \"maximum\": 60,\n              \"minimum\": 1,\n              \"type\": \"integer\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Duracion\"\n        }\n      },\n      \"required\": [\n        \"accion\"\n      ],\n      \"title\": \"PasoEscena\",\n      \"type\": \"object\"\n    }\n  },\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"3 personaje(s): encogerse por miedo.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": null,\n  \"actores_ids_sugeridos\": [\n    0,\n    7,\n    9\n  ],\n  \"ubicacion_id_sugerida\": \"puente_ejemplo_usuario\",\n  \"motivo_elecciones\": \"Usar la animación de miedo 'panic_cower' para tres actores civiles en un puente para representar el susto.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": null,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"animacion\",\n  \"tipo_movimiento\": \"caminar\",\n  \"ruta_id_sugerida\": null,\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"una_vez\",\n  \"razon_reproduccion\": \"Gesto puntual; no repetirlo automáticamente sin una indicación.\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": \"STAND:70:ON_LOOKERS:panic_cower\",\n  \"cantidad_actores\": 3,\n  \"animar_actores\": [\n    0,\n    7,\n    9\n  ],\n  \"dialogos\": [],\n  \"pasos\": [],\n  \"roles\": [\n    \"civil\"\n  ],\n  \"lugar_tipo\": null,\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [],\n  \"aprendizaje_supervisado\": {}\n}",
+          "refusal": null,
+          "reasoning": "The user asks: \"3 people get scared on a bridge for 30 seconds\". We need to produce a PlanMVP JSON according to the schema, using the catalog data. The catalog includes actors (3 models: 0 null, 7 male01, 9 BFORI). Locations: \"puente_ejemplo_usuario\" (bridge). Routes: several vehicle routes. Vehicles: many.\n\nWe need to create a plan where 3 people get scared. Likely an animation \"panic_cower\". The catalog includes animation \"STAND:70:ON_LOOKERS:panic_cower\". So we can set accion: \"animacion\", animacion_sugerida: \"STAND:70:ON_LOOKERS:panic_cower\". Actors: 3, animar_actores: [1,2,3] (or actor IDs). The actors IDs from catalog: model_id 0 (null), 7 (male01), 9 (BFORI). We can use actor IDs 0,7,9? The schema uses actor_id_sugerido (single) and actores_ids_sugeridos (array). We can set actores_ids_sugeridos: [0,7,9] maybe. Or we can use actor IDs 1,2,3? The catalog doesn't map IDs to actor IDs; the actors list includes model_id and presumably internal IDs? The schema expects integer actor IDs. The catalog's actors have model_id but not explicit actor ID. However, we can assume actor IDs correspond to model_id? Or we can use the actor IDs from the catalog's actors list? The catalog's actors list includes objects with model_id, but not an \"id\". The schema expects integer IDs. We could use model_id as actor ID. So actores_ids_sugeridos: [0,7,9].\n\nLocation: \"puente_ejemplo_usuario\". So ubicacion_id_sugerida: \"puente_ejemplo_usuario\". Environment: city. Duration: 30 seconds. Action: animation. Reproduction: \"una_vez\" (since it's a one-off gesture). Reason: \"Gesto puntual; no repetirlo automáticamente sin una indicación.\"\n\nWe need to fill other fields: es_valido: true, razon_rechazo: \"\", resumen: \"3 personaje(s): encogerse por miedo.\" (as in the draft). entorno_sugerido: \"ciudad\". actor_id_sugerido: null (or maybe 0?). actores_ids_sugeridos: [0,7,9]. ubicacion_id_sugerida: \"puente_ejemplo_usuario\". motivo_elecciones: maybe \"Usar animación de miedo para 3 actores en un puente.\" duracion_sugerida: 30. clima_id_sugerido: null. hora_sugerida: null. fuente: \"IA\". accion: \"animacion\". tipo_movimiento: \"caminar\"? Might be \"animacion\". But tipo_movimiento default \"caminar\". Could set to \"animacion\"? The schema has tipo_movimiento default \"caminar\". Might keep default. But we can set to \"animacion\"? Not sure. The schema's tipo_movimiento is a string, default \"caminar\". It might be used for movement type. For animation, maybe \"animacion\". But we can keep default.\n\nReproduccion: \"una_vez\". razon_reproduccion: \"Gesto puntual; no repetirlo automáticamente sin una indicación.\"\n\nvehiculo_id_sugerido: null. objeto_id_sugerido: null. animacion_sugerida: \"STAND:70:ON_LOOKERS:panic_cower\". cantidad_actores: 3. animar_actores: [0,7,9] (or [1,2,3]?). dialogos: [].\n\nroles: maybe [\"civil\"]? The actors have roles \"civil\". So roles: [\"civil\"]? But roles is array of strings, max 4. Could set roles: [\"civil\"].\n\nlugar_tipo: null. aviso_analisis: \"\".\n\nvehiculo_en_movimiento: false.\n\nlimitaciones: [].\n\naprendizaje_supervisado: {}.\n\npasos: [] (since it's a single animation, no steps needed). But we could include a PasoEscena? The schema for PlanMVP includes pasos array of PasoEscena. But we can leave empty.\n\nWe need to ensure required fields: es_valido, resumen. Also maybe other fields optional.\n\nThus produce JSON accordingly.\n\nCheck that we are not substituting actions or inventing IDs. We used IDs from catalog: actors model_id 0,7,9. Location ID \"puente_ejemplo_usuario\". Animation ID \"STAND:70:ON_LOOKERS:panic_cower\". That's fine.\n\nWe need to ensure the JSON matches schema. The PasoEscena definition includes accion, actores (array of integers), objetivo_actor (optional), animacion (optional), reproduccion (optional), duracion (optional). We are not using pasos, so we can leave empty.\n\nThus final JSON.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks: \"3 people get scared on a bridge for 30 seconds\". We need to produce a PlanMVP JSON according to the schema, using the catalog data. The catalog includes actors (3 models: 0 null, 7 male01, 9 BFORI). Locations: \"puente_ejemplo_usuario\" (bridge). Routes: several vehicle routes. Vehicles: many.\n\nWe need to create a plan where 3 people get scared. Likely an animation \"panic_cower\". The catalog includes animation \"STAND:70:ON_LOOKERS:panic_cower\". So we can set accion: \"animacion\", animacion_sugerida: \"STAND:70:ON_LOOKERS:panic_cower\". Actors: 3, animar_actores: [1,2,3] (or actor IDs). The actors IDs from catalog: model_id 0 (null), 7 (male01), 9 (BFORI). We can use actor IDs 0,7,9? The schema uses actor_id_sugerido (single) and actores_ids_sugeridos (array). We can set actores_ids_sugeridos: [0,7,9] maybe. Or we can use actor IDs 1,2,3? The catalog doesn't map IDs to actor IDs; the actors list includes model_id and presumably internal IDs? The schema expects integer actor IDs. The catalog's actors have model_id but not explicit actor ID. However, we can assume actor IDs correspond to model_id? Or we can use the actor IDs from the catalog's actors list? The catalog's actors list includes objects with model_id, but not an \"id\". The schema expects integer IDs. We could use model_id as actor ID. So actores_ids_sugeridos: [0,7,9].\n\nLocation: \"puente_ejemplo_usuario\". So ubicacion_id_sugerida: \"puente_ejemplo_usuario\". Environment: city. Duration: 30 seconds. Action: animation. Reproduction: \"una_vez\" (since it's a one-off gesture). Reason: \"Gesto puntual; no repetirlo automáticamente sin una indicación.\"\n\nWe need to fill other fields: es_valido: true, razon_rechazo: \"\", resumen: \"3 personaje(s): encogerse por miedo.\" (as in the draft). entorno_sugerido: \"ciudad\". actor_id_sugerido: null (or maybe 0?). actores_ids_sugeridos: [0,7,9]. ubicacion_id_sugerida: \"puente_ejemplo_usuario\". motivo_elecciones: maybe \"Usar animación de miedo para 3 actores en un puente.\" duracion_sugerida: 30. clima_id_sugerido: null. hora_sugerida: null. fuente: \"IA\". accion: \"animacion\". tipo_movimiento: \"caminar\"? Might be \"animacion\". But tipo_movimiento default \"caminar\". Could set to \"animacion\"? The schema has tipo_movimiento default \"caminar\". Might keep default. But we can set to \"animacion\"? Not sure. The schema's tipo_movimiento is a string, default \"caminar\". It might be used for movement type. For animation, maybe \"animacion\". But we can keep default.\n\nReproduccion: \"una_vez\". razon_reproduccion: \"Gesto puntual; no repetirlo automáticamente sin una indicación.\"\n\nvehiculo_id_sugerido: null. objeto_id_sugerido: null. animacion_sugerida: \"STAND:70:ON_LOOKERS:panic_cower\". cantidad_actores: 3. animar_actores: [0,7,9] (or [1,2,3]?). dialogos: [].\n\nroles: maybe [\"civil\"]? The actors have roles \"civil\". So roles: [\"civil\"]? But roles is array of strings, max 4. Could set roles: [\"civil\"].\n\nlugar_tipo: null. aviso_analisis: \"\".\n\nvehiculo_en_movimiento: false.\n\nlimitaciones: [].\n\naprendizaje_supervisado: {}.\n\npasos: [] (since it's a single animation, no steps needed). But we could include a PasoEscena? The schema for PlanMVP includes pasos array of PasoEscena. But we can leave empty.\n\nWe need to ensure required fields: es_valido, resumen. Also maybe other fields optional.\n\nThus produce JSON accordingly.\n\nCheck that we are not substituting actions or inventing IDs. We used IDs from catalog: actors model_id 0,7,9. Location ID \"puente_ejemplo_usuario\". Animation ID \"STAND:70:ON_LOOKERS:panic_cower\". That's fine.\n\nWe need to ensure the JSON matches schema. The PasoEscena definition includes accion, actores (array of integers), objetivo_actor (optional), animacion (optional), reproduccion (optional), duracion (optional). We are not using pasos, so we can leave empty.\n\nThus final JSON.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4015,
+      "completion_tokens": 1828,
+      "total_tokens": 5843,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 968,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 4015,
+    "completion_tokens": 1828,
+    "total_tokens": 5843,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 968,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "3 personaje(s): encogerse por miedo.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": null,
+    "actores_ids_sugeridos": [
+      0,
+      7,
+      9
+    ],
+    "ubicacion_id_sugerida": "puente_ejemplo_usuario",
+    "motivo_elecciones": "Usar la animación de miedo 'panic_cower' para tres actores civiles en un puente para representar el susto.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "animacion",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "una_vez",
+    "razon_reproduccion": "Gesto puntual; no repetirlo automáticamente sin una indicación.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "STAND:70:ON_LOOKERS:panic_cower",
+    "cantidad_actores": 3,
+    "animar_actores": [
+      0,
+      7,
+      9
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "civil"
+    ],
+    "lugar_tipo": null,
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "3 personaje(s): encogerse por miedo.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 0,
+    "actores_ids_sugeridos": [
+      0,
+      7,
+      9
+    ],
+    "ubicacion_id_sugerida": "puente_ejemplo_usuario",
+    "motivo_elecciones": "Usar la animación de miedo 'panic_cower' para tres actores civiles en un puente para representar el susto.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 1,
+    "hora_sugerida": 12,
+    "fuente": "IA",
+    "accion": "animacion",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "una_vez",
+    "razon_reproduccion": "Comportamiento propuesto por el análisis de la escena.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "STAND:70:ON_LOOKERS:panic_cower",
+    "cantidad_actores": 3,
+    "animar_actores": [
+      1,
+      2,
+      3
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "civil",
+      "civil",
+      "civil"
+    ],
+    "lugar_tipo": "puente",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "ebbe5f2100f63156ab3a5ade08a04143389be99e501f96024033a901e8feab95",
+  "segundos": 18.329,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:37.234466+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}

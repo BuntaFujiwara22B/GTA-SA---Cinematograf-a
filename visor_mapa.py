@@ -93,7 +93,7 @@ class MapaInteractivo(QGraphicsView):
 
         self.poner_marcador_pixel(px, py)
         self.label_coords.setText(
-            f"📍 X: {x_gta:.2f} | Y: {y_gta:.2f} | Z: {z_gta:.2f} | 🗺️ Entorno: {entorno.upper()}"
+            f"X: {x_gta:.2f} | Y: {y_gta:.2f} | Z: {z_gta:.2f} | Entorno: {entorno.upper()}"
         )
 
         if self.callback_seleccion:
@@ -123,14 +123,14 @@ class SelectorMapaWindow(QWidget):
 
         layout = QVBoxLayout(self)
 
-        self.label_coords = QLabel("📍 Haz clic en el mapa para marcar el punto de la escena...")
+        self.label_coords = QLabel("Haz clic en el mapa para marcar el punto de la escena...")
         self.label_coords.setStyleSheet(
             "font-size: 17px; font-family: 'Courier New'; font-weight: bold; padding: 10px; background: #FFFDF0; border: 2px solid black;"
         )
 
         self.visor_mapa = MapaInteractivo(self.label_coords, self._on_coord_update)
         
-        btn_confirmar = QPushButton("✓ CONFIRMAR UBICACIÓN Y USAR EN LA ESCENA")
+        btn_confirmar = QPushButton("CONFIRMAR UBICACIÓN Y USAR EN LA ESCENA")
         btn_confirmar.setStyleSheet("""
             QPushButton {
                 background-color: #2E7D32; color: white; font-family: 'Courier New';

@@ -1,0 +1,190 @@
+{
+  "id": "escena_0549",
+  "modelo": "baidu/ernie-5.5-flash-preview:free",
+  "proveedor": "openrouter",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:40:08.178667+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "id": "gen-1794433208-1B3ZEgfAClLX5zwmHwL1",
+    "object": "chat.completion",
+    "created": 1794433208,
+    "model": "baidu/ernie-5.5-flash-preview:free",
+    "provider": "Baidu",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"Tres bomberos caminan juntos por una calle de San Fierro durante 30 segundos.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": null,\n  \"actores_ids_sugeridos\": [277, 278, 279],\n  \"ubicacion_id_sugerida\": \"lugar_33_1197\",\n  \"motivo_elecciones\": \"Se usan los tres actores bombero disponibles y una ubicación de San Fierro; la ruta peatonal sugerida permite una caminata por calle.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": null,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"caminar\",\n  \"tipo_movimiento\": \"caminar\",\n  \"ruta_id_sugerida\": \"ped_33_1334_33_1399\",\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"mantener\",\n  \"razon_reproduccion\": \"La caminata debe mantenerse durante los 30 segundos.\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": null,\n  \"cantidad_actores\": 3,\n  \"animar_actores\": [1, 2, 3],\n  \"dialogos\": [],\n  \"pasos\": [],\n  \"roles\": [\"bombero\", \"bombero\", \"bombero\"],\n  \"lugar_tipo\": \"calle\",\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [],\n  \"aprendizaje_supervisado\": {}\n}",
+          "refusal": null,
+          "reasoning": "We need answer only JSON according schema. User Spanish: \"3 bomberos caminan por una calle de San Fierro durante 30 segundos\". Need interpret for Mission Maker GTA SA. Need produce JSON only. Need ensure valid. We have catalog: actors firemen model ids 277,278,279. Locations San Fierro city. Routes? There are rutas_vehiculo but no pedestrian routes in catalog? Draft has ruta_id_sugerida ped_33_1334_33_1399 maybe from local rules. Need choose location and route? User asks 3 bomberos walk on a street in San Fierro for 30 seconds. Need output plan with es_valido true, resumen, entorno ciudad, actores_ids_sugeridos [277,278,279], cantidad_actores 3, accion caminar, tipo_movimiento caminar, duracion_sugerida 30, reproduccion maybe mantener? For walking 30s, likely mantener or auto? Schema reproduccion enum auto/una_vez/mantener/bucle. For continuous walking, mantener maybe. pasos? Could include one step: accion caminar, actores [1,2,3], duracion 30, reproduccion mantener. But schema says pasos max 8. Need maybe include ruta_id_sugerida. Catalog doesn't list rutas_vehiculo only vehicle routes. Draft has ped route. We can use draft's ruta_id_sugerida? It says compiler admits rutas caminar/correr/nadar/escaleras. We need not invent IDs? User says no inventes IDs. But draft local revisable includes ruta_id_sugerida ped_33_1334_33_1399. Is that allowed? It is in draft, not catalog. Could use it? The instruction: \"No sustituyas acciones ni inventes IDs.\" We should only use IDs from catalog or draft? The draft is local revisable, likely can use. But if not in catalog, maybe risky. We can set ruta_id_sugerida null? But user asks calle San Fierro. Need location id from catalog: choose lugar_33_1197 or others. For walking route, if no route id, maybe use location. But schema has ruta_id_sugerida. Could set null and location id. But \"Elige reparto según roles, lugar etiquetado y ruta vial disponible.\" For walking, route vial? Maybe use draft route. The draft says fuente Reglas locales (API no disponible), ruta_id_sugerida ped_33_1334_33_1399. It might be acceptable as suggested route. But \"No inventes IDs\" maybe means don't make up new IDs not in provided data. The draft is provided, so can use. However, if final JSON includes ruta_id_sugerida from draft, okay. Need maybe location id: choose one San Fierro city. Which one? Could choose lugar_33_1197 (San Fierro · ciudad 7). Motivo: actores bomberos, entorno ciudad, San Fierro. Need dialogos empty. roles [\"bombero\",\"bombero\",\"bombero\"]? max 4. animar_actores [1,2,3]. pasos: one step with accion caminar, actores [1,2,3], duracion 30, reproduccion mantener. But if accion secuencia? The top-level accion maybe caminar. tipo_movimiento caminar. Need maybe \"accion\":\"caminar\". The schema top-level accion default caminar. Good.\n\nNeed ensure JSON only, no markdown. Need include all required: es_valido, resumen. Others optional. Need maybe limitaciones: [] or note no route? If using route from draft, no limitation. But maybe \"No hay rutas peatonales en catálogo; se usa ruta sugerida local\"? But if we include limitation, okay. But user wants simple. Need not overdo.\n\nPotential issue: \"duración total 1..60s\" top-level duracion_sugerida 30. Pasos durations sum? one step 30. Good.\n\nNeed \"reproduccion\": for walking maintain? The step reproduccion mantener. Top-level reproduccion maybe mantener. razon_reproduccion: \"caminata continua de 30 s\". Good.\n\nNeed \"vehiculo_en_movimiento\": false. \"cantidad_actores\":3. \"actores_ids_sugeridos\":[277,278,279]. \"actor_id_sugerido\": null? Could set first? Schema anyOf integer/null. For multiple, maybe null. But maybe actor_id_sugerido can be 277? It says actor_id_sugerido singular. Since multiple, null. But maybe required? Not required. Use null.\n\nNeed \"ubicacion_id_sugerida\": \"lugar_33_1197\". \"ruta_id_sugerida\": \"ped_33_1334_33_1399\". Is that a pedestrian route? Draft says yes. But not in catalog. Could be okay. If worried, set null and use location. But instruction says \"ruta vial disponible\" maybe for vehicles. For walking, \"rutas caminar/correr/nadar/escaleras\" compiler admits. We need route id? The draft includes one. Use it.\n\nNeed \"lugar_tipo\": maybe \"calle\"? The location is ciudad. Could set \"calle\". But catalog location entorno ciudad. \"lugar_tipo\" string. Use \"calle\".\n\nNeed \"entorno_sugerido\": \"ciudad\". \"clima_id_sugerido\": null, \"hora_sugerida\": null. Could choose day? Not requested. Null.\n\nNeed \"fuente\": maybe \"IA\" or \"Reglas locales\"? Since using catalog and draft. Could set \"IA\". But draft says Reglas locales (API no disponible). We can set \"IA\" because we are generating. But maybe use \"Reglas locales\"? Schema string. I'd use \"IA\".\n\nNeed \"aprendizaje_supervisado\": {} maybe. Include? Optional. Could include empty object. But JSON only. Need ensure no trailing commas.\n\nLet's craft:\n{\n \"es_valido\": true,\n \"razon_rechazo\": \"\",\n \"resumen\": \"Tres bomberos caminan juntos por una calle de San Fierro durante 30 segundos.\",\n \"entorno_sugerido\": \"ciudad\",\n \"actor_id_sugerido\": null,\n \"actores_ids_sugeridos\": [277,278,279],\n \"ubicacion_id_sugerida\": \"lugar_33_1197\",\n \"motivo_elecciones\": \"Se usan los tres actores bombero disponibles y una ubicación de San Fierro; la ruta peatonal sugerida permite caminar en calle.\",\n \"duracion_sugerida\": 30,\n \"clima_id_sugerido\": null,\n \"hora_sugerida\": null,\n \"fuente\": \"IA\",\n \"accion\": \"caminar\",\n \"tipo_movimiento\": \"caminar\",\n \"ruta_id_sugerida\": \"ped_33_1334_33_1399\",\n \"ruta_vehiculo_id\": null,\n \"velocidad_kmh_sugerida\": null,\n \"reproduccion\": \"mantener\",\n \"razon_reproduccion\": \"La caminata debe mantenerse durante los 30 segundos.\",\n \"vehiculo_id_sugerido\": null,\n \"objeto_id_sugerido\": null,\n \"animacion_sugerida\": null,\n \"cantidad_actores\": 3,\n \"animar_actores\": [1,2,3],\n \"dialogos\": [],\n \"pasos\": [\n  {\"accion\":\"caminar\",\"actores\":[1,2,3],\"objetivo_actor\":null,\"animacion\":null,\"reproduccion\":\"mantener\",\"duracion\":30}\n ],\n \"roles\": [\"bombero\",\"bombero\",\"bombero\"],\n \"lugar_tipo\": \"calle\",\n \"aviso_analisis\": \"\",\n \"vehiculo_en_movimiento\": false,\n \"limitaciones\": [],\n \"aprendizaje_supervisado\": {}\n}\n\nNeed check PasoEscena required only accion. It includes objetivo_actor null, animacion null okay. actores max 4. Good.\n\nCould there be issue with \"actores\" in paso are indices 1..4. Yes [1,2,3]. Good.\n\nNeed only JSON. final no code fences? User says Devuelve SOLO JSON. So final raw JSON. Ensure no comments.\n\nDouble-check \"No sustituyas acciones ni inventes IDs.\" We didn't invent. But ruta_id_sugerida from draft. If considered invented? It was in draft. Could avoid by setting null to be safer. But then no route. The instruction says \"Elige ... ruta vial disponible.\" For walking, maybe route id needed. The draft local revisable likely intended to be used. Use it.\n\nNeed maybe \"cantidad_actores\" max 4. Good.\n\nPotential issue: top-level \"accion\" maybe should be \"secuencia\" if pasos? But user asks simple walking. The schema says accion=secuencia uses pasos. But top-level accion can be caminar. If pasos present, maybe accion should be secuencia? The description: \"accion=secuencia usa pasos con actores por índice 1..4.\" It might imply if using pasos, top-level accion should be \"secuencia\". But top-level accion default caminar. The draft has accion caminar and pasos empty. If we include pasos, maybe should set accion \"secuencia\"? But user asks walking, not sequence. The compiler may accept pasos with accion caminar? The schema doesn't enforce. But to be safe, if pasos non-empty, set accion \"secuencia\"? However top-level accion enum not specified, just string. The instruction: \"Una a ocho tareas en secuencia... accion=secuencia usa pasos...\" So if we provide pasos, likely accion should be secuencia. But then tipo_movimiento? Could be caminar. But user wants 3 bomberos walk. Maybe better to not include pasos and just top-level fields. But the schema includes pasos optional. The draft had pasos empty. For simple action, we can omit pasos or empty. But user asked 30 seconds; top-level duracion_sugerida and reproduccion enough. If we include pasos, might trigger sequence. Could set accion \"secuencia\" and pasos one step. But then resumen still walking. Which is more correct? The instruction says \"accion=secuencia usa pasos con actores por índice 1..4.\" It doesn't say only sequence can have pasos, but likely. To avoid mismatch, either set accion \"caminar\" and pasos [] or set accion \"secuencia\" with paso. The user request is a single action, not sequence. The draft local had accion caminar, pasos empty. I'd follow draft: no pasos or empty. But the final answer can include pasos empty. However, the user asked 3 actors walking; top-level cantidad_actores and animar_actores maybe enough. But if no pasos, how specify all actors walking? actores_ids_sugeridos and cantidad_actores. Good.\n\nNeed decide. The schema's \"pasos\" max 8. If empty, okay. The instruction: \"Una a ocho tareas en secuencia, uno a cuatro actores... accion=secuencia usa pasos...\" For a single task, maybe top-level action is enough. The draft had pasos empty. Use empty to avoid sequence. But then \"reproduccion\" top-level. Good.\n\nBut the user specifically says \"3 bomberos caminan ... durante 30 segundos\". Could be represented by top-level. I'll set pasos: [] to align with draft. But the final JSON with pasos empty may be less explicit. Yet okay.\n\nNeed maybe \"animar_actores\": [1,2,3] indicates which actors animated. Good.\n\nCould include \"roles\": [\"bombero\",\"bombero\",\"bombero\"]. Good.\n\nNeed \"ruta_id_sugerida\": if no pasos, still route. Good.\n\nLet's consider if \"ruta_id_sugerida\" should be null because route is pedestrian and not in catalog. The draft includes it. Use it.\n\nPotential hidden validation: \"El compilador admite rutas caminar/correr/nadar/escaleras, clips del catálogo, saltar nativo y apuntar con arma a otro actor.\" It may require route id for walking. The draft route id likely valid. Good.\n\nNeed \"duracion_sugerida\" 30. \"reproduccion\" maybe \"mantener\". For walking, if route length maybe 30s. Good.\n\nCould \"clima_id_sugerido\" 0? Not requested. Null.\n\nNeed ensure JSON booleans lowercase. Good.\n\nLet's final raw JSON. But before final, maybe think about \"actor_id_sugerido\": If multiple, maybe set 277? The field singular could be used for primary actor. But with 3, maybe null. The draft had null. Use null.\n\nNeed \"aviso_analisis\": maybe \"Ruta peatonal tomada del borrador local; no hay ruta peatonal en catálogo.\" But if we include limitation, maybe. But not necessary. If we include aviso, could be okay. But user wants only JSON. Keep simple.\n\nOne more: \"No hay combate, parejas sincronizadas ni animaciones del conductor mientras conduce implementadas.\" Not relevant.\n\nCould \"lugar_tipo\" be \"ciudad\" instead of \"calle\"? The location is \"San Fierro · ciudad 7\". User says calle. \"lugar_tipo\" can be \"calle\". Good.\n\nNeed maybe \"motivo_elecciones\": mention route. Good.\n\nLet's produce final. Ensure no newline? Fine. JSON can be pretty printed. final only JSON.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "We need answer only JSON according schema. User Spanish: \"3 bomberos caminan por una calle de San Fierro durante 30 segundos\". Need interpret for Mission Maker GTA SA. Need produce JSON only. Need ensure valid. We have catalog: actors firemen model ids 277,278,279. Locations San Fierro city. Routes? There are rutas_vehiculo but no pedestrian routes in catalog? Draft has ruta_id_sugerida ped_33_1334_33_1399 maybe from local rules. Need choose location and route? User asks 3 bomberos walk on a street in San Fierro for 30 seconds. Need output plan with es_valido true, resumen, entorno ciudad, actores_ids_sugeridos [277,278,279], cantidad_actores 3, accion caminar, tipo_movimiento caminar, duracion_sugerida 30, reproduccion maybe mantener? For walking 30s, likely mantener or auto? Schema reproduccion enum auto/una_vez/mantener/bucle. For continuous walking, mantener maybe. pasos? Could include one step: accion caminar, actores [1,2,3], duracion 30, reproduccion mantener. But schema says pasos max 8. Need maybe include ruta_id_sugerida. Catalog doesn't list rutas_vehiculo only vehicle routes. Draft has ped route. We can use draft's ruta_id_sugerida? It says compiler admits rutas caminar/correr/nadar/escaleras. We need not invent IDs? User says no inventes IDs. But draft local revisable includes ruta_id_sugerida ped_33_1334_33_1399. Is that allowed? It is in draft, not catalog. Could use it? The instruction: \"No sustituyas acciones ni inventes IDs.\" We should only use IDs from catalog or draft? The draft is local revisable, likely can use. But if not in catalog, maybe risky. We can set ruta_id_sugerida null? But user asks calle San Fierro. Need location id from catalog: choose lugar_33_1197 or others. For walking route, if no route id, maybe use location. But schema has ruta_id_sugerida. Could set null and location id. But \"Elige reparto según roles, lugar etiquetado y ruta vial disponible.\" For walking, route vial? Maybe use draft route. The draft says fuente Reglas locales (API no disponible), ruta_id_sugerida ped_33_1334_33_1399. It might be acceptable as suggested route. But \"No inventes IDs\" maybe means don't make up new IDs not in provided data. The draft is provided, so can use. However, if final JSON includes ruta_id_sugerida from draft, okay. Need maybe location id: choose one San Fierro city. Which one? Could choose lugar_33_1197 (San Fierro · ciudad 7). Motivo: actores bomberos, entorno ciudad, San Fierro. Need dialogos empty. roles [\"bombero\",\"bombero\",\"bombero\"]? max 4. animar_actores [1,2,3]. pasos: one step with accion caminar, actores [1,2,3], duracion 30, reproduccion mantener. But if accion secuencia? The top-level accion maybe caminar. tipo_movimiento caminar. Need maybe \"accion\":\"caminar\". The schema top-level accion default caminar. Good.\n\nNeed ensure JSON only, no markdown. Need include all required: es_valido, resumen. Others optional. Need maybe limitaciones: [] or note no route? If using route from draft, no limitation. But maybe \"No hay rutas peatonales en catálogo; se usa ruta sugerida local\"? But if we include limitation, okay. But user wants simple. Need not overdo.\n\nPotential issue: \"duración total 1..60s\" top-level duracion_sugerida 30. Pasos durations sum? one step 30. Good.\n\nNeed \"reproduccion\": for walking maintain? The step reproduccion mantener. Top-level reproduccion maybe mantener. razon_reproduccion: \"caminata continua de 30 s\". Good.\n\nNeed \"vehiculo_en_movimiento\": false. \"cantidad_actores\":3. \"actores_ids_sugeridos\":[277,278,279]. \"actor_id_sugerido\": null? Could set first? Schema anyOf integer/null. For multiple, maybe null. But maybe actor_id_sugerido can be 277? It says actor_id_sugerido singular. Since multiple, null. But maybe required? Not required. Use null.\n\nNeed \"ubicacion_id_sugerida\": \"lugar_33_1197\". \"ruta_id_sugerida\": \"ped_33_1334_33_1399\". Is that a pedestrian route? Draft says yes. But not in catalog. Could be okay. If worried, set null and use location. But instruction says \"ruta vial disponible\" maybe for vehicles. For walking, \"rutas caminar/correr/nadar/escaleras\" compiler admits. We need route id? The draft includes one. Use it.\n\nNeed \"lugar_tipo\": maybe \"calle\"? The location is ciudad. Could set \"calle\". But catalog location entorno ciudad. \"lugar_tipo\" string. Use \"calle\".\n\nNeed \"entorno_sugerido\": \"ciudad\". \"clima_id_sugerido\": null, \"hora_sugerida\": null. Could choose day? Not requested. Null.\n\nNeed \"fuente\": maybe \"IA\" or \"Reglas locales\"? Since using catalog and draft. Could set \"IA\". But draft says Reglas locales (API no disponible). We can set \"IA\" because we are generating. But maybe use \"Reglas locales\"? Schema string. I'd use \"IA\".\n\nNeed \"aprendizaje_supervisado\": {} maybe. Include? Optional. Could include empty object. But JSON only. Need ensure no trailing commas.\n\nLet's craft:\n{\n \"es_valido\": true,\n \"razon_rechazo\": \"\",\n \"resumen\": \"Tres bomberos caminan juntos por una calle de San Fierro durante 30 segundos.\",\n \"entorno_sugerido\": \"ciudad\",\n \"actor_id_sugerido\": null,\n \"actores_ids_sugeridos\": [277,278,279],\n \"ubicacion_id_sugerida\": \"lugar_33_1197\",\n \"motivo_elecciones\": \"Se usan los tres actores bombero disponibles y una ubicación de San Fierro; la ruta peatonal sugerida permite caminar en calle.\",\n \"duracion_sugerida\": 30,\n \"clima_id_sugerido\": null,\n \"hora_sugerida\": null,\n \"fuente\": \"IA\",\n \"accion\": \"caminar\",\n \"tipo_movimiento\": \"caminar\",\n \"ruta_id_sugerida\": \"ped_33_1334_33_1399\",\n \"ruta_vehiculo_id\": null,\n \"velocidad_kmh_sugerida\": null,\n \"reproduccion\": \"mantener\",\n \"razon_reproduccion\": \"La caminata debe mantenerse durante los 30 segundos.\",\n \"vehiculo_id_sugerido\": null,\n \"objeto_id_sugerido\": null,\n \"animacion_sugerida\": null,\n \"cantidad_actores\": 3,\n \"animar_actores\": [1,2,3],\n \"dialogos\": [],\n \"pasos\": [\n  {\"accion\":\"caminar\",\"actores\":[1,2,3],\"objetivo_actor\":null,\"animacion\":null,\"reproduccion\":\"mantener\",\"duracion\":30}\n ],\n \"roles\": [\"bombero\",\"bombero\",\"bombero\"],\n \"lugar_tipo\": \"calle\",\n \"aviso_analisis\": \"\",\n \"vehiculo_en_movimiento\": false,\n \"limitaciones\": [],\n \"aprendizaje_supervisado\": {}\n}\n\nNeed check PasoEscena required only accion. It includes objetivo_actor null, animacion null okay. actores max 4. Good.\n\nCould there be issue with \"actores\" in paso are indices 1..4. Yes [1,2,3]. Good.\n\nNeed only JSON. final no code fences? User says Devuelve SOLO JSON. So final raw JSON. Ensure no comments.\n\nDouble-check \"No sustituyas acciones ni inventes IDs.\" We didn't invent. But ruta_id_sugerida from draft. If considered invented? It was in draft. Could avoid by setting null to be safer. But then no route. The instruction says \"Elige ... ruta vial disponible.\" For walking, maybe route id needed. The draft local revisable likely intended to be used. Use it.\n\nNeed maybe \"cantidad_actores\" max 4. Good.\n\nPotential issue: top-level \"accion\" maybe should be \"secuencia\" if pasos? But user asks simple walking. The schema says accion=secuencia uses pasos. But top-level accion can be caminar. If pasos present, maybe accion should be secuencia? The description: \"accion=secuencia usa pasos con actores por índice 1..4.\" It might imply if using pasos, top-level accion should be \"secuencia\". But top-level accion default caminar. The draft has accion caminar and pasos empty. If we include pasos, maybe should set accion \"secuencia\"? But user asks walking, not sequence. The compiler may accept pasos with accion caminar? The schema doesn't enforce. But to be safe, if pasos non-empty, set accion \"secuencia\"? However top-level accion enum not specified, just string. The instruction: \"Una a ocho tareas en secuencia... accion=secuencia usa pasos...\" So if we provide pasos, likely accion should be secuencia. But then tipo_movimiento? Could be caminar. But user wants 3 bomberos walk. Maybe better to not include pasos and just top-level fields. But the schema includes pasos optional. The draft had pasos empty. For simple action, we can omit pasos or empty. But user asked 30 seconds; top-level duracion_sugerida and reproduccion enough. If we include pasos, might trigger sequence. Could set accion \"secuencia\" and pasos one step. But then resumen still walking. Which is more correct? The instruction says \"accion=secuencia usa pasos con actores por índice 1..4.\" It doesn't say only sequence can have pasos, but likely. To avoid mismatch, either set accion \"caminar\" and pasos [] or set accion \"secuencia\" with paso. The user request is a single action, not sequence. The draft local had accion caminar, pasos empty. I'd follow draft: no pasos or empty. But the final answer can include pasos empty. However, the user asked 3 actors walking; top-level cantidad_actores and animar_actores maybe enough. But if no pasos, how specify all actors walking? actores_ids_sugeridos and cantidad_actores. Good.\n\nNeed decide. The schema's \"pasos\" max 8. If empty, okay. The instruction: \"Una a ocho tareas en secuencia, uno a cuatro actores... accion=secuencia usa pasos...\" For a single task, maybe top-level action is enough. The draft had pasos empty. Use empty to avoid sequence. But then \"reproduccion\" top-level. Good.\n\nBut the user specifically says \"3 bomberos caminan ... durante 30 segundos\". Could be represented by top-level. I'll set pasos: [] to align with draft. But the final JSON with pasos empty may be less explicit. Yet okay.\n\nNeed maybe \"animar_actores\": [1,2,3] indicates which actors animated. Good.\n\nCould include \"roles\": [\"bombero\",\"bombero\",\"bombero\"]. Good.\n\nNeed \"ruta_id_sugerida\": if no pasos, still route. Good.\n\nLet's consider if \"ruta_id_sugerida\" should be null because route is pedestrian and not in catalog. The draft includes it. Use it.\n\nPotential hidden validation: \"El compilador admite rutas caminar/correr/nadar/escaleras, clips del catálogo, saltar nativo y apuntar con arma a otro actor.\" It may require route id for walking. The draft route id likely valid. Good.\n\nNeed \"duracion_sugerida\" 30. \"reproduccion\" maybe \"mantener\". For walking, if route length maybe 30s. Good.\n\nCould \"clima_id_sugerido\" 0? Not requested. Null.\n\nNeed ensure JSON booleans lowercase. Good.\n\nLet's final raw JSON. But before final, maybe think about \"actor_id_sugerido\": If multiple, maybe set 277? The field singular could be used for primary actor. But with 3, maybe null. The draft had null. Use null.\n\nNeed \"aviso_analisis\": maybe \"Ruta peatonal tomada del borrador local; no hay ruta peatonal en catálogo.\" But if we include limitation, maybe. But not necessary. If we include aviso, could be okay. But user wants only JSON. Keep simple.\n\nOne more: \"No hay combate, parejas sincronizadas ni animaciones del conductor mientras conduce implementadas.\" Not relevant.\n\nCould \"lugar_tipo\" be \"ciudad\" instead of \"calle\"? The location is \"San Fierro · ciudad 7\". User says calle. \"lugar_tipo\" can be \"calle\". Good.\n\nNeed maybe \"motivo_elecciones\": mention route. Good.\n\nLet's produce final. Ensure no newline? Fine. JSON can be pretty printed. final only JSON.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4406,
+      "completion_tokens": 3349,
+      "total_tokens": 7755,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2932,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 4406,
+    "completion_tokens": 3349,
+    "total_tokens": 7755,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2932,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Tres bomberos caminan juntos por una calle de San Fierro durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": null,
+    "actores_ids_sugeridos": [
+      277,
+      278,
+      279
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Se usan los tres actores bombero disponibles y una ubicación de San Fierro; la ruta peatonal sugerida permite una caminata por calle.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "caminar",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": "ped_33_1334_33_1399",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "mantener",
+    "razon_reproduccion": "La caminata debe mantenerse durante los 30 segundos.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 3,
+    "animar_actores": [
+      1,
+      2,
+      3
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "bombero",
+      "bombero",
+      "bombero"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Tres bomberos caminan juntos por una calle de San Fierro durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 277,
+    "actores_ids_sugeridos": [
+      277,
+      278,
+      279
+    ],
+    "ubicacion_id_sugerida": null,
+    "motivo_elecciones": "Se usan los tres actores bombero disponibles y una ubicación de San Fierro; la ruta peatonal sugerida permite una caminata por calle.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 1,
+    "hora_sugerida": 12,
+    "fuente": "IA",
+    "accion": "caminar",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": "ped_33_1334_33_1399",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "mantener",
+    "razon_reproduccion": "La caminata debe mantenerse durante los 30 segundos.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 3,
+    "animar_actores": [
+      1,
+      2,
+      3
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "bombero",
+      "bombero",
+      "bombero"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "6994a0e2a27c613985c4d6c81dabb41309977ef4eeb781912966fefeca34f03a",
+  "segundos": 13.375,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:36.744530+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}

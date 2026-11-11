@@ -1,0 +1,216 @@
+{
+  "id": "escena_0549",
+  "modelo": "dots-studio/dots-3-note-preview:free",
+  "proveedor": "openrouter",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:40:08.178667+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "id": "gen-1794433211-0YLe1wwvGn86swA1V92q",
+    "object": "chat.completion",
+    "created": 1794433211,
+    "model": "dots-studio/dots-3-note-preview:free",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\n{\"es_valido\":true,\"razon_rechazo\":\"\",\"resumen\":\"3 bomberos caminan por una calle de San Fierro durante 30 segundos.\",\"entorno_sugerido\":\"ciudad\",\"actor_id_sugerido\":null,\"actores_ids_sugeridos\":[277,278,279],\"ubicacion_id_sugerida\":\"lugar_33_1197\",\"motivo_elecciones\":\"Se han encontrado 3 modelos de bomberos (lafd1, lvfd1, sffd1) y múltiples ubicaciones en la zona de San Fierro. Se ha seleccionado la ubicación 'lugar_33_1197' (San Fierro · ciudad 7) por ser una zona urbana adecuada para caminar.\",\"duracion_sugerida\":30,\"clima_id_sugerido\":null,\"hora_sugerida\":null,\"fuente\":\"IA\",\"accion\":\"caminar\",\"tipo_movimiento\":\"caminar\",\"ruta_id_sugerida\":null,\"ruta_vehiculo_id\":null,\"velocidad_kmh_sugerida\":null,\"reproduccion\":\"auto\",\"razon_reproduccion\":\"\",\"vehiculo_id_sugerido\":null,\"objeto_id_sugerido\":null,\"animacion_sugerida\":null,\"cantidad_actores\":3,\"animar_actores\":[1,2,3],\"dialogos\":[],\"pasos\":[{\"accion\":\"caminar\",\"actores\":[1,2,3],\"objetivo_actor\":null,\"animacion\":null,\"reproduccion\":\"auto\",\"duracion\":30}],\"roles\":[\"bombero\",\"bombero\",\"bombero\"],\"lugar_tipo\":null,\"aviso_analisis\":\"\",\"vehiculo_en_movimiento\":false,\"limitaciones\":[],\"aprendizaje_supervisado\":{}}",
+          "refusal": null,
+          "reasoning": "Vale, el usuario pide que 3 bomberos caminen por una calle de San Fierro durante 30 segundos. Analizo la solicitud: son 3 actores, todos del mismo rol (bombero), la acción es caminar, la duración es fija en 30 segundos, y el entorno es San Fierro (ciudad). \n\nReviso el catálogo: hay 3 modelos de bomberos disponibles (277, 278, 279), todos con rol \"bombero\". Para ubicaciones, hay varias en San Fierro, elijo una que sea claramente urbana como \"lugar_33_1197\" (ciudad 7). Como solo caminan, no necesito ruta de vehículo ni animaciones especiales. \n\nLa duración de 30 segundos es perfectamente válida (1-60s). Configuro los pasos: un solo paso de tipo \"caminar\" con los 3 actores, duración 30s. El resto de campos los dejo por defecto o nulos según corresponde. Verifico que no haya limitaciones: todo está dentro de los parámetros del compilador. \n\nEl resumen debe ser claro: 3 bomberos caminando 30s en San Fierro. Incluyo los IDs de actores y ubicación elegidos, y dejomotivo_elecciones vacío porque la elección fue directa por coincidencia con la solicitud.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Vale, el usuario pide que 3 bomberos caminen por una calle de San Fierro durante 30 segundos. Analizo la solicitud: son 3 actores, todos del mismo rol (bombero), la acción es caminar, la duración es fija en 30 segundos, y el entorno es San Fierro (ciudad). \n\nReviso el catálogo: hay 3 modelos de bomberos disponibles (277, 278, 279), todos con rol \"bombero\". Para ubicaciones, hay varias en San Fierro, elijo una que sea claramente urbana como \"lugar_33_1197\" (ciudad 7). Como solo caminan, no necesito ruta de vehículo ni animaciones especiales. \n\nLa duración de 30 segundos es perfectamente válida (1-60s). Configuro los pasos: un solo paso de tipo \"caminar\" con los 3 actores, duración 30s. El resto de campos los dejo por defecto o nulos según corresponde. Verifico que no haya limitaciones: todo está dentro de los parámetros del compilador. \n\nEl resumen debe ser claro: 3 bomberos caminando 30s en San Fierro. Incluyo los IDs de actores y ubicación elegidos, y dejomotivo_elecciones vacío porque la elección fue directa por coincidencia con la solicitud.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4674,
+      "completion_tokens": 724,
+      "total_tokens": 5398,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 271,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 4674,
+    "completion_tokens": 724,
+    "total_tokens": 5398,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 271,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "3 bomberos caminan por una calle de San Fierro durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": null,
+    "actores_ids_sugeridos": [
+      277,
+      278,
+      279
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Se han encontrado 3 modelos de bomberos (lafd1, lvfd1, sffd1) y múltiples ubicaciones en la zona de San Fierro. Se ha seleccionado la ubicación 'lugar_33_1197' (San Fierro · ciudad 7) por ser una zona urbana adecuada para caminar.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "caminar",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 3,
+    "animar_actores": [
+      1,
+      2,
+      3
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "caminar",
+        "actores": [
+          1,
+          2,
+          3
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": 30
+      }
+    ],
+    "roles": [
+      "bombero",
+      "bombero",
+      "bombero"
+    ],
+    "lugar_tipo": null,
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "3 bomberos caminan por una calle de San Fierro durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 277,
+    "actores_ids_sugeridos": [
+      277,
+      278,
+      279
+    ],
+    "ubicacion_id_sugerida": null,
+    "motivo_elecciones": "Se han encontrado 3 modelos de bomberos (lafd1, lvfd1, sffd1) y múltiples ubicaciones en la zona de San Fierro. Se ha seleccionado la ubicación 'lugar_33_1197' (San Fierro · ciudad 7) por ser una zona urbana adecuada para caminar.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 1,
+    "hora_sugerida": 12,
+    "fuente": "IA",
+    "accion": "caminar",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": "ped_33_1334_33_1399",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 3,
+    "animar_actores": [
+      1,
+      2,
+      3
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "caminar",
+        "actores": [
+          1,
+          2,
+          3
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": 30
+      }
+    ],
+    "roles": [
+      "bombero",
+      "bombero",
+      "bombero"
+    ],
+    "lugar_tipo": null,
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "6994a0e2a27c613985c4d6c81dabb41309977ef4eeb781912966fefeca34f03a",
+  "segundos": 12.437,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:37.081466+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}

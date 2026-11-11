@@ -1,0 +1,146 @@
+{
+  "id": "escena_1194",
+  "modelo": "gemini-3.5-flash",
+  "proveedor": "google",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:44:09.054288+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "```json\n{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"Un policía de Las Venturas se acerca a un taxi, aborda el vehículo y conduce por una ruta de la ciudad durante 30 segundos.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": 282,\n  \"actores_ids_sugeridos\": [282],\n  \"ubicacion_id_sugerida\": \"lugar_46_1860\",\n  \"motivo_elecciones\": \"Se asigna al oficial de policía LVPD (282) acorde a la ubicación de Las Venturas, el taxi (420) como vehículo indicado y una ruta urbana para la conducción de 30 segundos.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": null,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"conducir_vehiculo\",\n  \"tipo_movimiento\": \"caminar\",\n  \"ruta_id_sugerida\": null,\n  \"ruta_vehiculo_id\": \"auto_46_233\",\n  \"velocidad_kmh_sugerida\": 40,\n  \"reproduccion\": \"auto\",\n  \"razon_reproduccion\": \"\",\n  \"vehiculo_id_sugerido\": 420,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": null,\n  \"cantidad_actores\": 1,\n  \"animar_actores\": [1],\n  \"dialogos\": [],\n  \"pasos\": [],\n  \"roles\": [\"policia\"],\n  \"lugar_tipo\": \"Las Venturas\",\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": true,\n  \"limitaciones\": [],\n  \"aprendizaje_supervisado\": {}\n}\n```",
+              "thoughtSignature": "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"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 4551,
+      "candidatesTokenCount": 476,
+      "totalTokenCount": 6118,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4551
+        }
+      ],
+      "thoughtsTokenCount": 1091,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.6-flash",
+    "responseId": "qeH0aquFJ7aA1sgPpaqx2AQ"
+  },
+  "usage": {
+    "promptTokenCount": 4551,
+    "candidatesTokenCount": 476,
+    "totalTokenCount": 6118,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 4551
+      }
+    ],
+    "thoughtsTokenCount": 1091,
+    "serviceTier": "standard"
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Un policía de Las Venturas se acerca a un taxi, aborda el vehículo y conduce por una ruta de la ciudad durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 282,
+    "actores_ids_sugeridos": [
+      282
+    ],
+    "ubicacion_id_sugerida": "lugar_46_1860",
+    "motivo_elecciones": "Se asigna al oficial de policía LVPD (282) acorde a la ubicación de Las Venturas, el taxi (420) como vehículo indicado y una ruta urbana para la conducción de 30 segundos.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "conducir_vehiculo",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": "auto_46_233",
+    "velocidad_kmh_sugerida": 40,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": 420,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 1,
+    "animar_actores": [
+      1
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "policia"
+    ],
+    "lugar_tipo": "Las Venturas",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": true,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Un policía de Las Venturas se acerca a un taxi, aborda el vehículo y conduce por una ruta de la ciudad durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 282,
+    "actores_ids_sugeridos": [
+      282
+    ],
+    "ubicacion_id_sugerida": null,
+    "motivo_elecciones": "Se asigna al oficial de policía LVPD (282) acorde a la ubicación de Las Venturas, el taxi (420) como vehículo indicado y una ruta urbana para la conducción de 30 segundos.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 1,
+    "hora_sugerida": 12,
+    "fuente": "IA",
+    "accion": "conducir_vehiculo",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": "ped_54_1214_54_1221",
+    "ruta_vehiculo_id": "auto_46_233",
+    "velocidad_kmh_sugerida": 40,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": 420,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 1,
+    "animar_actores": [
+      1
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "policia"
+    ],
+    "lugar_tipo": "Las Venturas",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": true,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "f8fc004acd0184944ea54e94e4bc60ea0759373cfb4a349bc0bf52ad5063e4ba",
+  "segundos": 8.5,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:36.654530+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "escena_0227",
+  "modelo": "dots-studio/dots-3-note-preview:free",
+  "proveedor": "openrouter",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:47:06.106267+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "id": "gen-1794433632-zO2BP9kEdAI3XDRMPEp1",
+    "object": "chat.completion",
+    "created": 1794433632,
+    "model": "dots-studio/dots-3-note-preview:free",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "\n\n{\"es_valido\":true,\"razon_rechazo\":\"\",\"resumen\":\"2 granjeros conversan en una calle de San Fierro con niebla durante 30 segundos.\",\"entorno_sugerido\":\"ciudad\",\"actor_id_sugerido\":null,\"actores_ids_sugeridos\":[158,161],\"ubicacion_id_sugerida\":\"lugar_33_1197\",\"motivo_elecciones\":\"Ubicación en calle de San Fierro con entorno urbano adecuado para conversación. Dos actores granjero disponibles para interactuar.\",\"duracion_sugerida\":30,\"clima_id_sugerido\":8,\"hora_sugerida\":null,\"fuente\":\"Reglas locales del catalogo (sin confirmacion de Gemini)\",\"accion\":\"animacion\",\"tipo_movimiento\":\"caminar\",\"ruta_id_sugerida\":null,\"ruta_vehiculo_id\":null,\"velocidad_kmh_sugerida\":null,\"reproduccion\":\"bucle\",\"razon_reproduccion\":\"Conversación sostenida entre dos personajes.\",\"vehiculo_id_sugerido\":null,\"objeto_id_sugerido\":null,\"animacion_sugerida\":\"CHAT:5:ped:IDLE_chat\",\"cantidad_actores\":2,\"animar_actores\":[158,161],\"dialogos\":[],\"pasos\":[],\"roles\":[\"granjero\",\"granjero\"],\"lugar_tipo\":\"calle\",\"aviso_analisis\":\"Clima de niebla configurado (id 8). La animación de chat se reproduce en bucle para simular la conversación.\",\"vehiculo_en_movimiento\":false,\"limitaciones\":[],\"aprendizaje_supervisado\":{}}",
+          "refusal": null,
+          "reasoning": "El usuario pide una escena de un granjero conversando en una calle de San Fierro con niebla durante 30 segundos. Primero verifico los datos del catálogo: hay dos actores granjero (model_id 158 y 161), ubicaciones en San Fierro, animaciones de chat como IDLE_chat. El clima de niebla corresponde al id 8. La duración de 30 segundos es válida.\n\nConsidero que la conversación requiere al menos un actor, pero como es una conversación, usaría dos actores para dar más dinamismo. Eligeo los dos granjeros disponibles. La animación CHAT:5:ped:IDLE_chat es adecuada para hablar. La ubicación lugar_33_1197 está en una zona de ciudad de San Fierro, con calle y entorno urbano.\n\nLa niebla se configura con clima_id 8. La hora no se especifica, la dejo nula para que el sistema elija. La duración de 30 segundos es correcta. La acción principal es animación con reproducción en bucle para mantener la conversación. No hay pasos adicionales porque es una escena sencilla.\n\nVerifico que no haya limitaciones: no hay combate, ni conducción, ni animaciones complejas. Todo está dentro de los parámetros. El resumen refleja correctamente la escena.\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "El usuario pide una escena de un granjero conversando en una calle de San Fierro con niebla durante 30 segundos. Primero verifico los datos del catálogo: hay dos actores granjero (model_id 158 y 161), ubicaciones en San Fierro, animaciones de chat como IDLE_chat. El clima de niebla corresponde al id 8. La duración de 30 segundos es válida.\n\nConsidero que la conversación requiere al menos un actor, pero como es una conversación, usaría dos actores para dar más dinamismo. Eligeo los dos granjeros disponibles. La animación CHAT:5:ped:IDLE_chat es adecuada para hablar. La ubicación lugar_33_1197 está en una zona de ciudad de San Fierro, con calle y entorno urbano.\n\nLa niebla se configura con clima_id 8. La hora no se especifica, la dejo nula para que el sistema elija. La duración de 30 segundos es correcta. La acción principal es animación con reproducción en bucle para mantener la conversación. No hay pasos adicionales porque es una escena sencilla.\n\nVerifico que no haya limitaciones: no hay combate, ni conducción, ni animaciones complejas. Todo está dentro de los parámetros. El resumen refleja correctamente la escena.\n",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4620,
+      "completion_tokens": 691,
+      "total_tokens": 5311,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 291,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 4620,
+    "completion_tokens": 691,
+    "total_tokens": 5311,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 291,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "json_valido": true,
+  "mms_generado": false,
+  "correcto": false,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "2 granjeros conversan en una calle de San Fierro con niebla durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": null,
+    "actores_ids_sugeridos": [
+      158,
+      161
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Ubicación en calle de San Fierro con entorno urbano adecuado para conversación. Dos actores granjero disponibles para interactuar.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 8,
+    "hora_sugerida": null,
+    "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+    "accion": "animacion",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "bucle",
+    "razon_reproduccion": "Conversación sostenida entre dos personajes.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "CHAT:5:ped:IDLE_chat",
+    "cantidad_actores": 2,
+    "animar_actores": [
+      158,
+      161
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "granjero",
+      "granjero"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "Clima de niebla configurado (id 8). La animación de chat se reproduce en bucle para simular la conversación.",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": false,
+    "razon_rechazo": "Los participantes de la animacion no coinciden con el reparto.",
+    "resumen": "2 granjeros conversan en una calle de San Fierro con niebla durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": null,
+    "actores_ids_sugeridos": [
+      158,
+      161
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Ubicación en calle de San Fierro con entorno urbano adecuado para conversación. Dos actores granjero disponibles para interactuar.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 9,
+    "hora_sugerida": null,
+    "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+    "accion": "animacion",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "bucle",
+    "razon_reproduccion": "Comportamiento propuesto por el análisis de la escena.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "CHAT:5:ped:IDLE_chat",
+    "cantidad_actores": 1,
+    "animar_actores": [
+      158,
+      161
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "granjero"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "Clima de niebla configurado (id 8). La animación de chat se reproduce en bucle para simular la conversación.",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "segundos": 15.641,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": false,
+      "fecha_utc": "2026-11-11T21:49:37.202466+00:00",
+      "sin_consulta_api": true
+    }
+  ],
+  "error_evaluacion": "Aceptación diferente del contrato esperado"
+}

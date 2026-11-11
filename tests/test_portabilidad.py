@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 from src.datos_cache import leer_json
-from limpiar_duplicados import limpiar
+from tools.limpiar_duplicados import limpiar
 
 
 class Portabilidad(unittest.TestCase):

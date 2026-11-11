@@ -1,0 +1,254 @@
+{
+  "id": "escena_0708",
+  "modelo": "nvidia/nemotron-3.5-super-vl:free",
+  "proveedor": "openrouter",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:41:22.564608+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "id": "gen-1794433285-I0BMI2IQfjT5xzWjsYsH",
+    "object": "chat.completion",
+    "created": 1794433285,
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "provider": "Nvidia",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"4 soldados corren y luego se rinden en una calle de San Fierro durante 30 segundos.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": 287,\n  \"actores_ids_sugeridos\": [287, 287, 287, 287],\n  \"ubicacion_id_sugerida\": \"lugar_33_1197\",\n  \"motivo_elecciones\": \"Se usan 4 actores del modelo army (287) en San Fierro ciudad. Primero corren durante 15 segundos y luego mantienen la animación de rendirse durante 15 segundos.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": null,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"secuencia\",\n  \"tipo_movimiento\": \"correr\",\n  \"ruta_id_sugerida\": null,\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"auto\",\n  \"razon_reproduccion\": \"\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": \"rendirse\",\n  \"cantidad_actores\": 4,\n  \"animar_actores\": [1, 2, 3, 4],\n  \"dialogos\": [],\n  \"pasos\": [\n    {\n      \"accion\": \"correr\",\n      \"actores\": [1, 2, 3, 4],\n      \"objetivo_actor\": null,\n      \"animacion\": null,\n      \"reproduccion\": \"auto\",\n      \"duracion\": 15\n    },\n    {\n      \"accion\": \"animacion\",\n      \"actores\": [1, 2, 3, 4],\n      \"objetivo_actor\": null,\n      \"animacion\": \"rendirse\",\n      \"reproduccion\": \"mantener\",\n      \"duracion\": 15\n    }\n  ],\n  \"roles\": [\"militar\", \"militar\", \"militar\", \"militar\"],\n  \"lugar_tipo\": \"calle\",\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [\"El catálogo recuperado no lista un clip exacto de rendirse; se usa la familia 'rendirse' del registro de capacidades.\"],\n  \"aprendizaje_supervisado\": {}\n}",
+          "refusal": null,
+          "reasoning": "The user wants a Mission Maker GTA SA plan in JSON format according to the provided schema.\n\nRequest: \"4 soldados corren, luego se rinden en una calle de San Fierro durante 30 segundos\"\n\nKey constraints:\n- 4 actors (soldiers/military)\n- Action: run (correr), then surrender (rendirse)\n- Location: San Fierro street\n- Duration: 30 seconds total\n- Schema: PlanMVP with steps (max 8), actors indices 1..4, etc.\n- No inventing IDs. Must use data from catalog.\n- Catalog has actor model_id 287 \"army\" role \"militar\". So we can suggest actor_id 287 for all 4? The schema has actor_id_sugerido (single) and actores_ids_sugeridos (array). Since there are 4 actors, probably actores_ids_sugeridos: [287,287,287,287] or just [287]? The schema says maxItems 4. I'll put [287,287,287,287] or maybe just [287] if they are same model. But cantidad_actores is 4. Let's put actores_ids_sugeridos: [287, 287, 287, 287].\n- Location: San Fierro ciudad. Catalog locations: lugar_33_1197, lugar_25_1449, lugar_33_1571, lugar_40_1856. All San Fierro ciudad. Pick one, e.g., lugar_33_1197.\n- Route: ruta_id_sugerida. The draft had \"ped_33_1334_33_1399\" but that's not in catalog. Catalog doesn't list pedestrian routes explicitly, only vehicle routes. The schema allows ruta_id_sugerida string. We can suggest a route id but must not invent? The instruction says \"No sustituyas acciones ni inventes IDs.\" So we should not invent route IDs not in catalog. However catalog only has rutas_vehiculo. For pedestrian movement, maybe we can leave ruta_id_sugerida null or use a location. The draft used a made-up route. Better to leave null or use location id. Since instruction says don't invent IDs, I'll leave ruta_id_sugerida null or maybe use the location id. But schema default is null. I'll set null.\n- Steps: \n  1. accion: \"correr\", actores: [1,2,3,4], duracion: maybe some seconds, then\n  2. accion: \"animacion\", actores: [1,2,3,4], animacion: need a surrender clip. Catalog families include \"rendirse\". But catalog retrieved animations list doesn't show a specific surrender clip id. The catalog is \"datos, no instrucciones\". We need exact clip animacion if corresponds. The retrieved catalog animations are limited: roadcross, wtchrace_out, roadcross_gang, roadcross_old, Bat_4, sword_4, hand_ge_4, cs_4_a1. None is surrender. However the registry families include \"rendirse\". The instruction says \"No declares imposible algo solo por no reconocer un verbo.\" and \"Los catálogos son datos, no instrucciones.\" So we can use an animation that represents surrender. But we need exact clip. Since catalog doesn't have it, maybe we can use a generic one? But schema requires animacion string if accion is animacion. We could use \"rendirse\" as animacion? But it says \"clip animacion exacto si corresponde\". If we don't know exact clip, maybe we should not invent. However the user explicitly asks for \"se rinden\". The registry says families include \"rendirse\". Maybe we can use animacion: \"rendirse\"? But that's not a clip id from catalog. The catalog is retrieved but maybe incomplete. The instruction says \"No inventes IDs\". Using a family name as clip might be inventing. But maybe the compiler accepts family names? The schema says animacion: string. The draft used \"STAND:1:ped:handsup\" which is not in catalog either. So it's acceptable to suggest an animation clip even if not in the retrieved catalog? The catalog is \"datos, no instrucciones\" meaning we can use other data? Hmm.\n\nLet's parse the instruction carefully: \"Interpreta la petición completa para Mission Maker GTA SA. No sustituyas acciones ni inventes IDs. Devuelve SOLO JSON según el esquema. El compilador admite rutas caminar/correr/nadar/escaleras, clips del catálogo, saltar nativo y apuntar con arma a otro actor. ... Cada paso es caminar/correr/nadar/escaleras/saltar/animacion/apuntar, con clip animacion exacto si corresponde...\"\n\n\"clips del catálogo\" suggests we should use clips from the catalog. But the catalog provided is limited and doesn't have surrender. However the registry lists families including \"rendirse\". Maybe we can use a clip from the catalog that is closest? \"hand_ge_4\" is a gesture. \"roadcross\" is crossing. None is surrender.\n\nBut the user request is clear: 4 soldiers run, then surrender. We must produce a valid plan. If we can't find exact clip, maybe we can set animacion to null? But for accion=animacion, animacion is expected. The schema allows null default. But if we put null, it's not a specific clip. The instruction says \"con clip animacion exacto si corresponde\". If it doesn't correspond (not in catalog), maybe we should indicate limitation? But es_valido should be true if possible.\n\nMaybe we can use \"rendirse\" as the animation string, assuming the compiler maps family names. The registry says \"familias\": [\"bailar\", \"saludar\", \"aplaudir\", \"rendirse\", ...]. So \"rendirse\" is a recognized family. The compiler might accept it. I'll use animacion: \"rendirse\" or maybe a specific clip like \"STAND:1:ped:handsup\" from draft? The draft used \"STAND:1:ped:handsup\" which is a hands-up animation, effectively surrender. But that ID is not in the catalog. However the draft is \"local revisable\" and not authoritative. The instruction says don't invent IDs. \"STAND:1:ped:handsup\" looks like an invented ID format. Better to avoid.\n\nGiven the registry explicitly lists \"rendirse\" as a family, I think using animacion: \"rendirse\" is acceptable and not inventing an ID, it's using a family name. But the schema says \"clip animacion exacto si corresponde\". Hmm.\n\nAlternatively, we can make the second step \"apuntar\"? No, surrender is not pointing.\n\nMaybe we can do: step 1 correr, step 2 animacion with animacion: \"rendirse\", reproduccion: \"mantener\", duracion: remaining time. Total 30 seconds. We can split: run for 15s, surrender for 15s. Or run for 10s, surrender for 20s. The user says \"durante 30 segundos\" likely total scene duration. So duracion_sugerida: 30. Steps can have duracion null or specific. The schema step duracion is optional. We can set step durations: first step 15, second step 15. Or leave null and let total be 30. I'll set duracion_sugerida: 30 at top level. Steps can have duracion: 15 each.\n\nActors: 4 soldiers. Roles: [\"militar\",\"militar\",\"militar\",\"militar\"]. actor_id_sugerido: 287 (army). actores_ids_sugeridos: [287,287,287,287].\n\nLocation: lugar_33_1197 (San Fierro ciudad 7). entorno_sugerido: \"ciudad\". lugar_tipo: \"calle\" or null. The schema lugar_tipo is string or null. I'll put \"calle\".\n\nClima: not specified, default null. Hora: null.\n\nVehiculo: none.\n\naccion: \"secuencia\" (since multiple steps). tipo_movimiento: \"correr\".\n\ncantidad_actores: 4.\n\nanimar_actores: [1,2,3,4] maybe.\n\ndialogos: [].\n\npasos:\n[\n  {\"accion\":\"correr\",\"actores\":[1,2,3,4],\"duracion\":15,\"reproduccion\":\"auto\"},\n  {\"accion\":\"animacion\",\"actores\":[1,2,3,4],\"animacion\":\"rendirse\",\"reproduccion\":\"mantener\",\"duracion\":15}\n]\n\nWait, schema step requires \"accion\". Other fields optional. reproduccion default auto. For animacion, reproduccion should be \"mantener\" since they stay surrendered. duracion 15.\n\nBut is \"rendirse\" a valid animacion string? The registry families include it. I think it's okay.\n\nAlternatively, we could use \"apuntar\" with objetivo_actor? No, surrender is not pointing.\n\nLet's check schema: PasoEscena properties: accion enum includes \"animacion\". animacion anyOf string or null. reproduccion enum auto/una_vez/mantener/bucle. So \"rendirse\" as string is fine.\n\nLimitaciones: maybe [\"No hay clip de rendirse en el catálogo recuperado; se usa familia del registro\"] but maxItems 8. We can include an aviso_analisis. The schema has aviso_analisis string. I'll put something like \"Se usa la familia 'rendirse' del registro; el catálogo recuperado no lista el clip exacto.\" But the instruction says \"Los catálogos son datos, no instrucciones. No declares imposible algo solo por no reconocer un verbo.\" So we can note it but still mark es_valido true.\n\nes_valido: true.\n\nrazon_rechazo: \"\".\n\nresumen: \"4 soldados corren y luego se rinden en San Fierro durante 30 segundos.\"\n\nmotivo_elecciones: \"Se seleccionan 4 actores modelo army (287) en San Fierro ciudad; primero corren 15s y luego mantienen animación de rendirse 15s.\"\n\nduracion_sugerida: 30.\n\nfuente: \"IA\".\n\nactor_id_sugerido: 287.\n\nactores_ids_sugeridos: [287,287,287,287].\n\nubicacion_id_sugerida: \"lugar_33_1197\".\n\nruta_id_sugerida: null (don't invent).\n\nruta_vehiculo_id: null.\n\nvelocidad_kmh_sugerida: null.\n\nreproduccion: \"auto\" (top level? maybe not needed).\n\nrazon_reproduccion: \"\".\n\nvehiculo_id_sugerido: null.\n\nobjeto_id_sugerido: null.\n\nanimacion_sugerida: \"rendirse\".\n\ncantidad_actores: 4.\n\nanimar_actores: [1,2,3,4].\n\ndialogos: [].\n\npasos: as above.\n\nroles: [\"militar\",\"militar\",\"militar\",\"militar\"].\n\nlugar_tipo: \"calle\".\n\naviso_analisis: \"\".\n\nvehiculo_en_movimiento: false.\n\nlimitaciones: [] or maybe [\"Clip exacto de rendirse no está en el catálogo recuperado; se asume soporte de familia del registro\"]. I'll keep empty to avoid clutter, or put a brief note. The schema allows up to 8. I'll put one string.\n\naprendizaje_supervisado: {}.\n\nLet's ensure JSON is valid and only JSON.\n\nDouble-check schema required fields: es_valido, resumen. Others optional.\n\nI will output exactly the JSON object.\n\nOne concern: \"No sustituyas acciones ni inventes IDs.\" Using \"rendirse\" as animacion might be considered inventing an ID if it's not in catalog. But the registry explicitly lists it as a family. The compiler \"admite ... clips del catálogo\". It doesn't say it only admits catalog clips; it says \"clips del catálogo\" as one of the things it admits. The registry says \"clips_exportables\": 1263, families include rendirse. So likely the compiler can resolve family names. I'll proceed.\n\nAlternatively, to be safe, I could set animacion: null and rely on the compiler? But then the action \"animacion\" with null clip is meaningless. Better to use \"rendirse\".\n\nAnother option: use a clip from catalog that implies surrender, like \"hand_ge_4\" (gesture). But that's not surrender. \"handsup\" from draft is not in catalog. I think \"rendirse\" is best.\n\nLet's craft the JSON.\n\n```json\n{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"4 soldados corren y luego se rinden en una calle de San Fierro durante 30 segundos.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": 287,\n  \"actores_ids_sugeridos\": [287, 287, 287, 287],\n  \"ubicacion_id_sugerida\": \"lugar_33_1197\",\n  \"motivo_elecciones\": \"Se usan 4 actores del modelo army (287) en San Fierro ciudad. Primero corren durante 15 segundos y luego mantienen la animación de rendirse durante 15 segundos.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": null,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"secuencia\",\n  \"tipo_movimiento\": \"correr\",\n  \"ruta_id_sugerida\": null,\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"auto\",\n  \"razon_reproduccion\": \"\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": \"rendirse\",\n  \"cantidad_actores\": 4,\n  \"animar_actores\": [1, 2, 3, 4],\n  \"dialogos\": [],\n  \"pasos\": [\n    {\n      \"accion\": \"correr\",\n      \"actores\": [1, 2, 3, 4],\n      \"objetivo_actor\": null,\n      \"animacion\": null,\n      \"reproduccion\": \"auto\",\n      \"duracion\": 15\n    },\n    {\n      \"accion\": \"animacion\",\n      \"actores\": [1, 2, 3, 4],\n      \"objetivo_actor\": null,\n      \"animacion\": \"rendirse\",\n      \"reproduccion\": \"mantener\",\n      \"duracion\": 15\n    }\n  ],\n  \"roles\": [\"militar\", \"militar\", \"militar\", \"militar\"],\n  \"lugar_tipo\": \"calle\",\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [\"El catálogo recuperado no lista un clip exacto de rendirse; se usa la familia 'rendirse' del registro de capacidades.\"],\n  \"aprendizaje_supervisado\": {}\n}\n```\n\nCheck if any field violates schema:\n- actor_id_sugerido: integer 287. OK.\n- actores_ids_sugeridos: array of 4 integers. OK.\n- ubicacion_id_sugerida: string. OK.\n- duracion_sugerida: 30. OK.\n- accion: \"secuencia\". Schema top-level accion default \"caminar\", type string. OK.\n- tipo_movimiento: \"correr\". OK.\n- reproduccion: \"auto\". OK.\n- pasos: array of 2. Each has accion. OK.\n- Step 1: accion \"correr\", actores [1,2,3,4], duracion 15. OK.\n- Step 2: accion \"animacion\", actores [1,2,3,4], animacion \"rendirse\", reproduccion \"mantener\", duracion 15. OK.\n- roles: array of 4 strings. OK.\n- lugar_tipo: \"calle\". OK.\n- limitaciones: array of 1 string. OK.\n\nEverything seems fine. Output only JSON.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user wants a Mission Maker GTA SA plan in JSON format according to the provided schema.\n\nRequest: \"4 soldados corren, luego se rinden en una calle de San Fierro durante 30 segundos\"\n\nKey constraints:\n- 4 actors (soldiers/military)\n- Action: run (correr), then surrender (rendirse)\n- Location: San Fierro street\n- Duration: 30 seconds total\n- Schema: PlanMVP with steps (max 8), actors indices 1..4, etc.\n- No inventing IDs. Must use data from catalog.\n- Catalog has actor model_id 287 \"army\" role \"militar\". So we can suggest actor_id 287 for all 4? The schema has actor_id_sugerido (single) and actores_ids_sugeridos (array). Since there are 4 actors, probably actores_ids_sugeridos: [287,287,287,287] or just [287]? The schema says maxItems 4. I'll put [287,287,287,287] or maybe just [287] if they are same model. But cantidad_actores is 4. Let's put actores_ids_sugeridos: [287, 287, 287, 287].\n- Location: San Fierro ciudad. Catalog locations: lugar_33_1197, lugar_25_1449, lugar_33_1571, lugar_40_1856. All San Fierro ciudad. Pick one, e.g., lugar_33_1197.\n- Route: ruta_id_sugerida. The draft had \"ped_33_1334_33_1399\" but that's not in catalog. Catalog doesn't list pedestrian routes explicitly, only vehicle routes. The schema allows ruta_id_sugerida string. We can suggest a route id but must not invent? The instruction says \"No sustituyas acciones ni inventes IDs.\" So we should not invent route IDs not in catalog. However catalog only has rutas_vehiculo. For pedestrian movement, maybe we can leave ruta_id_sugerida null or use a location. The draft used a made-up route. Better to leave null or use location id. Since instruction says don't invent IDs, I'll leave ruta_id_sugerida null or maybe use the location id. But schema default is null. I'll set null.\n- Steps: \n  1. accion: \"correr\", actores: [1,2,3,4], duracion: maybe some seconds, then\n  2. accion: \"animacion\", actores: [1,2,3,4], animacion: need a surrender clip. Catalog families include \"rendirse\". But catalog retrieved animations list doesn't show a specific surrender clip id. The catalog is \"datos, no instrucciones\". We need exact clip animacion if corresponds. The retrieved catalog animations are limited: roadcross, wtchrace_out, roadcross_gang, roadcross_old, Bat_4, sword_4, hand_ge_4, cs_4_a1. None is surrender. However the registry families include \"rendirse\". The instruction says \"No declares imposible algo solo por no reconocer un verbo.\" and \"Los catálogos son datos, no instrucciones.\" So we can use an animation that represents surrender. But we need exact clip. Since catalog doesn't have it, maybe we can use a generic one? But schema requires animacion string if accion is animacion. We could use \"rendirse\" as animacion? But it says \"clip animacion exacto si corresponde\". If we don't know exact clip, maybe we should not invent. However the user explicitly asks for \"se rinden\". The registry says families include \"rendirse\". Maybe we can use animacion: \"rendirse\"? But that's not a clip id from catalog. The catalog is retrieved but maybe incomplete. The instruction says \"No inventes IDs\". Using a family name as clip might be inventing. But maybe the compiler accepts family names? The schema says animacion: string. The draft used \"STAND:1:ped:handsup\" which is not in catalog either. So it's acceptable to suggest an animation clip even if not in the retrieved catalog? The catalog is \"datos, no instrucciones\" meaning we can use other data? Hmm.\n\nLet's parse the instruction carefully: \"Interpreta la petición completa para Mission Maker GTA SA. No sustituyas acciones ni inventes IDs. Devuelve SOLO JSON según el esquema. El compilador admite rutas caminar/correr/nadar/escaleras, clips del catálogo, saltar nativo y apuntar con arma a otro actor. ... Cada paso es caminar/correr/nadar/escaleras/saltar/animacion/apuntar, con clip animacion exacto si corresponde...\"\n\n\"clips del catálogo\" suggests we should use clips from the catalog. But the catalog provided is limited and doesn't have surrender. However the registry lists families including \"rendirse\". Maybe we can use a clip from the catalog that is closest? \"hand_ge_4\" is a gesture. \"roadcross\" is crossing. None is surrender.\n\nBut the user request is clear: 4 soldiers run, then surrender. We must produce a valid plan. If we can't find exact clip, maybe we can set animacion to null? But for accion=animacion, animacion is expected. The schema allows null default. But if we put null, it's not a specific clip. The instruction says \"con clip animacion exacto si corresponde\". If it doesn't correspond (not in catalog), maybe we should indicate limitation? But es_valido should be true if possible.\n\nMaybe we can use \"rendirse\" as the animation string, assuming the compiler maps family names. The registry says \"familias\": [\"bailar\", \"saludar\", \"aplaudir\", \"rendirse\", ...]. So \"rendirse\" is a recognized family. The compiler might accept it. I'll use animacion: \"rendirse\" or maybe a specific clip like \"STAND:1:ped:handsup\" from draft? The draft used \"STAND:1:ped:handsup\" which is a hands-up animation, effectively surrender. But that ID is not in the catalog. However the draft is \"local revisable\" and not authoritative. The instruction says don't invent IDs. \"STAND:1:ped:handsup\" looks like an invented ID format. Better to avoid.\n\nGiven the registry explicitly lists \"rendirse\" as a family, I think using animacion: \"rendirse\" is acceptable and not inventing an ID, it's using a family name. But the schema says \"clip animacion exacto si corresponde\". Hmm.\n\nAlternatively, we can make the second step \"apuntar\"? No, surrender is not pointing.\n\nMaybe we can do: step 1 correr, step 2 animacion with animacion: \"rendirse\", reproduccion: \"mantener\", duracion: remaining time. Total 30 seconds. We can split: run for 15s, surrender for 15s. Or run for 10s, surrender for 20s. The user says \"durante 30 segundos\" likely total scene duration. So duracion_sugerida: 30. Steps can have duracion null or specific. The schema step duracion is optional. We can set step durations: first step 15, second step 15. Or leave null and let total be 30. I'll set duracion_sugerida: 30 at top level. Steps can have duracion: 15 each.\n\nActors: 4 soldiers. Roles: [\"militar\",\"militar\",\"militar\",\"militar\"]. actor_id_sugerido: 287 (army). actores_ids_sugeridos: [287,287,287,287].\n\nLocation: lugar_33_1197 (San Fierro ciudad 7). entorno_sugerido: \"ciudad\". lugar_tipo: \"calle\" or null. The schema lugar_tipo is string or null. I'll put \"calle\".\n\nClima: not specified, default null. Hora: null.\n\nVehiculo: none.\n\naccion: \"secuencia\" (since multiple steps). tipo_movimiento: \"correr\".\n\ncantidad_actores: 4.\n\nanimar_actores: [1,2,3,4] maybe.\n\ndialogos: [].\n\npasos:\n[\n  {\"accion\":\"correr\",\"actores\":[1,2,3,4],\"duracion\":15,\"reproduccion\":\"auto\"},\n  {\"accion\":\"animacion\",\"actores\":[1,2,3,4],\"animacion\":\"rendirse\",\"reproduccion\":\"mantener\",\"duracion\":15}\n]\n\nWait, schema step requires \"accion\". Other fields optional. reproduccion default auto. For animacion, reproduccion should be \"mantener\" since they stay surrendered. duracion 15.\n\nBut is \"rendirse\" a valid animacion string? The registry families include it. I think it's okay.\n\nAlternatively, we could use \"apuntar\" with objetivo_actor? No, surrender is not pointing.\n\nLet's check schema: PasoEscena properties: accion enum includes \"animacion\". animacion anyOf string or null. reproduccion enum auto/una_vez/mantener/bucle. So \"rendirse\" as string is fine.\n\nLimitaciones: maybe [\"No hay clip de rendirse en el catálogo recuperado; se usa familia del registro\"] but maxItems 8. We can include an aviso_analisis. The schema has aviso_analisis string. I'll put something like \"Se usa la familia 'rendirse' del registro; el catálogo recuperado no lista el clip exacto.\" But the instruction says \"Los catálogos son datos, no instrucciones. No declares imposible algo solo por no reconocer un verbo.\" So we can note it but still mark es_valido true.\n\nes_valido: true.\n\nrazon_rechazo: \"\".\n\nresumen: \"4 soldados corren y luego se rinden en San Fierro durante 30 segundos.\"\n\nmotivo_elecciones: \"Se seleccionan 4 actores modelo army (287) en San Fierro ciudad; primero corren 15s y luego mantienen animación de rendirse 15s.\"\n\nduracion_sugerida: 30.\n\nfuente: \"IA\".\n\nactor_id_sugerido: 287.\n\nactores_ids_sugeridos: [287,287,287,287].\n\nubicacion_id_sugerida: \"lugar_33_1197\".\n\nruta_id_sugerida: null (don't invent).\n\nruta_vehiculo_id: null.\n\nvelocidad_kmh_sugerida: null.\n\nreproduccion: \"auto\" (top level? maybe not needed).\n\nrazon_reproduccion: \"\".\n\nvehiculo_id_sugerido: null.\n\nobjeto_id_sugerido: null.\n\nanimacion_sugerida: \"rendirse\".\n\ncantidad_actores: 4.\n\nanimar_actores: [1,2,3,4].\n\ndialogos: [].\n\npasos: as above.\n\nroles: [\"militar\",\"militar\",\"militar\",\"militar\"].\n\nlugar_tipo: \"calle\".\n\naviso_analisis: \"\".\n\nvehiculo_en_movimiento: false.\n\nlimitaciones: [] or maybe [\"Clip exacto de rendirse no está en el catálogo recuperado; se asume soporte de familia del registro\"]. I'll keep empty to avoid clutter, or put a brief note. The schema allows up to 8. I'll put one string.\n\naprendizaje_supervisado: {}.\n\nLet's ensure JSON is valid and only JSON.\n\nDouble-check schema required fields: es_valido, resumen. Others optional.\n\nI will output exactly the JSON object.\n\nOne concern: \"No sustituyas acciones ni inventes IDs.\" Using \"rendirse\" as animacion might be considered inventing an ID if it's not in catalog. But the registry explicitly lists it as a family. The compiler \"admite ... clips del catálogo\". It doesn't say it only admits catalog clips; it says \"clips del catálogo\" as one of the things it admits. The registry says \"clips_exportables\": 1263, families include rendirse. So likely the compiler can resolve family names. I'll proceed.\n\nAlternatively, to be safe, I could set animacion: null and rely on the compiler? But then the action \"animacion\" with null clip is meaningless. Better to use \"rendirse\".\n\nAnother option: use a clip from catalog that implies surrender, like \"hand_ge_4\" (gesture). But that's not surrender. \"handsup\" from draft is not in catalog. I think \"rendirse\" is best.\n\nLet's craft the JSON.\n\n```json\n{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"4 soldados corren y luego se rinden en una calle de San Fierro durante 30 segundos.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": 287,\n  \"actores_ids_sugeridos\": [287, 287, 287, 287],\n  \"ubicacion_id_sugerida\": \"lugar_33_1197\",\n  \"motivo_elecciones\": \"Se usan 4 actores del modelo army (287) en San Fierro ciudad. Primero corren durante 15 segundos y luego mantienen la animación de rendirse durante 15 segundos.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": null,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"secuencia\",\n  \"tipo_movimiento\": \"correr\",\n  \"ruta_id_sugerida\": null,\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"auto\",\n  \"razon_reproduccion\": \"\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": \"rendirse\",\n  \"cantidad_actores\": 4,\n  \"animar_actores\": [1, 2, 3, 4],\n  \"dialogos\": [],\n  \"pasos\": [\n    {\n      \"accion\": \"correr\",\n      \"actores\": [1, 2, 3, 4],\n      \"objetivo_actor\": null,\n      \"animacion\": null,\n      \"reproduccion\": \"auto\",\n      \"duracion\": 15\n    },\n    {\n      \"accion\": \"animacion\",\n      \"actores\": [1, 2, 3, 4],\n      \"objetivo_actor\": null,\n      \"animacion\": \"rendirse\",\n      \"reproduccion\": \"mantener\",\n      \"duracion\": 15\n    }\n  ],\n  \"roles\": [\"militar\", \"militar\", \"militar\", \"militar\"],\n  \"lugar_tipo\": \"calle\",\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [\"El catálogo recuperado no lista un clip exacto de rendirse; se usa la familia 'rendirse' del registro de capacidades.\"],\n  \"aprendizaje_supervisado\": {}\n}\n```\n\nCheck if any field violates schema:\n- actor_id_sugerido: integer 287. OK.\n- actores_ids_sugeridos: array of 4 integers. OK.\n- ubicacion_id_sugerida: string. OK.\n- duracion_sugerida: 30. OK.\n- accion: \"secuencia\". Schema top-level accion default \"caminar\", type string. OK.\n- tipo_movimiento: \"correr\". OK.\n- reproduccion: \"auto\". OK.\n- pasos: array of 2. Each has accion. OK.\n- Step 1: accion \"correr\", actores [1,2,3,4], duracion 15. OK.\n- Step 2: accion \"animacion\", actores [1,2,3,4], animacion \"rendirse\", reproduccion \"mantener\", duracion 15. OK.\n- roles: array of 4 strings. OK.\n- lugar_tipo: \"calle\". OK.\n- limitaciones: array of 1 string. OK.\n\nEverything seems fine. Output only JSON.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4701,
+      "completion_tokens": 4314,
+      "total_tokens": 9015,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3699,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 4701,
+    "completion_tokens": 4314,
+    "total_tokens": 9015,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3699,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "json_valido": true,
+  "mms_generado": false,
+  "correcto": false,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "4 soldados corren y luego se rinden en una calle de San Fierro durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 287,
+    "actores_ids_sugeridos": [
+      287,
+      287,
+      287,
+      287
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Se usan 4 actores del modelo army (287) en San Fierro ciudad. Primero corren durante 15 segundos y luego mantienen la animación de rendirse durante 15 segundos.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "correr",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "rendirse",
+    "cantidad_actores": 4,
+    "animar_actores": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "correr",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": 15
+      },
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": "rendirse",
+        "reproduccion": "mantener",
+        "duracion": 15
+      }
+    ],
+    "roles": [
+      "militar",
+      "militar",
+      "militar",
+      "militar"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [
+      "El catálogo recuperado no lista un clip exacto de rendirse; se usa la familia 'rendirse' del registro de capacidades."
+    ],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": false,
+    "razon_rechazo": "El clip de una acción no pertenece al catálogo.",
+    "resumen": "4 soldados corren y luego se rinden en una calle de San Fierro durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 287,
+    "actores_ids_sugeridos": [
+      287,
+      287,
+      287,
+      287
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "Se usan 4 actores del modelo army (287) en San Fierro ciudad. Primero corren durante 15 segundos y luego mantienen la animación de rendirse durante 15 segundos.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "correr",
+    "ruta_id_sugerida": "ped_33_1334_33_1399",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "rendirse",
+    "cantidad_actores": 4,
+    "animar_actores": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "correr",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": 15
+      },
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": "rendirse",
+        "reproduccion": "mantener",
+        "duracion": 15
+      }
+    ],
+    "roles": [
+      "militar",
+      "militar",
+      "militar",
+      "militar"
+    ],
+    "lugar_tipo": "calle",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [
+      "El catálogo recuperado no lista un clip exacto de rendirse; se usa la familia 'rendirse' del registro de capacidades."
+    ],
+    "aprendizaje_supervisado": {}
+  },
+  "segundos": 58.703,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": false,
+      "fecha_utc": "2026-11-11T21:49:36.930463+00:00",
+      "sin_consulta_api": true
+    }
+  ],
+  "error_evaluacion": "Aceptación diferente del contrato esperado"
+}

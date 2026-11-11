@@ -1,0 +1,1942 @@
+[
+  {
+    "texto": "2 soldados se tumban, luego bailan en una calle de San Fierro durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "LAY:2:BEACH:Lay_Bac_Loop",
+        "DANCE:3:DANCING:dance_loop"
+      ],
+      "actores": 2,
+      "roles": [
+        "militar",
+        "militar"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0911"
+  },
+  {
+    "texto": "3 bomberos caminan por una calle de San Fierro durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "caminar"
+      ],
+      "actores": 3,
+      "roles": [
+        "bombero",
+        "bombero",
+        "bombero"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0549"
+  },
+  {
+    "texto": "4 soldados corren, luego se rinden en una calle de San Fierro durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "correr",
+        "STAND:1:ped:handsup"
+      ],
+      "actores": 4,
+      "roles": [
+        "militar",
+        "militar",
+        "militar",
+        "militar"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0708"
+  },
+  {
+    "texto": "3 personas se asustan en un puente durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:70:ON_LOOKERS:panic_cower"
+      ],
+      "actores": 3,
+      "roles": [
+        "civil",
+        "civil",
+        "civil"
+      ],
+      "entorno": "ciudad",
+      "lugar": "puente",
+      "duracion": 30
+    },
+    "id": "escena_0321"
+  },
+  {
+    "texto": "4 paramédicos vomitan, luego corren en un puente durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:40:food:EAT_Vomit_P",
+        "correr"
+      ],
+      "actores": 4,
+      "roles": [
+        "paramedico",
+        "paramedico",
+        "paramedico",
+        "paramedico"
+      ],
+      "entorno": "ciudad",
+      "lugar": "puente",
+      "duracion": 30
+    },
+    "id": "escena_0939"
+  },
+  {
+    "texto": "un soldado salta, luego aplaude en una calle de San Fierro durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "saltar",
+        "DANCE:1:DANCING:bd_clap"
+      ],
+      "actores": 1,
+      "roles": [
+        "militar"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0643"
+  },
+  {
+    "texto": "un policía camina, se sube a un taxi y maneja por Las Venturas durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "conducir_vehiculo"
+      ],
+      "actores": 1,
+      "roles": [
+        "policia"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_1194"
+  },
+  {
+    "texto": "un granjero conversa en una calle de San Fierro con niebla durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "CHAT:5:ped:IDLE_chat"
+      ],
+      "actores": 1,
+      "roles": [
+        "granjero"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30,
+      "clima": 9
+    },
+    "id": "escena_0227"
+  },
+  {
+    "texto": "2 granjeros se muestran enfadados en una calle de Los Santos durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "MIMIC:1:ped:facanger"
+      ],
+      "actores": 2,
+      "roles": [
+        "granjero",
+        "granjero"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0372"
+  },
+  {
+    "texto": "2 personas se tumban en la playa al atardecer durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "LAY:2:BEACH:Lay_Bac_Loop"
+      ],
+      "actores": 2,
+      "roles": [
+        "civil",
+        "civil"
+      ],
+      "entorno": "playa",
+      "lugar": "playa",
+      "duracion": 30,
+      "hora": 18
+    },
+    "id": "escena_0152"
+  },
+  {
+    "texto": "2 policías se rinden en el campo bajo la lluvia durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:1:ped:handsup"
+      ],
+      "actores": 2,
+      "roles": [
+        "policia",
+        "policia"
+      ],
+      "entorno": "campo",
+      "lugar": null,
+      "duracion": 30,
+      "clima": 16
+    },
+    "id": "escena_0088"
+  },
+  {
+    "texto": "4 soldados saltan, después corren y finalmente saludan en una calle de San Fierro durante 45 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "saltar",
+        "correr",
+        "STAND:90:ON_LOOKERS:wave_loop"
+      ],
+      "actores": 4,
+      "roles": [
+        "militar",
+        "militar",
+        "militar",
+        "militar"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 45
+    },
+    "id": "escena_0972"
+  },
+  {
+    "texto": "3 personas saltan, después bailan y finalmente caminan en una calle de Los Santos durante 45 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "saltar",
+        "DANCE:3:DANCING:dance_loop",
+        "caminar"
+      ],
+      "actores": 3,
+      "roles": [
+        "civil",
+        "civil",
+        "civil"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 45
+    },
+    "id": "escena_0979"
+  },
+  {
+    "texto": "4 personas hablan por teléfono en el campo bajo la lluvia durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:44:ped:phone_talk"
+      ],
+      "actores": 4,
+      "roles": [
+        "civil",
+        "civil",
+        "civil",
+        "civil"
+      ],
+      "entorno": "campo",
+      "lugar": null,
+      "duracion": 30,
+      "clima": 16
+    },
+    "id": "escena_0514"
+  },
+  {
+    "texto": "4 paramédicos niegan con la cabeza en el campo con niebla durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:163:urbanize:shakehead_1"
+      ],
+      "actores": 4,
+      "roles": [
+        "paramedico",
+        "paramedico",
+        "paramedico",
+        "paramedico"
+      ],
+      "entorno": "campo",
+      "lugar": null,
+      "duracion": 30,
+      "clima": 9
+    },
+    "id": "escena_0290"
+  },
+  {
+    "texto": "3 granjeros saltan por el desierto durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "saltar"
+      ],
+      "actores": 3,
+      "roles": [
+        "granjero",
+        "granjero",
+        "granjero"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0589"
+  },
+  {
+    "texto": "2 bomberos bailan, luego se rascan en el desierto durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "DANCE:3:DANCING:dance_loop",
+        "STAND:6:ped:XPRESSscratch"
+      ],
+      "actores": 2,
+      "roles": [
+        "bombero",
+        "bombero"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0743"
+  },
+  {
+    "texto": "2 paramédicos conversan en el desierto al amanecer durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "CHAT:5:ped:IDLE_chat"
+      ],
+      "actores": 2,
+      "roles": [
+        "paramedico",
+        "paramedico"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30,
+      "hora": 6
+    },
+    "id": "escena_0240"
+  },
+  {
+    "texto": "una persona fuma en el techo de un sentinel en movimiento durante 20 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:133:SMOKING:M_smk_drag"
+      ],
+      "actores": 1,
+      "roles": [
+        "civil"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 20,
+      "techo": true,
+      "vehiculo_movimiento": true,
+      "modelo_vehiculo": 405
+    },
+    "id": "escena_1255"
+  },
+  {
+    "texto": "4 soldados caminan por el desierto durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "caminar"
+      ],
+      "actores": 4,
+      "roles": [
+        "militar",
+        "militar",
+        "militar",
+        "militar"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0558"
+  },
+  {
+    "texto": "2 bomberos caminan, después vomitan y finalmente miran a los lados en el desierto durante 45 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "caminar",
+        "STAND:40:food:EAT_Vomit_P",
+        "STAND:2:ped:roadcross"
+      ],
+      "actores": 2,
+      "roles": [
+        "bombero",
+        "bombero"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 45
+    },
+    "id": "escena_1138"
+  },
+  {
+    "texto": "3 policías se muestran curiosos en el desierto con niebla durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "MIMIC:6:ped:facurios"
+      ],
+      "actores": 3,
+      "roles": [
+        "policia",
+        "policia",
+        "policia"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30,
+      "clima": 9
+    },
+    "id": "escena_0401"
+  },
+  {
+    "texto": "un granjero se tumba en la playa al atardecer durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "LAY:2:BEACH:Lay_Bac_Loop"
+      ],
+      "actores": 1,
+      "roles": [
+        "granjero"
+      ],
+      "entorno": "playa",
+      "lugar": "playa",
+      "duracion": 30,
+      "hora": 18
+    },
+    "id": "escena_0155"
+  },
+  {
+    "texto": "una persona aplaude en el techo de un patrulla los santos en movimiento durante 20 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "DANCE:1:DANCING:bd_clap"
+      ],
+      "actores": 1,
+      "roles": [
+        "civil"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 20,
+      "techo": true,
+      "vehiculo_movimiento": true,
+      "modelo_vehiculo": 596
+    },
+    "id": "escena_1299"
+  },
+  {
+    "texto": "2 paramédicos se muestran curiosos en un puente durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "MIMIC:6:ped:facurios"
+      ],
+      "actores": 2,
+      "roles": [
+        "paramedico",
+        "paramedico"
+      ],
+      "entorno": "ciudad",
+      "lugar": "puente",
+      "duracion": 30
+    },
+    "id": "escena_0408"
+  },
+  {
+    "texto": "4 bomberos se tumban en el campo bajo la lluvia durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "LAY:2:BEACH:Lay_Bac_Loop"
+      ],
+      "actores": 4,
+      "roles": [
+        "bombero",
+        "bombero",
+        "bombero",
+        "bombero"
+      ],
+      "entorno": "campo",
+      "lugar": null,
+      "duracion": 30,
+      "clima": 16
+    },
+    "id": "escena_0166"
+  },
+  {
+    "texto": "un granjero mira a los lados en una calle de Los Santos al atardecer durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:2:ped:roadcross"
+      ],
+      "actores": 1,
+      "roles": [
+        "granjero"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30,
+      "hora": 18
+    },
+    "id": "escena_0107"
+  },
+  {
+    "texto": "un paramédico salta, después camina y finalmente se rinde en un puente durante 45 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "saltar",
+        "caminar",
+        "STAND:1:ped:handsup"
+      ],
+      "actores": 1,
+      "roles": [
+        "paramedico"
+      ],
+      "entorno": "ciudad",
+      "lugar": "puente",
+      "duracion": 45
+    },
+    "id": "escena_0965"
+  },
+  {
+    "texto": "una persona fuma en el techo de un patrulla los santos estacionado durante 20 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:133:SMOKING:M_smk_drag"
+      ],
+      "actores": 1,
+      "roles": [
+        "civil"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 20,
+      "techo": true,
+      "vehiculo_movimiento": false,
+      "modelo_vehiculo": 596
+    },
+    "id": "escena_1302"
+  },
+  {
+    "texto": "2 granjeros saltan, luego se rinden en el campo durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "saltar",
+        "STAND:1:ped:handsup"
+      ],
+      "actores": 2,
+      "roles": [
+        "granjero",
+        "granjero"
+      ],
+      "entorno": "campo",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0647"
+  },
+  {
+    "texto": "un granjero vomita en el desierto con niebla durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:40:food:EAT_Vomit_P"
+      ],
+      "actores": 1,
+      "roles": [
+        "granjero"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30,
+      "clima": 9
+    },
+    "id": "escena_0179"
+  },
+  {
+    "texto": "4 personas conversan en el campo bajo la lluvia durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "CHAT:5:ped:IDLE_chat"
+      ],
+      "actores": 4,
+      "roles": [
+        "civil",
+        "civil",
+        "civil",
+        "civil"
+      ],
+      "entorno": "campo",
+      "lugar": null,
+      "duracion": 30,
+      "clima": 16
+    },
+    "id": "escena_0226"
+  },
+  {
+    "texto": "un bombero se rasca, luego salta en el desierto durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:6:ped:XPRESSscratch",
+        "saltar"
+      ],
+      "actores": 1,
+      "roles": [
+        "bombero"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0871"
+  },
+  {
+    "texto": "una persona saluda en el techo de un admiral estacionado durante 20 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:90:ON_LOOKERS:wave_loop"
+      ],
+      "actores": 1,
+      "roles": [
+        "civil"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 20,
+      "techo": true,
+      "vehiculo_movimiento": false,
+      "modelo_vehiculo": 445
+    },
+    "id": "escena_1284"
+  },
+  {
+    "texto": "una persona come en el desierto bajo la lluvia durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:37:food:EAT_Burger"
+      ],
+      "actores": 1,
+      "roles": [
+        "civil"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30,
+      "clima": 8
+    },
+    "id": "escena_0487"
+  },
+  {
+    "texto": "un paramédico pasea por una calle de San Fierro durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "caminar"
+      ],
+      "actores": 1,
+      "roles": [
+        "paramedico"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0623"
+  },
+  {
+    "texto": "2 bomberos saltan, después saludan y finalmente se rascan en el desierto durante 45 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "saltar",
+        "STAND:90:ON_LOOKERS:wave_loop",
+        "STAND:6:ped:XPRESSscratch"
+      ],
+      "actores": 2,
+      "roles": [
+        "bombero",
+        "bombero"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 45
+    },
+    "id": "escena_0994"
+  },
+  {
+    "texto": "4 soldados vomitan, luego se tumban en una calle de San Fierro durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:40:food:EAT_Vomit_P",
+        "LAY:2:BEACH:Lay_Bac_Loop"
+      ],
+      "actores": 4,
+      "roles": [
+        "militar",
+        "militar",
+        "militar",
+        "militar"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0960"
+  },
+  {
+    "texto": "4 bomberos vomitan, luego miran a los lados en el desierto durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:40:food:EAT_Vomit_P",
+        "STAND:2:ped:roadcross"
+      ],
+      "actores": 4,
+      "roles": [
+        "bombero",
+        "bombero",
+        "bombero",
+        "bombero"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0954"
+  },
+  {
+    "texto": "2 personas niegan con la cabeza en el campo con niebla durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:163:urbanize:shakehead_1"
+      ],
+      "actores": 2,
+      "roles": [
+        "civil",
+        "civil"
+      ],
+      "entorno": "campo",
+      "lugar": null,
+      "duracion": 30,
+      "clima": 9
+    },
+    "id": "escena_0272"
+  },
+  {
+    "texto": "una persona fuma en una calle de Los Santos de noche durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:133:SMOKING:M_smk_drag"
+      ],
+      "actores": 1,
+      "roles": [
+        "civil"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30,
+      "hora": 22
+    },
+    "id": "escena_0415"
+  },
+  {
+    "texto": "4 soldados se asustan en un puente durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:70:ON_LOOKERS:panic_cower"
+      ],
+      "actores": 4,
+      "roles": [
+        "militar",
+        "militar",
+        "militar",
+        "militar"
+      ],
+      "entorno": "ciudad",
+      "lugar": "puente",
+      "duracion": 30
+    },
+    "id": "escena_0342"
+  },
+  {
+    "texto": "3 soldados se asustan en el desierto con niebla durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:70:ON_LOOKERS:panic_cower"
+      ],
+      "actores": 3,
+      "roles": [
+        "militar",
+        "militar",
+        "militar"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30,
+      "clima": 9
+    },
+    "id": "escena_0341"
+  },
+  {
+    "texto": "4 soldados miran a los lados, luego bailan en una calle de San Fierro durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:2:ped:roadcross",
+        "DANCE:3:DANCING:dance_loop"
+      ],
+      "actores": 4,
+      "roles": [
+        "militar",
+        "militar",
+        "militar",
+        "militar"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0852"
+  },
+  {
+    "texto": "un bombero baila, luego corre en el desierto durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "DANCE:3:DANCING:dance_loop",
+        "correr"
+      ],
+      "actores": 1,
+      "roles": [
+        "bombero"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0727"
+  },
+  {
+    "texto": "un paramédico se muestra enfadado en la playa al atardecer durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "MIMIC:1:ped:facanger"
+      ],
+      "actores": 1,
+      "roles": [
+        "paramedico"
+      ],
+      "entorno": "playa",
+      "lugar": "playa",
+      "duracion": 30,
+      "hora": 18
+    },
+    "id": "escena_0383"
+  },
+  {
+    "texto": "3 personas saltan, después caminan y finalmente se rascan en una calle de Los Santos durante 45 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "saltar",
+        "caminar",
+        "STAND:6:ped:XPRESSscratch"
+      ],
+      "actores": 3,
+      "roles": [
+        "civil",
+        "civil",
+        "civil"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 45
+    },
+    "id": "escena_0967"
+  },
+  {
+    "texto": "2 bomberos saltan, después se rinden y finalmente caminan en el desierto durante 45 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "saltar",
+        "STAND:1:ped:handsup",
+        "caminar"
+      ],
+      "actores": 2,
+      "roles": [
+        "bombero",
+        "bombero"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 45
+    },
+    "id": "escena_1006"
+  },
+  {
+    "texto": "una persona se muestra curioso en una calle de San Fierro bajo la lluvia durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "MIMIC:6:ped:facurios"
+      ],
+      "actores": 1,
+      "roles": [
+        "civil"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30,
+      "clima": 8
+    },
+    "id": "escena_0391"
+  },
+  {
+    "texto": "4 policías miran a los lados, luego saltan en la playa durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:2:ped:roadcross",
+        "saltar"
+      ],
+      "actores": 4,
+      "roles": [
+        "policia",
+        "policia",
+        "policia",
+        "policia"
+      ],
+      "entorno": "playa",
+      "lugar": "playa",
+      "duracion": 30
+    },
+    "id": "escena_0843"
+  },
+  {
+    "texto": "un granjero salta por una calle de San Fierro durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "saltar"
+      ],
+      "actores": 1,
+      "roles": [
+        "granjero"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0587"
+  },
+  {
+    "texto": "2 paramédicos aplauden en la playa durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "DANCE:1:DANCING:bd_clap"
+      ],
+      "actores": 2,
+      "roles": [
+        "paramedico",
+        "paramedico"
+      ],
+      "entorno": "playa",
+      "lugar": "playa",
+      "duracion": 30
+    },
+    "id": "escena_0072"
+  },
+  {
+    "texto": "un bombero niega con la cabeza en el desierto bajo la lluvia durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:163:urbanize:shakehead_1"
+      ],
+      "actores": 1,
+      "roles": [
+        "bombero"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30,
+      "clima": 8
+    },
+    "id": "escena_0283"
+  },
+  {
+    "texto": "una persona aplaude en el techo de un premier estacionado durante 20 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "DANCE:1:DANCING:bd_clap"
+      ],
+      "actores": 1,
+      "roles": [
+        "civil"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 20,
+      "techo": true,
+      "vehiculo_movimiento": false,
+      "modelo_vehiculo": 426
+    },
+    "id": "escena_1238"
+  },
+  {
+    "texto": "2 paramédicos caminan por el campo durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "caminar"
+      ],
+      "actores": 2,
+      "roles": [
+        "paramedico",
+        "paramedico"
+      ],
+      "entorno": "campo",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0552"
+  },
+  {
+    "texto": "4 paramédicos se tumban, luego se rinden en un puente durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "LAY:2:BEACH:Lay_Bac_Loop",
+        "STAND:1:ped:handsup"
+      ],
+      "actores": 4,
+      "roles": [
+        "paramedico",
+        "paramedico",
+        "paramedico",
+        "paramedico"
+      ],
+      "entorno": "ciudad",
+      "lugar": "puente",
+      "duracion": 30
+    },
+    "id": "escena_0921"
+  },
+  {
+    "texto": "4 policías se rinden, luego saludan en la playa durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:1:ped:handsup",
+        "STAND:90:ON_LOOKERS:wave_loop"
+      ],
+      "actores": 4,
+      "roles": [
+        "policia",
+        "policia",
+        "policia",
+        "policia"
+      ],
+      "entorno": "playa",
+      "lugar": "playa",
+      "duracion": 30
+    },
+    "id": "escena_0825"
+  },
+  {
+    "texto": "3 personas se muestran cansados en el desierto al amanecer durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:146:MMR:idle_tired"
+      ],
+      "actores": 3,
+      "roles": [
+        "civil",
+        "civil",
+        "civil"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30,
+      "hora": 6
+    },
+    "id": "escena_0297"
+  },
+  {
+    "texto": "3 granjeros se estiran en la playa de noche durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:113:PLAYIDLES:stretch"
+      ],
+      "actores": 3,
+      "roles": [
+        "granjero",
+        "granjero",
+        "granjero"
+      ],
+      "entorno": "playa",
+      "lugar": "playa",
+      "duracion": 30,
+      "hora": 22
+    },
+    "id": "escena_0253"
+  },
+  {
+    "texto": "2 bomberos caminan por el desierto durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "caminar"
+      ],
+      "actores": 2,
+      "roles": [
+        "bombero",
+        "bombero"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0548"
+  },
+  {
+    "texto": "un policía aplaude en una calle de San Fierro al amanecer durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "DANCE:1:DANCING:bd_clap"
+      ],
+      "actores": 1,
+      "roles": [
+        "policia"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30,
+      "hora": 6
+    },
+    "id": "escena_0063"
+  },
+  {
+    "texto": "2 policías se rinden, luego saltan en la playa durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:1:ped:handsup",
+        "saltar"
+      ],
+      "actores": 2,
+      "roles": [
+        "policia",
+        "policia"
+      ],
+      "entorno": "playa",
+      "lugar": "playa",
+      "duracion": 30
+    },
+    "id": "escena_0812"
+  },
+  {
+    "texto": "2 bomberos saludan, luego vomitan en el desierto durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:90:ON_LOOKERS:wave_loop",
+        "STAND:40:food:EAT_Vomit_P"
+      ],
+      "actores": 2,
+      "roles": [
+        "bombero",
+        "bombero"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0779"
+  },
+  {
+    "texto": "2 policías se rascan en el desierto bajo la lluvia durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:6:ped:XPRESSscratch"
+      ],
+      "actores": 2,
+      "roles": [
+        "policia",
+        "policia"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30,
+      "clima": 8
+    },
+    "id": "escena_0136"
+  },
+  {
+    "texto": "un persona camina, luego se rasca en una calle de Los Santos durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "caminar",
+        "STAND:6:ped:XPRESSscratch"
+      ],
+      "actores": 1,
+      "roles": [
+        "civil"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0682"
+  },
+  {
+    "texto": "2 bomberos caminan, después se rascan y finalmente saltan en el desierto durante 45 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "caminar",
+        "STAND:6:ped:XPRESSscratch",
+        "saltar"
+      ],
+      "actores": 2,
+      "roles": [
+        "bombero",
+        "bombero"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 45
+    },
+    "id": "escena_1114"
+  },
+  {
+    "texto": "4 soldados fuman en la playa durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:133:SMOKING:M_smk_drag"
+      ],
+      "actores": 4,
+      "roles": [
+        "militar",
+        "militar",
+        "militar",
+        "militar"
+      ],
+      "entorno": "playa",
+      "lugar": "playa",
+      "duracion": 30
+    },
+    "id": "escena_0438"
+  },
+  {
+    "texto": "4 bomberos saltan, después se rinden y finalmente se rascan en el desierto durante 45 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "saltar",
+        "STAND:1:ped:handsup",
+        "STAND:6:ped:XPRESSscratch"
+      ],
+      "actores": 4,
+      "roles": [
+        "bombero",
+        "bombero",
+        "bombero",
+        "bombero"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 45
+    },
+    "id": "escena_1012"
+  },
+  {
+    "texto": "un policía se muestra curioso en el campo al amanecer durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "MIMIC:6:ped:facurios"
+      ],
+      "actores": 1,
+      "roles": [
+        "policia"
+      ],
+      "entorno": "campo",
+      "lugar": null,
+      "duracion": 30,
+      "hora": 6
+    },
+    "id": "escena_0399"
+  },
+  {
+    "texto": "un soldado se tumba, luego saluda en una calle de San Fierro durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "LAY:2:BEACH:Lay_Bac_Loop",
+        "STAND:90:ON_LOOKERS:wave_loop"
+      ],
+      "actores": 1,
+      "roles": [
+        "militar"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0913"
+  },
+  {
+    "texto": "un policía corre, luego se rinde en la playa durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "correr",
+        "STAND:1:ped:handsup"
+      ],
+      "actores": 1,
+      "roles": [
+        "policia"
+      ],
+      "entorno": "playa",
+      "lugar": "playa",
+      "duracion": 30
+    },
+    "id": "escena_0706"
+  },
+  {
+    "texto": "4 bomberos saltan, después se rascan y finalmente caminan en el desierto durante 45 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "saltar",
+        "STAND:6:ped:XPRESSscratch",
+        "caminar"
+      ],
+      "actores": 4,
+      "roles": [
+        "bombero",
+        "bombero",
+        "bombero",
+        "bombero"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 45
+    },
+    "id": "escena_1024"
+  },
+  {
+    "texto": "2 policías miran a los lados, luego corren en la playa durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:2:ped:roadcross",
+        "correr"
+      ],
+      "actores": 2,
+      "roles": [
+        "policia",
+        "policia"
+      ],
+      "entorno": "playa",
+      "lugar": "playa",
+      "duracion": 30
+    },
+    "id": "escena_0848"
+  },
+  {
+    "texto": "3 personas saltan por una calle de San Fierro durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "saltar"
+      ],
+      "actores": 3,
+      "roles": [
+        "civil",
+        "civil",
+        "civil"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0585"
+  },
+  {
+    "texto": "2 bomberos se ríen en una calle de San Fierro con niebla durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "CHAT:52:RAPPING:Laugh_01"
+      ],
+      "actores": 2,
+      "roles": [
+        "bombero",
+        "bombero"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30,
+      "clima": 9
+    },
+    "id": "escena_0452"
+  },
+  {
+    "texto": "4 personas saludan en una calle de San Fierro bajo la lluvia durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:90:ON_LOOKERS:wave_loop"
+      ],
+      "actores": 4,
+      "roles": [
+        "civil",
+        "civil",
+        "civil",
+        "civil"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30,
+      "clima": 8
+    },
+    "id": "escena_0034"
+  },
+  {
+    "texto": "3 soldados comen en un puente al atardecer durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:37:food:EAT_Burger"
+      ],
+      "actores": 3,
+      "roles": [
+        "militar",
+        "militar",
+        "militar"
+      ],
+      "entorno": "ciudad",
+      "lugar": "puente",
+      "duracion": 30,
+      "hora": 18
+    },
+    "id": "escena_0509"
+  },
+  {
+    "texto": "un bombero corre, luego mira a los lados en el desierto durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "correr",
+        "STAND:2:ped:roadcross"
+      ],
+      "actores": 1,
+      "roles": [
+        "bombero"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0709"
+  },
+  {
+    "texto": "un policía camina, después mira a los lados y finalmente vomita en la playa durante 45 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "caminar",
+        "STAND:2:ped:roadcross",
+        "STAND:40:food:EAT_Vomit_P"
+      ],
+      "actores": 1,
+      "roles": [
+        "policia"
+      ],
+      "entorno": "playa",
+      "lugar": "playa",
+      "duracion": 45
+    },
+    "id": "escena_1113"
+  },
+  {
+    "texto": "4 granjeros saltan, después bailan y finalmente corren en el campo durante 45 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "saltar",
+        "DANCE:3:DANCING:dance_loop",
+        "correr"
+      ],
+      "actores": 4,
+      "roles": [
+        "granjero",
+        "granjero",
+        "granjero",
+        "granjero"
+      ],
+      "entorno": "campo",
+      "lugar": null,
+      "duracion": 45
+    },
+    "id": "escena_0980"
+  },
+  {
+    "texto": "4 bomberos caminan por el campo durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "caminar"
+      ],
+      "actores": 4,
+      "roles": [
+        "bombero",
+        "bombero",
+        "bombero",
+        "bombero"
+      ],
+      "entorno": "campo",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0550"
+  },
+  {
+    "texto": "un policía baila en el desierto al amanecer durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "DANCE:3:DANCING:dance_loop"
+      ],
+      "actores": 1,
+      "roles": [
+        "policia"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30,
+      "hora": 6
+    },
+    "id": "escena_0015"
+  },
+  {
+    "texto": "2 bomberos fuman en un puente al atardecer durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:133:SMOKING:M_smk_drag"
+      ],
+      "actores": 2,
+      "roles": [
+        "bombero",
+        "bombero"
+      ],
+      "entorno": "ciudad",
+      "lugar": "puente",
+      "duracion": 30,
+      "hora": 18
+    },
+    "id": "escena_0428"
+  },
+  {
+    "texto": "un policía camina, se sube a un carro y maneja por Los Santos durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "conducir_vehiculo"
+      ],
+      "actores": 1,
+      "roles": [
+        "policia"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_1198"
+  },
+  {
+    "texto": "4 personas se asustan en una calle de San Fierro bajo la lluvia durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:70:ON_LOOKERS:panic_cower"
+      ],
+      "actores": 4,
+      "roles": [
+        "civil",
+        "civil",
+        "civil",
+        "civil"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30,
+      "clima": 8
+    },
+    "id": "escena_0322"
+  },
+  {
+    "texto": "4 paramédicos se rinden, luego miran a los lados en un puente durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:1:ped:handsup",
+        "STAND:2:ped:roadcross"
+      ],
+      "actores": 4,
+      "roles": [
+        "paramedico",
+        "paramedico",
+        "paramedico",
+        "paramedico"
+      ],
+      "entorno": "ciudad",
+      "lugar": "puente",
+      "duracion": 30
+    },
+    "id": "escena_0831"
+  },
+  {
+    "texto": "2 soldados celebran en el desierto bajo la lluvia durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:173:urbanize:cheers_1"
+      ],
+      "actores": 2,
+      "roles": [
+        "militar",
+        "militar"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30,
+      "clima": 8
+    },
+    "id": "escena_0364"
+  },
+  {
+    "texto": "una persona se estira en el techo de un admiral estacionado durante 20 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:113:PLAYIDLES:stretch"
+      ],
+      "actores": 1,
+      "roles": [
+        "civil"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 20,
+      "techo": true,
+      "vehiculo_movimiento": false,
+      "modelo_vehiculo": 445
+    },
+    "id": "escena_1288"
+  },
+  {
+    "texto": "4 bomberos saltan, después vomitan y finalmente miran a los lados en el desierto durante 45 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "saltar",
+        "STAND:40:food:EAT_Vomit_P",
+        "STAND:2:ped:roadcross"
+      ],
+      "actores": 4,
+      "roles": [
+        "bombero",
+        "bombero",
+        "bombero",
+        "bombero"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 45
+    },
+    "id": "escena_1048"
+  },
+  {
+    "texto": "un auto circula sin conductor por Las Venturas durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "vehiculo_autonomo"
+      ],
+      "actores": 1,
+      "roles": [
+        "civil"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 30,
+      "visibles": 0
+    },
+    "id": "escena_1215"
+  },
+  {
+    "texto": "3 paramédicos pasean por el desierto durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "caminar"
+      ],
+      "actores": 3,
+      "roles": [
+        "paramedico",
+        "paramedico",
+        "paramedico"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0625"
+  },
+  {
+    "texto": "un policía saluda, luego vomita en la playa durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:90:ON_LOOKERS:wave_loop",
+        "STAND:40:food:EAT_Vomit_P"
+      ],
+      "actores": 1,
+      "roles": [
+        "policia"
+      ],
+      "entorno": "playa",
+      "lugar": "playa",
+      "duracion": 30
+    },
+    "id": "escena_0778"
+  },
+  {
+    "texto": "2 soldados caminan, después se rascan y finalmente vomitan en una calle de San Fierro durante 45 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "caminar",
+        "STAND:6:ped:XPRESSscratch",
+        "STAND:40:food:EAT_Vomit_P"
+      ],
+      "actores": 2,
+      "roles": [
+        "militar",
+        "militar"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 45
+    },
+    "id": "escena_1122"
+  },
+  {
+    "texto": "un paramédico habla por teléfono en la playa al atardecer durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:44:ped:phone_talk"
+      ],
+      "actores": 1,
+      "roles": [
+        "paramedico"
+      ],
+      "entorno": "playa",
+      "lugar": "playa",
+      "duracion": 30,
+      "hora": 18
+    },
+    "id": "escena_0527"
+  },
+  {
+    "texto": "4 soldados corren por el desierto durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "correr"
+      ],
+      "actores": 4,
+      "roles": [
+        "militar",
+        "militar",
+        "militar",
+        "militar"
+      ],
+      "entorno": "desierto",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0582"
+  },
+  {
+    "texto": "3 policías saltan, después se rinden y finalmente miran a los lados en la playa durante 45 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "saltar",
+        "STAND:1:ped:handsup",
+        "STAND:2:ped:roadcross"
+      ],
+      "actores": 3,
+      "roles": [
+        "policia",
+        "policia",
+        "policia"
+      ],
+      "entorno": "playa",
+      "lugar": "playa",
+      "duracion": 45
+    },
+    "id": "escena_1011"
+  },
+  {
+    "texto": "4 granjeros se rascan, luego caminan en el campo durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:6:ped:XPRESSscratch",
+        "caminar"
+      ],
+      "actores": 4,
+      "roles": [
+        "granjero",
+        "granjero",
+        "granjero",
+        "granjero"
+      ],
+      "entorno": "campo",
+      "lugar": null,
+      "duracion": 30
+    },
+    "id": "escena_0876"
+  },
+  {
+    "texto": "2 paramédicos miran a los lados en un puente durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:2:ped:roadcross"
+      ],
+      "actores": 2,
+      "roles": [
+        "paramedico",
+        "paramedico"
+      ],
+      "entorno": "ciudad",
+      "lugar": "puente",
+      "duracion": 30
+    },
+    "id": "escena_0120"
+  },
+  {
+    "texto": "una persona baila en el techo de un admiral estacionado durante 20 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "DANCE:3:DANCING:dance_loop"
+      ],
+      "actores": 1,
+      "roles": [
+        "civil"
+      ],
+      "entorno": "ciudad",
+      "lugar": null,
+      "duracion": 20,
+      "techo": true,
+      "vehiculo_movimiento": false,
+      "modelo_vehiculo": 445
+    },
+    "id": "escena_1282"
+  },
+  {
+    "texto": "4 soldados vomitan en un puente durante 30 segundos",
+    "esperado": {
+      "valido": true,
+      "acciones": [
+        "STAND:40:food:EAT_Vomit_P"
+      ],
+      "actores": 4,
+      "roles": [
+        "militar",
+        "militar",
+        "militar",
+        "militar"
+      ],
+      "entorno": "ciudad",
+      "lugar": "puente",
+      "duracion": 30
+    },
+    "id": "escena_0198"
+  }
+]

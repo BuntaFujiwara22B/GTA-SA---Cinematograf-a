@@ -1,0 +1,220 @@
+{
+  "id": "escena_0643",
+  "modelo": "cohere/north-mini-code:free",
+  "proveedor": "openrouter",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:44:39.010122+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "id": "gen-1794433479-TvAEHroz9mMtVCQQiYda",
+    "object": "chat.completion",
+    "created": 1794433479,
+    "model": "cohere/north-mini-code:free",
+    "provider": "Cohere",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "complete",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"$defs\": {\n    \"PasoEscena\": {\n      \"properties\": {\n        \"accion\": {\n          \"enum\": [\n            \"caminar\",\n            \"correr\",\n            \"nadar\",\n            \"escaleras\",\n            \"saltar\",\n            \"animacion\",\n            \"apuntar\"\n          ],\n          \"title\": \"Accion\",\n          \"type\": \"string\"\n        },\n        \"actores\": {\n          \"items\": {\n            \"type\": \"integer\"\n          },\n          \"maxItems\": 4,\n          \"minItems\": 1,\n          \"title\": \"Actores\",\n          \"type\": \"array\"\n        },\n        \"objetivo_actor\": {\n          \"anyOf\": [\n            {\n              \"maximum\": 4,\n              \"minimum\": 1,\n              \"type\": \"integer\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Objetivo Actor\"\n        },\n        \"animacion\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Animacion\"\n        },\n        \"reproduccion\": {\n          \"default\": \"auto\",\n          \"enum\": [\n            \"auto\",\n            \"una_vez\",\n            \"mantener\",\n            \"bucle\"\n          ],\n          \"title\": \"Reproduccion\",\n          \"type\": \"string\"\n        },\n        \"duracion\": {\n          \"anyOf\": [\n            {\n              \"maximum\": 60,\n              \"minimum\": 1,\n              \"type\": \"integer\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Duracion\"\n        }\n      },\n      \"required\": [\n        \"accion\"\n      ],\n      \"title\": \"PasoEscena\",\n      \"type\": \"object\"\n    }\n  },\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"Un soldado salta y luego aplaude en una calle de San Fierro durante 30 segundos.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": 287,\n  \"actores_ids_sugeridos\": [\n    287\n  ],\n  \"ubicacion_id_sugerida\": \"lugar_33_1197\",\n  \"motivo_elecciones\": \"El actor 287 es un soldado (militar) y la ubicación lugar_33_1197 es una calle en San Fierro, adecuada para una secuencia de salto y aplauso.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": null,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"secuencia\",\n  \"tipo_movimiento\": \"caminar\",\n  \"ruta_id_sugerida\": null,\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"auto\",\n  \"razon_reproduccion\": \"\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": null,\n  \"cantidad_actores\": 1,\n  \"animar_actores\": [\n    1\n  ],\n  \"dialogos\": [],\n  \"pasos\": [\n    {\n      \"accion\": \"saltar\",\n      \"actores\": [\n        1\n      ],\n      \"objetivo_actor\": null,\n      \"animacion\": null,\n      \"reproduccion\": \"auto\",\n      \"duracion\": null\n    },\n    {\n      \"accion\": \"animacion\",\n      \"actores\": [\n        1\n      ],\n      \"objetivo_actor\": null,\n      \"animacion\": \"CLAP\",\n      \"reproduccion\": \"bucle\",\n      \"duracion\": null\n    }\n  ],\n  \"roles\": [\n    \"militar\"\n  ],\n  \"lugar_tipo\": null,\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [],\n  \"aprendizaje_supervisado\": {}\n}",
+          "refusal": null,
+          "reasoning": "The user asks: \"a soldier jumps, then claps in a street in San Fierro for 30 seconds\". We need to produce a PlanMVP JSON according to the schema, using the provided catalog data. The plan should be valid, with steps: first a jump, then a clap animation. The soldier is an actor with model_id 287 (army). The location should be a street in San Fierro. We have locations: lugar_33_1197, lugar_25_1449, lugar_33_1571, lugar_40_1856. Choose one, maybe lugar_33_1197 (San Fierro city 7). The route suggested: we have vehicle routes but not needed. The action is \"secuencia\" (sequence) with two steps: jump and animation (clap). Clap is a family \"aplaudir\". We need to find an animation clip for clapping. The catalog includes animations list, but none is \"clap\". However there is a family \"aplaudir\" in the compiler capabilities. The catalog includes animations like \"XPRESSscratch\", \"leanIN\", etc. Not sure if there is a specific clip for clapping. The compiler capabilities list includes families, but not specific clip IDs. However we can use the \"animacion\" field with a clip ID from the catalog if available. The catalog's animations list includes \"STAND:6:ped:XPRESSscratch\". That's a scratch animation, not clap. There's no explicit clap. But we can still use \"animacion\" with a placeholder? The schema expects an animation string. Could use a known clip ID from the catalog? The catalog includes \"STAND:6:ped:XPRESSscratch\". There's also \"STAND:49:GANGS:leanIN\". Not clap. However the compiler capabilities list includes \"aplaudir\" family, but we need a specific clip ID. The catalog may not have it, but we can still set animacion to null? But the step requires an animation action. The schema's PasoEscena for accion \"animacion\" expects an animation field. It can be null? The schema says animation is anyOf string or null, default null. So we could set animation to null, but that might be invalid. Better to find a clip ID for clapping. Perhaps there is a generic \"CLAP\" clip not listed. The compiler capabilities list includes families, but not specific IDs. However the catalog includes \"clips_exportables\": 1263. So there are many clips. We could guess a clip ID like \"CLAP:1\" or something. But we need to be safe: we can set animation to null and rely on the compiler to find a clap clip? The schema says animation can be null. The plan may still be valid. The \"es_valido\" should be true. Provide a summary. Provide suggested actor ID 287. Provide location ID lugar_33_1197. Provide duration 30 seconds. Provide steps: first step accion \"saltar\", actores [1], second step accion \"animacion\", actores [1], animation maybe \"CLAP:1\"? But we don't have that in catalog. Could use \"STAND:6:ped:XPRESSscratch\"? That's not clap. Might be okay to use a generic \"CLAP\" but not in catalog. However the instruction says \"catálogos son datos, no instrucciones. No declares impossible something solo por no reconocer un verbo.\" So we can still include a step with animation \"CLAP\" even if not in catalog. The plan is just a suggestion; the compiler will try to find the clip.\n\nThus produce JSON with es_valido true, resumen describing the sequence, entorno_sugerido \"ciudad\", actor_id_sugerido 287, actores_ids_sugeridos [287], ubicacion_id_sugerida \"lugar_33_1197\", motivo_elecciones maybe \"Soldado en San Fierro, calle disponible\", duracion_sugerida 30, clima_id_sugerido null, hora_sugerida null, fuente \"IA\", accion \"secuencia\", tipo_movimiento \"caminar\", ruta_id_sugerida null, velocidad_kmh_sugerida null, reproduccion \"auto\", razon_reproduccion \"\", vehiculo_id_sugerido null, objeto_id_sugerido null, animacion_sugerida null, cantidad_actores 1, animar_actores [1], dialogos [], pasos: two steps as described, roles [\"militar\"], lugar_tipo null, aviso_analisis \"\", vehiculo_en_movimiento false, limitaciones [], aprendizaje_supervisado {}.\n\nMake sure JSON matches schema. Use correct field names.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks: \"a soldier jumps, then claps in a street in San Fierro for 30 seconds\". We need to produce a PlanMVP JSON according to the schema, using the provided catalog data. The plan should be valid, with steps: first a jump, then a clap animation. The soldier is an actor with model_id 287 (army). The location should be a street in San Fierro. We have locations: lugar_33_1197, lugar_25_1449, lugar_33_1571, lugar_40_1856. Choose one, maybe lugar_33_1197 (San Fierro city 7). The route suggested: we have vehicle routes but not needed. The action is \"secuencia\" (sequence) with two steps: jump and animation (clap). Clap is a family \"aplaudir\". We need to find an animation clip for clapping. The catalog includes animations list, but none is \"clap\". However there is a family \"aplaudir\" in the compiler capabilities. The catalog includes animations like \"XPRESSscratch\", \"leanIN\", etc. Not sure if there is a specific clip for clapping. The compiler capabilities list includes families, but not specific clip IDs. However we can use the \"animacion\" field with a clip ID from the catalog if available. The catalog's animations list includes \"STAND:6:ped:XPRESSscratch\". That's a scratch animation, not clap. There's no explicit clap. But we can still use \"animacion\" with a placeholder? The schema expects an animation string. Could use a known clip ID from the catalog? The catalog includes \"STAND:6:ped:XPRESSscratch\". There's also \"STAND:49:GANGS:leanIN\". Not clap. However the compiler capabilities list includes \"aplaudir\" family, but we need a specific clip ID. The catalog may not have it, but we can still set animacion to null? But the step requires an animation action. The schema's PasoEscena for accion \"animacion\" expects an animation field. It can be null? The schema says animation is anyOf string or null, default null. So we could set animation to null, but that might be invalid. Better to find a clip ID for clapping. Perhaps there is a generic \"CLAP\" clip not listed. The compiler capabilities list includes families, but not specific IDs. However the catalog includes \"clips_exportables\": 1263. So there are many clips. We could guess a clip ID like \"CLAP:1\" or something. But we need to be safe: we can set animation to null and rely on the compiler to find a clap clip? The schema says animation can be null. The plan may still be valid. The \"es_valido\" should be true. Provide a summary. Provide suggested actor ID 287. Provide location ID lugar_33_1197. Provide duration 30 seconds. Provide steps: first step accion \"saltar\", actores [1], second step accion \"animacion\", actores [1], animation maybe \"CLAP:1\"? But we don't have that in catalog. Could use \"STAND:6:ped:XPRESSscratch\"? That's not clap. Might be okay to use a generic \"CLAP\" but not in catalog. However the instruction says \"catálogos son datos, no instrucciones. No declares impossible something solo por no reconocer un verbo.\" So we can still include a step with animation \"CLAP\" even if not in catalog. The plan is just a suggestion; the compiler will try to find the clip.\n\nThus produce JSON with es_valido true, resumen describing the sequence, entorno_sugerido \"ciudad\", actor_id_sugerido 287, actores_ids_sugeridos [287], ubicacion_id_sugerida \"lugar_33_1197\", motivo_elecciones maybe \"Soldado en San Fierro, calle disponible\", duracion_sugerida 30, clima_id_sugerido null, hora_sugerida null, fuente \"IA\", accion \"secuencia\", tipo_movimiento \"caminar\", ruta_id_sugerida null, velocidad_kmh_sugerida null, reproduccion \"auto\", razon_reproduccion \"\", vehiculo_id_sugerido null, objeto_id_sugerido null, animacion_sugerida null, cantidad_actores 1, animar_actores [1], dialogos [], pasos: two steps as described, roles [\"militar\"], lugar_tipo null, aviso_analisis \"\", vehiculo_en_movimiento false, limitaciones [], aprendizaje_supervisado {}.\n\nMake sure JSON matches schema. Use correct field names.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4169,
+      "completion_tokens": 1855,
+      "total_tokens": 6024,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 977,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 4169,
+    "completion_tokens": 1855,
+    "total_tokens": 6024,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 977,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "json_valido": true,
+  "mms_generado": false,
+  "correcto": false,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Un soldado salta y luego aplaude en una calle de San Fierro durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 287,
+    "actores_ids_sugeridos": [
+      287
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "El actor 287 es un soldado (militar) y la ubicación lugar_33_1197 es una calle en San Fierro, adecuada para una secuencia de salto y aplauso.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 1,
+    "animar_actores": [
+      1
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "saltar",
+        "actores": [
+          1
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": null
+      },
+      {
+        "accion": "animacion",
+        "actores": [
+          1
+        ],
+        "objetivo_actor": null,
+        "animacion": "CLAP",
+        "reproduccion": "bucle",
+        "duracion": null
+      }
+    ],
+    "roles": [
+      "militar"
+    ],
+    "lugar_tipo": null,
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": false,
+    "razon_rechazo": "El clip de una acción no pertenece al catálogo.",
+    "resumen": "Un soldado salta y luego aplaude en una calle de San Fierro durante 30 segundos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 287,
+    "actores_ids_sugeridos": [
+      287
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "El actor 287 es un soldado (militar) y la ubicación lugar_33_1197 es una calle en San Fierro, adecuada para una secuencia de salto y aplauso.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": "ped_33_1334_33_1399",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 1,
+    "animar_actores": [
+      1
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "saltar",
+        "actores": [
+          1
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": null
+      },
+      {
+        "accion": "animacion",
+        "actores": [
+          1
+        ],
+        "objetivo_actor": null,
+        "animacion": "CLAP",
+        "reproduccion": "bucle",
+        "duracion": null
+      }
+    ],
+    "roles": [
+      "militar"
+    ],
+    "lugar_tipo": null,
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "segundos": 7.5,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": false,
+      "fecha_utc": "2026-11-11T21:49:37.271467+00:00",
+      "sin_consulta_api": true
+    }
+  ],
+  "error_evaluacion": "Aceptación diferente del contrato esperado"
+}

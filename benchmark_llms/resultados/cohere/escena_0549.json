@@ -1,0 +1,188 @@
+{
+  "id": "escena_0549",
+  "modelo": "cohere/north-mini-code:free",
+  "proveedor": "openrouter",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:40:20.616203+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "id": "gen-1794433220-b1oZKomHrCH2iaOi7HCU",
+    "object": "chat.completion",
+    "created": 1794433220,
+    "model": "cohere/north-mini-code:free",
+    "provider": "Cohere",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "complete",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"$defs\": {\n    \"PasoEscena\": {\n      \"properties\": {\n        \"accion\": {\n          \"enum\": [\n            \"caminar\",\n            \"correr\",\n            \"nadar\",\n            \"escaleras\",\n            \"saltar\",\n            \"animacion\",\n            \"apuntar\"\n          ],\n          \"title\": \"Accion\",\n          \"type\": \"string\"\n        },\n        \"actores\": {\n          \"items\": {\n            \"type\": \"integer\"\n          },\n          \"maxItems\": 4,\n          \"minItems\": 1,\n          \"title\": \"Actores\",\n          \"type\": \"array\"\n        },\n        \"objetivo_actor\": {\n          \"anyOf\": [\n            {\n              \"maximum\": 4,\n              \"minimum\": 1,\n              \"type\": \"integer\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Objetivo Actor\"\n        },\n        \"animacion\": {\n          \"anyOf\": [\n            {\n              \"type\": \"string\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Animacion\"\n        },\n        \"reproduccion\": {\n          \"default\": \"auto\",\n          \"enum\": [\n            \"auto\",\n            \"una_vez\",\n            \"mantener\",\n            \"bucle\"\n          ],\n          \"title\": \"Reproduccion\",\n          \"type\": \"string\"\n        },\n        \"duracion\": {\n          \"anyOf\": [\n            {\n              \"maximum\": 60,\n              \"minimum\": 1,\n              \"type\": \"integer\"\n            },\n            {\n              \"type\": \"null\"\n            }\n          ],\n          \"default\": null,\n          \"title\": \"Duracion\"\n        }\n      },\n      \"required\": [\n        \"accion\"\n      ],\n      \"title\": \"PasoEscena\",\n      \"type\": \"object\"\n    }\n  },\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"3 bomberos caminan por una calle de San Fierro durante 30 segundos\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": null,\n  \"actores_ids_sugeridos\": [277, 278, 279],\n  \"ubicacion_id_sugerida\": \"lugar_33_1197\",\n  \"motivo_elecciones\": \"\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": null,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"caminar\",\n  \"tipo_movimiento\": \"caminar\",\n  \"ruta_id_sugerida\": \"ped_33_1334_33_1399\",\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"auto\",\n  \"razon_reproduccion\": \"\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": null,\n  \"cantidad_actores\": 3,\n  \"animar_actores\": [1, 2, 3],\n  \"dialogos\": [],\n  \"pasos\": [],\n  \"roles\": [\"bombero\"],\n  \"lugar_tipo\": null,\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [],\n  \"aprendizaje_supervisado\": {}\n}",
+          "refusal": null,
+          "reasoning": "The user asks: \"3 firefighters walk along a street in San Fierro for 30 seconds\". We need to produce a PlanMVP JSON according to the schema, using the catalog data. The catalog includes firefighters (model_id 277, 278, 279) with roles \"bombero\". Locations include several in San Fierro (lugar_33_1197, lugar_25_1449, lugar_33_1571, lugar_40_1856). Routes include vehicle routes, but we need a walking route. There's a suggested route_id \"ped_33_1334_33_1399\" from the local draft. That seems to be a pedestrian route. We can use that. The environment suggested is city. The duration is 30 seconds. The action is walk. The type_movement is walk. The actors count is 3. The actors to animate: maybe all three? The draft shows animar_actores: [1] but we can include all three. The roles: \"bombero\". The location suggested: we need a location id. Choose one of the San Fierro locations, maybe lugar_33_1197 (San Fierro city 7). The route suggested: ped_33_1334_33_1399. The climate and time can be null. The vehicle id suggested: null. The steps: we need to provide steps array with PasoEscena objects. Since it's a simple walk, we can have one step: accion \"caminar\", actores [1,2,3], animacion null, objetivo_actor null, duracion maybe 30? But the step duration is optional; the overall duration is captured in duracion_sugerida. The steps can be empty? The schema says steps maxItems 8, but not required. The draft includes empty steps. However, the user wants a walk for 30 seconds. We could include a step with accion \"caminar\", actores [1,2,3], duracion 30. But the step duration is limited to 1..60. That seems okay. However, the step's duracion is optional; the overall plan has duracion_sugerida. The steps are used for sequence of actions. We can include a single step with accion \"caminar\", actores [1,2,3], duracion 30. But the step's duracion is not required; we could also leave steps empty and rely on overall duration. The schema says steps is optional? It's not in required list. So we can leave steps empty. But the plan should reflect the walk. The \"accion\" field at top level is \"caminar\". The \"tipo_movimiento\" is \"caminar\". The \"cantidad_actores\" is 3. The \"animar_actores\" could be [1,2,3] to animate all. The \"roles\" is [\"bombero\"]. The \"ubicacion_id_sugerida\" is \"lugar_33_1197\". The \"ruta_id_sugerida\" is \"ped_33_1334_33_1399\". The \"duracion_sugerida\" is 30. The \"es_valido\" true. The \"razon_rechazo\" empty. The \"resumen\" should be something like \"3 bomberos caminan por una calle de San Fierro durante 30 segundos\". The \"entorno_sugerido\" \"ciudad\". The \"actor_id_sugerido\" null. The \"actores_ids_sugeridos\" maybe [277,278,279] but the schema expects integer IDs for actors (maybe model IDs?). The \"actor_id_sugerido\" is a single integer, \"actores_ids_sugeridos\" is array of integers. We can fill with the model IDs. The \"motivo_elecciones\" maybe empty. The \"clima_id_sugerido\" null. The \"hora_sugerida\" null. The \"fuente\" \"IA\". The \"reproduccion\" \"auto\". The \"razon_reproduccion\" empty. The \"vehiculo_id_sugerido\" null. The \"objeto_id_sugerido\" null. The \"animacion_sugerida\" null. The \"velocidad_kmh_sugerida\" null. The \"ruta_vehiculo_id\" null. The \"lugar_tipo\" null. The \"aviso_analisis\" empty. The \"vehiculo_en_movimiento\" false. The \"limitaciones\" empty. The \"aprendizaje_supervisado\" empty object.\n\nWe need to ensure the JSON matches the schema. Let's construct.\n\nAlso, the \"roles\" array: we can include \"bombero\". The \"animar_actores\" array: we can include [1,2,3] (actor indices). The \"pasos\" maybe empty.\n\nLet's produce JSON.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The user asks: \"3 firefighters walk along a street in San Fierro for 30 seconds\". We need to produce a PlanMVP JSON according to the schema, using the catalog data. The catalog includes firefighters (model_id 277, 278, 279) with roles \"bombero\". Locations include several in San Fierro (lugar_33_1197, lugar_25_1449, lugar_33_1571, lugar_40_1856). Routes include vehicle routes, but we need a walking route. There's a suggested route_id \"ped_33_1334_33_1399\" from the local draft. That seems to be a pedestrian route. We can use that. The environment suggested is city. The duration is 30 seconds. The action is walk. The type_movement is walk. The actors count is 3. The actors to animate: maybe all three? The draft shows animar_actores: [1] but we can include all three. The roles: \"bombero\". The location suggested: we need a location id. Choose one of the San Fierro locations, maybe lugar_33_1197 (San Fierro city 7). The route suggested: ped_33_1334_33_1399. The climate and time can be null. The vehicle id suggested: null. The steps: we need to provide steps array with PasoEscena objects. Since it's a simple walk, we can have one step: accion \"caminar\", actores [1,2,3], animacion null, objetivo_actor null, duracion maybe 30? But the step duration is optional; the overall duration is captured in duracion_sugerida. The steps can be empty? The schema says steps maxItems 8, but not required. The draft includes empty steps. However, the user wants a walk for 30 seconds. We could include a step with accion \"caminar\", actores [1,2,3], duracion 30. But the step duration is limited to 1..60. That seems okay. However, the step's duracion is optional; the overall plan has duracion_sugerida. The steps are used for sequence of actions. We can include a single step with accion \"caminar\", actores [1,2,3], duracion 30. But the step's duracion is not required; we could also leave steps empty and rely on overall duration. The schema says steps is optional? It's not in required list. So we can leave steps empty. But the plan should reflect the walk. The \"accion\" field at top level is \"caminar\". The \"tipo_movimiento\" is \"caminar\". The \"cantidad_actores\" is 3. The \"animar_actores\" could be [1,2,3] to animate all. The \"roles\" is [\"bombero\"]. The \"ubicacion_id_sugerida\" is \"lugar_33_1197\". The \"ruta_id_sugerida\" is \"ped_33_1334_33_1399\". The \"duracion_sugerida\" is 30. The \"es_valido\" true. The \"razon_rechazo\" empty. The \"resumen\" should be something like \"3 bomberos caminan por una calle de San Fierro durante 30 segundos\". The \"entorno_sugerido\" \"ciudad\". The \"actor_id_sugerido\" null. The \"actores_ids_sugeridos\" maybe [277,278,279] but the schema expects integer IDs for actors (maybe model IDs?). The \"actor_id_sugerido\" is a single integer, \"actores_ids_sugeridos\" is array of integers. We can fill with the model IDs. The \"motivo_elecciones\" maybe empty. The \"clima_id_sugerido\" null. The \"hora_sugerida\" null. The \"fuente\" \"IA\". The \"reproduccion\" \"auto\". The \"razon_reproduccion\" empty. The \"vehiculo_id_sugerido\" null. The \"objeto_id_sugerido\" null. The \"animacion_sugerida\" null. The \"velocidad_kmh_sugerida\" null. The \"ruta_vehiculo_id\" null. The \"lugar_tipo\" null. The \"aviso_analisis\" empty. The \"vehiculo_en_movimiento\" false. The \"limitaciones\" empty. The \"aprendizaje_supervisado\" empty object.\n\nWe need to ensure the JSON matches the schema. Let's construct.\n\nAlso, the \"roles\" array: we can include \"bombero\". The \"animar_actores\" array: we can include [1,2,3] (actor indices). The \"pasos\" maybe empty.\n\nLet's produce JSON.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4190,
+      "completion_tokens": 1751,
+      "total_tokens": 5941,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 891,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 4190,
+    "completion_tokens": 1751,
+    "total_tokens": 5941,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 891,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "3 bomberos caminan por una calle de San Fierro durante 30 segundos",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": null,
+    "actores_ids_sugeridos": [
+      277,
+      278,
+      279
+    ],
+    "ubicacion_id_sugerida": "lugar_33_1197",
+    "motivo_elecciones": "",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "caminar",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": "ped_33_1334_33_1399",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 3,
+    "animar_actores": [
+      1,
+      2,
+      3
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "bombero"
+    ],
+    "lugar_tipo": null,
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "3 bomberos caminan por una calle de San Fierro durante 30 segundos",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 277,
+    "actores_ids_sugeridos": [
+      277,
+      278,
+      279
+    ],
+    "ubicacion_id_sugerida": null,
+    "motivo_elecciones": "Propuesta de IA: reparto disponible, ambiente y ubicación del catálogo. Puedes cambiar cualquiera de estas opciones.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 1,
+    "hora_sugerida": 12,
+    "fuente": "IA",
+    "accion": "caminar",
+    "tipo_movimiento": "caminar",
+    "ruta_id_sugerida": "ped_33_1334_33_1399",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": null,
+    "cantidad_actores": 3,
+    "animar_actores": [
+      1,
+      2,
+      3
+    ],
+    "dialogos": [],
+    "pasos": [],
+    "roles": [
+      "bombero",
+      "bombero",
+      "bombero"
+    ],
+    "lugar_tipo": null,
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "6994a0e2a27c613985c4d6c81dabb41309977ef4eeb781912966fefeca34f03a",
+  "segundos": 6.391,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:37.218467+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}

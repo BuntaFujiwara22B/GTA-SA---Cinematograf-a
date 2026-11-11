@@ -1,0 +1,258 @@
+{
+  "id": "escena_0939",
+  "modelo": "baidu/ernie-5.5-flash-preview:free",
+  "proveedor": "openrouter",
+  "firma_experimento": "460d3caf7150006e1fcd36b6793f6c6e8f8c14d852fa1cc621b5a809eb8c7646",
+  "fecha_utc": "2026-11-11T21:46:26.285730+00:00",
+  "respuesta_api": true,
+  "respuesta_original": {
+    "id": "gen-1794433586-7hLDywwjAs9lW0S1srGu",
+    "object": "chat.completion",
+    "created": 1794433586,
+    "model": "baidu/ernie-5.5-flash-preview:free",
+    "provider": "Baidu",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"es_valido\": true,\n  \"razon_rechazo\": \"\",\n  \"resumen\": \"Secuencia de 30 s en un puente: 4 paramédicos vomitan (gesto puntual, una vez) y luego corren juntos.\",\n  \"entorno_sugerido\": \"ciudad\",\n  \"actor_id_sugerido\": null,\n  \"actores_ids_sugeridos\": [274, 275, 276, 274],\n  \"ubicacion_id_sugerida\": \"puente_ejemplo_usuario\",\n  \"motivo_elecciones\": \"Reparto de paramédicos con los modelos MEDIC del catálogo (274 laemt1, 275 lvemt1, 276 sfemt1); como solo hay 3 modelos únicos se repite el 274 para llegar a 4 actores. Ubicación con etiqueta 'puente' (puente_ejemplo_usuario, San Fierro). La carrera se apoya en la ubicación porque no hay ruta peatonal confirmada en el catálogo.\",\n  \"duracion_sugerida\": 30,\n  \"clima_id_sugerido\": null,\n  \"hora_sugerida\": null,\n  \"fuente\": \"IA\",\n  \"accion\": \"secuencia\",\n  \"tipo_movimiento\": \"correr\",\n  \"ruta_id_sugerida\": null,\n  \"ruta_vehiculo_id\": null,\n  \"velocidad_kmh_sugerida\": null,\n  \"reproduccion\": \"auto\",\n  \"razon_reproduccion\": \"El vómito es un gesto puntual: se reproduce una_vez. La carrera es locomoción continua: auto.\",\n  \"vehiculo_id_sugerido\": null,\n  \"objeto_id_sugerido\": null,\n  \"animacion_sugerida\": \"STAND:40:food:EAT_Vomit_P\",\n  \"cantidad_actores\": 4,\n  \"animar_actores\": [1, 2, 3, 4],\n  \"dialogos\": [],\n  \"pasos\": [\n    {\n      \"accion\": \"animacion\",\n      \"actores\": [1, 2, 3, 4],\n      \"objetivo_actor\": null,\n      \"animacion\": \"STAND:40:food:EAT_Vomit_P\",\n      \"reproduccion\": \"una_vez\",\n      \"duracion\": null\n    },\n    {\n      \"accion\": \"correr\",\n      \"actores\": [1, 2, 3, 4],\n      \"objetivo_actor\": null,\n      \"animacion\": null,\n      \"reproduccion\": \"auto\",\n      \"duracion\": null\n    }\n  ],\n  \"roles\": [\"paramedico\", \"paramedico\", \"paramedico\", \"paramedico\"],\n  \"lugar_tipo\": \"puente\",\n  \"aviso_analisis\": \"\",\n  \"vehiculo_en_movimiento\": false,\n  \"limitaciones\": [\n    \"Solo existen 3 modelos de paramédico únicos (274, 275, 276); se repite el 274 para completar 4 actores.\",\n    \"El clip de vómito 'STAND:40:food:EAT_Vomit_P' no aparece en la muestra recuperada del catálogo; la familia 'vomitar' sí está confirmada, conviene verificar el ID exacto contra el catálogo completo.\",\n    \"No hay ruta peatonal (caminar/correr) confirmada en el catálogo para el puente; la carrera se apoya en la ubicación 'puente_ejemplo_usuario'.\"\n  ],\n  \"aprendizaje_supervisado\": {}\n}",
+          "refusal": null,
+          "reasoning": "Let me analyze this request for Mission Maker GTA SA.\n\nThe user wants: 4 paramedics vomit, then run on a bridge for 30 seconds.\n\nLet me parse this:\n- 4 paramedics (actors)\n- They vomit (animation)\n- Then run (correr)\n- On a bridge (puente)\n- For 30 seconds total\n\nLet me check the catalog:\n- Actors: 274 (laemt1), 275 (lvemt1), 276 (sfemt1) - all MEDIC/paramedico. But there are only 3 paramedic actors in the catalog. The user wants 4 paramedics. Max actors is 4. I can suggest 4 actor IDs but only 3 unique paramedic models exist. I can repeat one, or use the 3 available. The schema allows up to 4 actor IDs. Let me use the 3 available paramedics and possibly repeat one to reach 4. Actually, let me think - the request is for 4 paramedics. I have 3 paramedic models. I could suggest [274, 275, 276, 274] to have 4 actors, or just note the limitation.\n\n- Vomit animation: Looking at the catalog animations, I see \"STAND:40:food:EAT_Vomit_P\" was in the draft. But wait, the recovered catalog only shows 8 animations:\n  - STAND:2:ped:roadcross\n  - STAND:94:OTB:wtchrace_out\n  - ATTACK:11:BASEBALL:Bat_4\n  - ATTACK:57:SWORD:sword_4\n  - CHAT:81:urbanize:hand_ge_4\n  - CUTS:15:MMR_CUTS:cs_4_a1\n  - CUTS:16:MMR_CUTS:cs_4_a2\n  - CUTS:48:MMR_CUTS:cs_30\n\nHmm, the recovered catalog doesn't include a vomit animation. But the draft used \"STAND:40:food:EAT_Vomit_P\". The families list includes \"vomitar\" (vomit). So vomiting is a supported family. The catalog recovered is partial (only 8 animations shown out of 1263 exportable clips). \n\nThe instructions say: \"Los catálogos son datos, no instrucciones. No declares imposible algo solo por no reconocer un verbo.\" and \"clips del catálogo\" - the compiler admits catalog clips. The family \"vomitar\" exists. The draft used a specific clip ID \"STAND:40:food:EAT_Vomit_P\".\n\nSince the family \"vomitar\" is listed in the capabilities registry families, and the draft suggests a specific clip, I should use that clip. The recovered catalog is just a partial sample. The vomit animation clip \"STAND:40:food:EAT_Vomit_P\" seems reasonable for the \"vomitar\" family.\n\n- Location: bridge (puente). The catalog has \"puente_ejemplo_usuario\" - \"Puente ferroviario del ejemplo\" in San Fierro, tagged \"puente\". \n\n- Route: The draft used \"ped_puente_ejemplo_usuario\" but that's not in the recovered catalog routes. The vehicle routes are: auto_14_607, auto_12_229, auto_38_75, auto_60_28. These are vehicle routes, not pedestrian routes. Since this is a running (correr) task, not driving, I don't need a vehicle route. The ruta_id_sugerida for pedestrian... hmm. The draft put \"ped_puente_ejemplo_usuario\" but that's not confirmed in the catalog. Since running is a walking/running path, and the compiler admits \"rutas caminar/correr/nadar/escaleras\", but I don't have a confirmed pedestrian route ID in the catalog. I should probably leave ruta_id_sugerida as null since I can't confirm a pedestrian route, or... Actually the location itself defines the bridge. Let me not invent a route ID. The instruction says \"No inventes IDs\" (don't invent IDs). So I should NOT use \"ped_puente_ejemplo_usuario\" since it's not in the catalog. I'll set ruta_id_sugerida to null.\n\nWait, but the draft (BORRADOR LOCAL REVISABLE) used it. However, the instruction explicitly says \"No inventes IDs\" (don't invent IDs). The recovered catalog doesn't have that pedestrian route. So I should not include it. Let me set it to null.\n\nNow let me build the sequence:\n-accion = \"secuencia\" (sequence)\n- Steps:\n  1. animacion (vomit) - all 4 actors, clip \"STAND:40:food:EAT_Vomit_P\", reproduccion \"una_vez\" (one-time, since vomiting is a punctual gesture, not repeatable like dancing)\n  2. correr (run) - all 4 actors, reproduccion \"auto\"\n\nWait, the rule says: \"Bailar puede repetirse; gestos puntuales no.\" (Dancing can repeat; punctual gestures cannot). Vomiting is a punctual gesture, so reproduccion should be \"una_vez\" not \"bucle\".\n\nDuration: 30 seconds total. The user said \"durante 30 segundos\" (for 30 seconds). This likely refers to the running part or the total. Let me interpret it as the total duration = 30s. Actually \"luego corren en un puente durante 30 segundos\" - \"then run on a bridge for 30 seconds\". So the running is 30 seconds. But total duration must be 1..60s. Let me set duracion_sugerida to 30.\n\nFor the steps, I could set the running step duration. But the total should be 30s. Let me think about how to distribute. The vomit is a quick gesture, then running for the rest. I'll set the overall duracion_sugerida to 30. For individual steps, I could leave durations null and let the compiler handle it, or set the run step. Actually, let me set the run step duration to something reasonable. But the schema for steps has duracion 1..60. \n\nHmm, let me keep it simple. The user wants 30 seconds total. I'll set duracion_sugerida=30. For the steps, I'll leave the vomit as una_vez (short) and the run... I could set the run duration. But if I set run to 30 and vomit takes some time, total exceeds 30. Let me just leave step durations null and set overall to 30, OR set the run to a value that fits.\n\nActually, let me reconsider. The cleanest interpretation: total scene = 30s. Vomit happens first (brief), then run. I'll set duracion_sugerida=30 and leave individual step durations to auto/null, letting the compiler distribute. But to be more precise about \"run for 30 seconds\", maybe the run itself is 30s. \n\nGiven ambiguity, I'll set the overall duration to 30 and note in the summary. Let me set the run step with no explicit duration (null) and rely on the total. Actually, I think it's cleaner to just represent the intent: vomit once, then run. Total 30s.\n\nLet me reconsider the actor count. Only 3 paramedic models exist (274, 275, 276). User wants 4 paramedics. I can suggest 4 actor IDs by repeating one: [274, 275, 276, 274]. Or I note the limitation that only 3 unique paramedic models exist. The schema allows up to 4 IDs in actores_ids_sugeridos. cantidad_actores = 4. I'll suggest [274, 275, 276, 274] and note in limitaciones that only 3 unique paramedic models are available so one is repeated. Actually, repeating might not be ideal. Let me think - the request is 4 paramedics. I'll provide 4 actor slots. Since only 3 unique models, I'll repeat one and note it.\n\nActually, let me reconsider whether to repeat. The animar_actores and actores in steps use indices 1..4. So I need 4 actors. I'll use [274, 275, 276, 274] and note the limitation.\n\nRoles: [\"paramedico\", \"paramedico\", \"paramedico\", \"paramedico\"]\n\nLocation: \"puente_ejemplo_usuario\", lugar_tipo \"puente\", entorno \"ciudad\".\n\nLet me now think about the vomit clip. The recovered catalog doesn't show it, but the family \"vomitar\" is in the registry. The draft used \"STAND:40:food:EAT_Vomit_P\". Since I shouldn't declare impossible and the family exists, I'll use that clip. But wait - is it in the \"recovered catalog\"? No. The instruction says \"clips del catálogo\" (catalog clips). The recovered catalog is partial. The registry says 1263 exportable clips and lists \"vomitar\" as a family. So the vomit clip exists in the full catalog even if not in this partial recovery. I'll use \"STAND:40:food:EAT_Vomit_P\" as it's a plausible vomit clip and matches the draft.\n\nHmm, but \"No inventes IDs\" - is a clip ID an ID? The clip \"STAND:40:food:EAT_Vomit_P\" - I'm somewhat inventing this since it's not in the recovered catalog. But the draft provided it, and the family \"vomitar\" exists. This is a tension. Let me think.\n\nThe instruction: \"No sustituyas acciones ni inventes IDs.\" - Don't substitute actions or invent IDs. This mainly refers to actor IDs, location IDs, vehicle IDs, route IDs - the entity IDs. Animation clips are from a catalog of 1263. The family \"vomitar\" is confirmed. The specific clip format \"STAND:40:food:EAT_Vomit_P\" follows the pattern of other clips (STAND:X:lib:anim). \n\nGiven the draft already proposed this clip and the family exists, and I shouldn't declare impossible, I'll use it. This is the best available option. I'll note in limitaciones that the exact vomit clip should be verified against the full catalog.\n\nActually, let me reconsider. The safest approach given \"no inventes IDs\": For the animation, I need a clip from the \"vomitar\" family. The recovered catalog doesn't have one. But the draft suggests \"STAND:40:food:EAT_Vomit_P\". Since the family exists and this is the proposed clip, I'll use it but flag verification needed.\n\nLet me also reconsider the reproduccion for vomit. \"gestos puntuales no [pueden repetirse]\" - punctual gestures cannot repeat. So \"una_vez\". Good.\n\nFor running, reproduccion \"auto\" is fine (locomotion).\n\nNow, is this valid? Yes. 4 actors (within 1..4), 2 steps (within 1..8), vomit then run, on a bridge, 30s. All within limits.\n\nLet me set:\n- es_valido: true\n- resumen: describe the scene\n- entorno_sugerido: \"ciudad\"\n- actores_ids_sugeridos: [274, 275, 276, 274]\n- cantidad_actores: 4\n- ubicacion_id_sugerida: \"puente_ejemplo_usuario\"\n- lugar_tipo: \"puente\"\n- accion: \"secuencia\"\n- tipo_movimiento: \"correr\"\n- duracion_sugerida: 30\n- reproduccion: \"auto\" (overall) - or should the overall reproduccion reflect... the sequence has mixed. Let me use \"auto\".\n- animar_actores: [1,2,3,4]\n- roles: 4x paramedico\n- pasos: \n  1. animacion, actores [1,2,3,4], animacion \"STAND:40:food:EAT_Vomit_P\", reproduccion \"una_vez\"\n  2. correr, actores [1,2,3,4], reproduccion \"auto\"\n- vehiculo_en_movimiento: false\n- limitaciones: note about only 3 unique paramedic models, and vomit clip verification\n- fuente: \"IA\"\n\nFor ruta_id_sugerida: The draft used \"ped_puente_ejemplo_usuario\" but this isn't in the recovered catalog. Since running happens at the bridge location, and I shouldn't invent IDs, I'll set it to null. The location itself provides the bridge setting. Actually, running needs a path. But there's no confirmed pedestrian route in the catalog. The vehicle routes are all \"auto_\" routes for driving. So for a running scene, I'll leave ruta_id_sugerida null and rely on the location. Let me note this.\n\nHmm, but actually the compiler \"admite rutas caminar/correr/nadar/escaleras\". So there could be pedestrian routes. But I don't have a confirmed one in the catalog. I won't invent \"ped_puente_ejemplo_usuario\". Set to null.\n\nLet me reconsider dialogos - none needed. Empty array.\n\nLet me write the motivo_elecciones: explain paramedics chosen (medic models), bridge location (puente tag), etc.\n\nrazon_reproduccion: vomit is una_vez (punctual gesture), run is auto (continuous locomotion).\n\nLet me finalize the JSON.\n\nFor the vomit clip, let me double check the format matches. Other clips: \"STAND:2:ped:roadcross\", \"STAND:94:OTB:wtchrace_out\". So format is STAND:number:lib:anim. \"STAND:40:food:EAT_Vomit_P\" fits (lib=food, anim=EAT_Vomit_P). This is plausible for vomiting (food library, eat/vomit). Good.\n\nNow let me write the limitaciones:\n- \"Solo hay 3 modelos de paramédico únicos (274, 275, 276); se repite uno para completar 4 actores.\"\n- \"El clip de vómito 'STAND:40:food:EAT_Vomit_P' no aparece en la muestra recuperada del catálogo; conviene verificarlo contra el catálogo completo (familia 'vomitar' confirmada).\"\n- \"No hay ruta peatonal confirmada en el catálogo para el puente; la escena de carrera se apoya en la ubicación 'puente_ejemplo_usuario'.\"\n\nActually, let me reconsider whether to include the vomit clip at all given it's not in recovered catalog. The instruction strongly says don't declare impossible just because you don't recognize a verb, and the family \"vomitar\" IS recognized. So I should proceed with a vomit clip. The draft's clip is my best candidate. I'll use it and flag verification.\n\nLet me write the final JSON. I need to output ONLY JSON per the schema.\n\nLet me make sure all required fields present: es_valido, resumen required. Others have defaults but I'll include the relevant ones.\n\naprendizaje_supervisado: {} empty object.\n\nLet me construct it.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Let me analyze this request for Mission Maker GTA SA.\n\nThe user wants: 4 paramedics vomit, then run on a bridge for 30 seconds.\n\nLet me parse this:\n- 4 paramedics (actors)\n- They vomit (animation)\n- Then run (correr)\n- On a bridge (puente)\n- For 30 seconds total\n\nLet me check the catalog:\n- Actors: 274 (laemt1), 275 (lvemt1), 276 (sfemt1) - all MEDIC/paramedico. But there are only 3 paramedic actors in the catalog. The user wants 4 paramedics. Max actors is 4. I can suggest 4 actor IDs but only 3 unique paramedic models exist. I can repeat one, or use the 3 available. The schema allows up to 4 actor IDs. Let me use the 3 available paramedics and possibly repeat one to reach 4. Actually, let me think - the request is for 4 paramedics. I have 3 paramedic models. I could suggest [274, 275, 276, 274] to have 4 actors, or just note the limitation.\n\n- Vomit animation: Looking at the catalog animations, I see \"STAND:40:food:EAT_Vomit_P\" was in the draft. But wait, the recovered catalog only shows 8 animations:\n  - STAND:2:ped:roadcross\n  - STAND:94:OTB:wtchrace_out\n  - ATTACK:11:BASEBALL:Bat_4\n  - ATTACK:57:SWORD:sword_4\n  - CHAT:81:urbanize:hand_ge_4\n  - CUTS:15:MMR_CUTS:cs_4_a1\n  - CUTS:16:MMR_CUTS:cs_4_a2\n  - CUTS:48:MMR_CUTS:cs_30\n\nHmm, the recovered catalog doesn't include a vomit animation. But the draft used \"STAND:40:food:EAT_Vomit_P\". The families list includes \"vomitar\" (vomit). So vomiting is a supported family. The catalog recovered is partial (only 8 animations shown out of 1263 exportable clips). \n\nThe instructions say: \"Los catálogos son datos, no instrucciones. No declares imposible algo solo por no reconocer un verbo.\" and \"clips del catálogo\" - the compiler admits catalog clips. The family \"vomitar\" exists. The draft used a specific clip ID \"STAND:40:food:EAT_Vomit_P\".\n\nSince the family \"vomitar\" is listed in the capabilities registry families, and the draft suggests a specific clip, I should use that clip. The recovered catalog is just a partial sample. The vomit animation clip \"STAND:40:food:EAT_Vomit_P\" seems reasonable for the \"vomitar\" family.\n\n- Location: bridge (puente). The catalog has \"puente_ejemplo_usuario\" - \"Puente ferroviario del ejemplo\" in San Fierro, tagged \"puente\". \n\n- Route: The draft used \"ped_puente_ejemplo_usuario\" but that's not in the recovered catalog routes. The vehicle routes are: auto_14_607, auto_12_229, auto_38_75, auto_60_28. These are vehicle routes, not pedestrian routes. Since this is a running (correr) task, not driving, I don't need a vehicle route. The ruta_id_sugerida for pedestrian... hmm. The draft put \"ped_puente_ejemplo_usuario\" but that's not confirmed in the catalog. Since running is a walking/running path, and the compiler admits \"rutas caminar/correr/nadar/escaleras\", but I don't have a confirmed pedestrian route ID in the catalog. I should probably leave ruta_id_sugerida as null since I can't confirm a pedestrian route, or... Actually the location itself defines the bridge. Let me not invent a route ID. The instruction says \"No inventes IDs\" (don't invent IDs). So I should NOT use \"ped_puente_ejemplo_usuario\" since it's not in the catalog. I'll set ruta_id_sugerida to null.\n\nWait, but the draft (BORRADOR LOCAL REVISABLE) used it. However, the instruction explicitly says \"No inventes IDs\" (don't invent IDs). The recovered catalog doesn't have that pedestrian route. So I should not include it. Let me set it to null.\n\nNow let me build the sequence:\n-accion = \"secuencia\" (sequence)\n- Steps:\n  1. animacion (vomit) - all 4 actors, clip \"STAND:40:food:EAT_Vomit_P\", reproduccion \"una_vez\" (one-time, since vomiting is a punctual gesture, not repeatable like dancing)\n  2. correr (run) - all 4 actors, reproduccion \"auto\"\n\nWait, the rule says: \"Bailar puede repetirse; gestos puntuales no.\" (Dancing can repeat; punctual gestures cannot). Vomiting is a punctual gesture, so reproduccion should be \"una_vez\" not \"bucle\".\n\nDuration: 30 seconds total. The user said \"durante 30 segundos\" (for 30 seconds). This likely refers to the running part or the total. Let me interpret it as the total duration = 30s. Actually \"luego corren en un puente durante 30 segundos\" - \"then run on a bridge for 30 seconds\". So the running is 30 seconds. But total duration must be 1..60s. Let me set duracion_sugerida to 30.\n\nFor the steps, I could set the running step duration. But the total should be 30s. Let me think about how to distribute. The vomit is a quick gesture, then running for the rest. I'll set the overall duracion_sugerida to 30. For individual steps, I could leave durations null and let the compiler handle it, or set the run step. Actually, let me set the run step duration to something reasonable. But the schema for steps has duracion 1..60. \n\nHmm, let me keep it simple. The user wants 30 seconds total. I'll set duracion_sugerida=30. For the steps, I'll leave the vomit as una_vez (short) and the run... I could set the run duration. But if I set run to 30 and vomit takes some time, total exceeds 30. Let me just leave step durations null and set overall to 30, OR set the run to a value that fits.\n\nActually, let me reconsider. The cleanest interpretation: total scene = 30s. Vomit happens first (brief), then run. I'll set duracion_sugerida=30 and leave individual step durations to auto/null, letting the compiler distribute. But to be more precise about \"run for 30 seconds\", maybe the run itself is 30s. \n\nGiven ambiguity, I'll set the overall duration to 30 and note in the summary. Let me set the run step with no explicit duration (null) and rely on the total. Actually, I think it's cleaner to just represent the intent: vomit once, then run. Total 30s.\n\nLet me reconsider the actor count. Only 3 paramedic models exist (274, 275, 276). User wants 4 paramedics. I can suggest 4 actor IDs by repeating one: [274, 275, 276, 274]. Or I note the limitation that only 3 unique paramedic models exist. The schema allows up to 4 IDs in actores_ids_sugeridos. cantidad_actores = 4. I'll suggest [274, 275, 276, 274] and note in limitaciones that only 3 unique paramedic models are available so one is repeated. Actually, repeating might not be ideal. Let me think - the request is 4 paramedics. I'll provide 4 actor slots. Since only 3 unique models, I'll repeat one and note it.\n\nActually, let me reconsider whether to repeat. The animar_actores and actores in steps use indices 1..4. So I need 4 actors. I'll use [274, 275, 276, 274] and note the limitation.\n\nRoles: [\"paramedico\", \"paramedico\", \"paramedico\", \"paramedico\"]\n\nLocation: \"puente_ejemplo_usuario\", lugar_tipo \"puente\", entorno \"ciudad\".\n\nLet me now think about the vomit clip. The recovered catalog doesn't show it, but the family \"vomitar\" is in the registry. The draft used \"STAND:40:food:EAT_Vomit_P\". Since I shouldn't declare impossible and the family exists, I'll use that clip. But wait - is it in the \"recovered catalog\"? No. The instruction says \"clips del catálogo\" (catalog clips). The recovered catalog is partial. The registry says 1263 exportable clips and lists \"vomitar\" as a family. So the vomit clip exists in the full catalog even if not in this partial recovery. I'll use \"STAND:40:food:EAT_Vomit_P\" as it's a plausible vomit clip and matches the draft.\n\nHmm, but \"No inventes IDs\" - is a clip ID an ID? The clip \"STAND:40:food:EAT_Vomit_P\" - I'm somewhat inventing this since it's not in the recovered catalog. But the draft provided it, and the family \"vomitar\" exists. This is a tension. Let me think.\n\nThe instruction: \"No sustituyas acciones ni inventes IDs.\" - Don't substitute actions or invent IDs. This mainly refers to actor IDs, location IDs, vehicle IDs, route IDs - the entity IDs. Animation clips are from a catalog of 1263. The family \"vomitar\" is confirmed. The specific clip format \"STAND:40:food:EAT_Vomit_P\" follows the pattern of other clips (STAND:X:lib:anim). \n\nGiven the draft already proposed this clip and the family exists, and I shouldn't declare impossible, I'll use it. This is the best available option. I'll note in limitaciones that the exact vomit clip should be verified against the full catalog.\n\nActually, let me reconsider. The safest approach given \"no inventes IDs\": For the animation, I need a clip from the \"vomitar\" family. The recovered catalog doesn't have one. But the draft suggests \"STAND:40:food:EAT_Vomit_P\". Since the family exists and this is the proposed clip, I'll use it but flag verification needed.\n\nLet me also reconsider the reproduccion for vomit. \"gestos puntuales no [pueden repetirse]\" - punctual gestures cannot repeat. So \"una_vez\". Good.\n\nFor running, reproduccion \"auto\" is fine (locomotion).\n\nNow, is this valid? Yes. 4 actors (within 1..4), 2 steps (within 1..8), vomit then run, on a bridge, 30s. All within limits.\n\nLet me set:\n- es_valido: true\n- resumen: describe the scene\n- entorno_sugerido: \"ciudad\"\n- actores_ids_sugeridos: [274, 275, 276, 274]\n- cantidad_actores: 4\n- ubicacion_id_sugerida: \"puente_ejemplo_usuario\"\n- lugar_tipo: \"puente\"\n- accion: \"secuencia\"\n- tipo_movimiento: \"correr\"\n- duracion_sugerida: 30\n- reproduccion: \"auto\" (overall) - or should the overall reproduccion reflect... the sequence has mixed. Let me use \"auto\".\n- animar_actores: [1,2,3,4]\n- roles: 4x paramedico\n- pasos: \n  1. animacion, actores [1,2,3,4], animacion \"STAND:40:food:EAT_Vomit_P\", reproduccion \"una_vez\"\n  2. correr, actores [1,2,3,4], reproduccion \"auto\"\n- vehiculo_en_movimiento: false\n- limitaciones: note about only 3 unique paramedic models, and vomit clip verification\n- fuente: \"IA\"\n\nFor ruta_id_sugerida: The draft used \"ped_puente_ejemplo_usuario\" but this isn't in the recovered catalog. Since running happens at the bridge location, and I shouldn't invent IDs, I'll set it to null. The location itself provides the bridge setting. Actually, running needs a path. But there's no confirmed pedestrian route in the catalog. The vehicle routes are all \"auto_\" routes for driving. So for a running scene, I'll leave ruta_id_sugerida null and rely on the location. Let me note this.\n\nHmm, but actually the compiler \"admite rutas caminar/correr/nadar/escaleras\". So there could be pedestrian routes. But I don't have a confirmed one in the catalog. I won't invent \"ped_puente_ejemplo_usuario\". Set to null.\n\nLet me reconsider dialogos - none needed. Empty array.\n\nLet me write the motivo_elecciones: explain paramedics chosen (medic models), bridge location (puente tag), etc.\n\nrazon_reproduccion: vomit is una_vez (punctual gesture), run is auto (continuous locomotion).\n\nLet me finalize the JSON.\n\nFor the vomit clip, let me double check the format matches. Other clips: \"STAND:2:ped:roadcross\", \"STAND:94:OTB:wtchrace_out\". So format is STAND:number:lib:anim. \"STAND:40:food:EAT_Vomit_P\" fits (lib=food, anim=EAT_Vomit_P). This is plausible for vomiting (food library, eat/vomit). Good.\n\nNow let me write the limitaciones:\n- \"Solo hay 3 modelos de paramédico únicos (274, 275, 276); se repite uno para completar 4 actores.\"\n- \"El clip de vómito 'STAND:40:food:EAT_Vomit_P' no aparece en la muestra recuperada del catálogo; conviene verificarlo contra el catálogo completo (familia 'vomitar' confirmada).\"\n- \"No hay ruta peatonal confirmada en el catálogo para el puente; la escena de carrera se apoya en la ubicación 'puente_ejemplo_usuario'.\"\n\nActually, let me reconsider whether to include the vomit clip at all given it's not in recovered catalog. The instruction strongly says don't declare impossible just because you don't recognize a verb, and the family \"vomitar\" IS recognized. So I should proceed with a vomit clip. The draft's clip is my best candidate. I'll use it and flag verification.\n\nLet me write the final JSON. I need to output ONLY JSON per the schema.\n\nLet me make sure all required fields present: es_valido, resumen required. Others have defaults but I'll include the relevant ones.\n\naprendizaje_supervisado: {} empty object.\n\nLet me construct it.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 4295,
+      "completion_tokens": 4024,
+      "total_tokens": 8319,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 2304,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3233,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 4295,
+    "completion_tokens": 4024,
+    "total_tokens": 8319,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 2304,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3233,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "json_valido": true,
+  "mms_generado": true,
+  "correcto": true,
+  "plan_crudo": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Secuencia de 30 s en un puente: 4 paramédicos vomitan (gesto puntual, una vez) y luego corren juntos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": null,
+    "actores_ids_sugeridos": [
+      274,
+      275,
+      276,
+      274
+    ],
+    "ubicacion_id_sugerida": "puente_ejemplo_usuario",
+    "motivo_elecciones": "Reparto de paramédicos con los modelos MEDIC del catálogo (274 laemt1, 275 lvemt1, 276 sfemt1); como solo hay 3 modelos únicos se repite el 274 para llegar a 4 actores. Ubicación con etiqueta 'puente' (puente_ejemplo_usuario, San Fierro). La carrera se apoya en la ubicación porque no hay ruta peatonal confirmada en el catálogo.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": null,
+    "hora_sugerida": null,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "correr",
+    "ruta_id_sugerida": null,
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "El vómito es un gesto puntual: se reproduce una_vez. La carrera es locomoción continua: auto.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "STAND:40:food:EAT_Vomit_P",
+    "cantidad_actores": 4,
+    "animar_actores": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": "STAND:40:food:EAT_Vomit_P",
+        "reproduccion": "una_vez",
+        "duracion": null
+      },
+      {
+        "accion": "correr",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": null
+      }
+    ],
+    "roles": [
+      "paramedico",
+      "paramedico",
+      "paramedico",
+      "paramedico"
+    ],
+    "lugar_tipo": "puente",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [
+      "Solo existen 3 modelos de paramédico únicos (274, 275, 276); se repite el 274 para completar 4 actores.",
+      "El clip de vómito 'STAND:40:food:EAT_Vomit_P' no aparece en la muestra recuperada del catálogo; la familia 'vomitar' sí está confirmada, conviene verificar el ID exacto contra el catálogo completo.",
+      "No hay ruta peatonal (caminar/correr) confirmada en el catálogo para el puente; la carrera se apoya en la ubicación 'puente_ejemplo_usuario'."
+    ],
+    "aprendizaje_supervisado": {}
+  },
+  "plan_final": {
+    "es_valido": true,
+    "razon_rechazo": "",
+    "resumen": "Secuencia de 30 s en un puente: 4 paramédicos vomitan (gesto puntual, una vez) y luego corren juntos.",
+    "entorno_sugerido": "ciudad",
+    "actor_id_sugerido": 274,
+    "actores_ids_sugeridos": [
+      274,
+      275,
+      276,
+      274
+    ],
+    "ubicacion_id_sugerida": null,
+    "motivo_elecciones": "Reparto de paramédicos con los modelos MEDIC del catálogo (274 laemt1, 275 lvemt1, 276 sfemt1); como solo hay 3 modelos únicos se repite el 274 para llegar a 4 actores. Ubicación con etiqueta 'puente' (puente_ejemplo_usuario, San Fierro). La carrera se apoya en la ubicación porque no hay ruta peatonal confirmada en el catálogo.",
+    "duracion_sugerida": 30,
+    "clima_id_sugerido": 1,
+    "hora_sugerida": 12,
+    "fuente": "IA",
+    "accion": "secuencia",
+    "tipo_movimiento": "correr",
+    "ruta_id_sugerida": "ped_puente_ejemplo_usuario",
+    "ruta_vehiculo_id": null,
+    "velocidad_kmh_sugerida": null,
+    "reproduccion": "auto",
+    "razon_reproduccion": "El vómito es un gesto puntual: se reproduce una_vez. La carrera es locomoción continua: auto.",
+    "vehiculo_id_sugerido": null,
+    "objeto_id_sugerido": null,
+    "animacion_sugerida": "STAND:40:food:EAT_Vomit_P",
+    "cantidad_actores": 4,
+    "animar_actores": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "dialogos": [],
+    "pasos": [
+      {
+        "accion": "animacion",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": "STAND:40:food:EAT_Vomit_P",
+        "reproduccion": "una_vez",
+        "duracion": null
+      },
+      {
+        "accion": "correr",
+        "actores": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "objetivo_actor": null,
+        "animacion": null,
+        "reproduccion": "auto",
+        "duracion": null
+      }
+    ],
+    "roles": [
+      "paramedico",
+      "paramedico",
+      "paramedico",
+      "paramedico"
+    ],
+    "lugar_tipo": "puente",
+    "aviso_analisis": "",
+    "vehiculo_en_movimiento": false,
+    "limitaciones": [
+      "Solo existen 3 modelos de paramédico únicos (274, 275, 276); se repite el 274 para completar 4 actores.",
+      "El clip de vómito 'STAND:40:food:EAT_Vomit_P' no aparece en la muestra recuperada del catálogo; la familia 'vomitar' sí está confirmada, conviene verificar el ID exacto contra el catálogo completo.",
+      "No hay ruta peatonal (caminar/correr) confirmada en el catálogo para el puente; la carrera se apoya en la ubicación 'puente_ejemplo_usuario'."
+    ],
+    "aprendizaje_supervisado": {}
+  },
+  "sha256_mms": "4d0223c5e5f265d583d42dda692dee439a6b5b657eb9abe90117716c92ff8c13",
+  "segundos": 14.5,
+  "revalidaciones": [
+    {
+      "firma_anterior": "f3cb6b10031f25888328cf8d4195d843d97bc91268776069ec9667ae0247b554",
+      "correcto_anterior": true,
+      "fecha_utc": "2026-11-11T21:49:36.803529+00:00",
+      "sin_consulta_api": true
+    }
+  ]
+}
