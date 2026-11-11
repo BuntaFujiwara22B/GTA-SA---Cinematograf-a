@@ -1,0 +1,2382 @@
+{
+  "origen": "data/peds.ide del GTA instalado; uniformes y skins rurales contrastados con las capturas",
+  "nota": "Criminal es un rol narrativo y una categoría del juego, no una inferencia moral por apariencia.",
+  "actores": [
+    {
+      "model_id": 0,
+      "nombre": "null",
+      "tipo_juego": "PLAYER1",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/0.png"
+    },
+    {
+      "model_id": 7,
+      "nombre": "male01",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/7.png"
+    },
+    {
+      "model_id": 9,
+      "nombre": "BFORI",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/9.png"
+    },
+    {
+      "model_id": 10,
+      "nombre": "BFOST",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/10.png"
+    },
+    {
+      "model_id": 11,
+      "nombre": "VBFYCRP",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/11.png"
+    },
+    {
+      "model_id": 12,
+      "nombre": "BFYRI",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/12.png"
+    },
+    {
+      "model_id": 13,
+      "nombre": "BFYST",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/13.png"
+    },
+    {
+      "model_id": 14,
+      "nombre": "BMORI",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/14.png"
+    },
+    {
+      "model_id": 15,
+      "nombre": "BMOST",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/15.png"
+    },
+    {
+      "model_id": 16,
+      "nombre": "BMYAP",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/16.png"
+    },
+    {
+      "model_id": 17,
+      "nombre": "BMYBU",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/17.png"
+    },
+    {
+      "model_id": 18,
+      "nombre": "BMYBE",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/18.png"
+    },
+    {
+      "model_id": 19,
+      "nombre": "BMYDJ",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/19.png"
+    },
+    {
+      "model_id": 20,
+      "nombre": "BMYRI",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/20.png"
+    },
+    {
+      "model_id": 21,
+      "nombre": "BMYCR",
+      "tipo_juego": "CRIMINAL",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/21.png"
+    },
+    {
+      "model_id": 22,
+      "nombre": "BMYST",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/22.png"
+    },
+    {
+      "model_id": 23,
+      "nombre": "WMYBMX",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/23.png"
+    },
+    {
+      "model_id": 24,
+      "nombre": "WBDYG1",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/24.png"
+    },
+    {
+      "model_id": 25,
+      "nombre": "WBDYG2",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/25.png"
+    },
+    {
+      "model_id": 26,
+      "nombre": "WMYBP",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/26.png"
+    },
+    {
+      "model_id": 27,
+      "nombre": "WMYCON",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/27.png"
+    },
+    {
+      "model_id": 28,
+      "nombre": "BMYDRUG",
+      "tipo_juego": "CRIMINAL",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/28.png"
+    },
+    {
+      "model_id": 29,
+      "nombre": "WMYDRUG",
+      "tipo_juego": "CRIMINAL",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/29.png"
+    },
+    {
+      "model_id": 30,
+      "nombre": "HMYDRUG",
+      "tipo_juego": "CRIMINAL",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/30.png"
+    },
+    {
+      "model_id": 31,
+      "nombre": "DWFOLC",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/31.png"
+    },
+    {
+      "model_id": 32,
+      "nombre": "DWMOLC1",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/32.png"
+    },
+    {
+      "model_id": 33,
+      "nombre": "DWMOLC2",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/33.png"
+    },
+    {
+      "model_id": 34,
+      "nombre": "DWMYLC1",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/34.png"
+    },
+    {
+      "model_id": 35,
+      "nombre": "HMOGAR",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/35.png"
+    },
+    {
+      "model_id": 36,
+      "nombre": "WMYGOL1",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/36.png"
+    },
+    {
+      "model_id": 37,
+      "nombre": "WMYGOL2",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/37.png"
+    },
+    {
+      "model_id": 38,
+      "nombre": "HFORI",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/38.png"
+    },
+    {
+      "model_id": 39,
+      "nombre": "HFOST",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/39.png"
+    },
+    {
+      "model_id": 40,
+      "nombre": "HFYRI",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/40.png"
+    },
+    {
+      "model_id": 41,
+      "nombre": "HFYST",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/41.png"
+    },
+    {
+      "model_id": 43,
+      "nombre": "HMORI",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/43.png"
+    },
+    {
+      "model_id": 44,
+      "nombre": "HMOST",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/44.png"
+    },
+    {
+      "model_id": 45,
+      "nombre": "HMYBE",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/45.png"
+    },
+    {
+      "model_id": 46,
+      "nombre": "HMYRI",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/46.png"
+    },
+    {
+      "model_id": 47,
+      "nombre": "HMYCR",
+      "tipo_juego": "CRIMINAL",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/47.png"
+    },
+    {
+      "model_id": 48,
+      "nombre": "HMYST",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/48.png"
+    },
+    {
+      "model_id": 49,
+      "nombre": "OMOKUNG",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/49.png"
+    },
+    {
+      "model_id": 50,
+      "nombre": "WMYMECH",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/50.png"
+    },
+    {
+      "model_id": 51,
+      "nombre": "BMYMOUN",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/51.png"
+    },
+    {
+      "model_id": 52,
+      "nombre": "WMYMOUN",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/52.png"
+    },
+    {
+      "model_id": 53,
+      "nombre": "OFORI",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/53.png"
+    },
+    {
+      "model_id": 54,
+      "nombre": "OFOST",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/54.png"
+    },
+    {
+      "model_id": 55,
+      "nombre": "OFYRI",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/55.png"
+    },
+    {
+      "model_id": 56,
+      "nombre": "OFYST",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/56.png"
+    },
+    {
+      "model_id": 57,
+      "nombre": "OMORI",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/57.png"
+    },
+    {
+      "model_id": 58,
+      "nombre": "OMOST",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/58.png"
+    },
+    {
+      "model_id": 59,
+      "nombre": "OMYRI",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/59.png"
+    },
+    {
+      "model_id": 60,
+      "nombre": "OMYST",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/60.png"
+    },
+    {
+      "model_id": 61,
+      "nombre": "WMYPLT",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/61.png"
+    },
+    {
+      "model_id": 62,
+      "nombre": "WMOPJ",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/62.png"
+    },
+    {
+      "model_id": 63,
+      "nombre": "BFYPRO",
+      "tipo_juego": "PROSTITUTE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/63.png"
+    },
+    {
+      "model_id": 64,
+      "nombre": "HFYPRO",
+      "tipo_juego": "PROSTITUTE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/64.png"
+    },
+    {
+      "model_id": 66,
+      "nombre": "BMYPOL1",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/66.png"
+    },
+    {
+      "model_id": 67,
+      "nombre": "BMYPOL2",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/67.png"
+    },
+    {
+      "model_id": 68,
+      "nombre": "WMOPREA",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/68.png"
+    },
+    {
+      "model_id": 69,
+      "nombre": "SBFYST",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/69.png"
+    },
+    {
+      "model_id": 70,
+      "nombre": "WMOSCI",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/70.png"
+    },
+    {
+      "model_id": 71,
+      "nombre": "WMYSGRD",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "guardia"
+      ],
+      "foto": "actors/71.png"
+    },
+    {
+      "model_id": 72,
+      "nombre": "SWMYHP1",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/72.png"
+    },
+    {
+      "model_id": 73,
+      "nombre": "SWMYHP2",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/73.png"
+    },
+    {
+      "model_id": 75,
+      "nombre": "SWFOPRO",
+      "tipo_juego": "PROSTITUTE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/75.png"
+    },
+    {
+      "model_id": 76,
+      "nombre": "WFYSTEW",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/76.png"
+    },
+    {
+      "model_id": 77,
+      "nombre": "SWMOTR1",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/77.png"
+    },
+    {
+      "model_id": 78,
+      "nombre": "WMOTR1",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/78.png"
+    },
+    {
+      "model_id": 79,
+      "nombre": "BMOTR1",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/79.png"
+    },
+    {
+      "model_id": 80,
+      "nombre": "VBMYBOX",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/80.png"
+    },
+    {
+      "model_id": 81,
+      "nombre": "VWMYBOX",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/81.png"
+    },
+    {
+      "model_id": 82,
+      "nombre": "VHMYELV",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/82.png"
+    },
+    {
+      "model_id": 83,
+      "nombre": "VBMYELV",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/83.png"
+    },
+    {
+      "model_id": 84,
+      "nombre": "VIMYELV",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/84.png"
+    },
+    {
+      "model_id": 85,
+      "nombre": "VWFYPRO",
+      "tipo_juego": "PROSTITUTE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/85.png"
+    },
+    {
+      "model_id": 87,
+      "nombre": "VWFYST1",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/87.png"
+    },
+    {
+      "model_id": 88,
+      "nombre": "WFORI",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/88.png"
+    },
+    {
+      "model_id": 89,
+      "nombre": "WFOST",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/89.png"
+    },
+    {
+      "model_id": 90,
+      "nombre": "WFYJG",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/90.png"
+    },
+    {
+      "model_id": 91,
+      "nombre": "WFYRI",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/91.png"
+    },
+    {
+      "model_id": 92,
+      "nombre": "WFYRO",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/92.png"
+    },
+    {
+      "model_id": 93,
+      "nombre": "WFYST",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/93.png"
+    },
+    {
+      "model_id": 94,
+      "nombre": "WMORI",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/94.png"
+    },
+    {
+      "model_id": 95,
+      "nombre": "WMOST",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/95.png"
+    },
+    {
+      "model_id": 96,
+      "nombre": "WMYJG",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/96.png"
+    },
+    {
+      "model_id": 97,
+      "nombre": "WMYLG",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/97.png"
+    },
+    {
+      "model_id": 98,
+      "nombre": "WMYRI",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/98.png"
+    },
+    {
+      "model_id": 99,
+      "nombre": "WMYRO",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/99.png"
+    },
+    {
+      "model_id": 101,
+      "nombre": "WMYST",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/101.png"
+    },
+    {
+      "model_id": 102,
+      "nombre": "BALLAS1",
+      "tipo_juego": "GANG1",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/102.png"
+    },
+    {
+      "model_id": 103,
+      "nombre": "BALLAS2",
+      "tipo_juego": "GANG1",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/103.png"
+    },
+    {
+      "model_id": 104,
+      "nombre": "BALLAS3",
+      "tipo_juego": "GANG1",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/104.png"
+    },
+    {
+      "model_id": 105,
+      "nombre": "FAM1",
+      "tipo_juego": "GANG2",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/105.png"
+    },
+    {
+      "model_id": 107,
+      "nombre": "FAM3",
+      "tipo_juego": "GANG2",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/107.png"
+    },
+    {
+      "model_id": 108,
+      "nombre": "LSV1",
+      "tipo_juego": "GANG3",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/108.png"
+    },
+    {
+      "model_id": 109,
+      "nombre": "LSV2",
+      "tipo_juego": "GANG3",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/109.png"
+    },
+    {
+      "model_id": 110,
+      "nombre": "LSV3",
+      "tipo_juego": "GANG3",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/110.png"
+    },
+    {
+      "model_id": 111,
+      "nombre": "MAFFA",
+      "tipo_juego": "CRIMINAL",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/111.png"
+    },
+    {
+      "model_id": 112,
+      "nombre": "MAFFB",
+      "tipo_juego": "CRIMINAL",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/112.png"
+    },
+    {
+      "model_id": 113,
+      "nombre": "MAFBOSS",
+      "tipo_juego": "CRIMINAL",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/113.png"
+    },
+    {
+      "model_id": 114,
+      "nombre": "VLA1",
+      "tipo_juego": "GANG8",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/114.png"
+    },
+    {
+      "model_id": 115,
+      "nombre": "VLA2",
+      "tipo_juego": "GANG8",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/115.png"
+    },
+    {
+      "model_id": 116,
+      "nombre": "VLA3",
+      "tipo_juego": "GANG8",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/116.png"
+    },
+    {
+      "model_id": 117,
+      "nombre": "TRIADA",
+      "tipo_juego": "GANG7",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/117.png"
+    },
+    {
+      "model_id": 118,
+      "nombre": "TRIADB",
+      "tipo_juego": "GANG7",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/118.png"
+    },
+    {
+      "model_id": 120,
+      "nombre": "TRIBOSS",
+      "tipo_juego": "GANG7",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/120.png"
+    },
+    {
+      "model_id": 121,
+      "nombre": "DNB1",
+      "tipo_juego": "GANG5",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/121.png"
+    },
+    {
+      "model_id": 122,
+      "nombre": "DNB2",
+      "tipo_juego": "GANG5",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/122.png"
+    },
+    {
+      "model_id": 123,
+      "nombre": "DNB3",
+      "tipo_juego": "GANG5",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/123.png"
+    },
+    {
+      "model_id": 124,
+      "nombre": "VMAFF1",
+      "tipo_juego": "GANG6",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/124.png"
+    },
+    {
+      "model_id": 125,
+      "nombre": "VMAFF2",
+      "tipo_juego": "GANG6",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/125.png"
+    },
+    {
+      "model_id": 126,
+      "nombre": "VMAFF3",
+      "tipo_juego": "GANG6",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/126.png"
+    },
+    {
+      "model_id": 127,
+      "nombre": "VMAFF4",
+      "tipo_juego": "GANG6",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/127.png"
+    },
+    {
+      "model_id": 128,
+      "nombre": "DNMYLC",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/128.png"
+    },
+    {
+      "model_id": 129,
+      "nombre": "DNFOLC1",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/129.png"
+    },
+    {
+      "model_id": 130,
+      "nombre": "DNFOLC2",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/130.png"
+    },
+    {
+      "model_id": 131,
+      "nombre": "DNFYLC",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/131.png"
+    },
+    {
+      "model_id": 132,
+      "nombre": "DNMOLC1",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/132.png"
+    },
+    {
+      "model_id": 133,
+      "nombre": "DNMOLC2",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/133.png"
+    },
+    {
+      "model_id": 134,
+      "nombre": "SBMOTR2",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/134.png"
+    },
+    {
+      "model_id": 135,
+      "nombre": "SWMOTR2",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/135.png"
+    },
+    {
+      "model_id": 136,
+      "nombre": "SBMYTR3",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/136.png"
+    },
+    {
+      "model_id": 137,
+      "nombre": "SWMOTR3",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/137.png"
+    },
+    {
+      "model_id": 138,
+      "nombre": "WFYBE",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/138.png"
+    },
+    {
+      "model_id": 139,
+      "nombre": "BFYBE",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/139.png"
+    },
+    {
+      "model_id": 140,
+      "nombre": "HFYBE",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/140.png"
+    },
+    {
+      "model_id": 141,
+      "nombre": "SOFYBU",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/141.png"
+    },
+    {
+      "model_id": 142,
+      "nombre": "SBMYST",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/142.png"
+    },
+    {
+      "model_id": 143,
+      "nombre": "SBMYCR",
+      "tipo_juego": "CRIMINAL",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/143.png"
+    },
+    {
+      "model_id": 144,
+      "nombre": "BMYCG",
+      "tipo_juego": "CRIMINAL",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/144.png"
+    },
+    {
+      "model_id": 145,
+      "nombre": "WFYCRK",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/145.png"
+    },
+    {
+      "model_id": 146,
+      "nombre": "HMYCM",
+      "tipo_juego": "CRIMINAL",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/146.png"
+    },
+    {
+      "model_id": 147,
+      "nombre": "WMYBU",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/147.png"
+    },
+    {
+      "model_id": 148,
+      "nombre": "BFYBU",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/148.png"
+    },
+    {
+      "model_id": 150,
+      "nombre": "WFYBU",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/150.png"
+    },
+    {
+      "model_id": 151,
+      "nombre": "DWFYLC1",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/151.png"
+    },
+    {
+      "model_id": 152,
+      "nombre": "WFYPRO",
+      "tipo_juego": "PROSTITUTE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/152.png"
+    },
+    {
+      "model_id": 153,
+      "nombre": "WMYCONB",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/153.png"
+    },
+    {
+      "model_id": 154,
+      "nombre": "WMYBE",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/154.png"
+    },
+    {
+      "model_id": 155,
+      "nombre": "WMYPIZZ",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/155.png"
+    },
+    {
+      "model_id": 156,
+      "nombre": "BMOBAR",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/156.png"
+    },
+    {
+      "model_id": 157,
+      "nombre": "CWFYHB",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/157.png"
+    },
+    {
+      "model_id": 158,
+      "nombre": "CWMOFR",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "granjero"
+      ],
+      "foto": "actors/158.png"
+    },
+    {
+      "model_id": 159,
+      "nombre": "CWMOHB1",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/159.png"
+    },
+    {
+      "model_id": 160,
+      "nombre": "CWMOHB2",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/160.png"
+    },
+    {
+      "model_id": 161,
+      "nombre": "CWMYFR",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "granjero"
+      ],
+      "foto": "actors/161.png"
+    },
+    {
+      "model_id": 162,
+      "nombre": "CWMYHB1",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/162.png"
+    },
+    {
+      "model_id": 163,
+      "nombre": "BMYBOUN",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "guardia"
+      ],
+      "foto": "actors/163.png"
+    },
+    {
+      "model_id": 164,
+      "nombre": "WMYBOUN",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "guardia"
+      ],
+      "foto": "actors/164.png"
+    },
+    {
+      "model_id": 165,
+      "nombre": "WMOMIB",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/165.png"
+    },
+    {
+      "model_id": 166,
+      "nombre": "BMYMIB",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/166.png"
+    },
+    {
+      "model_id": 167,
+      "nombre": "WMYBELL",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/167.png"
+    },
+    {
+      "model_id": 168,
+      "nombre": "BMOCHIL",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/168.png"
+    },
+    {
+      "model_id": 169,
+      "nombre": "SOFYRI",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/169.png"
+    },
+    {
+      "model_id": 170,
+      "nombre": "SOMYST",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/170.png"
+    },
+    {
+      "model_id": 171,
+      "nombre": "VWMYBJD",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/171.png"
+    },
+    {
+      "model_id": 172,
+      "nombre": "VWFYCRP",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/172.png"
+    },
+    {
+      "model_id": 173,
+      "nombre": "SFR1",
+      "tipo_juego": "GANG4",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/173.png"
+    },
+    {
+      "model_id": 174,
+      "nombre": "SFR2",
+      "tipo_juego": "GANG4",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/174.png"
+    },
+    {
+      "model_id": 175,
+      "nombre": "SFR3",
+      "tipo_juego": "GANG4",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/175.png"
+    },
+    {
+      "model_id": 176,
+      "nombre": "BMYBAR",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/176.png"
+    },
+    {
+      "model_id": 177,
+      "nombre": "WMYBAR",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/177.png"
+    },
+    {
+      "model_id": 178,
+      "nombre": "WFYSEX",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/178.png"
+    },
+    {
+      "model_id": 179,
+      "nombre": "WMYAMMO",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/179.png"
+    },
+    {
+      "model_id": 180,
+      "nombre": "BMYTATT",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/180.png"
+    },
+    {
+      "model_id": 181,
+      "nombre": "VWMYCR",
+      "tipo_juego": "CRIMINAL",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/181.png"
+    },
+    {
+      "model_id": 182,
+      "nombre": "VBMOCD",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/182.png"
+    },
+    {
+      "model_id": 183,
+      "nombre": "VBMYCR",
+      "tipo_juego": "CRIMINAL",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/183.png"
+    },
+    {
+      "model_id": 184,
+      "nombre": "VHMYCR",
+      "tipo_juego": "CRIMINAL",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/184.png"
+    },
+    {
+      "model_id": 185,
+      "nombre": "SBMYRI",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/185.png"
+    },
+    {
+      "model_id": 186,
+      "nombre": "SOMYRI",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/186.png"
+    },
+    {
+      "model_id": 187,
+      "nombre": "SOMYBU",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/187.png"
+    },
+    {
+      "model_id": 188,
+      "nombre": "SWMYST",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/188.png"
+    },
+    {
+      "model_id": 189,
+      "nombre": "WMYVA",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/189.png"
+    },
+    {
+      "model_id": 190,
+      "nombre": "COPGRL3",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/190.png"
+    },
+    {
+      "model_id": 191,
+      "nombre": "GUNGRL3",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/191.png"
+    },
+    {
+      "model_id": 192,
+      "nombre": "MECGRL3",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/192.png"
+    },
+    {
+      "model_id": 193,
+      "nombre": "NURGRL3",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/193.png"
+    },
+    {
+      "model_id": 194,
+      "nombre": "CROGRL3",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/194.png"
+    },
+    {
+      "model_id": 195,
+      "nombre": "GANGRL3",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/195.png"
+    },
+    {
+      "model_id": 196,
+      "nombre": "CWFOFR",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/196.png"
+    },
+    {
+      "model_id": 197,
+      "nombre": "CWFOHB",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/197.png"
+    },
+    {
+      "model_id": 198,
+      "nombre": "CWFYFR1",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/198.png"
+    },
+    {
+      "model_id": 199,
+      "nombre": "CWFYFR2",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/199.png"
+    },
+    {
+      "model_id": 200,
+      "nombre": "CWMYHB2",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/200.png"
+    },
+    {
+      "model_id": 201,
+      "nombre": "DWFYLC2",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/201.png"
+    },
+    {
+      "model_id": 202,
+      "nombre": "DWMYLC2",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/202.png"
+    },
+    {
+      "model_id": 203,
+      "nombre": "OMYKARA",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/203.png"
+    },
+    {
+      "model_id": 204,
+      "nombre": "WMYKARA",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/204.png"
+    },
+    {
+      "model_id": 205,
+      "nombre": "WFYBURG",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/205.png"
+    },
+    {
+      "model_id": 206,
+      "nombre": "VWMYCD",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/206.png"
+    },
+    {
+      "model_id": 207,
+      "nombre": "VHFYPRO",
+      "tipo_juego": "PROSTITUTE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/207.png"
+    },
+    {
+      "model_id": 209,
+      "nombre": "OMONOOD",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/209.png"
+    },
+    {
+      "model_id": 210,
+      "nombre": "OMOBOAT",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/210.png"
+    },
+    {
+      "model_id": 211,
+      "nombre": "WFYCLOT",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/211.png"
+    },
+    {
+      "model_id": 212,
+      "nombre": "VWMOTR1",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/212.png"
+    },
+    {
+      "model_id": 213,
+      "nombre": "VWMOTR2",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/213.png"
+    },
+    {
+      "model_id": 214,
+      "nombre": "VWFYWAI",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/214.png"
+    },
+    {
+      "model_id": 215,
+      "nombre": "SBFORI",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/215.png"
+    },
+    {
+      "model_id": 216,
+      "nombre": "SWFYRI",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/216.png"
+    },
+    {
+      "model_id": 217,
+      "nombre": "WMYCLOT",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/217.png"
+    },
+    {
+      "model_id": 218,
+      "nombre": "SBFOST",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/218.png"
+    },
+    {
+      "model_id": 219,
+      "nombre": "SBFYRI",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/219.png"
+    },
+    {
+      "model_id": 220,
+      "nombre": "SBMOCD",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/220.png"
+    },
+    {
+      "model_id": 221,
+      "nombre": "SBMORI",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/221.png"
+    },
+    {
+      "model_id": 222,
+      "nombre": "SBMOST",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/222.png"
+    },
+    {
+      "model_id": 223,
+      "nombre": "SHMYCR",
+      "tipo_juego": "CRIMINAL",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/223.png"
+    },
+    {
+      "model_id": 224,
+      "nombre": "SOFORI",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/224.png"
+    },
+    {
+      "model_id": 225,
+      "nombre": "SOFOST",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/225.png"
+    },
+    {
+      "model_id": 226,
+      "nombre": "SOFYST",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/226.png"
+    },
+    {
+      "model_id": 227,
+      "nombre": "SOMOBU",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/227.png"
+    },
+    {
+      "model_id": 228,
+      "nombre": "SOMORI",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/228.png"
+    },
+    {
+      "model_id": 229,
+      "nombre": "SOMOST",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/229.png"
+    },
+    {
+      "model_id": 230,
+      "nombre": "SWMOTR5",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/230.png"
+    },
+    {
+      "model_id": 231,
+      "nombre": "SWFORI",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/231.png"
+    },
+    {
+      "model_id": 232,
+      "nombre": "SWFOST",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/232.png"
+    },
+    {
+      "model_id": 233,
+      "nombre": "SWFYST",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/233.png"
+    },
+    {
+      "model_id": 234,
+      "nombre": "SWMOCD",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/234.png"
+    },
+    {
+      "model_id": 235,
+      "nombre": "SWMORI",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/235.png"
+    },
+    {
+      "model_id": 236,
+      "nombre": "SWMOST",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/236.png"
+    },
+    {
+      "model_id": 237,
+      "nombre": "SHFYPRO",
+      "tipo_juego": "PROSTITUTE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/237.png"
+    },
+    {
+      "model_id": 238,
+      "nombre": "SBFYPRO",
+      "tipo_juego": "PROSTITUTE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/238.png"
+    },
+    {
+      "model_id": 239,
+      "nombre": "SWMOTR4",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/239.png"
+    },
+    {
+      "model_id": 240,
+      "nombre": "SWMYRI",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/240.png"
+    },
+    {
+      "model_id": 241,
+      "nombre": "SMYST",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/241.png"
+    },
+    {
+      "model_id": 242,
+      "nombre": "SMYST2",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/242.png"
+    },
+    {
+      "model_id": 243,
+      "nombre": "SFYPRO",
+      "tipo_juego": "PROSTITUTE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/243.png"
+    },
+    {
+      "model_id": 244,
+      "nombre": "VBFYST2",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/244.png"
+    },
+    {
+      "model_id": 245,
+      "nombre": "VBFYPRO",
+      "tipo_juego": "PROSTITUTE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/245.png"
+    },
+    {
+      "model_id": 246,
+      "nombre": "VHFYST3",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/246.png"
+    },
+    {
+      "model_id": 247,
+      "nombre": "BIKERA",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/247.png"
+    },
+    {
+      "model_id": 248,
+      "nombre": "BIKERB",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/248.png"
+    },
+    {
+      "model_id": 249,
+      "nombre": "BMYPIMP",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/249.png"
+    },
+    {
+      "model_id": 250,
+      "nombre": "SWMYCR",
+      "tipo_juego": "CRIMINAL",
+      "roles": [
+        "criminal"
+      ],
+      "foto": "actors/250.png"
+    },
+    {
+      "model_id": 251,
+      "nombre": "WFYLG",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/251.png"
+    },
+    {
+      "model_id": 252,
+      "nombre": "WMYVA2",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/252.png"
+    },
+    {
+      "model_id": 253,
+      "nombre": "BMOSEC",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/253.png"
+    },
+    {
+      "model_id": 254,
+      "nombre": "BIKDRUG",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/254.png"
+    },
+    {
+      "model_id": 255,
+      "nombre": "WMYCH",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/255.png"
+    },
+    {
+      "model_id": 256,
+      "nombre": "SBFYSTR",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/256.png"
+    },
+    {
+      "model_id": 257,
+      "nombre": "SWFYSTR",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/257.png"
+    },
+    {
+      "model_id": 258,
+      "nombre": "HECK1",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/258.png"
+    },
+    {
+      "model_id": 259,
+      "nombre": "HECK2",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/259.png"
+    },
+    {
+      "model_id": 260,
+      "nombre": "BMYCON",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/260.png"
+    },
+    {
+      "model_id": 261,
+      "nombre": "WMYCD1",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/261.png"
+    },
+    {
+      "model_id": 262,
+      "nombre": "BMOCD",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/262.png"
+    },
+    {
+      "model_id": 263,
+      "nombre": "VWFYWA2",
+      "tipo_juego": "CIVFEMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/263.png"
+    },
+    {
+      "model_id": 264,
+      "nombre": "WMOICE",
+      "tipo_juego": "CIVMALE",
+      "roles": [
+        "civil"
+      ],
+      "foto": "actors/264.png"
+    },
+    {
+      "model_id": 274,
+      "nombre": "laemt1",
+      "tipo_juego": "MEDIC",
+      "roles": [
+        "paramedico"
+      ],
+      "foto": "actors/274.png"
+    },
+    {
+      "model_id": 275,
+      "nombre": "lvemt1",
+      "tipo_juego": "MEDIC",
+      "roles": [
+        "paramedico"
+      ],
+      "foto": "actors/275.png"
+    },
+    {
+      "model_id": 276,
+      "nombre": "sfemt1",
+      "tipo_juego": "MEDIC",
+      "roles": [
+        "paramedico"
+      ],
+      "foto": "actors/276.png"
+    },
+    {
+      "model_id": 277,
+      "nombre": "lafd1",
+      "tipo_juego": "FIREMAN",
+      "roles": [
+        "bombero"
+      ],
+      "foto": "actors/277.png"
+    },
+    {
+      "model_id": 278,
+      "nombre": "lvfd1",
+      "tipo_juego": "FIREMAN",
+      "roles": [
+        "bombero"
+      ],
+      "foto": "actors/278.png"
+    },
+    {
+      "model_id": 279,
+      "nombre": "sffd1",
+      "tipo_juego": "FIREMAN",
+      "roles": [
+        "bombero"
+      ],
+      "foto": "actors/279.png"
+    },
+    {
+      "model_id": 280,
+      "nombre": "lapd1",
+      "tipo_juego": "COP",
+      "roles": [
+        "policia"
+      ],
+      "foto": "actors/280.png"
+    },
+    {
+      "model_id": 281,
+      "nombre": "sfpd1",
+      "tipo_juego": "COP",
+      "roles": [
+        "policia"
+      ],
+      "foto": "actors/281.png"
+    },
+    {
+      "model_id": 282,
+      "nombre": "lvpd1",
+      "tipo_juego": "COP",
+      "roles": [
+        "policia"
+      ],
+      "foto": "actors/282.png"
+    },
+    {
+      "model_id": 283,
+      "nombre": "csher",
+      "tipo_juego": "COP",
+      "roles": [
+        "policia"
+      ],
+      "foto": "actors/283.png"
+    },
+    {
+      "model_id": 284,
+      "nombre": "lapdm1",
+      "tipo_juego": "COP",
+      "roles": [
+        "policia"
+      ],
+      "foto": "actors/284.png"
+    },
+    {
+      "model_id": 285,
+      "nombre": "swat",
+      "tipo_juego": "COP",
+      "roles": [
+        "policia"
+      ],
+      "foto": "actors/285.png"
+    },
+    {
+      "model_id": 286,
+      "nombre": "fbi",
+      "tipo_juego": "COP",
+      "roles": [
+        "policia"
+      ],
+      "foto": "actors/286.png"
+    },
+    {
+      "model_id": 287,
+      "nombre": "army",
+      "tipo_juego": "COP",
+      "roles": [
+        "militar"
+      ],
+      "foto": "actors/287.png"
+    },
+    {
+      "model_id": 288,
+      "nombre": "dsher",
+      "tipo_juego": "COP",
+      "roles": [
+        "policia"
+      ],
+      "foto": "actors/288.png"
+    }
+  ]
+}

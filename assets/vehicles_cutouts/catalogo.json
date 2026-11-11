@@ -1,0 +1,470 @@
+{
+  "version": 1,
+  "resultados": {
+    "vehicles/420_taxi.png": {
+      "archivo": "vehicles_cutouts/420_taxi.png",
+      "usable": true,
+      "area": 0.0534,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/596_copcarla.png": {
+      "archivo": "vehicles_cutouts/596_copcarla.png",
+      "usable": true,
+      "area": 0.0544,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/416_ambulan.png": {
+      "archivo": "vehicles_cutouts/416_ambulan.png",
+      "usable": true,
+      "area": 0.0483,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/407_firetruk.png": {
+      "archivo": "vehicles_cutouts/407_firetruk.png",
+      "usable": true,
+      "area": 0.0458,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/408_trash.png": {
+      "archivo": "vehicles_cutouts/408_trash.png",
+      "usable": true,
+      "area": 0.0577,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/431_bus.png": {
+      "archivo": "vehicles_cutouts/431_bus.png",
+      "usable": true,
+      "area": 0.0733,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/531_tractor.png": {
+      "archivo": "vehicles_cutouts/531_tractor.png",
+      "usable": true,
+      "area": 0.0285,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/532_combine.png": {
+      "archivo": "vehicles_cutouts/532_combine.png",
+      "usable": false,
+      "area": 0.296,
+      "revision_visual": true,
+      "modelo": "u2netp",
+      "motivo": "El recorte elimina parte del veh?culo. Usar la foto original."
+    },
+    "vehicles/495_sandking.png": {
+      "archivo": "vehicles_cutouts/495_sandking.png",
+      "usable": true,
+      "area": 0.0637,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/411_infernus.png": {
+      "archivo": "vehicles_cutouts/411_infernus.png",
+      "usable": true,
+      "area": 0.0529,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/470_patriot.png": {
+      "archivo": "vehicles_cutouts/470_patriot.png",
+      "usable": true,
+      "area": 0.0472,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/468_sanchez.png": {
+      "archivo": "vehicles_cutouts/468_sanchez.png",
+      "usable": true,
+      "area": 0.0147,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/481_bmx.png": {
+      "archivo": "vehicles_cutouts/481_bmx.png",
+      "usable": true,
+      "area": 0.0079,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/405_sentinel.png": {
+      "archivo": "vehicles_cutouts/405_sentinel.png",
+      "usable": true,
+      "area": 0.0469,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/426_premier.png": {
+      "archivo": "vehicles_cutouts/426_premier.png",
+      "usable": true,
+      "area": 0.0533,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/421_washing.png": {
+      "archivo": "vehicles_cutouts/421_washing.png",
+      "usable": true,
+      "area": 0.0487,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/445_admiral.png": {
+      "archivo": "vehicles_cutouts/445_admiral.png",
+      "usable": true,
+      "area": 0.0508,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/492_greenwoo.png": {
+      "archivo": "vehicles_cutouts/492_greenwoo.png",
+      "usable": true,
+      "area": 0.0521,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/419_esperant.png": {
+      "archivo": "vehicles_cutouts/419_esperant.png",
+      "usable": true,
+      "area": 0.0516,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/529_willard.png": {
+      "archivo": "vehicles_cutouts/529_willard.png",
+      "usable": true,
+      "area": 0.0555,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/526_fortune.png": {
+      "archivo": "vehicles_cutouts/526_fortune.png",
+      "usable": true,
+      "area": 0.0433,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/409_stretch.png": {
+      "archivo": "vehicles_cutouts/409_stretch.png",
+      "usable": true,
+      "area": 0.0279,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/400_landstal.png": {
+      "archivo": "vehicles_cutouts/400_landstal.png",
+      "usable": true,
+      "area": 0.0372,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/489_rancher.png": {
+      "archivo": "vehicles_cutouts/489_rancher.png",
+      "usable": true,
+      "area": 0.0559,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/579_huntley.png": {
+      "archivo": "vehicles_cutouts/579_huntley.png",
+      "usable": true,
+      "area": 0.0498,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/429_banshee.png": {
+      "archivo": "vehicles_cutouts/429_banshee.png",
+      "usable": true,
+      "area": 0.0405,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/415_cheetah.png": {
+      "archivo": "vehicles_cutouts/415_cheetah.png",
+      "usable": true,
+      "area": 0.0439,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/402_buffalo.png": {
+      "archivo": "vehicles_cutouts/402_buffalo.png",
+      "usable": true,
+      "area": 0.0529,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/560_sultan.png": {
+      "archivo": "vehicles_cutouts/560_sultan.png",
+      "usable": true,
+      "area": 0.0484,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/562_elegy.png": {
+      "archivo": "vehicles_cutouts/562_elegy.png",
+      "usable": true,
+      "area": 0.0462,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/559_jester.png": {
+      "archivo": "vehicles_cutouts/559_jester.png",
+      "usable": true,
+      "area": 0.049,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/506_supergt.png": {
+      "archivo": "vehicles_cutouts/506_supergt.png",
+      "usable": true,
+      "area": 0.0401,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/412_voodoo.png": {
+      "archivo": "vehicles_cutouts/412_voodoo.png",
+      "usable": true,
+      "area": 0.0535,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/576_tornado.png": {
+      "archivo": "vehicles_cutouts/576_tornado.png",
+      "usable": true,
+      "area": 0.0524,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/536_blade.png": {
+      "archivo": "vehicles_cutouts/536_blade.png",
+      "usable": true,
+      "area": 0.0468,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/534_remingtn.png": {
+      "archivo": "vehicles_cutouts/534_remingtn.png",
+      "usable": true,
+      "area": 0.0621,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/535_slamvan.png": {
+      "archivo": "vehicles_cutouts/535_slamvan.png",
+      "usable": true,
+      "area": 0.0558,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/413_pony.png": {
+      "archivo": "vehicles_cutouts/413_pony.png",
+      "usable": true,
+      "area": 0.0465,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/482_burrito.png": {
+      "archivo": "vehicles_cutouts/482_burrito.png",
+      "usable": true,
+      "area": 0.0481,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/414_mule.png": {
+      "archivo": "vehicles_cutouts/414_mule.png",
+      "usable": true,
+      "area": 0.0419,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/403_linerun.png": {
+      "archivo": "vehicles_cutouts/403_linerun.png",
+      "usable": true,
+      "area": 0.032,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/455_flatbed.png": {
+      "archivo": "vehicles_cutouts/455_flatbed.png",
+      "usable": true,
+      "area": 0.0579,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/525_towtruck.png": {
+      "archivo": "vehicles_cutouts/525_towtruck.png",
+      "usable": true,
+      "area": 0.0319,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/582_newsvan.png": {
+      "archivo": "vehicles_cutouts/582_newsvan.png",
+      "usable": true,
+      "area": 0.0452,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/423_mrwhoop.png": {
+      "archivo": "vehicles_cutouts/423_mrwhoop.png",
+      "usable": true,
+      "area": 0.0649,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/597_copcarsf.png": {
+      "archivo": "vehicles_cutouts/597_copcarsf.png",
+      "usable": true,
+      "area": 0.0545,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/598_copcarvg.png": {
+      "archivo": "vehicles_cutouts/598_copcarvg.png",
+      "usable": true,
+      "area": 0.0532,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/599_copcarru.png": {
+      "archivo": "vehicles_cutouts/599_copcarru.png",
+      "usable": true,
+      "area": 0.0798,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/601_swatvan.png": {
+      "archivo": "vehicles_cutouts/601_swatvan.png",
+      "usable": false,
+      "area": 0.0382,
+      "revision_visual": true,
+      "modelo": "u2netp",
+      "motivo": "El recorte elimina parte del veh?culo. Usar la foto original."
+    },
+    "vehicles/490_fbiranch.png": {
+      "archivo": "vehicles_cutouts/490_fbiranch.png",
+      "usable": true,
+      "area": 0.0653,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/427_enforcer.png": {
+      "archivo": "vehicles_cutouts/427_enforcer.png",
+      "usable": true,
+      "area": 0.0431,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/544_firela.png": {
+      "archivo": "vehicles_cutouts/544_firela.png",
+      "usable": true,
+      "area": 0.038,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/432_rhino.png": {
+      "archivo": "vehicles_cutouts/432_rhino.png",
+      "usable": false,
+      "area": 0.0172,
+      "revision_visual": true,
+      "modelo": "u2netp",
+      "motivo": "El recorte elimina parte del veh?culo. Usar la foto original."
+    },
+    "vehicles/433_barracks.png": {
+      "archivo": "vehicles_cutouts/433_barracks.png",
+      "usable": true,
+      "area": 0.0566,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/461_pcj600.png": {
+      "archivo": "vehicles_cutouts/461_pcj600.png",
+      "usable": true,
+      "area": 0.0183,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/462_faggio.png": {
+      "archivo": "vehicles_cutouts/462_faggio.png",
+      "usable": true,
+      "area": 0.0157,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/463_freeway.png": {
+      "archivo": "vehicles_cutouts/463_freeway.png",
+      "usable": true,
+      "area": 0.0176,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/586_wayfarer.png": {
+      "archivo": "vehicles_cutouts/586_wayfarer.png",
+      "usable": true,
+      "area": 0.0288,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/522_nrg500.png": {
+      "archivo": "vehicles_cutouts/522_nrg500.png",
+      "usable": true,
+      "area": 0.0178,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/471_quad.png": {
+      "archivo": "vehicles_cutouts/471_quad.png",
+      "usable": true,
+      "area": 0.0254,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/523_copbike.png": {
+      "archivo": "vehicles_cutouts/523_copbike.png",
+      "usable": true,
+      "area": 0.0225,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/510_mtbike.png": {
+      "archivo": "vehicles_cutouts/510_mtbike.png",
+      "usable": true,
+      "area": 0.0111,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/457_caddy.png": {
+      "archivo": "vehicles_cutouts/457_caddy.png",
+      "usable": true,
+      "area": 0.034,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/444_monster.png": {
+      "archivo": "vehicles_cutouts/444_monster.png",
+      "usable": true,
+      "area": 0.1018,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/571_kart.png": {
+      "archivo": "vehicles_cutouts/571_kart.png",
+      "usable": true,
+      "area": 0.0203,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    },
+    "vehicles/572_mower.png": {
+      "archivo": "vehicles_cutouts/572_mower.png",
+      "usable": true,
+      "area": 0.0283,
+      "revision_visual": true,
+      "modelo": "u2netp"
+    }
+  }
+}

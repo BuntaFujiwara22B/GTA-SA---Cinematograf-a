@@ -1,0 +1,68 @@
+.env
+.env.*
+!.env.example
+config.json
+__pycache__/
+*.pyc
+.venv*/
+build/
+dist/
+cache/
+.maintenance/
+salida_mms/
+ruta_mvp/
+datos_entrenamiento/correcciones.sqlite3*
+
+# Credenciales y datos privados locales
+*.pem
+*.key
+*.p12
+credentials.json
+secrets.json
+secrets.yaml
+secrets.yml
+*.log
+*.bak
+
+# Entornos, temporales y exportaciones locales
+.cache/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+/Carrec/
+/Sounds/
+/caminata_*.mms
+/caminata_*.json
+/elegido.mms
+/mission_pack.ini*
+/modelo_clasificador_gta.pkl
+
+# Material de presentación y figuras generadas
+/presentacion_ia/
+/PRESENTACION_5_MINUTOS.md
+/evaluaciones/graficas/
+
+# Capturas y respaldos de preparación; el paquete usa los catálogos JSON
+/assets/actors_originales/
+/assets/hora_24/
+/assets/Vehículos/
+/assets/animations/*
+!/assets/animations/catalogo_completo/
+/assets/animations/catalogo_completo/*
+!/assets/animations/catalogo_completo/catalogo.json
+!/assets/animations/catalogo_completo/descripciones.json
+/assets/music/**/*.mp3
+/assets/music/**/*.wav
+/assets/music/**/*.ogg
+/models/intenciones/versiones/
+/tools/graficas_presentacion_ia.py
+
+# Informes locales y diagnósticos; conservar las métricas reproducibles
+/evaluaciones/*
+!/evaluaciones/comparacion_clasificadores.json
+!/evaluaciones/comparacion_clasificadores.csv
+!/evaluaciones/intenciones_supervisadas.json
+!/evaluaciones/integracion_modelo_intenciones.json
+
+# Excluido de esta publicación por indicación del autor
+/tests/test_regresion_carrec.py

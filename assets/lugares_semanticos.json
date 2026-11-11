@@ -1,0 +1,10 @@
+{
+  "origen": "Posición de puente contrastada con el MMS y las capturas del usuario. Las posiciones de playa proceden del catálogo de nodos y alturas existente.",
+  "nota": "La etiqueta identifica el lugar; no certifica ausencia de trenes, colisiones ni espacio para todos los actores.",
+  "ubicaciones": [
+    {"id":"puente_ejemplo_usuario","nombre":"Puente ferroviario del ejemplo","entorno":"ciudad","zona":"San Fierro","etiquetas":["puente"],"posicion":[-1167.094572,826.240268,33.6],"orientacion":326.31}
+  ],
+  "rutas": [
+    {"id":"ped_puente_ejemplo_usuario","zona":"San Fierro","etiquetas":["puente"],"inicio":[-1167.094572,826.240268,33.6],"destino":[-1159.094572,838.240268,33.6],"longitud":14.42,"comprobada_colisiones":false}
+  ]
+}

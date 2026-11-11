@@ -1,0 +1,2996 @@
+{
+  "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+  "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+  "alcance": "Ablación de reglas + clasificación + validación + compilación en memoria. Sin API ni ejecución visual en GTA.",
+  "particion": "prueba_reservada",
+  "total": 112,
+  "gestos": 88,
+  "fuera_del_clasificador": 24,
+  "gestos_correctos_sin_modelo": 31,
+  "gestos_correctos_con_modelo": 58,
+  "nuevas_peticiones_resueltas": 27,
+  "regresiones": [],
+  "falsos_gestos_sin_modelo": 1,
+  "falsos_gestos_con_modelo": 1,
+  "ejemplos_exportados": [],
+  "resultados": [
+    {
+      "id": "bailar_prueba_001",
+      "texto": "el protagonista marca pasos al compás de la música",
+      "esperado": "bailar",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "bailar",
+          "puntuacion": 0.685608,
+          "margen": 0.617159,
+          "cobertura_vocabulario": 0.734043,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "DANCE:3:DANCING:dance_loop",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "bailar_prueba_002",
+      "texto": "representa una breve coreografía de baile",
+      "esperado": "bailar",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "DANCE:3:DANCING:dance_loop",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "DANCE:3:DANCING:dance_loop",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "bailar_prueba_003",
+      "texto": "una persona se balancea rítmicamente para bailar",
+      "esperado": "bailar",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "DANCE:3:DANCING:dance_loop",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "DANCE:3:DANCING:dance_loop",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "bailar_prueba_004",
+      "texto": "varios amigos danzan durante la fiesta",
+      "esperado": "bailar",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "saludar_prueba_001",
+      "texto": "el personaje le dedica un saludo a su vecino",
+      "esperado": "saludar",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:90:ON_LOOKERS:wave_loop",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:90:ON_LOOKERS:wave_loop",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "saludar_prueba_002",
+      "texto": "quiero una despedida hecha con la mano",
+      "esperado": "saludar",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "saludar",
+          "puntuacion": 0.951096,
+          "margen": 0.94454,
+          "cobertura_vocabulario": 0.82,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:90:ON_LOOKERS:wave_loop",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "saludar_prueba_003",
+      "texto": "el actor alza su mano en señal de bienvenida",
+      "esperado": "saludar",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "saludar",
+          "puntuacion": 0.942045,
+          "margen": 0.931572,
+          "cobertura_vocabulario": 0.953125,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:90:ON_LOOKERS:wave_loop",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "saludar_prueba_004",
+      "texto": "una persona agita el brazo a modo de saludo",
+      "esperado": "saludar",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:90:ON_LOOKERS:wave_loop",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:90:ON_LOOKERS:wave_loop",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "aplaudir_prueba_001",
+      "texto": "el personaje choca las palmas en señal de aprobación",
+      "esperado": "aplaudir",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "aplaudir",
+          "puntuacion": 0.816173,
+          "margen": 0.789734,
+          "cobertura_vocabulario": 0.849315,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "DANCE:1:DANCING:bd_clap",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "aplaudir_prueba_002",
+      "texto": "representa a unos espectadores aplaudiendo",
+      "esperado": "aplaudir",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "DANCE:1:DANCING:bd_clap",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "DANCE:1:DANCING:bd_clap",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "aplaudir_prueba_003",
+      "texto": "quiero ver un aplauso de pie",
+      "esperado": "aplaudir",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "DANCE:1:DANCING:bd_clap",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "DANCE:1:DANCING:bd_clap",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "aplaudir_prueba_004",
+      "texto": "el actor da una ovación con las manos",
+      "esperado": "aplaudir",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "rendirse",
+          "puntuacion": 0.855946,
+          "margen": 0.833246,
+          "cobertura_vocabulario": 0.684211,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:1:ped:handsup",
+        "mms_compilado": true,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "rendirse_prueba_001",
+      "texto": "el actor se somete con las palmas levantadas",
+      "esperado": "rendirse",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "aplaudir",
+          "puntuacion": 0.640901,
+          "margen": 0.528299,
+          "cobertura_vocabulario": 0.721311,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "DANCE:1:DANCING:bd_clap",
+        "mms_compilado": true,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "rendirse_prueba_002",
+      "texto": "muestra a alguien que se entrega con las manos arriba",
+      "esperado": "rendirse",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:1:ped:handsup",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:1:ped:handsup",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "rendirse_prueba_003",
+      "texto": "el personaje adopta el gesto de rendirse",
+      "esperado": "rendirse",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:1:ped:handsup",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:1:ped:handsup",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "rendirse_prueba_004",
+      "texto": "una persona eleva las manos para mostrar que se rinde",
+      "esperado": "rendirse",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:1:ped:handsup",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:1:ped:handsup",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "mirar_lados_prueba_001",
+      "texto": "el protagonista comprueba visualmente los dos lados de la calle",
+      "esperado": "mirar_lados",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "mirar_lados",
+          "puntuacion": 0.836923,
+          "margen": 0.798653,
+          "cobertura_vocabulario": 0.7,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:2:ped:roadcross",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "mirar_lados_prueba_002",
+      "texto": "quiero que vuelva la cabeza a derecha e izquierda",
+      "esperado": "mirar_lados",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "mirar_lados_prueba_003",
+      "texto": "el actor lanza una mirada a cada costado",
+      "esperado": "mirar_lados",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "mirar_lados_prueba_004",
+      "texto": "una persona inspecciona sucesivamente ambos laterales",
+      "esperado": "mirar_lados",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "rascarse_prueba_001",
+      "texto": "quiero ver a alguien aliviando una picazón al rascarse",
+      "esperado": "rascarse",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:6:ped:XPRESSscratch",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:6:ped:XPRESSscratch",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "rascarse_prueba_002",
+      "texto": "el personaje tiene comezón y se rasca",
+      "esperado": "rascarse",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:6:ped:XPRESSscratch",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:6:ped:XPRESSscratch",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "rascarse_prueba_003",
+      "texto": "una persona mueve los dedos sobre su cuerpo para rascarse",
+      "esperado": "rascarse",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:6:ped:XPRESSscratch",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:6:ped:XPRESSscratch",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "rascarse_prueba_004",
+      "texto": "representa el gesto de rascarse por picor",
+      "esperado": "rascarse",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:6:ped:XPRESSscratch",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:6:ped:XPRESSscratch",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "tumbarse_prueba_001",
+      "texto": "el actor yace tumbado de espaldas",
+      "esperado": "tumbarse",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "LAY:2:BEACH:Lay_Bac_Loop",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "LAY:2:BEACH:Lay_Bac_Loop",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "tumbarse_prueba_002",
+      "texto": "representa a una persona recostada en la playa",
+      "esperado": "tumbarse",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "tumbarse_prueba_003",
+      "texto": "el personaje se acomoda en una pose tendida",
+      "esperado": "tumbarse",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "tumbarse_prueba_004",
+      "texto": "quiero una escena con alguien descansando acostado",
+      "esperado": "tumbarse",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "LAY:2:BEACH:Lay_Bac_Loop",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "LAY:2:BEACH:Lay_Bac_Loop",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "vomitar_prueba_001",
+      "texto": "el actor hace esfuerzos para devolver la comida",
+      "esperado": "vomitar",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "vomitar_prueba_002",
+      "texto": "representa a alguien vomitando por malestar",
+      "esperado": "vomitar",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:40:food:EAT_Vomit_P",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:40:food:EAT_Vomit_P",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "vomitar_prueba_003",
+      "texto": "el personaje se inclina presa de las arcadas",
+      "esperado": "vomitar",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "vomitar",
+          "puntuacion": 0.795205,
+          "margen": 0.750525,
+          "cobertura_vocabulario": 0.90566,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:40:food:EAT_Vomit_P",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "vomitar_prueba_004",
+      "texto": "una persona reproduce el gesto de expulsar el contenido del estómago",
+      "esperado": "vomitar",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "vomitar",
+          "puntuacion": 0.783259,
+          "margen": 0.754044,
+          "cobertura_vocabulario": 0.824074,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:40:food:EAT_Vomit_P",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "sorpresa_prueba_001",
+      "texto": "el personaje adopta un semblante atónito",
+      "esperado": "sorpresa",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "sorpresa_prueba_002",
+      "texto": "representa un rostro de alguien boquiabierto",
+      "esperado": "sorpresa",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "sorpresa",
+          "puntuacion": 0.624594,
+          "margen": 0.577057,
+          "cobertura_vocabulario": 0.97,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "MIMIC:3:ped:facsurp",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "sorpresa_prueba_003",
+      "texto": "la cara del actor refleja un enorme asombro",
+      "esperado": "sorpresa",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "sorpresa",
+          "puntuacion": 0.766716,
+          "margen": 0.725405,
+          "cobertura_vocabulario": 0.776119,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "MIMIC:3:ped:facsurp",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "sorpresa_prueba_004",
+      "texto": "una persona abre la boca al quedar sorprendida",
+      "esperado": "sorpresa",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "MIMIC:3:ped:facsurp",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "MIMIC:3:ped:facsurp",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "conversar_prueba_001",
+      "texto": "el actor simula una plática con su compañero",
+      "esperado": "conversar",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "conversar_prueba_002",
+      "texto": "representa a dos vecinos intercambiando palabras",
+      "esperado": "conversar",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "conversar_prueba_003",
+      "texto": "una persona conversa frente a su interlocutor",
+      "esperado": "conversar",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "CHAT:5:ped:IDLE_chat",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "CHAT:5:ped:IDLE_chat",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "conversar_prueba_004",
+      "texto": "quiero un diálogo con gestos de las manos",
+      "esperado": "conversar",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "estirarse_prueba_001",
+      "texto": "el personaje extiende sus brazos para desentumecerse",
+      "esperado": "estirarse",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "estirarse",
+          "puntuacion": 0.817528,
+          "margen": 0.794524,
+          "cobertura_vocabulario": 0.7875,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:113:PLAYIDLES:stretch",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "estirarse_prueba_002",
+      "texto": "representa un estiramiento de los músculos",
+      "esperado": "estirarse",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:113:PLAYIDLES:stretch",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:113:PLAYIDLES:stretch",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "estirarse_prueba_003",
+      "texto": "el actor estira el cuerpo para soltar la rigidez",
+      "esperado": "estirarse",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:113:PLAYIDLES:stretch",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:113:PLAYIDLES:stretch",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "estirarse_prueba_004",
+      "texto": "una persona hace una elongación para desperezarse",
+      "esperado": "estirarse",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "estirarse",
+          "puntuacion": 0.980509,
+          "margen": 0.978115,
+          "cobertura_vocabulario": 0.984127,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:113:PLAYIDLES:stretch",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "negar_cabeza_prueba_001",
+      "texto": "el personaje rechaza la propuesta mediante un gesto de cabeza",
+      "esperado": "negar_cabeza",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "negar_cabeza",
+          "puntuacion": 0.708333,
+          "margen": 0.668037,
+          "cobertura_vocabulario": 0.762887,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:163:urbanize:shakehead_1",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "negar_cabeza_prueba_002",
+      "texto": "representa una negativa moviendo la cabeza horizontalmente",
+      "esperado": "negar_cabeza",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "negar_cabeza",
+          "puntuacion": 0.633779,
+          "margen": 0.576605,
+          "cobertura_vocabulario": 0.894737,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:163:urbanize:shakehead_1",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "negar_cabeza_prueba_003",
+      "texto": "el actor responde sin palabras con un ademán de negación",
+      "esperado": "negar_cabeza",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "negar_cabeza_prueba_004",
+      "texto": "una persona sacude la cabeza de un lado al otro para decir no",
+      "esperado": "negar_cabeza",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "cansancio_prueba_001",
+      "texto": "el personaje tiene una postura vencida por el cansancio",
+      "esperado": "cansancio",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "cansancio",
+          "puntuacion": 0.899581,
+          "margen": 0.880985,
+          "cobertura_vocabulario": 0.833333,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:146:MMR:idle_tired",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "cansancio_prueba_002",
+      "texto": "representa a un actor físicamente exhausto",
+      "esperado": "cansancio",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "cansancio_prueba_003",
+      "texto": "una persona expresa que se ha quedado sin energía",
+      "esperado": "cansancio",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "cansancio_prueba_004",
+      "texto": "quiero ver el gesto de alguien que está fatigado",
+      "esperado": "cansancio",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "cansancio",
+          "puntuacion": 0.812984,
+          "margen": 0.795915,
+          "cobertura_vocabulario": 0.953125,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:146:MMR:idle_tired",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "miedo_prueba_001",
+      "texto": "el personaje está sobrecogido de temor",
+      "esperado": "miedo",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "miedo",
+          "puntuacion": 0.672322,
+          "margen": 0.608362,
+          "cobertura_vocabulario": 0.711111,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:70:ON_LOOKERS:panic_cower",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "miedo_prueba_002",
+      "texto": "representa a un actor que se acurruca del miedo",
+      "esperado": "miedo",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "miedo_prueba_003",
+      "texto": "una persona muestra una actitud despavorida",
+      "esperado": "miedo",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "miedo_prueba_004",
+      "texto": "quiero ver cómo alguien se encoge aterrado",
+      "esperado": "miedo",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "celebrar_prueba_001",
+      "texto": "el personaje celebra que ha conseguido su objetivo",
+      "esperado": "celebrar",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:173:urbanize:cheers_1",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:173:urbanize:cheers_1",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "celebrar_prueba_002",
+      "texto": "representa un festejo tras ganar",
+      "esperado": "celebrar",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "celebrar_prueba_003",
+      "texto": "el actor muestra euforia por su victoria",
+      "esperado": "celebrar",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "celebrar",
+          "puntuacion": 0.736163,
+          "margen": 0.697898,
+          "cobertura_vocabulario": 0.732143,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:173:urbanize:cheers_1",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "celebrar_prueba_004",
+      "texto": "una persona realiza un gesto de celebración del éxito",
+      "esperado": "celebrar",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:173:urbanize:cheers_1",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:173:urbanize:cheers_1",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "enfado_prueba_001",
+      "texto": "el personaje tiene un semblante colérico",
+      "esperado": "enfado",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "enfado_prueba_002",
+      "texto": "representa un rostro que expresa disgusto",
+      "esperado": "enfado",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "enfado",
+          "puntuacion": 0.669864,
+          "margen": 0.613636,
+          "cobertura_vocabulario": 0.964706,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "MIMIC:1:ped:facanger",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "enfado_prueba_003",
+      "texto": "el actor muestra su irritación facial",
+      "esperado": "enfado",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "enfado_prueba_004",
+      "texto": "una persona pone cara de estar furiosa",
+      "esperado": "enfado",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "curiosidad_prueba_001",
+      "texto": "el personaje adopta un semblante de curiosidad",
+      "esperado": "curiosidad",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "MIMIC:6:ped:facurios",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "MIMIC:6:ped:facurios",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "curiosidad_prueba_002",
+      "texto": "representa el rostro de alguien intrigado",
+      "esperado": "curiosidad",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "curiosidad",
+          "puntuacion": 0.775497,
+          "margen": 0.743849,
+          "cobertura_vocabulario": 0.967033,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "MIMIC:6:ped:facurios",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "curiosidad_prueba_003",
+      "texto": "el actor muestra interés mediante su expresión",
+      "esperado": "curiosidad",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "curiosidad",
+          "puntuacion": 0.654367,
+          "margen": 0.469933,
+          "cobertura_vocabulario": 0.918605,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "MIMIC:6:ped:facurios",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "curiosidad_prueba_004",
+      "texto": "una persona pone una cara que revela curiosidad",
+      "esperado": "curiosidad",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "MIMIC:6:ped:facurios",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "MIMIC:6:ped:facurios",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "fumar_prueba_001",
+      "texto": "el personaje hace el ademán de llevarse un cigarrillo a los labios",
+      "esperado": "fumar",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "fumar",
+          "puntuacion": 0.928596,
+          "margen": 0.91758,
+          "cobertura_vocabulario": 0.894118,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:133:SMOKING:M_smk_drag",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "fumar_prueba_002",
+      "texto": "representa a alguien que simula estar fumando",
+      "esperado": "fumar",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:133:SMOKING:M_smk_drag",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:133:SMOKING:M_smk_drag",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "fumar_prueba_003",
+      "texto": "el actor reproduce el gesto de una calada",
+      "esperado": "fumar",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "fumar",
+          "puntuacion": 0.753112,
+          "margen": 0.693489,
+          "cobertura_vocabulario": 0.75,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:133:SMOKING:M_smk_drag",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "fumar_prueba_004",
+      "texto": "una persona se lleva la mano a la boca como fumador",
+      "esperado": "fumar",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "fumar",
+          "puntuacion": 0.681406,
+          "margen": 0.567729,
+          "cobertura_vocabulario": 0.833333,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:133:SMOKING:M_smk_drag",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "reir_prueba_001",
+      "texto": "el personaje estalla en carcajadas",
+      "esperado": "reir",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "CHAT:52:RAPPING:Laugh_01",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "CHAT:52:RAPPING:Laugh_01",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "reir_prueba_002",
+      "texto": "representa a alguien muerto de risa",
+      "esperado": "reir",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "CHAT:52:RAPPING:Laugh_01",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "CHAT:52:RAPPING:Laugh_01",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "reir_prueba_003",
+      "texto": "el actor se ríe de buena gana",
+      "esperado": "reir",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "CHAT:52:RAPPING:Laugh_01",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "CHAT:52:RAPPING:Laugh_01",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "reir_prueba_004",
+      "texto": "una persona expresa diversión con una risotada",
+      "esperado": "reir",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "beber_prueba_001",
+      "texto": "el personaje realiza el ademán de beber un refresco",
+      "esperado": "beber",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:46:GANGS:drnkbr_prtl",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:46:GANGS:drnkbr_prtl",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "beber_prueba_002",
+      "texto": "representa a alguien que se lleva un vaso a los labios",
+      "esperado": "beber",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "beber",
+          "puntuacion": 0.614934,
+          "margen": 0.498829,
+          "cobertura_vocabulario": 0.966667,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:46:GANGS:drnkbr_prtl",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "beber_prueba_003",
+      "texto": "el actor simula ingerir un sorbo",
+      "esperado": "beber",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "beber_prueba_004",
+      "texto": "una persona reproduce el gesto de tomar una bebida",
+      "esperado": "beber",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:46:GANGS:drnkbr_prtl",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:46:GANGS:drnkbr_prtl",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "comer_prueba_001",
+      "texto": "el personaje realiza el gesto de alimentarse",
+      "esperado": "comer",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "comer_prueba_002",
+      "texto": "representa a alguien que mastica un bocado",
+      "esperado": "comer",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:37:food:EAT_Burger",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "STAND:37:food:EAT_Burger",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "comer_prueba_003",
+      "texto": "el actor simula dar un mordisco a su comida",
+      "esperado": "comer",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "comer",
+          "puntuacion": 0.91773,
+          "margen": 0.889862,
+          "cobertura_vocabulario": 0.96875,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:37:food:EAT_Burger",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "comer_prueba_004",
+      "texto": "una persona reproduce el ademán de llevarse alimento a la boca",
+      "esperado": "comer",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "comer",
+          "puntuacion": 0.922851,
+          "margen": 0.912024,
+          "cobertura_vocabulario": 0.777778,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:37:food:EAT_Burger",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "telefono_prueba_001",
+      "texto": "el personaje reproduce el ademán de contestar el teléfono",
+      "esperado": "telefono",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "telefono_prueba_002",
+      "texto": "representa a alguien atendiendo su celular",
+      "esperado": "telefono",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "telefono_prueba_003",
+      "texto": "el actor lleva el móvil a la oreja para conversar",
+      "esperado": "telefono",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "CHAT:5:ped:IDLE_chat",
+        "mms_compilado": true,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "CHAT:5:ped:IDLE_chat",
+        "mms_compilado": true,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "telefono_prueba_004",
+      "texto": "una persona simula escuchar una llamada telefónica",
+      "esperado": "telefono",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Clasificador supervisado local",
+        "aprendizaje_supervisado": {
+          "aceptada": true,
+          "intencion": "telefono",
+          "puntuacion": 0.978307,
+          "margen": 0.972749,
+          "cobertura_vocabulario": 0.977273,
+          "umbral": 0.6,
+          "modelo": "intenciones-gta-supervisado-v1-1f5e3f38c560",
+          "sha256_pesos": "ad8c196ac723c90a053434e9f3825e1affcf8ef5bbbd901b9ebc77893dbb683e",
+          "motivo": "clasificacion_supervisada"
+        },
+        "animacion": "STAND:44:ped:phone_talk",
+        "mms_compilado": true,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": true
+    },
+    {
+      "id": "desconocido_prueba_001",
+      "texto": "quiero una escena sin especificar acciones",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_002",
+      "texto": "un camión estacionado junto a una casa",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_003",
+      "texto": "muestra solamente una calle vacía",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_004",
+      "texto": "el protagonista recorre a pie el camino",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_005",
+      "texto": "un actor asciende por las escaleras",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_006",
+      "texto": "un personaje se lanza a nadar",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_007",
+      "texto": "el conductor maneja su taxi",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "conducir_vehiculo",
+        "fuente": "Reglas locales del catálogo de vehículos",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "conducir_vehiculo",
+        "fuente": "Reglas locales del catálogo de vehículos",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_008",
+      "texto": "un policía apunta a otro personaje",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "secuencia",
+        "fuente": "Plan local por tareas nativas (sin confirmación de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "secuencia",
+        "fuente": "Plan local por tareas nativas (sin confirmación de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_009",
+      "texto": "el actor lucha con los puños",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_010",
+      "texto": "el personaje arroja una bomba",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_011",
+      "texto": "no permitas que dé una calada",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_012",
+      "texto": "la persona evita ponerse a bailar",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "DANCE:3:DANCING:dance_loop",
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "animacion",
+        "fuente": "Reglas locales del catalogo (sin confirmacion de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": "DANCE:3:DANCING:dance_loop",
+        "mms_compilado": false,
+        "correcto": false
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_013",
+      "texto": "sin representar ninguna conversación telefónica",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "secuencia",
+        "fuente": "Plan local por tareas nativas (sin confirmación de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "secuencia",
+        "fuente": "Plan local por tareas nativas (sin confirmación de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_014",
+      "texto": "no quiero aplausos de ningún tipo",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_015",
+      "texto": "el personaje no debe dar un bocado",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_016",
+      "texto": "sin hacer movimientos de saludo",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "secuencia",
+        "fuente": "Plan local por tareas nativas (sin confirmación de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "secuencia",
+        "fuente": "Plan local por tareas nativas (sin confirmación de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_017",
+      "texto": "no debe mostrar cansancio",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_018",
+      "texto": "la persona no tiene que reírse",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": true,
+        "accion": "secuencia",
+        "fuente": "Plan local por tareas nativas (sin confirmación de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": true,
+        "accion": "secuencia",
+        "fuente": "Plan local por tareas nativas (sin confirmación de Gemini)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_019",
+      "texto": "el actor toca un tambor",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_020",
+      "texto": "el personaje recoge un maletín",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_021",
+      "texto": "una persona se sienta en un banco",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Registro de capacidades y dependencias",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Registro de capacidades y dependencias",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_022",
+      "texto": "dos personajes se abrazan",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_023",
+      "texto": "una persona baila y luego conduce",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    },
+    {
+      "id": "desconocido_prueba_024",
+      "texto": "el personaje levita sobre el agua",
+      "esperado": "desconocido",
+      "sin_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "con_modelo": {
+        "aceptada": false,
+        "accion": "caminar",
+        "fuente": "Reglas locales (API no disponible)",
+        "aprendizaje_supervisado": {},
+        "animacion": null,
+        "mms_compilado": false,
+        "correcto": true
+      },
+      "resuelta_gracias_al_modelo": false
+    }
+  ]
+}

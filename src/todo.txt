@@ -1,0 +1,6577 @@
+actor list
+
+[CivMale]
+Total=130
+1=male01
+2=bmori
+3=bmost
+4=bmyap
+5=bmybu
+6=bmybe
+7=bmydj
+8=bmyri
+9=bmyst
+10=wmybmx
+11=wbdyg1
+12=wbdyg2
+13=wmybp
+14=wmycon
+15=dwmolc1
+16=dwmolc2
+17=dwmylc1
+18=hmogar
+19=wmygol1
+20=wmygol2
+21=hmori
+22=hmost
+23=hmybe
+24=hmyri
+25=hmyst
+26=omokung
+27=wmymech
+28=bmymoun
+29=wmymoun
+30=omori
+31=omost
+32=omyri
+33=omyst
+34=wmyplt
+35=wmopj
+36=bmypol1
+37=bmypol2
+38=wmoprea
+39=wmosci
+40=wmysgrd
+41=swmyhp1
+42=swmyhp2
+43=swmotr1
+44=wmotr1
+45=bmotr1
+46=vbmybox
+47=vwmybox
+48=vhmyelv
+49=vbmyelv
+50=vimyelv
+51=wmori
+52=wmost
+53=wmyjg
+54=wmylg
+55=wmyri
+56=wmyro
+57=wmyst
+58=dnmylc
+59=dnmolc1
+60=dnmolc2
+61=sbmotr2
+62=swmotr2
+63=sbmytr3
+64=swmotr3
+65=sbmyst
+66=wmybu
+67=wmyconb
+68=wmybe
+69=wmypizz
+70=bmobar
+71=cwmofr
+72=cwmohb1
+73=cwmohb2
+74=cwmyfr
+75=cwmyhb1
+76=bmyboun
+77=wmyboun
+78=wmomib
+79=bmymib
+80=wmybell
+81=bmochil
+82=somyst
+83=vwmybjd
+84=bmybar
+85=wmybar
+86=wmyammo
+87=bmytatt
+88=vbmocd
+89=sbmyri
+90=somyri
+91=somybu
+92=swmyst
+93=wmyva
+94=cwmyhb2
+95=dwmylc2
+96=omykara
+97=wmykara
+98=vwmycd
+99=omonood
+100=omoboat
+101=vwmotr1
+102=vwmotr2
+103=wmyclot
+104=sbmocd
+105=sbmori
+106=sbmost
+107=somobu
+108=somori
+109=somost
+110=swmotr5
+111=swmocd
+112=swmori
+113=swmost
+114=swmotr4
+115=swmyri
+116=smyst
+117=smyst2
+118=bikera
+119=bikerb
+120=bmypimp
+121=wmyva2
+122=bmosec
+123=bikdrug
+124=wmych
+125=heck1
+126=heck2
+127=bmycon
+128=wmycd1
+129=bmocd
+130=wmoice
+
+[CivFemale]
+Total=68
+1=bfori
+2=bfost
+3=vbfycrp
+4=bfyri
+5=bfyst
+6=dwfolc
+7=hfori
+8=hfost
+9=hfyri
+10=hfyst
+11=ofori
+12=ofost
+13=ofyri
+14=ofyst
+15=sbfyst
+16=wfystew
+17=vwfyst1
+18=wfori
+19=wfost
+20=wfyjg
+21=wfyri
+22=wfyro
+23=wfyst
+24=dnfolc1
+25=dnfolc2
+26=dnfylc
+27=wfybe
+28=bfybe
+29=hfybe
+30=sofybu
+31=wfycrk
+32=bfybu
+33=wfybu
+34=dwfylc1
+35=cwfyhb
+36=sofyri
+37=vwfycrp
+38=wfysex
+39=copgrl3
+40=gungrl3
+41=mecgrl3
+42=nurgrl3
+43=crogrl3
+44=gangrl3
+45=cwfofr
+46=cwfohb
+47=cwfyfr1
+48=cwfyfr2
+49=dwfylc2
+50=wfyburg
+51=wfyclot
+52=vwfywai
+53=sbfori
+54=swfyri
+55=sbfost
+56=sbfyri
+57=sofori
+58=sofost
+59=sofyst
+60=swfori
+61=swfost
+62=swfyst
+63=vbfyst2
+64=vhfyst3
+65=wfylg
+66=sbfystr
+67=swfystr
+68=vwfywa2
+
+[Emergency]
+Total=15
+1=laemt1
+2=lvemt1
+3=sfemt1
+4=lafd1
+5=lvfd1
+6=sffd1
+7=lapd1
+8=sfpd1
+9=lvpd1
+10=csher
+11=lapdm1
+12=swat
+13=fbi
+14=army
+15=dsher
+
+[Criminal]
+Total=42
+1=bmycr
+2=bmydrug
+3=wmydrug
+4=hmydrug
+5=hmycr
+6=wmycr
+7=ballas1
+8=ballas2
+9=ballas3
+10=fam1
+11=fam2
+12=fam3
+13=lsv1
+14=lsv2
+15=lsv3
+16=maffa
+17=maffb
+18=mafboss
+19=vla1
+20=vla2
+21=vla3
+22=triada
+23=triadb
+24=triboss
+25=dnb1
+26=dnb2
+27=dnb3
+28=vmaff1
+29=vmaff2
+30=vmaff3
+31=vmaff4
+32=sbmycr
+33=bmycg
+34=hmycm
+35=sfr1
+36=sfr2
+37=sfr3
+38=vwmycr
+39=vbmycr
+40=vhmycr
+41=shmycr
+42=swmycr
+
+[Prostitute]
+Total=10
+1=bfypro
+2=hfypro
+3=swfopro
+4=vwfypro
+5=wfypro
+6=vhfypro
+7=shfypro
+8=sbfypro
+9=sfypro
+10=vbfypro
+
+
+anim list
+
+[STAND]
+TOTAL=224
+1 = handsup, ped
+2 = roadcross, ped
+3 = graffiti_Chkout, graffiti
+4 = roadcross_gang, ped
+5 = roadcross_old, ped
+6 = XPRESSscratch, ped
+7 = Barcustom_loop, bar
+8 = BARman_idle, bar
+9 = Barserve_in, bar
+10 = Barserve_loop, bar
+11 = BD_Panic_01, BD_FIRE
+12 = BD_Panic_02, BD_FIRE
+13 = BD_Panic_03, BD_FIRE
+14 = BD_Panic_04, BD_FIRE
+15 = BD_Panic_Loop, BD_FIRE
+16 = M_smklean_loop, BD_FIRE
+17 = flag_drop, car
+18 = cards_in, CASINO
+19 = cards_loop, CASINO
+20 = cards_lose, CASINO
+21 = cards_out, CASINO
+22 = Roulette_in, CASINO
+23 = Roulette_loop, CASINO
+24 = Roulette_out, CASINO
+25 = Slot_wait, CASINO
+26 = CLO_Buy, CLOTHES
+27 = CLO_Pose_Hat, CLOTHES
+28 = CLO_Pose_Legs, CLOTHES
+29 = CLO_Pose_Loop, CLOTHES
+30 = CLO_Pose_Shoes, CLOTHES
+31 = CLO_Pose_Torso, CLOTHES
+32 = CLO_Pose_Watch, CLOTHES
+33 = Bbalbat_Idle_01, CRACK
+34 = Bbalbat_Idle_02, CRACK
+35 = DEALER_DEAL, DEALER
+36 = DEALER_IDLE, DEALER
+37 = EAT_Burger, food
+38 = EAT_Chicken, food
+39 = EAT_Pizza, food
+40 = EAT_Vomit_P, food
+41 = EAT_Vomit_SK, food
+42 = phone_in, ped
+43 = phone_out, ped
+44 = phone_talk, ped
+45 = DEALER_IDLE, GANGS
+46 = drnkbr_prtl, GANGS
+47 = drnkbr_prtl_F, GANGS
+48 = leanIDLE, GANGS
+49 = leanIN, GANGS
+50 = leanOUT, GANGS
+51 = smkcig_prtl, GANGS
+52 = smkcig_prtl_F, GANGS
+53 = GDB_Car2_SMO, GHETTO_DB
+54 = GDB_Car_RYD, GHETTO_DB
+55 = GDB_Car_SMO, GHETTO_DB
+56 = mrnF_loop, GRAVEYARD
+57 = mrnM_loop, GRAVEYARD
+58 = prst_loopa, GRAVEYARD
+59 = Hiker_Pose, misc 
+60 = Hiker_Pose_L, misc 
+61 = Plyrlean_loop, misc
+62 = Scratchballs_01, misc
+63 = lkaround_in, ON_LOOKERS 
+64 = lkaround_loop, ON_LOOKERS  
+65 = lkaround_out, ON_LOOKERS  
+66 = lkup_in, ON_LOOKERS  
+67 = lkup_loop, ON_LOOKERS  
+68 = lkup_out, ON_LOOKERS  
+69 = lkup_point, ON_LOOKERS  
+70 = panic_cower, ON_LOOKERS  
+71 = panic_hide, ON_LOOKERS  
+72 = panic_in, ON_LOOKERS  
+73 = panic_loop, ON_LOOKERS  
+74 = panic_out, ON_LOOKERS  
+75 = panic_point, ON_LOOKERS  
+76 = panic_shout, ON_LOOKERS  
+77 = Pointup_in, ON_LOOKERS  
+78 = Pointup_loop, ON_LOOKERS  
+79 = Pointup_out, ON_LOOKERS  
+80 = Pointup_shout, ON_LOOKERS  
+81 = point_in, ON_LOOKERS  
+82 = point_loop, ON_LOOKERS  
+83 = point_out, ON_LOOKERS  
+84 = shout_01, ON_LOOKERS 
+85 = shout_02, ON_LOOKERS  
+86 = shout_in, ON_LOOKERS  
+87 = shout_loop, ON_LOOKERS  
+88 = shout_out, ON_LOOKERS 
+89 = wave_in, ON_LOOKERS  
+90 = wave_loop, ON_LOOKERS  
+91 = wave_out, ON_LOOKERS 
+92 = wtchrace_in, OTB 
+93 = wtchrace_loop, OTB
+94 = wtchrace_out, OTB
+95 = wtchrace_win, OTB
+96 = Tai_Chi_in, park
+97 = Tai_Chi_Loop, park
+98 = Tai_Chi_out, park
+99 = Piss_in, PAULNMAC
+100 = Piss_loop, PAULNMAC
+101 = Piss_out, PAULNMAC
+102 = PnM_Argue1_A, PAULNMAC
+103 = PnM_Argue1_B, PAULNMAC
+104 = PnM_Argue2_A, PAULNMAC
+105 = PnM_Argue2_B, PAULNMAC
+106 = PnM_Loop_A, PAULNMAC
+107 = PnM_Loop_B, PAULNMAC 
+108 = wank_in, PAULNMAC 
+109 = wank_loop, PAULNMAC 
+110 = wank_out, PAULNMAC
+111 = shift, PLAYIDLES
+112 = shldr, PLAYIDLES
+113 = stretch, PLAYIDLES
+114 = strleg, PLAYIDLES
+115 = time, PLAYIDLES
+116 = stretch2, PLAYIDLES
+117 = time2, PLAYIDLES
+118 = strleg2, PLAYIDLES
+119 = shldr2, PLAYIDLES
+120 = CopTraf_Away, POLICE
+121 = CopTraf_Come, POLICE
+122 = CopTraf_Left, POLICE
+123 = CopTraf_Stop, POLICE 
+124 = END_SC2_PLY, MD_END
+125 = END_SC2_RYD, MD_END
+126 = END_SC2_SMO, MD_END
+127 = END_SC2_SWE, MD_END
+128 = RYD_Beckon_01, RYDER
+129 = RYD_Beckon_02, RYDER
+130 = RYD_Beckon_03, RYDER
+131 = F_smklean_loop, SMOKING
+132 = M_smkstnd_loop, SMOKING
+133 = M_smk_drag, SMOKING 
+134 = M_smk_in, SMOKING 
+135 = M_smk_loop, SMOKING 
+136 = M_smk_out, SMOKING 
+137 = M_smk_tap, SMOKING 
+138 = ass_slapped, SWEET
+139 = hndshldr_01, SWEET
+140 = ass_slap, SWEET
+141 = hndshldr_01, SWEET
+142 = cuff_back, MMR
+143 = cuff_front, MMR
+144 = idle_hbhb, MMR
+145 = idle_stand, MMR
+146 = idle_tired, MMR
+147 = pos1, POSES
+148 = pos2, POSES
+149 = pos3, POSES
+150 = pos6, POSES
+151 = pos7, POSES
+152 = pos13, POSES
+153 = pos15, POSES
+154 = weap_view1, OZ
+155 = ZASPINOY, OZ
+156 = zaspinoy2, OZ
+157 = surrend3, OZ
+158 = surrend4, OZ
+159 = racia_stay, OZ
+160 = respect1, OZ
+161 = respect2, OZ
+162 = Ziga, OZ
+163 = shakehead_1, urbanize
+164 = phone_1, urbanize
+165 = lean_bs, urbanize
+166 = lean_b, urbanize
+167 = lean_f, urbanize
+168 = wait_1, urbanize
+169 = Coplook_out, COP_AMBIENT
+170 = Coplook_in, COP_AMBIENT
+171 = Coplook_loop, COP_AMBIENT
+172 = lean_b_f, urbanize
+173 = cheers_1, urbanize
+174 = cheers_2, urbanize
+175 = secur_loop, urbanize
+176 = smoke_f, urbanize
+177 = junky_loop, urbanize
+178 = junky_hold, urbanize
+179 = lean_b_ma, urbanize
+180 = payphone, urbanize
+181 = quick_smk, urbanize
+182 = wait_impa, urbanize
+183 = lean_fnc_1a, urbanize
+184 = lean_fnc_2a, urbanize
+185 = lean_fnc_1b, urbanize
+186 = lean_fnc_2b, urbanize
+187 = lean_b_fnc, urbanize
+188 = smoke_loop, urbanize
+189 = pray_1, urbanize
+190 = pray_2, urbanize
+191 = lean_b_in, urbanize
+192 = lean_b_out, urbanize
+193 = gym_box_1, urbanize
+194 = gym_box_2, urbanize
+195 = look_1, urbanize
+196 = lean_read_1, urbanize
+197 = gang_loop_1, urbanize
+198 = cold_1, urbanize
+199 = cold_2, urbanize
+200 = listening, urbanize
+201 = lean_fnc_3a, urbanize
+202 = lean_fnc_3b, urbanize
+203 = lean_fnc_3c, urbanize
+204 = lean_fnc_pn, urbanize
+205 = lean_cn_fnc, urbanize
+206 = lean_fnc_fm, urbanize
+207 = female_pose, urbanize
+208 = lean_check, urbanize
+209 = lean_fnc_f2, urbanize
+210 = lean_f_sick, urbanize
+211 = lean_gheto, urbanize
+212 = junky_panic, urbanize
+213 = step_phone, urbanize
+214 = warmup, urbanize
+215 = fem_pos2, urbanize
+216 = job_stance, urbanize
+217 = waiting, urbanize
+218 = waiting2, urbanize
+219 = fem_psing, urbanize
+220 = fem_psing2, urbanize
+221 = roof_lean, urbanize
+222 = shoulder, urbanize
+223 = ge_1, urbanize
+224 = ge_2, urbanize
+
+[SIT]
+TOTAL=123
+1 = SEAT_down, ped
+2 = SEAT_idle, ped
+3 = SEAT_up, ped
+4 = Stepsit_in, Attractors
+5 = Stepsit_loop, Attractors
+6 = Stepsit_out, Attractors
+7 = ParkSit_M_loop, BEACH 
+8 = ParkSit_W_loop, BEACH 
+9 = SitnWait_loop_W, BEACH
+10 = carfone_in, CAR_CHAT
+11 = carfone_loopA, CAR_CHAT
+12 = carfone_loopA, CAR_CHAT
+13 = carfone_loopB, CAR_CHAT
+14 = carfone_loopB, CAR_CHAT
+15 = carfone_out, CAR_CHAT
+16 = CAR_Sc1_BL, CAR_CHAT
+17 = CAR_Sc1_BR, CAR_CHAT
+18 = CAR_Sc1_FL, CAR_CHAT
+19 = CAR_Sc1_FR, CAR_CHAT
+20 = CAR_Sc2_FL, CAR_CHAT
+21 = CAR_Sc3_BR, CAR_CHAT
+22 = CAR_Sc3_FL, CAR_CHAT
+23 = CAR_Sc3_FR, CAR_CHAT
+24 = CAR_Sc4_FL, CAR_CHAT
+25 = FF_Die_Bkw, food
+26 = FF_Die_Fwd, food
+27 = FF_Die_Left, food
+28 = FF_Die_Right, food
+29 = FF_Sit_Eat1, food
+30 = FF_Sit_Eat2, food
+31 = FF_Sit_Eat3, food
+32 = FF_Sit_In, food
+33 = FF_Sit_In_L, food
+34 = FF_Sit_In_R, food
+35 = FF_Sit_Look, food
+36 = FF_Sit_Loop, food
+37 = Sit_Out_180, food
+38 = Sit_Out_L_180, food
+39 = Sit_Out_R_180, food
+40 = GDB_Car2_PLY, GHETTO_DB
+41 = GDB_Car2_SWE, GHETTO_DB
+42 = GDB_Car_PLY, GHETTO_DB
+43 = GDB_Car_SWE, GHETTO_DB
+44 = LOU_In, INT_HOUSE
+45 = LOU_Loop, INT_HOUSE
+46 = LOU_Out, INT_HOUSE
+47 = FF_Dam_Fwd, INT_OFFICE
+48 = OFF_Sit_Crash, INT_OFFICE
+49 = OFF_Sit_Drink, INT_OFFICE
+50 = OFF_Sit_In, INT_OFFICE
+51 = OFF_Sit_Read, INT_OFFICE
+52 = OFF_Sit_Watch, INT_OFFICE
+53 = Sit_2Idle_180, INT_OFFICE2
+54 = Sit_Bored_Loop, INT_OFFICE2
+55 = Sit_Idle_Loop, INT_OFFICE2
+56 = Sit_Type_Loop, INT_OFFICE2
+57 = girl_02, JST_BUISNESS
+58 = SEAT_LR, misc
+59 = Seat_talk_01, misc
+60 = Seat_talk_02, misc
+61 = SEAT_watch, misc
+62 = Sit_relaxed, LOWRIDER
+63 = Tap_hand, LOWRIDER
+64 = ground_1, MMR
+65 = ground_2, MMR
+66 = ground_3, MMR
+67 = seat_1, MMR
+68 = seat_2, MMR
+69 = zombie_eats, MMR
+70 = pos4, POSES
+71 = pos5, POSES
+72 = pos9, POSES
+73 = pos11, POSES
+74 = pos12, POSES
+75 = pos14, POSES
+76 = pos16, POSES
+77 = NAJOPE1, OZ
+78 = SEATRNR, OZ
+79 = SEATRN, OZ
+80 = SEATS, OZ
+81 = SEATSS, OZ
+82 = Nakoleni, OZ
+83 = umolyat, OZ
+84 = surrend1, OZ
+85 = racia_crouch, OZ
+86 = ground_1, urbanize
+87 = sitdaun, OZ
+88 = sit_6, urbanize
+89 = sit_2_call, urbanize
+90 = sit_2_check, urbanize
+91 = sit_2_bang1, urbanize
+92 = sit_2_bang2, urbanize
+93 = sit_2_rev, urbanize
+94 = sit_2_shake, urbanize
+95 = sit_laugh_1, urbanize
+96 = sit_laugh_2, urbanize
+97 = sit_3, urbanize
+98 = sit_drunk, urbanize
+99 = sit_sick_1, urbanize
+100 = sit_sick_2, urbanize
+101 = sit_sick_3, urbanize
+102 = sit_out, urbanize
+103 = sit_fem_1, urbanize
+104 = sit_4, urbanize
+105 = sit_smk_1, urbanize
+106 = sit_drink_1, urbanize
+107 = sit_read_1, urbanize
+108 = sit_eat_1, urbanize
+109 = sit_nwsp_1, urbanize
+110 = sit_punk, urbanize
+111 = sit_eat, urbanize
+112 = console_loop, MMR
+113 = console_loose, MMR
+114 = console_win, MMR
+115 = sit_2b, urbanize
+116 = sit_2c, urbanize
+117 = cs_1a_cart, is_cuts
+118 = cs_1a_mia, is_cuts
+119 = cs_1b_cart, is_cuts
+120 = cs_1b_mia, is_cuts
+121 = 2_m_in, is_cuts
+122 = 2_m_lp, is_cuts
+123 = cs_2_m_out, is_cuts
+
+[LAY]
+TOTAL=38
+1 = bather, BEACH
+2 = Lay_Bac_Loop, BEACH 
+3 = Tyd2car_bump, car
+4 = Tyd2car_high, car
+5 = Tyd2car_low, car
+6 = Tyd2car_med, car
+7 = Tyd2car_TurnL, car
+8 = Tyd2car_TurnR, car
+9 = crckidle1, CRACK
+10 = crckidle2, CRACK
+11 = crckidle3, CRACK
+12 = crckidle4, CRACK
+13 = BED_In_L, INT_HOUSE
+14 = BED_In_R, INT_HOUSE
+15 = BED_Loop_L, INT_HOUSE
+16 = BED_Loop_R, INT_HOUSE
+17 = BED_Out_L, INT_HOUSE
+18 = BED_Out_R, INT_HOUSE
+19 = gnstwall_injurd, SWATPD
+20 = injuredloop, SWEET
+21 = pos8, POSES
+22 = pos10, POSES
+23 = Ranen2, OZ
+24 = LRANEN, OZ
+25 = otjimanie, OZ
+26 = press, OZ
+27 = RANEN, OZ
+28 = NABOKU, OZ
+29 = NASPINE2, OZ
+30 = db1, OZ
+31 = surrend2, OZ
+32 = surrend5, OZ
+33 = lay_idle, urbanize
+34 = lay_lounger_2, urbanize
+35 = gym_situp, urbanize
+36 = drug_sleep, urbanize
+37 = lay_lounger, urbanize
+38 = hern_dead, MMR
+
+[WEAPON]
+TOTAL=50
+1 = ARRESTgun, ped
+2 = gang_gunstand, ped
+3 = Gun_stand, ped
+4 = camcrch_cmon, CAMERA
+5 = camcrch_idle, CAMERA
+6 = camcrch_stay, CAMERA
+7 = camcrch_stnd, CAMERA
+8 = camstnd_cmon, CAMERA
+9 = camstnd_idle, CAMERA
+10 = camstnd_lkabt, CAMERA
+11 = camstnd_crch, CAMERA
+12 = piccrch_in, CAMERA
+13 = piccrch_out, CAMERA
+14 = piccrch_take, CAMERA
+15 = picstnd_in, CAMERA
+16 = picstnd_out, CAMERA
+17 = picstnd_take, CAMERA
+18 = seat_gun1, SWATPD
+19 = seat_gun2, SWATPD
+20 = gun_stand_1, MMR
+21 = hold_shield_1, MMR
+22 = hold_shield_2, MMR
+23 = idle_gun_1, MMR
+24 = idle_gun_2, MMR
+25 = idle_gun_3, MMR
+26 = FloorStay, OZ
+27 = lejat_f, OZ
+28 = lejat_r, OZ
+29 = CSEAT, OZ
+30 = Crouchprl1, wreloads
+31 = Slnc_reload, wreloads 
+32 = Crouchprl1, wreloads 
+33 = Slnc_reload, wreloads 
+34 = crouchfire1, wreloads 
+35 = crouchurld, wreloads 
+36 = UZIreload, wreloads 
+37 = crouchfire2, wreloads 
+38 = crouchsrld, wreloads 
+39 = shtg_shoot, wreloads 
+40 = shtg_reload, wreloads 
+41 = crouchrrld, wreloads 
+42 = RIFLEload, wreloads 
+43 = crouchfire3, wreloads 
+44 = crouchprl2, wreloads 
+45 = dgl_reload, wreloads 
+46 = crouchfire4, wreloads 
+47 = crouchfire5, wreloads 
+48 = crouchprl3, wreloads 
+49 = coltreload, wreloads 
+50 = sawnreload, wreloads 
+
+[CHAT]
+TOTAL=108
+1 = endchat_01, ped  
+2 = endchat_02, ped  
+3 = Endchat_03, ped
+4 = fucku, ped
+5 = IDLE_chat, ped
+6 = Barcustom_order, bar
+7 = Barserve_order, bar
+8 = BD_GF_Wave, BD_FIRE
+9 = car_talkm_in, CAR_CHAT
+10 = car_talkm_loop, CAR_CHAT
+11 = car_talkm_out, CAR_CHAT
+12 = manwinb, CASINO
+13 = manwind, CASINO
+14 = hand_ge_1, urbanize
+15 = hand_ge_2, urbanize
+16 = hand_ge_5a, urbanize
+17 = Coplook_nod, COP_AMBIENT
+18 = Coplook_shake, COP_AMBIENT
+19 = Coplook_think, COP_AMBIENT
+20 = Coplook_watch, COP_AMBIENT
+21 = DEALER_IDLE_01, DEALER
+22 = DEALER_IDLE_02, DEALER
+23 = DEALER_IDLE_03, DEALER
+24 = Invite_No, GANGS 
+25 = Invite_Yes, GANGS
+26 = prtial_gngtlkA, GANGS
+27 = prtial_gngtlkB, GANGS
+28 = prtial_gngtlkC, GANGS
+29 = prtial_gngtlkD, GANGS
+30 = prtial_gngtlkE, GANGS
+31 = prtial_gngtlkF, GANGS
+32 = prtial_gngtlkG, GANGS
+33 = prtial_gngtlkH, GANGS
+34 = gsign1, GHANDS
+35 = gsign1LH, GHANDS
+36 = gsign2, GHANDS
+37 = gsign2LH, GHANDS
+38 = gsign3, GHANDS
+39 = gsign3LH, GHANDS
+40 = gsign4, GHANDS
+41 = gsign4LH, GHANDS
+42 = gsign5, GHANDS
+43 = gsign5LH, GHANDS
+44 = BD_GF_Wave, KISSING
+45 = gfwave2, KISSING
+46 = GF_CarArgue_01, KISSING
+47 = GF_CarArgue_02, KISSING
+48 = Idle_Chat_02, misc
+49 = plyr_shkhead, misc 
+50 = wtchrace_cmon, OTB
+51 = wtchrace_lose, OTB 
+52 = Laugh_01, RAPPING
+53 = RIOT_ANGRY, RIOT
+54 = RIOT_ANGRY_B, RIOT
+55 = RIOT_challenge, RIOT
+56 = RIOT_CHANT, RIOT
+57 = RIOT_FUKU, RIOT
+58 = RIOT_PUNCHES, RIOT
+59 = RIOT_shout, RIOT
+60 = prtial_gngtlkB, LOWRIDER
+61 = prtial_gngtlkC, LOWRIDER
+62 = prtial_gngtlkD, LOWRIDER
+63 = prtial_gngtlkE, LOWRIDER
+64 = prtial_gngtlkF, LOWRIDER
+65 = prtial_gngtlkG, LOWRIDER
+66 = prtial_gngtlkH, LOWRIDER
+67 = go, OZ
+68 = swt_lkt, SWATPD
+69 = swt_sty, SWATPD
+70 = gest_bird, MMR
+71 = gest_fuck_1, MMR
+72 = gest_fuck_2, MMR
+73 = gest_hi, MMR
+74 = gest_hit, MMR
+75 = gest_thumbs, MMR
+76 = idle_chat, MMR 
+77 = defeated_1, urbanize
+78 = talk_1, urbanize
+79 = hand_ge_3, urbanize
+80 = angry_1, urbanize
+81 = hand_ge_4, urbanize
+82 = hand_ge_5, urbanize
+83 = hand_ge_55, urbanize
+84 = hand_ge_7, urbanize
+85 = hand_wave, urbanize
+86 = angry_2, urbanize
+87 = hand_ge_8, urbanize
+88 = hand_ge_9, urbanize
+89 = defeated_1b, urbanize
+90 = hand_ge_6, urbanize
+91 = hand_ge_10, urbanize
+92 = talk_3, urbanize
+93 = talk_hold, urbanize
+94 = talk_offen, urbanize
+95 = worr_chat, urbanize
+96 = hand_ge_6b, urbanize
+97 = calm_argue, urbanize
+98 = hand_ge_6c, urbanize
+99 = street_chat, urbanize
+100 = cocky_talk, urbanize
+101 = street_pld, urbanize
+102 = suspic_talk, urbanize
+103 = girl_talk, urbanize
+104 = sad, urbanize
+105 = go_high, urbanize
+106 = kiss_1, urbanize
+107 = PLY_CASH, STRIP
+108 = PUN_CASH, STRIP
+
+[HURT]
+TOTAL=18
+1 = Bat_Hit_1, BASEBALL
+2 = Bat_Hit_2, BASEBALL
+3 = Bat_Hit_3, BASEBALL
+4 = HitB_1, FIGHT_B
+5 = HitB_2, FIGHT_B
+6 = HitB_3, FIGHT_B
+7 = HitC_1, FIGHT_C
+8 = HitC_2, FIGHT_C
+9 = HitC_3, FIGHT_C
+10 = HitD_1, FIGHT_D
+11 = HitD_2, FIGHT_D
+12 = HitD_3, FIGHT_D
+13 = Hit_fightkick, FIGHT_E
+14 = Hit_fightkick_B, FIGHT_E
+15 = Sword_Hit_1, SWORD
+16 = Sword_Hit_2, SWORD
+17 = Sword_Hit_3, SWORD
+18 = Knife_Ped_Dmg, mmr
+ 
+[DANCE]
+TOTAL=63
+1 = bd_clap, DANCING
+2 = bd_clap1, DANCING
+3 = dance_loop, DANCING
+4 = DAN_Down_A, DANCING
+5 = DAN_Left_A, DANCING
+6 = DAN_Loop_A, DANCING
+7 = DAN_Right_A, DANCING
+8 = DAN_Up_A, DANCING
+9 = dnce_M_a, DANCING
+10 = dnce_M_b, DANCING
+11 = dnce_M_c, DANCING
+12 = dnce_M_d, DANCING
+13 = dnce_M_e, DANCING
+14 = strip_A, STRIP
+15 = strip_B, STRIP
+16 = strip_C, STRIP
+17 = strip_D, STRIP
+18 = strip_E, STRIP
+19 = strip_F, STRIP
+20 = strip_G, STRIP
+21 = STR_A2B, STRIP
+22 = STR_B2A, STRIP
+23 = STR_B2C, STRIP
+24 = STR_C1, STRIP
+25 = STR_C2, STRIP
+26 = STR_C2B, STRIP
+27 = STR_Loop_A, STRIP
+28 = STR_Loop_B, STRIP
+29 = STR_Loop_C, STRIP
+30 = dance1, DANCING_2
+31 = dance2, DANCING_2
+32 = dance3, DANCING_2
+33 = dance4, DANCING_2
+34 = dance5, DANCING_2
+35 = dance6, DANCING_2
+36 = dance7, DANCING_2
+37 = dance8, DANCING_2
+38 = dance9, DANCING_2
+39 = dance10, DANCING_2
+40 = dance11, DANCING_2
+41 = dance12, DANCING_2
+42 = dance13, DANCING_2
+43 = dance14, DANCING_2
+44 = dance15, DANCING_2
+45 = dance16, DANCING_2
+46 = private1_M, DANCING_2
+47 = private1_F, DANCING_2
+48 = private2_M, DANCING_2
+49 = private2_F, DANCING_2
+50 = private3_M, DANCING_2
+51 = private3_F, DANCING_2
+52 = RAP_A_IN, RAPPING
+53 = RAP_A_Loop, RAPPING
+54 = RAP_A_OUT, RAPPING
+55 = RAP_B_IN, RAPPING
+56 = RAP_B_Loop, RAPPING
+57 = RAP_B_OUT, RAPPING
+58 = RAP_C_Loop, RAPPING
+59 = dance_1, urbanize
+60 = crazy_bdance, urbanize
+61 = PUN_LOOP, STRIP
+62 = PUN_HOLLER, STRIP
+63 = cs_strp_lp, is_cuts
+
+[MIMIC]
+TOTAL=6
+1 = facanger, ped
+2 = facgum, ped
+3 = facsurp, ped
+4 = facsurpm, ped
+5 = factalk, ped 
+6 = facurios, ped
+
+[INTERACT]
+TOTAL=169
+1 = ATM, ped
+2 = bomber, ped
+3 = gum_eat, ped
+4 = SHP_Thank, food
+5 = SHP_Tray_In, food
+6 = SHP_Tray_Lift, food
+7 = thrw_barl_thrw, AIRPORT
+8 = Barcustom_get, bar
+9 = Barserve_bottle, bar
+10 = Barserve_give, bar
+11 = Barserve_glass, bar
+12 = dnk_stndF_loop, bar
+13 = dnk_stndM_loop, bar
+14 = Grlfrd_Kiss_03, BD_FIRE
+15 = Playa_Kiss_03, BD_FIRE  
+16 = wash_up, BD_FIRE  
+17 = gym_bp_getoff, benchpress
+18 = gym_bp_geton, benchpress
+19 = BOM_Plant, BOMBER
+20 = BOM_Plant_2Idle, BOMBER
+21 = BOM_Plant_In, BOMBER
+22 = BOM_Plant_Loop, BOMBER  
+23 = Fixn_Car_Loop, car
+24 = Fixn_Car_Out, car
+25 = CAR_Sc4_BL, CAR_CHAT
+26 = CAR_Sc4_BR, CAR_CHAT
+27 = cards_pick_01, CASINO
+28 = cards_pick_02, CASINO
+29 = cards_raise, CASINO
+30 = cards_win, CASINO
+31 = dealone, CASINO
+32 = Roulette_bet, CASINO
+33 = Roulette_lose, CASINO
+34 = Roulette_win, CASINO
+35 = Slot_bet_01, CASINO
+36 = Slot_bet_02, CASINO
+37 = Slot_in, CASINO
+38 = Slot_lose_out, CASINO
+39 = Slot_Plyr, CASINO
+40 = Slot_win_out, CASINO
+41 = wof, CASINO 
+42 = Copbrowse_in, COP_AMBIENT
+43 = Copbrowse_loop, COP_AMBIENT
+44 = Copbrowse_nod, COP_AMBIENT
+45 = Copbrowse_out, COP_AMBIENT
+46 = Copbrowse_shake, COP_AMBIENT  
+47 = DRUGS_BUY, DEALER
+48 = shop_pay, DEALER
+49 = Tray_Lift_In, food
+50 = Tray_Lift_Loop, food
+51 = Tray_Lift_Out, food
+52 = SHP_Tray_Out, food
+53 = SHP_Tray_Pose, food
+54 = SHP_Tray_Return, food
+55 = DEALER_DEAL, GANGS
+56 = DRUGS_BUY, GANGS
+57 = hndshkaa, GANGS
+58 = hndshkba, GANGS
+59 = hndshkca, GANGS
+60 = hndshkcb, GANGS
+61 = hndshkda, GANGS
+62 = hndshkea, GANGS
+63 = hndshkfa, GANGS
+64 = hndshkfa_swt, GANGS
+65 = goggles_put_on, goggles
+66 = wllpk_L, HEIST9
+67 = wllpk_L_back, HEIST9
+68 = wllpk_R, HEIST9
+69 = wllpk_R_back, HEIST9
+70 = wllshoot_in_L, HEIST9
+71 = wllshoot_in_R, HEIST9
+72 = wllshoot_out_L, HEIST9
+73 = wllshoot_out_R, HEIST9
+74 = Use_SwipeCard, HEIST9
+75 = wash_up, INT_HOUSE
+76 = shop_cashier, INT_SHOP
+77 = shop_in, INT_SHOP
+78 = shop_lookA, INT_SHOP
+79 = shop_lookB, INT_SHOP
+80 = shop_loop, INT_SHOP
+81 = shop_out, INT_SHOP
+82 = shop_pay, INT_SHOP
+83 = shop_shelf, INT_SHOP
+84 = GF_CarSpot, KISSING
+85 = gift_get, KISSING
+86 = gift_give, KISSING
+87 = Grlfrd_Kiss_01, KISSING
+88 = Grlfrd_Kiss_02, KISSING
+89 = Grlfrd_Kiss_03, KISSING
+90 = Playa_Kiss_01, KISSING
+91 = Playa_Kiss_02, KISSING
+92 = Playa_Kiss_03, KISSING
+93 = bng_wndw, misc
+94 = bng_wndw_02, misc
+95 = Case_pickup, misc 
+96 = GRAB_L, misc 
+97 = GRAB_R, misc 
+98 = KAT_Throw_K, misc   
+99 = KAT_Throw_P, misc  
+100 = PASS_Rifle_Ped, misc 
+101 = PASS_Rifle_Ply, misc  
+102 = pickup_box, misc  
+103 = Plunger_01, misc 
+104 = betslp_in, OTB
+105 = betslp_lkabt, OTB
+106 = betslp_loop, OTB 
+107 = betslp_out, OTB 
+108 = betslp_tnk, OTB 
+109 = crm_drgbst_01, POLICE
+110 = plc_drgbst_01, POLICE
+111 = plc_drgbst_02, POLICE
+112 = Van_Crate_L, RYDER
+113 = Van_Crate_R, RYDER
+114 = Van_Lean_L, RYDER
+115 = Van_Lean_R, RYDER
+116 = VAN_PickUp_E, RYDER
+117 = VAN_PickUp_S, RYDER
+118 = Van_Stand, RYDER
+119 = Van_Stand_Crate, RYDER
+120 = Van_Throw, RYDER
+121 = VEND_Drink2_P, VENDING
+122 = VEND_Drink_P, VENDING
+123 = vend_eat1_P, VENDING
+124 = VEND_Eat_P, VENDING
+125 = VEND_Use, VENDING
+126 = VEND_Use_pt2, VENDING
+127 = play_guitar_1, MMR
+128 = play_guitar_2, MMR
+129 = medic1, OZ
+130 = LB, OZ
+131 = db2, OZ
+132 = terr1, OZ
+133 = terr2, OZ
+134 = fruit, urbanize
+135 = pss_hand_1, urbanize
+136 = pss_hand_2, urbanize
+137 = dig_1, urbanize
+138 = loot_1, urbanize
+139 = watering_1, urbanize
+140 = lifeguard_1, urbanize
+141 = farm_2, urbanize
+142 = wind_clean, urbanize
+143 = sweep_1, urbanize
+144 = hammer_1, urbanize
+145 = use_hand_1, urbanize
+146 = use_hand_2, urbanize
+147 = use_hand_2b, urbanize
+148 = use_hand_3, urbanize
+149 = plant_seed, urbanize
+150 = handshake_1, urbanize
+151 = farm_3, urbanize
+152 = pick_fruit2, urbanize
+153 = worker, urbanize
+154 = worker2, urbanize
+155 = car_chat, urbanize
+156 = car_chat2, urbanize
+157 = car_fix, urbanize
+158 = kick_mac, urbanize
+159 = use_fax_1, urbanize
+160 = use_fax_2, urbanize
+161 = spraycan_fire, graffiti
+162 = FIN_LegsUp_Loop, finale
+163 = FIN_Hang_Loop, finale
+164 = Use_Switch, MMR
+165 = CAR_close_LHS, ped
+166 = CAR_close_RHS, ped
+167 = VAN_open_backL, mmr
+168 = VAN_open_backR, mmr
+169 = sprcan_full, wreloads
+
+[SEX]
+TOTAL=55
+1 = SEX_1to2_P, SEX
+2 = SEX_1to2_W, SEX
+3 = SEX_1_Cum_P, SEX
+4 = SEX_1_Cum_W, SEX
+5 = SEX_1_Fail_P, SEX
+6 = SEX_1_Fail_W, SEX
+7 = SEX_1_P, SEX
+8 = SEX_1_W, SEX
+9 = SEX_2to3_P, SEX
+10 = SEX_2to3_W, SEX
+11 = SEX_2_Fail_P, SEX
+12 = SEX_2_Fail_W, SEX
+13 = SEX_2_P, SEX
+14 = SEX_2_W, SEX
+15 = SEX_3to1_P, SEX
+16 = SEX_3to1_W, SEX
+17 = SEX_3_Fail_P, SEX
+18 = SEX_3_Fail_W, SEX
+19 = SEX_3_P, SEX
+20 = SEX_3_W, SEX
+21 = SEX_3to1_P, SEX
+22 = Caned_Idle_P, SPANKING
+23 = Caned_Idle_W, SPANKING
+24 = Caned_P, SPANKING
+25 = Caned_W, SPANKING
+26 = Cane_Idle_P, SPANKING
+27 = Cane_Idle_W, SPANKING
+28 = Cane_P, SPANKING
+29 = Cane_W, SPANKING
+30 = SpankedP, SPANKING
+31 = SpankedW, SPANKING
+32 = Spanked_IdleP, SPANKING
+33 = Spanked_IdleW, SPANKING
+34 = SpankingP, SPANKING
+35 = SpankingW, SPANKING
+36 = Spanking_endP, SPANKING
+37 = Spanking_endW, SPANKING
+38 = Spanking_IdleP, SPANKING
+39 = Spanking_IdleW, SPANKING
+40 = SpankSitIdleP, SPANKING
+41 = SpankSitIdleW, SPANKING
+42 = SpankSitP, SPANKING
+43 = SpankSitW, SPANKING
+44 = COUCH_START_W, BLOWJOB
+45 = COUCH_LOOP_W, BLOWJOB
+46 = COUCH_END_W, BLOWJOB
+47 = COUCH_START_P, BLOWJOB
+48 = COUCH_LOOP_P, BLOWJOB
+49 = COUCH_END_P, BLOWJOB
+50 = STAND_START_W, BLOWJOB
+51 = STAND_LOOP_W, BLOWJOB
+52 = STAND_END_W, BLOWJOB
+53 = STAND_START_P, BLOWJOB
+54 = STAND_LOOP_P, BLOWJOB
+55 = STAND_END_P, BLOWJOB
+
+[MOVE]
+TOTAL=45
+1 = CAR_crawloutRHS, ped
+2 = EV_dive, ped
+3 = FALL_skyDive, ped
+4 = EV_step, ped
+5 = getup, ped
+6 = getup_front, ped
+7 = turn_180, ped
+8 = CLO_In, CLOTHES
+9 = CLO_Out, CLOTHES
+10 = CLO_Pose_In, CLOTHES
+11 = CLO_Pose_Out, CLOTHES
+12 = DAM_Dive_Loop, DAM_JUMP
+13 = DAM_Land, DAM_JUMP
+14 = DAM_Launch, DAM_JUMP
+15 = Jump_Roll, DAM_JUMP
+16 = SF_JumpWall, DAM_JUMP
+17 = girl_01, JST_BUISNESS
+18 = Cop_move_FWD, POLICE
+19 = RYD_Die_PT1, RYDER
+20 = RYD_Die_PT2, RYDER
+21 = Van_Fall_L, RYDER
+22 = Van_Fall_R, RYDER
+23 = JMP_Wall1m_180, SWATPD
+24 = swt_breach_01, SWATPD
+25 = swt_breach_02, SWATPD
+26 = swt_breach_03, SWATPD
+27 = swt_vent_01, SWATPD
+28 = swt_vent_02, SWATPD
+29 = swt_vnt_sht_die, SWATPD
+30 = swt_vnt_sht_in, SWATPD
+31 = swt_vnt_sht_loo, SWATPD
+32 = LaFin_Player, SWEET
+33 = LaFin_Sweet, SWEET
+34 = carry_per_1, MMR
+35 = carry_per_2, MMR
+36 = walk_circ_1, urbanize
+37 = walk_circ_2, urbanize
+38 = drunk_loop, urbanize
+39 = panic_circle, urbanize
+40 = CLIMB_idle, ped
+41 = CLIMB_Pull, ped
+42 = CLIMB_Stand, ped
+43 = CLIMB_jump_B, ped
+44 = Run_Dive, misc
+45 = MD_HANG_Loop, MD_CHASE
+
+[CUTS]
+TOTAL=61
+1 = player_01, JST_BUISNESS
+2 = smoke_01, JST_BUISNESS
+3 = cs_1_a1, MMR_CUTS
+4 = cs_1_a2, MMR_CUTS
+5 = cs_2_a1, MMR_CUTS
+6 = cs_2_a2, MMR_CUTS
+7 = cs_2_a3, MMR_CUTS
+8 = cs_2_a4, MMR_CUTS
+9 = cs_2_a5, MMR_CUTS
+10 = cs_3_a1, MMR_CUTS
+11 = cs_3_a2, MMR_CUTS
+12 = cs_3_a3, MMR_CUTS
+13 = cs_3_a4, MMR_CUTS
+14 = cs_3_a5, MMR_CUTS
+15 = cs_4_a1, MMR_CUTS
+16 = cs_4_a2, MMR_CUTS
+17 = cs_5_a1, MMR_CUTS
+18 = cs_5_a2, MMR_CUTS
+19 = cs_6_a1, MMR_CUTS
+20 = cs_6_a2, MMR_CUTS
+21 = cs_7_a1, MMR_CUTS
+22 = cs_7_a2, MMR_CUTS
+23 = cut2, OZ
+24 = cut3, OZ
+25 = cut4, OZ
+26 = cs_8, MMR_CUTS
+27 = cs_9, MMR_CUTS
+28 = cs_10, MMR_CUTS
+29 = cs_11, MMR_CUTS
+30 = cs_12, MMR_CUTS
+31 = cs_13, MMR_CUTS
+32 = cs_14, MMR_CUTS
+33 = cs_15, MMR_CUTS
+34 = cs_16, MMR_CUTS
+35 = cs_17, MMR_CUTS
+36 = cs_18, MMR_CUTS
+37 = cs_19, MMR_CUTS
+38 = cs_20, MMR_CUTS
+39 = cs_21, MMR_CUTS
+40 = cs_22, MMR_CUTS
+41 = cs_23, MMR_CUTS
+42 = cs_24, MMR_CUTS
+43 = cs_25, MMR_CUTS
+44 = cs_26, MMR_CUTS
+45 = cs_27, MMR_CUTS
+46 = cs_28, MMR_CUTS
+47 = cs_29, MMR_CUTS
+48 = cs_30, MMR_CUTS
+49 = cs_31, MMR_CUTS
+50 = cs_32, MMR_CUTS
+51 = cs_33, MMR_CUTS
+52 = cs_34, MMR_CUTS
+53 = cs_35, MMR_CUTS
+54 = cs_36, MMR_CUTS
+55 = cs_37, MMR_CUTS
+56 = cs_38, MMR_CUTS
+57 = cs_39, MMR_CUTS
+58 = cs_40, MMR_CUTS
+59 = cs_41, MMR_CUTS
+60 = cs_42, MMR_CUTS
+61 = cs_43, MMR_CUTS
+
+[ATTACK]
+TOTAL=66
+1 = FightA_1, ped
+2 = FightA_2, ped
+3 = FightA_3, ped
+4 = FightA_block, ped
+5 = FightA_M, ped
+6 = FightA_G, ped
+7 = FIGHTIDLE, ped
+8 = Bat_1, BASEBALL
+9 = Bat_2, BASEBALL
+10 = Bat_3, BASEBALL
+11 = Bat_4, BASEBALL
+12 = Bat_block, BASEBALL
+13 = Bat_IDLE, BASEBALL
+14 = Bat_M, BASEBALL
+15 = BAT_PART, BASEBALL
+16 = CSAW_1, CHAINSAW
+17 = CSAW_2, CHAINSAW
+18 = CSAW_3, CHAINSAW
+19 = CSAW_G, CHAINSAW
+20 = csaw_part, CHAINSAW
+21 = IDLE_csaw, CHAINSAW
+22 = WEAPON_csaw, CHAINSAW
+23 = WEAPON_csawlo, CHAINSAW
+24 = FightB_1, FIGHT_B
+25 = FightB_2, FIGHT_B
+26 = FightB_3, FIGHT_B
+27 = FightB_block, FIGHT_B
+28 = FightB_G, FIGHT_B
+29 = FightB_IDLE, FIGHT_B
+30 = FightB_M, FIGHT_B
+31 = FightC_1, FIGHT_C
+32 = FightC_2, FIGHT_C
+33 = FightC_3, FIGHT_C
+34 = FightC_block, FIGHT_C
+35 = FightC_blocking, FIGHT_C
+36 = FightC_G, FIGHT_C
+37 = FightC_IDLE, FIGHT_C
+38 = FightC_M, FIGHT_C
+39 = FightC_Spar, FIGHT_C
+40 = FightD_1, FIGHT_D
+41 = FightD_2, FIGHT_D
+42 = FightD_3, FIGHT_D
+43 = FightD_block, FIGHT_D
+44 = FightD_G, FIGHT_D
+45 = FightD_IDLE, FIGHT_D
+46 = FightD_M, FIGHT_D
+47 = FightKick, FIGHT_E
+48 = FightKick_B, FIGHT_E
+49 = shake_cara, GANGS        
+50 = shake_carK, GANGS 
+51 = shake_carSH, GANGS 
+52 = bitchslap, misc
+53 = Door_Kick, POLICE
+54 = sword_1, SWORD
+55 = sword_2, SWORD
+56 = sword_3, SWORD
+57 = sword_4, SWORD
+58 = sword_block, SWORD
+59 = sword_IDLE, SWORD
+60 = sword_part, SWORD
+61 = idle_sword, MMR
+62 = 1knife_pla, is_cuts
+63 = 2knife_pla, is_cuts
+64 = Knife_Player, mmr
+65 = Knife_Partial, mmr
+66 = Knife_Idle, mmr
+
+[DEATH]
+TOTAL=237
+1 = crckdeth1, CRACK
+2 = crckdeth2, CRACK
+3 = crckdeth3, CRACK
+4 = crckdeth4, CRACK
+5 = Rail_fall, SWATPD
+6 = Rail_fall_crawl, SWATPD
+7 = death1, deaths
+8 = death2, deaths
+9 = death3, deaths
+10 = death4, deaths
+11 = death5, deaths
+12 = death6, deaths
+13 = death7, deaths
+14 = death8, deaths
+15 = death9, deaths
+16 = death10, deaths
+17 = death11, deaths
+18 = death12, deaths
+19 = death13, deaths
+20 = death14, deaths
+21 = death15, deaths
+22 = death16, deaths
+23 = death17, deaths
+24 = death18, deaths
+25 = death19, deaths
+26 = death20, deaths
+27 = death21, deaths
+28 = death22, deaths
+29 = death23, deaths
+30 = KD_left, ped
+31 = KD_right, ped
+32 = KO_shot_face, ped  
+33 = KO_shot_front, ped    
+34 = KO_shot_stom, ped 
+35 = KO_skid_back, ped 
+36 = KO_skid_front, ped
+37 = KO_spin_L, ped          
+38 = KO_spin_R, ped
+39 = CAS_G2_GasKO, HEIST9
+40 = F1, death2
+41 = F2, death2
+42 = F3, death2
+43 = F4, death2
+44 = F5, death2
+45 = F6, death2
+46 = F7, death2
+47 = F8, death2
+48 = F9, death2
+49 = F10, death2
+50 = F11, death2
+51 = F12, death2
+52 = F13, death2
+53 = F14, death2
+54 = F15, death2
+55 = F16, death2
+56 = F17, death2
+57 = F18, death2
+58 = F19, death2
+59 = F20, death2
+60 = F21, death2
+61 = F22, death2
+62 = F23, death2
+63 = F24, death2
+64 = F25, death2
+65 = F26, death2
+66 = F27, death2
+67 = F28, death2
+68 = F29, death2
+69 = F30, death2
+70 = F31, death2
+71 = F32, death2
+72 = F33, death2
+73 = F34, death2
+74 = F35, death2
+75 = F36, death2
+76 = F37, death2
+77 = F38, death2
+78 = F39, death2
+79 = F40, death2
+80 = F41, death2
+81 = F42, death2
+82 = F43, death2
+83 = F44, death2
+84 = F45, death2
+85 = F46, death2
+86 = F47, death2
+87 = F48, death2
+88 = F49, death2
+89 = F50, death2
+90 = F51, death2
+91 = F52, death2
+92 = F53, death2
+93 = F54, death2
+94 = SF1, death2
+95 = SF2, death2
+96 = SF3, death2
+97 = SF4, death2
+98 = SF5, death2
+99 = SF6, death2
+100 = SF7, death2
+101 = SF8, death2
+102 = SF9, death2
+103 = SF10, death2
+104 = SF11, death2
+105 = SF12, death2
+106 = SF13, death2
+107 = SF14, death2
+108 = SF15, death2
+109 = SF16, death2
+110 = SF17, death2
+111 = SF18, death2
+112 = SF19, death2
+113 = SF20, death2
+114 = SF21, death2
+115 = SF22, death2
+116 = SF23, death2
+117 = SF24, death2
+118 = SF25, death2
+119 = SF26, death2
+120 = SF27, death2
+121 = SF28, death2
+122 = SF29, death2
+123 = SF30, death2
+124 = SF31, death2
+125 = SF32, death2
+126 = SF33, death2
+127 = SF34, death2
+128 = SF35, death2
+129 = SF36, death2
+130 = SF37, death2
+131 = SF38, death2
+132 = SF39, death2
+133 = SF40, death2
+134 = SF41, death2
+135 = SF42, death2
+136 = SF43, death2
+137 = SF44, death2
+138 = H1, death2
+139 = H2, death2
+140 = H3, death2
+141 = H4, death2
+142 = H5, death2
+143 = H6, death2
+144 = H7, death2
+145 = H8, death2
+146 = H9, death2
+147 = H10, death2
+148 = H11, death2
+149 = H12, death2
+150 = H13, death2
+151 = HF1, death2
+152 = HF2, death2
+153 = HF3, death2
+154 = HF4, death2
+155 = HF5, death2
+156 = HF6, death2
+157 = HF7, death2
+158 = HF8, death2
+159 = HF9, death2
+160 = HF10, death2
+161 = HF11, death2
+162 = HF12, death2
+163 = HF13, death2
+164 = HF14, death2
+165 = HF15, death2
+166 = B1, death2
+167 = B2, death2
+168 = B3, death2
+169 = B4, death2
+170 = B5, death2
+171 = B6, death2
+172 = B7, death2
+173 = B8, death2
+174 = B9, death2
+175 = B10, death2
+176 = B11, death2
+177 = B12, death2
+178 = B13, death2
+179 = B14, death2
+180 = B15, death2
+181 = B16, death2
+182 = B17, death2
+183 = B18, death2
+184 = B19, death2
+185 = B20, death2
+186 = B21, death2
+187 = HB1, death2
+188 = HB2, death2
+189 = HB3, death2
+190 = HB4, death2
+191 = HB5, death2
+192 = HB6, death2
+193 = HB7, death2
+194 = HB8, death2
+195 = HB9, death2
+196 = HB10, death2
+197 = R1, death2
+198 = R2, death2
+199 = R3, death2
+200 = R4, death2
+201 = R5, death2
+202 = R6, death2
+203 = R7, death2
+204 = R8, death2
+205 = R9, death2
+206 = R10, death2
+207 = R1, death2
+208 = R2, death2
+209 = R3, death2
+210 = R4, death2
+211 = R5, death2
+212 = R6, death2
+213 = R7, death2
+214 = R8, death2
+215 = R9, death2
+216 = R10, death2
+217 = R11, death2
+218 = R12, death2
+219 = R13, death2
+220 = L1, death2
+221 = L2, death2
+222 = L3, death2
+223 = L4, death2
+224 = L5, death2
+225 = L6, death2
+226 = L7, death2
+227 = L8, death2
+228 = L9, death2
+229 = L10, death2
+230 = L11, death2
+231 = L12, death2
+232 = L13, death2
+233 = 1knife_ped, is_cuts
+234 = 1knife_die, is_cuts
+235 = 2knife_ped, is_cuts
+236 = 2knife_die, is_cuts
+237 = Knife_Ped_Die, mmr
+
+carmodlist
+
+[LIST] 
+SCROLL=12
+1 = 1025 Off Road Wheel
+2 = 1073 Shadow
+3 = 1074 Mega
+4 = 1075 Rimshine
+5 = 1076 Wires
+6 = 1077 Classic
+7 = 1078 Twist
+8 = 1079 Cutter
+9 = 1080 Switch
+10 = 1081 Grove
+11 = 1082 Import
+12 = 1083 Dollar
+13 = 1084 Trance
+14 = 1085 Atomic      
+15 = 1096 Ahab
+16 = 1097 Virtual
+17 = 1098 Access
+
+[WHEEL_PRICE]
+wheel_sr1 = 1030
+wheel_sr2 = 980
+wheel_lr1 = 1620
+wheel_lr2 = 1560
+wheel_gn1 = 820
+wheel_gn2 = 770
+wheel_sr3 = 1030
+wheel_sr4 = 1230
+wheel_sr5 = 900
+wheel_sr6 = 1100
+wheel_lr3 = 1200
+wheel_lr4 = 1560
+wheel_lr5 = 1350
+wheel_or1 = 1000
+wheel_gn3 = 1000
+wheel_gn4 = 620
+wheel_gn5 = 1140
+
+[CARMOD_GXT]
+1005 = BMBLBS
+1004 = BMBMBS
+1012 = BMBLCS
+1011 = BMBMCS
+1143 = BMBOBV
+1145 = BMBSBV
+1020 = BMBLE
+1021 = BMBME
+1022 = BMBSE
+1019 = BMBTE
+1018 = BMBUE
+1013 = BMBRSL
+1024 = BMBSSL
+1008 = BMBLN
+1009 = BMBSM
+1010 = BMBTN
+1006 = BMBRS
+1001 = BMMABBS
+1014 = BMLARBS
+1002 = BMMARBS
+1023 = BMMBS
+1015 = BMLRS
+1016 = BMMRS
+1003 = BMMABS
+1000 = BMMARS
+1007 = BMWNG1
+1017 = BMWNG2
+1046 = FLSAE
+1045 = FLSCE
+1153 = FLSAFF
+1152 = FLSCFF
+1150 = FLSARF
+1151 = FLSCRF
+1054 = FLSARV
+1053 = FLSCRV
+1049 = FLSAS
+1050 = FLSCS
+1047 = FLSASI
+1048 = FLSCSI
+1065 = JSTAE
+1066 = JSTCE
+1160 = JSTAFF
+1173 = JSTCFF
+1159 = JSTARF
+1161 = JSTCRF
+1067 = JSTARV
+1068 = JSTCRV
+1162 = JSTAS
+1158 = JSTCS
+1069 = JSTASI
+1070 = JSTCSI
+1034 = LGDAE
+1037 = LGDCE
+1171 = LGDAFF
+1172 = LGDCFF
+1149 = LGDARF
+1148 = LGDCRF  
+1038 = LGDARV
+1035 = LGDCRV
+1147 = LGDAS
+1146 = LGDCS
+1036 = LGDASI
+1039 = LGDCSI
+1064 = STRAE
+1059 = STRCE
+1155 = STRAFF
+1157 = STRCFF
+1154 = STRARF
+1156 = STRCRF
+1055 = STRARV
+1061 = STRCRV
+1058 = STRAS
+1060 = STRCS
+1056 = STRASI 
+1057 = SRTCSI
+1028 = SULAE
+1029 = SULCE
+1169 = SULAFF
+1170 = SULCFF 
+1141 = SULARF
+1140 = SULCRF
+1032 = SULARV
+1033 = SULCRV
+1138 = SULAS
+1139 = SULCS
+1026 = SULASI
+1031 = SULCSI
+1092 = URAAE
+1089 = URACE
+1166 = URAAFF
+1165 = URACFF
+1168 = URAARF
+1167 = URACRF
+1088 = URAARV
+1091 = URACRV
+1164 = URAAUB
+1163 = URACUB
+1090 = URAASI
+1093 = URACSI
+1128 = BLDVH
+1103 = BLDCR
+1184 = BLDRF1
+1183 = BLDRF2
+1182 = BLDFF1 
+1181 = BLDFF2
+1104 = BLDE1
+1105 = BLDE2  
+1108 = BLDCS  
+1126 = REME1
+1127 = REME2
+1179 = REMFF1
+1185 = REMFF2
+1180 = REMRF1   
+1178 = REMRF2
+1122 = REMCA
+1106 = REMCA2
+1100 = REMCG
+1123 = REMCB
+1125 = REMCL
+1130 = SAVHA
+1131 = SAVST
+1189 = SAVFF1
+1188 = SAVFF2
+1187 = SAVRF1
+1186 = SAVRF2
+1129 = SAVEX1
+1132 = SAVEX2
+1133 = SAVCS
+1044 = BRDEXH1
+1043 = BRDEXH2
+1174 = BRDFBM1
+1175 = BRDFBM2
+1176 = BRDRBM1
+1177 = BRDRBM2
+1042 = BRDWNG1
+1113 = SLAE1
+1114 = SLAE2
+1117 = SLAFF   
+1115 = SLAFB1
+1116 = SLAFB2
+1109 = SLARB1
+1110 = SLARB2
+1118 = SLACT
+1119 = SLAWC
+1136 = TOREX1
+1135 = TOREX2
+1191 = TORFB1
+1190 = TORFB2
+1192 = TORRB1
+1193 = TORRB2
+1134 = TORWNG
+1086 = STEREO
+1087 = HYDRAU
+
+[CARMOD_Price]
+BMBLBS	=  150
+BMBMBS	=  100
+BMBLCS	=  250
+BMBMCS	=  220
+BMBOBV	=  150
+BMBSBV	=  100
+BMBLE	=  250
+BMBME	=  200
+BMBSE	=  150
+BMBTE	=  300
+BMBUE	=  350
+BMBRSL	=  100
+BMBSSL	=  50
+BMBLN	=  500
+BMBSM	=  200
+BMBTN	=  1000
+BMBRS	=  80
+BMMABBS	=  550
+BMLARBS	=  400
+BMMARBS	=  200
+BMMBS	=  350
+BMLRS	=  500
+BMMRS	=  200
+BMMABS	=  250
+BMMARS	=  400
+BMWNG1	=  500
+BMWNG2	=  500
+FLSAE	=  710
+FLSCE	=  510
+FLSAFF	=  1200
+FLSCFF	=  910
+FLSARF	=  1090
+FLSCRF	=  840
+FLSARV	=  210
+FLSCRV	=  130
+FLSAS	=  810
+FLSCS	=  620
+FLSASI	=  670
+FLSCSI	=  530
+JSTAE	=  850
+JSTCE	=  750
+JSTAFF	=  1050
+JSTCFF	=  950
+JSTARF	=  1050
+JSTCRF	=  950
+JSTARV	=  250
+JSTCRV	=  200
+JSTAS	=  650
+JSTCS	=  550
+JSTASI	=  550
+JSTCSI	=  450
+LGDAE	=  790
+LGDCE	=  690
+LGDAFF	=  990
+LGDCFF	=  900
+LGDARF	=  1000
+LGDCRF  =  890
+LGDARV	=  190
+LGDCRV	=  150
+LGDAS	=  600
+LGDCS	=  490
+LGDASI	=  500
+LGDCSI	=  390
+STRAE	=  830
+STRCE	=  720
+STRAFF	=  1030
+STRCFF	=  930
+STRARF	=  1030
+STRCRF	=  920
+STRARV	=  230
+STRCRV	=  180
+STRAS	=  620
+STRCS	=  530
+STRASI 	=  520
+SRTCSI	=  430
+SULAE	=  770
+SULCE	=  680
+SULAFF	=  970
+SULCFF  =  880
+SULARF	=  980
+SULCRF	=  870
+SULARV	=  170
+SULCRV	=  120
+SULAS	=  580
+SULCS	=  470
+SULASI	=  480
+SULCSI	=  370
+URAAE	=  750
+URACE	=  650
+URAAFF	=  950
+URACFF	=  850
+URAARF	=  950
+URACRF	=  850
+URAARV	=  150
+URACRV	=  100
+URAAUB	=  550
+URACUB	=  450
+URAASI	=  450
+URACSI	=  350
+BLDVH	=  3340
+BLDCR	=  3250
+BLDRF1	=  2150
+BLDRF2	=  2040
+BLDFF1 	=  2130
+BLDFF2	=  2050
+BLDE1	=  1610
+BLDE2   =  1540
+BLDCS   =  780
+REME1	=  3340
+REME2	=  3250
+REMFF1	=  2150
+REMFF2	=  2040
+REMRF1	=  2130
+REMRF2	=  2050
+REMCA	=  780
+REMCA2	=  780
+REMCG	=  940
+REMCB	=  860
+REMCL	=  1120
+SAVHA	=  3380
+SAVST	=  3290
+SAVFF1	=  2200
+SAVFF2	=  2080
+SAVRF1	=  2175
+SAVRF2	=  2095
+SAVEX1	=  1650
+SAVEX2	=  1590
+SAVCS	=  830
+BRDEXH1	=  500
+BRDEXH2	=  500
+BRDFBM1	=  1000
+BRDFBM2	=  900
+BRDRBM1	=  1000
+BRDRBM2	=  900
+BRDWNG1	=  1000
+SLAE1	=  3340
+SLAE2	=  3250
+SLAFF	=  2040
+SLAFB1	=  2130
+SLAFB2	=  2050
+SLARB1	=  1610
+SLARB2	=  1540
+SLACT	=  780
+SLAWC	=  940
+TOREX1	=  1000
+TOREX2	=  1500
+TORFB1	=  1040
+TORFB2	=  1200
+TORRB1	=  940
+TORRB2	=  1100
+TORWNG	=  800
+SRW1	=  1030
+SRW2	=  980
+LRDW1   =  1620
+LRDW2	=  1560
+GENWH1	=  820
+GENWH2	=  770
+SRW3	=  1030
+SRW4	=  1230
+SRW5	=  900
+SRW6	=  1100
+LRDW3	=  1200
+LRDW4	=  1560
+LRDW5	=  1350
+GENWH6	=  1000
+GENWH3	=  1000
+GENWH4	=  620
+GENWH5	=  1140
+STEREO	=  100
+HYDRAU	=  1500
+
+
+custlist
+[LIST]   
+SCROLL=5
+TOTAL=148
+1 = bcesa4w
+2 = bcesa5w
+3 = bcesar2
+4 = bcesar4
+5 = bcesar5
+6 = bcras1
+7 = bcras2
+8 = bhill1
+9 = bhill2
+10 = bhill3a
+11 = bhill3b
+12 = bhill3c
+13 = bhill5a
+14 = bhill5b
+15 = cas6b_1
+16 = cas6b_2
+17 = cas_11a
+18 = cas_1a
+19 = cas_2
+20 = cas_3
+21 = cas_4a
+22 = cas_4b
+23 = cas_4c
+24 = cas_5a
+25 = cas_6a
+26 = cas_7b
+27 = cas_9a1
+28 = cas_9a2
+29 = cat_1
+30 = cat_2
+31 = cat_3
+32 = cat_4
+33 = cesar1a
+34 = crash1a
+35 = crash3a
+36 = crashv1
+37 = CRASV2A
+38 = CRASV2b
+39 = cuttest
+40 = d10_alt
+41 = d8_alt
+42 = date1a
+43 = date1b
+44 = date2a
+45 = date2b
+46 = date3a
+47 = date3b
+48 = date4a
+49 = date4b
+50 = date5a
+51 = date5b
+52 = date6a
+53 = date6b
+54 = desert1
+55 = desert2
+56 = desert3
+57 = desert4
+58 = desert6
+59 = desert8
+60 = desert9
+61 = des_10a
+62 = des_10b
+63 = doc_2
+64 = epilog
+65 = farl_2a
+66 = farl_3a
+67 = farl_3b
+68 = farl_4a
+69 = farl_5a
+70 = final1a
+71 = final2a
+72 = final2b
+73 = garag1b
+74 = garag1c
+75 = garag3a
+76 = grove1a
+77 = grove1b
+78 = grove1c
+79 = grove2
+80 = heist1a
+81 = heist2a
+82 = heist4a
+83 = heist5a
+84 = heist6a
+85 = heist8a
+86 = intro1a
+87 = intro1b
+88 = intro2a
+89 = prolog1
+90 = prolog3
+91 = riot4e1
+92 = riot4e2
+93 = riot_1a
+94 = riot_1b
+95 = riot_2
+96 = riot_4a
+97 = riot_4b
+98 = riot_4c
+99 = riot_4d
+100 = ryder1a
+101 = ryder2a
+102 = ryder3a
+103 = scrash1
+104 = scrash2
+105 = smoke1a
+106 = smoke1b
+107 = smoke2a
+108 = smoke2b
+109 = smoke3a
+110 = smoke4a
+111 = steal_1
+112 = steal_2
+113 = steal_4
+114 = steal_5
+115 = strap1a
+116 = strap2a
+117 = strap3a
+118 = strap4a
+119 = strp4b1
+120 = strp4b2
+121 = sweet1a
+122 = sweet1b
+123 = sweet1c
+124 = sweet2a
+125 = sweet2b
+126 = sweet3a
+127 = sweet3b
+128 = sweet4a
+129 = sweet5a
+130 = sweet6a
+131 = sweet6b
+132 = sweet7a
+133 = synd_2a
+134 = synd_2b
+135 = synd_3a
+136 = synd_4a
+137 = synd_4b
+138 = synd_7
+139 = truth_1
+140 = truth_2
+141 = w2_alt
+142 = woozi1a
+143 = woozi1b
+144 = woozie2
+145 = woozie4
+146 = zero_1
+147 = zero_2
+148 = zero_4
+
+[bcesa4w]   
+int=0
+GXT_table = BCESAR4    
+
+[bcesa5w]  
+int=0  
+GXT_table = BCESAR4 
+
+[bcesar2]                     
+int=2 
+GXT_table = BCESAR2 
+
+[bcesar4]     
+int=0  
+GXT_table = BCESAR4 
+
+[bcesar5]     
+int=0  
+GXT_table = BCESAR4 
+
+[bcras1]    
+int=0     
+GXT_table = BCRASH1 
+                 
+[bcras2]   
+int=0     
+GXT_table = BCRASH1 
+
+[bhill1]                 
+int=11 
+GXT_table = MAN_1 
+
+[bhill2]            
+GXT_table = MAN_1 
+int=5 
+
+[bhill3a]     
+weather=1 
+int=5 
+GXT_table = MAN_3 
+
+[bhill3b]     
+int=0     
+GXT_table = MAN_3 
+
+[bhill3c]         
+int=0     
+GXT_table = MAN_3 
+        
+[bhill5a]                           
+int=5 
+GXT_table = MAN_5   
+
+[bhill5b]                      
+int=3 
+GXT_table = MAN_5 
+
+[cas6b_1]                            
+int=1 
+GXT_table = CASINO6 
+
+[cas6b_2]   
+int=1 
+GXT_table = CASINO6 
+
+[cas_11a]   
+int=2                      
+GXT_table = CASIN10    
+
+[cas_1a]       
+int=11            
+GXT_table = CASINO1  
+
+[cas_2]     
+int=11              
+GXT_table = CASINO2  
+                                 
+[cas_3]    
+int=11                
+GXT_table = CASINO3 
+
+[cas_4a]        
+int=0     
+weather=10 
+GXT_table = CASINO4 
+
+[cas_4b]     
+int=0     
+GXT_table = CASINO4 
+weather=18 
+
+[cas_4c]     
+int=2    
+GXT_table = CASINO4 
+              
+[cas_5a]          
+int=2 
+GXT_table = CASINO5  
+
+[cas_6a]                                            
+int=2 
+GXT_table = CASINO6  
+
+[cas_7b] 
+GXT_table = CASINO7 
+int=11 
+
+[cas_9a1]  
+int=2          
+GXT_table = CASINO9
+
+[cas_9a2]   
+int=2          
+GXT_table = CASINO9
+
+[cat_1] 
+int=1            
+GXT_table = CAT 
+
+[cat_2]    
+int=0    
+GXT_table = CAT 
+
+[cat_3]   
+int=0    
+GXT_table = CAT 
+
+[cat_4]      
+int=0    
+GXT_table = CAT 
+
+[cesar1a]  
+int=0     
+GXT_table = CESAR1 
+
+[crash1a]          
+int=17 
+GXT_table = CRASH1 
+
+[crash3a]
+int=0         
+GXT_table = CRASH3 
+
+[crashv1]       
+int=0     
+weather=11               
+GXT_table = VCR1 
+
+[CRASV2A]        
+int=0    
+weather=17   
+GXT_table = VCR2 
+
+[CRASV2b]   
+int=0    
+weather=17   
+GXT_table = VCR2 
+
+[cuttest]  
+int=0   
+
+[d10_alt]     
+int=0   
+GXT_table = DSERT10 
+weather=17 
+
+[d8_alt]  
+int=0 
+GXT_table = DSERT8 
+weather=18   
+
+[date1a]        
+int=10   
+
+[date1b]      
+int=5   
+
+[date2a]  
+int=9   
+
+[date2b] 
+int=9   
+
+[date3a] 
+int=4   
+
+[date3b]   
+int=4   
+
+[date4a]  
+int=5   
+
+[date4b]
+int=5   
+         
+[date5a] 
+int=6   
+
+[date5b]  
+int=6   
+
+[date6a]  
+int=18   
+
+[date6b]  
+int=17   
+
+[desert1]      
+int=0 
+weather=14 
+GXT_table = TORENO1 
+
+[desert2]        
+int=0                    
+weather=11 
+GXT_table = TORENO2    
+
+[desert3]  
+int=0                
+GXT_table = DSERT3 
+         
+[desert4]            
+int=0     
+GXT_table = DSERT4 
+weather=17 
+
+[desert6]      
+int=0    
+GXT_table = DSERT6 
+
+[desert8]                        
+int=0  
+weather=18   
+GXT_table = DSERT8 
+
+[desert9]              
+int=0  
+GXT_table = DSERT9 
+
+[des_10a]                    
+int=0                   
+weather=17 
+GXT_table = DSERT10 
+
+[des_10b]                   
+int=0                     
+weather=17 
+GXT_table = DSERT10 
+
+[doc_2]                    
+int=0  
+GXT_table = DOC2 
+
+[epilog]                          
+int=3 
+GXT_table = RIOT4 
+
+[farl_2a]  
+int=3 
+GXT_table = FARLIE2 
+
+[farl_3a]                        
+int=3   
+GXT_table = FARLIE3 
+
+[farl_3b]           
+int=0  
+GXT_table = FARLIE3 
+
+[farl_4a]                          
+int=1 
+GXT_table = FARLIE4 
+
+[farl_5a]                         
+int=1 
+GXT_table = FARLIE5   
+
+[final1a]  
+int=1     
+GXT_table = LAFIN1 
+
+[final2a]   
+GXT_table = LAFIN2 
+int=1 
+
+[final2b]   
+GXT_table = LAFIN2  
+int=0 
+
+[garag1b]   
+int=1 
+GXT_table = GARAGE1   
+
+[garag1c]   
+int=1 
+GXT_table = GARAGE1   
+
+[garag3a]  
+int=1             
+GXT_table = GARAGE2 
+
+[grove1a]                        
+int=3 
+GXT_table = GROVE1   
+            
+[grove1b]       
+int=3 
+GXT_table = GROVE1   
+
+[grove1c]         
+int=2 
+GXT_table = GROVE1   
+
+[grove2]   
+int=1    
+GXT_table = GROVE2 
+
+[heist1a]   
+int=10 
+GXT_table = HEIST1 
+
+[heist2a] 
+int=10 
+GXT_table = HEIST3 
+
+[heist4a]  
+GXT_table = HEIST2   
+int=10 
+
+[heist5a]                        
+int=10 
+GXT_table = HEIST4 
+
+[heist6a]        
+int=10 
+GXT_table = HEIST5 
+
+[heist8a]                          
+int=0 
+GXT_table = HEIST9    
+
+[intro1a]  
+int=3          
+GXT_table = INTRO1 
+
+[intro1b]   
+int=0          
+GXT_table = INTRO1 
+
+[intro2a]                         
+int=2 
+GXT_table = INTRO2  
+
+[prolog1]                       
+int=14 
+GXT_table = INTRO1  
+
+[prolog3]           
+int=0  
+weather=14   
+GXT_table = INTRO1 
+
+[riot4e1]   
+int=0     
+GXT_table = RIOT4 
+
+[riot4e2] 
+int=0  
+GXT_table = RIOT4 
+
+[riot_1a]   
+int=5       
+GXT_table = RIOT1 
+
+[riot_1b]  
+int=5       
+GXT_table = RIOT1 
+
+[riot_2]                          
+int=1 
+GXT_table = RIOT2
+         
+[riot_4a] 
+int=1                 
+GXT_table = RIOT4 
+
+[riot_4b]  
+int=0                 
+GXT_table = RIOT4 
+
+[riot_4c]  
+int=2                 
+GXT_table = RIOT4 
+
+[riot_4d]  
+int=2                 
+GXT_table = RIOT4 
+
+[ryder1a]      
+int=0   
+GXT_table = RYDER1
+
+[ryder2a]     
+int=0   
+GXT_table = RYDER2 
+
+[ryder3a]     
+int=2   
+GXT_table = RYDER3 
+
+[scrash1] 
+GXT_table = VALET1      
+int=1 
+
+[scrash2]          
+int=1 
+GXT_table = SCRASH2 
+
+[smoke1a]        
+int=0 
+GXT_table = SMOKE1 
+
+[smoke1b]    
+int=0 
+GXT_table = SMOKE1 
+
+[smoke2a] 
+int=0     
+GXT_table = SMOKE2 
+
+[smoke2b]  
+int=0     
+GXT_table = SMOKE2 
+
+[smoke3a]      
+int=0    
+GXT_table = SMOKE3 
+            
+[smoke4a]        
+int=0    
+GXT_table = SMOKE4 
+
+[steal_1]   
+weather=5 
+int=1      
+GXT_table = STEAL1 
+
+[steal_2]     
+int=1   
+GXT_table = STEAL2 
+
+[steal_4]  
+GXT_table = STEAL4 
+int=1 
+
+[steal_5]     
+int=1 
+GXT_table = STEAL5 
+
+[strap1a]       
+int=0    
+GXT_table = STRAP1 
+
+[strap2a]       
+int=10    
+GXT_table = STRAP2 
+
+[strap3a]   
+int=10    
+GXT_table = STRAP3 
+
+[strap4a]          
+int=0    
+GXT_table = STRAP4 
+
+[strp4b1]      
+int=3    
+GXT_table = STRAP4 
+
+[strp4b2]  
+int=0    
+GXT_table = STRAP4 
+
+[sweet1a]
+int=0    
+GXT_table = SWEET1 
+
+[sweet1b] 
+int=1 
+GXT_table = SWEET1 
+
+[sweet1c]  
+int=3 
+GXT_table = SWEET1 
+
+[sweet2a]   
+int=0     
+GXT_table = SWEET3 
+
+[sweet2b]    
+int=0     
+GXT_table = SWEET3 
+              
+[sweet3a]  
+int=1     
+GXT_table = SWEET2 
+
+[sweet3b]
+int=0     
+GXT_table = SWEET2 
+
+[sweet4a]    
+int=0     
+GXT_table = SWEET4 
+
+[sweet5a]     
+int=1                                   
+GXT_table = SWEET5 
+
+[sweet6a]     
+int=1     
+GXT_table = SWEET6 
+
+[sweet6b]   
+int=0     
+GXT_table = SWEET6 
+
+[sweet7a]   
+weather=1
+int=0  
+GXT_table = SWEET7 
+
+[synd_2a] 
+int=1 
+GXT_table = SYN2 
+
+[synd_2b]  
+int=3 
+GXT_table = SYN2
+
+[synd_3a]      
+int=0 
+GXT_table = SYN3
+
+[synd_4a]       
+int=1 
+GXT_table = SYN4
+
+[synd_4b]       
+int=3 
+GXT_table = SYN4    
+
+[synd_7]    
+int=1 
+GXT_table = SYN7     
+
+[truth_1]            
+int=12 
+GXT_table = TRU1 
+
+[truth_2]   
+int=0  
+GXT_table = TRU2 
+                                   
+[w2_alt]             
+int=1 
+GXT_table = WUZI2      
+
+[woozi1a]   
+int=1 
+GXT_table = WUZI1 
+
+[woozi1b]    
+int=1 
+GXT_table = WUZI1 
+
+[woozie2]     
+GXT_table = WUZI2            
+int=1 
+
+[woozie4]                               
+int=1 
+GXT_table = WUZI4 
+
+[zero_1]      
+int=6 
+GXT_table = ZERO1 
+
+[zero_2]            
+weather=5 
+int=6                 
+GXT_table = ZERO2 
+
+[zero_4]     
+int=6                 
+GXT_table = ZERO4
+
+
+garagelist
+
+
+[LIST]
+SCROLL=1
+Total=49
+1 = -2110.1665 -2462.9829 30.6797, amumis
+2 = 322.4053 -1765.307 4.5885, beacsv
+3 = 1977.2638 2162.4556 11.0703, blob1    
+4 = 2006.1923 2310.3735 10.8203, blob2    
+5 = 1413.1849 1902.3514 11.4609, blob6    
+6 = 1273.8005 2529.5469 10.8203, blob69
+7 = 934.2774 2011.6138 11.4609, blob7    
+8 = 1041.4994 -1019.4897 32.1075, bodLAwN
+9 = -2109.0093 -16.2695 35.3203, brgSFSE
+10 = 786.1874 -488.8937 17.3439, burbdo2
+11 = 2231.3003 173.3105 27.4797, burbdoo
+12 = 2741.0764 -2009.4172 13.5547, burg_lk
+13 = 1698.9391 -2083.2771 13.5469, carlas1
+14 = 1354.9806 -630.8691 109.1328, CEsafe1
+15 = 720.0144 -456.0258 16.3359, CEspray
+16 = 2505.6511 -1695.2256 13.5581, cjsafe
+17 = -360.9718 1199.0863 19.7422, cn2gar1
+18 = 436.5194 2546.5193 16.1797, cn2gar2
+19 = -100.0305 1118.1428 19.7417, CN2spry
+20 = -1420.5941 2581.9146 55.8433, CNspray
+21 = 404.7327 2458.9497 16.5, dhangar
+22 = 1876.7728 -2092.4451 13.5181, duf_LAS
+23 = -2167.4849 654.8587 52.3824, fdorsfe
+24 = -393.2115 2227.3301 42.4258, ghostdr
+25 = -2026.7168 122.5476 29.1979, hbgdSFS
+26 = 1528.9331 -1653.3611 5.8906, imp_la
+27 = -1638.5066 653.9783 -5.2422, imp_sf
+28 = 2228.082 2458.8818 -7.4531, imp_lv
+29 = 1850.2826 -1856.2109 13.3828, lasbomb
+30 = -2052.636 154.4376 28.8508, LCKSfse
+31 = -2722.9109 217.1751 4.4844, mds1SFS
+32 = -1935.8358 247.39 34.4609, mdsSFSe
+33 = -1786.9653 1215.2791 25.125, michdr
+34 = 1803.3978 -2146.9221 13.5469, modgLAS
+35 = 1643.5715 -1515.8069 13.5671, mul_lan
+36 = 2644.9412 -2043.7914 13.6269, modlast
+37 = -2105.3635 892.3021 76.7031, sav1sfe
+38 = -2695.8174 826.323 49.9892, sav1sfw
+39 = 2064.1118 -1831.3669 13.5469, sprLAe
+40 = 1586.118 1199.3876 10.8125, vgshngr
+41 = 487.4885 -1741.308 11.1349, spLAw2
+42 = -1904.8575 285.7748 41.0469, sprsfse
+43 = -2426.0242 1020.9199 50.3977, sprsfw
+44 = -2447.5242 -122.6882 26.1383, svgsfs1
+45 = -2730.5742 66.9838 4.3359, tbon
+46 = 2394.01 1490.8726 10.8203, timy1
+47 = 2386.5156 1050.0375 10.8203, vEcmo
+48 = 2453.6025 697.4729 11.4609, vEsvgrg
+49 = 2609.5171 1449.3149 10.8203, vgElock
+
+[CORNER]
+amumis  = -2110.9163 -2457.6008 30.625, -2109.8813 -2467.4585 30.625
+beacsv  = 326.3544 -1769.3129 4.7474, 318.6101 -1759.3759 4.4928
+blob1   = 1967.7031 2157.1926 10.8203, 1983.3408 2167.1045 9.8462
+blob2   = 2002.5819 2302.9216 10.8203, 2010.6361 2318.2698 10.8203
+blob6   = 1408.316 1905.8927 11.3666, 1419.1483 1899.0522 11.4609
+blob69  = 1279.2249 2523.5117 10.8203, 1268.567 2536.2263 10.8265
+blob7   = 929.1045 2015.2948 11.3666, 940.1172 2008.8624 11.4609
+bodLAwN = 1037.608 -1026.3817 32.1016, 1045.5242 -1004.2784 31.3397
+brgSFSE = -2102.1233 -20.9379 35.3203, -2119.833 -10.9468 35.3203
+burbdo2 = 782.7476 -493.1924 17.3359, 789.4523 -484.7525 17.3359
+burbdoo = 2226.906 168.3526 27.48, 2234.9124 176.5166 26.6867
+burg_lk = 2738.5146 -2004.0913 13.5472, 2744.1418 -2013.5242 12.9874
+carlas1 = 1694.7573 -2089.1965 13.5469, 1703.1107 -2077.4036 13.3047
+CEsafe1 = 1356.0752 -625.2884 109.1328, 1352.4054 -637.5624 109.1288
+CEspray = 715.2938 -463.0483 16.3437, 724.6852 -446.1698 16.3359
+cjsafe  = 2509.2905 -1690.5463 13.5378, 2501.3308 -1700.5498 13.6773
+cn2gar1 = -368.2488 1193.8905 19.5327, -355.8885 1203.5139 19.7422
+cn2gar2 = 429.5492 2553.6694 16.1651, 443.3941 2539.5432 16.2282
+CN2spry = -104.8783 1111.0883 19.7422, -95.5495 1126.119 18.9349
+CNspray = -1425.4847 2591.6211 55.823, -1415.7808 2575.6843 56.0198
+dhangar = 431.5587 2476.4443 16.5073, 378.0735 2432.3738 16.4844
+duf_LAS = 1873.3857 -2096.8633 13.5243, 1881.6082 -2086.6304 15.0234
+fdorsfe = -2161.1714 649.2642 52.3672, -2172.1289 659.9029 49.4375
+ghostdr = -388.4046 2225.2507 42.4297, -399.6402 2229.4182 42.4297
+hbgdSFS = -2032.3239 129.954 28.8437, -2020.7948 117.9899 27.863
+imp_la  = 1523.7278 -1657.7979 6.3805, 1556.8093 -1633.0703 6.3461
+imp_sf  = -1618.3242 672.5732 -4.9062, -1650.687 646.5088 -6.2013
+imp_lv  = 2236.0398 2447.2712 -7.4531, 2217.6033 2467.9077 -6.7344
+lasbomb = 1842.8368 -1852.623 13.3828, 1857.3212 -1860.0714 13.5817
+LCKSfse = -2057.9458 150.0589 28.8437, -2038.3021 183.375 29.0255
+mds1SFS = -2715.8606 223.1342 4.3281, -2735.7302 202.4317 3.9228
+mdsSFSe = -1941.3601 237.8726 34.2032, -1922.7976 256.5747 34.567
+michdr  = -1791.3956 1208.8734 25.125, -1782.4628 1221.6669 24.3103
+modgLAS = 1798.2632 -2142.3582 13.5469, 1810.2211 -2150.9451 13.5469
+mul_lan = 1639.5991 -1520.7798 13.5905, 1647.8684 -1511.6038 13.5504
+modlast = 2649.1575 -2038.7654 13.55, 2640.5212 -2050.5728 15.1283
+sav1sfe = -2109.489 897.5024 76.7065, -2101.209 889.2939 74.5222
+sav1sfw = -2692.5811 820.515 49.9844, -2699.6458 832.4625 50.6729 
+sprLAe  = 2072.0068 -1836.2385 13.5545, 2056.084 -1826.7771 13.3419
+spLAw2  = 492.6063 -1735.4313 11.2478, 482.9723 -1747.3203 10.7443
+sprsfse = -1909.7892 277.2771 41.0469, -1899.8939 292.5555 40.5654
+sprsfw  = -2430.8091 1028.6873 50.3906, -2420.8503 1012.7983 50.6426
+svgsfs1 = -2455.1619 -113.3192 26.0594, -2441.3167 -131.9549 25.4084
+tbon    = -2735.4539 73.4605 4.3631, -2725.6116 62.1097 3.8472
+timy1   = 2388.8457 1483.9883 9.9461, 2398.5444 1498.4882 10.3157
+vEcmo   = 2381.5859 1042.8748 10.8203, 2391.5637 1060.7018 10.8203
+vEsvgrg = 2449.1455 701.2252 11.4609, 2458.9563 694.7636 10.7831
+vgElock = 2602.1875 1437.6211 10.8203, 2616.9619 1462.8636 12.1804
+vgshngr = 1543.8665 1223.665 10.8125, 1621.7153 1154.4777 10.8125
+
+[GXT]
+amumis = Angel Pine garage used in "Puncture Wounds"
+beacsv = Santa Maria Beach garage
+blob1 = Redsands East Pay n Spray
+blob2 = Welding and Wedding bomb shop
+blob6 = Redsands West garage
+blob69 = Prickle Pine garage
+blob7 = Whitewood Estates garage
+bodLAwN = Los Santos Transfender
+brgSFSE = San Fierro burglary garage
+burbdo2 = Dillimore garage
+burbdoo = Palomino Creek garage
+burg_lk = Los Santos burglary garage
+carlas1 = El Corona garage
+CEsafe1 = Muholland garage
+CEspray = Dillimore Pay n Spray
+cjsafe = Ganton garage
+cn2gar1 = Fort Carson garage
+cn2gar2 = Verdant Meadows garage
+CN2spry = Fort Carson Pay n Spray
+CNspray = El Quebrados Pay n Spray
+dhangar = Verdant Meadows hangar
+duf_LAS = El Corona garage used in "Los Desperados"
+fdorsfe = Wu Zi's garage
+ghostdr = El Castillo del Diablo garage used in "Interdiction"
+hbgdSFS = main Doherty garage
+imp_la = Los Santos impound lot
+imp_sf = San Fierro impound lot
+imp_lv = Las Venturas impound lot
+lasbomb = Los Santos bomb shop
+LCKSfse = Doherty garage
+mds1SFS = Wheels Arch Angel
+mdsSFSe = San Fierro Transfender
+michdr = Michelle's garage
+modgLAS = Cesar's garage
+mul_lan = Downtown Los Santos garage used in "Life's a Beach"
+modlast = Loco Low Co
+sav1sfe = Calton Heights garage
+sav1sfw = Paradiso garage
+sprLAe = Idlewood Pay n Spray
+spLAw2 = Verona Beach Pay n Spray
+sprsfse = Downtown San Fierro Pay n Spray
+sprsfw = Juniper Hollow Pay n Spray
+svgsfs1 = Hashbury garage
+tbon = Ocean Flat garage used in "T-Bone Mendez"
+timy1 = Las Venturas unused Pay n Spray
+vEcmo = Las Venturas Transfender
+vEsvgrg = Rockshore West garage
+vgElock = Las Venturas burglary garage
+vgshngr = AT-400 hangar
+
+[MEMORY] // RETURN GARAGE CAMERA FOR GAMEPLAY
+0=40
+1=40
+2=40
+3=8
+4=8
+5=40
+6=8
+7=8
+8=8
+9=8
+10=8
+11=72
+12=8
+13=8
+14=8
+15=8
+16=8
+17=8
+18=8
+19=8
+20=8
+21=8
+22=8
+23=24
+24=8
+25=56
+26=96
+27=8
+28=8
+29=40
+30=96
+31=8
+32=40
+33=8
+34=8
+35=8
+36=8
+37=8
+38=8
+39=8
+40=8
+41=8
+42=8
+43=8
+44=8
+45=96
+46=8
+47=8
+48=8
+49=8
+50=0
+
+
+interior_list
+
+[LIST]
+TOTAL=141
+SCROLL=8
+
+[1]
+name=24/7_1
+INT=17
+X=-25.72
+Y=-187.82
+Z=1003.54
+
+[2]
+name=24/7_2
+INT=10
+X=6.08
+Y=-28.89
+Z=1003.54
+
+[3]
+name=24/7_3
+INT=18
+X=-30.98
+Y=-89.68
+Z=1003.54
+
+[4]
+name=24/7_4
+INT=16
+X=-26.18
+Y=-140.91
+Z=1003.54
+
+[5]
+name=24/7_5
+INT=4
+X=-27.84
+Y=-26.67
+Z=1003.55
+
+[6]
+name=24/7_6
+INT=6
+X=-26.83
+Y=-55.58
+Z=1003.54
+
+[7]
+name=Loco_Low_Co.
+INT=2
+X=611.35
+Y=-77.55
+Z=997.99
+
+[8]
+name=Wheel_Arch_Angels
+INT=3
+X=612.21
+Y=-123.90
+Z=997.99
+
+[9]
+name=TransFender
+INT=1
+X=621.45
+Y=-23.72
+Z=1000.92
+
+[10]
+name=Four_Dragons
+INT=10
+X=2016.11
+Y=1017.15
+Z=996.87
+
+[11]
+name=Casino_Floor_(Redsands_West)
+INT=12
+X=1133.34
+Y=-7.84
+Z=1000.67
+
+[12]
+name=Caligula's_Casino
+INT=1
+X=2233.93
+Y=1711.80
+Z=1011.63
+
+[13]
+name=Caligula's_Roof
+INT=1
+X=2268.51
+Y=1647.76
+Z=1084.23
+
+[14]
+name=Victim
+INT=5
+X=225.03
+Y=-9.18
+Z=1002.21
+
+[15]
+name=Sub_Urban
+INT=1
+X=204.11
+Y=-46.80
+Z=1001.80
+
+[16]
+name=Zip
+INT=18
+X=161.40
+Y=-94.24
+Z=1001.80
+
+[17]
+name=Didier_Sachs
+INT=14
+X=204.16
+Y=-165.76
+Z=1000.52
+
+[18]
+name=Binco
+INT=15
+X=207.52
+Y=-109.74
+Z=1005.13
+
+[19]
+name=Pro-Laps
+INT=3
+X=206.46
+Y=-137.70
+Z=1003.09
+
+[20]
+name=Pizza_Stack
+INT=5
+X=372.55
+Y=-131.36
+Z=1001.49
+
+[21]
+name=Rusty_Brown's_Donuts
+INT=17
+X=378.02
+Y=-190.51
+Z=1000.63
+
+[22]
+name=Burger_Shot
+INT=10
+X=366.02
+Y=-73.34
+Z=1001.50
+
+[23]
+name=Cluckin'_Bell
+INT=9
+X=366.00
+Y=-9.43
+Z=1001.85
+
+[24]
+name=Bar
+INT=11
+X=501.95
+Y=-70.56
+Z=998.75
+
+[25]
+name=Lil'_Probe_Inn
+INT=18
+X=-227.57
+Y=1401.55
+Z=27.76
+
+[26]
+name=Barber_shop_1
+INT=12
+X=411.97
+Y=-51.92
+Z=1001.89
+
+[27]
+name=Barber_shop_2
+INT=2
+X=412.1599
+Y=-20.1854
+Z=1000.8047
+
+[28]
+name=Barber_shop_3
+INT=3
+X=418.46
+Y=-80.45
+Z=1001.80
+
+[29]
+name=Tattoo_sarlor
+INT=3
+X=-201.22
+Y=-43.24
+Z=1002.27
+
+[30]
+name=Sex_shop
+INT=3
+X=-100.26
+Y=-22.93
+Z=1000.71
+
+[31]
+name=Burning_Desire_Building
+INT=5
+X=2350.15
+Y=-1181.06
+Z=1027.97
+
+[32]
+name=Atrium
+INT=18
+X=1727.28
+Y=-1642.94
+Z=20.22
+
+[33]
+name=Sindacco_Abatoir
+INT=1
+X=963.05
+Y=2159.75
+Z=1011.03
+
+[34]
+name=Jet_Interior
+INT=1
+X=1.54
+Y=23.31
+Z=1199.59
+
+[35]
+name=Andromada
+INT=9
+X=315.45
+Y=976.59
+Z=1960.85
+
+[36]
+name=Palomino_Bank
+INT=0
+X=2306.38
+Y=-15.23
+Z=26.74
+
+[37]
+name=Dillimore_Gas_Station
+INT=0
+X=663.05
+Y=-573.62
+Z=16.33
+
+[38]
+name=Random_House
+INT=2
+X=2236.69
+Y=-1078.94
+Z=1049.02
+
+[39]
+name=Budget_Inn_Motel_Room
+INT=12
+X=446.32
+Y=509.96
+Z=1001.41
+
+[40]
+name=Wuzi_Office
+INT=10
+X=1991.2925 
+Y=1139.8767 
+Z=1000.6797
+
+[41]
+name=Ammu-nation_1
+INT=7
+X=315.24
+Y=-140.88
+Z=999.60
+
+[42]
+name=Ammu-nation_2
+INT=1
+X=285.83
+Y=-39.01
+Z=1001.51
+
+[43]
+name=Ammu-nation_3
+INT=4
+X=291.76
+Y=-80.13
+Z=1001.51
+
+[44]
+name=Ammu-nation_4
+INT=6
+X=297.14
+Y=-109.87
+Z=1001.51
+
+[45]
+name=Ammu-nation_5
+INT=6
+X=316.50
+Y=-167.62
+Z=999.59
+
+[46]
+name=The_Johnson_house
+INT=3
+X=2496.05
+Y=-1695.17
+Z=1014.74
+
+[47]
+name=Angel_Pine_trailer
+INT=2
+X=1.18
+Y=-3.23
+Z=999.42
+
+[48]
+name=Abandoned_AC_tower
+INT=10
+X=419.89
+Y=2537.11
+Z=10.00
+
+[49]
+name=Wardrobe/Changing_room
+INT=14
+X=256.90
+Y=-41.65
+Z=1002.02
+
+[50]
+name=The_Camel's_Toe_safehouse
+INT=1
+X=2216.12
+Y=-1076.30
+Z=1050.48
+
+[51]
+name=Verdant_Bluffs_safehouse
+INT=8
+X=2365.10
+Y=-1133.07
+Z=1050.87
+
+[52]
+name=Willowfield_safehouse
+INT=11
+X=2282.97
+Y=-1140.28
+Z=1050.89
+
+[53]
+name=Vank_Hoff_Hotel
+INT=5
+X=2233.69
+Y=-1112.81
+Z=1050.88
+
+[54]
+name=Unknown_safe_house
+INT=9
+X=2319.12
+Y=-1023.95
+Z=1050.21
+
+[55]
+name=Safe_house_1
+INT=10
+X=2262.83
+Y=-1137.71
+Z=1050.63
+
+[56]
+name=Safe_house_2
+INT=8
+X=2365.24
+Y=-1134.297
+Z=1050.88
+
+[57]
+name=Safe_house_3
+INT=6
+X=2333.033
+Y=-1073.96
+Z=1049.1
+
+[58]
+name=Safe_house_4
+INT=1
+X=2216.54
+Y=-1076.29
+Z=1050.5
+
+[59]
+name=Safe_house_5
+INT=6
+X=2194.29
+Y=-1204.015
+Z=1049.1
+
+[60]
+name=Safe_house_6
+INT=6
+X=2308.87
+Y=-1210.78
+Z=1049.1
+
+[61]
+name=Safe_house_7
+INT=12
+X=2324.38
+Y=-1148.48
+Z=1050.71   
+
+[62]
+name=Millie`s_House
+INT=6
+X=345.05
+Y=305.74
+Z=999.156
+
+[63]
+name=Denise's_house
+INT=1
+X=245.23
+Y=304.76
+Z=999.14
+
+[64]
+name=Helena's_barn
+INT=3
+X=290.62
+Y=309.06
+Z=999.14
+
+[65]
+name=Barbara's_house
+INT=5
+X=322.50
+Y=303.69
+Z=999.14
+
+[66]
+name=Katie's_house
+INT=2
+X=269.64
+Y=305.95
+Z=999.14
+
+[67]
+name=Michelle's_house
+INT=4
+X=306.19
+Y=307.81
+Z=1003.30 
+
+[68]
+name=Millitary_Diner
+INT=4
+X=454.1
+Y=-87.38
+Z=999.554
+
+[69]
+name=Planning_Department
+INT=3
+X=386.52
+Y=173.63
+Z=1008.38
+
+[70]
+name=Los_Santos_Police_Department
+INT=6
+X=246.66
+Y=65.80
+Z=1003.64
+
+[71]
+name=Las_Venturas_Police_Department
+INT=3
+X=288.47
+Y=170.06
+Z=1007.17
+
+[72]
+name=San_Fierro_Police_Department
+INT=10
+X=246.06
+Y=108.97
+Z=1003.21
+
+[73]
+name=Oval_Stadium
+INT=1
+X=-1402.66
+Y=106.38
+Z=1032.27
+
+[74]
+name=Vice_Stadium
+INT=16
+X=-1401.06
+Y=1265.37
+Z=1039.86
+
+[75]
+name=Blood_Bowl_Stadium
+INT=15
+X=-1417.89
+Y=932.44
+Z=1041.53
+
+[76]
+name=Bike_school
+INT=3
+X=1494.85
+Y=1306.47
+Z=1093.29
+
+[77]
+name=Driving_school
+INT=3
+X=-2031.11
+Y=-115.82
+Z=1035.17
+
+[78]
+name=Ganton_Gym
+INT=5
+X=770.80
+Y=-0.70
+Z=1000.72
+
+[79]
+name=Cobra_Gym
+INT=6
+X=773.88
+Y=-47.76
+Z=1000.58
+
+[80]
+name=Below_The_Belt_Gym
+INT=7
+X=773.73
+Y=-74.69
+Z=1000.65
+
+[81]
+name=Brothel_1
+INT=3
+X=974.01
+Y=-9.59
+Z=1001.14
+
+[82]
+name=Brothel_2
+INT=3
+X=961.93
+Y=-51.90
+Z=1001.11
+
+[83]
+name=The_Big_Spread_Ranch
+INT=3
+X=1212.14
+Y=-28.53
+Z=1000.95
+
+[84]
+name=The_Pig_Pen
+INT=2
+X=1204.8253 
+Y=-10.1027
+Z=1000.92
+
+[85]
+name=Club
+INT=17
+X=493.14
+Y=-24.26
+Z=1000.67
+
+[86]
+name=Fanny_Batter's_Whore_House
+INT=6
+X=748.46
+Y=1438.23
+Z=1102.95
+
+[87]
+name=Warehouse_1
+INT=18
+X=1290.41
+Y=1.95
+Z=1001.02
+
+[88]
+name=Warehouse_2
+INT=1
+X=1412.14
+Y=-2.28
+Z=1000.92
+
+[89]
+name=Inside_Track_Betting
+INT=3
+X=830.60
+Y=5.94
+Z=1004.17
+
+[90]
+name=Blastin'_Fools_Records
+INT=3
+X=1037.82
+Y=0.39
+Z=1001.28
+
+[91]
+name=B_Dup's_Apartment
+INT=3
+X=1531.3167
+Y=-7.6662
+Z=1001.0781
+
+[92]
+name=B_Dup's_Crack_Palace
+INT=2
+X=1523.50
+Y=-47.82
+Z=1002.26
+
+[93]
+name=OG_Loc's_House
+INT=3
+X=512.92
+Y=-11.69
+Z=1001.56
+
+[94]
+name=Ryder's_house
+INT=2
+X=2447.87
+Y=-1704.45
+Z=1013.50
+
+[95]
+name=Sweet's_House
+INT=1
+X=2527.01
+Y=-1679.20
+Z=1015.49
+
+[96]
+name=Wu-Zi_Mu's
+INT=1
+X=-2158.67
+Y=642.09
+Z=1052.37
+
+[97]
+name=Los_Santos_Airport
+INT=14
+X=-1864.94
+Y=55.73
+Z=1055.52
+
+[98]
+name=Four_Dragons'_Janitor's_Office
+INT=10
+X=1893.07
+Y=1017.89
+Z=31.88
+
+[99]
+name=Jefferson_Motel
+INT=15
+X=2217.28
+Y=-1150.53
+Z=1025.79
+
+[100]
+name=Kickstart_Stadium
+INT=14
+X=-1420.42
+Y=1616.92
+Z=1052.53
+
+[101]
+name=Liberty_City
+INT=1
+X=-741.84
+Y=493.00
+Z=1371.97
+
+[102]
+name=Francis_International_Airport
+INT=14
+X=-1813.21
+Y=-58.01
+Z=1058.96
+
+[103]
+name=The_Pleasure_Domes
+INT=3
+X=-2638.82
+Y=1407.33
+Z=906.46
+
+[104]
+name=RC_Battlefield
+INT=10
+X=-1129.89
+Y=1057.54
+Z=1346.41
+
+[105]
+name=San_Fierro_Garage
+INT=1
+X=-2041.23
+Y=178.39
+Z=28.84
+
+[106]
+name=The_Welcome_Pump
+INT=1
+X=681.62
+Y=-451.89
+Z=-25.61
+
+[107]
+name=8_Track_Stadium
+INT=7
+X=-1403.01
+Y=-250.45
+Z=1043.53
+
+[108]
+name=Dirtbike_Stadium
+INT=4
+X=-1421.56
+Y=-663.82
+Z=1059.55
+
+[109]
+name=Crack_Den
+INT=5
+X=322.11
+Y=1119.32
+Z=1083.88
+
+[110]
+name=Big_Smoke's_Crack_Palace
+INT=2
+X=2536.53
+Y=-1294.84
+Z=1044.12
+
+[111]
+name=Zero's_RC_Shop
+INT=6
+X=-2240.10
+Y=136.97
+Z=1035.41
+
+[112]
+name=Sherman_Dam
+INT=17
+X=-944.24
+Y=1886.15
+Z=5.00
+
+[113]
+name=Rosenberg's_Office
+INT=2
+X=2182.20
+Y=1628.58
+Z=1043.87
+
+[114]
+name=Secret_Valley_Diner
+INT=6
+X=442.12
+Y=-52.47
+Z=999.71
+
+[115]
+name=World_of_Coq
+INT=1
+X=445.60
+Y=-6.98
+Z=1000.73
+
+[116]
+name=Jays_Diner
+INT=5
+X=454.98
+Y=-107.25
+Z=999.43
+
+[117]
+name=Madd_Dogg's_Mansion
+INT=5
+X=1267.84
+Y=-776.95
+Z=1091.90
+
+[118]
+name=Colonel_Furhberger's
+INT=8
+X=2807.36
+Y=-1171.70
+Z=1025.57
+
+[119]
+name=Burglary_house_1
+INT=3
+X=234.60
+Y=1187.81
+Z=1080.25
+
+[120]
+name=Burglary_house_2
+INT=2
+X=225.57
+Y=1240.06
+Z=1082.14
+
+[121]
+name=Burglary_house_3
+INT=1
+X=224.28
+Y=1289.19
+Z=1082.14
+
+[122]
+name=Burglary_house_4
+INT=5
+X=239.28
+Y=1114.19
+Z=1080.99
+
+[123]
+name=Burglary_house_5
+INT=15
+X=295.13
+Y=1473.37
+Z=1080.25
+
+[124]
+name=Burglary_house_6
+INT=2
+X=446.62
+Y=1397.73
+Z=1084.30
+
+[125]
+name=Burglary_house_7
+INT=5
+X=227.75
+Y=1114.38
+Z=1080.99
+
+[126]
+name=Burglary_house_8
+INT=4
+X=261.11
+Y=1287.21
+Z=1080.25
+
+[127]
+name=Burglary_house_9
+INT=10
+X=24.37
+Y=1341.18
+Z=1084.37
+
+[128]
+name=Burglary_house_10
+INT=4
+X=221.67
+Y=1142.49
+Z=1082.60
+
+[129]
+name=Burglary_house_11
+INT=4
+X=-262.17
+Y=1456.61
+Z=1084.36
+
+[130]
+name=Burglary_house_12
+INT=5
+X=22.86
+Y=1404.91
+Z=1084.42
+
+[131]
+name=Burglary_house_13
+INT=5
+X=140.36
+Y=1367.88
+Z=1083.86
+
+[132]
+name=Burglary_house_14
+INT=6
+X=234.28
+Y=1065.22
+Z=1084.21
+
+[133]
+name=Burglary_house_15
+INT=6
+X=-68.51
+Y=1353.84
+Z=1080.21
+
+[134]
+name=Burglary_house_16
+INT=15
+X=-285.25
+Y=1471.19
+Z=1084.37
+
+[135]
+name=Burglary_house_17
+INT=8
+X=-42.52
+Y=1408.22
+Z=1084.42
+
+[136]
+name=Burglary_house_18
+INT=9
+X=84.92
+Y=1324.29
+Z=1083.85
+
+[137]
+name=Burglary_house_19
+INT=9
+X=260.74
+Y=1238.22
+Z=1084.25
+
+[138]
+name=Burglary_house_20
+INT=15
+X=327.80
+Y=1479.74
+Z=1084.43
+
+[139]
+name=Burglary_house_21
+INT=15
+X=295.46
+Y=1474.69
+Z=1080.26
+
+[140]
+name=Burglary_house_22
+INT=8
+X=-42.49
+Y=1407.644
+Z=1084.43
+
+[141]
+name=Burglary_house_23
+INT=15
+X=375.57
+Y=1417.44
+Z=1081.33
+
+
+menu.ini
+
+[SELECTED]
+MENU0=3
+MENU0_0=0
+EXTRA=0
+MISSION=0
+MENU1=2
+MENU1_0=0
+MENU5=1
+MENU5_0=0
+MENU005=1
+MENU5_02=0
+MENU05=1
+MENU5_01=0
+MEN0U5=6
+MENU5_04=-5
+MEDN0U5=1
+MENDU5_04=0
+M1EDN0U5=2
+M1ENDU5_04=0
+M12EDN0U5=1
+M12ENDU5_04=0
+MENU007=2
+MENU7_02=0
+MEN5U07=1
+MENU57_01=0
+MR1=1
+MR1_0=0
+MR2=3
+MR2_0=0
+MR5=1
+MR5_0=0
+MRC1=1
+MRC1_0=0
+MAR2=6
+MAR2_0=0
+M3R2=1
+M3R2_0=0
+MRE5=2
+MRE5_0=-8
+MBR2=1
+MBR2_0=0
+MENUg1=1
+MENUg1_0=0
+MENUP1=8
+MENUP1_0=-4
+MAC1=3
+MAC1_0=0
+MBC1=2
+MBC1_0=0
+MDNU005=4
+MDNU5_02=2
+MEN1U05=1
+MEN1U5_01=0
+DBC1=7
+DBC1_0=0
+MVAC1=1
+MVAC1_0=0
+MVC1=2
+MVC1_0=0
+MOVC1=3
+MOVC1_0=-1
+DEV=5
+DEV0=-4
+D1EV=1
+D1EV0=0
+M4BR2=1
+M4BR2_0=0
+MEN8U5=6
+MEN8U5_0=0
+ACCO1=3
+ACCO1_0=-9
+MFNU5=1
+MFNU5_0=0
+MFNU4=5
+MFNU4_0=-4
+MFNU3=5
+MFNU3_0=-8
+MFNU2=1
+MFNU2_0=0
+MFNU1=1
+MFNU1_0=0
+MFNU0=2
+MFNU0_0=-9
+MEWU005=2
+MEWU5_02=0
+MRPG5=2
+MRPG5_0=0
+MRPG1=6
+MRPG1_0=0
+MRPG2=4
+MRPG2_0=0
+CHOISE5=2
+CHOISE5_0=0
+CHOISE1=1
+CHOISE1_0=0
+CHOISE2=5
+CHOISE2_0=0
+CHOISE3=6
+CHOISE3_0=0
+MDAU005=8
+MDAU5_02=-4
+D1EV2=2
+D1EV02=-3
+MS0=2
+MS0_0=0
+MS1=2
+MS1_0=0
+MS2=2
+MS2_0=0
+MS02=2
+MS02_0=0
+MS002=1
+MS002_0=0
+MS0002=3
+MS0002_0=0
+M1S0=1
+M1S0_0=0
+MSS00=1
+MSS00_0=0
+MS0102=1
+MS0102_0=0
+MST002=3
+MST002_0=-9
+MEBU5=1
+MEBU5_0=0
+MSCR1=1
+MSCR1_0=0
+MSCR2=4
+MSCR2_0=0
+MSCR3=5
+MSCR3_0=-8
+MSCR4=1
+MSCR4_0=0
+MSCR5=1
+MSCR5_0=0
+CALLS1=4
+CALLS1_0=0
+CALLS2=1
+CALLS2_0=0
+M2S0=3
+M2S0_0=0
+XWB1=1
+XWB1_0=0
+GAMDIAL1=1
+GAMDIAL1_0=0
+GAMDIAL2=2
+GAMDIAL2_0=-7
+MT002=2
+MT002_0=0
+MT001=1
+MT001_0=0
+M2RE5=1
+M2RE5_0=0
+MG001=3
+MG001_0=0
+MG002=3
+MG002_0=0
+MG003=2
+MG003_0=0
+
+
+objectlist
+
+
+
+[Roads]
+TOTAL=7
+1 = 19532 15x125Road1
+2 = 15927 S15x125Road1
+3 = 19533 15x62_5Road1
+4 = 15926 S15x62_5Road1
+5 = 19534 15x15RoadInters1
+6 = 15925 S15x15RoadInters1
+7 = 19535 15x15RoadInters2
+
+[Trash]
+TOTAL=7
+1 = 10984 rubbled01_SFS
+2 = 10985 rubbled02_SFS
+3 = 10986 rubbled03_SFS
+4 = 849 CJ_urb_rub_3
+5 = 1358 CJ_SKIP_Rubbish
+6 = 3866 demolish1_SFXRF
+7 = 3887 demolish4_SFXRF
+
+[Floats]
+TOTAL=20
+1 = 19529 Plane125x125Grass1
+2 = 19550 Plane125x125Grass2
+3 = 19530 Plane125x125Sand1
+4 = 19551 Plane125x125Sand2
+5 = 19531 Plane125x125Conc1
+6 = 19552 Plane125x125Conc2
+7 = 19536 Plane62_5x125Grass1
+8 = 19537 Plane62_5x125Sand1
+9 = 19538 Plane62_5x125Conc1
+10 = 19549 Edge62_5x32_5Grass1
+11 = 19539 Edge62_5x62_5Grass1
+12 = 19540 Edge62_5x62_5Grass2
+13 = 19546 Edge62_5x62_5Grass3
+14 = 19541 Edge62_5x15Grass1
+15 = 19542 Edge62_5x125Grass1
+16 = 19543 Plane62_5x15Grass1
+17 = 19544 Plane62_5x15Sand1
+18 = 19545 Plane62_5x15Conc1
+19 = 19547 Hill125x125Grass1
+20 = 19548 Hill125x125Sand1
+
+[Walls]
+TOTAL=80
+1 = 19353 wall001
+2 = 19354 wall002
+3 = 19355 wall003
+4 = 19356 wall004
+5 = 19357 wall005
+6 = 19358 wall006
+7 = 19359 wall007
+8 = 19360 wall008
+9 = 19361 wall009
+10 = 19362 wall010
+11 = 19363 wall011
+12 = 19364 wall012
+13 = 19365 wall013
+14 = 19366 wall014
+15 = 19367 wall015
+16 = 19368 wall016
+17 = 19369 wall017
+18 = 19370 wall018
+19 = 19371 wall019
+20 = 19372 wall020
+21 = 19373 wall021
+22 = 19374 wall022
+23 = 19375 wall023
+24 = 19376 wall024
+25 = 19377 wall025
+26 = 19378 wall026
+27 = 19379 wall027
+28 = 19380 wall028
+29 = 19381 wall029
+30 = 19382 wall030
+31 = 19383 wall031
+32 = 19384 wall032
+33 = 19385 wall033
+34 = 19386 wall034
+35 = 19387 wall035
+36 = 19388 wall036
+37 = 19389 wall037
+38 = 19390 wall038
+39 = 19391 wall039
+40 = 19392 wall040
+41 = 19393 wall041
+42 = 19394 wall042
+43 = 19395 wall043
+44 = 19396 wall044
+45 = 19397 wall045
+46 = 19398 wall046
+47 = 19399 wall047
+48 = 19400 wall048
+49 = 19401 wall049
+50 = 19402 wall050
+51 = 19403 wall051
+52 = 19404 wall052
+53 = 19405 wall053
+54 = 19406 wall054
+55 = 19407 wall055
+56 = 19408 wall056
+57 = 19409 wall057
+58 = 19410 wall058
+59 = 19411 wall059
+60 = 19412 wall060
+61 = 19413 wall061
+62 = 19414 wall062
+63 = 19415 wall063
+64 = 19416 wall064
+65 = 19417 wall065
+66 = 1649 wglasssmash
+67 = 19466 window001
+68 = 19325 lsmall_window01
+69 = 3032 bd_window_shatter
+70 = 3034 bd_window
+71 = 19861 MIHouse1GarageDoor1
+72 = 19862 MIHouse1GarageDoor2
+73 = 19863 MIHouse1GarageDoor3
+74 = 19864 MIHouse1GarageDoor4
+75 = 19865 MIFenceWood1
+76 = 19866 MIFenceBlocks1
+77 = 19913 SAMPBigFence
+78 = 19912 SAMPMetalGate1
+79 = 3282 cxreffencemsh
+80 = 3275 cxreffence 
+
+[Vegetables]
+TOTAL=164
+1 = 790 sm_fir_tallgroup
+2 = 791 vbg_fir_copse
+3 = 615 veg_tree3
+4 = 616 veg_treea1
+5 = 617 veg_treeb1
+6 = 618 veg_treea3
+7 = 619 veg_palwee03
+8 = 620 veg_palm04
+9 = 621 veg_palm02
+10 = 622 veg_palm03
+11 = 623 veg_palwee01
+12 = 624 veg_palwee02
+13 = 625 veg_palmkb1aa
+14 = 626 veg_palmkb22
+15 = 627 veg_palmkb3
+16 = 628 veg_palmkb42
+17 = 629 veg_palmkb5aa
+18 = 630 veg_palmkb8
+19 = 631 veg_palmkb9
+20 = 632 veg_palmkb7aa
+21 = 633 veg_palmkb102
+22 = 634 veg_palmkbb11aa
+23 = 635 veg_fern_balcny_kb1
+24 = 636 veg_fern_balcny_kb2
+25 = 637 kb_planterbox
+26 = 638 kb_planter+bushplnt
+27 = 639 veg_ivy_balcny_kb3
+28 = 640 kb_planter+bush2plnt
+29 = 641 veg_palmkb13
+30 = 642 kb_canopy_test
+31 = 643 kb_chr_tbl_test
+32 = 644 pot_02
+33 = 645 veg_palmbig14
+34 = 646 veg_palmkb14
+35 = 647 new_bushsm
+36 = 648 veg_palm01
+37 = 649 sjmpalm
+38 = 650 sjmcacti2
+39 = 651 sjmcacti1
+40 = 652 sjmpalmbig
+41 = 653 sjmcacti03
+42 = 654 pinetree08
+43 = 655 pinetree06
+44 = 656 pinetree05
+45 = 657 pinetree02
+46 = 658 pinetree04
+47 = 659 pinetree01
+48 = 660 pinetree03
+49 = 661 pinetree07
+50 = 664 firtree2
+51 = 669 sm_veg_tree4
+52 = 670 sm_firtallded
+53 = 671 sm_bushytree
+54 = 672 sm_veg_tree5
+55 = 673 sm_bevhiltree
+56 = 674 sm_des_josh_lrg1
+57 = 675 josh_ball
+58 = 676 sm_des_josh_sml1
+59 = 677 sm_des_agave1
+60 = 678 sm_des_agave2
+61 = 679 sm_des_cact_bsh
+62 = 680 sm_des_josh_lrg2
+63 = 681 sm_des_josh_sm2
+64 = 682 sm_des_cactflr
+65 = 683 sm_fir_group
+66 = 684 sm_fir_log02
+67 = 685 sm_fir_scabby
+68 = 686 sm_fir_dead
+69 = 687 sm_fir_
+70 = 688 sm_fir_scabg
+71 = 689 sm_fir_copse1
+72 = 690 sm_fir_copse2
+73 = 691 sm_veg_tree4_big
+74 = 692 sm_des_bush1
+75 = 693 sm_redwood_
+76 = 694 sm_redwoodgrp
+77 = 695 sm_fir_scabtg
+78 = 696 sm_fir_scabt
+79 = 697 sm_fir_tall
+80 = 698 sm_firtbshg
+81 = 700 sm_veg_tree6
+82 = 701 sm_tumblewd48p
+83 = 702 sm_tumbleweed
+84 = 703 sm_veg_tree7_big
+85 = 704 bg_fir_dead
+86 = 705 sm_veg_tree7vbig
+87 = 706 sm_vegvbbig
+88 = 707 sm_bushvbig
+89 = 708 sm_veg_tree4_vbig
+90 = 709 sm_vegvbbigbrn
+91 = 710 vgs_palm01
+92 = 711 vgs_palm02
+93 = 712 vgs_palm03
+94 = 713 veg_bevtree1
+95 = 714 veg_bevtree2
+96 = 715 veg_bevtree3
+97 = 716 sjmpalmbigpv
+98 = 717 sm_bevhiltreepv
+99 = 718 vgs_palm04
+100 = 719 veg_largefurs07
+101 = 720 veg_largefurs01
+102 = 721 veg_largefurs02
+103 = 722 veg_largefurs03
+104 = 723 veg_largefurs04
+105 = 724 veg_largefurs05
+106 = 725 veg_largefurs06
+107 = 726 tree_hipoly19
+108 = 727 tree_hipoly0404
+109 = 728 tree_hipoly06i
+110 = 729 tree_hipoly07i7
+111 = 730 tree_hipoly08ifir
+112 = 731 tree_hipoly09i9
+113 = 732 tree_hipoly10ifir
+114 = 733 tree_hipoly11
+115 = 734 tree_hipoly14
+116 = 735 tree_hipoly09b
+117 = 736 ceasertree01_lvs
+118 = 737 aw_streettree3
+119 = 738 aw_streettree2
+120 = 739 sjmpalmtall
+121 = 740 vgs_palmvtall
+122 = 741 pot_01
+123 = 742 pot_03
+124 = 743 kb_pot_1
+125 = 744 sm_scrub_rock4
+126 = 745 sm_scrub_rock5
+127 = 746 sm_scrub_rock2
+128 = 747 sm_scrub_rock3
+129 = 748 sm_scrb_grp1
+130 = 749 sm_scrb_column3
+131 = 750 sm_scrb_column2
+132 = 751 sm_scrb_column1
+133 = 792 aw_streettree1
+134 = 753 sm_descactiigrpb
+135 = 754 sm_des_cactiigrp
+136 = 755 sm_des_pcklypr3
+137 = 756 sm_des_pcklypr2
+138 = 757 sm_des_pcklypr1
+139 = 758 sm_scrub_rock6
+140 = 759 sm_bush_large_1
+141 = 760 sm_bush_small_1
+142 = 761 sm_drybrush_sm1
+143 = 762 new_bushtest
+144 = 763 Ash1_hi
+145 = 764 Cedar3_hi
+146 = 765 Cedar2_hi
+147 = 766 Cedar1_hi
+148 = 767 Elmtreegrn_hi
+149 = 768 Elmtreegrn2_hi
+150 = 769 Locust_hi
+151 = 770 Pinebg_hi
+152 = 771 sprucetree_hi
+153 = 772 Elmred_hi
+154 = 773 Elmdead_hi
+155 = 774 Elmsparse_hi
+156 = 775 Elmwee_hi
+157 = 776 Hazelweetree_hi
+158 = 777 Hazeltall_hi
+159 = 778 Elmred_hism
+160 = 779 Pinebg_hism
+161 = 780 Elmsparse_hism
+162 = 781 Elmwee_hism
+163 = 782 Elmtreegrn_hism
+164 = 789 hashburytree4sfs
+
+[Weapons]
+TOTAL=44
+1 = 321 ~w~gun_dildo1
+2 = 322 ~w~gun_dildo2
+3 = 323 ~w~gun_vibe1
+4 = 324 ~w~gun_vibe2
+5 = 325 ~w~flowera
+6 = 326 ~w~gun_cane
+7 = 330 ~w~cellphone
+8 = 331 ~w~brassknuckle
+9 = 333 ~w~golfclub
+10 = 334 ~w~nitestick
+11 = 335 ~w~knifecur
+12 = 336 ~w~bat
+13 = 337 ~w~shovel
+14 = 338 ~w~poolcue
+15 = 339 ~w~katana
+16 = 341 ~w~chnsaw
+17 = 342 ~w~grenade
+18 = 343 ~w~teargas
+19 = 344 ~w~molotov
+20 = 346 ~w~colt45
+21 = 347 ~w~silenced
+22 = 348 ~w~desert_eagle
+23 = 349 ~w~chromegun
+24 = 350 ~w~sawnoff
+25 = 351 ~w~shotgspa
+26 = 352 ~w~micro_uzi
+27 = 353 ~w~mp5lng
+28 = 372 ~w~tec9
+29 = 355 ~w~ak47
+30 = 356 ~w~m4
+31 = 357 ~w~cuntgun
+32 = 358 ~w~sniper
+33 = 359 ~w~rocketla
+34 = 360 ~w~heatseek
+35 = 361 ~w~flame
+36 = 362 ~w~minigun
+37 = 363 ~w~satchel
+38 = 364 ~w~bomb
+39 = 365 ~w~spraycan
+40 = 366 ~w~fire_ex
+41 = 367 ~w~camera
+42 = 368 ~w~nvgoggles
+43 = 369 ~w~irgoggles
+44 = 371 ~w~gun_para
+
+[Effects]
+TOTAL=81
+1 = 18668 ~p~blood_heli
+2 = 18669 ~p~boat_prop
+3 = 18670 ~p~camflash
+4 = 18671 ~p~carwashspray
+5 = 18672 ~p~cementp
+6 = 18673 ~p~cigarette_smoke
+7 = 18674 ~p~cloudfast
+8 = 18675 ~p~coke_puff
+9 = 18676 ~p~coke_trail
+10 = 18677 ~p~exhale
+11 = 18678 ~p~explosion_barrel
+12 = 18679 ~p~explosion_crate
+13 = 18680 ~p~explosion_door
+14 = 18681 ~p~explosion_fuel_car
+15 = 18682 ~r~explosion_large
+16 = 18683 ~r~explosion_medium
+17 = 18684 ~r~explosion_molotov
+18 = 18685 ~r~explosion_small
+19 = 18686 ~r~explosion_tiny
+20 = 18687 ~p~extinguisher
+21 = 18688 ~r~fire
+22 = 18689 ~r~fire_bike
+23 = 18690 ~r~fire_car
+24 = 18691 ~r~fire_large
+25 = 18692 ~r~fire_med
+26 = 18693 ~p~Flame99
+27 = 18694 ~p~flamethrowerp
+28 = 18695 ~p~gunflash
+29 = 18696 ~p~gunsmoke
+30 = 18697 ~p~heli_dust
+31 = 18698 ~p~insects
+32 = 18699 ~p~jetpackp
+33 = 18700 ~p~jetthrust
+34 = 18701 ~p~molotov_flame
+35 = 18702 ~p~nitrop
+36 = 18703 ~p~overheat_car
+37 = 18704 ~p~overheat_car_elec
+38 = 18705 ~p~petrolcan
+39 = 18706 ~p~prt_blood
+40 = 18707 ~p~prt_boatsplash
+41 = 18708 ~p~prt_bubble
+42 = 18709 ~p~prt_cardebris
+43 = 18710 ~p~prt_collisionsmoke
+44 = 18711 ~p~prt_glass
+45 = 18712 ~p~prt_gunshell
+46 = 18713 ~p~prt_sand2
+47 = 18714 ~p~prt_sand
+48 = 18715 ~p~prt_smoke_huge
+49 = 18716 ~p~prt_smoke_expand
+50 = 18717 ~p~prt_spark
+51 = 18718 ~p~prt_spark_2
+52 = 18719 ~p~prt_wake
+53 = 18720 ~p~prt_watersplash
+54 = 18721 ~p~prt_wheeldirt
+55 = 18722 ~p~puke
+56 = 18723 ~p~riot_smoke
+57 = 18724 ~p~shootlight
+58 = 18725 ~p~smoke30lit
+59 = 18726 ~p~smoke30m
+60 = 18727 ~p~smoke50lit
+61 = 18728 ~p~smoke_flare
+62 = 18729 ~p~spraycanp
+63 = 18730 ~p~tank_fire
+64 = 18731 ~p~teargas99
+65 = 18732 ~p~teargasAD
+66 = 18733 ~p~tree_hit_fir
+67 = 18734 ~p~tree_hit_palm
+68 = 18735 ~p~vent2
+69 = 18736 ~p~vent
+70 = 18737 ~p~wallbust
+71 = 18738 ~p~water_fnt_tme
+72 = 18739 ~p~water_fountain
+73 = 18740 ~p~water_hydrant
+74 = 18741 ~p~water_ripples
+75 = 18742 ~p~water_speed
+76 = 18743 ~p~water_splash
+77 = 18744 ~p~water_splash_big
+78 = 18745 ~p~water_splsh_sml
+79 = 18746 ~p~water_swim
+80 = 18747 ~p~waterfall_end
+81 = 18748 ~p~WS_factorysmoke
+
+[Furniture]
+TOTAL=154
+1 = 1700 kb_bed_test1
+2 = 1701 kb_bed_test2
+3 = 1702 kb_couch06
+4 = 1703 kb_couch02
+5 = 1704 kb_chair03
+6 = 1705 kb_chair04
+7 = 1706 kb_couch03
+8 = 1707 kb_couch01
+9 = 1708 kb_chair02
+10 = 1709 kb_couch08
+11 = 1710 kb_couch07
+12 = 1711 kb_chair01
+13 = 1712 kb_couch05
+14 = 1713 kb_couch04
+15 = 1714 kb_swivelchair1
+16 = 1715 kb_swivelchair2
+17 = 1716 kb_slot_stool
+18 = 1717 telly_low_test
+19 = 1718 snesish
+20 = 1719 LOW_CONSOLE
+21 = 1720 rest_chair
+22 = 1721 est_chair1
+23 = 1722 off_chairnu
+24 = 1723 mrk_seating1
+25 = 1724 mrk_seating1b
+26 = 1725 mrk_bed1
+27 = 1726 mrk_seating2
+28 = 1727 mrk_seating2b
+29 = 1728 mrk_seating3
+30 = 1729 mrk_seating3b
+31 = 1730 SWANK_CABINET_3
+32 = 1731 CJ_MLIGHT3
+33 = 1732 CJ_Juke_Box
+34 = 1733 CJ_WASHINGMAC
+35 = 1734 CJ_MLIGHT2
+36 = 1735 CJ_EASYCHAIR1
+37 = 1736 CJ_Stags_head
+38 = 1737 MED_DINNING_5
+39 = 1738 CJ_Radiator_old
+40 = 1739 SWANK_DIN_CHAIR_5
+41 = 1740 LOW_CABINET_3
+42 = 1741 LOW_CABINET_1
+43 = 1742 Med_BOOKSHELF
+44 = 1743 MED_CABINET_3
+45 = 1744 MED_SHELF
+46 = 1745 MED_BED_3
+47 = 1746 SWANK_1_FootStool
+48 = 1747 LOW_TV_2
+49 = 1748 LOW_TV_3
+50 = 1749 MED_TV_3
+51 = 1750 MED_TV_2
+52 = 1751 MED_TV_4
+53 = 1752 SWANK_TV_3
+54 = 1753 SWANK_COUCH_1
+55 = 1754 SWANK_SINGLE_1
+56 = 1755 MED_SINGLE_2
+57 = 1756 LOW_COUCH_4
+58 = 1757 LOW_COUCH_5
+59 = 1758 LOW_SINGLE_4
+60 = 1759 LOW_SINGLE_1
+61 = 1760 MED_COUCH_2
+62 = 1761 SWANK_COUCH_2
+63 = 1762 SWANK_SINGLE_2
+64 = 1763 LOW_COUCH_1
+65 = 1764 LOW_COUCH_2
+66 = 1765 LOW_SINGLE_2
+67 = 1766 MED_COUCH_1
+68 = 1767 MED_SINGLE_1
+69 = 1768 LOW_COUCH_3
+70 = 1769 LOW_SINGLE_3
+71 = 1770 LOW_DINNING_2
+72 = 1771 CJ_bunk_bed1
+73 = 1772 CJ_HOT_DOG1
+74 = 1773 CJ_COOKER2
+75 = 1774 CJ_Monketshopsign
+76 = 1775 CJ_SPRUNK1
+77 = 1776 CJ_CANDYVENDOR
+78 = 1777 CJ_COOKER1
+79 = 1778 CJ_MOP_PAIL
+80 = 1779 CJ_TICKETMACHINE
+81 = 1780 CJ_THIN_FRIGE
+82 = 1781 MED_TV_1
+83 = 1782 MED_VIDEO_2
+84 = 1783 SWANK_VIDEO_2
+85 = 1784 LOW_VIDEO_2
+86 = 1785 LOW_VIDEO_1
+87 = 1786 SWANK_TV_4
+88 = 1787 MED_VIDEO_1
+89 = 1788 SWANK_VIDEO_1
+90 = 1789 CJ_chambermaid
+91 = 1790 SWANK_VIDEO_3
+92 = 1791 SWANK_TV_2
+93 = 1792 SWANK_TV_1
+94 = 1793 LOW_BED_2
+95 = 1794 LOW_BED_3
+96 = 1795 SWANK_BED_2
+97 = 1796 LOW_BED_4
+98 = 1797 SWANK_BED_3
+99 = 1798 SWANK_BED_1
+100 = 910 BUST_CABINET_4
+101 = 911 BUST_CABINET_1
+102 = 912 BUST_CABINET_2
+103 = 913 BUST_CABINET_3
+104 = 914 GRILL
+105 = 915 AIRCON_FAN
+106 = 916 FRUITCRATE2
+107 = 917 FRUITCRATE1
+108 = 918 CJ_FLAME_Drum
+109 = 919 AIRCON
+110 = 920 Y_GENERATOR
+111 = 921 CJ_IND_LIGHT
+112 = 922 Packing_carates1
+113 = 923 Packing_carates2
+114 = 924 FRUITCRATE3
+115 = 925 RACK2
+116 = 926 RUBBISH_BOX2
+117 = 927 Piping_Detail
+118 = 928 RUBBISH_BOX1
+119 = 929 GENERATOR
+120 = 930 O2_Bottles
+121 = 931 RACK3
+122 = 932 H_WHEELCHAIR
+123 = 933 CJ_CABLEROLL
+124 = 934 GENERATOR_BIG
+125 = 935 CJ_Drum
+126 = 936 CJ_DF_WORKTOP_2
+127 = 937 CJ_DF_WORKTOP
+128 = 938 CJ_DF_LIGHT
+129 = 939 CJ_DF_UNIT
+130 = 940 CJ_DF_LIGHT_2
+131 = 941 CJ_DF_WORKTOP_3
+132 = 942 CJ_DF_UNIT_2
+133 = 943 GENERATOR_LOW
+134 = 944 Packing_carates04
+135 = 945 WS_CF_LAMPS
+136 = 946 bskball_lax
+137 = 947 bskballhub_lax01
+138 = 948 Plant_Pot_10
+139 = 949 Plant_Pot_4
+140 = 950 Plant_Pot_12
+141 = 951 CJ_VIEW_TELE2
+142 = 952 GENERATOR_BIG_d
+143 = 953 CJ_OYSTER
+144 = 954 cj_horse_Shoe
+145 = 955 CJ_EXT_SPRUNK
+146 = 956 CJ_EXT_CANDY
+147 = 957 CJ_LIGHT_FIT_EXT
+148 = 958 CJ_CHIP_MAKER
+149 = 959 CJ_CHIP_MAKER_BITS
+150 = 960 CJ_ARM_CRATE
+151 = 961 CJ_ARM_CRATE_top
+152 = 962 CJ_T_TICKET_PED
+153 = 963 CJ_T_TICKET
+154 = 964 CJ_METAL_CRATE   
+
+[Food]
+TOTAL=25
+1 = 2768 CJ_CB_BURG
+2 = 2769 CJ_CJ_BURG2
+3 = 2803 CJ_MEAT_BAG_1
+4 = 2804 CJ_MEAT_1
+5 = 2805 CJ_MEAT_BAG_2
+6 = 2806 CJ_MEAT_2
+7 = 2212 burgerhigh
+8 = 2213 burgerlow
+9 = 2214 burgermed
+10 = 2215 clucklow
+11 = 2216 cluckmed
+12 = 2217 cluckhigh
+13 = 2218 pizzalow
+14 = 2219 pizzamed
+15 = 2220 pizzahigh
+16 = 2221 rustylow
+17 = 2222 rustyhigh
+18 = 2223 rustymed
+19 = 19574 Orange1
+20 = 19575 Apple1
+21 = 19576 Apple2
+22 = 19577 Tomato1
+23 = 19578 Banana1
+24 = 19847 LegHam1
+25 = 19525 WeddingCake1    
+
+[Police] police
+TOTAL=23
+1 = 19834 PoliceLineTape1
+2 = 18637 PoliceShield1
+3 = 18646 PoliceLight1
+4 = 19419 police_lights01
+5 = 19420 police_lights02
+6 = 19797 PoliceVisorStrobe1
+7 = 19418 handcuffs01
+8 = 19942 PoliceRadio1
+9 = 19347 badge01
+10 = 19774 PoliceBadge2
+11 = 19775 PoliceBadge3
+12 = 19776 FBIIDCard1
+13 = 19777 FBILogo1
+14 = 1282 Barrierm
+15 = 1427 CJ_ROADBARRIER
+16 = 1459 DYN_ROADBARRIER_6
+17 = 1425 DYN_ROADBARRIER_3
+18 = 1422 DYN_ROADBARRIER_5
+19 = 3091 imy_track_barrier
+20 = 1434 DYN_ROADBARRIER_5a
+21 = 1423 DYN_ROADBARRIER_4
+22 = 1424 DYN_ROADBARRIER_2
+23 = 1228 roadworkbarrier1
+                      
+[Army] 
+TOTAL=19
+1 = 2985 minigun_base
+2 = 3786 missile_05_SFXR
+3 = 3790 missile_01_SFXR
+4 = 3797 missile_11_SFXR
+5 = 3794 missile_07_SFXR
+6 = 3795 missile_04_SFXR
+7 = 3787 missile_02_SFXR
+8 = 3789 missile_09_SFXR
+9 = 3788 missile_03_SFXR
+10 = 1252 barrelexpos
+11 = 18876 BigGreenGloop1
+12 = 3082 ammo_capsule
+13 = 2040 AMMO_BOX_M1
+14 = 2977 kmilitary_crate
+15 = 934 GENERATOR_BIG
+16 = 3279 a51_spottower
+17 = 3117 a51_ventcoverb
+18 = 2928 a51_intdoor
+19 = 2951 a51_labdoor
+
+[Lights] lights
+TOTAL=52
+1 = 19419 police_lights01
+2 = 18646 PoliceLight1
+3 = 11701 AmbulanceLights1
+4 = 19803 TowTruckLights1
+5 = 18647 RedNeonTube1
+6 = 18648 BlueNeonTube1
+7 = 18649 GreenNeonTube1
+8 = 18650 YellowNeonTube1
+9 = 18651 PinkNeonTube1
+10 = 18652 WhiteNeonTube1
+11 = 18658 LightBeamBlue
+12 = 18657 LightBeamRed
+13 = 19281 PointLight1
+14 = 19282 PointLight2
+15 = 19283 PointLight3
+16 = 19284 PointLight4
+17 = 19285 PointLight5
+18 = 19286 PointLight6
+19 = 19287 PointLight7
+20 = 19288 PointLight8
+21 = 19289 PointLight9
+22 = 19290 PointLight10
+23 = 19291 PointLight11
+24 = 19292 PointLight12
+25 = 19293 PointLight13
+26 = 19294 PointLight14
+27 = 19295 PointLight15
+28 = 19296 PointLight16
+29 = 19297 PointLight17
+30 = 19298 PointLight18
+31 = 19143 PinSpotLight1
+32 = 19144 PinSpotLight2
+33 = 19145 PinSpotLight3
+34 = 19146 PinSpotLight4
+35 = 19147 PinSpotLight5
+36 = 19148 PinSpotLight6
+37 = 19149 PinSpotLight7
+38 = 19150 PinSpotLight8
+39 = 19151 PinSpotLight9
+40 = 19152 PinSpotLight10
+41 = 19153 PinSpotLight11
+42 = 19154 PinSpotLight12
+43 = 19155 PinSpotLight13
+44 = 19156 PinSpotLight14
+45 = 19121 BollardLight1
+46 = 19122 BollardLight2
+47 = 19123 BollardLight3
+48 = 19124 BollardLight4
+49 = 19125 BollardLight5
+50 = 19126 BollardLight6
+51 = 19127 BollardLight7
+52 = 19128 DanceFloor1
+
+
+pickuplist
+
+
+[Weapons]
+TOTAL=105
+1 = 321 ~w~gun_dildo1
+2 = 322 ~w~gun_dildo2
+3 = 323 ~w~gun_vibe1
+4 = 324 ~w~gun_vibe2
+5 = 325 ~w~flowera
+6 = 326 ~w~gun_cane
+7 = 330 ~w~cellphone
+8 = 331 ~w~brassknuckle
+9 = 333 ~w~golfclub
+10 = 334 ~w~nitestick
+11 = 335 ~w~knifecur
+12 = 336 ~w~bat
+13 = 337 ~w~shovel
+14 = 338 ~w~poolcue
+15 = 339 ~w~katana
+16 = 341 ~w~chnsaw
+17 = 342 ~w~grenade
+18 = 343 ~w~teargas
+19 = 344 ~w~molotov
+20 = 346 ~w~colt45
+21 = 347 ~w~silenced
+22 = 348 ~w~desert_eagle
+23 = 349 ~w~chromegun
+24 = 350 ~w~sawnoff
+25 = 351 ~w~shotgspa
+26 = 352 ~w~micro_uzi
+27 = 353 ~w~mp5lng
+28 = 372 ~w~tec9
+29 = 355 ~w~ak47
+30 = 356 ~w~m4
+31 = 357 ~w~cuntgun
+32 = 358 ~w~sniper
+33 = 359 ~w~rocketla
+34 = 360 ~w~heatseek
+35 = 361 ~w~flame
+36 = 362 ~w~minigun
+37 = 363 ~w~satchel
+38 = 364 ~w~bomb
+39 = 365 ~w~spraycan
+40 = 366 ~w~fire_ex
+41 = 367 ~w~camera
+42 = 368 ~w~nvgoggles
+43 = 369 ~w~irgoggles
+44 = 371 ~w~gun_para
+45 = 14904 ~w~binoculars
+46 = 14905 ~w~m60
+47 = 14939 ~w~mg42
+48 = 14919 ~w~quadrocket
+49 = 14915 ~w~m249
+50 = 14914 ~w~rpk
+51 = 14913 ~w~SVD
+52 = 14912 ~w~barrett
+53 = 14933 ~w~vss
+54 = 14911 ~w~crossbow
+55 = 14920 ~w~mdl336
+56 = 14918 ~w~m14
+57 = 14916 ~w~psg1
+58 = 14917 ~w~m2
+59 = 14907 ~w~awm
+60 = 14910 ~w~mpl
+61 = 14955 ~w~m950
+62 = 14921 ~w~fnp90
+63 = 14922 ~w~mac10s
+64 = 14923 ~w~mp5sd
+65 = 14924 ~w~mp5k
+66 = 14925 ~w~vityaz
+67 = 14926 ~w~vector
+68 = 14927 ~w~ump45
+69 = 14928 ~w~thompson_m1
+70 = 14929 ~w~ppbizon
+71 = 14930 ~w~scorpion
+72 = 14906 ~w~benelli
+73 = 14940 ~w~jackhammer
+74 = 14941 ~w~mossberg500
+75 = 14942 ~w~mossberg500b
+76 = 14943 ~w~striker
+77 = 14944 ~w~saiga
+78 = 14931 ~w~aa12
+79 = 14932 ~w~doublebarrel
+80 = 14945 ~w~cz75
+81 = 14946 ~w~p220
+82 = 14908 ~w~38r
+83 = 14909 ~w~smith629
+84 = 14938 ~w~python
+85 = 14935 ~w~fiveseven
+86 = 14934 ~w~glock18c
+87 = 14952 ~w~berettas
+88 = 14951 ~w~beretta
+89 = 14947 ~w~glock25
+90 = 14948 ~w~glock25s
+91 = 14949 ~w~usp
+92 = 14950 ~w~usps
+93 = 14936 ~w~stg44
+94 = 14937 ~w~aug
+95 = 14953 ~w~aksu
+96 = 14954 ~w~sg550
+97 = 14956 ~w~asval
+98 = 14957 ~w~famas
+99 = 14958 ~w~fnfal
+100 = 14959 ~w~galil
+101 = 14960 ~w~groza
+102 = 14961 ~w~m4a1s
+103 = 14962 ~w~m16
+104 = 14963 ~w~scarl
+105 = 14964 ~w~sig552
+
+[Player]
+TOTAL=6
+1 = 1240 Heart
+2 = 1242 armour
+3 = 1212 money
+4 = 1241 adrenaline
+5 = 1247 bribe
+6 = 370 jetpack
+
+[Other]
+TOTAL=52
+1 = 1210 Briefcase
+2 = 1650 petrolcanm
+3 = 1239 Information
+4 = 1248 Gta3
+5 = 1252 Greybomb
+6 = 1253 Photo
+7 = 1254 Rampage
+8 = 1313 Rampagex2
+9 = 1272 Bluehouse
+10 = 1273 Greenhouse
+11 = 19522 property_red
+12 = 19523 property_ora
+13 = 19524 property_yel
+14 = 1274 dollar
+15 = 1550 CJ_MONEY_BAG
+16 = 1275 blue_t-shirt
+17 = 1276 tiki
+18 = 1277 save_disk
+19 = 1279 drug_bundle
+20 = 1313 2_skulls_icon
+21 = 1314 2_player
+22 = 1316 Corona
+23 = 1559 Enter/Exit
+24 = 1582 Pizza_Box
+25 = 2894 Book
+26 = 1575 drug_white
+27 = 1576 drug_orange
+28 = 1577 drug_yellow
+29 = 1578 drug_green
+30 = 1579 drug_blue
+31 = 1580 drug_red
+32 = 1279 craigpackage
+33 = 1581 keycard
+34 = 19039 WatchType1
+35 = 19054 XmasBox1
+36 = 19055 XmasBox2
+37 = 19056 XmasBox3
+38 = 19057 XmasBox4
+39 = 19058 XmasBox5
+40 = 1318 ArrowType0
+41 = 19130 ArrowType1
+42 = 19131 ArrowType2
+43 = 19132 ArrowType3
+44 = 19133 ArrowType4
+45 = 19134 ArrowType5
+46 = 19135 EnExMarker1
+47 = 19197 EnExMarker2
+48 = 19198 EnExMarker3
+49 = 19902 EnExMarker4
+50 = 19605 EnExMarker4-2
+51 = 19606 EnExMarker4-3
+52 = 19607 EnExMarker4-4
+
+radarlist
+
+[RADAR] #Default 0-63
+TOTAL=94
+0 = NULL
+1 = NULL
+2 = radar_centre
+3 = arrow
+4 = radar_north
+5 = radar_airYard
+6 = radar_ammugun
+7 = radar_barbers
+8 = radar_BIGSMOKE
+9 = radar_boatyard
+10 = radar_burgerShot
+11 = radar_bulldozer
+12 = radar_CATALINAPINK
+13 = radar_CESARVIAPANDO
+14 = radar_chicken
+15 = radar_CJ
+16 = radar_CRASH1
+17 = radar_diner
+18 = radar_emmetGun
+19 = radar_enemyAttack
+20 = radar_fire
+21 = radar_girlfriend
+22 = radar_hostpital
+23 = radar_LocoSyndicate
+24 = radar_MADDOG
+25 = radar_mafiaCasino
+26 = radar_MCSTRAP
+27 = radar_modGarage
+28 = radar_OGLOC
+29 = radar_pizza
+30 = radar_police
+31 = radar_propertyG
+32 = radar_propertyR
+33 = radar_race
+34 = radar_RYDER
+35 = radar_saveGame
+36 = radar_school
+37 = radar_qmark
+38 = radar_SWEET
+39 = radar_tattoo
+40 = radar_THETRUTH
+41 = radar_waypoint
+42 = radar_TorenoRanch
+43 = radar_triads
+44 = radar_triadsCasino
+45 = radar_tshirt
+46 = radar_WOOZIE
+47 = radar_ZERO
+48 = radar_dateDisco
+49 = radar_dateDrink
+50 = radar_dateFood
+51 = radar_truck
+52 = radar_cash
+53 = radar_Flag
+54 = radar_gym
+55 = radar_impound
+56 = radar_light
+57 = radar_runway
+58 = radar_gangB
+59 = radar_gangP
+60 = radar_gangY
+61 = radar_gangN
+62 = radar_gangG
+63 = radar_spray
+64 = radar_adrenalin  
+65 = radar_avery      
+66 = radar_biker      
+67 = radar_bikers     
+68 = radar_bomb       
+69 = radar_case1      
+70 = radar_case2      
+71 = radar_case3      
+72 = radar_case4      
+73 = radar_cellphone  
+74 = radar_cherry     
+75 = radar_cortez     
+76 = radar_donut      
+77 = radar_drugs      
+78 = radar_gasfuel    
+79 = radar_hardware   
+80 = radar_hiddenpc   
+81 = radar_icecream   
+82 = radar_joey       
+83 = radar_kent       
+84 = radar_lips       
+85 = radar_marijuana  
+86 = radar_palm       
+87 = radar_phil       
+88 = radar_phone      
+89 = radar_shop       
+90 = radar_star       
+91 = radar_strip      
+92 = radar_studio     
+93 = radar_SunYard    
+94 = radar_vercetti   
+
+setupini
+
+[starter]
+MissID=claude1
+Launch=0
+IniChecked=0
+LaunchFrom=-1
+SavePath=
+
+[Select]
+CivMale=57
+CivFemale=30
+Emergency=10
+Criminal=12
+Prostitute=4
+Cold=3
+Pistol=3
+SMG=1
+Rifle=7
+Grenade=2
+Shotgun=1
+Heavy=5
+Other=2
+Cars=3
+Heli=10
+Bikes=3
+Planes=11
+Boats=3
+Army=13
+RC=5
+Special=49
+STAY=20
+SEAT=9
+LAY=11
+WEAPON=15
+CHAT=63
+DANCE=38
+DIE=5
+SOUNDS=1
+Weapons=21
+Player=3
+STAND=220
+MIMIC=2
+INTERACT=164
+SIT=110
+HURT=10
+SEX=46
+MOVE=26
+CUTS=4
+ATTACK=26
+DEATH=6
+PNG=1
+Roads=1
+Trash=3
+Floats=16
+Walls=3
+Vegetables=31
+Police=18
+Furniture=54
+Effects=10
+Food=24
+Lights=51
+OBJECT_6=1
+Addon=13
+PICKUP_16=1
+
+[Actor]
+Model=101
+Weapon=0
+Health=100
+Armour=0
+Accurate=60
+GROUP=MMS49
+IMMU1=0
+IMMU2=0
+IMMU3=0
+IMMU4=0
+IMMU5=0
+IMMU6=1
+IMMU7=1
+SKILL_W=2
+SKILL_F=1
+Rope=0
+IMMU8=0
+IMMU9=0
+IMMU10=0
+IMMU11=0
+IMMU12=1
+IMMU13=0
+Behavior=1
+
+[Vehicle]
+Model=16807
+Health=1000 
+COLOR1=13
+COLOR2=-1
+PAINT=-1
+IMMU1=0
+IMMU2=0
+IMMU3=0
+IMMU4=0
+IMMU5=0
+IMMU6=1
+IMMU7=1
+IMMU8=1000
+Doors=0
+Train_typeS=4
+Train_typeF=4
+Train_direct=0
+Train_typeT=1
+Train_type=12
+
+[Pickup]
+Model=347
+Ammo=17
+
+[Object]
+Health=1000
+moveable=0
+visibility=1
+destructible=0
+liftable=0
+coll=1
+magnet=0
+
+[Obj]
+SPHERE_TYPE=3
+SPHERE_R=1.5
+SPHERE_V=1
+SPHERE_ACTOR=1
+SPHERE_VEH=1
+CUM_TIME=1
+DIAL_TIME=7000
+SKIPPABLE=0
+TIME=90
+MUSIC_START=4
+MUSIC_LOOP=1
+MProgress=1
+HIDE_TYPE=0
+TIME2=90
+3DSND=1
+SPHERE_R2=2
+MOUTH=1
+COMPID=4
+SPHEREMO=8
+GAMECUT=bcesar5
+LEAVER=58
+TIMERA=10
+TIMERB=3
+OBJSPEED=5
+TIMERC=90999
+SPHERE_R3=2
+SPHERE_R4=12
+FAIL_TIMER=15
+TIMERÑ=1
+SPHERE_COLOR=3
+MARKER_COLOR=1
+MARKER_SIZE=3
+
+[ACTION_A]
+Loop=1
+Freeze=0
+Move=0
+Indestruct=0
+Progress=0
+Speed=1
+TP=0
+Correct=0
+
+[OBJ_1]
+MARKER_COLOR=1
+[OBJ_2]
+MARKER_COLOR=1
+
+
+specialactorlist
+
+
+
+[Special]
+Total=75
+1 = andre
+2 = bbthin
+3 = bb
+4 = cat
+5 = cesar
+6 = claude
+7 = dwayne
+8 = emmet
+9 = forelli
+10 = janitor
+11 = jethro
+12 = jizzy
+13 = kendl
+14 = maccer
+15 = maddogg
+16 = gangrl1
+17 = gangrl2
+18 = gungrl1
+19 = gungrl2
+20 = copgrl1
+21 = copgrl2
+22 = copgrl4
+23 = crogrl1
+24 = crogrl2
+25 = mecgrl1
+26 = mecgrl2
+27 = nurgrl1
+28 = nurgrl2
+29 = wfycrp
+30 = wmycd2
+31 = ogloc
+32 = paul
+33 = cdeput
+34 = sfpdm1
+35 = lvpdm1
+36 = hern
+37 = pulaski
+38 = tenpen
+39 = psycho
+40 = mediatr
+41 = rose
+42 = ryder1
+43 = ryder2
+44 = ryder3
+45 = sindaco
+46 = smoke
+47 = smokev
+48 = suzie
+49 = sweet
+50 = tbone
+51 = torino
+52 = truth
+53 = wuzimu
+54 = zero
+55 = wmyrob
+56 = bmyrob
+57 = wfyscren
+58 = lapdna
+59 = sfpdna
+60 = lvpdna
+61 = lapdpc
+62 = lapdpd
+63 = lvpdpc
+64 = wfyclpd
+65 = vbfycpd
+66 = wfypdla
+67 = wfycllv
+68 = wfysdsh
+69 = wfycshe
+70 = wfyfbi
+71 = laemf1
+72 = wfyclem
+73 = lvemf1
+74 = csherna
+75 = dsherna
+
+[PEDTYPE]
+# 290, man (male voice)
+# 291, swat (male voice)
+# 292, gang1 (male voice)
+# 293, gang2 (fat) (male voice)
+# 294, sexywoman (female voice) 
+# 295, woman (female voice) 
+# 296, fatwoman (female voice) 
+# 297, blindman (male voice)
+# 298, blindwoman (female voice) 
+# 299, fatman (male voice)
+andre    = 290
+bbthin   = 290
+bb       = 299
+cat      = 295
+cesar    = 292
+claude   = 290
+dwayne   = 290
+emmet    = 292
+forelli  = 290
+janitor  = 290
+jethro   = 290
+jizzy    = 290
+kendl    = 295
+maccer   = 290
+maddogg  = 290
+gangrl1  = 294
+gangrl2  = 294
+gungrl1  = 294
+gungrl2  = 294
+copgrl1  = 294
+copgrl2  = 294
+copgrl4  = 294
+crogrl1  = 294
+crogrl2  = 294
+mecgrl1  = 294
+mecgrl2  = 294
+nurgrl1  = 294
+nurgrl2  = 294
+wfycrp   = 296
+wmycd2   = 290
+ogloc    = 292
+paul     = 290
+cdeput   = 291
+sfpdm1   = 291
+lvpdm1   = 291
+hern     = 291
+pulaski  = 291
+tenpen   = 291
+psycho   = 291
+mediatr  = 290
+rose     = 290
+ryder1   = 292
+ryder2   = 292
+ryder3   = 292
+sindaco  = 290
+smoke    = 299
+smokev   = 299
+suzie    = 290
+sweet    = 292
+tbone    = 290
+torino   = 290
+truth    = 290
+wuzimu   = 297
+zero     = 290
+wmyrob   = 290
+bmyrob	 = 290
+wfyscren = 294
+lapdna   = 291
+sfpdna   = 291
+lvpdna   = 291
+lapdpc   = 291
+lapdpd   = 291
+lvpdpc   = 291
+wfyclpd  = 295
+vbfycpd  = 295
+wfypdla  = 295
+wfycllv  = 295
+wfysdsh  = 295
+wfycshe  = 295
+wfyfbi   = 295
+laemf1   = 295
+wfyclem  = 295
+lvemf1   = 295
+csherna  = 291
+dsherna  = 291
+
+trainlist:
+
+
+[TRAINS] # Train models that will be identified as trains.
+590 = Freibox
+538	= Streak
+570	= Streakc
+569	= Freiflat
+537	= Freight
+449 = Tram
+
+[MODELS] # Models of trains and carriages that will be loaded to avoid a crash.
+1 = 590 Freibox
+2 = 538 Streak
+3 = 570 Streakc
+4 = 569 Freiflat
+5 = 537 Freight
+6 = 449 Tram
+
+[CARRIAGES] # See in "data\gtasa_trainTypeCarriages.dat" # Default 0-15
+Total=20
+
+Vehallist
+
+------------- TANKS
+[RHINO]
+EXPLO_ID=6
+Ammo=1
+RELOAD_TIME=4000
+Tower_speed=0.009
+Cannon_speed=0.0007
+Blind_zone=7.0
+
+[t72a]
+EXPLO_ID=10
+Ammo=1
+RELOAD_TIME=5000
+Tower_speed=0.009
+Cannon_speed=0.0007
+Blind_zone=7.0
+
+[t72b]
+EXPLO_ID=10
+Ammo=1
+RELOAD_TIME=5000
+Tower_speed=0.009
+Cannon_speed=0.0007
+Blind_zone=7.0
+
+[hvyapc]
+EXPLO_ID=11
+Ammo=1
+RELOAD_TIME=4000
+Tower_speed=0.009
+Cannon_speed=0.0007
+Blind_zone=7.0
+
+[hvydef]
+EXPLO_ID=11
+Ammo=1
+RELOAD_TIME=4000
+Tower_speed=0.009
+Cannon_speed=0.0007
+Blind_zone=7.0
+
+[hvydefb]
+EXPLO_ID=11
+Ammo=1
+RELOAD_TIME=4000
+Tower_speed=0.009
+Cannon_speed=0.0007
+Blind_zone=7.0
+
+------------- BTR`S
+
+[btr80]
+EXPLO_ID=0
+Damage=40
+Ammo=15
+Delay=200
+Spread=15.8
+RELOAD_TIME=2000
+Tower_speed=0.016
+Cannon_speed=0.0007
+Blind_zone=7.0
+IgnoreBulImmu=1
+Gun_Snd=modloader\SAMM(Stable)\Main\Audio\VehAI\btr80.mp3
+
+[btr82]
+EXPLO_ID=0
+Damage=40
+Ammo=15
+Delay=200
+Spread=15.8
+RELOAD_TIME=2000
+Tower_speed=0.016
+Cannon_speed=0.0007
+Blind_zone=7.0
+IgnoreBulImmu=1
+Gun_Snd=modloader\SAMM(Stable)\Main\Audio\VehAI\btr82.mp3
+
+[hvyapcb]
+EXPLO_ID=0
+Damage=40
+Ammo=15
+Delay=200
+Spread=15.8
+RELOAD_TIME=2000
+Tower_speed=0.016
+Cannon_speed=0.0007
+Blind_zone=7.0
+IgnoreBulImmu=1
+Gun_Snd=modloader\SAMM(Stable)\Main\Audio\VehAI\btr80.mp3
+
+/////////////////////////////////
+
+
+vehlist.
+
+
+[Cars] CARS
+Total=142
+1 = landstal
+2 = bravura
+3 = buffalo
+4 = linerun
+5 = peren
+6 = sentinel
+7 = dumper
+8 = trash
+9 = stretch
+10 = manana
+11 = infernus
+12 = voodoo
+13 = pony
+14 = mule
+15 = cheetah
+16 = moonbeam
+17 = esperant
+18 = taxi
+19 = washing
+20 = bobcat
+21 = mrwhoop
+22 = bfinject
+23 = premier
+24 = securica
+25 = banshee
+26 = bus
+27 = hotknife
+28 = artict1
+29 = previon
+30 = coach
+31 = cabbie
+32 = stallion
+33 = rumpo
+34 = romero
+35 = packer
+36 = monster
+37 = admiral
+38 = artict2
+39 = turismo
+40 = flatbed
+41 = yankee
+42 = caddy
+43 = solair
+44 = topfun
+45 = glendale
+46 = oceanic
+47 = hermes
+48 = sabre
+49 = zr350
+50 = walton
+51 = regina
+52 = comet
+53 = burrito
+54 = camper
+55 = baggage
+56 = dozer
+57 = rancher
+58 = virgo
+59 = greenwoo
+60 = hotring
+61 = sandking
+62 = blistac
+63 = boxville
+64 = benson
+65 = mesa
+66 = hotrina
+67 = hotrinb
+68 = bloodra
+69 = rnchlure
+70 = supergt
+71 = elegant
+72 = journey
+73 = petro
+74 = rdtrain
+75 = nebula
+76 = majestic
+77 = buccanee
+78 = cement
+79 = towtruck
+80 = fortune
+81 = cadrona
+82 = willard
+83 = forklift
+84 = tractor
+85 = combine
+86 = feltzer
+87 = remingtn
+88 = slamvan
+89 = blade
+90 = vortex
+91 = vincent
+92 = bullet
+93 = clover
+94 = sadler
+95 = hustler
+96 = intruder
+97 = primo
+98 = tampa
+99 = sunrise
+100 = merit
+101 = utility
+102 = yosemite
+103 = windsor
+104 = monstera
+105 = monsterb
+106 = uranus
+107 = jester
+108 = sultan
+109 = stratum
+110 = elegy
+111 = flash
+112 = tahoma
+113 = savanna
+114 = bandito
+115 = kart
+116 = mower
+117 = duneride
+118 = sweeper
+119 = broadway
+120 = tornado
+121 = dft30
+122 = huntley
+123 = stafford
+124 = newsvan
+125 = tug
+126 = petrotr
+127 = emperor
+128 = euros
+129 = hotdog
+130 = club
+131 = artict3
+132 = picador
+133 = alpha
+134 = phoenix
+135 = glenshit
+136 = sadlshit
+137 = bagboxa
+138 = bagboxb
+139 = tugstair
+140 = boxburg
+141 = farmtr1
+142 = utiltr1
+
+[Addon] ADDON
+Total=30
+1 = argento
+2 = bansheb
+3 = bobcatb
+4 = cartel
+5 = cheetab
+6 = cruistax
+7 = deimos
+8 = deluxo
+9 = exsess
+10 = fieldma
+11 = ghost
+12 = hauler
+13 = hellenba
+14 = idaho
+15 = infernuc
+16 = journeyb
+17 = kuruma
+18 = landstab
+19 = landstac
+20 = linerufx
+21 = mananab
+22 = phobos
+23 = polaris
+24 = sightsee
+25 = skidste
+26 = stanier
+27 = stinger
+28 = thunder
+29 = transmas
+30 = wcheese
+
+[Bikes] BIKES
+Total=17
+1 = bmx
+2 = bike
+3 = mtbike
+4 = sanchez 
+5 = bf400
+6 = pcj600
+7 = fcr900
+8 = nrg500
+9 = faggio
+10 = freeway
+11 = pizzaboy
+12 = wayfarer
+13 = quad
+14 = streetfi
+15 = manchez
+16 = ventoso
+17 = wntgrn
+
+[Heli] HELI
+Total=14
+1 = vcnmav
+2 = sparrow
+3 = seaspar
+4 = maverick
+5 = polmav
+6 = cargobob
+7 = raindanc
+8 = leviathn
+9 = hunter
+10 = mi24
+11 = mi28
+12 = talona
+13 = talonb
+14 = lilwill
+
+[Planes] PLANES
+Total=12
+1 = skimmer
+2 = beagle
+3 = stunt  
+4 = cropdust
+5 = nevada
+6 = dodo
+7 = rustler
+8 = shamal
+9 = hydra
+10 = androm
+11 = at400
+12 = at20
+               
+[Boats] BOATS
+Total=11
+1 = coastg
+2 = dinghy
+3 = jetmax   
+4 = squalo   
+5 = speeder
+6 = reefer  
+7 = tropic  
+8 = marquis   
+9 = predator  
+10 = launch
+11 = ferry
+
+[Emergency] EMERGENCY
+Total=18
+1 = copcarla
+2 = cruisrla
+3 = copcarsf
+4 = cruisrsf
+5 = copcarvg
+6 = cruisrvg
+7 = copcarru
+8 = cruisrru
+9 = copbike
+10 = swatvan
+11 = fbitruck
+12 = fbiranch
+13 = cruisfbi
+14 = enforcer
+15 = ambulan
+16 = firetruk
+17 = firela
+18 = firetrub
+
+[Army] ARMY
+Total=15
+1 = patriot
+2 = barracks
+3 = rhino
+4 = hvyapc 
+5 = hvydef 
+6 = hvydefb
+7 = hvyapcb
+8 = btr80
+9 = btr82
+10 = t72a 
+11 = t72b
+12 = bmpr
+13 = warbeast
+14 = sleipna
+15 = sleipnb
+
+[RC] RC
+Total=6
+1 = rcbandit
+2 = rcbaron
+3 = rcraider
+4 = rcgoblin
+5 = rctiger
+6 = rccam
+
+
+vehstandar
+
+
+[VehStandart]
+landstal=1
+bravura=1
+buffalo=1
+linerun=1
+peren=1
+sentinel=1
+dumper=1
+firetruk=1
+trash=1
+stretch=1
+manana=1
+infernus=1
+voodoo=1
+pony=1
+mule=1
+cheetah=1
+ambulan=1
+leviathn=1
+moonbeam=1
+esperant=1
+taxi=1
+washing=1
+bobcat=1
+mrwhoop=1
+bfinject=1
+hunter=1
+premier=1
+enforcer=1
+securica=1
+banshee=1
+predator=1
+bus=1
+rhino=1
+barracks=1
+hotknife=1
+artict1=1
+previon=1
+coach=1
+cabbie=1
+stallion=1
+rumpo=1
+rcbandit=1
+romero=1
+packer=1
+monster=1
+admiral=1
+squalo=1
+seaspar=1
+pizzaboy=1
+tram=1
+artict2=1
+turismo=1
+speeder=1
+reefer=1
+tropic=1
+flatbed=1
+yankee=1
+caddy=1
+solair=1
+topfun=1
+skimmer=1
+pcj600=1
+faggio=1
+freeway=1
+rcbaron=1
+rcraider=1
+glendale=1
+oceanic=1
+sanchez=1
+sparrow=1
+patriot=1
+quad=1
+coastg=1
+dinghy=1
+hermes=1
+sabre=1
+rustler=1
+zr350=1
+walton=1
+regina=1
+comet=1
+bmx=1
+burrito=1
+camper=1
+marquis=1
+baggage=1
+dozer=1
+maverick=1
+vcnmav=1
+rancher=1
+fbiranch=1
+virgo=1
+greenwoo=1
+jetmax=1
+hotring=1
+sandking=1
+blistac=1
+polmav=1
+boxville=1
+benson=1
+mesa=1
+rcgoblin=1
+hotrina=1
+hotrinb=1
+bloodra=1
+rnchlure=1
+supergt=1
+elegant=1
+journey=1
+bike=1
+mtbike=1
+beagle=1
+cropdust=1
+stunt=1
+petro=1
+rdtrain=1
+nebula=1
+majestic=1
+buccanee=1
+shamal=1
+hydra=1
+fcr900=1
+nrg500=1
+copbike=1
+cement=1
+towtruck=1
+fortune=1
+cadrona=1
+fbitruck=1
+willard=1
+forklift=1
+tractor=1
+combine=1
+feltzer=1
+remingtn=1
+slamvan=1
+blade=1
+freight=1
+streak=1
+vortex=1
+vincent=1
+bullet=1
+clover=1
+sadler=1
+firela=1
+hustler=1
+intruder=1
+primo=1
+cargobob=1
+tampa=1
+sunrise=1
+merit=1
+utility=1
+nevada=1
+yosemite=1
+windsor=1
+monstera=1
+monsterb=1
+uranus=1
+jester=1
+sultan=1
+stratum=1
+elegy=1
+raindanc=1
+rctiger=1
+flash=1
+tahoma=1
+savanna=1
+bandito=1
+freiflat=1
+streakc=1
+kart=1
+mower=1
+duneride=1
+sweeper=1
+broadway=1
+tornado=1
+at400=1
+dft30=1
+huntley=1
+stafford=1
+bf400=1
+newsvan=1
+tug=1
+petrotr=1
+emperor
+wayfarer
+euros=1
+hotdog=1
+club=1
+freibox=1
+artict3=1
+androm=1
+dodo
+rccam=1
+launch=1
+
+copcarla=1
+copcarsf=1
+copcarvg=1
+copcarru=1
+
+picador=1
+swatvan=1
+alpha=1
+phoenix=1
+glenshit=1
+sadlshit=1
+bagboxa=1
+bagboxb=1
+tugstair=1
+boxburg=1
+farmtr1=1
+utiltr1=1
+
+
+weapon_list
+
+[Cold]
+Total=25
+1=brassknuckle
+2=golfclub
+3=nitestick
+4=knifecur
+5=bat
+6=shovel
+7=poolcue
+8=katana
+9=chnsaw
+10=machete
+11=axe
+12=m9
+13=hammer
+14=crowbar
+15=bottle
+16=bowieknife
+17=meatcleaver
+18=metalpipe
+19=nailbat
+20=nailboar
+21=screwdriver
+22=sickle
+23=sledgehammer
+24=wrench
+25=guitar
+
+[Pistol]
+Total=16
+1=colt45
+2=silenced
+3=desert_eagle
+4=38r
+5=smith629
+6=glock18c
+7=fiveseven
+8=python
+9=cz75
+10=p220
+11=glock25
+12=glock25s
+13=usp
+14=usps
+15=beretta
+16=berettas
+
+[SMG]
+Total=15
+1=micro_uzi
+2=mp5lng
+3=tec9
+4=mpl
+5=fnp90
+6=mac10s
+7=mp5sd
+8=mp5k
+9=vityaz
+10=vector
+11=ump45
+12=thompson_m1
+13=ppbizon
+14=scorpion
+15=m950
+
+[Rifle]
+Total=26
+1=ak47
+2=m4
+3=cuntgun
+4=sniper
+5=awm
+6=crossbow
+7=barrett
+8=svd
+9=psg1
+10=m2
+11=m14
+12=mdl336
+13=vss
+14=stg44
+15=aug
+16=aksu
+17=sg550
+18=asval
+19=famas
+20=fnfal
+21=galil
+22=groza
+23=m4a1s
+24=m16
+25=scarl
+26=sig552
+
+[Shotgun]
+Total=11
+1=chromegun
+2=sawnoff
+3=shotgspa
+4=benelli
+5=aa12
+6=doublebarrel
+7=jackhammer
+8=mossberg500
+9=mossberg500b
+10=striker
+11=saiga
+
+[Heavy]
+Total=8
+1=heatseek
+2=flame
+3=minigun
+4=m60
+5=rpk
+6=m249
+7=quadrocket
+8=mg42
+
+[Other]
+Total=13
+1=gun_dildo1
+2=gun_dildo2
+3=gun_vibe1
+4=gun_vibe2
+5=flowera
+6=gun_cane
+7=spraycan
+8=fire_ex
+9=camera
+10=nvgoggles
+11=irgoggles
+12=gun_para
+13=binoculars
+
+[Grenade]
+Total=4
+1=grenade
+2=teargas
+3=molotov
+4=satchel
+
+
+zonelist
+
+
+
+[ZONE]
+TOTAL=378
+1 = SUNMA
+2 = SUNNN
+3 = BATTP
+4 = PARA
+5 = CIVI
+6 = BAYV
+7 = CITYS
+8 = OCEAF1
+9 = OCEAF2
+10 = OCEAF3
+11 = SILLY3
+12 = SILLY4
+13 = HASH
+14 = JUNIHO
+15 = ESPN1
+16 = ESPN2
+17 = ESPN3
+18 = FINA
+19 = CALT
+20 = SFDWT1
+21 = SFDWT2
+22 = SFDWT3
+23 = SFDWT4
+24 = JUNIHI
+25 = CHINA
+26 = SFDWT5
+27 = THEA1
+28 = THEA2
+29 = THEA3
+30 = GARC
+31 = DOH1
+32 = DOH2
+33 = SFDWT6
+34 = SFAIR3
+35 = EASB1
+36 = EASB2
+37 = ESPE1
+38 = ESPE2
+39 = ESPE3
+40 = ANGPI
+41 = SHACA
+42 = BACKO
+43 = LEAFY
+44 = FLINTR
+45 = HAUL
+46 = FARM
+47 = ELQUE
+48 = ALDEA
+49 = DAM
+50 = BARRA
+51 = CARSO
+52 = QUARY
+53 = OCTAN
+54 = PALMS
+55 = TOM
+56 = BRUJA
+57 = MEAD
+58 = PAYAS
+59 = ARCO
+60 = SFAIR1
+61 = HANKY
+62 = PALO
+63 = NROCK
+64 = MONT
+65 = MONT1
+66 = HBARNS
+67 = FERN
+68 = DILLI
+69 = TOPFA
+70 = BLUEB1
+71 = BLUEB
+72 = PANOP
+73 = FRED
+74 = MAKO
+75 = BLUAC
+76 = MART
+77 = FALLO
+78 = CREEK
+79 = CREEK1
+80 = WESTP1
+81 = WESTP2
+82 = WESTP3
+83 = LA
+84 = VE
+85 = BONE
+86 = ROBAD
+87 = GANTB
+88 = GANTB1
+89 = SF
+90 = ROBAD1
+91 = RED
+92 = FLINTC
+93 = EBAY
+94 = EBAY2
+95 = SFAIR4
+96 = SILLY1
+97 = SILLY2
+98 = SFAIR2
+99 = SFAIR5
+100 = WHET
+101 = LAIR1
+102 = LAIR2a
+103 = BLUF1a
+104 = ELCO2
+105 = LIND1a
+106 = LIND1b
+107 = LIND2a
+108 = LIND2b
+109 = LDOC4
+110 = LDOC1b
+111 = MAR3
+112 = VERO4a
+113 = VERO4b
+114 = BLUF1b
+115 = BLUF2
+116 = ELCO1
+117 = VERO1
+118 = MAR1
+119 = MAR2
+120 = VERO3
+121 = VERO2	
+122 = CONF1b
+123 = CONF1a
+124 = THALL1
+125 = COM1a
+126 = COM1b
+127 = COM2
+128 = PER1
+129 = COM4
+130 = LMEX1a
+131 = LMEX1b
+132 = COM3
+133 = IWD3a
+134 = IWD3b
+135 = IWD4
+136 = IWD1
+137 = IWD2
+138 = GLN2a
+139 = GLN1b
+140 = JEF3a
+141 = JEF3c
+142 = JEF2
+143 = JEF1b
+144 = JEF1a
+145 = CHC1a
+146 = CHC1b
+147 = CHC2b
+148 = CHC2a
+149 = IWD5
+150 = GAN2
+151 = GAN1
+152 = LIND4c
+153 = EBE3c
+154 = EBE2a
+155 = EBE2b
+156 = ELS4
+157 = ELS3a
+158 = JEF3b
+159 = ELS3b
+160 = ELS3c
+161 = ELS1a
+162 = ELS1b
+163 = ELS2
+164 = LFL1a
+165 = LFL1b
+166 = EBE1
+167 = CHC4a
+168 = CHC4b
+169 = CHC3
+170 = LDT5
+171 = LDT7
+172 = LDT4
+173 = LDT3
+174 = LDT6
+175 = MULINT
+176 = MUL3
+177 = MUL2a
+178 = MUL2b
+179 = MKT3
+180 = VIN3
+181 = MKT4
+182 = LDT1a
+183 = LDT1b
+184 = LDT1c
+185 = SUN3a
+186 = SUN3b
+187 = SUN3c
+188 = MUL7a
+189 = MUL7b
+190 = MUL6
+191 = VIN2
+192 = SUN1
+193 = SUN4
+194 = SUN2
+195 = MUL4
+196 = MUL1a
+197 = MUL1b
+198 = MUL5a
+199 = MUL5b
+200 = MUL5c
+201 = MUL1c
+202 = SMB1
+203 = SMB2
+204 = ROD5b
+205 = ROD5a
+206 = ROD1a
+207 = ROD1b
+208 = ROD1c
+209 = ROD3a
+210 = ROD3b
+211 = ROD4a
+212 = ROD4b
+213 = ROD4c
+214 = VIN1b
+215 = RIH5a
+216 = RIH5b
+217 = ROD2b
+218 = ROD2a
+219 = RIH6a
+220 = RIH6b
+221 = RIH3a
+222 = RIH3b
+223 = RIH4
+224 = RIH2
+225 = RIH1a
+226 = RIH1b
+227 = STRIP1
+228 = STRIP2
+229 = DRAG
+230 = PINK
+231 = HIGH
+232 = PIRA
+233 = VISA1
+234 = VISA2
+235 = JTS1
+236 = JTW1
+237 = JTS2
+238 = RSE
+239 = LOT
+240 = CAM
+241 = ROY
+242 = CALI1
+243 = CALI2
+244 = PILL1
+245 = STAR2
+246 = STRIP3
+247 = STRIP4
+248 = ISLE
+249 = OVS
+250 = KACC
+251 = CREE
+252 = SRY
+253 = LST
+254 = JTE2
+255 = LDS
+256 = JTE1
+257 = JTN1
+258 = JTE4
+259 = JTE3
+260 = JTN2
+261 = JTN3
+262 = JTN4
+263 = JTN5
+264 = JTW2
+265 = JTN6
+266 = HGP
+267 = REDE1
+268 = REDE2
+269 = REDE3
+270 = JTN8
+271 = REDW2
+272 = REDW1
+273 = REDW3
+274 = REDW4
+275 = VAIR1
+276 = VAIR2
+277 = VAIR3
+278 = LVA1
+279 = BINT2
+280 = BINT1
+281 = BINT3
+282 = BINT4
+283 = LVA2
+284 = LVA3
+285 = LVA4
+286 = LVA5
+287 = GGC1
+288 = GGC2
+289 = BFLD1
+290 = BFLD2
+291 = ROCE1
+292 = ROCE2
+293 = LDM
+294 = RSW1
+295 = RSW2
+296 = RIE
+297 = BFC1
+298 = BFC2
+299 = JTN7
+300 = PINT
+301 = WWE
+302 = PRP1
+303 = PRP2
+304 = PRP3
+305 = SPIN
+306 = PRP4
+307 = PILL2
+308 = SASO
+309 = FISH
+310 = GARV
+311 = GARV1
+312 = GARV2
+313 = KINC
+314 = KINC1
+315 = KINC2
+316 = LSINL
+317 = SHERR
+318 = FLINW
+319 = ETUNN
+320 = BYTUN
+321 = BIGE
+322 = PROBE
+323 = VALLE
+324 = GLN1
+325 = LDOC3a
+326 = LINDEN
+327 = UNITY
+328 = VIN1a
+329 = MARKST
+330 = CRANB
+331 = YELLOW
+332 = SANB1
+333 = SANB2
+334 = ELCA
+335 = ELCA1
+336 = ELCA2
+337 = REST
+338 = MONINT
+339 = MONINT
+340 = ROBINT
+341 = FLINTI
+342 = SFBAG2
+343 = SFBAG3
+344 = SFBAG1
+345 = MKT1
+346 = MKT2
+347 = SFGLF4
+348 = CUNTC2
+349 = HILLP
+350 = MTCHI2
+351 = MTCHI3
+352 = MTCHI1
+353 = MTCHI4
+354 = YBELL1
+355 = YBELL2
+356 = LVBAG
+357 = LDOC1a
+358 = LAIR2b
+359 = LDOC3b
+360 = LBAG1
+361 = LBAG2
+362 = LBAG3
+363 = CONST1
+364 = BEACO
+365 = SFGLF1
+366 = SFGLF2
+367 = SFGLF3
+368 = CUNTC1
+369 = CUNTC3
+370 = PLS
+371 = LDOC3c
+372 = STAR1
+373 = RING
+374 = LDOC2
+375 = LIND3
+376 = LIND4a
+377 = WWE1
+378 = LDT8

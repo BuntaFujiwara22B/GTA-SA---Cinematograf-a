@@ -1,0 +1,221 @@
+{
+  "version": 1,
+  "clips_exportables": 1263,
+  "familias": [
+    {
+      "accion": "bailar",
+      "clips": [
+        "DANCE:3:DANCING:dance_loop",
+        "DANCE:6:DANCING:DAN_Loop_A"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "saludar",
+      "clips": [
+        "STAND:90:ON_LOOKERS:wave_loop"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "aplaudir",
+      "clips": [
+        "DANCE:1:DANCING:bd_clap",
+        "DANCE:2:DANCING:bd_clap1"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "rendirse",
+      "clips": [
+        "STAND:1:ped:handsup"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "mirar a los lados",
+      "clips": [
+        "STAND:2:ped:roadcross"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "rascarse",
+      "clips": [
+        "STAND:6:ped:XPRESSscratch"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "tumbarse",
+      "clips": [
+        "LAY:2:BEACH:Lay_Bac_Loop"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "vomitar",
+      "clips": [
+        "STAND:40:food:EAT_Vomit_P",
+        "STAND:41:food:EAT_Vomit_SK"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "mostrar sorpresa",
+      "clips": [
+        "MIMIC:3:ped:facsurp"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "hablar",
+      "clips": [
+        "CHAT:5:ped:IDLE_chat",
+        "CHAT:76:MMR:idle_chat"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "estirarse",
+      "clips": [
+        "STAND:113:PLAYIDLES:stretch"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "negar con la cabeza",
+      "clips": [
+        "STAND:163:urbanize:shakehead_1"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "mostrar cansancio",
+      "clips": [
+        "STAND:146:MMR:idle_tired"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "encogerse por miedo",
+      "clips": [
+        "STAND:70:ON_LOOKERS:panic_cower"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "celebrar",
+      "clips": [
+        "STAND:173:urbanize:cheers_1"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "expresión de enfado",
+      "clips": [
+        "MIMIC:1:ped:facanger"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "expresión de curiosidad",
+      "clips": [
+        "MIMIC:6:ped:facurios"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "fumar",
+      "clips": [
+        "STAND:133:SMOKING:M_smk_drag"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "reír",
+      "clips": [
+        "CHAT:52:RAPPING:Laugh_01"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "gesto de beber",
+      "clips": [
+        "STAND:46:GANGS:drnkbr_prtl"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "gesto de comer",
+      "clips": [
+        "STAND:37:food:EAT_Burger"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    },
+    {
+      "accion": "hablar por teléfono",
+      "clips": [
+        "STAND:44:ped:phone_talk"
+      ],
+      "estado": "clip_exportable",
+      "alcance": "Reproduce el gesto; no crea automáticamente objetos, humo ni efectos."
+    }
+  ],
+  "composiciones": [
+    {
+      "id": "secuencia",
+      "estado": "implementada",
+      "limites": "1..8 tareas consecutivas, 1..4 actores, 1..60 segundos"
+    },
+    {
+      "id": "conducir_vehiculo",
+      "estado": "implementada",
+      "limites": "Entrar, esperar entrada real y conducir con CARREC"
+    },
+    {
+      "id": "animacion_sobre_vehiculo",
+      "estado": "experimental_exportable",
+      "limites": "Un actor comienza anclado al techo, uno o varios clips consecutivos y vehículo parado o en ruta. No representa subir, bajar, caminar ni saltar desde el techo.",
+      "modelos": [
+        426,
+        405,
+        420,
+        421,
+        445,
+        596
+      ],
+      "evidencia": "EntityCreate: Type=2/SPHERE_TYPE=6 sujeta el actor. Animación Type=3/SPHERE_TYPE=0/TP=0 conserva el anclaje. ACTION_A se carga antes que ACTION_V.",
+      "pendiente": "Comprobar en GTA posición, pies y persistencia del anclaje al reproducir cada clip."
+    }
+  ],
+  "pendientes": [
+    "Animar al conductor mientras conduce",
+    "Acciones distintas simultáneas no vinculadas a un soporte",
+    "Combate real",
+    "Objetos en la mano y efectos de humo automáticos",
+    "Alineación automática con cualquier silla o cama"
+  ],
+  "reglas": "Si existe el clip pero falta una composición, identifica la parte pendiente; no declares imposible la acción en el mod."
+}

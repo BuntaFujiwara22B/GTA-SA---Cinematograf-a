@@ -1,0 +1,4423 @@
+{
+  "version": 1,
+  "descripcion": "Corpus supervisado en español para clasificar intenciones de animaciones de Mission Maker. Frases y etiquetas redactadas manualmente con asistencia de un agente; no son peticiones observadas de usuarios ni anotaciones verificadas por una persona. Las frases reservadas no se usan para ajustar los pesos.",
+  "origen": "curacion_manual_asistida",
+  "limitaciones": [
+    "Corpus pequeño y artificial; las métricas no estiman el rendimiento con usuarios reales.",
+    "Las tres particiones se redactaron por separado, pero comparten vocabulario y dominio; no equivalen a un conjunto externo independiente.",
+    "Una etiqueta expresa intención textual; no acredita validación visual de un clip dentro de GTA.",
+    "Las negaciones, peticiones compuestas y mecánicas nativas ajenas al clasificador se etiquetan como desconocido."
+  ],
+  "politica_particiones": "Particiones preasignadas. Cada grupo contiene una redacción base distinta. Entrenamiento ajusta pesos; validacion permite calibrar umbrales; prueba queda reservada para el informe final.",
+  "clases": {
+    "bailar": "Expresar movimiento corporal al ritmo de música, sin otro desplazamiento solicitado.",
+    "saludar": "Hacer un gesto de saludo con la mano a otra persona.",
+    "aplaudir": "Dar palmadas de aprobación o aplauso.",
+    "rendirse": "Elevar las manos para expresar rendición o sometimiento.",
+    "mirar_lados": "Girar la cabeza para observar sucesivamente los lados.",
+    "rascarse": "Realizar un gesto de rascar el propio cuerpo.",
+    "tumbarse": "Adoptar o mantener una postura recostada o tumbada.",
+    "vomitar": "Realizar el gesto corporal de vomitar, sin prometer efectos adicionales.",
+    "sorpresa": "Mostrar una expresión facial de sorpresa o asombro.",
+    "conversar": "Representar gestos de conversación presencial sin teléfono.",
+    "estirarse": "Estirar el cuerpo o los brazos para desentumecerse.",
+    "negar_cabeza": "Mover la cabeza de lado a lado en señal de negación.",
+    "cansancio": "Mostrar cansancio mediante postura o gesto de agotamiento.",
+    "miedo": "Mostrar miedo o encogerse en una postura asustada.",
+    "celebrar": "Expresar alegría por un logro con un gesto de celebración.",
+    "enfado": "Mostrar enfado mediante una expresión facial.",
+    "curiosidad": "Mostrar una expresión facial de curiosidad o interés.",
+    "fumar": "Representar el gesto de fumar sin afirmar creación de cigarrillo ni humo.",
+    "reir": "Representar la risa mediante gestos corporales.",
+    "beber": "Representar el gesto de beber sin prometer creación de bebida.",
+    "comer": "Representar el gesto de comer sin prometer creación de comida.",
+    "telefono": "Representar una llamada con el teléfono junto al oído.",
+    "desconocido": "Petición fuera de estas intenciones de animación, negada, ambigua o que requiere otra vía de planificación."
+  },
+  "ejemplos": [
+    {
+      "id": "bailar_entrenamiento_001",
+      "texto": "baila al son de la música",
+      "intencion": "bailar",
+      "particion": "entrenamiento",
+      "grupo": "bailar_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "bailar_entrenamiento_002",
+      "texto": "un personaje mueve el cuerpo siguiendo el ritmo",
+      "intencion": "bailar",
+      "particion": "entrenamiento",
+      "grupo": "bailar_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "bailar_entrenamiento_003",
+      "texto": "dos amigos se ponen a bailar",
+      "intencion": "bailar",
+      "particion": "entrenamiento",
+      "grupo": "bailar_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "bailar_entrenamiento_004",
+      "texto": "quiero ver un baile",
+      "intencion": "bailar",
+      "particion": "entrenamiento",
+      "grupo": "bailar_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "bailar_entrenamiento_005",
+      "texto": "el vecino ejecuta pasos de danza",
+      "intencion": "bailar",
+      "particion": "entrenamiento",
+      "grupo": "bailar_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "bailar_entrenamiento_006",
+      "texto": "una persona danza en la plaza",
+      "intencion": "bailar",
+      "particion": "entrenamiento",
+      "grupo": "bailar_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "bailar_entrenamiento_007",
+      "texto": "los personajes bailan juntos",
+      "intencion": "bailar",
+      "particion": "entrenamiento",
+      "grupo": "bailar_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "bailar_entrenamiento_008",
+      "texto": "haz que sacuda las caderas con ritmo",
+      "intencion": "bailar",
+      "particion": "entrenamiento",
+      "grupo": "bailar_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "bailar_entrenamiento_009",
+      "texto": "el actor realiza una coreografía",
+      "intencion": "bailar",
+      "particion": "entrenamiento",
+      "grupo": "bailar_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "bailar_entrenamiento_010",
+      "texto": "un hombre se mueve al compás de una canción",
+      "intencion": "bailar",
+      "particion": "entrenamiento",
+      "grupo": "bailar_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "bailar_entrenamiento_011",
+      "texto": "una mujer hace pasos de baile",
+      "intencion": "bailar",
+      "particion": "entrenamiento",
+      "grupo": "bailar_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "bailar_entrenamiento_012",
+      "texto": "el personaje lleva el ritmo con todo el cuerpo",
+      "intencion": "bailar",
+      "particion": "entrenamiento",
+      "grupo": "bailar_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "bailar_validacion_001",
+      "texto": "una persona improvisa una danza",
+      "intencion": "bailar",
+      "particion": "validacion",
+      "grupo": "bailar_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "bailar_validacion_002",
+      "texto": "los amigos mueven sus cuerpos con la melodía",
+      "intencion": "bailar",
+      "particion": "validacion",
+      "grupo": "bailar_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "bailar_validacion_003",
+      "texto": "quiero un personaje bailando en el parque",
+      "intencion": "bailar",
+      "particion": "validacion",
+      "grupo": "bailar_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "bailar_prueba_001",
+      "texto": "el protagonista marca pasos al compás de la música",
+      "intencion": "bailar",
+      "particion": "prueba",
+      "grupo": "bailar_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "bailar_prueba_002",
+      "texto": "representa una breve coreografía de baile",
+      "intencion": "bailar",
+      "particion": "prueba",
+      "grupo": "bailar_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "bailar_prueba_003",
+      "texto": "una persona se balancea rítmicamente para bailar",
+      "intencion": "bailar",
+      "particion": "prueba",
+      "grupo": "bailar_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "bailar_prueba_004",
+      "texto": "varios amigos danzan durante la fiesta",
+      "intencion": "bailar",
+      "particion": "prueba",
+      "grupo": "bailar_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "saludar_entrenamiento_001",
+      "texto": "el personaje saluda con la mano",
+      "intencion": "saludar",
+      "particion": "entrenamiento",
+      "grupo": "saludar_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "saludar_entrenamiento_002",
+      "texto": "una persona hace un saludo",
+      "intencion": "saludar",
+      "particion": "entrenamiento",
+      "grupo": "saludar_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "saludar_entrenamiento_003",
+      "texto": "dos vecinos se saludan",
+      "intencion": "saludar",
+      "particion": "entrenamiento",
+      "grupo": "saludar_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "saludar_entrenamiento_004",
+      "texto": "levanta la mano para decir hola",
+      "intencion": "saludar",
+      "particion": "entrenamiento",
+      "grupo": "saludar_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "saludar_entrenamiento_005",
+      "texto": "el actor agita la mano a su amigo",
+      "intencion": "saludar",
+      "particion": "entrenamiento",
+      "grupo": "saludar_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "saludar_entrenamiento_006",
+      "texto": "quiero que salude a alguien",
+      "intencion": "saludar",
+      "particion": "entrenamiento",
+      "grupo": "saludar_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "saludar_entrenamiento_007",
+      "texto": "un hombre dice adiós con la mano",
+      "intencion": "saludar",
+      "particion": "entrenamiento",
+      "grupo": "saludar_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "saludar_entrenamiento_008",
+      "texto": "la mujer hace señas de despedida",
+      "intencion": "saludar",
+      "particion": "entrenamiento",
+      "grupo": "saludar_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "saludar_entrenamiento_009",
+      "texto": "el personaje mueve la mano para saludar",
+      "intencion": "saludar",
+      "particion": "entrenamiento",
+      "grupo": "saludar_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "saludar_entrenamiento_010",
+      "texto": "un vecino saluda desde lejos",
+      "intencion": "saludar",
+      "particion": "entrenamiento",
+      "grupo": "saludar_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "saludar_entrenamiento_011",
+      "texto": "haz un gesto de bienvenida",
+      "intencion": "saludar",
+      "particion": "entrenamiento",
+      "grupo": "saludar_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "saludar_entrenamiento_012",
+      "texto": "una persona se despide moviendo la mano",
+      "intencion": "saludar",
+      "particion": "entrenamiento",
+      "grupo": "saludar_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "saludar_validacion_001",
+      "texto": "el protagonista hace un ademán de saludo",
+      "intencion": "saludar",
+      "particion": "validacion",
+      "grupo": "saludar_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "saludar_validacion_002",
+      "texto": "alguien recibe a su amigo agitando una mano",
+      "intencion": "saludar",
+      "particion": "validacion",
+      "grupo": "saludar_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "saludar_validacion_003",
+      "texto": "muestra a una persona diciendo hola con un gesto",
+      "intencion": "saludar",
+      "particion": "validacion",
+      "grupo": "saludar_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "saludar_prueba_001",
+      "texto": "el personaje le dedica un saludo a su vecino",
+      "intencion": "saludar",
+      "particion": "prueba",
+      "grupo": "saludar_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "saludar_prueba_002",
+      "texto": "quiero una despedida hecha con la mano",
+      "intencion": "saludar",
+      "particion": "prueba",
+      "grupo": "saludar_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "saludar_prueba_003",
+      "texto": "el actor alza su mano en señal de bienvenida",
+      "intencion": "saludar",
+      "particion": "prueba",
+      "grupo": "saludar_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "saludar_prueba_004",
+      "texto": "una persona agita el brazo a modo de saludo",
+      "intencion": "saludar",
+      "particion": "prueba",
+      "grupo": "saludar_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "aplaudir_entrenamiento_001",
+      "texto": "un personaje aplaude",
+      "intencion": "aplaudir",
+      "particion": "entrenamiento",
+      "grupo": "aplaudir_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "aplaudir_entrenamiento_002",
+      "texto": "una persona da palmadas",
+      "intencion": "aplaudir",
+      "particion": "entrenamiento",
+      "grupo": "aplaudir_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "aplaudir_entrenamiento_003",
+      "texto": "haz que aplaudan",
+      "intencion": "aplaudir",
+      "particion": "entrenamiento",
+      "grupo": "aplaudir_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "aplaudir_entrenamiento_004",
+      "texto": "el público junta las palmas repetidamente",
+      "intencion": "aplaudir",
+      "particion": "entrenamiento",
+      "grupo": "aplaudir_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "aplaudir_entrenamiento_005",
+      "texto": "dos amigos ofrecen un aplauso",
+      "intencion": "aplaudir",
+      "particion": "entrenamiento",
+      "grupo": "aplaudir_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "aplaudir_entrenamiento_006",
+      "texto": "el hombre bate las palmas",
+      "intencion": "aplaudir",
+      "particion": "entrenamiento",
+      "grupo": "aplaudir_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "aplaudir_entrenamiento_007",
+      "texto": "quiero una ronda de aplausos",
+      "intencion": "aplaudir",
+      "particion": "entrenamiento",
+      "grupo": "aplaudir_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "aplaudir_entrenamiento_008",
+      "texto": "la mujer aplaude con entusiasmo",
+      "intencion": "aplaudir",
+      "particion": "entrenamiento",
+      "grupo": "aplaudir_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "aplaudir_entrenamiento_009",
+      "texto": "un actor da palmas de aprobación",
+      "intencion": "aplaudir",
+      "particion": "entrenamiento",
+      "grupo": "aplaudir_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "aplaudir_entrenamiento_010",
+      "texto": "varios personajes aplauden la actuación",
+      "intencion": "aplaudir",
+      "particion": "entrenamiento",
+      "grupo": "aplaudir_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "aplaudir_entrenamiento_011",
+      "texto": "el vecino hace un gesto de aplauso",
+      "intencion": "aplaudir",
+      "particion": "entrenamiento",
+      "grupo": "aplaudir_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "aplaudir_entrenamiento_012",
+      "texto": "quiero escuchar sus palmadas de apoyo",
+      "intencion": "aplaudir",
+      "particion": "entrenamiento",
+      "grupo": "aplaudir_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "aplaudir_validacion_001",
+      "texto": "alguien expresa aprobación dando palmas",
+      "intencion": "aplaudir",
+      "particion": "validacion",
+      "grupo": "aplaudir_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "aplaudir_validacion_002",
+      "texto": "el protagonista empieza a aplaudir",
+      "intencion": "aplaudir",
+      "particion": "validacion",
+      "grupo": "aplaudir_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "aplaudir_validacion_003",
+      "texto": "una persona bate ambas manos en un aplauso",
+      "intencion": "aplaudir",
+      "particion": "validacion",
+      "grupo": "aplaudir_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "aplaudir_prueba_001",
+      "texto": "el personaje choca las palmas en señal de aprobación",
+      "intencion": "aplaudir",
+      "particion": "prueba",
+      "grupo": "aplaudir_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "aplaudir_prueba_002",
+      "texto": "representa a unos espectadores aplaudiendo",
+      "intencion": "aplaudir",
+      "particion": "prueba",
+      "grupo": "aplaudir_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "aplaudir_prueba_003",
+      "texto": "quiero ver un aplauso de pie",
+      "intencion": "aplaudir",
+      "particion": "prueba",
+      "grupo": "aplaudir_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "aplaudir_prueba_004",
+      "texto": "el actor da una ovación con las manos",
+      "intencion": "aplaudir",
+      "particion": "prueba",
+      "grupo": "aplaudir_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rendirse_entrenamiento_001",
+      "texto": "el personaje se rinde",
+      "intencion": "rendirse",
+      "particion": "entrenamiento",
+      "grupo": "rendirse_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rendirse_entrenamiento_002",
+      "texto": "una persona levanta las manos",
+      "intencion": "rendirse",
+      "particion": "entrenamiento",
+      "grupo": "rendirse_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rendirse_entrenamiento_003",
+      "texto": "pon sus manos arriba",
+      "intencion": "rendirse",
+      "particion": "entrenamiento",
+      "grupo": "rendirse_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rendirse_entrenamiento_004",
+      "texto": "el sospechoso alza las manos en señal de rendición",
+      "intencion": "rendirse",
+      "particion": "entrenamiento",
+      "grupo": "rendirse_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rendirse_entrenamiento_005",
+      "texto": "un hombre se entrega con las manos elevadas",
+      "intencion": "rendirse",
+      "particion": "entrenamiento",
+      "grupo": "rendirse_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rendirse_entrenamiento_006",
+      "texto": "la mujer adopta una postura de rendición",
+      "intencion": "rendirse",
+      "particion": "entrenamiento",
+      "grupo": "rendirse_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rendirse_entrenamiento_007",
+      "texto": "haz que levante ambos brazos para rendirse",
+      "intencion": "rendirse",
+      "particion": "entrenamiento",
+      "grupo": "rendirse_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rendirse_entrenamiento_008",
+      "texto": "el actor muestra las palmas por encima de los hombros",
+      "intencion": "rendirse",
+      "particion": "entrenamiento",
+      "grupo": "rendirse_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rendirse_entrenamiento_009",
+      "texto": "un personaje mantiene las manos en alto",
+      "intencion": "rendirse",
+      "particion": "entrenamiento",
+      "grupo": "rendirse_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rendirse_entrenamiento_010",
+      "texto": "quiero una persona rindiéndose",
+      "intencion": "rendirse",
+      "particion": "entrenamiento",
+      "grupo": "rendirse_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rendirse_entrenamiento_011",
+      "texto": "el vecino se entrega sin resistirse",
+      "intencion": "rendirse",
+      "particion": "entrenamiento",
+      "grupo": "rendirse_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rendirse_entrenamiento_012",
+      "texto": "el personaje obedece la orden de manos arriba",
+      "intencion": "rendirse",
+      "particion": "entrenamiento",
+      "grupo": "rendirse_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rendirse_validacion_001",
+      "texto": "una persona se declara vencida alzando las manos",
+      "intencion": "rendirse",
+      "particion": "validacion",
+      "grupo": "rendirse_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rendirse_validacion_002",
+      "texto": "el protagonista deja sus manos en alto por rendición",
+      "intencion": "rendirse",
+      "particion": "validacion",
+      "grupo": "rendirse_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rendirse_validacion_003",
+      "texto": "quiero una pose de entrega con ambos brazos elevados",
+      "intencion": "rendirse",
+      "particion": "validacion",
+      "grupo": "rendirse_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rendirse_prueba_001",
+      "texto": "el actor se somete con las palmas levantadas",
+      "intencion": "rendirse",
+      "particion": "prueba",
+      "grupo": "rendirse_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rendirse_prueba_002",
+      "texto": "muestra a alguien que se entrega con las manos arriba",
+      "intencion": "rendirse",
+      "particion": "prueba",
+      "grupo": "rendirse_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rendirse_prueba_003",
+      "texto": "el personaje adopta el gesto de rendirse",
+      "intencion": "rendirse",
+      "particion": "prueba",
+      "grupo": "rendirse_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rendirse_prueba_004",
+      "texto": "una persona eleva las manos para mostrar que se rinde",
+      "intencion": "rendirse",
+      "particion": "prueba",
+      "grupo": "rendirse_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "mirar_lados_entrenamiento_001",
+      "texto": "un personaje mira a los lados",
+      "intencion": "mirar_lados",
+      "particion": "entrenamiento",
+      "grupo": "mirar_lados_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "mirar_lados_entrenamiento_002",
+      "texto": "una persona mira a derecha e izquierda",
+      "intencion": "mirar_lados",
+      "particion": "entrenamiento",
+      "grupo": "mirar_lados_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "mirar_lados_entrenamiento_003",
+      "texto": "el actor observa ambos lados de la calle",
+      "intencion": "mirar_lados",
+      "particion": "entrenamiento",
+      "grupo": "mirar_lados_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "mirar_lados_entrenamiento_004",
+      "texto": "haz que gire la cabeza a un lado y al otro",
+      "intencion": "mirar_lados",
+      "particion": "entrenamiento",
+      "grupo": "mirar_lados_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "mirar_lados_entrenamiento_005",
+      "texto": "un hombre comprueba los lados antes de cruzar",
+      "intencion": "mirar_lados",
+      "particion": "entrenamiento",
+      "grupo": "mirar_lados_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "mirar_lados_entrenamiento_006",
+      "texto": "la mujer mira primero a la izquierda y luego a la derecha",
+      "intencion": "mirar_lados",
+      "particion": "entrenamiento",
+      "grupo": "mirar_lados_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "mirar_lados_entrenamiento_007",
+      "texto": "quiero que inspeccione los lados",
+      "intencion": "mirar_lados",
+      "particion": "entrenamiento",
+      "grupo": "mirar_lados_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "mirar_lados_entrenamiento_008",
+      "texto": "el vecino dirige la vista hacia los costados",
+      "intencion": "mirar_lados",
+      "particion": "entrenamiento",
+      "grupo": "mirar_lados_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "mirar_lados_entrenamiento_009",
+      "texto": "un personaje echa un vistazo a cada lado",
+      "intencion": "mirar_lados",
+      "particion": "entrenamiento",
+      "grupo": "mirar_lados_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "mirar_lados_entrenamiento_010",
+      "texto": "haz que mire a ambos costados",
+      "intencion": "mirar_lados",
+      "particion": "entrenamiento",
+      "grupo": "mirar_lados_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "mirar_lados_entrenamiento_011",
+      "texto": "la persona observa a uno y otro lado",
+      "intencion": "mirar_lados",
+      "particion": "entrenamiento",
+      "grupo": "mirar_lados_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "mirar_lados_entrenamiento_012",
+      "texto": "el actor gira la cabeza para comprobar ambos lados",
+      "intencion": "mirar_lados",
+      "particion": "entrenamiento",
+      "grupo": "mirar_lados_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "mirar_lados_validacion_001",
+      "texto": "el personaje revisa derecha e izquierda con la mirada",
+      "intencion": "mirar_lados",
+      "particion": "validacion",
+      "grupo": "mirar_lados_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "mirar_lados_validacion_002",
+      "texto": "una persona mira alternativamente hacia los costados",
+      "intencion": "mirar_lados",
+      "particion": "validacion",
+      "grupo": "mirar_lados_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "mirar_lados_validacion_003",
+      "texto": "haz una escena de alguien observando a ambos lados",
+      "intencion": "mirar_lados",
+      "particion": "validacion",
+      "grupo": "mirar_lados_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "mirar_lados_prueba_001",
+      "texto": "el protagonista comprueba visualmente los dos lados de la calle",
+      "intencion": "mirar_lados",
+      "particion": "prueba",
+      "grupo": "mirar_lados_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "mirar_lados_prueba_002",
+      "texto": "quiero que vuelva la cabeza a derecha e izquierda",
+      "intencion": "mirar_lados",
+      "particion": "prueba",
+      "grupo": "mirar_lados_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "mirar_lados_prueba_003",
+      "texto": "el actor lanza una mirada a cada costado",
+      "intencion": "mirar_lados",
+      "particion": "prueba",
+      "grupo": "mirar_lados_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "mirar_lados_prueba_004",
+      "texto": "una persona inspecciona sucesivamente ambos laterales",
+      "intencion": "mirar_lados",
+      "particion": "prueba",
+      "grupo": "mirar_lados_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rascarse_entrenamiento_001",
+      "texto": "un personaje se rasca",
+      "intencion": "rascarse",
+      "particion": "entrenamiento",
+      "grupo": "rascarse_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rascarse_entrenamiento_002",
+      "texto": "una persona se rasca el cuerpo",
+      "intencion": "rascarse",
+      "particion": "entrenamiento",
+      "grupo": "rascarse_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rascarse_entrenamiento_003",
+      "texto": "haz que el actor se rasque",
+      "intencion": "rascarse",
+      "particion": "entrenamiento",
+      "grupo": "rascarse_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rascarse_entrenamiento_004",
+      "texto": "el hombre siente picor y se rasca",
+      "intencion": "rascarse",
+      "particion": "entrenamiento",
+      "grupo": "rascarse_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rascarse_entrenamiento_005",
+      "texto": "la mujer se rasca un brazo",
+      "intencion": "rascarse",
+      "particion": "entrenamiento",
+      "grupo": "rascarse_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rascarse_entrenamiento_006",
+      "texto": "un vecino se rasca la espalda",
+      "intencion": "rascarse",
+      "particion": "entrenamiento",
+      "grupo": "rascarse_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rascarse_entrenamiento_007",
+      "texto": "quiero que intente aliviar una picazón",
+      "intencion": "rascarse",
+      "particion": "entrenamiento",
+      "grupo": "rascarse_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rascarse_entrenamiento_008",
+      "texto": "el personaje usa los dedos para rascarse",
+      "intencion": "rascarse",
+      "particion": "entrenamiento",
+      "grupo": "rascarse_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rascarse_entrenamiento_009",
+      "texto": "una persona hace el gesto de rascarse",
+      "intencion": "rascarse",
+      "particion": "entrenamiento",
+      "grupo": "rascarse_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rascarse_entrenamiento_010",
+      "texto": "el actor se frota rascándose por el picor",
+      "intencion": "rascarse",
+      "particion": "entrenamiento",
+      "grupo": "rascarse_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rascarse_entrenamiento_011",
+      "texto": "muestra a alguien rascándose",
+      "intencion": "rascarse",
+      "particion": "entrenamiento",
+      "grupo": "rascarse_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rascarse_entrenamiento_012",
+      "texto": "un personaje se rasca con insistencia",
+      "intencion": "rascarse",
+      "particion": "entrenamiento",
+      "grupo": "rascarse_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rascarse_validacion_001",
+      "texto": "el protagonista responde a la comezón rascándose",
+      "intencion": "rascarse",
+      "particion": "validacion",
+      "grupo": "rascarse_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rascarse_validacion_002",
+      "texto": "una persona trata de quitarse el picor con las uñas",
+      "intencion": "rascarse",
+      "particion": "validacion",
+      "grupo": "rascarse_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rascarse_validacion_003",
+      "texto": "el actor hace un breve gesto de rascado",
+      "intencion": "rascarse",
+      "particion": "validacion",
+      "grupo": "rascarse_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rascarse_prueba_001",
+      "texto": "quiero ver a alguien aliviando una picazón al rascarse",
+      "intencion": "rascarse",
+      "particion": "prueba",
+      "grupo": "rascarse_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rascarse_prueba_002",
+      "texto": "el personaje tiene comezón y se rasca",
+      "intencion": "rascarse",
+      "particion": "prueba",
+      "grupo": "rascarse_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rascarse_prueba_003",
+      "texto": "una persona mueve los dedos sobre su cuerpo para rascarse",
+      "intencion": "rascarse",
+      "particion": "prueba",
+      "grupo": "rascarse_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "rascarse_prueba_004",
+      "texto": "representa el gesto de rascarse por picor",
+      "intencion": "rascarse",
+      "particion": "prueba",
+      "grupo": "rascarse_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "tumbarse_entrenamiento_001",
+      "texto": "un personaje se tumba",
+      "intencion": "tumbarse",
+      "particion": "entrenamiento",
+      "grupo": "tumbarse_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "tumbarse_entrenamiento_002",
+      "texto": "una persona se acuesta",
+      "intencion": "tumbarse",
+      "particion": "entrenamiento",
+      "grupo": "tumbarse_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "tumbarse_entrenamiento_003",
+      "texto": "el actor permanece recostado",
+      "intencion": "tumbarse",
+      "particion": "entrenamiento",
+      "grupo": "tumbarse_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "tumbarse_entrenamiento_004",
+      "texto": "haz que descanse tumbado",
+      "intencion": "tumbarse",
+      "particion": "entrenamiento",
+      "grupo": "tumbarse_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "tumbarse_entrenamiento_005",
+      "texto": "un hombre está acostado sobre la arena",
+      "intencion": "tumbarse",
+      "particion": "entrenamiento",
+      "grupo": "tumbarse_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "tumbarse_entrenamiento_006",
+      "texto": "la mujer adopta una posición horizontal",
+      "intencion": "tumbarse",
+      "particion": "entrenamiento",
+      "grupo": "tumbarse_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "tumbarse_entrenamiento_007",
+      "texto": "quiero una pose tumbada",
+      "intencion": "tumbarse",
+      "particion": "entrenamiento",
+      "grupo": "tumbarse_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "tumbarse_entrenamiento_008",
+      "texto": "el personaje se recuesta en el suelo",
+      "intencion": "tumbarse",
+      "particion": "entrenamiento",
+      "grupo": "tumbarse_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "tumbarse_entrenamiento_009",
+      "texto": "un vecino descansa acostado",
+      "intencion": "tumbarse",
+      "particion": "entrenamiento",
+      "grupo": "tumbarse_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "tumbarse_entrenamiento_010",
+      "texto": "una persona yace boca arriba",
+      "intencion": "tumbarse",
+      "particion": "entrenamiento",
+      "grupo": "tumbarse_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "tumbarse_entrenamiento_011",
+      "texto": "el actor está tendido en el piso",
+      "intencion": "tumbarse",
+      "particion": "entrenamiento",
+      "grupo": "tumbarse_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "tumbarse_entrenamiento_012",
+      "texto": "haz que se tumbe para descansar",
+      "intencion": "tumbarse",
+      "particion": "entrenamiento",
+      "grupo": "tumbarse_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "tumbarse_validacion_001",
+      "texto": "el protagonista queda recostado sobre el suelo",
+      "intencion": "tumbarse",
+      "particion": "validacion",
+      "grupo": "tumbarse_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "tumbarse_validacion_002",
+      "texto": "una persona permanece en una postura acostada",
+      "intencion": "tumbarse",
+      "particion": "validacion",
+      "grupo": "tumbarse_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "tumbarse_validacion_003",
+      "texto": "quiero verlo descansando en posición horizontal",
+      "intencion": "tumbarse",
+      "particion": "validacion",
+      "grupo": "tumbarse_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "tumbarse_prueba_001",
+      "texto": "el actor yace tumbado de espaldas",
+      "intencion": "tumbarse",
+      "particion": "prueba",
+      "grupo": "tumbarse_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "tumbarse_prueba_002",
+      "texto": "representa a una persona recostada en la playa",
+      "intencion": "tumbarse",
+      "particion": "prueba",
+      "grupo": "tumbarse_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "tumbarse_prueba_003",
+      "texto": "el personaje se acomoda en una pose tendida",
+      "intencion": "tumbarse",
+      "particion": "prueba",
+      "grupo": "tumbarse_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "tumbarse_prueba_004",
+      "texto": "quiero una escena con alguien descansando acostado",
+      "intencion": "tumbarse",
+      "particion": "prueba",
+      "grupo": "tumbarse_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "vomitar_entrenamiento_001",
+      "texto": "un personaje vomita",
+      "intencion": "vomitar",
+      "particion": "entrenamiento",
+      "grupo": "vomitar_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "vomitar_entrenamiento_002",
+      "texto": "una persona tiene arcadas",
+      "intencion": "vomitar",
+      "particion": "entrenamiento",
+      "grupo": "vomitar_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "vomitar_entrenamiento_003",
+      "texto": "el actor hace el gesto de vomitar",
+      "intencion": "vomitar",
+      "particion": "entrenamiento",
+      "grupo": "vomitar_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "vomitar_entrenamiento_004",
+      "texto": "un hombre se inclina para vomitar",
+      "intencion": "vomitar",
+      "particion": "entrenamiento",
+      "grupo": "vomitar_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "vomitar_entrenamiento_005",
+      "texto": "quiero una persona vomitando",
+      "intencion": "vomitar",
+      "particion": "entrenamiento",
+      "grupo": "vomitar_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "vomitar_entrenamiento_006",
+      "texto": "la mujer expulsa el contenido del estómago",
+      "intencion": "vomitar",
+      "particion": "entrenamiento",
+      "grupo": "vomitar_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "vomitar_entrenamiento_007",
+      "texto": "haz que tenga una arcada",
+      "intencion": "vomitar",
+      "particion": "entrenamiento",
+      "grupo": "vomitar_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "vomitar_entrenamiento_008",
+      "texto": "el personaje siente náuseas y vomita",
+      "intencion": "vomitar",
+      "particion": "entrenamiento",
+      "grupo": "vomitar_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "vomitar_entrenamiento_009",
+      "texto": "un vecino se dobla por el vómito",
+      "intencion": "vomitar",
+      "particion": "entrenamiento",
+      "grupo": "vomitar_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "vomitar_entrenamiento_010",
+      "texto": "alguien comienza a devolver la comida",
+      "intencion": "vomitar",
+      "particion": "entrenamiento",
+      "grupo": "vomitar_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "vomitar_entrenamiento_011",
+      "texto": "el actor representa un episodio de vómito",
+      "intencion": "vomitar",
+      "particion": "entrenamiento",
+      "grupo": "vomitar_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "vomitar_entrenamiento_012",
+      "texto": "quiero el movimiento de alguien devolviendo",
+      "intencion": "vomitar",
+      "particion": "entrenamiento",
+      "grupo": "vomitar_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "vomitar_validacion_001",
+      "texto": "una persona se dobla con ganas de vomitar",
+      "intencion": "vomitar",
+      "particion": "validacion",
+      "grupo": "vomitar_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "vomitar_validacion_002",
+      "texto": "el protagonista devuelve lo que ha comido",
+      "intencion": "vomitar",
+      "particion": "validacion",
+      "grupo": "vomitar_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "vomitar_validacion_003",
+      "texto": "haz una escena de arcadas por náuseas",
+      "intencion": "vomitar",
+      "particion": "validacion",
+      "grupo": "vomitar_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "vomitar_prueba_001",
+      "texto": "el actor hace esfuerzos para devolver la comida",
+      "intencion": "vomitar",
+      "particion": "prueba",
+      "grupo": "vomitar_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "vomitar_prueba_002",
+      "texto": "representa a alguien vomitando por malestar",
+      "intencion": "vomitar",
+      "particion": "prueba",
+      "grupo": "vomitar_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "vomitar_prueba_003",
+      "texto": "el personaje se inclina presa de las arcadas",
+      "intencion": "vomitar",
+      "particion": "prueba",
+      "grupo": "vomitar_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "vomitar_prueba_004",
+      "texto": "una persona reproduce el gesto de expulsar el contenido del estómago",
+      "intencion": "vomitar",
+      "particion": "prueba",
+      "grupo": "vomitar_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "sorpresa_entrenamiento_001",
+      "texto": "un personaje muestra sorpresa",
+      "intencion": "sorpresa",
+      "particion": "entrenamiento",
+      "grupo": "sorpresa_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "sorpresa_entrenamiento_002",
+      "texto": "una persona se sorprende",
+      "intencion": "sorpresa",
+      "particion": "entrenamiento",
+      "grupo": "sorpresa_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "sorpresa_entrenamiento_003",
+      "texto": "el actor pone cara de asombro",
+      "intencion": "sorpresa",
+      "particion": "entrenamiento",
+      "grupo": "sorpresa_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "sorpresa_entrenamiento_004",
+      "texto": "un hombre abre la boca asombrado",
+      "intencion": "sorpresa",
+      "particion": "entrenamiento",
+      "grupo": "sorpresa_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "sorpresa_entrenamiento_005",
+      "texto": "quiero una expresión sorprendida",
+      "intencion": "sorpresa",
+      "particion": "entrenamiento",
+      "grupo": "sorpresa_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "sorpresa_entrenamiento_006",
+      "texto": "la mujer abre los ojos por la sorpresa",
+      "intencion": "sorpresa",
+      "particion": "entrenamiento",
+      "grupo": "sorpresa_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "sorpresa_entrenamiento_007",
+      "texto": "haz que parezca sorprendido",
+      "intencion": "sorpresa",
+      "particion": "entrenamiento",
+      "grupo": "sorpresa_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "sorpresa_entrenamiento_008",
+      "texto": "el personaje reacciona con asombro",
+      "intencion": "sorpresa",
+      "particion": "entrenamiento",
+      "grupo": "sorpresa_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "sorpresa_entrenamiento_009",
+      "texto": "un vecino muestra una cara de incredulidad",
+      "intencion": "sorpresa",
+      "particion": "entrenamiento",
+      "grupo": "sorpresa_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "sorpresa_entrenamiento_010",
+      "texto": "alguien expresa sorpresa con el rostro",
+      "intencion": "sorpresa",
+      "particion": "entrenamiento",
+      "grupo": "sorpresa_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "sorpresa_entrenamiento_011",
+      "texto": "el actor se queda boquiabierto",
+      "intencion": "sorpresa",
+      "particion": "entrenamiento",
+      "grupo": "sorpresa_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "sorpresa_entrenamiento_012",
+      "texto": "quiero el gesto facial de una persona asombrada",
+      "intencion": "sorpresa",
+      "particion": "entrenamiento",
+      "grupo": "sorpresa_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "sorpresa_validacion_001",
+      "texto": "el protagonista abre mucho los ojos de asombro",
+      "intencion": "sorpresa",
+      "particion": "validacion",
+      "grupo": "sorpresa_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "sorpresa_validacion_002",
+      "texto": "una persona muestra incredulidad en su cara",
+      "intencion": "sorpresa",
+      "particion": "validacion",
+      "grupo": "sorpresa_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "sorpresa_validacion_003",
+      "texto": "haz una expresión de sorpresa ante la noticia",
+      "intencion": "sorpresa",
+      "particion": "validacion",
+      "grupo": "sorpresa_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "sorpresa_prueba_001",
+      "texto": "el personaje adopta un semblante atónito",
+      "intencion": "sorpresa",
+      "particion": "prueba",
+      "grupo": "sorpresa_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "sorpresa_prueba_002",
+      "texto": "representa un rostro de alguien boquiabierto",
+      "intencion": "sorpresa",
+      "particion": "prueba",
+      "grupo": "sorpresa_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "sorpresa_prueba_003",
+      "texto": "la cara del actor refleja un enorme asombro",
+      "intencion": "sorpresa",
+      "particion": "prueba",
+      "grupo": "sorpresa_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "sorpresa_prueba_004",
+      "texto": "una persona abre la boca al quedar sorprendida",
+      "intencion": "sorpresa",
+      "particion": "prueba",
+      "grupo": "sorpresa_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "conversar_entrenamiento_001",
+      "texto": "un personaje conversa",
+      "intencion": "conversar",
+      "particion": "entrenamiento",
+      "grupo": "conversar_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "conversar_entrenamiento_002",
+      "texto": "dos personas hablan entre ellas",
+      "intencion": "conversar",
+      "particion": "entrenamiento",
+      "grupo": "conversar_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "conversar_entrenamiento_003",
+      "texto": "el actor charla con su vecino",
+      "intencion": "conversar",
+      "particion": "entrenamiento",
+      "grupo": "conversar_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "conversar_entrenamiento_004",
+      "texto": "una mujer gesticula mientras conversa",
+      "intencion": "conversar",
+      "particion": "entrenamiento",
+      "grupo": "conversar_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "conversar_entrenamiento_005",
+      "texto": "quiero un gesto de conversación",
+      "intencion": "conversar",
+      "particion": "entrenamiento",
+      "grupo": "conversar_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "conversar_entrenamiento_006",
+      "texto": "un hombre habla con alguien delante",
+      "intencion": "conversar",
+      "particion": "entrenamiento",
+      "grupo": "conversar_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "conversar_entrenamiento_007",
+      "texto": "haz que charlen en la plaza",
+      "intencion": "conversar",
+      "particion": "entrenamiento",
+      "grupo": "conversar_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "conversar_entrenamiento_008",
+      "texto": "los vecinos mantienen una conversación",
+      "intencion": "conversar",
+      "particion": "entrenamiento",
+      "grupo": "conversar_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "conversar_entrenamiento_009",
+      "texto": "una persona hace ademanes al hablar",
+      "intencion": "conversar",
+      "particion": "entrenamiento",
+      "grupo": "conversar_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "conversar_entrenamiento_010",
+      "texto": "el personaje dialoga con un amigo",
+      "intencion": "conversar",
+      "particion": "entrenamiento",
+      "grupo": "conversar_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "conversar_entrenamiento_011",
+      "texto": "dos actores conversan tranquilamente",
+      "intencion": "conversar",
+      "particion": "entrenamiento",
+      "grupo": "conversar_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "conversar_entrenamiento_012",
+      "texto": "quiero que parezca estar explicando algo a otra persona",
+      "intencion": "conversar",
+      "particion": "entrenamiento",
+      "grupo": "conversar_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "conversar_validacion_001",
+      "texto": "el protagonista participa en una charla presencial",
+      "intencion": "conversar",
+      "particion": "validacion",
+      "grupo": "conversar_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "conversar_validacion_002",
+      "texto": "una persona acompaña sus palabras con gestos",
+      "intencion": "conversar",
+      "particion": "validacion",
+      "grupo": "conversar_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "conversar_validacion_003",
+      "texto": "los amigos dialogan cara a cara",
+      "intencion": "conversar",
+      "particion": "validacion",
+      "grupo": "conversar_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "conversar_prueba_001",
+      "texto": "el actor simula una plática con su compañero",
+      "intencion": "conversar",
+      "particion": "prueba",
+      "grupo": "conversar_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "conversar_prueba_002",
+      "texto": "representa a dos vecinos intercambiando palabras",
+      "intencion": "conversar",
+      "particion": "prueba",
+      "grupo": "conversar_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "conversar_prueba_003",
+      "texto": "una persona conversa frente a su interlocutor",
+      "intencion": "conversar",
+      "particion": "prueba",
+      "grupo": "conversar_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "conversar_prueba_004",
+      "texto": "quiero un diálogo con gestos de las manos",
+      "intencion": "conversar",
+      "particion": "prueba",
+      "grupo": "conversar_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "estirarse_entrenamiento_001",
+      "texto": "un personaje se estira",
+      "intencion": "estirarse",
+      "particion": "entrenamiento",
+      "grupo": "estirarse_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "estirarse_entrenamiento_002",
+      "texto": "una persona estira los brazos",
+      "intencion": "estirarse",
+      "particion": "entrenamiento",
+      "grupo": "estirarse_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "estirarse_entrenamiento_003",
+      "texto": "el actor se despereza",
+      "intencion": "estirarse",
+      "particion": "entrenamiento",
+      "grupo": "estirarse_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "estirarse_entrenamiento_004",
+      "texto": "haz que estire su cuerpo",
+      "intencion": "estirarse",
+      "particion": "entrenamiento",
+      "grupo": "estirarse_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "estirarse_entrenamiento_005",
+      "texto": "un hombre se desentumece",
+      "intencion": "estirarse",
+      "particion": "entrenamiento",
+      "grupo": "estirarse_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "estirarse_entrenamiento_006",
+      "texto": "la mujer hace un estiramiento",
+      "intencion": "estirarse",
+      "particion": "entrenamiento",
+      "grupo": "estirarse_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "estirarse_entrenamiento_007",
+      "texto": "quiero que se estire después de estar quieto",
+      "intencion": "estirarse",
+      "particion": "entrenamiento",
+      "grupo": "estirarse_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "estirarse_entrenamiento_008",
+      "texto": "el personaje alarga los brazos al desperezarse",
+      "intencion": "estirarse",
+      "particion": "entrenamiento",
+      "grupo": "estirarse_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "estirarse_entrenamiento_009",
+      "texto": "un vecino estira los músculos",
+      "intencion": "estirarse",
+      "particion": "entrenamiento",
+      "grupo": "estirarse_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "estirarse_entrenamiento_010",
+      "texto": "alguien se estira para aliviar la rigidez",
+      "intencion": "estirarse",
+      "particion": "entrenamiento",
+      "grupo": "estirarse_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "estirarse_entrenamiento_011",
+      "texto": "el actor realiza una breve elongación",
+      "intencion": "estirarse",
+      "particion": "entrenamiento",
+      "grupo": "estirarse_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "estirarse_entrenamiento_012",
+      "texto": "una persona hace el gesto de desperezarse",
+      "intencion": "estirarse",
+      "particion": "entrenamiento",
+      "grupo": "estirarse_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "estirarse_validacion_001",
+      "texto": "el protagonista se desentumece estirando el torso",
+      "intencion": "estirarse",
+      "particion": "validacion",
+      "grupo": "estirarse_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "estirarse_validacion_002",
+      "texto": "quiero una postura de estiramiento corporal",
+      "intencion": "estirarse",
+      "particion": "validacion",
+      "grupo": "estirarse_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "estirarse_validacion_003",
+      "texto": "una persona se despereza al levantarse",
+      "intencion": "estirarse",
+      "particion": "validacion",
+      "grupo": "estirarse_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "estirarse_prueba_001",
+      "texto": "el personaje extiende sus brazos para desentumecerse",
+      "intencion": "estirarse",
+      "particion": "prueba",
+      "grupo": "estirarse_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "estirarse_prueba_002",
+      "texto": "representa un estiramiento de los músculos",
+      "intencion": "estirarse",
+      "particion": "prueba",
+      "grupo": "estirarse_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "estirarse_prueba_003",
+      "texto": "el actor estira el cuerpo para soltar la rigidez",
+      "intencion": "estirarse",
+      "particion": "prueba",
+      "grupo": "estirarse_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "estirarse_prueba_004",
+      "texto": "una persona hace una elongación para desperezarse",
+      "intencion": "estirarse",
+      "particion": "prueba",
+      "grupo": "estirarse_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "negar_cabeza_entrenamiento_001",
+      "texto": "un personaje niega con la cabeza",
+      "intencion": "negar_cabeza",
+      "particion": "entrenamiento",
+      "grupo": "negar_cabeza_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "negar_cabeza_entrenamiento_002",
+      "texto": "una persona mueve la cabeza para decir que no",
+      "intencion": "negar_cabeza",
+      "particion": "entrenamiento",
+      "grupo": "negar_cabeza_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "negar_cabeza_entrenamiento_003",
+      "texto": "el actor sacude la cabeza en señal de negación",
+      "intencion": "negar_cabeza",
+      "particion": "entrenamiento",
+      "grupo": "negar_cabeza_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "negar_cabeza_entrenamiento_004",
+      "texto": "haz que rechace moviendo la cabeza",
+      "intencion": "negar_cabeza",
+      "particion": "entrenamiento",
+      "grupo": "negar_cabeza_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "negar_cabeza_entrenamiento_005",
+      "texto": "un hombre gira la cabeza de lado a lado para negar",
+      "intencion": "negar_cabeza",
+      "particion": "entrenamiento",
+      "grupo": "negar_cabeza_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "negar_cabeza_entrenamiento_006",
+      "texto": "la mujer responde que no con la cabeza",
+      "intencion": "negar_cabeza",
+      "particion": "entrenamiento",
+      "grupo": "negar_cabeza_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "negar_cabeza_entrenamiento_007",
+      "texto": "quiero un gesto de negación",
+      "intencion": "negar_cabeza",
+      "particion": "entrenamiento",
+      "grupo": "negar_cabeza_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "negar_cabeza_entrenamiento_008",
+      "texto": "el personaje hace un ademán negativo con la cabeza",
+      "intencion": "negar_cabeza",
+      "particion": "entrenamiento",
+      "grupo": "negar_cabeza_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "negar_cabeza_entrenamiento_009",
+      "texto": "un vecino niega sin hablar",
+      "intencion": "negar_cabeza",
+      "particion": "entrenamiento",
+      "grupo": "negar_cabeza_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "negar_cabeza_entrenamiento_010",
+      "texto": "alguien muestra desacuerdo sacudiendo la cabeza",
+      "intencion": "negar_cabeza",
+      "particion": "entrenamiento",
+      "grupo": "negar_cabeza_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "negar_cabeza_entrenamiento_011",
+      "texto": "el actor indica que no con movimientos de cabeza",
+      "intencion": "negar_cabeza",
+      "particion": "entrenamiento",
+      "grupo": "negar_cabeza_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "negar_cabeza_entrenamiento_012",
+      "texto": "una persona menea la cabeza en señal de rechazo",
+      "intencion": "negar_cabeza",
+      "particion": "entrenamiento",
+      "grupo": "negar_cabeza_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "negar_cabeza_validacion_001",
+      "texto": "el protagonista mueve su cabeza de lado a lado para negarse",
+      "intencion": "negar_cabeza",
+      "particion": "validacion",
+      "grupo": "negar_cabeza_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "negar_cabeza_validacion_002",
+      "texto": "quiero que diga que no usando solo la cabeza",
+      "intencion": "negar_cabeza",
+      "particion": "validacion",
+      "grupo": "negar_cabeza_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "negar_cabeza_validacion_003",
+      "texto": "una persona expresa desacuerdo con un meneo de cabeza",
+      "intencion": "negar_cabeza",
+      "particion": "validacion",
+      "grupo": "negar_cabeza_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "negar_cabeza_prueba_001",
+      "texto": "el personaje rechaza la propuesta mediante un gesto de cabeza",
+      "intencion": "negar_cabeza",
+      "particion": "prueba",
+      "grupo": "negar_cabeza_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "negar_cabeza_prueba_002",
+      "texto": "representa una negativa moviendo la cabeza horizontalmente",
+      "intencion": "negar_cabeza",
+      "particion": "prueba",
+      "grupo": "negar_cabeza_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "negar_cabeza_prueba_003",
+      "texto": "el actor responde sin palabras con un ademán de negación",
+      "intencion": "negar_cabeza",
+      "particion": "prueba",
+      "grupo": "negar_cabeza_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "negar_cabeza_prueba_004",
+      "texto": "una persona sacude la cabeza de un lado al otro para decir no",
+      "intencion": "negar_cabeza",
+      "particion": "prueba",
+      "grupo": "negar_cabeza_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "cansancio_entrenamiento_001",
+      "texto": "un personaje está cansado",
+      "intencion": "cansancio",
+      "particion": "entrenamiento",
+      "grupo": "cansancio_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "cansancio_entrenamiento_002",
+      "texto": "una persona muestra agotamiento",
+      "intencion": "cansancio",
+      "particion": "entrenamiento",
+      "grupo": "cansancio_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "cansancio_entrenamiento_003",
+      "texto": "el actor parece exhausto",
+      "intencion": "cansancio",
+      "particion": "entrenamiento",
+      "grupo": "cansancio_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "cansancio_entrenamiento_004",
+      "texto": "haz que adopte una pose de cansancio",
+      "intencion": "cansancio",
+      "particion": "entrenamiento",
+      "grupo": "cansancio_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "cansancio_entrenamiento_005",
+      "texto": "un hombre se muestra fatigado",
+      "intencion": "cansancio",
+      "particion": "entrenamiento",
+      "grupo": "cansancio_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "cansancio_entrenamiento_006",
+      "texto": "la mujer descansa con gesto de agotamiento",
+      "intencion": "cansancio",
+      "particion": "entrenamiento",
+      "grupo": "cansancio_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "cansancio_entrenamiento_007",
+      "texto": "quiero que parezca sin energías",
+      "intencion": "cansancio",
+      "particion": "entrenamiento",
+      "grupo": "cansancio_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "cansancio_entrenamiento_008",
+      "texto": "el personaje refleja cansancio en su postura",
+      "intencion": "cansancio",
+      "particion": "entrenamiento",
+      "grupo": "cansancio_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "cansancio_entrenamiento_009",
+      "texto": "un vecino está rendido por el esfuerzo",
+      "intencion": "cansancio",
+      "particion": "entrenamiento",
+      "grupo": "cansancio_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "cansancio_entrenamiento_010",
+      "texto": "alguien tiene aspecto de estar exhausto",
+      "intencion": "cansancio",
+      "particion": "entrenamiento",
+      "grupo": "cansancio_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "cansancio_entrenamiento_011",
+      "texto": "el actor deja ver su fatiga",
+      "intencion": "cansancio",
+      "particion": "entrenamiento",
+      "grupo": "cansancio_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "cansancio_entrenamiento_012",
+      "texto": "una persona adopta una postura agotada",
+      "intencion": "cansancio",
+      "particion": "entrenamiento",
+      "grupo": "cansancio_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "cansancio_validacion_001",
+      "texto": "el protagonista muestra que ya no tiene fuerzas",
+      "intencion": "cansancio",
+      "particion": "validacion",
+      "grupo": "cansancio_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "cansancio_validacion_002",
+      "texto": "quiero una pose de alguien muy fatigado",
+      "intencion": "cansancio",
+      "particion": "validacion",
+      "grupo": "cansancio_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "cansancio_validacion_003",
+      "texto": "una persona parece agotada tras una jornada",
+      "intencion": "cansancio",
+      "particion": "validacion",
+      "grupo": "cansancio_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "cansancio_prueba_001",
+      "texto": "el personaje tiene una postura vencida por el cansancio",
+      "intencion": "cansancio",
+      "particion": "prueba",
+      "grupo": "cansancio_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "cansancio_prueba_002",
+      "texto": "representa a un actor físicamente exhausto",
+      "intencion": "cansancio",
+      "particion": "prueba",
+      "grupo": "cansancio_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "cansancio_prueba_003",
+      "texto": "una persona expresa que se ha quedado sin energía",
+      "intencion": "cansancio",
+      "particion": "prueba",
+      "grupo": "cansancio_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "cansancio_prueba_004",
+      "texto": "quiero ver el gesto de alguien que está fatigado",
+      "intencion": "cansancio",
+      "particion": "prueba",
+      "grupo": "cansancio_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "miedo_entrenamiento_001",
+      "texto": "un personaje se asusta",
+      "intencion": "miedo",
+      "particion": "entrenamiento",
+      "grupo": "miedo_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "miedo_entrenamiento_002",
+      "texto": "una persona tiene miedo",
+      "intencion": "miedo",
+      "particion": "entrenamiento",
+      "grupo": "miedo_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "miedo_entrenamiento_003",
+      "texto": "el actor se encoge asustado",
+      "intencion": "miedo",
+      "particion": "entrenamiento",
+      "grupo": "miedo_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "miedo_entrenamiento_004",
+      "texto": "haz que parezca aterrorizado",
+      "intencion": "miedo",
+      "particion": "entrenamiento",
+      "grupo": "miedo_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "miedo_entrenamiento_005",
+      "texto": "un hombre se muestra atemorizado",
+      "intencion": "miedo",
+      "particion": "entrenamiento",
+      "grupo": "miedo_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "miedo_entrenamiento_006",
+      "texto": "la mujer adopta una postura de pánico",
+      "intencion": "miedo",
+      "particion": "entrenamiento",
+      "grupo": "miedo_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "miedo_entrenamiento_007",
+      "texto": "quiero un gesto de temor",
+      "intencion": "miedo",
+      "particion": "entrenamiento",
+      "grupo": "miedo_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "miedo_entrenamiento_008",
+      "texto": "el personaje se protege encogiéndose por miedo",
+      "intencion": "miedo",
+      "particion": "entrenamiento",
+      "grupo": "miedo_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "miedo_entrenamiento_009",
+      "texto": "un vecino está espantado",
+      "intencion": "miedo",
+      "particion": "entrenamiento",
+      "grupo": "miedo_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "miedo_entrenamiento_010",
+      "texto": "alguien se agacha con una actitud temerosa",
+      "intencion": "miedo",
+      "particion": "entrenamiento",
+      "grupo": "miedo_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "miedo_entrenamiento_011",
+      "texto": "el actor muestra terror",
+      "intencion": "miedo",
+      "particion": "entrenamiento",
+      "grupo": "miedo_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "miedo_entrenamiento_012",
+      "texto": "una persona reacciona con miedo",
+      "intencion": "miedo",
+      "particion": "entrenamiento",
+      "grupo": "miedo_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "miedo_validacion_001",
+      "texto": "el protagonista se acobarda por el susto",
+      "intencion": "miedo",
+      "particion": "validacion",
+      "grupo": "miedo_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "miedo_validacion_002",
+      "texto": "quiero una postura de alguien aterrorizado",
+      "intencion": "miedo",
+      "particion": "validacion",
+      "grupo": "miedo_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "miedo_validacion_003",
+      "texto": "una persona se encoge para protegerse atemorizada",
+      "intencion": "miedo",
+      "particion": "validacion",
+      "grupo": "miedo_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "miedo_prueba_001",
+      "texto": "el personaje está sobrecogido de temor",
+      "intencion": "miedo",
+      "particion": "prueba",
+      "grupo": "miedo_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "miedo_prueba_002",
+      "texto": "representa a un actor que se acurruca del miedo",
+      "intencion": "miedo",
+      "particion": "prueba",
+      "grupo": "miedo_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "miedo_prueba_003",
+      "texto": "una persona muestra una actitud despavorida",
+      "intencion": "miedo",
+      "particion": "prueba",
+      "grupo": "miedo_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "miedo_prueba_004",
+      "texto": "quiero ver cómo alguien se encoge aterrado",
+      "intencion": "miedo",
+      "particion": "prueba",
+      "grupo": "miedo_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "celebrar_entrenamiento_001",
+      "texto": "un personaje celebra",
+      "intencion": "celebrar",
+      "particion": "entrenamiento",
+      "grupo": "celebrar_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "celebrar_entrenamiento_002",
+      "texto": "una persona festeja su victoria",
+      "intencion": "celebrar",
+      "particion": "entrenamiento",
+      "grupo": "celebrar_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "celebrar_entrenamiento_003",
+      "texto": "el actor hace un gesto de celebración",
+      "intencion": "celebrar",
+      "particion": "entrenamiento",
+      "grupo": "celebrar_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "celebrar_entrenamiento_004",
+      "texto": "haz que celebre un logro",
+      "intencion": "celebrar",
+      "particion": "entrenamiento",
+      "grupo": "celebrar_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "celebrar_entrenamiento_005",
+      "texto": "un hombre expresa alegría por haber ganado",
+      "intencion": "celebrar",
+      "particion": "entrenamiento",
+      "grupo": "celebrar_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "celebrar_entrenamiento_006",
+      "texto": "la mujer festeja con entusiasmo",
+      "intencion": "celebrar",
+      "particion": "entrenamiento",
+      "grupo": "celebrar_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "celebrar_entrenamiento_007",
+      "texto": "quiero un festejo de victoria",
+      "intencion": "celebrar",
+      "particion": "entrenamiento",
+      "grupo": "celebrar_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "celebrar_entrenamiento_008",
+      "texto": "el personaje levanta los brazos para celebrar",
+      "intencion": "celebrar",
+      "particion": "entrenamiento",
+      "grupo": "celebrar_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "celebrar_entrenamiento_009",
+      "texto": "un vecino celebra una buena noticia",
+      "intencion": "celebrar",
+      "particion": "entrenamiento",
+      "grupo": "celebrar_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "celebrar_entrenamiento_010",
+      "texto": "alguien muestra júbilo por su triunfo",
+      "intencion": "celebrar",
+      "particion": "entrenamiento",
+      "grupo": "celebrar_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "celebrar_entrenamiento_011",
+      "texto": "el actor festeja su éxito",
+      "intencion": "celebrar",
+      "particion": "entrenamiento",
+      "grupo": "celebrar_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "celebrar_entrenamiento_012",
+      "texto": "una persona hace un ademán victorioso",
+      "intencion": "celebrar",
+      "particion": "entrenamiento",
+      "grupo": "celebrar_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "celebrar_validacion_001",
+      "texto": "el protagonista expresa su alegría por el triunfo",
+      "intencion": "celebrar",
+      "particion": "validacion",
+      "grupo": "celebrar_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "celebrar_validacion_002",
+      "texto": "quiero una persona festejando una victoria",
+      "intencion": "celebrar",
+      "particion": "validacion",
+      "grupo": "celebrar_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "celebrar_validacion_003",
+      "texto": "una persona hace un gesto de júbilo",
+      "intencion": "celebrar",
+      "particion": "validacion",
+      "grupo": "celebrar_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "celebrar_prueba_001",
+      "texto": "el personaje celebra que ha conseguido su objetivo",
+      "intencion": "celebrar",
+      "particion": "prueba",
+      "grupo": "celebrar_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "celebrar_prueba_002",
+      "texto": "representa un festejo tras ganar",
+      "intencion": "celebrar",
+      "particion": "prueba",
+      "grupo": "celebrar_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "celebrar_prueba_003",
+      "texto": "el actor muestra euforia por su victoria",
+      "intencion": "celebrar",
+      "particion": "prueba",
+      "grupo": "celebrar_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "celebrar_prueba_004",
+      "texto": "una persona realiza un gesto de celebración del éxito",
+      "intencion": "celebrar",
+      "particion": "prueba",
+      "grupo": "celebrar_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "enfado_entrenamiento_001",
+      "texto": "un personaje está enfadado",
+      "intencion": "enfado",
+      "particion": "entrenamiento",
+      "grupo": "enfado_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "enfado_entrenamiento_002",
+      "texto": "una persona muestra enojo",
+      "intencion": "enfado",
+      "particion": "entrenamiento",
+      "grupo": "enfado_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "enfado_entrenamiento_003",
+      "texto": "el actor pone cara de enfado",
+      "intencion": "enfado",
+      "particion": "entrenamiento",
+      "grupo": "enfado_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "enfado_entrenamiento_004",
+      "texto": "haz que tenga una expresión furiosa",
+      "intencion": "enfado",
+      "particion": "entrenamiento",
+      "grupo": "enfado_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "enfado_entrenamiento_005",
+      "texto": "un hombre frunce el ceño molesto",
+      "intencion": "enfado",
+      "particion": "entrenamiento",
+      "grupo": "enfado_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "enfado_entrenamiento_006",
+      "texto": "la mujer muestra una cara de disgusto",
+      "intencion": "enfado",
+      "particion": "entrenamiento",
+      "grupo": "enfado_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "enfado_entrenamiento_007",
+      "texto": "quiero un rostro enojado",
+      "intencion": "enfado",
+      "particion": "entrenamiento",
+      "grupo": "enfado_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "enfado_entrenamiento_008",
+      "texto": "el personaje expresa irritación con la cara",
+      "intencion": "enfado",
+      "particion": "entrenamiento",
+      "grupo": "enfado_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "enfado_entrenamiento_009",
+      "texto": "un vecino tiene semblante enfadado",
+      "intencion": "enfado",
+      "particion": "entrenamiento",
+      "grupo": "enfado_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "enfado_entrenamiento_010",
+      "texto": "alguien muestra rabia en su expresión",
+      "intencion": "enfado",
+      "particion": "entrenamiento",
+      "grupo": "enfado_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "enfado_entrenamiento_011",
+      "texto": "el actor parece muy molesto",
+      "intencion": "enfado",
+      "particion": "entrenamiento",
+      "grupo": "enfado_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "enfado_entrenamiento_012",
+      "texto": "una persona adopta una expresión de ira",
+      "intencion": "enfado",
+      "particion": "entrenamiento",
+      "grupo": "enfado_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "enfado_validacion_001",
+      "texto": "el protagonista refleja enojo en el rostro",
+      "intencion": "enfado",
+      "particion": "validacion",
+      "grupo": "enfado_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "enfado_validacion_002",
+      "texto": "quiero una persona con expresión irritada",
+      "intencion": "enfado",
+      "particion": "validacion",
+      "grupo": "enfado_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "enfado_validacion_003",
+      "texto": "una persona frunce el ceño con enfado",
+      "intencion": "enfado",
+      "particion": "validacion",
+      "grupo": "enfado_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "enfado_prueba_001",
+      "texto": "el personaje tiene un semblante colérico",
+      "intencion": "enfado",
+      "particion": "prueba",
+      "grupo": "enfado_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "enfado_prueba_002",
+      "texto": "representa un rostro que expresa disgusto",
+      "intencion": "enfado",
+      "particion": "prueba",
+      "grupo": "enfado_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "enfado_prueba_003",
+      "texto": "el actor muestra su irritación facial",
+      "intencion": "enfado",
+      "particion": "prueba",
+      "grupo": "enfado_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "enfado_prueba_004",
+      "texto": "una persona pone cara de estar furiosa",
+      "intencion": "enfado",
+      "particion": "prueba",
+      "grupo": "enfado_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "curiosidad_entrenamiento_001",
+      "texto": "un personaje muestra curiosidad",
+      "intencion": "curiosidad",
+      "particion": "entrenamiento",
+      "grupo": "curiosidad_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "curiosidad_entrenamiento_002",
+      "texto": "una persona pone cara curiosa",
+      "intencion": "curiosidad",
+      "particion": "entrenamiento",
+      "grupo": "curiosidad_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "curiosidad_entrenamiento_003",
+      "texto": "el actor parece intrigado",
+      "intencion": "curiosidad",
+      "particion": "entrenamiento",
+      "grupo": "curiosidad_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "curiosidad_entrenamiento_004",
+      "texto": "haz que muestre interés con el rostro",
+      "intencion": "curiosidad",
+      "particion": "entrenamiento",
+      "grupo": "curiosidad_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "curiosidad_entrenamiento_005",
+      "texto": "un hombre tiene expresión de curiosidad",
+      "intencion": "curiosidad",
+      "particion": "entrenamiento",
+      "grupo": "curiosidad_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "curiosidad_entrenamiento_006",
+      "texto": "la mujer mira con aire intrigado",
+      "intencion": "curiosidad",
+      "particion": "entrenamiento",
+      "grupo": "curiosidad_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "curiosidad_entrenamiento_007",
+      "texto": "quiero un gesto facial de interés",
+      "intencion": "curiosidad",
+      "particion": "entrenamiento",
+      "grupo": "curiosidad_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "curiosidad_entrenamiento_008",
+      "texto": "el personaje observa con curiosidad",
+      "intencion": "curiosidad",
+      "particion": "entrenamiento",
+      "grupo": "curiosidad_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "curiosidad_entrenamiento_009",
+      "texto": "un vecino adopta una cara inquisitiva",
+      "intencion": "curiosidad",
+      "particion": "entrenamiento",
+      "grupo": "curiosidad_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "curiosidad_entrenamiento_010",
+      "texto": "alguien tiene una expresión de intriga",
+      "intencion": "curiosidad",
+      "particion": "entrenamiento",
+      "grupo": "curiosidad_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "curiosidad_entrenamiento_011",
+      "texto": "el actor refleja curiosidad en su cara",
+      "intencion": "curiosidad",
+      "particion": "entrenamiento",
+      "grupo": "curiosidad_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "curiosidad_entrenamiento_012",
+      "texto": "una persona muestra un semblante interesado",
+      "intencion": "curiosidad",
+      "particion": "entrenamiento",
+      "grupo": "curiosidad_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "curiosidad_validacion_001",
+      "texto": "el protagonista expresa que algo le causa intriga",
+      "intencion": "curiosidad",
+      "particion": "validacion",
+      "grupo": "curiosidad_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "curiosidad_validacion_002",
+      "texto": "quiero una persona con gesto inquisitivo",
+      "intencion": "curiosidad",
+      "particion": "validacion",
+      "grupo": "curiosidad_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "curiosidad_validacion_003",
+      "texto": "una persona parece interesada y curiosa",
+      "intencion": "curiosidad",
+      "particion": "validacion",
+      "grupo": "curiosidad_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "curiosidad_prueba_001",
+      "texto": "el personaje adopta un semblante de curiosidad",
+      "intencion": "curiosidad",
+      "particion": "prueba",
+      "grupo": "curiosidad_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "curiosidad_prueba_002",
+      "texto": "representa el rostro de alguien intrigado",
+      "intencion": "curiosidad",
+      "particion": "prueba",
+      "grupo": "curiosidad_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "curiosidad_prueba_003",
+      "texto": "el actor muestra interés mediante su expresión",
+      "intencion": "curiosidad",
+      "particion": "prueba",
+      "grupo": "curiosidad_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "curiosidad_prueba_004",
+      "texto": "una persona pone una cara que revela curiosidad",
+      "intencion": "curiosidad",
+      "particion": "prueba",
+      "grupo": "curiosidad_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "fumar_entrenamiento_001",
+      "texto": "un personaje fuma",
+      "intencion": "fumar",
+      "particion": "entrenamiento",
+      "grupo": "fumar_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "fumar_entrenamiento_002",
+      "texto": "una persona hace el gesto de fumar",
+      "intencion": "fumar",
+      "particion": "entrenamiento",
+      "grupo": "fumar_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "fumar_entrenamiento_003",
+      "texto": "el actor se lleva un cigarrillo a la boca",
+      "intencion": "fumar",
+      "particion": "entrenamiento",
+      "grupo": "fumar_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "fumar_entrenamiento_004",
+      "texto": "haz que simule una calada",
+      "intencion": "fumar",
+      "particion": "entrenamiento",
+      "grupo": "fumar_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "fumar_entrenamiento_005",
+      "texto": "un hombre da una calada",
+      "intencion": "fumar",
+      "particion": "entrenamiento",
+      "grupo": "fumar_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "fumar_entrenamiento_006",
+      "texto": "la mujer gesticula como si fumara",
+      "intencion": "fumar",
+      "particion": "entrenamiento",
+      "grupo": "fumar_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "fumar_entrenamiento_007",
+      "texto": "quiero una persona fumando",
+      "intencion": "fumar",
+      "particion": "entrenamiento",
+      "grupo": "fumar_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "fumar_entrenamiento_008",
+      "texto": "el personaje lleva la mano a los labios para fumar",
+      "intencion": "fumar",
+      "particion": "entrenamiento",
+      "grupo": "fumar_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "fumar_entrenamiento_009",
+      "texto": "un vecino simula fumar un cigarrillo",
+      "intencion": "fumar",
+      "particion": "entrenamiento",
+      "grupo": "fumar_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "fumar_entrenamiento_010",
+      "texto": "alguien realiza el ademán de dar una calada",
+      "intencion": "fumar",
+      "particion": "entrenamiento",
+      "grupo": "fumar_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "fumar_entrenamiento_011",
+      "texto": "el actor representa el hábito de fumar",
+      "intencion": "fumar",
+      "particion": "entrenamiento",
+      "grupo": "fumar_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "fumar_entrenamiento_012",
+      "texto": "una persona acerca su cigarro a los labios",
+      "intencion": "fumar",
+      "particion": "entrenamiento",
+      "grupo": "fumar_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "fumar_validacion_001",
+      "texto": "el protagonista imita el gesto de aspirar un cigarrillo",
+      "intencion": "fumar",
+      "particion": "validacion",
+      "grupo": "fumar_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "fumar_validacion_002",
+      "texto": "quiero una persona dando una calada",
+      "intencion": "fumar",
+      "particion": "validacion",
+      "grupo": "fumar_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "fumar_validacion_003",
+      "texto": "una persona lleva el cigarro hasta la boca",
+      "intencion": "fumar",
+      "particion": "validacion",
+      "grupo": "fumar_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "fumar_prueba_001",
+      "texto": "el personaje hace el ademán de llevarse un cigarrillo a los labios",
+      "intencion": "fumar",
+      "particion": "prueba",
+      "grupo": "fumar_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "fumar_prueba_002",
+      "texto": "representa a alguien que simula estar fumando",
+      "intencion": "fumar",
+      "particion": "prueba",
+      "grupo": "fumar_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "fumar_prueba_003",
+      "texto": "el actor reproduce el gesto de una calada",
+      "intencion": "fumar",
+      "particion": "prueba",
+      "grupo": "fumar_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "fumar_prueba_004",
+      "texto": "una persona se lleva la mano a la boca como fumador",
+      "intencion": "fumar",
+      "particion": "prueba",
+      "grupo": "fumar_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "reir_entrenamiento_001",
+      "texto": "un personaje se ríe",
+      "intencion": "reir",
+      "particion": "entrenamiento",
+      "grupo": "reir_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "reir_entrenamiento_002",
+      "texto": "una persona suelta una carcajada",
+      "intencion": "reir",
+      "particion": "entrenamiento",
+      "grupo": "reir_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "reir_entrenamiento_003",
+      "texto": "el actor hace el gesto de reír",
+      "intencion": "reir",
+      "particion": "entrenamiento",
+      "grupo": "reir_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "reir_entrenamiento_004",
+      "texto": "haz que se ría a carcajadas",
+      "intencion": "reir",
+      "particion": "entrenamiento",
+      "grupo": "reir_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "reir_entrenamiento_005",
+      "texto": "un hombre empieza a reírse",
+      "intencion": "reir",
+      "particion": "entrenamiento",
+      "grupo": "reir_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "reir_entrenamiento_006",
+      "texto": "la mujer muestra una risa espontánea",
+      "intencion": "reir",
+      "particion": "entrenamiento",
+      "grupo": "reir_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "reir_entrenamiento_007",
+      "texto": "quiero una persona riendo",
+      "intencion": "reir",
+      "particion": "entrenamiento",
+      "grupo": "reir_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "reir_entrenamiento_008",
+      "texto": "el personaje se desternilla",
+      "intencion": "reir",
+      "particion": "entrenamiento",
+      "grupo": "reir_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "reir_entrenamiento_009",
+      "texto": "un vecino se ríe con ganas",
+      "intencion": "reir",
+      "particion": "entrenamiento",
+      "grupo": "reir_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "reir_entrenamiento_010",
+      "texto": "alguien no puede contener la risa",
+      "intencion": "reir",
+      "particion": "entrenamiento",
+      "grupo": "reir_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "reir_entrenamiento_011",
+      "texto": "el actor representa una carcajada",
+      "intencion": "reir",
+      "particion": "entrenamiento",
+      "grupo": "reir_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "reir_entrenamiento_012",
+      "texto": "una persona se dobla de la risa",
+      "intencion": "reir",
+      "particion": "entrenamiento",
+      "grupo": "reir_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "reir_validacion_001",
+      "texto": "el protagonista rompe a reír",
+      "intencion": "reir",
+      "particion": "validacion",
+      "grupo": "reir_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "reir_validacion_002",
+      "texto": "quiero una persona soltando risotadas",
+      "intencion": "reir",
+      "particion": "validacion",
+      "grupo": "reir_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "reir_validacion_003",
+      "texto": "una persona hace ademanes de carcajearse",
+      "intencion": "reir",
+      "particion": "validacion",
+      "grupo": "reir_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "reir_prueba_001",
+      "texto": "el personaje estalla en carcajadas",
+      "intencion": "reir",
+      "particion": "prueba",
+      "grupo": "reir_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "reir_prueba_002",
+      "texto": "representa a alguien muerto de risa",
+      "intencion": "reir",
+      "particion": "prueba",
+      "grupo": "reir_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "reir_prueba_003",
+      "texto": "el actor se ríe de buena gana",
+      "intencion": "reir",
+      "particion": "prueba",
+      "grupo": "reir_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "reir_prueba_004",
+      "texto": "una persona expresa diversión con una risotada",
+      "intencion": "reir",
+      "particion": "prueba",
+      "grupo": "reir_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "beber_entrenamiento_001",
+      "texto": "un personaje bebe",
+      "intencion": "beber",
+      "particion": "entrenamiento",
+      "grupo": "beber_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "beber_entrenamiento_002",
+      "texto": "una persona hace el gesto de beber",
+      "intencion": "beber",
+      "particion": "entrenamiento",
+      "grupo": "beber_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "beber_entrenamiento_003",
+      "texto": "el actor toma un sorbo",
+      "intencion": "beber",
+      "particion": "entrenamiento",
+      "grupo": "beber_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "beber_entrenamiento_004",
+      "texto": "haz que simule beber de un vaso",
+      "intencion": "beber",
+      "particion": "entrenamiento",
+      "grupo": "beber_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "beber_entrenamiento_005",
+      "texto": "un hombre se lleva una bebida a la boca",
+      "intencion": "beber",
+      "particion": "entrenamiento",
+      "grupo": "beber_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "beber_entrenamiento_006",
+      "texto": "la mujer bebe de una botella",
+      "intencion": "beber",
+      "particion": "entrenamiento",
+      "grupo": "beber_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "beber_entrenamiento_007",
+      "texto": "quiero una persona bebiendo",
+      "intencion": "beber",
+      "particion": "entrenamiento",
+      "grupo": "beber_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "beber_entrenamiento_008",
+      "texto": "el personaje levanta el vaso para tomar",
+      "intencion": "beber",
+      "particion": "entrenamiento",
+      "grupo": "beber_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "beber_entrenamiento_009",
+      "texto": "un vecino da un trago",
+      "intencion": "beber",
+      "particion": "entrenamiento",
+      "grupo": "beber_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "beber_entrenamiento_010",
+      "texto": "alguien representa que está tomando una bebida",
+      "intencion": "beber",
+      "particion": "entrenamiento",
+      "grupo": "beber_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "beber_entrenamiento_011",
+      "texto": "el actor imita el movimiento de beber",
+      "intencion": "beber",
+      "particion": "entrenamiento",
+      "grupo": "beber_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "beber_entrenamiento_012",
+      "texto": "una persona acerca un vaso a sus labios",
+      "intencion": "beber",
+      "particion": "entrenamiento",
+      "grupo": "beber_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "beber_validacion_001",
+      "texto": "el protagonista simula dar un sorbo de agua",
+      "intencion": "beber",
+      "particion": "validacion",
+      "grupo": "beber_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "beber_validacion_002",
+      "texto": "quiero una persona tomando un trago",
+      "intencion": "beber",
+      "particion": "validacion",
+      "grupo": "beber_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "beber_validacion_003",
+      "texto": "una persona levanta la botella hasta la boca",
+      "intencion": "beber",
+      "particion": "validacion",
+      "grupo": "beber_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "beber_prueba_001",
+      "texto": "el personaje realiza el ademán de beber un refresco",
+      "intencion": "beber",
+      "particion": "prueba",
+      "grupo": "beber_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "beber_prueba_002",
+      "texto": "representa a alguien que se lleva un vaso a los labios",
+      "intencion": "beber",
+      "particion": "prueba",
+      "grupo": "beber_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "beber_prueba_003",
+      "texto": "el actor simula ingerir un sorbo",
+      "intencion": "beber",
+      "particion": "prueba",
+      "grupo": "beber_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "beber_prueba_004",
+      "texto": "una persona reproduce el gesto de tomar una bebida",
+      "intencion": "beber",
+      "particion": "prueba",
+      "grupo": "beber_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "comer_entrenamiento_001",
+      "texto": "un personaje come",
+      "intencion": "comer",
+      "particion": "entrenamiento",
+      "grupo": "comer_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "comer_entrenamiento_002",
+      "texto": "una persona hace el gesto de comer",
+      "intencion": "comer",
+      "particion": "entrenamiento",
+      "grupo": "comer_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "comer_entrenamiento_003",
+      "texto": "el actor mastica",
+      "intencion": "comer",
+      "particion": "entrenamiento",
+      "grupo": "comer_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "comer_entrenamiento_004",
+      "texto": "haz que simule comer una hamburguesa",
+      "intencion": "comer",
+      "particion": "entrenamiento",
+      "grupo": "comer_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "comer_entrenamiento_005",
+      "texto": "un hombre se lleva comida a la boca",
+      "intencion": "comer",
+      "particion": "entrenamiento",
+      "grupo": "comer_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "comer_entrenamiento_006",
+      "texto": "la mujer da un bocado",
+      "intencion": "comer",
+      "particion": "entrenamiento",
+      "grupo": "comer_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "comer_entrenamiento_007",
+      "texto": "quiero una persona comiendo",
+      "intencion": "comer",
+      "particion": "entrenamiento",
+      "grupo": "comer_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "comer_entrenamiento_008",
+      "texto": "el personaje imita el movimiento de masticar",
+      "intencion": "comer",
+      "particion": "entrenamiento",
+      "grupo": "comer_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "comer_entrenamiento_009",
+      "texto": "un vecino se alimenta",
+      "intencion": "comer",
+      "particion": "entrenamiento",
+      "grupo": "comer_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "comer_entrenamiento_010",
+      "texto": "alguien representa que está comiendo",
+      "intencion": "comer",
+      "particion": "entrenamiento",
+      "grupo": "comer_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "comer_entrenamiento_011",
+      "texto": "el actor acerca un alimento a sus labios",
+      "intencion": "comer",
+      "particion": "entrenamiento",
+      "grupo": "comer_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "comer_entrenamiento_012",
+      "texto": "una persona hace el ademán de dar un mordisco",
+      "intencion": "comer",
+      "particion": "entrenamiento",
+      "grupo": "comer_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "comer_validacion_001",
+      "texto": "el protagonista simula tomar un bocado",
+      "intencion": "comer",
+      "particion": "validacion",
+      "grupo": "comer_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "comer_validacion_002",
+      "texto": "quiero una persona masticando comida",
+      "intencion": "comer",
+      "particion": "validacion",
+      "grupo": "comer_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "comer_validacion_003",
+      "texto": "una persona lleva una hamburguesa hasta la boca",
+      "intencion": "comer",
+      "particion": "validacion",
+      "grupo": "comer_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "comer_prueba_001",
+      "texto": "el personaje realiza el gesto de alimentarse",
+      "intencion": "comer",
+      "particion": "prueba",
+      "grupo": "comer_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "comer_prueba_002",
+      "texto": "representa a alguien que mastica un bocado",
+      "intencion": "comer",
+      "particion": "prueba",
+      "grupo": "comer_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "comer_prueba_003",
+      "texto": "el actor simula dar un mordisco a su comida",
+      "intencion": "comer",
+      "particion": "prueba",
+      "grupo": "comer_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "comer_prueba_004",
+      "texto": "una persona reproduce el ademán de llevarse alimento a la boca",
+      "intencion": "comer",
+      "particion": "prueba",
+      "grupo": "comer_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "telefono_entrenamiento_001",
+      "texto": "un personaje habla por teléfono",
+      "intencion": "telefono",
+      "particion": "entrenamiento",
+      "grupo": "telefono_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "telefono_entrenamiento_002",
+      "texto": "una persona atiende una llamada",
+      "intencion": "telefono",
+      "particion": "entrenamiento",
+      "grupo": "telefono_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "telefono_entrenamiento_003",
+      "texto": "el actor se lleva el teléfono al oído",
+      "intencion": "telefono",
+      "particion": "entrenamiento",
+      "grupo": "telefono_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "telefono_entrenamiento_004",
+      "texto": "haz que converse por celular",
+      "intencion": "telefono",
+      "particion": "entrenamiento",
+      "grupo": "telefono_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "telefono_entrenamiento_005",
+      "texto": "un hombre usa el móvil para llamar",
+      "intencion": "telefono",
+      "particion": "entrenamiento",
+      "grupo": "telefono_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "telefono_entrenamiento_006",
+      "texto": "la mujer responde su teléfono",
+      "intencion": "telefono",
+      "particion": "entrenamiento",
+      "grupo": "telefono_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "telefono_entrenamiento_007",
+      "texto": "quiero una persona hablando al celular",
+      "intencion": "telefono",
+      "particion": "entrenamiento",
+      "grupo": "telefono_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "telefono_entrenamiento_008",
+      "texto": "el personaje mantiene una llamada telefónica",
+      "intencion": "telefono",
+      "particion": "entrenamiento",
+      "grupo": "telefono_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "telefono_entrenamiento_009",
+      "texto": "un vecino se pone el móvil junto a la oreja",
+      "intencion": "telefono",
+      "particion": "entrenamiento",
+      "grupo": "telefono_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "telefono_entrenamiento_010",
+      "texto": "alguien hace el gesto de hablar por teléfono",
+      "intencion": "telefono",
+      "particion": "entrenamiento",
+      "grupo": "telefono_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "telefono_entrenamiento_011",
+      "texto": "el actor simula una conversación telefónica",
+      "intencion": "telefono",
+      "particion": "entrenamiento",
+      "grupo": "telefono_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "telefono_entrenamiento_012",
+      "texto": "una persona escucha por el auricular de su móvil",
+      "intencion": "telefono",
+      "particion": "entrenamiento",
+      "grupo": "telefono_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "telefono_validacion_001",
+      "texto": "el protagonista contesta una llamada en su celular",
+      "intencion": "telefono",
+      "particion": "validacion",
+      "grupo": "telefono_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "telefono_validacion_002",
+      "texto": "quiero una persona con el teléfono junto al oído",
+      "intencion": "telefono",
+      "particion": "validacion",
+      "grupo": "telefono_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "telefono_validacion_003",
+      "texto": "una persona conversa mediante su móvil",
+      "intencion": "telefono",
+      "particion": "validacion",
+      "grupo": "telefono_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "telefono_prueba_001",
+      "texto": "el personaje reproduce el ademán de contestar el teléfono",
+      "intencion": "telefono",
+      "particion": "prueba",
+      "grupo": "telefono_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "telefono_prueba_002",
+      "texto": "representa a alguien atendiendo su celular",
+      "intencion": "telefono",
+      "particion": "prueba",
+      "grupo": "telefono_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "telefono_prueba_003",
+      "texto": "el actor lleva el móvil a la oreja para conversar",
+      "intencion": "telefono",
+      "particion": "prueba",
+      "grupo": "telefono_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "telefono_prueba_004",
+      "texto": "una persona simula escuchar una llamada telefónica",
+      "intencion": "telefono",
+      "particion": "prueba",
+      "grupo": "telefono_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_001",
+      "texto": "quiero algo bonito",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_002",
+      "texto": "haz una escena interesante",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_003",
+      "texto": "no sé qué pedir",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_004",
+      "texto": "genera cualquier cosa",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_005",
+      "texto": "una caja roja",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_006",
+      "texto": "un coche azul",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_007",
+      "texto": "un edificio junto al mar",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_008",
+      "texto": "el clima de hoy",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_009",
+      "texto": "cuánto es dos más dos",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_010",
+      "texto": "explícame la historia de la ciudad",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_011",
+      "texto": "una persona camina",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_012",
+      "texto": "el personaje corre por la calle",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_013",
+      "texto": "dos amigos nadan",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_013",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_014",
+      "texto": "un hombre salta",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_014",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_015",
+      "texto": "una persona sube escaleras",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_015",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_016",
+      "texto": "el policía apunta con su arma",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_016",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_017",
+      "texto": "un coche conduce por la avenida",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_017",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_018",
+      "texto": "un conductor entra al auto",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_018",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_019",
+      "texto": "un vehículo circula sin conductor",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_019",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_020",
+      "texto": "el actor se sienta en una silla",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_020",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_021",
+      "texto": "el personaje dispara una pistola",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_021",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_022",
+      "texto": "dos personas se pelean",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_022",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_023",
+      "texto": "un hombre golpea a otro",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_023",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_024",
+      "texto": "un dragón vuela sobre la ciudad",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_024",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_025",
+      "texto": "el personaje se teletransporta",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_025",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_026",
+      "texto": "una persona dispara desde un coche",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_026",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_027",
+      "texto": "el actor lanza una granada",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_027",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_028",
+      "texto": "un personaje trepa por una pared",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_028",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_029",
+      "texto": "una persona conduce una motocicleta",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_029",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_030",
+      "texto": "el hombre roba un vehículo",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_030",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_031",
+      "texto": "el actor abre una puerta",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_031",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_032",
+      "texto": "el vecino toma un objeto del suelo",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_032",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_033",
+      "texto": "un personaje carga una caja",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_033",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_034",
+      "texto": "la persona toca la guitarra",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_034",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_035",
+      "texto": "el actor toca el piano",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_035",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_036",
+      "texto": "una persona barre el suelo",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_036",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_037",
+      "texto": "el personaje limpia una ventana",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_037",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_038",
+      "texto": "un hombre cocina en una sartén",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_038",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_039",
+      "texto": "una mujer repara un motor",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_039",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_040",
+      "texto": "el vecino pinta una pared",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_040",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_041",
+      "texto": "no quiero que baile",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_041",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_042",
+      "texto": "la persona no saluda",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_042",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_043",
+      "texto": "el personaje no aplaude",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_043",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_044",
+      "texto": "sin levantar las manos",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_044",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_045",
+      "texto": "el actor no mira a los lados",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_045",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_046",
+      "texto": "el hombre no se rasca",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_046",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_047",
+      "texto": "la mujer no se tumba",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_047",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_048",
+      "texto": "el personaje no vomita",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_048",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_049",
+      "texto": "sin mostrar sorpresa",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_049",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_050",
+      "texto": "no deben conversar",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_050",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_051",
+      "texto": "la persona no se estira",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_051",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_052",
+      "texto": "sin negar con la cabeza",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_052",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_053",
+      "texto": "no quiero que parezca cansado",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_053",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_054",
+      "texto": "el actor no debe asustarse",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_054",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_055",
+      "texto": "no debe celebrar",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_055",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_056",
+      "texto": "sin una expresión de enfado",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_056",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_057",
+      "texto": "no quiero un gesto de curiosidad",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_057",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_058",
+      "texto": "la persona no fuma",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_058",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_059",
+      "texto": "el personaje no se ríe",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_059",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_060",
+      "texto": "el actor no bebe",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_060",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_061",
+      "texto": "la mujer no come",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_061",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_062",
+      "texto": "el hombre no habla por teléfono",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_062",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_063",
+      "texto": "quiero que evite dar una calada",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_063",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_064",
+      "texto": "no debe atender llamadas",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_064",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_065",
+      "texto": "no hagas un gesto de saludo",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_065",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_066",
+      "texto": "sin dar palmadas",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_066",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_067",
+      "texto": "nada de acostarse",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_067",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_068",
+      "texto": "no simules un sorbo",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_068",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_069",
+      "texto": "no muestres una carcajada",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_069",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_070",
+      "texto": "que no se lleve comida a la boca",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_070",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_071",
+      "texto": "no quiero que sacuda la cabeza para negar",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_071",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_072",
+      "texto": "el actor vuela con alas",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_072",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_073",
+      "texto": "un perro corre detrás de una pelota",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_073",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_074",
+      "texto": "la cámara gira alrededor del coche",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_074",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_075",
+      "texto": "pon música de fondo",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_075",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_076",
+      "texto": "cambia la hora a medianoche",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_076",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_077",
+      "texto": "coloca una silla en el parque",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_077",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_078",
+      "texto": "quiero una explosión en el edificio",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_078",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_079",
+      "texto": "una carrera de vehículos",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_079",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_080",
+      "texto": "la persona abraza a un amigo",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_080",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_081",
+      "texto": "dos personas se besan",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_081",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_082",
+      "texto": "un caballo salta una valla",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_082",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_083",
+      "texto": "el personaje dispara y conduce",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_083",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_084",
+      "texto": "una persona baila mientras dispara",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_084",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_085",
+      "texto": "un actor fuma mientras corre",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_085",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_086",
+      "texto": "dos personas bailan y luego comen",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_086",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_087",
+      "texto": "el personaje canta una canción",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_087",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_entrenamiento_088",
+      "texto": "un actor mira el horizonte",
+      "intencion": "desconocido",
+      "particion": "entrenamiento",
+      "grupo": "desconocido_entrenamiento_088",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_validacion_001",
+      "texto": "inventa una aventura cualquiera",
+      "intencion": "desconocido",
+      "particion": "validacion",
+      "grupo": "desconocido_validacion_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_validacion_002",
+      "texto": "un autobús amarillo",
+      "intencion": "desconocido",
+      "particion": "validacion",
+      "grupo": "desconocido_validacion_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_validacion_003",
+      "texto": "quiero un paisaje urbano",
+      "intencion": "desconocido",
+      "particion": "validacion",
+      "grupo": "desconocido_validacion_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_validacion_004",
+      "texto": "una persona trota hacia el puente",
+      "intencion": "desconocido",
+      "particion": "validacion",
+      "grupo": "desconocido_validacion_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_validacion_005",
+      "texto": "el actor nada por el lago",
+      "intencion": "desconocido",
+      "particion": "validacion",
+      "grupo": "desconocido_validacion_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_validacion_006",
+      "texto": "el coche recorre las calles",
+      "intencion": "desconocido",
+      "particion": "validacion",
+      "grupo": "desconocido_validacion_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_validacion_007",
+      "texto": "un soldado dispara al blanco",
+      "intencion": "desconocido",
+      "particion": "validacion",
+      "grupo": "desconocido_validacion_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_validacion_008",
+      "texto": "la mujer no debe fumar",
+      "intencion": "desconocido",
+      "particion": "validacion",
+      "grupo": "desconocido_validacion_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_validacion_009",
+      "texto": "evita que el actor se ponga a bailar",
+      "intencion": "desconocido",
+      "particion": "validacion",
+      "grupo": "desconocido_validacion_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_validacion_010",
+      "texto": "no muestres a nadie dando palmas",
+      "intencion": "desconocido",
+      "particion": "validacion",
+      "grupo": "desconocido_validacion_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_validacion_011",
+      "texto": "el personaje no atiende el celular",
+      "intencion": "desconocido",
+      "particion": "validacion",
+      "grupo": "desconocido_validacion_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_validacion_012",
+      "texto": "sin beber nada",
+      "intencion": "desconocido",
+      "particion": "validacion",
+      "grupo": "desconocido_validacion_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_validacion_013",
+      "texto": "no pongas cara de asombro",
+      "intencion": "desconocido",
+      "particion": "validacion",
+      "grupo": "desconocido_validacion_013",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_validacion_014",
+      "texto": "una persona mueve una mesa",
+      "intencion": "desconocido",
+      "particion": "validacion",
+      "grupo": "desconocido_validacion_014",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_validacion_015",
+      "texto": "el actor escribe una carta",
+      "intencion": "desconocido",
+      "particion": "validacion",
+      "grupo": "desconocido_validacion_015",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_validacion_016",
+      "texto": "un personaje conduce y dispara",
+      "intencion": "desconocido",
+      "particion": "validacion",
+      "grupo": "desconocido_validacion_016",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_validacion_017",
+      "texto": "no quiero una pose tumbada",
+      "intencion": "desconocido",
+      "particion": "validacion",
+      "grupo": "desconocido_validacion_017",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_validacion_018",
+      "texto": "el hombre salta de un techo",
+      "intencion": "desconocido",
+      "particion": "validacion",
+      "grupo": "desconocido_validacion_018",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_001",
+      "texto": "quiero una escena sin especificar acciones",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_001",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_002",
+      "texto": "un camión estacionado junto a una casa",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_002",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_003",
+      "texto": "muestra solamente una calle vacía",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_003",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_004",
+      "texto": "el protagonista recorre a pie el camino",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_004",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_005",
+      "texto": "un actor asciende por las escaleras",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_005",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_006",
+      "texto": "un personaje se lanza a nadar",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_006",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_007",
+      "texto": "el conductor maneja su taxi",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_007",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_008",
+      "texto": "un policía apunta a otro personaje",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_008",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_009",
+      "texto": "el actor lucha con los puños",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_009",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_010",
+      "texto": "el personaje arroja una bomba",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_010",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_011",
+      "texto": "no permitas que dé una calada",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_011",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_012",
+      "texto": "la persona evita ponerse a bailar",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_012",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_013",
+      "texto": "sin representar ninguna conversación telefónica",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_013",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_014",
+      "texto": "no quiero aplausos de ningún tipo",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_014",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_015",
+      "texto": "el personaje no debe dar un bocado",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_015",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_016",
+      "texto": "sin hacer movimientos de saludo",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_016",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_017",
+      "texto": "no debe mostrar cansancio",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_017",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_018",
+      "texto": "la persona no tiene que reírse",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_018",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_019",
+      "texto": "el actor toca un tambor",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_019",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_020",
+      "texto": "el personaje recoge un maletín",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_020",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_021",
+      "texto": "una persona se sienta en un banco",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_021",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_022",
+      "texto": "dos personajes se abrazan",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_022",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_023",
+      "texto": "una persona baila y luego conduce",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_023",
+      "origen": "curacion_manual_asistida"
+    },
+    {
+      "id": "desconocido_prueba_024",
+      "texto": "el personaje levita sobre el agua",
+      "intencion": "desconocido",
+      "particion": "prueba",
+      "grupo": "desconocido_prueba_024",
+      "origen": "curacion_manual_asistida"
+    }
+  ]
+}

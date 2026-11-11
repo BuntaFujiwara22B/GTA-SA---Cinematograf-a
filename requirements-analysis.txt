@@ -1,0 +1,3 @@
+# Solo para comparar clasificadores y dibujar informes locales.
+-r requirements-training.txt
+matplotlib>=3.10,<4

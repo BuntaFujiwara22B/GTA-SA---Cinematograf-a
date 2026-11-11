@@ -1,0 +1,596 @@
+[
+  {
+    "model_id": 420,
+    "nombre": "taxi",
+    "categoria": "vehiculo",
+    "captura": 1477,
+    "foto": "vehicles/420_taxi.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 596,
+    "nombre": "copcarla",
+    "categoria": "vehiculo",
+    "captura": 1478,
+    "foto": "vehicles/596_copcarla.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 416,
+    "nombre": "ambulan",
+    "categoria": "vehiculo",
+    "captura": 1479,
+    "foto": "vehicles/416_ambulan.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 407,
+    "nombre": "firetruk",
+    "categoria": "vehiculo",
+    "captura": 1480,
+    "foto": "vehicles/407_firetruk.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 408,
+    "nombre": "trash",
+    "categoria": "vehiculo",
+    "captura": 1481,
+    "foto": "vehicles/408_trash.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 431,
+    "nombre": "bus",
+    "categoria": "vehiculo",
+    "captura": 1482,
+    "foto": "vehicles/431_bus.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 531,
+    "nombre": "tractor",
+    "categoria": "vehiculo",
+    "captura": 1483,
+    "foto": "vehicles/531_tractor.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 532,
+    "nombre": "combine",
+    "categoria": "vehiculo",
+    "captura": 1484,
+    "foto": "vehicles/532_combine.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 495,
+    "nombre": "sandking",
+    "categoria": "vehiculo",
+    "captura": 1485,
+    "foto": "vehicles/495_sandking.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 411,
+    "nombre": "infernus",
+    "categoria": "vehiculo",
+    "captura": 1487,
+    "foto": "vehicles/411_infernus.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 470,
+    "nombre": "patriot",
+    "categoria": "vehiculo",
+    "captura": 1488,
+    "foto": "vehicles/470_patriot.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 468,
+    "nombre": "sanchez",
+    "categoria": "vehiculo",
+    "captura": 1489,
+    "foto": "vehicles/468_sanchez.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 481,
+    "nombre": "bmx",
+    "categoria": "vehiculo",
+    "captura": 1490,
+    "foto": "vehicles/481_bmx.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 405,
+    "nombre": "sentinel",
+    "categoria": "vehiculo",
+    "captura": 1491,
+    "foto": "vehicles/405_sentinel.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 426,
+    "nombre": "premier",
+    "categoria": "vehiculo",
+    "captura": 1492,
+    "foto": "vehicles/426_premier.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 421,
+    "nombre": "washing",
+    "categoria": "vehiculo",
+    "captura": 1493,
+    "foto": "vehicles/421_washing.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 445,
+    "nombre": "admiral",
+    "categoria": "vehiculo",
+    "captura": 1494,
+    "foto": "vehicles/445_admiral.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 492,
+    "nombre": "greenwoo",
+    "categoria": "vehiculo",
+    "captura": 1495,
+    "foto": "vehicles/492_greenwoo.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 419,
+    "nombre": "esperant",
+    "categoria": "vehiculo",
+    "captura": 1496,
+    "foto": "vehicles/419_esperant.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 529,
+    "nombre": "willard",
+    "categoria": "vehiculo",
+    "captura": 1497,
+    "foto": "vehicles/529_willard.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 526,
+    "nombre": "fortune",
+    "categoria": "vehiculo",
+    "captura": 1498,
+    "foto": "vehicles/526_fortune.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 409,
+    "nombre": "stretch",
+    "categoria": "vehiculo",
+    "captura": 1499,
+    "foto": "vehicles/409_stretch.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 400,
+    "nombre": "landstal",
+    "categoria": "vehiculo",
+    "captura": 1500,
+    "foto": "vehicles/400_landstal.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 489,
+    "nombre": "rancher",
+    "categoria": "vehiculo",
+    "captura": 1501,
+    "foto": "vehicles/489_rancher.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 579,
+    "nombre": "huntley",
+    "categoria": "vehiculo",
+    "captura": 1502,
+    "foto": "vehicles/579_huntley.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 429,
+    "nombre": "banshee",
+    "categoria": "vehiculo",
+    "captura": 1503,
+    "foto": "vehicles/429_banshee.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 415,
+    "nombre": "cheetah",
+    "categoria": "vehiculo",
+    "captura": 1504,
+    "foto": "vehicles/415_cheetah.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 402,
+    "nombre": "buffalo",
+    "categoria": "vehiculo",
+    "captura": 1505,
+    "foto": "vehicles/402_buffalo.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 560,
+    "nombre": "sultan",
+    "categoria": "vehiculo",
+    "captura": 1506,
+    "foto": "vehicles/560_sultan.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 562,
+    "nombre": "elegy",
+    "categoria": "vehiculo",
+    "captura": 1507,
+    "foto": "vehicles/562_elegy.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 559,
+    "nombre": "jester",
+    "categoria": "vehiculo",
+    "captura": 1508,
+    "foto": "vehicles/559_jester.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 506,
+    "nombre": "supergt",
+    "categoria": "vehiculo",
+    "captura": 1509,
+    "foto": "vehicles/506_supergt.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 412,
+    "nombre": "voodoo",
+    "categoria": "vehiculo",
+    "captura": 1510,
+    "foto": "vehicles/412_voodoo.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 576,
+    "nombre": "tornado",
+    "categoria": "vehiculo",
+    "captura": 1511,
+    "foto": "vehicles/576_tornado.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 536,
+    "nombre": "blade",
+    "categoria": "vehiculo",
+    "captura": 1512,
+    "foto": "vehicles/536_blade.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 534,
+    "nombre": "remingtn",
+    "categoria": "vehiculo",
+    "captura": 1513,
+    "foto": "vehicles/534_remingtn.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 535,
+    "nombre": "slamvan",
+    "categoria": "vehiculo",
+    "captura": 1514,
+    "foto": "vehicles/535_slamvan.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 413,
+    "nombre": "pony",
+    "categoria": "vehiculo",
+    "captura": 1515,
+    "foto": "vehicles/413_pony.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 482,
+    "nombre": "burrito",
+    "categoria": "vehiculo",
+    "captura": 1516,
+    "foto": "vehicles/482_burrito.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 414,
+    "nombre": "mule",
+    "categoria": "vehiculo",
+    "captura": 1518,
+    "foto": "vehicles/414_mule.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 403,
+    "nombre": "linerun",
+    "categoria": "vehiculo",
+    "captura": 1519,
+    "foto": "vehicles/403_linerun.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 455,
+    "nombre": "flatbed",
+    "categoria": "vehiculo",
+    "captura": 1520,
+    "foto": "vehicles/455_flatbed.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 525,
+    "nombre": "towtruck",
+    "categoria": "vehiculo",
+    "captura": 1521,
+    "foto": "vehicles/525_towtruck.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 582,
+    "nombre": "newsvan",
+    "categoria": "vehiculo",
+    "captura": 1522,
+    "foto": "vehicles/582_newsvan.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 423,
+    "nombre": "mrwhoop",
+    "categoria": "vehiculo",
+    "captura": 1524,
+    "foto": "vehicles/423_mrwhoop.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 597,
+    "nombre": "copcarsf",
+    "categoria": "vehiculo",
+    "captura": 1525,
+    "foto": "vehicles/597_copcarsf.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 598,
+    "nombre": "copcarvg",
+    "categoria": "vehiculo",
+    "captura": 1526,
+    "foto": "vehicles/598_copcarvg.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 599,
+    "nombre": "copcarru",
+    "categoria": "vehiculo",
+    "captura": 1527,
+    "foto": "vehicles/599_copcarru.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 601,
+    "nombre": "swatvan",
+    "categoria": "vehiculo",
+    "captura": 1528,
+    "foto": "vehicles/601_swatvan.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 490,
+    "nombre": "fbiranch",
+    "categoria": "vehiculo",
+    "captura": 1529,
+    "foto": "vehicles/490_fbiranch.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 427,
+    "nombre": "enforcer",
+    "categoria": "vehiculo",
+    "captura": 1530,
+    "foto": "vehicles/427_enforcer.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 544,
+    "nombre": "firela",
+    "categoria": "vehiculo",
+    "captura": 1531,
+    "foto": "vehicles/544_firela.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 432,
+    "nombre": "rhino",
+    "categoria": "vehiculo",
+    "captura": 1532,
+    "foto": "vehicles/432_rhino.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 433,
+    "nombre": "barracks",
+    "categoria": "vehiculo",
+    "captura": 1533,
+    "foto": "vehicles/433_barracks.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 461,
+    "nombre": "pcj600",
+    "categoria": "vehiculo",
+    "captura": 1534,
+    "foto": "vehicles/461_pcj600.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 462,
+    "nombre": "faggio",
+    "categoria": "vehiculo",
+    "captura": 1535,
+    "foto": "vehicles/462_faggio.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 463,
+    "nombre": "freeway",
+    "categoria": "vehiculo",
+    "captura": 1536,
+    "foto": "vehicles/463_freeway.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 586,
+    "nombre": "wayfarer",
+    "categoria": "vehiculo",
+    "captura": 1537,
+    "foto": "vehicles/586_wayfarer.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 522,
+    "nombre": "nrg500",
+    "categoria": "vehiculo",
+    "captura": 1538,
+    "foto": "vehicles/522_nrg500.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 471,
+    "nombre": "quad",
+    "categoria": "vehiculo",
+    "captura": 1539,
+    "foto": "vehicles/471_quad.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 523,
+    "nombre": "copbike",
+    "categoria": "vehiculo",
+    "captura": 1541,
+    "foto": "vehicles/523_copbike.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 510,
+    "nombre": "mtbike",
+    "categoria": "vehiculo",
+    "captura": 1542,
+    "foto": "vehicles/510_mtbike.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 457,
+    "nombre": "caddy",
+    "categoria": "vehiculo",
+    "captura": 1543,
+    "foto": "vehicles/457_caddy.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 444,
+    "nombre": "monster",
+    "categoria": "vehiculo",
+    "captura": 1544,
+    "foto": "vehicles/444_monster.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 571,
+    "nombre": "kart",
+    "categoria": "vehiculo",
+    "captura": 1545,
+    "foto": "vehicles/571_kart.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 572,
+    "nombre": "mower",
+    "categoria": "vehiculo",
+    "captura": 1546,
+    "foto": "vehicles/572_mower.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  }
+]

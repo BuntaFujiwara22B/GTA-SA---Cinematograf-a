@@ -1,0 +1,12 @@
+{
+  "origen": "Anclaje nativo Mission Maker 1.87 ACTION_A Type=2 SPHERE_TYPE=6. Posiciones iniciales para prueba visual; no medidas ni calibradas dentro del juego.",
+  "estado": "experimental_pendiente_prueba_en_GTA",
+  "vehiculos": [
+    {"model_id":426,"nombre":"Premier","offset":[0,0,1.9]},
+    {"model_id":405,"nombre":"Sentinel","offset":[0,0,1.9]},
+    {"model_id":420,"nombre":"Taxi","offset":[0,0,1.9]},
+    {"model_id":421,"nombre":"Washington","offset":[0,0,1.9]},
+    {"model_id":445,"nombre":"Admiral","offset":[0,0,1.9]},
+    {"model_id":596,"nombre":"Patrulla Los Santos","offset":[0,0,2.05]}
+  ]
+}

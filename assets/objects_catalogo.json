@@ -1,0 +1,515 @@
+[
+  {
+    "model_id": 620,
+    "nombre": "veg_palm04",
+    "categoria": "veg",
+    "captura": 1605,
+    "foto": "objects/620_veg_palm04.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 648,
+    "nombre": "veg_palm01",
+    "categoria": "veg",
+    "captura": 1606,
+    "foto": "objects/648_veg_palm01.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 652,
+    "nombre": "sjmpalmbig",
+    "categoria": "veg",
+    "captura": 1607,
+    "foto": "objects/652_sjmpalmbig.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 657,
+    "nombre": "pinetree02",
+    "categoria": "veg",
+    "captura": 1608,
+    "foto": "objects/657_pinetree02.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 664,
+    "nombre": "firtree2",
+    "categoria": "veg",
+    "captura": 1609,
+    "foto": "objects/664_firtree2.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 693,
+    "nombre": "sm_redwood_",
+    "categoria": "veg",
+    "captura": 1610,
+    "foto": "objects/693_sm_redwood_.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 615,
+    "nombre": "veg_tree3",
+    "categoria": "veg",
+    "captura": 1611,
+    "foto": "objects/615_veg_tree3.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 713,
+    "nombre": "veg_bevtree1",
+    "categoria": "veg",
+    "captura": 1612,
+    "foto": "objects/713_veg_bevtree1.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 763,
+    "nombre": "Ash1_hi",
+    "categoria": "veg",
+    "captura": 1613,
+    "foto": "objects/763_Ash1_hi.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 651,
+    "nombre": "sjmcacti1",
+    "categoria": "veg",
+    "captura": 1614,
+    "foto": "objects/651_sjmcacti1.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 677,
+    "nombre": "sm_des_agave1",
+    "categoria": "veg",
+    "captura": 1615,
+    "foto": "objects/677_sm_des_agave1.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 702,
+    "nombre": "sm_tumbleweed",
+    "categoria": "veg",
+    "captura": 1616,
+    "foto": "objects/702_sm_tumbleweed.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 759,
+    "nombre": "sm_bush_large_1",
+    "categoria": "veg",
+    "captura": 1617,
+    "foto": "objects/759_sm_bush_large_1.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 644,
+    "nombre": "pot_02",
+    "categoria": "veg",
+    "captura": 1618,
+    "foto": "objects/644_pot_02.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 741,
+    "nombre": "pot_01",
+    "categoria": "veg",
+    "captura": 1619,
+    "foto": "objects/741_pot_01.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1702,
+    "nombre": "kb_couch06",
+    "categoria": "mueble",
+    "captura": 1620,
+    "foto": "objects/1702_kb_couch06.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1753,
+    "nombre": "SWANK_COUCH_1",
+    "categoria": "mueble",
+    "captura": 1621,
+    "foto": "objects/1753_SWANK_COUCH_1.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1756,
+    "nombre": "LOW_COUCH_4",
+    "categoria": "mueble",
+    "captura": 1622,
+    "foto": "objects/1756_LOW_COUCH_4.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1735,
+    "nombre": "CJ_EASYCHAIR1",
+    "categoria": "mueble",
+    "captura": 1623,
+    "foto": "objects/1735_CJ_EASYCHAIR1.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1704,
+    "nombre": "kb_chair03",
+    "categoria": "mueble",
+    "captura": 1624,
+    "foto": "objects/1704_kb_chair03.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1714,
+    "nombre": "kb_swivelchair1",
+    "categoria": "mueble",
+    "captura": 1625,
+    "foto": "objects/1714_kb_swivelchair1.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1739,
+    "nombre": "SWANK_DIN_CHAIR_5",
+    "categoria": "mueble",
+    "captura": 1626,
+    "foto": "objects/1739_SWANK_DIN_CHAIR_5.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1737,
+    "nombre": "MED_DINNING_5",
+    "categoria": "mueble",
+    "captura": 1627,
+    "foto": "objects/1737_MED_DINNING_5.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1745,
+    "nombre": "MED_BED_3",
+    "categoria": "mueble",
+    "captura": 1628,
+    "foto": "objects/1745_MED_BED_3.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1793,
+    "nombre": "LOW_BED_2",
+    "categoria": "mueble",
+    "captura": 1629,
+    "foto": "objects/1793_LOW_BED_2.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1771,
+    "nombre": "CJ_bunk_bed1",
+    "categoria": "mueble",
+    "captura": 1630,
+    "foto": "objects/1771_CJ_bunk_bed1.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1749,
+    "nombre": "MED_TV_3",
+    "categoria": "mueble",
+    "captura": 1631,
+    "foto": "objects/1749_MED_TV_3.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1751,
+    "nombre": "objeto_1751",
+    "categoria": "mueble",
+    "captura": 1632,
+    "foto": "objects/1751_objeto_1751.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1742,
+    "nombre": "Med_BOOKSHELF",
+    "categoria": "mueble",
+    "captura": 1633,
+    "foto": "objects/1742_Med_BOOKSHELF.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1743,
+    "nombre": "MED_CABINET_3",
+    "categoria": "mueble",
+    "captura": 1634,
+    "foto": "objects/1743_MED_CABINET_3.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1732,
+    "nombre": "CJ_Juke_Box",
+    "categoria": "mueble",
+    "captura": 1635,
+    "foto": "objects/1732_CJ_Juke_Box.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1733,
+    "nombre": "CJ_WASHINGMAC",
+    "categoria": "mueble",
+    "captura": 1636,
+    "foto": "objects/1733_CJ_WASHINGMAC.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1780,
+    "nombre": "CJ_THIN_FRIGE",
+    "categoria": "mueble",
+    "captura": 1637,
+    "foto": "objects/1780_CJ_THIN_FRIGE.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1773,
+    "nombre": "CJ_COOKER2",
+    "categoria": "mueble",
+    "captura": 1638,
+    "foto": "objects/1773_CJ_COOKER2.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1775,
+    "nombre": "CJ_SPRUNK1",
+    "categoria": "mueble",
+    "captura": 1639,
+    "foto": "objects/1775_CJ_SPRUNK1.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1776,
+    "nombre": "CJ_CANDYVENDOR",
+    "categoria": "mueble",
+    "captura": 1640,
+    "foto": "objects/1776_CJ_CANDYVENDOR.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1772,
+    "nombre": "CJ_HOT_DOG1",
+    "categoria": "mueble",
+    "captura": 1641,
+    "foto": "objects/1772_CJ_HOT_DOG1.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 932,
+    "nombre": "H_WHEELCHAIR",
+    "categoria": "mueble",
+    "captura": 1642,
+    "foto": "objects/932_H_WHEELCHAIR.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 916,
+    "nombre": "FRUITCRATE2",
+    "categoria": "ind",
+    "captura": 1643,
+    "foto": "objects/916_FRUITCRATE2.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 935,
+    "nombre": "CJ_Drum",
+    "categoria": "ind",
+    "captura": 1644,
+    "foto": "objects/935_CJ_Drum.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 918,
+    "nombre": "CJ_FLAME_Drum",
+    "categoria": "ind",
+    "captura": 1645,
+    "foto": "objects/918_CJ_FLAME_Drum.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 930,
+    "nombre": "O2_Bottles",
+    "categoria": "ind",
+    "captura": 1646,
+    "foto": "objects/930_O2_Bottles.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 929,
+    "nombre": "GENERATOR",
+    "categoria": "ind",
+    "captura": 1647,
+    "foto": "objects/929_GENERATOR.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 964,
+    "nombre": "CJ_METAL_CRATE",
+    "categoria": "ind",
+    "captura": 1648,
+    "foto": "objects/964_CJ_METAL_CRATE.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 960,
+    "nombre": "CJ_ARM_CRATE",
+    "categoria": "ind",
+    "captura": 1649,
+    "foto": "objects/960_CJ_ARM_CRATE.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 2768,
+    "nombre": "CJ_CB_BURG",
+    "categoria": "comida",
+    "captura": 1650,
+    "foto": "objects/2768_CJ_CB_BURG.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 2212,
+    "nombre": "burgerhigh",
+    "categoria": "comida",
+    "captura": 1651,
+    "foto": "objects/2212_burgerhigh.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 2217,
+    "nombre": "cluckhigh",
+    "categoria": "comida",
+    "captura": 1652,
+    "foto": "objects/2217_cluckhigh.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 2220,
+    "nombre": "pizzahigh",
+    "categoria": "comida",
+    "captura": 1653,
+    "foto": "objects/2220_pizzahigh.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 2222,
+    "nombre": "rustyhigh",
+    "categoria": "comida",
+    "captura": 1654,
+    "foto": "objects/2222_rustyhigh.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1282,
+    "nombre": "Barrierm",
+    "categoria": "policia",
+    "captura": 1655,
+    "foto": "objects/1282_Barrierm.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1427,
+    "nombre": "CJ_ROADBARRIER",
+    "categoria": "policia",
+    "captura": 1656,
+    "foto": "objects/1427_CJ_ROADBARRIER.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 1459,
+    "nombre": "DYN_ROADBARRIER_6",
+    "categoria": "policia",
+    "captura": 1657,
+    "foto": "objects/1459_DYN_ROADBARRIER_6.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 2977,
+    "nombre": "kmilitary_crate",
+    "categoria": "militar",
+    "captura": 1659,
+    "foto": "objects/2977_kmilitary_crate.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 2040,
+    "nombre": "AMMO_BOX_M1",
+    "categoria": "militar",
+    "captura": 1660,
+    "foto": "objects/2040_AMMO_BOX_M1.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 3082,
+    "nombre": "ammo_capsule",
+    "categoria": "militar",
+    "captura": 1661,
+    "foto": "objects/3082_ammo_capsule.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  },
+  {
+    "model_id": 2985,
+    "nombre": "minigun_base",
+    "categoria": "militar",
+    "captura": 1662,
+    "foto": "objects/2985_minigun_base.png",
+    "disponible": true,
+    "origen": "Tabla explícita del usuario"
+  }
+]
